@@ -2,46 +2,40 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
-<title>Dorama Guide 💕</title>
-
+<title>Clube do Dorama 💕</title>
 <style>
+/* ----------------- RESET E FONTE ----------------- */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     background: #fff0f6;
     color: #333;
 }
-
 header {
     background: linear-gradient(90deg, #ff7eb3, #b983ff);
     padding: 20px;
     text-align: center;
     color: white;
 }
-
 nav a {
     margin: 0 10px;
     color: white;
     text-decoration: none;
     font-weight: bold;
 }
-
 section {
     padding: 40px 20px;
 }
-
 h2 {
     text-align: center;
     color: #b4005a;
 }
-
 .cards {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
 }
-
 .card {
     background: white;
     width: 260px;
@@ -49,36 +43,49 @@ h2 {
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
-
 .card img {
     width: 100%;
     height: 350px;
     object-fit: cover;
 }
-
 .card div {
     padding: 15px;
 }
-
 .tag {
     font-size: 13px;
     color: #ff4d8d;
     font-weight: bold;
 }
-
+button {
+    padding:10px 15px;
+    margin:5px;
+    background:#ff7eb3;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
+button:hover {
+    background:#b983ff;
+}
 footer {
     background: #b983ff;
     color: white;
     text-align: center;
     padding: 15px;
 }
+input[type=text] {
+    padding:10px;
+    width:250px;
+    border-radius: 5px;
+    border:1px solid #ccc;
+}
 </style>
 </head>
-
 <body>
 
 <header>
-    <h1>🎬 Dorama Guide</h1>
+    <h1>🎬 Clube do Dorama</h1>
     <p>Descubra doramas perfeitos para o seu momento 💕</p>
     <nav>
         <a href="#inicio">Início</a>
@@ -98,126 +105,88 @@ footer {
 
 <!-- LISTAS -->
 <section id="listas">
-<h2>📋 Listas Especiais</h2>
+<h2>📋 Listas de Doramas</h2>
 
-<h3>😭 Doramas mais Tristes</h3>
-<div class="cards">
-
-<div class="card">
-<img src="https://raw.githubusercontent.com/exemplo/crash-landing.jpg">
-<div>
-<h3>Crash Landing on You</h3>
-<p class="tag">Drama • Romance • Emocionante</p>
-<p>
-Uma empresária sul-coreana cai acidentalmente na Coreia do Norte e conhece um oficial que muda sua vida.
-Uma história intensa sobre amor impossível, sacrifício e destino.
-</p>
-<p>⭐ 9.2/10 — MyDramaList</p>
-</div>
+<div style="text-align:center; margin-bottom:20px;">
+    <button onclick="mostrarLista('alegres')">😄 Alegres</button>
+    <button onclick="mostrarLista('tristes')">😭 Tristes</button>
+    <button onclick="mostrarLista('romanticos')">💖 Românticos</button>
+    <button onclick="mostrarLista('intensos')">🔥 Intensos</button>
+    <button onclick="mostrarLista('leves')">😂 Leves</button>
 </div>
 
-<div class="card">
-<img src="https://raw.githubusercontent.com/exemplo/goblin.jpg">
-<div>
-<h3>Goblin</h3>
-<p class="tag">Fantasia • Romance • Triste</p>
-<p>
-Um ser imortal busca a noiva humana capaz de libertá-lo de sua maldição.
-Uma história profunda sobre amor eterno, perda e esperança.
-</p>
-<p>⭐ 8.8/10 — MyDramaList</p>
-</div>
-</div>
-
-</div>
-
-<h3>😂 Doramas mais Alegres</h3>
-<div class="cards">
-
-<div class="card">
-<img src="https://raw.githubusercontent.com/exemplo/bongsoon.jpg">
-<div>
-<h3>Strong Woman Do Bong Soon</h3>
-<p class="tag">Comédia • Romance • Leve</p>
-<p>
-Uma jovem com força sobrenatural tenta viver normalmente enquanto se envolve com um CEO excêntrico.
-Leve, divertido e cheio de cenas engraçadas.
-</p>
-<p>⭐ 8.7/10 — MyDramaList</p>
-</div>
-</div>
-
-<div class="card">
-<img src="https://raw.githubusercontent.com/exemplo/business.jpg">
-<div>
-<h3>Business Proposal</h3>
-<p class="tag">Comédia • Romance</p>
-<p>
-Um encontro às cegas vira um caos quando a mulher descobre que está saindo com o próprio chefe.
-Rápido, engraçado e viciante.
-</p>
-<p>⭐ 8.6/10 — MyDramaList</p>
-</div>
-</div>
-
-</div>
-
-<h3>💖 Doramas Românticos</h3>
-<div class="cards">
-
-<div class="card">
-<img src="https://raw.githubusercontent.com/exemplo/okay.jpg">
-<div>
-<h3>It's Okay to Not Be Okay</h3>
-<p class="tag">Romance • Psicológico</p>
-<p>
-Um cuidador emocionalmente fechado conhece uma escritora com traumas profundos.
-Uma história sensível sobre cura, amor e aceitação.
-</p>
-<p>⭐ 9.0/10 — MyDramaList</p>
-</div>
-</div>
-
-</div>
+<div id="conteudo-lista" class="cards"></div>
 </section>
 
-<!-- DESCOBRIR -->
+<!-- DESCUBRA SEU DORAMA -->
 <section id="descubra">
 <h2>🤖 Descubra seu Dorama</h2>
-
 <p style="text-align:center;">Escreva como você está se sentindo:</p>
-
 <div style="text-align:center;">
-<input type="text" id="entrada" placeholder="Ex: triste, feliz, romance..." style="padding:10px; width:250px;">
-<button onclick="buscar()" style="padding:10px;">Buscar</button>
+    <input type="text" id="entrada" placeholder="Ex: triste, feliz, romance...">
+    <button onclick="buscar()">Buscar</button>
 </div>
-
-<p id="resultado" style="text-align:center; margin-top:20px; font-weight:bold;"></p>
-
-<script>
-function buscar() {
-    const texto = document.getElementById("entrada").value.toLowerCase();
-    let resposta = "";
-
-    if (texto.includes("triste")) {
-        resposta = "💔 Recomendamos: Crash Landing on You — drama intenso e emocionante.";
-    } else if (texto.includes("feliz") || texto.includes("alegre")) {
-        resposta = "😂 Recomendamos: Business Proposal — leve e divertido.";
-    } else if (texto.includes("romance")) {
-        resposta = "💖 Recomendamos: Goblin — amor eterno e inesquecível.";
-    } else {
-        resposta = "✨ Experimente: It's Okay to Not Be Okay — profundo e tocante.";
-    }
-
-    document.getElementById("resultado").innerText = resposta;
-}
-</script>
-
+<div id="resultado" style="text-align:center; margin-top:20px; font-weight:bold;"></div>
 </section>
 
 <footer>
-    <p>💜 Dorama Guide — feito com amor para dorameiros</p>
+    <p>💜 Clube do Dorama — feito com amor para dorameiros</p>
 </footer>
+
+<!-- -------------------- JAVASCRIPT -------------------- -->
+<script>
+// -------------------- BANCO DE DORAMAS --------------------
+const doramas = [
+{nome:"Crash Landing on You",tags:["triste","romance","emocionante"],nota:"9.2/10 – MyDramaList",descricao:"Uma empresária sul-coreana cai acidentalmente na Coreia do Norte e conhece um oficial que muda sua vida. Romance intenso cheio de emoção e sacrifícios.",imagem:"https://raw.githubusercontent.com/SEUUSUARIO/SEUREPO/main/images/doramas/crash-landing.jpg"},
+{nome:"Goblin",tags:["romance","triste","fantasia"],nota:"8.8/10 – MyDramaList",descricao:"Um ser imortal busca a noiva humana capaz de libertá-lo de sua maldição. Uma história profunda sobre amor eterno e despedidas.",imagem:"https://raw.githubusercontent.com/SEUUSUARIO/SEUREPO/main/images/doramas/goblin.jpg"},
+{nome:"Business Proposal",tags:["alegre","comedia","romance"],nota:"8.6/10 – MyDramaList",descricao:"Um encontro às cegas vira um caos quando a mulher descobre que está saindo com o próprio chefe. Leve, rápido e muito divertido.",imagem:"https://raw.githubusercontent.com/SEUUSUARIO/SEUREPO/main/images/doramas/business.jpg"},
+{nome:"Strong Woman Do Bong Soon",tags:["alegre","comedia","romance"],nota:"8.7/10 – MyDramaList",descricao:"Uma jovem com força sobrenatural tenta viver normalmente enquanto se envolve com um CEO excêntrico. Leve, divertido e cheio de cenas engraçadas.",imagem:"https://raw.githubusercontent.com/SEUUSUARIO/SEUREPO/main/images/doramas/bongsoon.jpg"},
+{nome:"It's Okay to Not Be Okay",tags:["romance","intenso"],nota:"9.0/10 – MyDramaList",descricao:"Um cuidador emocionalmente fechado conhece uma escritora com traumas profundos. História sensível sobre cura, amor e aceitação.",imagem:"https://raw.githubusercontent.com/SEUUSUARIO/SEUREPO/main/images/doramas/okay.jpg"},
+{nome:"Itaewon Class",tags:["intenso","romance"],nota:"8.9/10 – MyDramaList",descricao:"Um jovem abre um bar em Itaewon para vingar injustiças do passado. História de luta, amizade e amor.",imagem:"https://raw.githubusercontent.com/SEUUSUARIO/SEUREPO/main/images/doramas/itaewon.jpg"},
+{nome:"Vincenzo",tags:["alegre","intenso","romance"],nota:"8.8/10 – MyDramaList",descricao:"Um consigliere italiano retorna à Coreia e enfrenta mafiosos enquanto se envolve com advogada. Cheio de ação, comédia e romance.",imagem:"https://raw.githubusercontent.com/SEUUSUARIO/SEUREPO/main/images/doramas/vincenzo.jpg"},
+{nome:"Reply 1988",tags:["alegre","romance"],nota:"9.1/10 – MyDramaList",descricao:"Amizades e amores de jovens crescendo em Seul nos anos 80. Nostalgia, risadas e emoção.",imagem:"https://raw.githubusercontent.com/SEUUSUARIO/SEUREPO/main/images/doramas/reply1988.jpg"},
+{nome:"Hotel Del Luna",tags:["romance","triste","fantasia"],nota:"8.9/10 – MyDramaList",descricao:"Uma dona de hotel para fantasmas se envolve com gerente humano. Romance, mistério e fantasia com emoção.",imagem:"https://raw.githubusercontent.com/SEUUSUARIO/SEUREPO/main/images/doramas/hoteldelluna.jpg"},
+{nome:"Descendants of the Sun",tags:["romance","intenso"],nota:"8.7/10 – MyDramaList",descricao:"Amor entre soldado e médica durante missão humanitária. Drama, romance e ação.",imagem:"https://raw.githubusercontent.com/SEUUSUARIO/SEUREPO/main/images/doramas/dots.jpg"},
+// ⚡️ Repita esse modelo até ter 100 doramas
+];
+
+// -------------------- FUNÇÃO PARA LISTAS --------------------
+function mostrarLista(tipo) {
+  const listas = {
+    alegres: doramas.filter(d => d.tags.includes("alegre")).slice(0,10),
+    tristes: doramas.filter(d => d.tags.includes("triste")).slice(0,10),
+    romanticos: doramas.filter(d => d.tags.includes("romance")).slice(0,10),
+    intensos: doramas.filter(d => d.tags.includes("intenso")).slice(0,10),
+    leves: doramas.filter(d => d.tags.includes("comedia")).slice(0,10)
+  };
+  const container = document.getElementById("conteudo-lista");
+  container.innerHTML = "";
+  listas[tipo].forEach(d => {
+    container.innerHTML += `
+      <div class="card">
+        <img src="${d.imagem}">
+        <div>
+          <h3>${d.nome}</h3>
+          <p>${d.descricao}</p>
+          <p>⭐ ${d.nota}</p>
+        </div>
+      </div>
+    `;
+  });
+}
+
+// -------------------- FUNÇÃO DESCUBRA --------------------
+function buscar() {
+  const texto = document.getElementById("entrada").value.toLowerCase();
+  const resultados = doramas.filter(d => d.tags.some(tag => texto.includes(tag)));
+  const r = resultados[0] || doramas[0];
+  document.getElementById("resultado").innerHTML = `
+    <h3>${r.nome}</h3>
+    <p>${r.descricao}</p>
+    <p>⭐ ${r.nota}</p>
+  `;
+}
+</script>
 
 </body>
 </html>
