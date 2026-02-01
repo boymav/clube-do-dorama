@@ -1,1 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>DoramaVerse</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<style>
+:root{
+  --bg:#fdf2f8;
+  --bg-soft:#fff7ed;
+  --card:#ffffff;
+  --primary:#f472b6;
+  --secondary:#c084fc;
+  --text:#3f3f46;
+  --muted:#71717a;
+}
+
+*{box-sizing:border-box}
+
+body{
+  margin:0;
+  font-family:Arial, sans-serif;
+  background:linear-gradient(180deg,var(--bg),var(--bg-soft));
+  color:var(--text);
+}
+
+header{
+  padding:70px 20px;
+  text-align:center;
+  background:linear-gradient(135deg,#fbcfe8,#ede9fe);
+}
+
+header h1{
+  margin:0;
+  font-size:3em;
+  color:#701a75;
+}
+
+header p{
+  max-width:700px;
+  margin:15px auto 0;
+  color:#52525b;
+}
+
+nav{
+  position:sticky;
+  top:0;
+  background:#ffffffdd;
+  backdrop-filter:blur(10px);
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  padding:15px;
+  box-shadow:0 4px 20px rgba(0,0,0,.05);
+}
+
+nav button{
+  border:none;
+  background:none;
+  font-size:1em;
+  cursor:pointer;
+  padding:8px 18px;
+  border-radius:20px;
+  color:#701a75;
+}
+
+nav button:hover{
+  background:linear-gradient(135deg,var(--secondary),var(--primary));
+  color:white;
+}
+
+section{
+  display:none;
+  max-width:1300px;
+  margin:auto;
+  padding:40px 20px;
+}
+
+section.active{display:block}
+
+h2{color:#701a75}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
+  gap:22px;
+}
+
+.card{
+  background:var(--card);
+  border-radius:18px;
+  overflow:hidden;
+  box-shadow:0 10px 25px rgba(0,0,0,.08);
+  transition:.3s;
+}
+
+.card:hover{
+  transform:translateY(-6px);
+}
+
+.card img{
+  width:100%;
+  height:300px;
+  object-fit:cover;
+}
+
+.card-content{
+  padding:16px;
+}
+
+.card-content h4{
+  margin:0 0 8px;
+}
+
+.card-content p{
+  font-size:.9em;
+  color:var(--muted);
+}
+
+.card-content span{
+  display:block;
+  margin-top:10px;
+  color:#eab308;
+}
+
+textarea{
+  width:100%;
+  max-width:700px;
+  padding:15px;
+  border-radius:16px;
+  border:1px solid #e5e7eb;
+}
+
+button.action{
+  margin-top:15px;
+  padding:14px 30px;
+  border-radius:30px;
+  border:none;
+  cursor:pointer;
+  background:linear-gradient(135deg,var(--secondary),var(--primary));
+  color:white;
+}
+
+footer{
+  text-align:center;
+  padding:40px;
+  color:#71717a;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>DoramaVerse</h1>
+<p>Descubra doramas que combinam com seu momento, seu humor e seu coração.</p>
+</header>
+
+<nav>
+<button onclick="show('home')">Início</button>
+<button onclick="show('listas')">Listas</button>
+<button onclick="show('descubra')">Descubra seu Dorama</button>
+</nav>
+
+<section id="home" class="active">
+<h2>🌸 Bem-vindo</h2>
+<p>O DoramaVerse ajuda você a encontrar o dorama perfeito de forma simples, bonita e personalizada.</p>
+</section>
+
+<section id="listas">
+<h2>📚 Doramas em Destaque</h2>
+<div class="grid" id="lista"></div>
+</section>
+
+<section id="descubra">
+<h2>💖 Descubra seu Dorama</h2>
+<p>Escreva o que você procura:</p>
+<textarea id="busca" placeholder="ex: romance triste, algo alegre, fantasia"></textarea><br>
+<button class="action" onclick="buscar()">Descobrir</button>
+<div class="grid" id="resultado" style="margin-top:30px"></div>
+</section>
+
+<footer>
+© 2026 • DoramaVerse
+</footer>
+
+<script>
+function show(id){
+ document.querySelectorAll("section").forEach(s=>s.classList.remove("active"));
+ document.getElementById(id).classList.add("active");
+}
+
+const doramas=[
+{
+ nome:"Crash Landing on You",
+ desc:"Uma empresária sul-coreana acaba na Coreia do Norte e vive um romance improvável.",
+ nota:"9.0",
+ tags:["romance","emocionante","triste"],
+ img:"images/doramas/crash-landing.jpg"
+},
+{
+ nome:"Goblin",
+ desc:"Um ser imortal busca o amor verdadeiro para quebrar sua maldição.",
+ nota:"8.8",
+ tags:["romance","fantasia","triste"],
+ img:"images/doramas/goblin.jpg"
+},
+{
+ nome:"Itaewon Class",
+ desc:"Um jovem enfrenta injustiças e constrói seu próprio negócio.",
+ nota:"8.7",
+ tags:["drama","superacao","inspirador"],
+ img:"images/doramas/itaewon.jpg"
+},
+{
+ nome:"Strong Woman Do Bong Soon",
+ desc:"Uma garota com força sobrenatural vive um romance leve e divertido.",
+ nota:"8.5",
+ tags:["comedia","romance","alegre"],
+ img:"images/doramas/bongsoon.jpg"
+},
+{
+ nome:"Vincenzo",
+ desc:"Um advogado ligado à máfia luta contra corrupção de forma inteligente.",
+ nota:"8.9",
+ tags:["acao","suspense","comedia"],
+ img:"images/doramas/vincenzo.jpg"
+},
+{
+ nome:"Descendants of the Sun",
+ desc:"Um soldado e uma médica vivem um amor em meio ao perigo.",
+ nota:"8.6",
+ tags:["romance","acao","emocionante"],
+ img:"images/doramas/dots.jpg"
+},
+{
+ nome:"Business Proposal",
+ desc:"Um encontro às cegas vira romance no escritório.",
+ nota:"8.6",
+ tags:["romance","comedia","alegre"],
+ img:"images/doramas/businessproposal.jpg"
+},
+{
+ nome:"Hotel Del Luna",
+ desc:"Um hotel misterioso recebe espíritos com histórias inacabadas.",
+ nota:"8.7",
+ tags:["fantasia","romance","triste"],
+ img:"images/doramas/hoteldelluna.jpg"
+},
+{
+ nome:"It's Okay to Not Be Okay",
+ desc:"Um romance intenso entre pessoas marcadas pelo passado.",
+ nota:"9.1",
+ tags:["romance","emocionante","psicologico"],
+ img:"images/doramas/okay.jpg"
+},
+{
+ nome:"Reply 1988",
+ desc:"Uma história emocionante sobre família, amizade e amor.",
+ nota:"9.2",
+ tags:["familia","emocionante","nostalgia"],
+ img:"images/doramas/reply1988.jpg"
+}
+];
+
+function card(d){
+ return`
+ <div class="card">
+  <img src="${d.img}">
+  <div class="card-content">
+   <h4>${d.nome}</h4>
+   <p>${d.desc}</p>
+   <span>⭐ ${d.nota}</span>
+  </div>
+ </div>`;
+}
+
+document.getElementById("lista").innerHTML=doramas.map(card).join("");
+
+function buscar(){
+ const t=busca.value.toLowerCase();
+ const r=doramas.filter(d=>d.tags.some(tag=>t.includes(tag)));
+ resultado.innerHTML=r.length?r.map(card).join(""):"<p>Nenhum resultado encontrado.</p>";
+}
+</script>
+
+</body>
+</html>
