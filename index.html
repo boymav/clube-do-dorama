@@ -81,10 +81,6 @@ input[type=text] {
     background: white;
     padding: 20px;
     border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-.noticia {
-    margin-bottom: 15px;
 }
 </style>
 </head>
@@ -92,51 +88,35 @@ input[type=text] {
 <body>
 
 <header>
-    <h1>🎬 Clube do Dorama</h1>
-    <p>Seu cantinho dorameiro na internet 💕</p>
-    <nav>
-        <a href="#inicio">Início</a>
-        <a href="#listas">Listas 💖</a>
-        <a href="#descubra">Descubra 🤖</a>
-    </nav>
+<h1>🎬 Clube do Dorama</h1>
+<p>Descubra doramas perfeitos para cada momento 💕</p>
+<nav>
+<a href="#inicio">Início</a>
+<a href="#listas">Listas</a>
+<a href="#descubra">Descubra</a>
+</nav>
 </header>
 
-<!-- INÍCIO -->
 <section id="inicio">
-<h2>✨ Sobre o Clube do Dorama</h2>
-
+<h2>✨ Sobre o site</h2>
 <p style="text-align:center; max-width:700px; margin:auto;">
-O Clube do Dorama é um site feito para quem ama doramas coreanos, chineses e japoneses 💕  
-Aqui você encontra listas organizadas por emoção, recomendações inteligentes e novidades do mundo dorameiro.
+O Clube do Dorama reúne os melhores doramas organizados por emoção, com descrições claras e recomendações para cada momento da sua vida.
 </p>
 
 <br>
 
 <div class="novidades">
-<h3>📰 Novidades do Mundo Dorameiro</h3>
-
-<div class="noticia">
-<strong>📺 Novos doramas de 2026</strong>
-<p>Grandes produções estão chegando nas plataformas de streaming com elencos famosos e histórias emocionantes.</p>
-</div>
-
-<div class="noticia">
-<strong>💔 Doramas mais tristes do ano</strong>
-<p>Listas apontam aumento de histórias emocionantes e finais marcantes.</p>
-</div>
-
-<div class="noticia">
-<strong>💖 Romances em alta</strong>
-<p>Doramas românticos continuam dominando os rankings de audiência.</p>
-</div>
+<h3>📰 Novidades Dorameiras</h3>
+<p><strong>📺 2026:</strong> novos doramas românticos dominam os streamings.</p>
+<p><strong>🔥 Tendência:</strong> histórias intensas e emocionantes em alta.</p>
+<p><strong>💖 Clássicos:</strong> doramas antigos voltam a fazer sucesso.</p>
 </div>
 </section>
 
-<!-- LISTAS -->
 <section id="listas">
 <h2>📋 Listas de Doramas</h2>
 
-<div style="text-align:center; margin-bottom:20px;">
+<div style="text-align:center;">
 <button onclick="mostrarLista('alegres')">😄 Alegres</button>
 <button onclick="mostrarLista('tristes')">😭 Tristes</button>
 <button onclick="mostrarLista('romanticos')">💖 Românticos</button>
@@ -147,74 +127,66 @@ Aqui você encontra listas organizadas por emoção, recomendações inteligente
 <div id="conteudo-lista" class="cards"></div>
 </section>
 
-<!-- DESCUBRA -->
 <section id="descubra">
 <h2>🤖 Descubra seu Dorama</h2>
-<p style="text-align:center;">Como você está se sentindo hoje?</p>
 <div style="text-align:center;">
-<input type="text" id="entrada" placeholder="Ex: triste, feliz, romance">
+<input type="text" id="entrada" placeholder="Ex: triste, romance">
 <button onclick="buscar()">Buscar</button>
 </div>
-<div id="resultado" style="text-align:center; margin-top:20px; font-weight:bold;"></div>
+<div id="resultado" style="text-align:center; margin-top:20px;"></div>
 </section>
 
 <footer>
-<p>💜 Clube do Dorama — feito com amor para dorameiros</p>
+<p>💜 Clube do Dorama</p>
 </footer>
 
 <script>
-// ===== BANCO DE 100 DORAMAS =====
-const doramas = [];
+const doramas = [
+{nome:"Crash Landing on You",tags:["romance","triste"],nota:"9.2/10",descricao:"Uma empresária cai na Coreia do Norte e vive um amor impossível.",imagem:"https://via.placeholder.com/300x450"},
+{nome:"Goblin",tags:["romance","fantasia","triste"],nota:"8.8/10",descricao:"Um ser imortal busca redenção através do amor.",imagem:"https://via.placeholder.com/300x450"},
+{nome:"Business Proposal",tags:["alegre","comedia","romance"],nota:"8.6/10",descricao:"Encontro às cegas vira romance no escritório.",imagem:"https://via.placeholder.com/300x450"},
+{nome:"Strong Woman Do Bong Soon",tags:["alegre","comedia","romance"],nota:"8.7/10",descricao:"Uma jovem super forte vive um romance divertido.",imagem:"https://via.placeholder.com/300x450"},
+{nome:"It's Okay to Not Be Okay",tags:["intenso","romance"],nota:"9.0/10",descricao:"História sensível sobre traumas e cura.",imagem:"https://via.placeholder.com/300x450"},
+{nome:"Itaewon Class",tags:["intenso"],nota:"8.9/10",descricao:"Superação, vingança e sonhos.",imagem:"https://via.placeholder.com/300x450"},
+{nome:"Vincenzo",tags:["alegre","intenso"],nota:"8.8/10",descricao:"Máfia, justiça e humor ácido.",imagem:"https://via.placeholder.com/300x450"},
+{nome:"Reply 1988",tags:["alegre","romance"],nota:"9.1/10",descricao:"Amizade, família e nostalgia.",imagem:"https://via.placeholder.com/300x450"},
+{nome:"Hotel Del Luna",tags:["romance","fantasia","triste"],nota:"8.9/10",descricao:"Hotel para almas perdidas.",imagem:"https://via.placeholder.com/300x450"},
+{nome:"Descendants of the Sun",tags:["romance","intenso"],nota:"8.7/10",descricao:"Amor em meio à guerra.",imagem:"https://via.placeholder.com/300x450"}
 
-for (let i = 1; i <= 100; i++) {
-    doramas.push({
-        nome: "Dorama Exemplo " + i,
-        tags: i % 5 === 0 ? ["triste","romance"] :
-              i % 4 === 0 ? ["intenso","romance"] :
-              i % 3 === 0 ? ["alegre","comedia"] :
-              i % 2 === 0 ? ["romance"] :
-                            ["alegre"],
-        nota: (8 + Math.random()).toFixed(1) + "/10 – MyDramaList",
-        descricao: "Uma história envolvente cheia de emoção, romance e momentos marcantes.",
-        imagem: "https://via.placeholder.com/300x450?text=Dorama+" + i
-    });
+/* 👉 DUPLIQUE ESTE MODELO ATÉ COMPLETAR 100 DORAMAS */
+];
+
+function mostrarLista(tipo){
+const listas={
+alegres:doramas.filter(d=>d.tags.includes("alegre")).slice(0,10),
+tristes:doramas.filter(d=>d.tags.includes("triste")).slice(0,10),
+romanticos:doramas.filter(d=>d.tags.includes("romance")).slice(0,10),
+intensos:doramas.filter(d=>d.tags.includes("intenso")).slice(0,10),
+leves:doramas.filter(d=>d.tags.includes("comedia")).slice(0,10)
+};
+
+const c=document.getElementById("conteudo-lista");
+c.innerHTML="";
+listas[tipo].forEach(d=>{
+c.innerHTML+=`
+<div class="card">
+<img src="${d.imagem}">
+<div>
+<h3>${d.nome}</h3>
+<p>${d.descricao}</p>
+<p>⭐ ${d.nota}</p>
+</div>
+</div>`;
+});
 }
 
-// ===== LISTAS =====
-function mostrarLista(tipo) {
-    const listas = {
-        alegres: doramas.filter(d => d.tags.includes("alegre")).slice(0,10),
-        tristes: doramas.filter(d => d.tags.includes("triste")).slice(0,10),
-        romanticos: doramas.filter(d => d.tags.includes("romance")).slice(0,10),
-        intensos: doramas.filter(d => d.tags.includes("intenso")).slice(0,10),
-        leves: doramas.filter(d => d.tags.includes("comedia")).slice(0,10)
-    };
-
-    const container = document.getElementById("conteudo-lista");
-    container.innerHTML = "";
-
-    listas[tipo].forEach(d => {
-        container.innerHTML += `
-        <div class="card">
-            <img src="${d.imagem}">
-            <div>
-                <h3>${d.nome}</h3>
-                <p>${d.descricao}</p>
-                <p>⭐ ${d.nota}</p>
-            </div>
-        </div>`;
-    });
-}
-
-// ===== DESCOBRIR =====
-function buscar() {
-    const texto = document.getElementById("entrada").value.toLowerCase();
-    const resultado = doramas.find(d => d.tags.some(t => texto.includes(t))) || doramas[0];
-    document.getElementById("resultado").innerHTML = `
-        <h3>${resultado.nome}</h3>
-        <p>${resultado.descricao}</p>
-        <p>⭐ ${resultado.nota}</p>
-    `;
+function buscar(){
+const t=document.getElementById("entrada").value.toLowerCase();
+const r=doramas.find(d=>d.tags.some(tag=>t.includes(tag)))||doramas[0];
+document.getElementById("resultado").innerHTML=`
+<h3>${r.nome}</h3>
+<p>${r.descricao}</p>
+<p>⭐ ${r.nota}</p>`;
 }
 </script>
 
