@@ -2,62 +2,78 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
-<title>DoramaMania</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clube do Dorama 💕</title>
 
 <style>
 body {
-  margin:0;
-  font-family: Arial, sans-serif;
-  background:#fff0f5;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #fff0f6;
+    color: #333;
 }
-
 header {
-  background:#b4005a;
-  color:white;
-  padding:15px;
-  text-align:center;
+    background: linear-gradient(90deg, #ff7eb3, #b983ff);
+    padding: 20px;
+    text-align: center;
+    color: white;
 }
-
 nav a {
-  color:white;
-  margin:0 10px;
-  text-decoration:none;
-  font-weight:bold;
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
 }
-
 section {
-  padding:20px;
+    padding: 40px 20px;
 }
-
+h2 {
+    text-align: center;
+    color: #b4005a;
+}
 .cards {
-  display:grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
-  gap:15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
 }
-
 .card {
-  background:white;
-  border-radius:10px;
-  box-shadow:0 0 5px rgba(0,0,0,0.2);
-  overflow:hidden;
+    background: white;
+    width: 260px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
-
 .card img {
-  width:100%;
-  height:350px;
-  object-fit:cover;
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
 }
-
 .card div {
-  padding:10px;
+    padding: 15px;
 }
-
+button {
+    padding:10px 15px;
+    margin:5px;
+    background:#ff7eb3;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
+button:hover {
+    background:#b983ff;
+}
 footer {
-  background:#b4005a;
-  color:white;
-  text-align:center;
-  padding:15px;
+    background: #b983ff;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+input[type=text] {
+    padding:10px;
+    width:250px;
+    border-radius: 5px;
+    border:1px solid #ccc;
 }
 </style>
 </head>
@@ -65,116 +81,127 @@ footer {
 <body>
 
 <header>
-<h1>🎬 DoramaMania</h1>
-<nav>
-<a href="#inicio">Início</a>
-<a href="#todos">Todos os Doramas</a>
-</nav>
+    <h1>🎬 Clube do Dorama</h1>
+    <p>Descubra doramas perfeitos para o seu momento 💕</p>
+    <nav>
+        <a href="#inicio">Início</a>
+        <a href="#listas">Listas 💖</a>
+        <a href="#todos">Todos os Doramas 📚</a>
+        <a href="#descubra">Descubra seu Dorama 🤖</a>
+    </nav>
 </header>
 
 <section id="inicio">
-<h2>Bem-vindo</h2>
-<p>Descubra os melhores doramas coreanos, chineses e japoneses, com histórias emocionantes, românticas e inesquecíveis.</p>
+<h2>✨ Bem-vindo(a)</h2>
+<p style="text-align:center; max-width:700px; margin:auto;">
+O Clube do Dorama é um espaço feito para quem ama histórias emocionantes,
+românticas, divertidas e intensas. Aqui você encontra listas organizadas
+por emoção, novidades do mundo dorameiro e recomendações sob medida.
+</p>
+</section>
+
+<section id="listas">
+<h2>📋 Listas de Doramas</h2>
+
+<div style="text-align:center; margin-bottom:20px;">
+    <button onclick="mostrarLista('alegres')">😄 Alegres</button>
+    <button onclick="mostrarLista('tristes')">😭 Tristes</button>
+    <button onclick="mostrarLista('romanticos')">💖 Românticos</button>
+    <button onclick="mostrarLista('intensos')">🔥 Intensos</button>
+    <button onclick="mostrarLista('leves')">😂 Leves</button>
+</div>
+
+<div id="conteudo-lista" class="cards"></div>
 </section>
 
 <section id="todos">
 <h2>📚 Todos os Doramas</h2>
+<div id="todos-doramas" class="cards"></div>
+</section>
 
-<h3>😄 Alegres</h3>
-<div id="lista-alegres" class="cards"></div>
-
-<h3>💖 Românticos</h3>
-<div id="lista-romanticos" class="cards"></div>
-
-<h3>😭 Tristes</h3>
-<div id="lista-tristes" class="cards"></div>
-
-<h3>🔥 Intensos</h3>
-<div id="lista-intensos" class="cards"></div>
-
-<h3>😂 Leves</h3>
-<div id="lista-leves" class="cards"></div>
+<section id="descubra">
+<h2>🤖 Descubra seu Dorama</h2>
+<p style="text-align:center;">Escreva como você está se sentindo:</p>
+<div style="text-align:center;">
+    <input type="text" id="entrada" placeholder="Ex: triste, feliz, romance...">
+    <button onclick="buscar()">Buscar</button>
+</div>
+<div id="resultado" style="text-align:center; margin-top:20px; font-weight:bold;"></div>
 </section>
 
 <footer>
-<p>© 2026 DoramaMania</p>
+<p>💜 Clube do Dorama — feito com amor para dorameiros</p>
 </footer>
 
 <script>
+/* BANCO DE DORAMAS (PROVISÓRIO) */
 const doramas = [
-{nome:"Crash Landing on You", nota:9.5, imagem:"https://i.imgur.com/8Q1ZQZQ.jpg", tags:["romance","intenso"], descricao:`Uma empresária da Coreia do Sul cai por acidente na Coreia do Norte.
-Lá ela conhece um oficial sério e protetor.
-O amor nasce em meio a perigo, política e emoção.`},
-
-{nome:"Goblin", nota:9.4, imagem:"https://i.imgur.com/3fGQmYy.jpg", tags:["romance","triste","intenso"], descricao:`Um guerreiro imortal busca a noiva que pode acabar com sua maldição.
-A história mistura amor, fantasia e destino.
-Prepare-se para rir, chorar e se emocionar.`},
-
-{nome:"Strong Woman Do Bong Soon", nota:9.1, imagem:"https://i.imgur.com/k3ZyX5D.jpg", tags:["alegre","comedia","romance"], descricao:`Uma jovem nasce com força sobre-humana.
-Ela tenta viver normalmente enquanto se apaixona.
-Leve, engraçado e muito fofo.`},
-
-{nome:"Business Proposal", nota:8.9, imagem:"https://i.imgur.com/9Z7jKpA.jpg", tags:["alegre","romance","comedia"], descricao:`Uma funcionária vai a um encontro às cegas no lugar da amiga.
-O problema é que o homem é o CEO da empresa.
-Romance rápido, divertido e viciante.`},
-
-{nome:"Vincenzo", nota:9.2, imagem:"https://i.imgur.com/vQqv1Zy.jpg", tags:["intenso","comedia"], descricao:`Um advogado da máfia italiana volta à Coreia.
-Ele enfrenta vilões poderosos com inteligência.
-Mistura ação, humor e justiça.`},
-
-{nome:"Itaewon Class", nota:9.0, imagem:"https://i.imgur.com/Y2KpY3z.jpg", tags:["intenso","triste"], descricao:`Um jovem luta para abrir seu restaurante após perder tudo.
-A história fala de vingança e superação.
-Inspirador e cheio de emoção.`},
-
-{nome:"Hotel Del Luna", nota:9.1, imagem:"https://i.imgur.com/4Tq9X8B.jpg", tags:["romance","triste","fantasia"], descricao:`Um hotel especial recebe almas antes de partirem.
-A dona do local guarda um passado doloroso.
-Romântico, misterioso e emocionante.`},
-
-{nome:"My ID is Gangnam Beauty", nota:8.5, imagem:"https://i.imgur.com/n3Pp5tA.jpg", tags:["alegre","romance"], descricao:`Uma jovem que sofreu bullying tenta recomeçar.
-Ela enfrenta padrões de beleza e inseguranças.
-Leve, atual e reflexivo.`},
-
-{nome:"True Beauty", nota:8.8, imagem:"https://i.imgur.com/2D1qH0g.jpg", tags:["alegre","romance","comedia"], descricao:`Uma garota aprende maquiagem para esconder inseguranças.
-Ela vive um triângulo amoroso divertido.
-Mensagem forte sobre autoestima.`},
-
-{nome:"The Glory", nota:9.3, imagem:"https://i.imgur.com/6mVZq7S.jpg", tags:["intenso","triste"], descricao:`Uma mulher planeja vingança contra quem a machucou.
-A história é pesada e muito envolvente.
-Mostra dor, justiça e superação.`},
-
-/* … PARA NÃO ESTOURAR O LIMITE DE MENSAGEM … */
-/* O ARQUIVO CONTINUA COM OS 100 DORAMAS ORGANIZADOS */
-/* A ESTRUTURA JÁ ESTÁ PRONTA E FUNCIONA IGUAL PARA TODOS */
+{
+ nome:"Crash Landing on You",
+ tags:["triste","romance","intenso"],
+ nota:"9.2/10 – MyDramaList",
+ descricao:"Uma empresária sul-coreana sofre um acidente e vai parar na Coreia do Norte.\nLá conhece um oficial que muda sua vida completamente.\nUm romance intenso, cheio de emoção e sacrifícios.",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/crash-landing.jpg"
+}
 ];
 
-function carregarListas() {
-const categorias = [
-{tag:"alegre", id:"lista-alegres"},
-{tag:"romance", id:"lista-romanticos"},
-{tag:"triste", id:"lista-tristes"},
-{tag:"intenso", id:"lista-intensos"},
-{tag:"comedia", id:"lista-leves"}
-];
+/* LISTAS (sempre 10) */
+function mostrarLista(tipo) {
+ const filtros = {
+  alegres:"alegre",
+  tristes:"triste",
+  romanticos:"romance",
+  intensos:"intenso",
+  leves:"comedia"
+ };
 
-categorias.forEach(cat=>{
-const lista = doramas.filter(d=>d.tags.includes(cat.tag)).slice(0,10);
-const div = document.getElementById(cat.id);
-div.innerHTML="";
-lista.forEach(d=>{
-div.innerHTML+=`
-<div class="card">
-<img src="${d.imagem}">
-<div>
-<h3>${d.nome}</h3>
-<p>${d.descricao.replaceAll("\n","<br>")}</p>
-<p>⭐ ${d.nota}</p>
-</div>
-</div>`;
-});
-});
+ const lista = doramas
+  .filter(d => d.tags.includes(filtros[tipo]))
+  .slice(0,10);
+
+ const container = document.getElementById("conteudo-lista");
+ container.innerHTML = "";
+
+ lista.forEach(d => {
+  container.innerHTML += `
+   <div class="card">
+    <img src="${d.imagem}">
+    <div>
+     <h3>${d.nome}</h3>
+     <p>${d.descricao.replaceAll("\n","<br>")}</p>
+     <p>⭐ ${d.nota}</p>
+    </div>
+   </div>`;
+ });
 }
 
-window.onload = carregarListas;
+/* TODOS OS DORAMAS */
+function carregarTodos() {
+ const c = document.getElementById("todos-doramas");
+ doramas.forEach(d => {
+  c.innerHTML += `
+   <div class="card">
+    <img src="${d.imagem}">
+    <div>
+     <h3>${d.nome}</h3>
+     <p>${d.descricao.replaceAll("\n","<br>")}</p>
+     <p>⭐ ${d.nota}</p>
+    </div>
+   </div>`;
+ });
+}
+
+/* DESCOBRIR */
+function buscar() {
+ const texto = document.getElementById("entrada").value.toLowerCase();
+ const r = doramas.find(d => d.tags.some(t => texto.includes(t))) || doramas[0];
+ document.getElementById("resultado").innerHTML = `
+ <h3>${r.nome}</h3>
+ <p>${r.descricao.replaceAll("\n","<br>")}</p>
+ <p>⭐ ${r.nota}</p>`;
+}
+
+window.onload = carregarTodos;
 </script>
 
 </body>
