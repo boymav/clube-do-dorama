@@ -384,6 +384,13 @@ function carregarDoramaDaURL() {
 
         if (dorama) {
 
+            // MOSTRAR SEÇÃO DETALHE
+            document.getElementById("detalhe").style.display = "block";
+            document.getElementById("inicio").style.display = "none";
+            document.getElementById("listas").style.display = "none";
+            document.getElementById("todos").style.display = "none";
+            document.getElementById("descubra").style.display = "none";
+
             document.getElementById("conteudo-detalhe").innerHTML = `
                 <h2>${dorama.nome}</h2>
                 <img src="${dorama.imagem}" style="width:300px;border-radius:10px;">
@@ -398,5 +405,6 @@ function carregarDoramaDaURL() {
         }
     }
 }
+
 
 carregarDoramaDaURL();
