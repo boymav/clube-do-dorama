@@ -696,36 +696,6 @@ function buscar() {
  });
 }
 
- }
-
- let resultados;
-
- if (categoriasDetectadas.length > 0) {
-  resultados = doramas.filter(d =>
-   categoriasDetectadas.some(cat => d.tags.includes(cat))
-  );
- } else {
-  resultados = doramas;
- }
-
- resultados = resultados.sort(() => 0.5 - Math.random()).slice(0,3);
-
- const div = document.getElementById("resultado");
- div.innerHTML = "";
-
- resultados.forEach(d => {
-  div.innerHTML += `
-   <div class="card" style="margin:10px auto; max-width:300px;">
-    <img src="${d.imagem}">
-    <div>
-     <h3>${d.nome}</h3>
-     <p>${d.descricao.replaceAll("\n","<br>")}</p>
-     <p>⭐ ${d.nota}</p>
-    </div>
-   </div>`;
- });
-}
-
 window.onload = carregarTodos;
 </script>
 
