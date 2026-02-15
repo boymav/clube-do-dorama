@@ -651,11 +651,49 @@ function carregarTodos() {
 /* DESCOBRIR */
 function buscar() {
  const texto = document.getElementById("entrada").value.toLowerCase();
- const r = doramas.find(d => d.tags.some(t => texto.includes(t))) || doramas[0];
- document.getElementById("resultado").innerHTML = `
- <h3>${r.nome}</h3>
- <p>${r.descricao.replaceAll("\n","<br>")}</p>
- <p>⭐ ${r.nota}</p>`;
+
+ const mapa = {
+  triste:["triste","chorar","sofrer","emoção","drama"],
+  romance:["amor","romance","casal","relacionamento","apaixonado"],
+  alegre:["feliz","leve","engraçado","fofo","divertido"],
+  intenso:["ação","vingança","suspense","forte","crime"],
+  comedia:["comedia","engraçado","risada","leve"]
+ };
+
+ let categoriasDetectadas = [];
+
+ for (let categoria in mapa) {
+  if (mapa[categoria].some(p => texto.includes(p))) {
+   categoriasDetectadas.push(categoria);
+  }
+ }
+
+ let resultados;
+
+ if (categoriasDetectadas.length > 0) {
+  resultados = doramas.filter(d =>
+   categoriasDetectadas.some(cat => d.tags.includes(cat))
+  );
+ } else {
+  resultados = doramas;
+ }
+
+ resultados = resultados.sort(() => 0.5 - Math.random()).slice(0,3);
+
+ const div = document.getElementById("resultado");
+ div.innerHTML = "";
+
+ resultados.forEach(d => {
+  div.innerHTML += `
+   <div class="card" style="margin:10px auto; max-width:300px;">
+    <img src="${d.imagem}">
+    <div>
+     <h3>${d.nome}</h3>
+     <p>${d.descricao.replaceAll("\n","<br>")}</p>
+     <p>⭐ ${d.nota}</p>
+    </div>
+   </div>`;
+ });
 }
 
 window.onload = carregarTodos;
