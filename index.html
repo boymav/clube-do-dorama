@@ -663,7 +663,7 @@ function renderizarPagina() {
 
  pagina.forEach(d => {
   container.innerHTML += `
-   <div class="card">
+   <div class="card" onclick="abrirDetalhe('${d.nome}')">
     <img src="${d.imagem}">
     <div>
      <h3>${d.nome}</h3>
@@ -701,7 +701,7 @@ function carregarTodos() {
  const c = document.getElementById("todos-doramas");
  doramas.forEach(d => {
   c.innerHTML += `
-   <div class="card">
+   <div class="card" onclick="abrirDetalhe('${d.nome}')">
     <img src="${d.imagem}">
     <div>
      <h3>${d.nome}</h3>
