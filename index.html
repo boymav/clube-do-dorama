@@ -603,12 +603,7 @@ const doramas = [
 
 
 /* LISTAS (sempre 10) */
-let paginaAtual = 1;
-let categoriaAtual = "";
-const porPagina = 10;
-
 function mostrarLista(tipo) {
-
  const filtros = {
   alegres:"alegre",
   tristes:"triste",
@@ -617,25 +612,14 @@ function mostrarLista(tipo) {
   leves:"comedia"
  };
 
- categoriaAtual = filtros[tipo];
- paginaAtual = 1;
-
- renderizarPagina();
-}
-
-function renderizarPagina() {
-
- const lista = doramas.filter(d => d.tags.includes(categoriaAtual));
-
- const inicio = (paginaAtual - 1) * porPagina;
- const fim = inicio + porPagina;
-
- const pagina = lista.slice(inicio, fim);
+ const lista = doramas
+  .filter(d => d.tags.includes(filtros[tipo]))
+  .slice(0,10);
 
  const container = document.getElementById("conteudo-lista");
  container.innerHTML = "";
 
- pagina.forEach(d => {
+ lista.forEach(d => {
   container.innerHTML += `
    <div class="card">
     <img src="${d.imagem}">
@@ -646,29 +630,6 @@ function renderizarPagina() {
     </div>
    </div>`;
  });
-
- container.innerHTML += `
-  <div style="width:100%; text-align:center; margin-top:20px;">
-   <button onclick="anterior()">⬅ Anterior</button>
-   <button onclick="proxima()">Próxima ➡</button>
-  </div>`;
-}
-
-function anterior() {
- if (paginaAtual > 1) {
-  paginaAtual--;
-  renderizarPagina();
- }
-}
-
-function proxima() {
- const lista = doramas.filter(d => d.tags.includes(categoriaAtual));
- if (paginaAtual * porPagina < lista.length) {
-  paginaAtual++;
-  renderizarPagina();
- }
-}
-
 }
 
 /* TODOS OS DORAMAS */
