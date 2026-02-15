@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+id="conteudo-detalhe<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
@@ -165,6 +165,34 @@ por emoção, novidades do mundo dorameiro e recomendações sob medida.
 <footer>
 <p>💜 Clube do Dorama — feito com amor para dorameiros</p>
 </footer>
+// =============================
+// CARREGAR DORAMA PELA URL
+// =============================
+function carregarDoramaDaURL() {
+    const params = new URLSearchParams(window.location.search);
+    const nome = params.get("dorama");
+
+    if (nome) {
+        const dorama = doramas.find(d => d.nome === nome);
+
+        if (dorama) {
+
+            document.getElementById("conteudo-detalhe").innerHTML = `
+                <h2>${dorama.nome}</h2>
+                <img src="${dorama.imagem}" style="width:300px;border-radius:10px;">
+                <p>${(dorama.resumo || dorama.descricao).replaceAll("\n","<br>")}</p>
+                <p><strong>⭐ ${dorama.nota}</strong></p>
+                <button onclick="window.location.href='index.html'">⬅ Voltar</button>
+            `;
+
+            document.getElementById("detalhe").scrollIntoView({ behavior: "smooth" });
+
+            document.title = dorama.nome + " | Clube do Dorama";
+        }
+    }
+}
+
+carregarDoramaDaURL();
 
 <script>
 /* BANCO DE DORAMAS (PROVISÓRIO) */
@@ -785,6 +813,10 @@ function buscar() {
  });
 }
 function abrirDetalhe(nome) {
+    const nomeFormatado = encodeURIComponent(nome);
+    window.location.href = `index.html?dorama=${nomeFormatado}`;
+}
+
 
  const dorama = doramas.find(d => d.nome === nome);
 
