@@ -42,12 +42,6 @@ h2 {
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
-}
-.card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
 .card img {
     width: 100%;
@@ -81,31 +75,46 @@ input[type=text] {
     border-radius: 5px;
     border:1px solid #ccc;
 }
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
 section {
     animation: fadeIn 0.5s ease;
 }
+
 @keyframes fadeIn {
     from { opacity:0; transform:translateY(10px); }
     to { opacity:1; transform:translateY(0); }
 }
+
 #conteudo-detalhe p {
     line-height: 1.7;
     text-align: justify;
 }
+
 </style>
+
 </head>
 
 <body>
 
 <header>
-<h1>🎬 Clube do Dorama</h1>
-<p>Descubra doramas perfeitos para o seu momento 💕</p>
-<nav>
-<a href="#inicio">Início</a>
-<a href="#listas">Listas 💖</a>
-<a href="#todos">Todos os Doramas 📚</a>
-<a href="#descubra">Descubra seu Dorama 🤖</a>
-</nav>
+    <h1>🎬 Clube do Dorama</h1>
+    <p>Descubra doramas perfeitos para o seu momento 💕</p>
+    <nav>
+        <a href="#inicio">Início</a>
+        <a href="#listas">Listas 💖</a>
+        <a href="#todos">Todos os Doramas 📚</a>
+        <a href="#descubra">Descubra seu Dorama 🤖</a>
+    </nav>
 </header>
 
 <section id="inicio">
@@ -119,13 +128,15 @@ por emoção, novidades do mundo dorameiro e recomendações sob medida.
 
 <section id="listas">
 <h2>📋 Listas de Doramas</h2>
+
 <div style="text-align:center; margin-bottom:20px;">
-<button onclick="mostrarLista('alegres')">😄 Alegres</button>
-<button onclick="mostrarLista('tristes')">😭 Tristes</button>
-<button onclick="mostrarLista('romanticos')">💖 Românticos</button>
-<button onclick="mostrarLista('intensos')">🔥 Intensos</button>
-<button onclick="mostrarLista('leves')">😂 Leves</button>
+    <button onclick="mostrarLista('alegres')">😄 Alegres</button>
+    <button onclick="mostrarLista('tristes')">😭 Tristes</button>
+    <button onclick="mostrarLista('romanticos')">💖 Românticos</button>
+    <button onclick="mostrarLista('intensos')">🔥 Intensos</button>
+    <button onclick="mostrarLista('leves')">😂 Leves</button>
 </div>
+
 <div id="conteudo-lista" class="cards"></div>
 </section>
 
@@ -138,12 +149,11 @@ por emoção, novidades do mundo dorameiro e recomendações sob medida.
 <h2>🤖 Descubra seu Dorama</h2>
 <p style="text-align:center;">Escreva como você está se sentindo:</p>
 <div style="text-align:center;">
-<input type="text" id="entrada" placeholder="Ex: triste, feliz, romance...">
-<button onclick="buscar()">Buscar</button>
+    <input type="text" id="entrada" placeholder="Ex: triste, feliz, romance...">
+    <button onclick="buscar()">Buscar</button>
 </div>
 <div id="resultado" style="text-align:center; margin-top:20px; font-weight:bold;"></div>
 </section>
-
 <section id="detalhe" style="display:none;">
 <h2>🎬 Detalhes do Dorama</h2>
 <div id="conteudo-detalhe" style="max-width:800px; margin:auto;"></div>
@@ -157,12 +167,8 @@ por emoção, novidades do mundo dorameiro e recomendações sob medida.
 </footer>
 
 <script>
-/* ============================= */
-/* BANCO DE DORAMAS */
-/* ============================= */
-
+/* BANCO DE DORAMAS (PROVISÓRIO) */
 const doramas = [
-
 {
  nome:"Crash Landing on You",
  tags:["triste","romance","intenso"],
@@ -186,8 +192,8 @@ o casal enfrenta escolhas difíceis e grandes sacrifícios.
 
 É uma história emocionante sobre amor que ultrapassa fronteiras e ideologias.`,
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/crash-landing.jpg"
-},
-
+}
+,
 {
  nome:"Goblin",
  tags:["romance","triste","fantasia"],
@@ -195,7 +201,6 @@ o casal enfrenta escolhas difíceis e grandes sacrifícios.
  descricao:"Um ser imortal vive há séculos esperando o fim de sua maldição.\nTudo muda quando conhece uma jovem especial.\nUma história profunda sobre amor eterno e despedidas.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/Goblin.jpg"
 },
-
 {
  nome:"Business Proposal",
  tags:["alegre","comedia","romance"],
@@ -203,7 +208,6 @@ o casal enfrenta escolhas difíceis e grandes sacrifícios.
  descricao:"Um encontro às cegas vira confusão quando ela conhece o próprio chefe.\nSituações engraçadas e muito romance.\nLeve, divertido e perfeito para relaxar.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/a-business-proposal-recap-episode-one-two-main.jpeg"
 },
-
 {
  nome:"Strong Woman Do Bong Soon",
  tags:["alegre","comedia","romance"],
@@ -211,7 +215,6 @@ o casal enfrenta escolhas difíceis e grandes sacrifícios.
  descricao:"Uma jovem nasce com força sobrenatural.\nEla tenta viver normalmente enquanto protege quem ama.\nMistura perfeita de comédia, ação e romance.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/strong-woman-do-bong-soon.jpg"
 },
-
 {
  nome:"It's Okay to Not Be Okay",
  tags:["romance","intenso","triste"],
@@ -219,7 +222,6 @@ o casal enfrenta escolhas difíceis e grandes sacrifícios.
  descricao:"Um cuidador emocionalmente fechado conhece uma escritora excêntrica.\nAmbos carregam traumas profundos.\nUma história sensível sobre cura e amor.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/its%20ok%20do%20not%20be%20ok.jpg"
 },
-
 {
  nome:"Itaewon Class",
  tags:["intenso","romance"],
@@ -227,7 +229,6 @@ o casal enfrenta escolhas difíceis e grandes sacrifícios.
  descricao:"Um jovem luta para vencer injustiças do passado.\nEle abre um bar em Itaewon com grandes sonhos.\nDrama de superação, amizade e amor.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/itaewon%20class.webp"
 },
-
 {
  nome:"Vincenzo",
  tags:["alegre","intenso","comedia"],
@@ -235,7 +236,6 @@ o casal enfrenta escolhas difíceis e grandes sacrifícios.
  descricao:"Um advogado da máfia italiana retorna à Coreia.\nEle enfrenta vilões poderosos de forma inusitada.\nAção, humor ácido e justiça.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/vincenzo.jpg"
 },
-
 {
  nome:"Reply 1988",
  tags:["alegre","romance"],
@@ -243,7 +243,6 @@ o casal enfrenta escolhas difíceis e grandes sacrifícios.
  descricao:"Famílias e amigos vivem no mesmo bairro nos anos 80.\nHistória cheia de nostalgia e afeto.\nUm dorama sobre crescer e amar.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/reply%201988.jpg"
 },
-
 {
  nome:"Hotel Del Luna",
  tags:["romance","triste","fantasia"],
@@ -251,7 +250,6 @@ o casal enfrenta escolhas difíceis e grandes sacrifícios.
  descricao:"Um hotel misterioso recebe apenas almas perdidas.\nSua dona carrega uma grande culpa do passado.\nFantasia com romance e emoção.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/hotel%20del%20luna.jpg"
 },
-
 {
  nome:"Descendants of the Sun",
  tags:["romance","intenso"],
@@ -266,7 +264,6 @@ o casal enfrenta escolhas difíceis e grandes sacrifícios.
  descricao:"Um alienígena vive na Terra há séculos.\nEle se apaixona por uma atriz famosa.\nRomance leve com toques de fantasia.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/You_Who_Came_From_the_Stars_Cover.jpg"
 },
-
 {
  nome:"Weightlifting Fairy Kim Bok Joo",
  tags:["alegre","romance","comedia"],
@@ -274,7 +271,6 @@ o casal enfrenta escolhas difíceis e grandes sacrifícios.
  descricao:"Uma jovem atleta sonha em ser campeã de levantamento de peso.\nEla vive sua juventude entre amigos e amor.\nDoce, divertido e inspirador.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/Weightlifting%20Fairy%20Kim%20Bok%20Joo.webp"
 },
-
 {
  nome:"True Beauty",
  tags:["alegre","romance","comedia"],
@@ -282,7 +278,6 @@ o casal enfrenta escolhas difíceis e grandes sacrifícios.
  descricao:"Uma garota aprende a se maquiar para esconder inseguranças.\nEla vive um triângulo amoroso na escola.\nComédia romântica leve.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/True%20Beauty.jpg"
 },
-
 {
  nome:"Moon Lovers: Scarlet Heart Ryeo",
  tags:["romance","triste","intenso"],
@@ -290,7 +285,6 @@ o casal enfrenta escolhas difíceis e grandes sacrifícios.
  descricao:"Uma mulher volta no tempo para a era Goryeo.\nEla se envolve com vários príncipes.\nRomance histórico cheio de dor.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/moon%20lovers%201.webp"
 },
-
 {
  nome:"The Heirs",
  tags:["romance","triste"],
@@ -298,7 +292,6 @@ o casal enfrenta escolhas difíceis e grandes sacrifícios.
  descricao:"Jovens ricos vivem conflitos amorosos e familiares.\nDiferenças sociais marcam os relacionamentos.\nClássico do romance escolar.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/The%20Heirs.jpg"
 },
-
 {
  nome:"Start-Up",
  tags:["romance","alegre","intenso"],
@@ -306,7 +299,6 @@ o casal enfrenta escolhas difíceis e grandes sacrifícios.
  descricao:"Jovens tentam realizar seus sonhos no mundo das startups.\nAmor, ambição e desafios se misturam.\nInspirador e emocionante.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/startup.jpg"
 },
-
 {
  nome:"Hometown Cha-Cha-Cha",
  tags:["romance","alegre","comedia"],
@@ -314,7 +306,6 @@ o casal enfrenta escolhas difíceis e grandes sacrifícios.
  descricao:"Uma dentista se muda para uma vila à beira-mar.\nEla conhece um faz-tudo muito carismático.\nRomance leve e aconchegante.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/cha.jpg"
 },
-
 {
  nome:"Because This Is My First Life",
  tags:["romance","triste"],
@@ -322,7 +313,6 @@ o casal enfrenta escolhas difíceis e grandes sacrifícios.
  descricao:"Um casamento por contrato muda duas vidas.\nEles aprendem a lidar com sentimentos reais.\nRomance maduro e sensível.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/firstlife.jpg"
 },
-
 {
  nome:"W: Two Worlds",
  tags:["romance","fantasia","intenso"],
@@ -330,7 +320,6 @@ o casal enfrenta escolhas difíceis e grandes sacrifícios.
  descricao:"Dois mundos se conectam através de um webtoon.\nRealidade e ficção se misturam.\nRomance cheio de ação.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/w.jpg"
 },
-
 {
  nome:"While You Were Sleeping",
  tags:["romance","fantasia","intenso"],
@@ -339,72 +328,487 @@ o casal enfrenta escolhas difíceis e grandes sacrifícios.
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/sleeping.jpg"
 },
 {
+ nome:"Her Private Life",
+ tags:["romance","alegre","comedia"],
+ nota:"8.5/10 – MyDramaList",
+ descricao:"Uma curadora de arte leva uma vida dupla.\nEla é fã secreta de um idol.\nRomance divertido e leve.",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/private.jpg"
+},
+{
+ nome:"Touch Your Heart",
+ tags:["romance","alegre","comedia"],
+ nota:"8.4/10 – MyDramaList",
+ descricao:"Uma atriz trabalha como secretária temporária.\nEla se envolve com um advogado sério.\nDoce e romântico.",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/touch.jpg"
+},
+{
+ nome:"My ID is Gangnam Beauty",
+ tags:["romance","alegre"],
+ nota:"8.2/10 – MyDramaList",
+ descricao:"Uma jovem muda sua aparência para recomeçar.\nEla enfrenta preconceitos na faculdade.\nMensagem forte sobre autoestima.",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/gangnam.jpg"
+},
+{
+ nome:"18 Again",
+ tags:["romance","triste","alegre"],
+ nota:"8.7/10 – MyDramaList",
+ descricao:"Um homem volta ao corpo de seus 18 anos.\nEle tenta consertar erros do passado.\nComédia com emoção.",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/18again.jpg"
+},
+{
  nome:"Extraordinary Attorney Woo",
- tags:["romance","alegre","intenso"],
+ tags:["alegre","romance"],
  nota:"9.0/10 – MyDramaList",
- descricao:"Uma advogada brilhante dentro do espectro autista enfrenta desafios no trabalho.\nHistória emocionante sobre superação.",
+ descricao:"Uma advogada brilhante dentro do espectro autista.\nEla enfrenta desafios no trabalho.\nDoce, humano e inspirador.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/woo.jpg"
 },
-
 {
- nome:"The Glory",
- tags:["intenso","triste"],
- nota:"9.1/10 – MyDramaList",
- descricao:"Uma mulher planeja vingança contra quem destruiu sua vida na juventude.\nDrama forte e impactante.",
- imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/glory.jpg"
-},
-
-{
- nome:"Twenty-Five Twenty-One",
- tags:["romance","triste"],
- nota:"8.9/10 – MyDramaList",
- descricao:"Jovens vivem seus sonhos e amores nos anos 90.\nUma história nostálgica e emocionante.",
- imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/2521.jpg"
-},
-
-{
- nome:"King the Land",
- tags:["romance","alegre","comedia"],
+ nome:"The King: Eternal Monarch",
+ tags:["romance","fantasia","intenso"],
  nota:"8.3/10 – MyDramaList",
- descricao:"Um herdeiro rico e uma funcionária sorridente vivem um romance inesperado.\nLeve e divertido.",
+ descricao:"Universos paralelos se conectam.\nUm rei busca salvar seu mundo.\nRomance épico com fantasia.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/king.jpg"
+},
+{
+ nome:"Mr. Sunshine",
+ tags:["triste","intenso","romance"],
+ nota:"9.1/10 – MyDramaList",
+ descricao:"Um coreano retorna como soldado americano.\nEle vive um amor impossível.\nDrama histórico poderoso.",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/sunshine.jpg"
+},
+{
+ nome:"Healer",
+ tags:["romance","intenso"],
+ nota:"8.9/10 – MyDramaList",
+ descricao:"Um mensageiro misterioso trabalha nas sombras.\nEle se envolve com uma jornalista.\nAção, romance e suspense.",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/healer.jpg"
+},
+{
+ nome:"Coffee Prince",
+ tags:["romance","alegre","comedia"],
+ nota:"8.6/10 – MyDramaList",
+ descricao:"Uma garota se passa por garoto para trabalhar.\nUm romance inesperado surge.\nClássico divertido e romântico.",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/coffee.jpg"
+},
+{
+ nome:"Secret Garden",
+ tags:["romance","fantasia","alegre"],
+ nota:"8.2/10 – MyDramaList",
+ descricao:"Um casal troca de corpos misteriosamente.\nEles aprendem a se entender.\nRomance clássico com fantasia.",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/secretgarden.jpg"
+},
+{
+ nome:"The Legend of the Blue Sea",
+ tags:["romance","fantasia","comedia"],
+ nota:"8.6/10 – MyDramaList",
+ descricao:"Uma sereia chega ao mundo humano.\nEla se apaixona por um golpista.\nRomance divertido e mágico.",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/bluesea.jpg"
+},
+{
+ nome:"Doom at Your Service",
+ tags:["romance","fantasia","triste"],
+ nota:"8.4/10 – MyDramaList",
+ descricao:"Uma mulher faz um contrato com a própria destruição.\nEles vivem um amor impossível.\nRomance melancólico.",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/doom.jpg"
+},
+{
+ nome:"Our Beloved Summer",
+ tags:["romance","triste","alegre"],
+ nota:"8.8/10 – MyDramaList",
+ descricao:"Ex-namorados se reencontram anos depois.\nSentimentos mal resolvidos voltam.\nRomance realista e sensível.",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/summer.jpg"
+},
+{
+ nome:"Flower of Evil",
+ tags:["intenso","romance","triste"],
+ nota:"9.1/10 – MyDramaList",
+ descricao:"Um homem esconde um passado sombrio.\nSua esposa é detetive.\nSuspense psicológico poderoso.",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/flower.jpg"
+},
+{
+ nome:"Sky Castle",
+ tags:["intenso","triste"],
+ nota:"8.9/10 – MyDramaList",
+ descricao:"Famílias ricas disputam o futuro dos filhos.\nPressão extrema e ambição.\nCrítica social forte.",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/skyc.jpg"
+},
+{
+ nome:"Prison Playbook",
+ tags:["alegre","triste"],
+ nota:"8.8/10 – MyDramaList",
+ descricao:"Um jogador de beisebol vai parar na prisão.\nHistórias humanas se cruzam.\nDrama com humor e emoção.",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/prison.jpg"
+},
+{
+ nome:"Because of Meeting You",
+ tags:["romance","alegre"],
+ nota:"8.3/10 – MyDramaList",
+ descricao:"Destinos se cruzam de forma inesperada.\nLaços se fortalecem.\nRomance simples e agradável.",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/meeting.jpg"
+},
+{
+ nome:"Arthdal Chronicles",
+ tags:["fantasia","intenso"],
+ nota:"8.4/10 – MyDramaList",
+ descricao:"Um mundo antigo marcado por guerras e poder.\nDestinos se entrelaçam.\nÉpico histórico.",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/arthdal.jpg"
+},
+{
+ nome:"My Mister",
+ tags:["triste","intenso"],
+ nota:"9.2/10 – MyDramaList",
+ descricao:"Duas almas feridas se apoiam.\nVida adulta com dores reais.\nProfundo e tocante.",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/mymister.jpg"
+},
+{
+ nome:"Fight For My Way",
+ tags:["alegre","romance"],
+ nota:"8.7/10 – MyDramaList",
+ descricao:"Amigos lutam por seus sonhos.\nRomance nasce aos poucos.\nMotivador e divertido.",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/fight.jpg"
+},
+{
+ nome:"Hospital Playlist",
+ tags:["alegre","romance"],
+ nota:"9.1/10 – MyDramaList",
+ descricao:"Cinco médicos são amigos há anos.\nEles dividem a rotina do hospital e a vida pessoal.\nHumano, leve e emocionante.",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/hospital.jpg"
+},
+{
+ nome:"A Business Proposal",
+ tags:["romance","comedia","alegre"],
+ nota:"8.6/10 – MyDramaList",
+ descricao:"Um encontro falso vira romance real.\nSegredos e situações engraçadas surgem.\nLeve e viciante.",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/business.jpg"
+},
+{
+ nome:"Nevertheless",
+ tags:["romance","triste"],
+ nota:"7.6/10 – MyDramaList",
+ descricao:"Um romance intenso e complicado.\nSentimentos confusos dominam o casal.\nRealista e melancólico.",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/nevertheless.jpg"
+},
+{
+ nome:"Love Alarm",
+ tags:["romance","alegre"],
+ nota:"7.5/10 – MyDramaList",
+ descricao:"Um aplicativo revela quem gosta de você.\nTriângulos amorosos surgem.\nRomance jovem.",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/lovealarm.jpg"
+},
+{
+ nome:"Snowdrop",
+ tags:["romance","triste","intenso"],
+ nota:"8.4/10 – MyDramaList",
+ descricao:"Amor proibido em tempos políticos difíceis.\nSegredos e sacrifícios.\nDrama intenso.",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/snowdrop.jpg"
+},
+{
+ nome:"Mouse",
+ tags:["intenso","triste"],
+ nota:"8.9/10 – MyDramaList",
+ descricao:"Um serial killer assombra a Coreia.\nQuestões morais profundas surgem.\nSuspense psicológico pesado.",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/mouse.jpg"
+},
+{
+ nome:"Signal",
+ tags:["intenso","triste"],
+ nota:"9.0/10 – MyDramaList",
+ descricao:"Um walkie-talkie liga passado e presente.\nCasos antigos são reabertos.\nSuspense brilhante.",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/signal.jpg"
+},
+{
+ nome:"Kingdom",
+ tags:["intenso","triste"],
+ nota:"8.9/10 – MyDramaList",
+ descricao:"Uma praga transforma pessoas em monstros.\nUm príncipe luta para salvar o reino.\nAção histórica com terror.",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/kingdom.jpg"
+},
+{
+ nome:"Sweet Home",
+ tags:["intenso","triste"],
+ nota:"8.3/10 – MyDramaList",
+ descricao:"Humanos se transformam em monstros.\nSobrevivência e drama.\nSombrio e intenso.",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/sweethome.jpg"
+},
+{
+ nome:"My Name",
+ tags:["intenso","triste"],
+ nota:"8.7/10 – MyDramaList",
+ descricao:"Uma mulher busca vingança.\nEla entra no mundo do crime.\nAção pesada.",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/myname.jpg"
+},
+{
+ nome:"Strongest Deliveryman",
+ tags:["alegre","romance"],
+ nota:"8.1/10 – MyDramaList",
+ descricao:"Entregadores sonham com uma vida melhor.\nRomance simples e inspirador.\nMotivador.",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/delivery.jpg"
+},
+{
+ nome:"Youth of May",
+ tags:["romance","triste"],
+ nota:"8.8/10 – MyDramaList",
+ descricao:"Amor em meio a um momento histórico.\nEscolhas difíceis e dor.\nMuito emocionante.",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/youth.jpg"
+},
+{
+ nome:"Rookie Historian Goo Hae Ryung",
+ tags:["romance","alegre"],
+ nota:"8.3/10 – MyDramaList",
+ descricao:"Uma mulher desafia padrões sociais.\nEla se torna historiadora.\nRomance histórico leve.",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/historian.jpg"
+},
+{
+ nome:"The Red Sleeve",
+ tags:["romance","triste","intenso"],
+ nota:"9.0/10 – MyDramaList",
+ descricao:"Um rei se apaixona por uma dama da corte.\nAmor impossível.\nHistórico emocionante.",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/red.jpg"
+},
+{
+ nome:"Alchemy of Souls",
+ tags:["fantasia","romance","intenso"],
+ nota:"9.0/10 – MyDramaList",
+ descricao:"Almas trocam de corpos.\nMagia e destino se cruzam.\nFantasia envolvente.",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/alchemy.jpg"
+},
+{
+ nome:"Doctor Stranger",
+ tags:["romance","intenso"],
+ nota:"8.2/10 – MyDramaList",
+ descricao:"Um médico com passado doloroso.\nAmor e conspirações.\nDrama médico intenso.",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/doctor.jpg"
+},
+{
+ nome:"The Good Bad Mother",
+ tags:["triste","romance"],
+ nota:"8.9/10 – MyDramaList",
+ descricao:"Relação difícil entre mãe e filho.\nSegundas chances.\nEmocionante.",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/mother.jpg"
+},
+{
+ nome:"Bad and Crazy",
+ tags:["alegre","intenso"],
+ nota:"8.4/10 – MyDramaList",
+ descricao:"Um policial corrupto enfrenta seu outro lado.\nAção e humor.\nDiferente e divertido.",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/badcrazy.jpg"
+},
+{
+ nome:"Romance Is a Bonus Book",
+ tags:["romance","alegre"],
+ nota:"8.6/10 – MyDramaList",
+ descricao:"Uma mulher recomeça a carreira.\nAmor nasce no trabalho.\nDoce e inspirador.",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/bonus.jpg"
+},
+{
+ nome:"Navillera",
+ tags:["triste","alegre"],
+ nota:"8.9/10 – MyDramaList",
+ descricao:"Um senhor sonha em aprender balé.\nAmizade entre gerações.\nLindo e sensível.",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/navillera.jpg"
+},
+{
+ nome:"D.P.",
+ tags:["intenso","triste"],
+ nota:"8.8/10 – MyDramaList",
+ descricao:"Soldados caçam desertores do exército.\nRealidade dura.\nDrama forte.",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/dp.jpg"
+},
+{
+ nome:"Move to Heaven",
+ tags:["triste","alegre"],
+ nota:"9.1/10 – MyDramaList",
+ descricao:"Jovens lidam com histórias de pessoas falecidas.\nLuto e empatia.\nExtremamente tocante.",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/movetoheaven.jpg"
+},
+{
+ nome:"Little Women",
+ tags:["intenso","triste"],
+ nota:"8.8/10 – MyDramaList",
+ descricao:"Três irmãs enfrentam uma família poderosa.\nSegredos e corrupção.\nSuspense moderno.",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/littlewomen.jpg"
+},
+{
+ nome:"Reborn Rich",
+ tags:["intenso"],
+ nota:"9.0/10 – MyDramaList",
+ descricao:"Um homem renasce em família rica.\nBusca vingança.\nDrama corporativo forte.",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/reborn.jpg"
+},
+{
+ nome:"Big Mouth",
+ tags:["intenso","romance"],
+ nota:"8.6/10 – MyDramaList",
+ descricao:"Um advogado vira lenda do crime.\nConspirações perigosas.\nSuspense eletrizante.",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/bigmouth.jpg"
+},
+{
+ nome:"Queen of Tears",
+ tags:["romance","triste"],
+ nota:"9.2/10 – MyDramaList",
+ descricao:"Um casal enfrenta crise profunda.\nAmor, dor e reconciliação.\nMuito emocionante.",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/queentears.jpg"
 }
 
-]; // ← AQUI FECHA O ARRAY
-/* ============================= */
-/* CARREGAR DORAMA PELA URL */
-/* ============================= */
+];
 
-function carregarDoramaDaURL() {
-    const params = new URLSearchParams(window.location.search);
-    const nome = params.get("dorama");
 
-    if (nome) {
-        const dorama = doramas.find(d => d.nome === nome);
+/* LISTAS (sempre 10) */
+let paginaAtual = 1;
+let categoriaAtual = "";
+const porPagina = 10;
 
-        if (dorama) {
+function mostrarLista(tipo) {
 
-            // MOSTRAR SEÇÃO DETALHE
-            document.getElementById("detalhe").style.display = "block";
-            document.getElementById("inicio").style.display = "none";
-            document.getElementById("listas").style.display = "none";
-            document.getElementById("todos").style.display = "none";
-            document.getElementById("descubra").style.display = "none";
+ const filtros = {
+  alegres:"alegre",
+  tristes:"triste",
+  romanticos:"romance",
+  intensos:"intenso",
+  leves:"comedia"
+ };
 
-            document.getElementById("conteudo-detalhe").innerHTML = `
-                <h2>${dorama.nome}</h2>
-                <img src="${dorama.imagem}" style="width:300px;border-radius:10px;">
-                <p style="line-height:1.7; text-align:justify;">
-                ${(dorama.resumo || dorama.descricao).replaceAll("\n","<br>")}
-                </p>
-                <p><strong>⭐ ${dorama.nota}</strong></p>
-                <button onclick="window.location.href='index.html'">⬅ Voltar</button>
-            `;
+ categoriaAtual = filtros[tipo];
+ paginaAtual = 1;
 
-            document.title = dorama.nome + " | Clube do Dorama";
-        }
-    }
+ renderizarPagina();
+}
+
+function renderizarPagina() {
+
+ const lista = doramas.filter(d => d.tags.includes(categoriaAtual));
+
+ const inicio = (paginaAtual - 1) * porPagina;
+ const fim = inicio + porPagina;
+
+ const pagina = lista.slice(inicio, fim);
+
+ const container = document.getElementById("conteudo-lista");
+ container.innerHTML = "";
+
+ pagina.forEach(d => {
+  container.innerHTML += `
+   <div class="card" onclick="abrirDetalhe('${d.nome}')">
+    <img src="${d.imagem}">
+    <div>
+     <h3>${d.nome}</h3>
+     <p>${d.descricao.replaceAll("\n","<br>")}</p>
+     <p>⭐ ${d.nota}</p>
+    </div>
+   </div>`;
+ });
+
+ container.innerHTML += `
+  <div style="width:100%; text-align:center; margin-top:20px;">
+   <button onclick="anterior()">⬅ Anterior</button>
+   <button onclick="proxima()">Próxima ➡</button>
+  </div>`;
+}
+
+function anterior() {
+ if (paginaAtual > 1) {
+  paginaAtual--;
+  renderizarPagina();
+ }
+}
+
+function proxima() {
+ const lista = doramas.filter(d => d.tags.includes(categoriaAtual));
+ if (paginaAtual * porPagina < lista.length) {
+  paginaAtual++;
+  renderizarPagina();
+ }
 }
 
 
-carregarDoramaDaURL();
+/* TODOS OS DORAMAS */
+function carregarTodos() {
+ const c = document.getElementById("todos-doramas");
+ doramas.forEach(d => {
+  c.innerHTML += `
+   <div class="card" onclick="abrirDetalhe('${d.nome}')">
+    <img src="${d.imagem}">
+    <div>
+     <h3>${d.nome}</h3>
+     <p>${d.descricao.replaceAll("\n","<br>")}</p>
+     <p>⭐ ${d.nota}</p>
+    </div>
+   </div>`;
+ });
+}
+
+/* DESCOBRIR */
+function buscar() {
+ const texto = document.getElementById("entrada").value.toLowerCase();
+
+ const mapa = {
+  triste:["triste","chorar","sofrer","emoção","drama"],
+  romance:["amor","romance","casal","relacionamento","apaixonado"],
+  alegre:["feliz","leve","engraçado","fofo","divertido"],
+  intenso:["ação","vingança","suspense","forte","crime"],
+  comedia:["comedia","engraçado","risada","leve"]
+ };
+
+ let categoriasDetectadas = [];
+
+ for (let categoria in mapa) {
+  if (mapa[categoria].some(p => texto.includes(p))) {
+   categoriasDetectadas.push(categoria);
+  }
+ }
+
+ let resultados;
+
+ if (categoriasDetectadas.length > 0) {
+  resultados = doramas.filter(d =>
+   categoriasDetectadas.some(cat => d.tags.includes(cat))
+  );
+ } else {
+  resultados = doramas;
+ }
+
+ resultados = resultados.sort(() => 0.5 - Math.random()).slice(0,3);
+
+ const div = document.getElementById("resultado");
+ div.innerHTML = "";
+
+ resultados.forEach(d => {
+  div.innerHTML += `
+   <div class="card" style="margin:10px auto; max-width:300px;">
+    <img src="${d.imagem}">
+    <div>
+     <h3>${d.nome}</h3>
+     <p>${d.descricao.replaceAll("\n","<br>")}</p>
+     <p>⭐ ${d.nota}</p>
+    </div>
+   </div>`;
+ });
+}
+function abrirDetalhe(nome) {
+
+ const dorama = doramas.find(d => d.nome === nome);
+
+ document.getElementById("detalhe").style.display = "block";
+ document.getElementById("detalhe").scrollIntoView({behavior:"smooth"});
+
+ document.getElementById("conteudo-detalhe").innerHTML = `
+   <div class="card" style="width:100%;">
+    <img src="${dorama.imagem}" style="height:500px;">
+    <div>
+     <h2>${dorama.nome}</h2>
+     <p>${(dorama.resumo || dorama.descricao).replaceAll("\n","<br>")}</p>
+     <p style="font-size:18px;">⭐ ${dorama.nota}</p>
+    </div>
+   </div>
+ `;
+}
+
+function fecharDetalhe() {
+ document.getElementById("detalhe").style.display = "none";
+}
+
+window.onload = carregarTodos;
+</script>
+
+</body>
+</html>
