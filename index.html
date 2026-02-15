@@ -759,6 +759,28 @@ function buscar() {
    </div>`;
  });
 }
+function abrirDetalhe(nome) {
+
+ const dorama = doramas.find(d => d.nome === nome);
+
+ document.getElementById("detalhe").style.display = "block";
+ document.getElementById("detalhe").scrollIntoView({behavior:"smooth"});
+
+ document.getElementById("conteudo-detalhe").innerHTML = `
+   <div class="card" style="width:100%;">
+    <img src="${dorama.imagem}" style="height:500px;">
+    <div>
+     <h2>${dorama.nome}</h2>
+     <p>${dorama.descricao.replaceAll("\n","<br>")}</p>
+     <p style="font-size:18px;">⭐ ${dorama.nota}</p>
+    </div>
+   </div>
+ `;
+}
+
+function fecharDetalhe() {
+ document.getElementById("detalhe").style.display = "none";
+}
 
 window.onload = carregarTodos;
 </script>
