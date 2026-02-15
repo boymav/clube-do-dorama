@@ -792,7 +792,7 @@ function abrirDetalhe(nome) {
     <img src="${dorama.imagem}" style="height:500px;">
     <div>
      <h2>${dorama.nome}</h2>
-     <p>${dorama.descricao.replaceAll("\n","<br>")}</p>
+     <p>${(dorama.resumo || dorama.descricao).replaceAll("\n","<br>")}</p>
      <p style="font-size:18px;">⭐ ${dorama.nota}</p>
     </div>
    </div>
