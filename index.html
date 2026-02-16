@@ -164,13 +164,7 @@ por emoção, novidades do mundo dorameiro e recomendações sob medida.
 
 <footer>
 <p>💜 Clube do Dorama — feito com amor para dorameiros</p>
-
-<p id="contador-visitas" style="margin-top:10px; font-weight:bold;">
-🌸 Carregando visitas...
-</p>
-
 </footer>
-
 
 <script>
 /* BANCO DE DORAMAS (PROVISÓRIO) */
@@ -813,24 +807,8 @@ function fecharDetalhe() {
  document.getElementById("detalhe").style.display = "none";
 }
 
-window.onload = function() {
-
-    carregarTodos();
-
-    fetch("https://api.countapi.xyz/hit/clubedodorama-2026/visitas?amount=1")
-    .then(response => response.json())
-    .then(data => {
-        document.getElementById("contador-visitas").innerHTML =
-            "🌸 Já tivemos <strong>" + data.value + "</strong> dorameiros visitando o clube 💕";
-    })
-    .catch(() => {
-        document.getElementById("contador-visitas").innerHTML =
-            "🌸 Nosso clube está crescendo todos os dias 💖";
-    });
-
-};
+window.onload = carregarTodos;
 </script>
+
 </body>
 </html>
-
-
