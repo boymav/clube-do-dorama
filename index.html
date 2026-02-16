@@ -813,23 +813,24 @@ function fecharDetalhe() {
  document.getElementById("detalhe").style.display = "none";
 }
 
-window.onload = carregarTodos;
+window.onload = function() {
 
-/* ============================= */
-/* CONTADOR DE VISITAS */
-/* ============================= */
+    carregarTodos();
 
-fetch("https://api.countapi.xyz/hit/clubedodorama/visitas")
-.then(res => res.json())
-.then(data => {
-    document.getElementById("contador-visitas").innerHTML =
-    "🌸 Já tivemos <strong>" + data.value + "</strong> dorameiros visitando o clube 💕";
-})
-.catch(() => {
-    document.getElementById("contador-visitas").innerHTML =
-    "🌸 Contador indisponível 💔";
-});
+    fetch("https://api.countapi.xyz/hit/clubedodorama-2026/visitas?amount=1")
+    .then(response => response.json())
+    .then(data => {
+        document.getElementById("contador-visitas").innerHTML =
+            "🌸 Já tivemos <strong>" + data.value + "</strong> dorameiros visitando o clube 💕";
+    })
+    .catch(() => {
+        document.getElementById("contador-visitas").innerHTML =
+            "🌸 Nosso clube está crescendo todos os dias 💖";
+    });
+
+};
 </script>
 </body>
 </html>
+
 
