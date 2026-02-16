@@ -164,7 +164,13 @@ por emoção, novidades do mundo dorameiro e recomendações sob medida.
 
 <footer>
 <p>💜 Clube do Dorama — feito com amor para dorameiros</p>
+
+<p id="contador-visitas" style="margin-top:10px; font-weight:bold;">
+🌸 Carregando visitas...
+</p>
+
 </footer>
+
 
 <script>
 /* BANCO DE DORAMAS (PROVISÓRIO) */
@@ -808,6 +814,26 @@ function fecharDetalhe() {
 }
 
 window.onload = carregarTodos;
+}
+
+/* ============================= */
+/* CONTADOR DE VISITAS */
+/* ============================= */
+
+fetch("https://api.countapi.xyz/hit/clubedodorama/visitas")
+.then(res => res.json())
+.then(data => {
+    document.getElementById("contador-visitas").innerHTML =
+    "🌸 Já tivemos <strong>" + data.value + "</strong> dorameiros visitando o clube 💕";
+})
+.catch(() => {
+    document.getElementById("contador-visitas").innerHTML =
+    "🌸 Contador indisponível 💔";
+});
+</script>
+</body>
+</html>
+    
 </script>
 
 </body>
