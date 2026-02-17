@@ -23,7 +23,8 @@ o casal enfrenta escolhas difíceis e grandes sacrifícios.
 É uma história emocionante sobre amor que ultrapassa fronteiras e ideologias.`,
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/crash-landing.jpg",
  trailer:"https://www.youtube.com/embed/eXMjTXL2Vks"
-},
+}
+,
 {
  nome:"Goblin",
  tags:["romance","triste","fantasia"],
@@ -39,6 +40,14 @@ o casal enfrenta escolhas difíceis e grandes sacrifícios.
  descricao:"Um encontro às cegas vira confusão quando ela conhece o próprio chefe.\nSituações engraçadas e muito romance.\nLeve, divertido e perfeito para relaxar.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/a-business-proposal-recap-episode-one-two-main.jpeg",
  trailer:"https://www.youtube.com/embed/mh4R-WXRhQo"
+},
+{
+ nome:"Strong Woman Do Bong Soon",
+ tags:["alegre","comedia","romance"],
+ nota:"8.7/10 – MyDramaList",
+ descricao:"Uma jovem nasce com força sobrenatural.\nEla tenta viver normalmente enquanto protege quem ama.\nMistura perfeita de comédia, ação e romance.",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/strong-woman-do-bong-soon.jpg",
+ trailer:"https://www.youtube.com/embed/XLW8yB7Yx0E"
 },
 {
  nome:"It's Okay to Not Be Okay",
