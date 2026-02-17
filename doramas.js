@@ -50,7 +50,7 @@ o casal enfrenta escolhas difíceis e grandes sacrifícios.
  trailer:"https://www.youtube.com/embed/XLW8yB7Yx0E"
 },
 {
- nome:"It's Okay to Not Be Okay",
+ nome:"Its Okay to Not Be Okay",
  tags:["romance","intenso","triste"],
  nota:"9.0/10 – MyDramaList",
  descricao:"Um cuidador emocionalmente fechado conhece uma escritora excêntrica.\nAmbos carregam traumas profundos.\nUma história sensível sobre cura e amor.",
