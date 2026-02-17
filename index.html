@@ -2,6 +2,7 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Clube do Dorama 💕</title>
 
 <style>
@@ -42,6 +43,12 @@ h2 {
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
 .card img {
     width: 100%;
@@ -75,44 +82,7 @@ input[type=text] {
     border-radius: 5px;
     border:1px solid #ccc;
 }
-
-.card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
-}
-
-.card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-}
-
-section {
-    animation: fadeIn 0.5s ease;
-}
-
-@keyframes fadeIn {
-    from { opacity:0; transform:translateY(10px); }
-    to { opacity:1; transform:translateY(0); }
-}
-
-#conteudo-detalhe p {
-    line-height: 1.7;
-    text-align: justify;
-}
-
-#conteudo-detalhe img {
-    width: 100%;
-    height: 450px;
-    object-fit: cover;
-    border-radius: 15px;
-}
-
 </style>
-
-}
-
-</style>
-
 </head>
 
 <body>
@@ -123,8 +93,8 @@ section {
     <nav>
         <a href="#inicio">Início</a>
         <a href="#listas">Listas 💖</a>
-        <a href="#todos">Todos os Doramas 📚</a>
-        <a href="#descubra">Descubra seu Dorama 🤖</a>
+        <a href="#todos">Todos 📚</a>
+        <a href="#descubra">Descubra 🤖</a>
     </nav>
 </header>
 
@@ -132,8 +102,7 @@ section {
 <h2>✨ Bem-vindo(a)</h2>
 <p style="text-align:center; max-width:700px; margin:auto;">
 O Clube do Dorama é um espaço feito para quem ama histórias emocionantes,
-românticas, divertidas e intensas. Aqui você encontra listas organizadas
-por emoção, novidades do mundo dorameiro e recomendações sob medida.
+românticas, divertidas e intensas.
 </p>
 </section>
 
@@ -141,18 +110,25 @@ por emoção, novidades do mundo dorameiro e recomendações sob medida.
 <h2>📋 Listas de Doramas</h2>
 
 <div style="text-align:center; margin-bottom:20px;">
-    <button onclick="window.location.href='categoria.html?tipo=romance'">
+
+<button onclick="window.location.href='categoria.html?tipo=romance'">
 💖 Românticos
 </button>
 
+<button onclick="window.location.href='categoria.html?tipo=triste'">
+😭 Tristes
+</button>
 
-    <button onclick="mostrarLista('tristes')">😭 Tristes</button>
-    <button onclick="mostrarLista('romanticos')">💖 Românticos</button>
-    <button onclick="mostrarLista('intensos')">🔥 Intensos</button>
-    <button onclick="mostrarLista('leves')">😂 Leves</button>
+<button onclick="window.location.href='categoria.html?tipo=intenso'">
+🔥 Intensos
+</button>
+
+<button onclick="window.location.href='categoria.html?tipo=alegre'">
+😊 Leves
+</button>
+
 </div>
 
-<div id="conteudo-lista" class="cards"></div>
 </section>
 
 <section id="todos">
@@ -169,97 +145,21 @@ por emoção, novidades do mundo dorameiro e recomendações sob medida.
 </div>
 <div id="resultado" style="text-align:center; margin-top:20px; font-weight:bold;"></div>
 </section>
-<section id="detalhe" style="display:none;">
-<h2>🎬 Detalhes do Dorama</h2>
-<div id="conteudo-detalhe" style="max-width:800px; margin:auto;"></div>
-<div style="text-align:center; margin-top:20px;">
-<button onclick="fecharDetalhe()">⬅ Voltar</button>
-</div>
-</section>
 
 <footer>
-<p>💜 Clube do Dorama — feito com amor para dorameiros</p>
+<p>💜 Clube do Dorama — feito com amor</p>
 </footer>
+
 <script src="doramas.js"></script>
 <script>
-/* BANCO DE DORAMAS (PROVISÓRIO) */
 
-/* LISTAS (sempre 10) */
-let paginaAtual = 1;
-let categoriaAtual = "";
-const porPagina = 10;
-
-function mostrarLista(tipo) {
-
- const filtros = {
-  alegres:"alegre",
-  tristes:"triste",
-  romanticos:"romance",
-  intensos:"intenso",
-  leves:"comedia"
- };
-
- categoriaAtual = filtros[tipo];
- paginaAtual = 1;
-
- renderizarPagina();
-}
-
-function renderizarPagina() {
-
- const lista = doramas.filter(d => d.tags.includes(categoriaAtual));
-
- const inicio = (paginaAtual - 1) * porPagina;
- const fim = inicio + porPagina;
-
- const pagina = lista.slice(inicio, fim);
-
- const container = document.getElementById("conteudo-lista");
- container.innerHTML = "";
-
- pagina.forEach(d => {
-  container.innerHTML += `
-   <div class="card" onclick="window.location.href='dorama.html?nome=${encodeURIComponent(d.nome)}'"
->
-    <img src="${d.imagem}">
-    <div>
-     <h3>${d.nome}</h3>
-     <p>${d.descricao.replaceAll("\n","<br>")}</p>
-     <p>⭐ ${d.nota}</p>
-    </div>
-   </div>`;
- });
-
- container.innerHTML += `
-  <div style="width:100%; text-align:center; margin-top:20px;">
-   <button onclick="anterior()">⬅ Anterior</button>
-   <button onclick="proxima()">Próxima ➡</button>
-  </div>`;
-}
-
-function anterior() {
- if (paginaAtual > 1) {
-  paginaAtual--;
-  renderizarPagina();
- }
-}
-
-function proxima() {
- const lista = doramas.filter(d => d.tags.includes(categoriaAtual));
- if (paginaAtual * porPagina < lista.length) {
-  paginaAtual++;
-  renderizarPagina();
- }
-}
-
-
-/* TODOS OS DORAMAS */
 function carregarTodos() {
  const c = document.getElementById("todos-doramas");
+ c.innerHTML = "";
+
  doramas.forEach(d => {
   c.innerHTML += `
-   <div class="card" onclick="window.location.href='dorama.html?nome=${encodeURIComponent(d.nome)}'"
->
+   <div class="card" onclick="window.location.href='dorama.html?nome=${encodeURIComponent(d.nome)}'">
     <img src="${d.imagem}">
     <div>
      <h3>${d.nome}</h3>
@@ -270,16 +170,15 @@ function carregarTodos() {
  });
 }
 
-/* DESCOBRIR */
+/* DESCUBRIR */
 function buscar() {
  const texto = document.getElementById("entrada").value.toLowerCase();
 
  const mapa = {
   triste:["triste","chorar","sofrer","emoção","drama"],
-  romance:["amor","romance","casal","relacionamento","apaixonado"],
-  alegre:["feliz","leve","engraçado","fofo","divertido"],
-  intenso:["ação","vingança","suspense","forte","crime"],
-  comedia:["comedia","engraçado","risada","leve"]
+  romance:["amor","romance","casal","relacionamento"],
+  alegre:["feliz","leve","engraçado","fofo"],
+  intenso:["ação","vingança","suspense","crime"]
  };
 
  let categoriasDetectadas = [];
@@ -317,30 +216,9 @@ function buscar() {
    </div>`;
  });
 }
-function abrirDetalhe(nome) {
-
- const dorama = doramas.find(d => d.nome === nome);
-
- document.getElementById("detalhe").style.display = "block";
- document.getElementById("detalhe").scrollIntoView({behavior:"smooth"});
-
- document.getElementById("conteudo-detalhe").innerHTML = `
-   <div class="card" style="width:100%;">
-    <img src="${dorama.imagem}">
-    <div>
-     <h2>${dorama.nome}</h2>
-     <p>${(dorama.resumo || dorama.descricao).replaceAll("\n","<br>")}</p>
-     <p style="font-size:18px;">⭐ ${dorama.nota}</p>
-    </div>
-   </div>
- `;
-}
-
-function fecharDetalhe() {
- document.getElementById("detalhe").style.display = "none";
-}
 
 window.onload = carregarTodos;
+
 </script>
 
 </body>
