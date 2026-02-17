@@ -42,14 +42,6 @@ o casal enfrenta escolhas difíceis e grandes sacrifícios.
  trailer:"https://www.youtube.com/embed/mh4R-WXRhQo"
 },
 {
- nome:"Its Okay to Not Be Okay",
- tags:["romance","intenso","triste"],
- nota:"9.0/10 – MyDramaList",
- descricao:"Um cuidador emocionalmente fechado conhece uma escritora excêntrica.\nAmbos carregam traumas profundos.\nUma história sensível sobre cura e amor.",
- imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/its%20ok%20do%20not%20be%20ok.jpg",
- trailer:"https://www.youtube.com/embed/50ek4HQo0bc"
-},
-{
  nome:"It's Okay to Not Be Okay",
  tags:["romance","intenso","triste"],
  nota:"9.0/10 – MyDramaList",
