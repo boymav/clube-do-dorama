@@ -242,21 +242,71 @@ Mostra que beleza verdadeira vai muito além da aparência.`
  tags:["romance","triste","intenso"],
  nota:"8.7/10 – MyDramaList",
  descricao:"Uma mulher volta no tempo para a era Goryeo.\nEla se envolve com vários príncipes.\nRomance histórico cheio de dor.",
- imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/moon%20lovers%201.webp"
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/moon%20lovers%201.webp",
+ trailer:"https://www.youtube.com/embed/2ljxyaAIphc",
+ resumo:`Go Ha Jin vive na Coreia moderna até sofrer um acidente inesperado.
+Ao acordar, ela descobre que voltou no tempo para a era Goryeo.
+
+Agora vivendo como Hae Soo,
+ela se envolve com vários príncipes da família real.
+
+Entre disputas pelo trono,
+ciúmes e traições,
+ela se aproxima do misterioso 4º príncipe, Wang So.
+
+O romance dos dois é intenso,
+mas marcado por dor e sacrifício.
+
+O dorama mistura história, política e paixão profunda.
+
+É conhecido por seu final emocionante e inesquecível.`
 },
 {
  nome:"The Heirs",
  tags:["romance","triste"],
  nota:"8.1/10 – MyDramaList",
  descricao:"Jovens ricos vivem conflitos amorosos e familiares.\nDiferenças sociais marcam os relacionamentos.\nClássico do romance escolar.",
- imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/The%20Heirs.jpg"
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/The%20Heirs.jpg",
+ trailer:"https://www.youtube.com/embed/FrUG0q9p4qk",
+ resumo:`Kim Tan é herdeiro de um grande império empresarial.
+Ele estuda em uma escola exclusiva para jovens ricos.
+
+Cha Eun Sang é uma garota simples,
+que acaba entrando nesse mundo de luxo e competição.
+
+Os dois se apaixonam,
+mas enfrentam forte oposição da família dele.
+
+Além do romance,
+o dorama mostra rivalidades,
+amizades e conflitos de classe social.
+
+É um clássico do romance escolar coreano,
+cheio de drama e emoções intensas.`
 },
 {
  nome:"Start-Up",
  tags:["romance","alegre","intenso"],
  nota:"8.6/10 – MyDramaList",
  descricao:"Jovens tentam realizar seus sonhos no mundo das startups.\nAmor, ambição e desafios se misturam.\nInspirador e emocionante.",
- imagem:"https://image.tmdb.org/t/p/w500/8C6r0H6F7cZq9rH7G1x2Lk9Uq5R.jpg"
+ imagem:"https://image.tmdb.org/t/p/w500/8C6r0H6F7cZq9rH7G1x2Lk9Uq5R.jpg",
+ trailer:"https://www.youtube.com/embed/BemKyzbLDDc",
+ resumo:`Seo Dal Mi sonha em se tornar uma grande empresária.
+Ela entra no competitivo mundo das startups coreanas.
+
+Nam Do San é um jovem programador genial,
+mas inseguro sobre seu futuro.
+
+Os dois se unem para criar uma empresa inovadora,
+enfrentando desafios financeiros e emocionais.
+
+Entre ambição e romance,
+eles precisam provar seu valor.
+
+O dorama fala sobre sonhos,
+fracassos e perseverança.
+
+É inspirador e cheio de momentos marcantes.`
 },
 {
  nome:"Hometown Cha-Cha-Cha",
