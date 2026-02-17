@@ -23,15 +23,27 @@ o casal enfrenta escolhas difíceis e grandes sacrifícios.
 É uma história emocionante sobre amor que ultrapassa fronteiras e ideologias.`,
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/crash-landing.jpg",
  trailer:"https://www.youtube.com/embed/eXMjTXL2Vks"
-}
-,
+},
 {
  nome:"Goblin",
- tags:["romance","triste","fantasia"],
+ tags:["romance","fantasia","triste"],
  nota:"8.8/10 – MyDramaList",
- descricao:"Um ser imortal vive há séculos esperando o fim de sua maldição.\nTudo muda quando conhece uma jovem especial.\nUma história profunda sobre amor eterno e despedidas.",
- imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/Goblin.jpg",
- trailer:"https://www.youtube.com/embed/S94ukM8C17A"
+ descricao:"Um ser imortal busca alguém para quebrar sua maldição.",
+ imagem:"SUA_IMAGEM_AQUI",
+ resumo:`Kim Shin é um general traído que acaba sendo amaldiçoado com a imortalidade. 
+Séculos depois, ele ainda vive entre os humanos carregando culpa e solidão.
+A única forma de quebrar a maldição é encontrar sua noiva destinada.
+Ji Eun Tak é uma jovem otimista que consegue ver fantasmas.
+Ela cruza o caminho do Goblin e passa a mudar sua existência.
+Enquanto isso, um ceifador da morte vive ao lado dele, criando situações engraçadas.
+Entre humor, dor e romance, o dorama fala sobre destino e sacrifício.
+A história mistura fantasia com emoções profundas.
+É uma jornada sobre amar mesmo sabendo que pode perder.
+Cada episódio constrói uma ligação intensa entre os personagens.
+O passado e o presente se conectam de forma surpreendente.
+O romance é delicado, mas cheio de sofrimento.
+Mostra que até seres imortais desejam uma vida comum.
+O final é emocionante e inesquecível.`
 },
 {
  nome:"Business Proposal",
