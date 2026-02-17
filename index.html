@@ -31,45 +31,99 @@ h2 {
     text-align: center;
     color: #b4005a;
 }
+
+/* botões maiores e mais bonitos */
+button {
+    padding: 14px 22px;
+    margin: 8px;
+    background: #ff7eb3;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+}
+button:hover {
+    background: #b983ff;
+}
+
 .cards {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
 }
+
 .card {
     background: white;
-    width: 260px;
-    border-radius: 15px;
+    width: 300px;
+    border-radius: 18px;
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+}
+
+.card div {
+    padding: 16px;
+}
+
+.card h3{
+    margin: 0 0 8px;
+}
+
+.card p{
+    margin: 0;
+    color: #555;
+    line-height: 1.45;
+}
+
+.card .mini{
+    margin-top: 10px;
+    font-weight: bold;
+    color: #7a1b55;
+}
+
+.card.click{
     cursor: pointer;
 }
-.card:hover {
+.card.click:hover{
     transform: translateY(-8px);
     box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
-.card img {
-    width: 100%;
-    height: 350px;
-    object-fit: cover;
+
+.grid-noticias{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 18px;
+    max-width: 980px;
+    margin: 0 auto;
 }
-.card div {
-    padding: 15px;
+
+.noticia{
+    background: #fff;
+    border-radius: 16px;
+    padding: 16px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
 }
-button {
-    padding:10px 15px;
-    margin:5px;
-    background:#ff7eb3;
-    color:white;
-    border:none;
-    border-radius:8px;
-    cursor:pointer;
+
+.noticia h3{
+    margin: 0 0 8px;
+    color: #b4005a;
 }
-button:hover {
-    background:#b983ff;
+
+.noticia p{
+    margin: 0;
+    color: #555;
+    line-height: 1.5;
 }
+
 footer {
     background: #b983ff;
     color: white;
@@ -87,7 +141,9 @@ footer {
     <nav>
         <a href="#inicio">Início</a>
         <a href="#listas">Listas 💖</a>
-        <a href="#todos">Todos 📚</a>
+        <a href="#semana">Dorama da semana 🌟</a>
+        <a href="#noticias">Notícias 📰</a>
+        <a href="todos.html">Todos os Doramas 📚</a>
         <a href="descubra.html">Descubra 🤖</a>
     </nav>
 </header>
@@ -103,31 +159,49 @@ românticas, divertidas e intensas.
 <section id="listas">
 <h2>📋 Listas de Doramas</h2>
 
-<div style="text-align:center; margin-bottom:20px;">
-
-<button onclick="window.location.href='categoria.html?tipo=romance'">
-💖 Românticos
-</button>
-
-<button onclick="window.location.href='categoria.html?tipo=triste'">
-😭 Tristes
-</button>
-
-<button onclick="window.location.href='categoria.html?tipo=intenso'">
-🔥 Intensos
-</button>
-
-<button onclick="window.location.href='categoria.html?tipo=alegre'">
-😊 Leves
-</button>
-
+<div style="text-align:center; margin-bottom:10px;">
+  <button onclick="window.location.href='categoria.html?tipo=romance'">💖 Românticos</button>
+  <button onclick="window.location.href='categoria.html?tipo=triste'">😭 Tristes</button>
+  <button onclick="window.location.href='categoria.html?tipo=intenso'">🔥 Intensos</button>
+  <button onclick="window.location.href='categoria.html?tipo=alegre'">😊 Leves</button>
 </div>
 
+<p style="text-align:center; margin:0; opacity:0.85;">
+Clique e veja 10 doramas perfeitos pra cada emoção ✨
+</p>
 </section>
 
-<section id="todos">
-<h2>📚 Todos os Doramas</h2>
-<div id="todos-doramas" class="cards"></div>
+<section id="semana">
+<h2>🌟 Dorama da Semana</h2>
+
+<div class="cards" id="dorama-semana"></div>
+
+<p style="text-align:center; max-width:800px; margin: 14px auto 0; opacity:0.85;">
+Essa parte você pode trocar toda semana. Eu deixei pronto pra funcionar automático também.
+</p>
+</section>
+
+<section id="noticias">
+<h2>📰 Notícias do Momento</h2>
+
+<div class="grid-noticias" id="grid-noticias">
+  <div class="noticia">
+    <h3>🔥 Em alta</h3>
+    <p>Coloque aqui uma notícia curtinha do mundo dos doramas. Ex: “Novo dorama anunciado”, “Elenco confirmado”, “Data de estreia”.</p>
+  </div>
+  <div class="noticia">
+    <h3>🎬 Lançamentos</h3>
+    <p>Coloque aqui o que chegou essa semana nas plataformas (Netflix, Viki etc.).</p>
+  </div>
+  <div class="noticia">
+    <h3>💖 Recomendações</h3>
+    <p>Coloque aqui um mini texto: “Se você gostou de X, assista Y”.</p>
+  </div>
+</div>
+
+<p style="text-align:center; margin-top:14px; opacity:0.85;">
+Depois, se você quiser, eu faço essa parte virar uma “página de notícias” também.
+</p>
 </section>
 
 <footer>
@@ -136,26 +210,27 @@ românticas, divertidas e intensas.
 
 <script src="doramas.js"></script>
 <script>
+// Dorama da Semana (automático)
+// Ele pega 1 dorama aleatório quando abre a página.
+function carregarDoramaDaSemana() {
+  const area = document.getElementById("dorama-semana");
+  area.innerHTML = "";
 
-function carregarTodos() {
- const c = document.getElementById("todos-doramas");
- c.innerHTML = "";
+  const escolhido = doramas[Math.floor(Math.random() * doramas.length)];
 
- doramas.forEach(d => {
-  c.innerHTML += `
-   <div class="card" onclick="window.location.href='dorama.html?nome=${encodeURIComponent(d.nome)}'">
-    <img src="${d.imagem}">
-    <div>
-     <h3>${d.nome}</h3>
-     <p>${d.descricao.replaceAll("\n","<br>")}</p>
-     <p>⭐ ${d.nota}</p>
+  area.innerHTML = `
+    <div class="card click" onclick="window.location.href='dorama.html?nome=${encodeURIComponent(escolhido.nome)}'">
+      <img src="${escolhido.imagem}" alt="${escolhido.nome}">
+      <div>
+        <h3>${escolhido.nome}</h3>
+        <p>${(escolhido.descricao || "").replaceAll("\n","<br>")}</p>
+        <div class="mini">⭐ ${escolhido.nota || ""}</div>
+      </div>
     </div>
-   </div>`;
- });
+  `;
 }
 
-window.onload = carregarTodos;
-
+window.onload = carregarDoramaDaSemana;
 </script>
 
 </body>
