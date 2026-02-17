@@ -1,1 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Dorama | Clube do Dorama</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+<header>
+    <h1>🌸 Clube do Dorama</h1>
+    <a href="index.html">⬅ Voltar</a>
+</header>
+
+<section id="conteudo-detalhe"></section>
+
+<script src="script.js"></script>
+
+<script>
+function carregarDorama() {
+    const params = new URLSearchParams(window.location.search);
+    const nome = params.get("nome");
+
+    if (!nome) return;
+
+    const dorama = doramas.find(d => d.nome === nome);
+
+    if (!dorama) return;
+
+    document.getElementById("conteudo-detalhe").innerHTML = `
+        <h2>${dorama.nome}</h2>
+        <img src="${dorama.imagem}" style="width:300px;border-radius:12px;">
+        <p style="line-height:1.7;text-align:justify;">
+            ${(dorama.resumo || dorama.descricao).replaceAll("\n","<br>")}
+        </p>
+        <p><strong>⭐ ${dorama.nota}</strong></p>
+    `;
+
+    document.title = dorama.nome + " | Clube do Dorama";
+}
+
+carregarDorama();
+</script>
+
+</body>
+</html>
