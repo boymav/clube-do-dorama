@@ -114,35 +114,128 @@ Mostra que felicidade muitas vezes está nas coisas simples da vida.`
  tags:["romance","triste","fantasia"],
  nota:"8.9/10 – MyDramaList",
  descricao:"Um hotel misterioso recebe apenas almas perdidas.\nSua dona carrega uma grande culpa do passado.\nFantasia com romance e emoção.",
- imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/hotel%20del%20luna.jpg"
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/hotel%20del%20luna.jpg",
+ trailer:"https://www.youtube.com/embed/lJ3_1v8sB48",
+ resumo:`O Hotel Del Luna não é um hotel comum.
+Ele recebe apenas almas que ainda têm assuntos pendentes antes de partir.
+
+Jang Man Wol é a misteriosa dona do hotel,
+presa a uma maldição antiga por causa de erros do passado.
+
+Quando um jovem humano começa a trabalhar no hotel,
+ele passa a descobrir segredos escondidos há séculos.
+
+A cada episódio, novas histórias de fantasmas aparecem,
+misturando emoção, tristeza e aprendizado.
+
+O romance cresce lentamente,
+mas é marcado por destino e sacrifício.
+
+É uma fantasia visualmente linda,
+com muita emoção e reflexões sobre arrependimento e perdão.`
 },
 {
  nome:"Descendants of the Sun",
  tags:["romance","intenso"],
  nota:"8.7/10 – MyDramaList",
  descricao:"Um soldado e uma médica se apaixonam em missão humanitária.\nEles enfrentam perigos constantes.\nRomance com ação e drama.",
- imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/Descendants%20of%20the%20Sun.jpg"
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/Descendants%20of%20the%20Sun.jpg",
+ trailer:"https://www.youtube.com/embed/wFJmU5m6cZg",
+ resumo:`Yoo Si Jin é um capitão das forças especiais,
+acostumado a viver situações perigosas.
+
+Kang Mo Yeon é uma médica determinada
+que acredita salvar vidas é sua maior missão.
+
+Quando os dois se apaixonam,
+precisam lidar com escolhas difíceis entre dever e amor.
+
+Enviados para uma zona de guerra,
+enfrentam terremotos, doenças e conflitos armados.
+
+O dorama mistura ação intensa com romance emocionante.
+
+Mostra coragem, amizade e sacrifícios,
+além de um amor que precisa sobreviver em meio ao caos.`
 },
 {
  nome:"My Love from the Star",
  tags:["romance","comedia","fantasia"],
  nota:"8.6/10 – MyDramaList",
  descricao:"Um alienígena vive na Terra há séculos.\nEle se apaixona por uma atriz famosa.\nRomance leve com toques de fantasia.",
- imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/You_Who_Came_From_the_Stars_Cover.jpg"
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/You_Who_Came_From_the_Stars_Cover.jpg",
+ trailer:"https://www.youtube.com/embed/57Yc6Z2OiC4",
+ resumo:`Do Min Joon é um alienígena que chegou à Terra durante a dinastia Joseon.
+Ele vive há mais de 400 anos entre os humanos,
+sempre mantendo distância para não criar laços.
+
+Frio e racional, ele acredita que o amor é apenas um sentimento passageiro.
+Tudo muda quando conhece Cheon Song Yi,
+uma atriz famosa, engraçada e completamente diferente dele.
+
+A convivência dos dois começa cheia de conflitos,
+mas logo se transforma em algo muito mais profundo.
+
+Enquanto tentam lidar com seus sentimentos,
+precisam enfrentar perigos e segredos do passado.
+
+O dorama mistura romance, comédia e fantasia
+de uma forma leve e emocionante.
+
+É uma história sobre amar mesmo quando o tempo é limitado.`
 },
 {
  nome:"Weightlifting Fairy Kim Bok Joo",
  tags:["alegre","romance","comedia"],
  nota:"8.8/10 – MyDramaList",
  descricao:"Uma jovem atleta sonha em ser campeã de levantamento de peso.\nEla vive sua juventude entre amigos e amor.\nDoce, divertido e inspirador.",
- imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/Weightlifting%20Fairy%20Kim%20Bok%20Joo.webp"
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/Weightlifting%20Fairy%20Kim%20Bok%20Joo.webp",
+ trailer:"https://www.youtube.com/embed/6t5dLenA85Y",
+ resumo:`Kim Bok Joo é uma estudante universitária e atleta de levantamento de peso.
+Ela é forte fisicamente, mas muito sensível por dentro.
+
+Seu maior sonho é conquistar uma medalha de ouro
+e deixar sua família orgulhosa.
+
+Ela reencontra Jung Joon Hyung,
+um nadador talentoso e brincalhão que estudou com ela na infância.
+
+Entre provocações e momentos engraçados,
+os dois começam a desenvolver sentimentos.
+
+O dorama mostra amizade verdadeira,
+pressão esportiva e o primeiro amor.
+
+É leve, divertido e extremamente aconchegante.
+
+Uma história simples, mas cheia de coração.`
 },
 {
  nome:"True Beauty",
  tags:["alegre","romance","comedia"],
  nota:"8.4/10 – MyDramaList",
  descricao:"Uma garota aprende a se maquiar para esconder inseguranças.\nEla vive um triângulo amoroso na escola.\nComédia romântica leve.",
- imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/True%20Beauty.jpg"
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/True%20Beauty.jpg",
+ trailer:"https://www.youtube.com/embed/-ExizS4OJkg",
+ resumo:`Lim Ju Kyung sempre sofreu bullying por causa de sua aparência.
+Para recomeçar em uma nova escola,
+ela aprende técnicas de maquiagem pela internet.
+
+Com sua nova aparência,
+ela se torna extremamente popular.
+
+Mas apenas duas pessoas descobrem seu segredo:
+Lee Su Ho e Han Seo Jun.
+
+Entre inseguranças e sentimentos confusos,
+ela vive um intenso triângulo amoroso.
+
+O dorama aborda autoestima,
+amizade e amadurecimento.
+
+É divertido, romântico e cheio de momentos fofos.
+
+Mostra que beleza verdadeira vai muito além da aparência.`
 },
 {
  nome:"Moon Lovers: Scarlet Heart Ryeo",
