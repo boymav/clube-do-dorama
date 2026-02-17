@@ -54,6 +54,14 @@ body {
     color: #ff4d94;
 }
 
+/* TRAILER */
+#conteudo-detalhe iframe {
+    width: 100%;
+    height: 400px;
+    border-radius: 16px;
+    margin-top: 15px;
+}
+
 @media (max-width: 768px) {
     #conteudo-detalhe {
         margin: 20px;
@@ -66,6 +74,10 @@ body {
 
     #conteudo-detalhe p {
         font-size: 16px;
+    }
+
+    #conteudo-detalhe iframe {
+        height: 250px;
     }
 }
 
@@ -85,7 +97,9 @@ body {
 <script src="script.js"></script>
 <script src="doramas.js"></script>
 <script>
+
 function carregarDorama() {
+
     const params = new URLSearchParams(window.location.search);
     const nome = params.get("nome");
 
@@ -95,31 +109,36 @@ function carregarDorama() {
 
     if (!dorama) return;
 
+    // 🔹 LÓGICA CORRETA DA IMAGEM
+    let imagemFinal = dorama.imagem;
+
+    if (!imagemFinal && dorama.trailer) {
+        const videoId = dorama.trailer.split("/embed/")[1];
+        if (videoId) {
+            imagemFinal = "https://img.youtube.com/vi/" + videoId + "/hqdefault.jpg";
+        }
+    }
+
     document.getElementById("conteudo-detalhe").innerHTML = `
         <h2>${dorama.nome}</h2>
-       <img src="${
-    dorama.trailer 
-        ? 'https://img.youtube.com/vi/' + dorama.trailer.split('/embed/')[1] + '/maxresdefault.jpg'
-        : dorama.imagem
-}" 
-style="width:300px;border-radius:12px;">
+
+        ${imagemFinal ? `<img src="${imagemFinal}">` : ""}
+
         ${dorama.trailer ? `
-    <div style="margin:30px 0;">
-        <h3 style="font-size:22px;">🎬 Trailer</h3>
-        <iframe 
-            width="100%" 
-            height="400" 
-            src="${dorama.trailer}" 
-            frameborder="0" 
-            allowfullscreen
-            style="border-radius:16px;">
-        </iframe>
-    </div>
-` : ""}
+            <div>
+                <h3 style="font-size:22px;color:#d63384;">🎬 Trailer</h3>
+                <iframe 
+                    src="${dorama.trailer}" 
+                    frameborder="0" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        ` : ""}
 
         <p>
             ${(dorama.resumo || dorama.descricao).replaceAll("\n","<br>")}
         </p>
+
         <p><strong>⭐ ${dorama.nota}</strong></p>
     `;
 
@@ -127,6 +146,7 @@ style="width:300px;border-radius:12px;">
 }
 
 carregarDorama();
+
 </script>
 
 </body>
