@@ -799,7 +799,7 @@ function abrirDetalhe(nome) {
 
  document.getElementById("conteudo-detalhe").innerHTML = `
    <div class="card" style="width:100%;">
-    <img src="${dorama.imagem}" style="height:500px;">
+    <img src="${dorama.imagem}" style="width:100%; height:450px; object-fit:cover; border-radius:15px;">
     <div>
      <h2>${dorama.nome}</h2>
      <p>${(dorama.resumo || dorama.descricao).replaceAll("\n","<br>")}</p>
