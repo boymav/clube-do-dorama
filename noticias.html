@@ -1,1 +1,322 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Notícias 📰 | Clube do Dorama</title>
 
+<style>
+body{
+  margin:0;
+  font-family: Arial, sans-serif;
+  background:#fff0f6;
+  color:#333;
+}
+
+header{
+  background: linear-gradient(90deg, #ff7eb3, #b983ff);
+  padding: 18px 16px;
+  text-align:center;
+  color:#fff;
+}
+
+header a{
+  color:#fff;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+.container{
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 22px 16px 50px;
+}
+
+h2{
+  text-align:center;
+  color:#b4005a;
+  margin: 12px 0 10px;
+}
+
+.topbar{
+  display:flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 14px 0 20px;
+}
+
+input[type="text"]{
+  padding: 14px 16px;
+  width: min(640px, 92vw);
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  outline: none;
+}
+
+input[type="text"]:focus{
+  border-color:#b983ff;
+  box-shadow: 0 0 0 3px rgba(185,131,255,0.25);
+}
+
+button{
+  padding: 14px 18px;
+  background:#ff7eb3;
+  color:white;
+  border:none;
+  border-radius:12px;
+  cursor:pointer;
+  font-weight:bold;
+  font-size:16px;
+}
+
+button:hover{ background:#b983ff; }
+
+.grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 18px;
+}
+
+.noticia{
+  background:#fff;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.10);
+  display:flex;
+  flex-direction: column;
+}
+
+.noticia .img{
+  width:100%;
+  height: 180px;
+  object-fit: cover;
+  background:#f6f6f6;
+}
+
+.noticia .conteudo{
+  padding: 16px;
+}
+
+.noticia h3{
+  margin: 0 0 8px;
+  color:#b4005a;
+  font-size: 17px;
+  line-height: 1.25;
+}
+
+.meta{
+  margin: 6px 0 10px;
+  font-size: 13px;
+  opacity: 0.85;
+}
+
+.noticia p{
+  margin: 0;
+  color:#555;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+.noticia a{
+  display:inline-block;
+  margin-top: 10px;
+  font-weight:bold;
+  color:#b4005a;
+  text-decoration:none;
+}
+
+.noticia a:hover{ text-decoration: underline; }
+
+.paginacao{
+  margin-top: 22px;
+  display:flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.status{
+  text-align:center;
+  margin: 10px 0 0;
+  opacity: 0.85;
+}
+
+footer{
+  background:#b983ff;
+  color:white;
+  text-align:center;
+  padding: 15px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1 style="margin:0;">📰 Notícias do Momento</h1>
+  <p style="margin:8px 0 0;">
+    <a href="index.html">⬅ Voltar para o início</a>
+  </p>
+</header>
+
+<div class="container">
+  <h2>Atualizações do mundo dos doramas ✨</h2>
+
+  <div class="topbar">
+    <input id="busca" type="text" placeholder="Pesquisar notícia... (ex: Netflix, cast, trailer, romance)">
+    <button onclick="aplicarBusca()">🔎 Pesquisar</button>
+    <button onclick="carregarNoticias(true)">🔄 Atualizar</button>
+  </div>
+
+  <p class="status" id="status">Carregando…</p>
+
+  <div class="grid" id="grid"></div>
+
+  <div class="paginacao">
+    <button onclick="anterior()">⬅ Anterior</button>
+    <button onclick="proxima()">Próxima ➡</button>
+  </div>
+</div>
+
+<footer>
+  💜 Clube do Dorama — feito com amor
+</footer>
+
+<script>
+let todas = [];
+let filtradas = [];
+let pagina = 1;
+const porPagina = 9;
+
+function limparHtml(texto) {
+  return (texto || "").replace(/<[^>]*>?/gm, "").trim();
+}
+
+function formatarData(pubDate) {
+  if (!pubDate) return "";
+  const d = new Date(pubDate);
+  if (isNaN(d.getTime())) return "";
+  return d.toLocaleDateString("pt-BR", { day:"2-digit", month:"short", year:"numeric" });
+}
+
+function pegarImagemNoticia(item){
+  if (item.thumbnail && item.thumbnail.startsWith("http")) return item.thumbnail;
+  if (item.enclosure && item.enclosure.link && item.enclosure.link.startsWith("http")) return item.enclosure.link;
+  const html = item.description || "";
+  const match = html.match(/<img[^>]+src=["']([^"']+)["']/i);
+  if (match && match[1] && match[1].startsWith("http")) return match[1];
+  return "";
+}
+
+function renderPagina() {
+  const grid = document.getElementById("grid");
+  const status = document.getElementById("status");
+
+  const inicio = (pagina - 1) * porPagina;
+  const fim = inicio + porPagina;
+  const pageItems = filtradas.slice(inicio, fim);
+
+  grid.innerHTML = "";
+
+  if (filtradas.length === 0) {
+    status.innerText = "Nenhuma notícia encontrada 😢";
+    return;
+  }
+
+  status.innerText = `Mostrando ${Math.min(fim, filtradas.length)} de ${filtradas.length} notícias`;
+
+  pageItems.forEach(n => {
+    const img = pegarImagemNoticia(n);
+    const descLimpo = limparHtml(n.description);
+    const desc = descLimpo.slice(0, 180) + (descLimpo.length > 180 ? "..." : "");
+
+    grid.innerHTML += `
+      <div class="noticia">
+        ${img ? `<img class="img" src="${img}" alt="Notícia">` : ``}
+        <div class="conteudo">
+          <h3>${n.title}</h3>
+          <div class="meta">AsianWiki • ${formatarData(n.pubDate)}</div>
+          <p>${desc}</p>
+          <a href="${n.link}" target="_blank" rel="noopener noreferrer">Ler notícia →</a>
+        </div>
+      </div>
+    `;
+  });
+}
+
+function aplicarBusca() {
+  const termo = (document.getElementById("busca").value || "").toLowerCase().trim();
+
+  if (!termo) {
+    filtradas = [...todas];
+  } else {
+    filtradas = todas.filter(n => {
+      const t = (n.title || "").toLowerCase();
+      const d = limparHtml(n.description || "").toLowerCase();
+      return t.includes(termo) || d.includes(termo);
+    });
+  }
+
+  pagina = 1;
+  renderPagina();
+}
+
+function anterior() {
+  if (pagina > 1) {
+    pagina--;
+    renderPagina();
+  }
+}
+
+function proxima() {
+  const totalPaginas = Math.ceil(filtradas.length / porPagina);
+  if (pagina < totalPaginas) {
+    pagina++;
+    renderPagina();
+  }
+}
+
+async function carregarNoticias(forcar=false) {
+  const status = document.getElementById("status");
+  status.innerText = "Carregando notícias…";
+
+  try {
+    const extra = forcar ? ("&cacheBust=" + Date.now()) : "";
+    const feed = "https://blog.asianwiki.com/feed/";
+    const url = "https://api.rss2json.com/v1/api.json?rss_url=" + encodeURIComponent(feed) + extra;
+
+    const resp = await fetch(url);
+    const data = await resp.json();
+
+    if (!data.items || !Array.isArray(data.items)) {
+      throw new Error("Sem notícias");
+    }
+
+    // guarda tudo
+    todas = data.items;
+
+    // inicializa filtradas
+    filtradas = [...todas];
+    pagina = 1;
+
+    renderPagina();
+
+  } catch (e) {
+    status.innerText = "😢 Não foi possível carregar as notícias. Tente atualizar.";
+    document.getElementById("grid").innerHTML = "";
+  }
+}
+
+// Enter pesquisa
+document.getElementById("busca").addEventListener("keydown", (e) => {
+  if (e.key === "Enter") aplicarBusca();
+});
+
+carregarNoticias(false);
+</script>
+
+</body>
+</html>
