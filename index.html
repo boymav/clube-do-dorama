@@ -231,7 +231,7 @@ Esse dorama muda automaticamente (aleatório) quando a página abre.
 </div>
 
 <p style="text-align:center; margin-top:14px; opacity:0.85;">
-Notícias automáticas via RSS (funciona no GitHub Pages).
+Notícias automáticas + tradução para PT-BR ✅
 </p>
 </section>
 
@@ -241,7 +241,9 @@ Notícias automáticas via RSS (funciona no GitHub Pages).
 
 <script src="doramas.js"></script>
 <script>
-// Dorama da Semana (automático)
+// =====================
+// Dorama da Semana
+// =====================
 function carregarDoramaDaSemana() {
   const area = document.getElementById("dorama-semana");
   area.innerHTML = "";
@@ -260,6 +262,9 @@ function carregarDoramaDaSemana() {
   `;
 }
 
+// =====================
+// Notícias (RSS) + Tradução
+// =====================
 function limparHtml(texto) {
   return (texto || "").replace(/<[^>]*>?/gm, "").trim();
 }
@@ -271,23 +276,61 @@ function formatarData(pubDate) {
   return d.toLocaleDateString("pt-BR", { day:"2-digit", month:"short", year:"numeric" });
 }
 
-// tenta puxar thumbnail de vários campos possíveis do rss2json
 function pegarImagemNoticia(item){
-  // rss2json costuma trazer "thumbnail"
   if (item.thumbnail && item.thumbnail.startsWith("http")) return item.thumbnail;
-
-  // às vezes vem em "enclosure.link"
   if (item.enclosure && item.enclosure.link && item.enclosure.link.startsWith("http")) return item.enclosure.link;
-
-  // tenta achar 1ª imagem dentro do description (se existir)
   const html = item.description || "";
   const match = html.match(/<img[^>]+src=["']([^"']+)["']/i);
   if (match && match[1] && match[1].startsWith("http")) return match[1];
-
   return "";
 }
 
-// Notícias automáticas via RSS2JSON (estável no GitHub Pages)
+// Instância pública do LibreTranslate (pode trocar se alguma instância cair)
+const LT_ENDPOINT = "https://translate.argosopentech.com/translate";
+
+// Cache local para acelerar (não traduzir tudo toda hora)
+const CACHE_KEY = "trad_cache_home_v1";
+const tradCache = JSON.parse(localStorage.getItem(CACHE_KEY) || "{}");
+
+function salvarCache(){
+  localStorage.setItem(CACHE_KEY, JSON.stringify(tradCache));
+}
+
+async function traduzirParaPT(texto) {
+  const t = (texto || "").trim();
+  if (!t) return "";
+
+  // corta pra evitar erro e ficar rápido
+  const curto = t.slice(0, 300);
+
+  if (tradCache[curto]) return tradCache[curto];
+
+  try{
+    const resp = await fetch(LT_ENDPOINT, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        q: curto,
+        source: "en",
+        target: "pt",
+        format: "text"
+      })
+    });
+
+    if (!resp.ok) throw new Error("Falha tradução");
+
+    const data = await resp.json();
+    const traduzido = (data.translatedText || curto).trim();
+
+    tradCache[curto] = traduzido;
+    salvarCache();
+
+    return traduzido;
+  }catch{
+    return curto; // se falhar, mantém original
+  }
+}
+
 async function carregarNoticiasAutomaticas(forcar=false) {
   const grid = document.getElementById("grid-noticias");
 
@@ -301,7 +344,7 @@ async function carregarNoticiasAutomaticas(forcar=false) {
   `;
 
   try {
-    // Para evitar cache: quando clicar em "Atualizar", coloca um parametro extra
+    // RSS via rss2json (estável em site estático)
     const extra = forcar ? ("&cacheBust=" + Date.now()) : "";
     const feed = "https://blog.asianwiki.com/feed/";
     const url = "https://api.rss2json.com/v1/api.json?rss_url=" + encodeURIComponent(feed) + extra;
@@ -310,37 +353,60 @@ async function carregarNoticiasAutomaticas(forcar=false) {
     const data = await resp.json();
 
     if (!data.items || !Array.isArray(data.items)) {
-      throw new Error("Sem items");
+      throw new Error("Sem notícias");
     }
 
     const top = data.items.slice(0, 6);
 
-    grid.innerHTML = top.map(n => {
+    // 1) Render rápido (original)
+    grid.innerHTML = top.map((n, idx) => {
       const img = pegarImagemNoticia(n);
       const descLimpo = limparHtml(n.description);
-      const desc = descLimpo.slice(0, 170) + (descLimpo.length > 170 ? "..." : "");
+      const descCurto = descLimpo.slice(0, 170) + (descLimpo.length > 170 ? "..." : "");
+      const cardId = `home_news_${idx}`;
 
       return `
-        <div class="noticia">
+        <div class="noticia" id="${cardId}">
           ${img ? `<img class="img" src="${img}" alt="Notícia">` : ``}
           <div class="conteudo">
-            <h3>${n.title}</h3>
+            <h3 class="t">${n.title}</h3>
             <div class="meta">AsianWiki • ${formatarData(n.pubDate)}</div>
-            <p>${desc}</p>
+            <p class="d">${descCurto}</p>
             <p style="margin-top:10px;">
-              <a href="${n.link}" target="_blank" rel="noopener noreferrer">Ler notícia →</a>
+              <a href="${n.link}" target="_blank" rel="noopener noreferrer">Ler notícia original →</a>
             </p>
+            <p class="trad" style="margin-top:10px; font-size:12px; opacity:0.75;">Traduzindo…</p>
           </div>
         </div>
       `;
     }).join("");
+
+    // 2) Traduz por cima (PT-BR)
+    top.forEach((n, idx) => {
+      (async () => {
+        const card = document.getElementById(`home_news_${idx}`);
+        if (!card) return;
+
+        const descLimpo = limparHtml(n.description);
+        const descCurto = descLimpo.slice(0, 170) + (descLimpo.length > 170 ? "..." : "");
+
+        const tituloPT = await traduzirParaPT(n.title);
+        const descPT = await traduzirParaPT(descCurto);
+
+        card.querySelector(".t").innerText = tituloPT;
+        card.querySelector(".d").innerText = descPT;
+
+        const p = card.querySelector(".trad");
+        if (p) p.remove();
+      })();
+    });
 
   } catch (e) {
     grid.innerHTML = `
       <div class="noticia">
         <div class="conteudo">
           <h3>😢 Não foi possível carregar</h3>
-          <p>Atualize a página. Se continuar, pode ser limite do RSS2JSON (plano grátis) ou instabilidade do feed.</p>
+          <p>Atualize a página e tente novamente.</p>
         </div>
       </div>
     `;
