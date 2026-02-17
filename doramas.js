@@ -30,42 +30,48 @@ o casal enfrenta escolhas difíceis e grandes sacrifícios.
  tags:["romance","triste","fantasia"],
  nota:"8.8/10 – MyDramaList",
  descricao:"Um ser imortal vive há séculos esperando o fim de sua maldição.\nTudo muda quando conhece uma jovem especial.\nUma história profunda sobre amor eterno e despedidas.",
- imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/Goblin.jpg"
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/Goblin.jpg",
+ trailer:"https://www.youtube.com/embed/S94ukM8C17A"
 },
 {
  nome:"Business Proposal",
  tags:["alegre","comedia","romance"],
  nota:"8.6/10 – MyDramaList",
  descricao:"Um encontro às cegas vira confusão quando ela conhece o próprio chefe.\nSituações engraçadas e muito romance.\nLeve, divertido e perfeito para relaxar.",
- imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/a-business-proposal-recap-episode-one-two-main.jpeg"
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/a-business-proposal-recap-episode-one-two-main.jpeg",
+ trailer:"https://www.youtube.com/embed/mh4R-WXRhQo"
 },
 {
  nome:"Strong Woman Do Bong Soon",
  tags:["alegre","comedia","romance"],
  nota:"8.7/10 – MyDramaList",
  descricao:"Uma jovem nasce com força sobrenatural.\nEla tenta viver normalmente enquanto protege quem ama.\nMistura perfeita de comédia, ação e romance.",
- imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/strong-woman-do-bong-soon.jpg"
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/strong-woman-do-bong-soon.jpg",
+ trailer:"https://www.youtube.com/embed/XLW8yB7Yx0E"
 },
 {
  nome:"It's Okay to Not Be Okay",
  tags:["romance","intenso","triste"],
  nota:"9.0/10 – MyDramaList",
  descricao:"Um cuidador emocionalmente fechado conhece uma escritora excêntrica.\nAmbos carregam traumas profundos.\nUma história sensível sobre cura e amor.",
- imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/its%20ok%20do%20not%20be%20ok.jpg"
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/its%20ok%20do%20not%20be%20ok.jpg",
+ trailer:"https://www.youtube.com/embed/50ek4HQo0bc"
 },
 {
  nome:"Itaewon Class",
  tags:["intenso","romance"],
  nota:"8.9/10 – MyDramaList",
  descricao:"Um jovem luta para vencer injustiças do passado.\nEle abre um bar em Itaewon com grandes sonhos.\nDrama de superação, amizade e amor.",
- imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/itaewon%20class.webp"
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/itaewon%20class.webp",
+ trailer:"https://www.youtube.com/embed/NeaHNQJ1kCo"
 },
 {
  nome:"Vincenzo",
  tags:["alegre","intenso","comedia"],
  nota:"8.8/10 – MyDramaList",
  descricao:"Um advogado da máfia italiana retorna à Coreia.\nEle enfrenta vilões poderosos de forma inusitada.\nAção, humor ácido e justiça.",
- imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/vincenzo.jpg"
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/vincenzo.jpg",
+ trailer:"https://www.youtube.com/embed/S12-4mXCNj4"
 },
 {
  nome:"Reply 1988",
