@@ -498,7 +498,8 @@ o casal enfrenta escolhas difíceis e grandes sacrifícios.
  descricao:"Um casal enfrenta crise profunda.\nAmor, dor e reconciliação.\nMuito emocionante.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/queentears.jpg"
 }
-function criarCard(d) {
+];
+    function criarCard(d) {
     return `
         <div class="card" onclick="window.location.href='dorama.html?nome=${encodeURIComponent(d.nome)}'">
             <img src="${d.imagem}">
