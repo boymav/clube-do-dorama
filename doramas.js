@@ -21,7 +21,8 @@ Entre momentos de humor, tensão e romance proibido,
 o casal enfrenta escolhas difíceis e grandes sacrifícios.
 
 É uma história emocionante sobre amor que ultrapassa fronteiras e ideologias.`,
- imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/crash-landing.jpg"
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/crash-landing.jpg",
+ trailer:"https://www.youtube.com/embed/eXMjTXL2Vks"
 }
 ,
 {
