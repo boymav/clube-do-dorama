@@ -1,1 +1,305 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Descubra seu Dorama 🤖 | Clube do Dorama</title>
 
+<style>
+body{
+  margin:0;
+  font-family: Arial, sans-serif;
+  background:#fff0f6;
+  color:#333;
+}
+
+header{
+  background: linear-gradient(90deg, #ff7eb3, #b983ff);
+  padding: 18px 16px;
+  text-align:center;
+  color:#fff;
+}
+
+header a{
+  display:inline-block;
+  margin-top:10px;
+  color:#fff;
+  text-decoration:none;
+  font-weight:bold;
+  opacity:0.95;
+}
+
+.container{
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 24px 16px 50px;
+}
+
+.titulo{
+  text-align:center;
+  color:#b4005a;
+  font-size: 30px;
+  margin: 10px 0 6px;
+}
+
+.sub{
+  text-align:center;
+  font-size: 18px;
+  opacity: 0.9;
+  margin-bottom: 18px;
+}
+
+.painel{
+  background:#ffffff;
+  border-radius: 18px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  padding: 18px;
+}
+
+.linha-busca{
+  display:flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content:center;
+}
+
+#entrada{
+  width: min(720px, 100%);
+  padding: 16px 16px;
+  font-size: 18px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  outline: none;
+}
+
+#entrada:focus{
+  border-color:#b983ff;
+  box-shadow: 0 0 0 3px rgba(185,131,255,0.25);
+}
+
+.btn{
+  padding: 14px 18px;
+  font-size: 16px;
+  background:#ff7eb3;
+  color:#fff;
+  border:none;
+  border-radius: 12px;
+  cursor:pointer;
+  font-weight:bold;
+}
+
+.btn:hover{ background:#b983ff; }
+
+.atalhos{
+  margin-top: 14px;
+  display:flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content:center;
+}
+
+.chip{
+  background:#f3e8ff;
+  border: 1px solid rgba(185,131,255,0.35);
+  color:#5a2b82;
+  padding: 10px 14px;
+  border-radius: 999px;
+  cursor:pointer;
+  font-weight:bold;
+  font-size: 14px;
+}
+
+.chip:hover{
+  background:#ead7ff;
+}
+
+.aviso{
+  text-align:center;
+  margin-top: 14px;
+  font-size: 15px;
+  opacity:0.85;
+}
+
+.resultado-title{
+  margin: 22px 0 10px;
+  text-align:center;
+  color:#b4005a;
+  font-size: 22px;
+}
+
+.cards{
+  display:flex;
+  flex-wrap:wrap;
+  gap: 18px;
+  justify-content:center;
+}
+
+.card{
+  background:#fff;
+  width: 290px;
+  border-radius: 18px;
+  overflow:hidden;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.10);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  cursor:pointer;
+}
+
+.card:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 10px 26px rgba(0,0,0,0.14);
+}
+
+.card img{
+  width:100%;
+  height: 360px;
+  object-fit: cover;
+}
+
+.card .info{
+  padding: 14px 14px 16px;
+}
+
+.card h3{
+  margin: 0 0 8px;
+  font-size: 18px;
+}
+
+.card p{
+  margin: 0;
+  font-size: 14px;
+  color:#555;
+  line-height: 1.45;
+}
+
+.card .nota{
+  margin-top: 10px;
+  font-weight:bold;
+  color:#7a1b55;
+}
+
+footer{
+  text-align:center;
+  padding: 18px;
+  color:#fff;
+  background:#b983ff;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1 style="margin:0;">🤖 Descubra seu Dorama</h1>
+  <a href="index.html">⬅ Voltar para o início</a>
+</header>
+
+<div class="container">
+  <h2 class="titulo">Me diga como você está se sentindo</h2>
+  <p class="sub">Eu vou sugerir 3 doramas perfeitos pro seu momento ✨</p>
+
+  <div class="painel">
+    <div class="linha-busca">
+      <input type="text" id="entrada" placeholder="Ex: estou triste… quero um romance leve… quero algo intenso…" />
+      <button class="btn" onclick="buscar()">Buscar</button>
+    </div>
+
+    <div class="atalhos">
+      <button class="chip" onclick="atalho('triste')">😭 Triste</button>
+      <button class="chip" onclick="atalho('romance')">💖 Romance</button>
+      <button class="chip" onclick="atalho('alegre')">😊 Leve</button>
+      <button class="chip" onclick="atalho('intenso')">🔥 Intenso</button>
+      <button class="chip" onclick="atalho('comedia')">😂 Comédia</button>
+      <button class="chip" onclick="atalho('fantasia')">✨ Fantasia</button>
+    </div>
+
+    <p class="aviso">Dica: você pode escrever “quero chorar”, “quero rir”, “quero ação”, “quero romance fofo” etc.</p>
+  </div>
+
+  <h3 class="resultado-title" id="tituloResultado" style="display:none;">🎯 Minhas sugestões</h3>
+  <div id="resultado" class="cards"></div>
+</div>
+
+<footer>
+  💜 Clube do Dorama — feito com amor
+</footer>
+
+<script src="doramas.js"></script>
+<script>
+function atalho(tag){
+  const mapaTexto = {
+    triste: "quero algo triste",
+    romance: "quero romance",
+    alegre: "quero algo leve e feliz",
+    intenso: "quero algo intenso e forte",
+    comedia: "quero dar risada",
+    fantasia: "quero fantasia"
+  };
+  document.getElementById("entrada").value = mapaTexto[tag] || tag;
+  buscar();
+}
+
+function buscar() {
+  const texto = (document.getElementById("entrada").value || "").toLowerCase().trim();
+
+  const mapa = {
+    triste: ["triste","chorar","sofrer","emoção","drama","melancólico","melancolia"],
+    romance: ["amor","romance","casal","relacionamento","apaixonado","fofo"],
+    alegre: ["feliz","leve","engraçado","fofo","divertido","confortável","aconchegante"],
+    intenso: ["ação","vingança","suspense","forte","crime","tenso","pesado"],
+    comedia: ["comedia","engraçado","risada","rir","humor"],
+    fantasia: ["fantasia","magia","sobrenatural","místico"]
+  };
+
+  let categoriasDetectadas = [];
+
+  for (let categoria in mapa) {
+    if (mapa[categoria].some(p => texto.includes(p))) {
+      categoriasDetectadas.push(categoria);
+    }
+  }
+
+  let resultados;
+  if (categoriasDetectadas.length > 0) {
+    resultados = doramas.filter(d =>
+      categoriasDetectadas.some(cat => d.tags && d.tags.includes(cat))
+    );
+  } else {
+    resultados = doramas;
+  }
+
+  // 3 sugestões aleatórias
+  resultados = resultados.sort(() => 0.5 - Math.random()).slice(0, 3);
+
+  const div = document.getElementById("resultado");
+  const titulo = document.getElementById("tituloResultado");
+
+  div.innerHTML = "";
+  titulo.style.display = "block";
+
+  if(resultados.length === 0){
+    div.innerHTML = "<p style='text-align:center; width:100%;'>Não achei nada com isso 😢 Tenta outras palavras.</p>";
+    return;
+  }
+
+  resultados.forEach(d => {
+    div.innerHTML += `
+      <div class="card" onclick="window.location.href='dorama.html?nome=${encodeURIComponent(d.nome)}'">
+        <img src="${d.imagem}" alt="${d.nome}">
+        <div class="info">
+          <h3>${d.nome}</h3>
+          <p>${(d.descricao || "").replaceAll("\n","<br>")}</p>
+          <div class="nota">⭐ ${d.nota || ""}</div>
+        </div>
+      </div>
+    `;
+  });
+}
+
+// Buscar ao apertar Enter
+document.getElementById("entrada").addEventListener("keydown", (e) => {
+  if(e.key === "Enter") buscar();
+});
+</script>
+
+</body>
+</html>
