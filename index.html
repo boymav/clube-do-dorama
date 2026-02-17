@@ -48,6 +48,14 @@ button:hover {
     background:#b983ff;
 }
 
+/* Botões menores (para ações) */
+.btn-pequeno{
+    padding: 10px 14px;
+    font-size: 14px;
+    border-radius: 10px;
+    margin: 6px;
+}
+
 /* Cards */
 .cards {
     display: flex;
@@ -103,17 +111,36 @@ button:hover {
 .noticia{
     background: #fff;
     border-radius: 16px;
-    padding: 16px;
+    overflow: hidden;
     box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+}
+.noticia .img{
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    background: #f6f6f6;
+}
+.noticia .conteudo{
+    padding: 16px;
 }
 .noticia h3{
     margin: 0 0 8px;
     color: #b4005a;
+    font-size: 16px;
+    line-height: 1.25;
 }
 .noticia p{
     margin: 0;
     color: #555;
     line-height: 1.5;
+    font-size: 14px;
+}
+.noticia .meta{
+    margin: 8px 0 10px;
+    font-size: 13px;
+    opacity: 0.85;
 }
 .noticia a{
     font-weight:bold;
@@ -122,6 +149,11 @@ button:hover {
 }
 .noticia a:hover{
     text-decoration: underline;
+}
+
+.acoes-noticias{
+    text-align:center;
+    margin-bottom: 14px;
 }
 
 footer {
@@ -184,15 +216,22 @@ Esse dorama muda automaticamente (aleatório) quando a página abre.
 <section id="noticias">
 <h2>📰 Notícias do Momento</h2>
 
+<div class="acoes-noticias">
+  <button class="btn-pequeno" onclick="carregarNoticiasAutomaticas(true)">🔄 Atualizar notícias</button>
+  <button class="btn-pequeno" onclick="window.location.href='noticias.html'">📰 Ver mais notícias</button>
+</div>
+
 <div class="grid-noticias" id="grid-noticias">
   <div class="noticia">
-    <h3>📰 Carregando notícias...</h3>
-    <p>Aguarde alguns segundos ✨</p>
+    <div class="conteudo">
+      <h3>📰 Carregando notícias...</h3>
+      <p>Aguarde alguns segundos ✨</p>
+    </div>
   </div>
 </div>
 
 <p style="text-align:center; margin-top:14px; opacity:0.85;">
-As notícias são carregadas automaticamente quando você abre a página.
+Notícias automáticas via RSS (funciona no GitHub Pages).
 </p>
 </section>
 
@@ -221,89 +260,88 @@ function carregarDoramaDaSemana() {
   `;
 }
 
-// ==== NOTÍCIAS AUTOMÁTICAS (RSS) ====
-
-async function lerRss(feedUrl) {
-  // Proxy para evitar bloqueio CORS em site estático (GitHub Pages)
-  const proxy = "https://api.allorigins.win/raw?url=" + encodeURIComponent(feedUrl);
-
-  const resp = await fetch(proxy);
-  const xmlText = await resp.text();
-
-  const parser = new DOMParser();
-  const xml = parser.parseFromString(xmlText, "text/xml");
-
-  const items = [...xml.querySelectorAll("item")].slice(0, 6).map(item => {
-    const title = item.querySelector("title")?.textContent?.trim() || "Sem título";
-    const link = item.querySelector("link")?.textContent?.trim() || "#";
-    const pubDate = item.querySelector("pubDate")?.textContent?.trim() || "";
-    const descRaw = item.querySelector("description")?.textContent || "";
-    const desc = descRaw.replace(/<[^>]*>/g, "").trim();
-
-    return { title, link, pubDate, desc };
-  });
-
-  return items;
+function limparHtml(texto) {
+  return (texto || "").replace(/<[^>]*>?/gm, "").trim();
 }
 
 function formatarData(pubDate) {
   if (!pubDate) return "";
   const d = new Date(pubDate);
   if (isNaN(d.getTime())) return "";
-  return d.toLocaleDateString("pt-BR", { day: "2-digit", month: "short", year: "numeric" });
+  return d.toLocaleDateString("pt-BR", { day:"2-digit", month:"short", year:"numeric" });
 }
 
-async function carregarNoticiasAutomaticas() {
+// tenta puxar thumbnail de vários campos possíveis do rss2json
+function pegarImagemNoticia(item){
+  // rss2json costuma trazer "thumbnail"
+  if (item.thumbnail && item.thumbnail.startsWith("http")) return item.thumbnail;
+
+  // às vezes vem em "enclosure.link"
+  if (item.enclosure && item.enclosure.link && item.enclosure.link.startsWith("http")) return item.enclosure.link;
+
+  // tenta achar 1ª imagem dentro do description (se existir)
+  const html = item.description || "";
+  const match = html.match(/<img[^>]+src=["']([^"']+)["']/i);
+  if (match && match[1] && match[1].startsWith("http")) return match[1];
+
+  return "";
+}
+
+// Notícias automáticas via RSS2JSON (estável no GitHub Pages)
+async function carregarNoticiasAutomaticas(forcar=false) {
   const grid = document.getElementById("grid-noticias");
 
-  const feeds = [
-    { nome: "AsianWiki", url: "https://blog.asianwiki.com/feed/" },
-    { nome: "Korea Times", url: "https://feed.koreatimes.co.kr/k/entertainment.xml" }
-  ];
+  grid.innerHTML = `
+    <div class="noticia">
+      <div class="conteudo">
+        <h3>📰 Carregando notícias...</h3>
+        <p>Aguarde alguns segundos ✨</p>
+      </div>
+    </div>
+  `;
 
   try {
-    const resultados = await Promise.allSettled(feeds.map(f => lerRss(f.url)));
+    // Para evitar cache: quando clicar em "Atualizar", coloca um parametro extra
+    const extra = forcar ? ("&cacheBust=" + Date.now()) : "";
+    const feed = "https://blog.asianwiki.com/feed/";
+    const url = "https://api.rss2json.com/v1/api.json?rss_url=" + encodeURIComponent(feed) + extra;
 
-    let noticias = [];
-    resultados.forEach((r, idx) => {
-      if (r.status === "fulfilled") {
-        const fonte = feeds[idx].nome;
-        r.value.forEach(n => noticias.push({ ...n, fonte }));
-      }
-    });
+    const resp = await fetch(url);
+    const data = await resp.json();
 
-    if (noticias.length === 0) {
-      grid.innerHTML = `
-        <div class="noticia">
-          <h3>😢 Não foi possível carregar</h3>
-          <p>Algumas fontes podem bloquear o acesso. Tente atualizar a página.</p>
-        </div>
-      `;
-      return;
+    if (!data.items || !Array.isArray(data.items)) {
+      throw new Error("Sem items");
     }
 
-    // Ordena por data
-    noticias.sort((a, b) => new Date(b.pubDate) - new Date(a.pubDate));
-    noticias = noticias.slice(0, 6);
+    const top = data.items.slice(0, 6);
 
-    grid.innerHTML = noticias.map(n => `
-      <div class="noticia">
-        <h3>${n.title}</h3>
-        <p style="margin:6px 0; font-size:13px; opacity:0.85;">
-          ${n.fonte}${n.pubDate ? " • " + formatarData(n.pubDate) : ""}
-        </p>
-        <p>${(n.desc || "").slice(0, 160)}${(n.desc || "").length > 160 ? "..." : ""}</p>
-        <p style="margin-top:10px;">
-          <a href="${n.link}" target="_blank" rel="noopener noreferrer">Ler notícia →</a>
-        </p>
-      </div>
-    `).join("");
+    grid.innerHTML = top.map(n => {
+      const img = pegarImagemNoticia(n);
+      const descLimpo = limparHtml(n.description);
+      const desc = descLimpo.slice(0, 170) + (descLimpo.length > 170 ? "..." : "");
+
+      return `
+        <div class="noticia">
+          ${img ? `<img class="img" src="${img}" alt="Notícia">` : ``}
+          <div class="conteudo">
+            <h3>${n.title}</h3>
+            <div class="meta">AsianWiki • ${formatarData(n.pubDate)}</div>
+            <p>${desc}</p>
+            <p style="margin-top:10px;">
+              <a href="${n.link}" target="_blank" rel="noopener noreferrer">Ler notícia →</a>
+            </p>
+          </div>
+        </div>
+      `;
+    }).join("");
 
   } catch (e) {
     grid.innerHTML = `
       <div class="noticia">
-        <h3>😢 Erro ao carregar</h3>
-        <p>Atualize a página e tente novamente.</p>
+        <div class="conteudo">
+          <h3>😢 Não foi possível carregar</h3>
+          <p>Atualize a página. Se continuar, pode ser limite do RSS2JSON (plano grátis) ou instabilidade do feed.</p>
+        </div>
       </div>
     `;
   }
@@ -311,7 +349,7 @@ async function carregarNoticiasAutomaticas() {
 
 window.onload = () => {
   carregarDoramaDaSemana();
-  carregarNoticiasAutomaticas();
+  carregarNoticiasAutomaticas(false);
 };
 </script>
 
