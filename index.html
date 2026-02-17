@@ -6,237 +6,144 @@
 <title>Clube do Dorama 💕</title>
 
 <style>
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #fff0f6;
-    color: #333;
-}
-header {
-    background: linear-gradient(90deg, #ff7eb3, #b983ff);
-    padding: 20px;
-    text-align: center;
-    color: white;
-}
-nav a {
-    margin: 0 10px;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-section {
-    padding: 40px 20px;
-}
-h2 {
-    text-align: center;
-    color: #b4005a;
-}
+body { margin:0; font-family: Arial, sans-serif; background:#fff0f6; color:#333; }
+header { background: linear-gradient(90deg, #ff7eb3, #b983ff); padding:20px; text-align:center; color:white; }
+nav a { margin: 0 10px; color:white; text-decoration:none; font-weight:bold; }
+section { padding:40px 20px; }
+h2 { text-align:center; color:#b4005a; }
 
-/* Botões maiores e bonitos */
-button {
-    padding: 14px 22px;
-    margin: 8px;
-    background:#ff7eb3;
-    color:white;
-    border:none;
-    border-radius:12px;
-    cursor:pointer;
-    font-weight:bold;
-    font-size:18px;
+button{
+  padding:14px 22px; margin:8px;
+  background:#ff7eb3; color:white; border:none;
+  border-radius:12px; cursor:pointer; font-weight:bold; font-size:18px;
 }
-button:hover {
-    background:#b983ff;
-}
+button:hover{ background:#b983ff; }
 
-/* Botões menores (para ações) */
 .btn-pequeno{
-    padding: 10px 14px;
-    font-size: 14px;
-    border-radius: 10px;
-    margin: 6px;
+  padding:10px 14px; font-size:14px; border-radius:10px; margin:6px;
 }
 
 /* Cards */
-.cards {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
+.cards{ display:flex; flex-wrap:wrap; gap:20px; justify-content:center; }
+.card{
+  background:white; width:300px; border-radius:18px; overflow:hidden;
+  box-shadow:0 5px 15px rgba(0,0,0,0.1);
+  transition: transform .3s ease, box-shadow .3s ease;
 }
-.card {
-    background: white;
-    width: 300px;
-    border-radius: 18px;
-    overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.card.click {
-    cursor: pointer;
-}
-.card.click:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-}
-.card img {
-    width: 100%;
-    height: 380px;
-    object-fit: cover;
-}
-.card div {
-    padding: 16px;
-}
-.card h3{
-    margin: 0 0 8px;
-}
-.card p{
-    margin: 0;
-    color: #555;
-    line-height: 1.45;
-}
-.card .mini{
-    margin-top: 10px;
-    font-weight: bold;
-    color: #7a1b55;
-}
+.card.click{ cursor:pointer; }
+.card.click:hover{ transform: translateY(-8px); box-shadow:0 10px 25px rgba(0,0,0,0.15); }
+.card img{ width:100%; height:380px; object-fit:cover; }
+.card div{ padding:16px; }
+.card h3{ margin:0 0 8px; }
+.card p{ margin:0; color:#555; line-height:1.45; }
+.card .mini{ margin-top:10px; font-weight:bold; color:#7a1b55; }
 
 /* Notícias */
 .grid-noticias{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 18px;
-    max-width: 980px;
-    margin: 0 auto;
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap:18px; max-width:980px; margin:0 auto;
 }
 .noticia{
-    background: #fff;
-    border-radius: 16px;
-    overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-    display: flex;
-    flex-direction: column;
+  background:#fff; border-radius:16px; overflow:hidden;
+  box-shadow:0 5px 15px rgba(0,0,0,0.08);
+  display:flex; flex-direction:column;
 }
-.noticia .img{
-    width: 100%;
-    height: 160px;
-    object-fit: cover;
-    background: #f6f6f6;
-}
-.noticia .conteudo{
-    padding: 16px;
-}
-.noticia h3{
-    margin: 0 0 8px;
-    color: #b4005a;
-    font-size: 16px;
-    line-height: 1.25;
-}
-.noticia p{
-    margin: 0;
-    color: #555;
-    line-height: 1.5;
-    font-size: 14px;
-}
-.noticia .meta{
-    margin: 8px 0 10px;
-    font-size: 13px;
-    opacity: 0.85;
-}
-.noticia a{
-    font-weight:bold;
-    color:#b4005a;
-    text-decoration:none;
-}
-.noticia a:hover{
-    text-decoration: underline;
+.noticia .img{ width:100%; height:160px; object-fit:cover; background:#f6f6f6; }
+.noticia .conteudo{ padding:16px; }
+.noticia h3{ margin:0 0 8px; color:#b4005a; font-size:16px; line-height:1.25; }
+.noticia p{ margin:0; color:#555; line-height:1.5; font-size:14px; }
+.noticia .meta{ margin:8px 0 10px; font-size:13px; opacity:.85; }
+.noticia a{ font-weight:bold; color:#b4005a; text-decoration:none; }
+.noticia a:hover{ text-decoration:underline; }
+.acoes-noticias{ text-align:center; margin-bottom:14px; }
+
+.badge{
+  display:inline-block;
+  margin-top:10px;
+  background: rgba(255,255,255,0.18);
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: bold;
 }
 
-.acoes-noticias{
-    text-align:center;
-    margin-bottom: 14px;
-}
-
-footer {
-    background: #b983ff;
-    color: white;
-    text-align: center;
-    padding: 15px;
-}
+footer{ background:#b983ff; color:white; text-align:center; padding:15px; }
 </style>
 </head>
 
 <body>
 
 <header>
-    <h1>🎬 Clube do Dorama</h1>
-    <p>Descubra doramas perfeitos para o seu momento 💕</p>
-    <nav>
-        <a href="#inicio">Início</a>
-        <a href="#listas">Listas 💖</a>
-        <a href="#semana">Dorama da semana 🌟</a>
-        <a href="#noticias">Notícias 📰</a>
-        <a href="todos.html">Todos os Doramas 📚</a>
-        <a href="descubra.html">Descubra 🤖</a>
-    </nav>
+  <h1>🎬 Clube do Dorama</h1>
+  <p>Descubra doramas perfeitos para o seu momento 💕</p>
+
+  <!-- 👇 isso serve pra você ter certeza que o index novo está no ar -->
+  <div class="badge">✅ VERSÃO PT-BR HOME (v3)</div>
+
+  <nav>
+    <a href="#inicio">Início</a>
+    <a href="#listas">Listas 💖</a>
+    <a href="#semana">Dorama da semana 🌟</a>
+    <a href="#noticias">Notícias 📰</a>
+    <a href="todos.html">Todos os Doramas 📚</a>
+    <a href="descubra.html">Descubra 🤖</a>
+  </nav>
 </header>
 
 <section id="inicio">
-<h2>✨ Bem-vindo(a)</h2>
-<p style="text-align:center; max-width:700px; margin:auto;">
-O Clube do Dorama é um espaço feito para quem ama histórias emocionantes,
-românticas, divertidas e intensas.
-</p>
+  <h2>✨ Bem-vindo(a)</h2>
+  <p style="text-align:center; max-width:700px; margin:auto;">
+    O Clube do Dorama é um espaço feito para quem ama histórias emocionantes,
+    românticas, divertidas e intensas.
+  </p>
 </section>
 
 <section id="listas">
-<h2>📋 Listas de Doramas</h2>
-
-<div style="text-align:center; margin-bottom:10px;">
-  <button onclick="window.location.href='categoria.html?tipo=romance'">💖 Românticos</button>
-  <button onclick="window.location.href='categoria.html?tipo=triste'">😭 Tristes</button>
-  <button onclick="window.location.href='categoria.html?tipo=intenso'">🔥 Intensos</button>
-  <button onclick="window.location.href='categoria.html?tipo=alegre'">😊 Leves</button>
-</div>
-
-<p style="text-align:center; margin:0; opacity:0.85;">
-Clique e veja 10 doramas perfeitos pra cada emoção ✨
-</p>
+  <h2>📋 Listas de Doramas</h2>
+  <div style="text-align:center; margin-bottom:10px;">
+    <button onclick="window.location.href='categoria.html?tipo=romance'">💖 Românticos</button>
+    <button onclick="window.location.href='categoria.html?tipo=triste'">😭 Tristes</button>
+    <button onclick="window.location.href='categoria.html?tipo=intenso'">🔥 Intensos</button>
+    <button onclick="window.location.href='categoria.html?tipo=alegre'">😊 Leves</button>
+  </div>
+  <p style="text-align:center; margin:0; opacity:0.85;">
+    Clique e veja 10 doramas perfeitos pra cada emoção ✨
+  </p>
 </section>
 
 <section id="semana">
-<h2>🌟 Dorama da Semana</h2>
-
-<div class="cards" id="dorama-semana"></div>
-
-<p style="text-align:center; max-width:800px; margin: 14px auto 0; opacity:0.85;">
-Esse dorama muda automaticamente (aleatório) quando a página abre.
-</p>
+  <h2>🌟 Dorama da Semana</h2>
+  <div class="cards" id="dorama-semana"></div>
+  <p style="text-align:center; max-width:800px; margin: 14px auto 0; opacity:0.85;">
+    Esse dorama muda automaticamente (aleatório) quando a página abre.
+  </p>
 </section>
 
 <section id="noticias">
-<h2>📰 Notícias do Momento</h2>
+  <h2>📰 Notícias do Momento</h2>
 
-<div class="acoes-noticias">
-  <button class="btn-pequeno" onclick="carregarNoticiasAutomaticas(true)">🔄 Atualizar notícias</button>
-  <button class="btn-pequeno" onclick="window.location.href='noticias.html'">📰 Ver mais notícias</button>
-</div>
+  <div class="acoes-noticias">
+    <button class="btn-pequeno" onclick="carregarNoticiasAutomaticas(true)">🔄 Atualizar notícias</button>
+    <button class="btn-pequeno" onclick="window.location.href='noticias.html'">📰 Ver mais notícias</button>
+  </div>
 
-<div class="grid-noticias" id="grid-noticias">
-  <div class="noticia">
-    <div class="conteudo">
-      <h3>📰 Carregando notícias...</h3>
-      <p>Aguarde alguns segundos ✨</p>
+  <div class="grid-noticias" id="grid-noticias">
+    <div class="noticia">
+      <div class="conteudo">
+        <h3>📰 Carregando notícias...</h3>
+        <p>Aguarde alguns segundos ✨</p>
+      </div>
     </div>
   </div>
-</div>
 
-<p style="text-align:center; margin-top:14px; opacity:0.85;">
-Notícias automáticas + tradução para PT-BR ✅
-</p>
+  <p style="text-align:center; margin-top:14px; opacity:0.85;">
+    Notícias automáticas + tradução PT-BR ✅
+  </p>
 </section>
 
 <footer>
-<p>💜 Clube do Dorama — feito com amor</p>
+  <p>💜 Clube do Dorama — feito com amor</p>
 </footer>
 
 <script src="doramas.js"></script>
@@ -247,9 +154,7 @@ Notícias automáticas + tradução para PT-BR ✅
 function carregarDoramaDaSemana() {
   const area = document.getElementById("dorama-semana");
   area.innerHTML = "";
-
   const escolhido = doramas[Math.floor(Math.random() * doramas.length)];
-
   area.innerHTML = `
     <div class="card click" onclick="window.location.href='dorama.html?nome=${encodeURIComponent(escolhido.nome)}'">
       <img src="${escolhido.imagem}" alt="${escolhido.nome}">
@@ -263,7 +168,7 @@ function carregarDoramaDaSemana() {
 }
 
 // =====================
-// Notícias (RSS) + Tradução
+// Notícias + Tradução (com fallback)
 // =====================
 function limparHtml(texto) {
   return (texto || "").replace(/<[^>]*>?/gm, "").trim();
@@ -285,50 +190,48 @@ function pegarImagemNoticia(item){
   return "";
 }
 
-// Instância pública do LibreTranslate (pode trocar se alguma instância cair)
-const LT_ENDPOINT = "https://translate.argosopentech.com/translate";
-
-// Cache local para acelerar (não traduzir tudo toda hora)
-const CACHE_KEY = "trad_cache_home_v1";
+// Cache local (pra ficar rápido)
+const CACHE_KEY = "trad_cache_home_v3";
 const tradCache = JSON.parse(localStorage.getItem(CACHE_KEY) || "{}");
+function salvarCache(){ localStorage.setItem(CACHE_KEY, JSON.stringify(tradCache)); }
 
-function salvarCache(){
-  localStorage.setItem(CACHE_KEY, JSON.stringify(tradCache));
-}
+// 1) tenta LibreTranslate (POST)
+// 2) se falhar, tenta MyMemory (GET)
+// 3) se falhar, volta original
+const LT_ENDPOINT = "https://translate.argosopentech.com/translate";
 
 async function traduzirParaPT(texto) {
   const t = (texto || "").trim();
   if (!t) return "";
-
-  // corta pra evitar erro e ficar rápido
-  const curto = t.slice(0, 300);
-
+  const curto = t.slice(0, 240); // curto pra evitar erro/limite
   if (tradCache[curto]) return tradCache[curto];
 
+  // TENTA 1: LibreTranslate
   try{
     const resp = await fetch(LT_ENDPOINT, {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        q: curto,
-        source: "en",
-        target: "pt",
-        format: "text"
-      })
+      headers: { "Content-Type":"application/json" },
+      body: JSON.stringify({ q: curto, source:"en", target:"pt", format:"text" })
     });
+    if (resp.ok) {
+      const data = await resp.json();
+      const out = (data.translatedText || curto).trim();
+      tradCache[curto] = out; salvarCache();
+      return out;
+    }
+  } catch(e){}
 
-    if (!resp.ok) throw new Error("Falha tradução");
+  // TENTA 2: MyMemory
+  try{
+    const url = "https://api.mymemory.translated.net/get?q=" + encodeURIComponent(curto) + "&langpair=en|pt-BR";
+    const resp2 = await fetch(url);
+    const data2 = await resp2.json();
+    const out2 = (data2.responseData && data2.responseData.translatedText) ? data2.responseData.translatedText.trim() : curto;
+    tradCache[curto] = out2; salvarCache();
+    return out2;
+  } catch(e){}
 
-    const data = await resp.json();
-    const traduzido = (data.translatedText || curto).trim();
-
-    tradCache[curto] = traduzido;
-    salvarCache();
-
-    return traduzido;
-  }catch{
-    return curto; // se falhar, mantém original
-  }
+  return curto;
 }
 
 async function carregarNoticiasAutomaticas(forcar=false) {
@@ -344,7 +247,6 @@ async function carregarNoticiasAutomaticas(forcar=false) {
   `;
 
   try {
-    // RSS via rss2json (estável em site estático)
     const extra = forcar ? ("&cacheBust=" + Date.now()) : "";
     const feed = "https://blog.asianwiki.com/feed/";
     const url = "https://api.rss2json.com/v1/api.json?rss_url=" + encodeURIComponent(feed) + extra;
@@ -352,21 +254,17 @@ async function carregarNoticiasAutomaticas(forcar=false) {
     const resp = await fetch(url);
     const data = await resp.json();
 
-    if (!data.items || !Array.isArray(data.items)) {
-      throw new Error("Sem notícias");
-    }
+    if (!data.items || !Array.isArray(data.items)) throw new Error("Sem notícias");
 
     const top = data.items.slice(0, 6);
 
-    // 1) Render rápido (original)
+    // render rápido (inglês) + "Traduzindo…"
     grid.innerHTML = top.map((n, idx) => {
       const img = pegarImagemNoticia(n);
       const descLimpo = limparHtml(n.description);
-      const descCurto = descLimpo.slice(0, 170) + (descLimpo.length > 170 ? "..." : "");
-      const cardId = `home_news_${idx}`;
-
+      const descCurto = descLimpo.slice(0, 160) + (descLimpo.length > 160 ? "..." : "");
       return `
-        <div class="noticia" id="${cardId}">
+        <div class="noticia" id="home_news_${idx}">
           ${img ? `<img class="img" src="${img}" alt="Notícia">` : ``}
           <div class="conteudo">
             <h3 class="t">${n.title}</h3>
@@ -381,17 +279,17 @@ async function carregarNoticiasAutomaticas(forcar=false) {
       `;
     }).join("");
 
-    // 2) Traduz por cima (PT-BR)
+    // traduz por cima
     top.forEach((n, idx) => {
       (async () => {
         const card = document.getElementById(`home_news_${idx}`);
         if (!card) return;
 
         const descLimpo = limparHtml(n.description);
-        const descCurto = descLimpo.slice(0, 170) + (descLimpo.length > 170 ? "..." : "");
+        const descCurto = descLimpo.slice(0, 160) + (descLimpo.length > 160 ? "..." : "");
 
         const tituloPT = await traduzirParaPT(n.title);
-        const descPT = await traduzirParaPT(descCurto);
+        const descPT   = await traduzirParaPT(descCurto);
 
         card.querySelector(".t").innerText = tituloPT;
         card.querySelector(".d").innerText = descPT;
@@ -406,7 +304,7 @@ async function carregarNoticiasAutomaticas(forcar=false) {
       <div class="noticia">
         <div class="conteudo">
           <h3>😢 Não foi possível carregar</h3>
-          <p>Atualize a página e tente novamente.</p>
+          <p>Tente atualizar. Se persistir, pode ser limite do RSS2JSON ou da tradução.</p>
         </div>
       </div>
     `;
