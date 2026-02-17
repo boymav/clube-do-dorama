@@ -522,7 +522,17 @@ function carregarCategoria() {
         return;
     }
 
-    titulo.innerHTML = "Doramas " + tipo;
+    const nomesBonitos = {
+    romance: "Românticos 💖",
+    alegre: "Alegres 😄",
+    triste: "Tristes 😭",
+    intenso: "Intensos 🔥",
+    fantasia: "Fantasia ✨",
+    comedia: "Comédia 😂"
+};
+
+titulo.innerHTML = nomesBonitos[tipo] || ("Doramas " + tipo);
+
 
     const filtrados = doramas
     .filter(d => 
