@@ -98,6 +98,20 @@ function carregarDorama() {
     document.getElementById("conteudo-detalhe").innerHTML = `
         <h2>${dorama.nome}</h2>
         <img src="${dorama.imagem}">
+        ${dorama.trailer ? `
+    <div style="margin:30px 0;">
+        <h3 style="font-size:22px;">🎬 Trailer</h3>
+        <iframe 
+            width="100%" 
+            height="400" 
+            src="${dorama.trailer}" 
+            frameborder="0" 
+            allowfullscreen
+            style="border-radius:16px;">
+        </iframe>
+    </div>
+` : ""}
+
         <p>
             ${(dorama.resumo || dorama.descricao).replaceAll("\n","<br>")}
         </p>
