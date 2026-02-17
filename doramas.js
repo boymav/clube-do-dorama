@@ -29,7 +29,7 @@ o casal enfrenta escolhas difíceis e grandes sacrifícios.
  tags:["romance","fantasia","triste"],
  nota:"8.8/10 – MyDramaList",
  descricao:"Um ser imortal busca alguém para quebrar sua maldição.",
- imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/Goblin.jpg",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/Goblin.jpg",
  resumo:`Kim Shin é um general traído que acaba sendo amaldiçoado com a imortalidade. 
 Séculos depois, ele ainda vive entre os humanos carregando culpa e solidão.
 A única forma de quebrar a maldição é encontrar sua noiva destinada.
