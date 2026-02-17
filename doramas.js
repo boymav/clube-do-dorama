@@ -381,21 +381,70 @@ mistério e fantasia de forma intensa.
  tags:["romance","fantasia","intenso"],
  nota:"8.8/10 – MyDramaList",
  descricao:"Três pessoas conseguem prever o futuro em sonhos.\nEles tentam evitar tragédias.\nSuspense com romance.",
- imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/sleeping.jpg"
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/sleeping.jpg",
+ trailer:"https://www.youtube.com/embed/Uc3kNn1dS8c",
+ resumo:`Nam Hong Joo começa a ter sonhos que mostram tragédias futuras.
+Ela percebe que precisa agir para impedir que esses acontecimentos se tornem realidade.
+
+Um promotor justo e um policial dedicado também passam a ter visões semelhantes.
+Os três se unem para tentar mudar destinos.
+
+Enquanto enfrentam casos perigosos,
+um romance delicado começa a surgir.
+
+O dorama mistura suspense,
+emoção e fantasia.
+
+Cada episódio traz tensão e decisões difíceis.
+
+É uma história sobre destino,
+coragem e amor inesperado.`
 },
 {
  nome:"Her Private Life",
  tags:["romance","alegre","comedia"],
  nota:"8.5/10 – MyDramaList",
  descricao:"Uma curadora de arte leva uma vida dupla.\nEla é fã secreta de um idol.\nRomance divertido e leve.",
- imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/private.jpg"
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/private.jpg",
+ trailer:"https://www.youtube.com/embed/nH9xqk1jVhY",
+ resumo:`Sung Deok Mi é uma curadora de arte profissional e respeitada.
+Mas fora do trabalho, ela vive secretamente como fã obsessiva de um idol.
+
+Quando um novo diretor começa a trabalhar no museu,
+ele descobre seu segredo.
+
+Entre mal-entendidos e situações engraçadas,
+os dois começam a se aproximar.
+
+O dorama mostra o lado divertido do mundo dos fãs.
+
+É leve,
+romântico e cheio de química entre o casal principal.
+
+Perfeito para quem quer algo doce e divertido.`
 },
 {
  nome:"Touch Your Heart",
  tags:["romance","alegre","comedia"],
  nota:"8.4/10 – MyDramaList",
  descricao:"Uma atriz trabalha como secretária temporária.\nEla se envolve com um advogado sério.\nDoce e romântico.",
- imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/touch.jpg"
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/touch.jpg",
+ trailer:"https://www.youtube.com/embed/1h7H6qY3u4I",
+ resumo:`Oh Yoon Seo é uma atriz que precisa recuperar sua reputação.
+Para isso, ela começa a trabalhar como secretária em um escritório de advocacia.
+
+Lá ela conhece Kwon Jung Rok,
+um advogado sério e extremamente profissional.
+
+No início, eles vivem muitos conflitos.
+Mas aos poucos, a convivência aproxima os dois.
+
+O romance cresce de forma suave e encantadora.
+
+É um dorama leve,
+cheio de momentos fofos e carinho.
+
+Ideal para quem ama romance puro.`
 },
 {
  nome:"My ID is Gangnam Beauty",
