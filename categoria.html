@@ -525,8 +525,12 @@ function carregarCategoria() {
     titulo.innerHTML = "Doramas " + tipo;
 
     const filtrados = doramas
-        .filter(d => d.tags && d.tags.includes(tipo))
-        .slice(0, 10);
+    .filter(d => 
+        d.tags && 
+        d.tags.some(tag => tag.toLowerCase() === tipo.toLowerCase())
+    )
+    .slice(0, 10);
+
 
     if (filtrados.length === 0) {
         container.innerHTML = "<p>Nenhum dorama encontrado.</p>";
