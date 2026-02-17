@@ -76,12 +76,6 @@ footer {
     text-align: center;
     padding: 15px;
 }
-input[type=text] {
-    padding:10px;
-    width:250px;
-    border-radius: 5px;
-    border:1px solid #ccc;
-}
 </style>
 </head>
 
@@ -94,7 +88,7 @@ input[type=text] {
         <a href="#inicio">Início</a>
         <a href="#listas">Listas 💖</a>
         <a href="#todos">Todos 📚</a>
-        <a href="#descubra">Descubra 🤖</a>
+        <a href="descubra.html">Descubra 🤖</a>
     </nav>
 </header>
 
@@ -136,16 +130,6 @@ românticas, divertidas e intensas.
 <div id="todos-doramas" class="cards"></div>
 </section>
 
-<section id="descubra">
-<h2>🤖 Descubra seu Dorama</h2>
-<p style="text-align:center;">Escreva como você está se sentindo:</p>
-<div style="text-align:center;">
-    <input type="text" id="entrada" placeholder="Ex: triste, feliz, romance...">
-    <button onclick="buscar()">Buscar</button>
-</div>
-<div id="resultado" style="text-align:center; margin-top:20px; font-weight:bold;"></div>
-</section>
-
 <footer>
 <p>💜 Clube do Dorama — feito com amor</p>
 </footer>
@@ -160,53 +144,6 @@ function carregarTodos() {
  doramas.forEach(d => {
   c.innerHTML += `
    <div class="card" onclick="window.location.href='dorama.html?nome=${encodeURIComponent(d.nome)}'">
-    <img src="${d.imagem}">
-    <div>
-     <h3>${d.nome}</h3>
-     <p>${d.descricao.replaceAll("\n","<br>")}</p>
-     <p>⭐ ${d.nota}</p>
-    </div>
-   </div>`;
- });
-}
-
-/* DESCUBRIR */
-function buscar() {
- const texto = document.getElementById("entrada").value.toLowerCase();
-
- const mapa = {
-  triste:["triste","chorar","sofrer","emoção","drama"],
-  romance:["amor","romance","casal","relacionamento"],
-  alegre:["feliz","leve","engraçado","fofo"],
-  intenso:["ação","vingança","suspense","crime"]
- };
-
- let categoriasDetectadas = [];
-
- for (let categoria in mapa) {
-  if (mapa[categoria].some(p => texto.includes(p))) {
-   categoriasDetectadas.push(categoria);
-  }
- }
-
- let resultados;
-
- if (categoriasDetectadas.length > 0) {
-  resultados = doramas.filter(d =>
-   categoriasDetectadas.some(cat => d.tags.includes(cat))
-  );
- } else {
-  resultados = doramas;
- }
-
- resultados = resultados.sort(() => 0.5 - Math.random()).slice(0,3);
-
- const div = document.getElementById("resultado");
- div.innerHTML = "";
-
- resultados.forEach(d => {
-  div.innerHTML += `
-   <div class="card" style="margin:10px auto; max-width:300px;">
     <img src="${d.imagem}">
     <div>
      <h3>${d.nome}</h3>
