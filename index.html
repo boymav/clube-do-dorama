@@ -32,29 +32,29 @@ h2 {
     color: #b4005a;
 }
 
-/* botões maiores e mais bonitos */
+/* Botões maiores e bonitos */
 button {
     padding: 14px 22px;
     margin: 8px;
-    background: #ff7eb3;
-    color: white;
-    border: none;
-    border-radius: 12px;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 18px;
+    background:#ff7eb3;
+    color:white;
+    border:none;
+    border-radius:12px;
+    cursor:pointer;
+    font-weight:bold;
+    font-size:18px;
 }
 button:hover {
-    background: #b983ff;
+    background:#b983ff;
 }
 
+/* Cards */
 .cards {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
 }
-
 .card {
     background: white;
     width: 300px;
@@ -63,41 +63,36 @@ button:hover {
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
+.card.click {
+    cursor: pointer;
+}
+.card.click:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
 .card img {
     width: 100%;
     height: 380px;
     object-fit: cover;
 }
-
 .card div {
     padding: 16px;
 }
-
 .card h3{
     margin: 0 0 8px;
 }
-
 .card p{
     margin: 0;
     color: #555;
     line-height: 1.45;
 }
-
 .card .mini{
     margin-top: 10px;
     font-weight: bold;
     color: #7a1b55;
 }
 
-.card.click{
-    cursor: pointer;
-}
-.card.click:hover{
-    transform: translateY(-8px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-}
-
+/* Notícias */
 .grid-noticias{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -105,23 +100,28 @@ button:hover {
     max-width: 980px;
     margin: 0 auto;
 }
-
 .noticia{
     background: #fff;
     border-radius: 16px;
     padding: 16px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.08);
 }
-
 .noticia h3{
     margin: 0 0 8px;
     color: #b4005a;
 }
-
 .noticia p{
     margin: 0;
     color: #555;
     line-height: 1.5;
+}
+.noticia a{
+    font-weight:bold;
+    color:#b4005a;
+    text-decoration:none;
+}
+.noticia a:hover{
+    text-decoration: underline;
 }
 
 footer {
@@ -177,7 +177,7 @@ Clique e veja 10 doramas perfeitos pra cada emoção ✨
 <div class="cards" id="dorama-semana"></div>
 
 <p style="text-align:center; max-width:800px; margin: 14px auto 0; opacity:0.85;">
-Essa parte você pode trocar toda semana. Eu deixei pronto pra funcionar automático também.
+Esse dorama muda automaticamente (aleatório) quando a página abre.
 </p>
 </section>
 
@@ -186,21 +186,13 @@ Essa parte você pode trocar toda semana. Eu deixei pronto pra funcionar automá
 
 <div class="grid-noticias" id="grid-noticias">
   <div class="noticia">
-    <h3>🔥 Em alta</h3>
-    <p>Coloque aqui uma notícia curtinha do mundo dos doramas. Ex: “Novo dorama anunciado”, “Elenco confirmado”, “Data de estreia”.</p>
-  </div>
-  <div class="noticia">
-    <h3>🎬 Lançamentos</h3>
-    <p>Coloque aqui o que chegou essa semana nas plataformas (Netflix, Viki etc.).</p>
-  </div>
-  <div class="noticia">
-    <h3>💖 Recomendações</h3>
-    <p>Coloque aqui um mini texto: “Se você gostou de X, assista Y”.</p>
+    <h3>📰 Carregando notícias...</h3>
+    <p>Aguarde alguns segundos ✨</p>
   </div>
 </div>
 
 <p style="text-align:center; margin-top:14px; opacity:0.85;">
-Depois, se você quiser, eu faço essa parte virar uma “página de notícias” também.
+As notícias são carregadas automaticamente quando você abre a página.
 </p>
 </section>
 
@@ -211,7 +203,6 @@ Depois, se você quiser, eu faço essa parte virar uma “página de notícias�
 <script src="doramas.js"></script>
 <script>
 // Dorama da Semana (automático)
-// Ele pega 1 dorama aleatório quando abre a página.
 function carregarDoramaDaSemana() {
   const area = document.getElementById("dorama-semana");
   area.innerHTML = "";
@@ -230,7 +221,98 @@ function carregarDoramaDaSemana() {
   `;
 }
 
-window.onload = carregarDoramaDaSemana;
+// ==== NOTÍCIAS AUTOMÁTICAS (RSS) ====
+
+async function lerRss(feedUrl) {
+  // Proxy para evitar bloqueio CORS em site estático (GitHub Pages)
+  const proxy = "https://api.allorigins.win/raw?url=" + encodeURIComponent(feedUrl);
+
+  const resp = await fetch(proxy);
+  const xmlText = await resp.text();
+
+  const parser = new DOMParser();
+  const xml = parser.parseFromString(xmlText, "text/xml");
+
+  const items = [...xml.querySelectorAll("item")].slice(0, 6).map(item => {
+    const title = item.querySelector("title")?.textContent?.trim() || "Sem título";
+    const link = item.querySelector("link")?.textContent?.trim() || "#";
+    const pubDate = item.querySelector("pubDate")?.textContent?.trim() || "";
+    const descRaw = item.querySelector("description")?.textContent || "";
+    const desc = descRaw.replace(/<[^>]*>/g, "").trim();
+
+    return { title, link, pubDate, desc };
+  });
+
+  return items;
+}
+
+function formatarData(pubDate) {
+  if (!pubDate) return "";
+  const d = new Date(pubDate);
+  if (isNaN(d.getTime())) return "";
+  return d.toLocaleDateString("pt-BR", { day: "2-digit", month: "short", year: "numeric" });
+}
+
+async function carregarNoticiasAutomaticas() {
+  const grid = document.getElementById("grid-noticias");
+
+  const feeds = [
+    { nome: "AsianWiki", url: "https://blog.asianwiki.com/feed/" },
+    { nome: "Korea Times", url: "https://feed.koreatimes.co.kr/k/entertainment.xml" }
+  ];
+
+  try {
+    const resultados = await Promise.allSettled(feeds.map(f => lerRss(f.url)));
+
+    let noticias = [];
+    resultados.forEach((r, idx) => {
+      if (r.status === "fulfilled") {
+        const fonte = feeds[idx].nome;
+        r.value.forEach(n => noticias.push({ ...n, fonte }));
+      }
+    });
+
+    if (noticias.length === 0) {
+      grid.innerHTML = `
+        <div class="noticia">
+          <h3>😢 Não foi possível carregar</h3>
+          <p>Algumas fontes podem bloquear o acesso. Tente atualizar a página.</p>
+        </div>
+      `;
+      return;
+    }
+
+    // Ordena por data
+    noticias.sort((a, b) => new Date(b.pubDate) - new Date(a.pubDate));
+    noticias = noticias.slice(0, 6);
+
+    grid.innerHTML = noticias.map(n => `
+      <div class="noticia">
+        <h3>${n.title}</h3>
+        <p style="margin:6px 0; font-size:13px; opacity:0.85;">
+          ${n.fonte}${n.pubDate ? " • " + formatarData(n.pubDate) : ""}
+        </p>
+        <p>${(n.desc || "").slice(0, 160)}${(n.desc || "").length > 160 ? "..." : ""}</p>
+        <p style="margin-top:10px;">
+          <a href="${n.link}" target="_blank" rel="noopener noreferrer">Ler notícia →</a>
+        </p>
+      </div>
+    `).join("");
+
+  } catch (e) {
+    grid.innerHTML = `
+      <div class="noticia">
+        <h3>😢 Erro ao carregar</h3>
+        <p>Atualize a página e tente novamente.</p>
+      </div>
+    `;
+  }
+}
+
+window.onload = () => {
+  carregarDoramaDaSemana();
+  carregarNoticiasAutomaticas();
+};
 </script>
 
 </body>
