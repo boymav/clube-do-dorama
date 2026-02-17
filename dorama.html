@@ -4,7 +4,75 @@
 <meta charset="UTF-8">
 <title>Dorama | Clube do Dorama</title>
 <link rel="stylesheet" href="style.css">
+
+<style>
+
+/* FUNDO BONITO */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #ffe6f2, #fff0f7);
+}
+
+/* CAIXA CENTRAL */
+#conteudo-detalhe {
+    max-width: 900px;
+    margin: 50px auto;
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* TÍTULO */
+#conteudo-detalhe h2 {
+    font-size: 32px;
+    color: #d63384;
+    margin-bottom: 20px;
+}
+
+/* IMAGEM PADRONIZADA */
+#conteudo-detalhe img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 25px;
+}
+
+/* TEXTO MAIS CONFORTÁVEL */
+#conteudo-detalhe p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #444;
+    text-align: justify;
+}
+
+/* NOTA */
+#conteudo-detalhe strong {
+    font-size: 20px;
+    color: #ff4d94;
+}
+
+@media (max-width: 768px) {
+    #conteudo-detalhe {
+        margin: 20px;
+        padding: 25px;
+    }
+
+    #conteudo-detalhe h2 {
+        font-size: 24px;
+    }
+
+    #conteudo-detalhe p {
+        font-size: 16px;
+    }
+}
+
+</style>
+
 </head>
+
 <body>
 
 <header>
@@ -29,8 +97,8 @@ function carregarDorama() {
 
     document.getElementById("conteudo-detalhe").innerHTML = `
         <h2>${dorama.nome}</h2>
-        <img src="${dorama.imagem}" style="width:300px;border-radius:12px;">
-        <p style="line-height:1.7;text-align:justify;">
+        <img src="${dorama.imagem}">
+        <p>
             ${(dorama.resumo || dorama.descricao).replaceAll("\n","<br>")}
         </p>
         <p><strong>⭐ ${dorama.nota}</strong></p>
