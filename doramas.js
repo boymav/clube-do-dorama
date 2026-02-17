@@ -90,7 +90,24 @@ O final é emocionante e inesquecível.`
  tags:["alegre","romance"],
  nota:"9.1/10 – MyDramaList",
  descricao:"Famílias e amigos vivem no mesmo bairro nos anos 80.\nHistória cheia de nostalgia e afeto.\nUm dorama sobre crescer e amar.",
- imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/reply%201988.jpg"
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/reply%201988.jpg",
+ trailer:"https://www.youtube.com/embed/5V2Yz0uA4xY",
+ resumo:`A história acompanha cinco amigos que cresceram juntos em um bairro simples de Seul nos anos 80.
+Cada família tem suas dificuldades, sonhos e momentos engraçados.
+
+O dorama mostra o dia a dia cheio de pequenas alegrias,
+brigas bobas e muito companheirismo.
+
+Os pais também têm grande destaque,
+mostrando o amor silencioso e os sacrifícios feitos pelos filhos.
+
+Entre romances adolescentes e decisões importantes,
+os personagens aprendem sobre amizade, família e amadurecimento.
+
+É uma história nostálgica,
+emocionante e extremamente acolhedora.
+
+Mostra que felicidade muitas vezes está nas coisas simples da vida.`
 },
 {
  nome:"Hotel Del Luna",
