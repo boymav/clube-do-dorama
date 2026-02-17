@@ -134,7 +134,7 @@ o casal enfrenta escolhas difíceis e grandes sacrifícios.
  tags:["romance","alegre","intenso"],
  nota:"8.6/10 – MyDramaList",
  descricao:"Jovens tentam realizar seus sonhos no mundo das startups.\nAmor, ambição e desafios se misturam.\nInspirador e emocionante.",
- imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/startup.jpg"
+ imagem:"https://upload.wikimedia.org/wikipedia/en/7/7e/Start-Up_%28TV_series%29.jpg"
 },
 {
  nome:"Hometown Cha-Cha-Cha",
