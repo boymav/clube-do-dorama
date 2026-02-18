@@ -1,1 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
+  <url>
+    <loc>https://planetadorama.com.br/</loc>
+  </url>
+
+  <url>
+    <loc>https://planetadorama.com.br/todos.html</loc>
+  </url>
+
+  <url>
+    <loc>https://planetadorama.com.br/favoritos.html</loc>
+  </url>
+
+  <url>
+    <loc>https://planetadorama.com.br/descubra.html</loc>
+  </url>
+
+  <url>
+    <loc>https://planetadorama.com.br/noticias.html</loc>
+  </url>
+
+</urlset>
