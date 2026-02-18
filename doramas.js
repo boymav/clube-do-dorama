@@ -313,7 +313,7 @@ fracassos e perseverança.
  tags:["romance","alegre","comedia"],
  nota:"8.9/10 – MyDramaList",
  descricao:"Uma dentista se muda para uma vila à beira-mar.\nEla conhece um faz-tudo muito carismático.\nRomance leve e aconchegante.",
- imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/cha.jpg",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/hometown.webp",
  trailer:"https://www.youtube.com/embed/jwXKxXz7T9Q",
  resumo:`Yoon Hye Jin é uma dentista inteligente e determinada.
 Após problemas na cidade grande, ela decide recomeçar em uma pequena vila litorânea.
@@ -336,7 +336,7 @@ cheio de carinho e crescimento pessoal.`
  tags:["romance","triste"],
  nota:"8.5/10 – MyDramaList",
  descricao:"Um casamento por contrato muda duas vidas.\nEles aprendem a lidar com sentimentos reais.\nRomance maduro e sensível.",
- imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/firstlife.jpg",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/because%20this%20is.jfif",
  trailer:"https://www.youtube.com/embed/8xHh8Gg8YyA",
  resumo:`Nam Se Hee é um homem introvertido que só pensa em pagar sua casa.
 Yoon Ji Ho é uma escritora desempregada procurando estabilidade.
