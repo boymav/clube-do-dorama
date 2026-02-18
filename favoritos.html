@@ -1,1 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meus Favoritos 💜 | Planeta Dorama 🌍</title>
 
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fff0f6;
+  color: #333;
+}
+
+header {
+  background: linear-gradient(90deg, #ff7eb3, #b983ff);
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section {
+  padding: 30px 20px 40px;
+}
+
+h2 {
+  text-align: center;
+  color: #b4005a;
+  margin-top: 0;
+}
+
+.sub {
+  text-align: center;
+  opacity: 0.85;
+  margin: 8px auto 18px;
+  max-width: 820px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background: white;
+  width: 260px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.card img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.card div {
+  padding: 15px;
+}
+
+.card h3 {
+  margin: 0 0 8px;
+}
+
+.card p {
+  margin: 0;
+  color: #555;
+  line-height: 1.45;
+}
+
+.topbar {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 14px 0 24px;
+}
+
+input[type="text"] {
+  padding: 14px 16px;
+  width: min(520px, 92%);
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+button {
+  padding: 14px 18px;
+  background: #ff7eb3;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+}
+button:hover { background: #b983ff; }
+
+button.sec {
+  background: #f3e8ff;
+  color: #5a2b82;
+  border: 1px solid rgba(185,131,255,0.45);
+}
+button.sec:hover { background: #ead7ff; }
+
+.vazio {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  padding: 18px;
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+footer {
+  background: #b983ff;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1 style="margin:0;">💜 Meus Favoritos</h1>
+  <p style="margin:8px 0 0;">
+    <a href="index.html">⬅ Voltar para a página inicial 🌍</a>
+  </p>
+</header>
+
+<section>
+  <h2>Seus doramas salvos</h2>
+  <p class="sub">
+    Aqui ficam os doramas que você favoritou. Eles ficam salvos no seu navegador.
+  </p>
+
+  <div class="topbar">
+    <input id="busca" type="text" placeholder="Pesquisar nos favoritos… Ex: Goblin, Vincenzo">
+    <button onclick="filtrar()">Pesquisar</button>
+    <button class="sec" onclick="limparFavoritos()">🗑️ Limpar tudo</button>
+  </div>
+
+  <div id="area" class="cards"></div>
+</section>
+
+<footer>
+  <p>💜 Planeta Dorama 🌍 — feito com amor</p>
+</footer>
+
+<script src="doramas.js"></script>
+<script>
+const FAV_KEY = "pd_favoritos_v1";
+
+function getFavoritos(){
+  try { return JSON.parse(localStorage.getItem(FAV_KEY) || "[]"); }
+  catch(e){ return []; }
+}
+
+function setFavoritos(lista){
+  localStorage.setItem(FAV_KEY, JSON.stringify(lista));
+}
+
+function removerFavorito(nome){
+  const favs = getFavoritos().filter(n => n !== nome);
+  setFavoritos(favs);
+  render(getListaAtual());
+}
+
+let listaBase = []; // favoritos carregados (objetos doramas)
+
+function getListaAtual(){
+  const texto = (document.getElementById("busca").value || "").toLowerCase().trim();
+  if(!texto) return listaBase;
+
+  return listaBase.filter(d =>
+    (d.nome || "").toLowerCase().includes(texto)
+  );
+}
+
+function render(lista){
+  const area = document.getElementById("area");
+  area.innerHTML = "";
+
+  if(!lista || lista.length === 0){
+    area.innerHTML = `
+      <div class="vazio" style="width:100%;">
+        <h3 style="margin:0 0 8px;color:#b4005a;">Nada por aqui ainda 😢</h3>
+        <p style="margin:0;opacity:.85;">
+          Vá em um dorama e clique em <b>Favoritar</b> 🤍 → ele vai aparecer aqui.
+        </p>
+        <p style="margin:12px 0 0;">
+          <a href="todos.html" style="font-weight:bold;color:#b4005a;text-decoration:none;">
+            👉 Ver todos os doramas
+          </a>
+        </p>
+      </div>
+    `;
+    return;
+  }
+
+  lista.forEach(d => {
+    area.innerHTML += `
+      <div class="card" onclick="window.location.href='dorama.html?nome=${encodeURIComponent(d.nome)}'">
+        <img src="${d.imagem}" alt="${d.nome}" loading="lazy">
+        <div>
+          <h3>${d.nome}</h3>
+          <p>${(d.descricao || "").replaceAll("\n","<br>")}</p>
+          <p style="margin-top:10px;font-weight:bold;color:#7a1b55;">⭐ ${d.nota || ""}</p>
+          <button class="sec" style="margin-top:12px;width:100%;"
+            onclick="event.stopPropagation(); removerFavorito('${(d.nome || '').replaceAll("'", "\\'")}')">
+            ❌ Remover dos favoritos
+          </button>
+        </div>
+      </div>
+    `;
+  });
+}
+
+function carregarFavoritos(){
+  const favNomes = getFavoritos();
+
+  // Converte nomes para objetos do doramas.js
+  listaBase = favNomes
+    .map(nome => doramas.find(d => d.nome === nome))
+    .filter(Boolean);
+
+  render(listaBase);
+}
+
+function filtrar(){
+  render(getListaAtual());
+}
+
+function limparFavoritos(){
+  const ok = confirm("Tem certeza que quer apagar TODOS os favoritos?");
+  if(!ok) return;
+  setFavoritos([]);
+  carregarFavoritos();
+}
+
+document.getElementById("busca").addEventListener("keydown", (e) => {
+  if(e.key === "Enter") filtrar();
+});
+
+carregarFavoritos();
+</script>
+
+</body>
+</html>
