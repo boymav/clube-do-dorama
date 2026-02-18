@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Todos os Doramas 📚 | Clube do Dorama</title>
+<title>Todos os Doramas 📚 | Planeta Dorama 🌍</title>
 
 <style>
 body {
@@ -109,12 +109,12 @@ footer {
 <header>
     <h1 style="margin:0;">📚 Todos os Doramas</h1>
     <p style="margin:8px 0 0;">
-        <a href="index.html">⬅ Voltar para a página inicial</a>
+        <a href="index.html">⬅ Voltar para a página inicial 🌍</a>
     </p>
 </header>
 
 <section>
-    <h2>Explore todos os doramas do site</h2>
+    <h2>Explore todos os doramas do Planeta Dorama 🌍</h2>
 
     <div class="filtro">
         <input id="busca" type="text" placeholder="Digite um nome… Ex: Goblin, Vincenzo, Reply 1988">
@@ -125,7 +125,7 @@ footer {
 </section>
 
 <footer>
-    <p>💜 Clube do Dorama — feito com amor</p>
+    <p>💜 Planeta Dorama 🌍 — feito com amor</p>
 </footer>
 
 <script src="doramas.js"></script>
@@ -159,12 +159,10 @@ function filtrar() {
   render(filtrados);
 }
 
-// Enter para pesquisar
 document.getElementById("busca").addEventListener("keydown", (e) => {
   if (e.key === "Enter") filtrar();
 });
 
-// Carrega tudo ao abrir
 render(doramas);
 </script>
 
