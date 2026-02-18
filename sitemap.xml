@@ -1,24 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-  <url>
-    <loc>https://planetadorama.com.br/</loc>
-  </url>
-
-  <url>
-    <loc>https://planetadorama.com.br/todos.html</loc>
-  </url>
-
-  <url>
-    <loc>https://planetadorama.com.br/favoritos.html</loc>
-  </url>
-
-  <url>
-    <loc>https://planetadorama.com.br/descubra.html</loc>
-  </url>
-
-  <url>
-    <loc>https://planetadorama.com.br/noticias.html</loc>
-  </url>
-
+  <url><loc>https://planetadorama.com.br/</loc><lastmod>2026-02-18</lastmod></url>
+  <url><loc>https://planetadorama.com.br/doramas/</loc><lastmod>2026-02-18</lastmod></url>
+  <url><loc>https://planetadorama.com.br/doramas/18-again.html</loc><lastmod>2026-02-18</lastmod></url>
+  <url><loc>https://planetadorama.com.br/doramas/a-business-proposal.html</loc><lastmod>2026-02-18</lastmod></url>
+  <url><loc>https://planetadorama.com.br/doramas/alchemy-of-souls.html</loc><lastmod>2026-02-18</lastmod></url>
+  <url><loc>https://planetadorama.com.br/doramas/arthdal-chronicles.html</loc><lastmod>2026-02-18</lastmod></url>
+  <url><loc>https://planetadorama.com.br/doramas/bad-and-crazy.html</loc><lastmod>2026-02-18</lastmod></url>
+  <url><loc>https://planetadorama.com.br/doramas/because-of-meeting-you.html</loc><lastmod>2026-02-18</lastmod></url>
+  <url><loc>https://planetadorama.com.br/doramas/because-this-is-my-first-life.html</loc><lastmod>2026-02-18</lastmod></url>
+  <url><loc>https://planetadorama.com.br/doramas/big-mouth.html</loc><lastmod>2026-02-18</lastmod></url>
+  <url><loc>https://planetadorama.com.br/doramas/business-proposal.html</loc><lastmod>2026-02-18</lastmod></url>
+  <url><loc>https://planetadorama.com.br/doramas/coffee-prince.html</loc><lastmod>2026-02-18</lastmod></url>
+  <url><loc>https://planetadorama.com.br/doramas/crash-landing-on-you.html</loc><lastmod>2026-02-18</lastmod></url>
+  <url><loc>https://planetadorama.com.br/doramas/d-p.html</loc><lastmod>2026-02-18</lastmod></url>
+  <url><loc>https://planetadorama.com.br/doramas/descendants-of-the-sun.html</loc><lastmod>2026-02-18</lastmod></url>
+  <url><loc>https://planetadorama.com.br/doramas/doctor-stranger.html</loc><lastmod>2026-02-18</lastmod></url>
+  <url><loc>https://planetadorama.com.br/doramas/doom-at-your-service.html</loc><lastmod>2026-02-18</lastmod></url>
+  <url><loc>https://planetadorama.com.br/doramas/extraordinary-attorney-woo.html</loc><lastmod>2026-02-18</lastmod></url>
+  <url><loc>https://planetadorama.com.br/doramas/fight-for-my-way.html</loc><lastmod>2026-02-18</lastmod></url>
+  <url><loc>https://planetadorama.com.br/doramas/flower-of-evil.html</loc><lastmod>2026-02-18</lastmod></url>
+  <url><loc>https://planetadorama.com.br/doramas/goblin.html</loc><lastmod>2026-02-18</lastmod></url>
+  <url><loc>https://planetadorama.com.br/doramas/healer.html</loc><lastmod>2026-02-18</lastmod></url>
+  <url><loc>https://planetadorama.com.br/doramas/her-private-life.html</loc><lastmod>2026-02-18</lastmod></url>
+  <url><loc>https://planetadorama.com.br/doramas/hometown-cha-cha-cha.html</loc><lastmod>2026-02-18</lastmod></url>
+  <url><loc>https://planetadorama.com.br/doramas/hospital-playlist.html</loc><lastmod>2026-02-18</lastmod></url>
+  <url><loc>https://planetadorama.com.br/doramas/hotel-del-luna.html</loc><lastmod>2026-02-18</lastmod></url>
+  <url><loc>https://planetadorama.com.br/doramas/itaewon-class.html</loc><lastmod>2026-02-18</lastmod></url>
+  <url><loc>https://planetadorama.com.br/doramas/its-okay-to-not-be-okay.html</loc><lastmod>2026-02-18</lastmod></url>
+  <url><loc>https://planetadorama.com.br/doramas/kingdom.html</loc><lastmod>2026-02-18</lastmod></url>
+  <url><loc>https://planetadorama.com.br/doramas/little-women.html</loc><lastmod>2026-02-18</lastmod></url>
+  <url><loc>https://planetadorama.com.br/doramas/love-alarm.html</loc><lastmod>2026-02-18</lastmod></url>
+  <url><loc>https://planetadorama.com.br/doramas/moon-lovers-scarlet-heart-ryeo.html</loc><lastmod>2026-02-18</lastmod></url>
+  <url><loc>https://planetadorama.com.br/doramas/mouse.html</loc><lastmod>2026-02-18</lastmod></url>
+  <url><loc>https://planetadorama.com.br/doramas/move-to-heaven.html</loc><lastmod>2026-02-18</lastmod></url>
+  <url><loc>https://planetadorama.com.br/doramas/mr-sunshine.html</loc><lastmod>2026-02-18</lastmod></url>
+  <url><loc>https://planetadorama.com.br/doramas/my-id-is-gangnam-beauty.html</loc><lastmod>2026-02-18</lastmod></url>
+  <url><loc>https://planetadorama.com.br/doramas/my-love-from-the-star.html</loc><lastmod>2026-02-18</lastmod></url>
+  <url><loc>https://planetadorama.com.br/doramas/my-mister.html</loc><lastmod>2026-02-18</lastmod></url>
+  <url><loc>https://planetadorama.com.br/doramas/my-name.html</loc><lastmod>2026-02-18</lastmod></url>
+  <url><loc>https://planetadorama.com.br/doramas/navillera.html</loc><lastmod>2026-02-18</lastmod></url>
+  <url><loc>https://planetadorama.com.br/doramas/nevertheless.html</loc><lastmod>2026-02-18</lastmod></url>
+  <url><loc>https://planetadorama.com.br/doramas/our-beloved-summer.html</loc><lastmod>2026-02-18</lastmod></url>
+  <url><loc>https://planetadorama.com.br/doramas/prison-playbook.html</loc><lastmod>2026-02-18</lastmod></url>
+  <url><loc>https://planetadorama.com.br/doramas/queen-of-tears.html</loc><lastmod>2026-02-18</lastmod></url>
+  <url><loc>https://planetadorama.com.br/doramas/reborn-rich.html</loc><lastmod>2026-02-18</lastmod></url>
+  <url><loc>https://planetadorama.com.br/doramas/reply-1988.html</loc><lastmod>2026-02-18</lastmod></url>
+  <url><loc>https://planetadorama.com.br/doramas/romance-is-a-bonus-book.html</loc><lastmod>2026-02-18</lastmod></url>
+  <url><loc>https://planetadorama.com.br/doramas/rookie-historian-goo-hae-ryung.html</loc><lastmod>2026-02-18</lastmod></url>
+  <url><loc>https://planetadorama.com.br/doramas/secret-garden.html</loc><lastmod>2026-02-18</lastmod></url>
+  <url><loc>https://planetadorama.com.br/doramas/signal.html</loc><lastmod>2026-02-18</lastmod></url>
+  <url><loc>https://planetadorama.com.br/doramas/sky-castle.html</loc><lastmod>2026-02-18</lastmod></url>
+  <url><loc>https://planetadorama.com.br/doramas/snowdrop.html</loc><lastmod>2026-02-18</lastmod></url>
+  <url><loc>https://planetadorama.com.br/doramas/start-up.html</loc><lastmod>2026-02-18</lastmod></url>
+  <url><loc>https://planetadorama.com.br/doramas/strong-woman-do-bong-soon.html</loc><lastmod>2026-02-18</lastmod></url>
+  <url><loc>https://planetadorama.com.br/doramas/strongest-deliveryman.html</loc><lastmod>2026-02-18</lastmod></url>
+  <url><loc>https://planetadorama.com.br/doramas/sweet-home.html</loc><lastmod>2026-02-18</lastmod></url>
+  <url><loc>https://planetadorama.com.br/doramas/the-good-bad-mother.html</loc><lastmod>2026-02-18</lastmod></url>
+  <url><loc>https://planetadorama.com.br/doramas/the-heirs.html</loc><lastmod>2026-02-18</lastmod></url>
+  <url><loc>https://planetadorama.com.br/doramas/the-king-eternal-monarch.html</loc><lastmod>2026-02-18</lastmod></url>
+  <url><loc>https://planetadorama.com.br/doramas/the-legend-of-the-blue-sea.html</loc><lastmod>2026-02-18</lastmod></url>
+  <url><loc>https://planetadorama.com.br/doramas/the-red-sleeve.html</loc><lastmod>2026-02-18</lastmod></url>
+  <url><loc>https://planetadorama.com.br/doramas/touch-your-heart.html</loc><lastmod>2026-02-18</lastmod></url>
+  <url><loc>https://planetadorama.com.br/doramas/true-beauty.html</loc><lastmod>2026-02-18</lastmod></url>
+  <url><loc>https://planetadorama.com.br/doramas/vincenzo.html</loc><lastmod>2026-02-18</lastmod></url>
+  <url><loc>https://planetadorama.com.br/doramas/w-two-worlds.html</loc><lastmod>2026-02-18</lastmod></url>
+  <url><loc>https://planetadorama.com.br/doramas/weightlifting-fairy-kim-bok-joo.html</loc><lastmod>2026-02-18</lastmod></url>
+  <url><loc>https://planetadorama.com.br/doramas/while-you-were-sleeping.html</loc><lastmod>2026-02-18</lastmod></url>
+  <url><loc>https://planetadorama.com.br/doramas/youth-of-may.html</loc><lastmod>2026-02-18</lastmod></url>
 </urlset>
