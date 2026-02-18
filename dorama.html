@@ -7,18 +7,25 @@
 <link rel="stylesheet" href="style.css">
 
 <style>
-/* FUNDO */
+:root{
+  --rosa:#ff7eb3;
+  --roxo:#b983ff;
+  --texto:#333;
+  --muted:#666;
+}
+
 body{
   margin:0;
   font-family:'Segoe UI', sans-serif;
   background: linear-gradient(135deg, #ffe6f2, #fff0f7);
+  color: var(--texto);
 }
 
-/* HEADER (se o style.css já tiver, pode remover esse inline depois) */
+/* HEADER (se já tiver no style.css, pode remover daqui depois) */
 header{
   text-align:center;
   padding:20px;
-  background:linear-gradient(90deg,#ff7eb3,#b983ff);
+  background:linear-gradient(90deg,var(--rosa),var(--roxo));
   color:white;
 }
 header h1{ margin:0; }
@@ -28,115 +35,206 @@ header a{
   font-weight:bold;
   display:inline-block;
   margin-top:8px;
+  opacity:0.95;
 }
 
-/* CAIXA CENTRAL */
-#conteudo-detalhe{
-  max-width: 980px;
-  margin: 50px auto;
-  background: white;
-  padding: 34px;
-  border-radius: 20px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+/* ===== HERO / BANNER ===== */
+.hero{
+  position: relative;
+  max-width: 1100px;
+  margin: 22px auto 0;
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: 0 16px 40px rgba(0,0,0,0.14);
 }
 
-/* TÍTULO */
-#conteudo-detalhe h2{
-  font-size: 32px;
-  color: #d63384;
-  margin: 0 0 18px;
+/* Fundo com blur da própria imagem */
+.hero::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background-image: var(--hero-bg, linear-gradient(90deg, var(--rosa), var(--roxo)));
+  background-size: cover;
+  background-position: center;
+  filter: blur(22px);
+  transform: scale(1.15);
 }
 
-/* Layout premium (desktop) */
-.detalhe-grid{
+/* camada escura para o texto ficar legível */
+.hero::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background: linear-gradient(90deg,
+    rgba(20, 0, 20, 0.75),
+    rgba(20, 0, 20, 0.40),
+    rgba(20, 0, 20, 0.10)
+  );
+}
+
+.hero-inner{
+  position: relative;
+  z-index: 1;
+  padding: 26px;
   display:grid;
-  grid-template-columns: 420px 1fr;
-  gap: 26px;
-  align-items:start;
+  grid-template-columns: 300px 1fr;
+  gap: 22px;
+  align-items: center;
+  color: #fff;
 }
 
-/* Em telas pequenas volta a ficar em coluna */
 @media (max-width: 900px){
-  #conteudo-detalhe{ margin:20px; padding:24px; }
-  #conteudo-detalhe h2{ font-size:24px; }
-  .detalhe-grid{ grid-template-columns: 1fr; }
+  .hero{ margin: 16px 14px 0; }
+  .hero-inner{
+    grid-template-columns: 1fr;
+    padding: 18px;
+    text-align:center;
+  }
 }
 
-/* Poster padronizado (SEM CORTAR) */
-.poster-wrap{
-  width: min(420px, 100%);
-  aspect-ratio: 2 / 3;   /* padrão poster */
-  background: #fff0f6;
+/* Poster dentro do banner (padrão sem cortar) */
+.poster{
+  width: 100%;
+  max-width: 300px;
+  aspect-ratio: 2 / 3;
   border-radius: 18px;
   overflow: hidden;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.10);
+  background: rgba(255,255,255,0.08);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.28);
+  margin: 0 auto;
   display:flex;
   align-items:center;
   justify-content:center;
 }
-
-.poster-wrap img{
-  width: 100%;
-  height: 100%;
-  object-fit: contain;   /* NÃO corta */
-  object-position: center;
+.poster img{
+  width:100%;
+  height:100%;
+  object-fit: contain; /* NÃO corta */
+  object-position:center;
   display:block;
+  background: rgba(255,255,255,0.06);
 }
 
-/* Texto */
+.hero-title{
+  margin:0 0 10px;
+  font-size: 34px;
+  line-height: 1.15;
+}
+@media(max-width:900px){
+  .hero-title{ font-size: 26px; }
+}
+
+.hero-meta{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  align-items:center;
+  margin: 10px 0 12px;
+  justify-content:flex-start;
+}
+@media(max-width:900px){
+  .hero-meta{ justify-content:center; }
+}
+
+.chip{
+  display:inline-block;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.14);
+  border: 1px solid rgba(255,255,255,0.18);
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.tags{
+  margin-top: 6px;
+}
+.tag{
+  display:inline-block;
+  padding: 7px 10px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.14);
+  border: 1px solid rgba(255,255,255,0.18);
+  margin: 6px 6px 0 0;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+/* estrelas */
+.stars{
+  font-size: 18px;
+  letter-spacing: 2px;
+  margin-top: 2px;
+}
+.stars small{
+  letter-spacing: 0;
+  font-size: 13px;
+  opacity: 0.9;
+}
+
+/* Botões no hero */
+.hero-actions{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  margin-top: 14px;
+}
+@media(max-width:900px){
+  .hero-actions{ justify-content:center; }
+}
+
+.btn{
+  padding: 12px 16px;
+  border-radius: 14px;
+  border:none;
+  cursor:pointer;
+  font-weight:bold;
+  font-size: 15px;
+  background: var(--rosa);
+  color:#fff;
+}
+.btn:hover{ background: var(--roxo); }
+
+.btn-sec{
+  background: rgba(255,255,255,0.15);
+  border: 1px solid rgba(255,255,255,0.20);
+}
+.btn-sec:hover{
+  background: rgba(255,255,255,0.22);
+}
+
+/* ===== CONTEÚDO ===== */
+#conteudo-detalhe{
+  max-width: 980px;
+  margin: 18px auto 50px;
+  background: white;
+  padding: 28px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.10);
+}
+
+@media (max-width: 900px){
+  #conteudo-detalhe{ margin: 16px 14px 40px; padding: 20px; }
+}
+
+/* texto */
 .texto{
   font-size: 18px;
-  line-height: 1.8;
+  line-height: 1.85;
   color: #444;
   text-align: justify;
   margin: 0;
 }
-@media (max-width:900px){
-  .texto{ font-size:16px; }
+@media(max-width:900px){ .texto{ font-size:16px; } }
+
+.divisor{
+  height:1px;
+  background: rgba(0,0,0,0.08);
+  margin: 18px 0;
 }
 
-/* Nota */
-.nota{
-  margin-top: 14px;
-  font-weight: bold;
-  font-size: 18px;
-  color: #ff4d94;
-}
-
-/* Botões */
-.botoes{
-  display:flex;
-  gap:10px;
-  flex-wrap:wrap;
-  margin: 12px 0 10px;
-}
-.btn-acao{
-  padding: 12px 16px;
-  border-radius: 12px;
-  border: none;
-  cursor: pointer;
-  font-weight: bold;
-  font-size: 15px;
-  background: #ff7eb3;
-  color: #fff;
-}
-.btn-acao:hover{ background:#b983ff; }
-.btn-sec{
-  background:#f3e8ff;
-  color:#5a2b82;
-  border: 1px solid rgba(185,131,255,0.45);
-}
-.btn-sec:hover{ background:#ead7ff; }
-.mini-msg{
-  font-size: 13px;
-  opacity: .85;
-  margin-top: 6px;
-}
-
-/* Trailer responsivo (16:9) */
-.trailer-box{
-  margin-top: 16px;
-}
+/* Trailer responsivo */
+.trailer-box{ margin-top: 14px; }
 .trailer-box h3{
   font-size:22px;
   color:#d63384;
@@ -147,7 +245,7 @@ header a{
   aspect-ratio: 16 / 9;
   border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 8px 22px rgba(0,0,0,0.10);
+  box-shadow: 0 10px 26px rgba(0,0,0,0.12);
   background:#000;
 }
 .video-wrap iframe{
@@ -159,7 +257,7 @@ header a{
 
 /* Relacionados */
 .relacionados{
-  margin-top: 28px;
+  margin-top: 26px;
   padding-top: 18px;
   border-top: 1px solid rgba(0,0,0,0.08);
 }
@@ -187,8 +285,8 @@ header a{
   box-shadow: 0 10px 26px rgba(0,0,0,0.14);
 }
 .card-mini img{
-  width: 100%;
-  height: 230px;
+  width:100%;
+  height:230px;
   object-fit: cover;
   display:block;
 }
@@ -205,23 +303,6 @@ header a{
   font-size: 13px;
   opacity: .85;
 }
-
-/* Pequeno detalhe para "tags" */
-.tags{
-  margin-top: 6px;
-  font-size: 13px;
-  opacity: 0.85;
-}
-.tag{
-  display:inline-block;
-  background:#f3e8ff;
-  border: 1px solid rgba(185,131,255,0.35);
-  color:#5a2b82;
-  padding: 6px 10px;
-  border-radius: 999px;
-  margin: 4px 6px 0 0;
-  font-weight:bold;
-}
 </style>
 </head>
 
@@ -232,6 +313,12 @@ header a{
   <a href="index.html">⬅ Voltar</a>
 </header>
 
+<!-- HERO (banner) -->
+<section id="hero" class="hero" style="display:none;">
+  <div class="hero-inner" id="hero-inner"></div>
+</section>
+
+<!-- Conteúdo -->
 <section id="conteudo-detalhe"></section>
 
 <script src="script.js"></script>
@@ -243,16 +330,8 @@ function getFavoritos(){
   try { return JSON.parse(localStorage.getItem(FAV_KEY) || "[]"); }
   catch(e){ return []; }
 }
-
-function setFavoritos(lista){
-  localStorage.setItem(FAV_KEY, JSON.stringify(lista));
-}
-
-function isFav(nome){
-  const favs = getFavoritos();
-  return favs.includes(nome);
-}
-
+function setFavoritos(lista){ localStorage.setItem(FAV_KEY, JSON.stringify(lista)); }
+function isFav(nome){ return getFavoritos().includes(nome); }
 function toggleFav(nome){
   const favs = getFavoritos();
   const idx = favs.indexOf(nome);
@@ -268,24 +347,46 @@ function escaparHtml(str){
   }[m]));
 }
 
+function parseNota(nota){
+  const m = String(nota || "").match(/[\d]+([.,]\d+)?/);
+  if(!m) return 0;
+  return parseFloat(m[0].replace(",", "."));
+}
+
+/* Converte nota 0-10 para estrelas 0-5 (com meia estrela) */
+function estrelasDeNota(notaStr){
+  const n10 = parseNota(notaStr);        // 0..10
+  const n5  = Math.max(0, Math.min(5, n10 / 2)); // 0..5
+  const cheio = Math.floor(n5);
+  const resto = n5 - cheio;
+  const meio  = resto >= 0.5 ? 1 : 0;
+  const vazio = 5 - cheio - meio;
+
+  const stars = "★".repeat(cheio) + (meio ? "☆" : "") + "✩".repeat(vazio);
+  // Usamos: ★ cheio, ☆ meia (visual), ✩ vazio
+  return { stars, n10: (isNaN(n10) ? "" : n10.toFixed(1).replace(".", ",")) };
+}
+
 function sugestoesRelacionadas(doramaAtual){
   const atualTags = Array.isArray(doramaAtual.tags) ? doramaAtual.tags : [];
-
-  // Se tiver tags: pega semelhantes
   if(atualTags.length > 0){
     const similares = doramas
       .filter(d => d.nome !== doramaAtual.nome)
       .filter(d => Array.isArray(d.tags) && d.tags.some(t => atualTags.includes(t)));
-
-    // embaralha e pega 6
     return similares.sort(() => 0.5 - Math.random()).slice(0, 6);
   }
-
-  // Fallback: aleatórios (se não tiver tags)
   return doramas
     .filter(d => d.nome !== doramaAtual.nome)
     .sort(() => 0.5 - Math.random())
     .slice(0, 6);
+}
+
+function montarMetaLinha(d){
+  const partes = [];
+  if(d.ano) partes.push(String(d.ano));
+  if(d.pais) partes.push(String(d.pais));
+  if(d.episodios) partes.push(String(d.episodios) + " eps");
+  return partes.join(" • ");
 }
 
 function carregarDorama(){
@@ -296,21 +397,62 @@ function carregarDorama(){
   const dorama = doramas.find(d => d.nome === nome);
   if(!dorama) return;
 
-  // imagem (com fallback do trailer, como você já tinha)
+  // imagem com fallback do trailer
   let imagemFinal = dorama.imagem;
-  if (!imagemFinal && dorama.trailer) {
+  if(!imagemFinal && dorama.trailer){
     const videoId = dorama.trailer.split("/embed/")[1];
-    if (videoId) imagemFinal = "https://img.youtube.com/vi/" + videoId + "/hqdefault.jpg";
+    if(videoId) imagemFinal = "https://img.youtube.com/vi/" + videoId + "/hqdefault.jpg";
   }
 
   const resumoFinal = (dorama.resumo || dorama.descricao || "").replaceAll("\n","<br>");
+  const fav = isFav(dorama.nome);
+  const starInfo = estrelasDeNota(dorama.nota);
 
+  // tags
   const tagsHtml = Array.isArray(dorama.tags) && dorama.tags.length
     ? `<div class="tags">${dorama.tags.map(t => `<span class="tag">${escaparHtml(t)}</span>`).join("")}</div>`
     : "";
 
-  const fav = isFav(dorama.nome);
+  // meta (ano/pais/episodios)
+  const metaLinha = montarMetaLinha(dorama);
+  const metaHtml = metaLinha ? `<span class="chip">📌 ${escaparHtml(metaLinha)}</span>` : "";
 
+  // fundo blur no banner
+  const hero = document.getElementById("hero");
+  const heroInner = document.getElementById("hero-inner");
+  hero.style.display = "block";
+  hero.style.setProperty("--hero-bg", imagemFinal ? `url('${imagemFinal}')` : "linear-gradient(90deg, var(--rosa), var(--roxo))");
+
+  heroInner.innerHTML = `
+    <div>
+      ${imagemFinal ? `
+        <div class="poster">
+          <img src="${imagemFinal}" alt="${escaparHtml(dorama.nome)}">
+        </div>
+      ` : ""}
+    </div>
+
+    <div>
+      <h2 class="hero-title">${escaparHtml(dorama.nome)}</h2>
+
+      <div class="hero-meta">
+        ${metaHtml}
+        <span class="chip">⭐ ${escaparHtml(dorama.nota || "")}</span>
+        <span class="chip">
+          <span class="stars">${starInfo.stars} <small>(${starInfo.n10})</small></span>
+        </span>
+      </div>
+
+      ${tagsHtml}
+
+      <div class="hero-actions">
+        <button id="btnFav" class="btn">${fav ? "💜 Favoritado ✅" : "🤍 Favoritar"}</button>
+        ${dorama.trailer ? `<button id="btnTrailer" class="btn btn-sec">🎬 Ver trailer</button>` : ""}
+      </div>
+    </div>
+  `;
+
+  // Conteúdo principal
   const relacionados = sugestoesRelacionadas(dorama);
   const relacionadosHtml = relacionados.length ? `
     <div class="relacionados">
@@ -318,7 +460,7 @@ function carregarDorama(){
       <div class="cards-mini">
         ${relacionados.map(d => `
           <div class="card-mini" onclick="window.location.href='dorama.html?nome=${encodeURIComponent(d.nome)}'">
-            <img src="${d.imagem}" alt="${escaparHtml(d.nome)}">
+            <img src="${d.imagem}" alt="${escaparHtml(d.nome)}" loading="lazy">
             <div class="info">
               <strong>${escaparHtml(d.nome)}</strong>
               <span>⭐ ${escaparHtml(d.nota || "")}</span>
@@ -330,39 +472,18 @@ function carregarDorama(){
   ` : "";
 
   document.getElementById("conteudo-detalhe").innerHTML = `
-    <h2>${escaparHtml(dorama.nome)}</h2>
+    <div class="divisor"></div>
 
-    <div class="detalhe-grid">
-      <div>
-        ${imagemFinal ? `
-          <div class="poster-wrap">
-            <img src="${imagemFinal}" alt="${escaparHtml(dorama.nome)}">
-          </div>
-        ` : ""}
+    <p class="texto">${resumoFinal}</p>
 
-        ${tagsHtml}
-      </div>
-
-      <div>
-        <div class="botoes">
-          <button id="btnFav" class="btn-acao">${fav ? "💜 Favoritado ✅" : "🤍 Favoritar"}</button>
-          ${dorama.trailer ? `<button class="btn-acao btn-sec" id="btnTrailer">🎬 Ver trailer</button>` : ""}
+    ${dorama.trailer ? `
+      <div class="trailer-box" id="secTrailer">
+        <h3>🎬 Trailer</h3>
+        <div class="video-wrap">
+          <iframe src="${dorama.trailer}" allowfullscreen></iframe>
         </div>
-        <div class="mini-msg">Dica: seus favoritos ficam salvos no seu navegador.</div>
-
-        <p class="texto">${resumoFinal}</p>
-        <div class="nota">⭐ ${escaparHtml(dorama.nota || "")}</div>
-
-        ${dorama.trailer ? `
-          <div class="trailer-box" id="secTrailer">
-            <h3>🎬 Trailer</h3>
-            <div class="video-wrap">
-              <iframe src="${dorama.trailer}" allowfullscreen></iframe>
-            </div>
-          </div>
-        ` : ""}
       </div>
-    </div>
+    ` : ""}
 
     ${relacionadosHtml}
   `;
@@ -380,7 +501,7 @@ function carregarDorama(){
   if(btnTrailer){
     btnTrailer.addEventListener("click", () => {
       const alvo = document.getElementById("secTrailer");
-      if(alvo) alvo.scrollIntoView({ behavior: "smooth", block: "start" });
+      if(alvo) alvo.scrollIntoView({ behavior:"smooth", block:"start" });
     });
   }
 
