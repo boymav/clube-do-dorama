@@ -1,4 +1,4 @@
-export const doramas = [
+const doramas = [
 {
  nome:"Crash Landing on You",
  tags:["triste","romance","intenso"],
