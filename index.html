@@ -32,11 +32,16 @@ button:hover{ background:#b983ff; }
 }
 .card.click{ cursor:pointer; }
 .card.click:hover{ transform: translateY(-8px); box-shadow:0 10px 25px rgba(0,0,0,0.15); }
-.card img{ width:100%; height:380px; object-fit:cover; }
+.card img{ width:100%; height:380px; object-fit:cover; display:block; }
 .card div{ padding:16px; }
 .card h3{ margin:0 0 8px; }
 .card p{ margin:0; color:#555; line-height:1.45; }
 .card .mini{ margin-top:10px; font-weight:bold; color:#7a1b55; }
+
+/* Cards menores (Top 5) */
+.card.small{ width:220px; }
+.card.small img{ height:280px; }
+.card.small .mini{ margin-top:8px; }
 
 /* Notícias */
 .grid-noticias{
@@ -68,6 +73,74 @@ button:hover{ background:#b983ff; }
   font-weight: bold;
 }
 
+/* ===== BUSCA INTELIGENTE ===== */
+.busca-wrap{
+  max-width: 720px;
+  margin: 16px auto 0;
+  position: relative;
+  text-align: left;
+}
+
+.busca-input{
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,0.55);
+  outline: none;
+  font-size: 16px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+.busca-input:focus{
+  border-color: rgba(255,255,255,0.85);
+  box-shadow: 0 10px 22px rgba(0,0,0,0.16);
+}
+
+.sugestoes{
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  right: 0;
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.18);
+  display: none;
+  z-index: 50;
+}
+
+.sugestoes .item{
+  display:flex;
+  gap:12px;
+  align-items:center;
+  padding: 10px 12px;
+  cursor: pointer;
+}
+
+.sugestoes .item:hover{
+  background: #fff0f6;
+}
+
+.sugestoes img{
+  width: 46px;
+  height: 64px;
+  object-fit: cover;
+  border-radius: 10px;
+  flex: 0 0 auto;
+}
+
+.sugestoes .nome{
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 4px;
+}
+
+.sugestoes .nota{
+  font-size: 13px;
+  opacity: 0.85;
+  color:#7a1b55;
+}
+
 footer{ background:#b983ff; color:white; text-align:center; padding:15px; }
 </style>
 </head>
@@ -78,11 +151,17 @@ footer{ background:#b983ff; color:white; text-align:center; padding:15px; }
   <h1>🌍🎬 Planeta Dorama</h1>
   <p>Descubra doramas perfeitos para o seu momento 💖</p>
 
-  <!-- 👇 isso serve pra você ter certeza que o index novo está no ar -->
-  <div class="badge">✅ VERSÃO PT-BR HOME (v3) — Planeta Dorama</div>
+  <div class="badge">✅ HOME (v4) — Busca + Top 5</div>
 
-  <nav>
+  <!-- Busca inteligente -->
+  <div class="busca-wrap">
+    <input id="buscaHome" class="busca-input" type="text" placeholder="🔎 Buscar dorama... Ex: Goblin, Vincenzo, Reply 1988" autocomplete="off">
+    <div id="sugestoes" class="sugestoes"></div>
+  </div>
+
+  <nav style="margin-top:16px;">
     <a href="#inicio">Início</a>
+    <a href="#top5">Top 5 ⭐</a>
     <a href="#listas">Listas 💖</a>
     <a href="#semana">Dorama da semana 🌟</a>
     <a href="#noticias">Notícias 📰</a>
@@ -95,9 +174,17 @@ footer{ background:#b983ff; color:white; text-align:center; padding:15px; }
 <section id="inicio">
   <h2>✨ Bem-vindo(a)</h2>
   <p style="text-align:center; max-width:700px; margin:auto;">
-    O Planeta Dorama é um espaço feito para quem ama histórias emocionantes,
+    O <b>Planeta Dorama 🌍</b> é um espaço feito para quem ama histórias emocionantes,
     românticas, divertidas e intensas.
   </p>
+</section>
+
+<section id="top5">
+  <h2>🏆 Top 5 mais bem avaliados</h2>
+  <p style="text-align:center; margin:0 auto 14px; max-width:780px; opacity:0.85;">
+    Ranking automático baseado na nota do seu <code>doramas.js</code>.
+  </p>
+  <div class="cards" id="top5-cards"></div>
 </section>
 
 <section id="listas">
@@ -150,6 +237,39 @@ footer{ background:#b983ff; color:white; text-align:center; padding:15px; }
 <script src="doramas.js"></script>
 <script>
 // =====================
+// Helpers
+// =====================
+function parseNota(nota){
+  // pega o primeiro número que aparecer (ex: "9.2", "9,2/10", "Nota: 8.7")
+  const m = String(nota || "").match(/[\d]+([.,]\d+)?/);
+  if(!m) return 0;
+  return parseFloat(m[0].replace(",", "."));
+}
+
+// =====================
+// Top 5 automático
+// =====================
+function carregarTop5(){
+  const area = document.getElementById("top5-cards");
+  if(!area || !Array.isArray(doramas)) return;
+
+  const top = [...doramas]
+    .map(d => ({...d, _notaNum: parseNota(d.nota)}))
+    .sort((a,b) => b._notaNum - a._notaNum)
+    .slice(0, 5);
+
+  area.innerHTML = top.map(d => `
+    <div class="card click small" onclick="window.location.href='dorama.html?nome=${encodeURIComponent(d.nome)}'">
+      <img src="${d.imagem}" alt="${d.nome}" loading="lazy">
+      <div>
+        <h3>${d.nome}</h3>
+        <div class="mini">⭐ ${d.nota || ""}</div>
+      </div>
+    </div>
+  `).join("");
+}
+
+// =====================
 // Dorama da Semana
 // =====================
 function carregarDoramaDaSemana() {
@@ -158,7 +278,7 @@ function carregarDoramaDaSemana() {
   const escolhido = doramas[Math.floor(Math.random() * doramas.length)];
   area.innerHTML = `
     <div class="card click" onclick="window.location.href='dorama.html?nome=${encodeURIComponent(escolhido.nome)}'">
-      <img src="${escolhido.imagem}" alt="${escolhido.nome}">
+      <img src="${escolhido.imagem}" alt="${escolhido.nome}" loading="lazy">
       <div>
         <h3>${escolhido.nome}</h3>
         <p>${(escolhido.descricao || "").replaceAll("\n","<br>")}</p>
@@ -169,19 +289,75 @@ function carregarDoramaDaSemana() {
 }
 
 // =====================
-// Notícias + Tradução (com fallback)
+// Busca inteligente (Home)
+// =====================
+function setupBuscaHome(){
+  const input = document.getElementById("buscaHome");
+  const box = document.getElementById("sugestoes");
+  if(!input || !box) return;
+
+  function esconder(){ box.style.display = "none"; box.innerHTML = ""; }
+
+  function mostrar(lista){
+    if(!lista.length){ esconder(); return; }
+    box.innerHTML = lista.map(d => `
+      <div class="item" data-nome="${encodeURIComponent(d.nome)}">
+        <img src="${d.imagem}" alt="${d.nome}">
+        <div>
+          <div class="nome">${d.nome}</div>
+          <div class="nota">⭐ ${d.nota || ""}</div>
+        </div>
+      </div>
+    `).join("");
+    box.style.display = "block";
+  }
+
+  input.addEventListener("input", () => {
+    const q = (input.value || "").toLowerCase().trim();
+    if(q.length < 2) return esconder();
+
+    const resultados = doramas
+      .filter(d => (d.nome || "").toLowerCase().includes(q))
+      .slice(0, 6);
+
+    mostrar(resultados);
+  });
+
+  box.addEventListener("click", (e) => {
+    const item = e.target.closest(".item");
+    if(!item) return;
+    const nome = decodeURIComponent(item.getAttribute("data-nome"));
+    window.location.href = "dorama.html?nome=" + encodeURIComponent(nome);
+  });
+
+  document.addEventListener("click", (e) => {
+    if(e.target === input || box.contains(e.target)) return;
+    esconder();
+  });
+
+  input.addEventListener("keydown", (e) => {
+    if(e.key === "Enter"){
+      const q = (input.value || "").toLowerCase().trim();
+      const primeiro = doramas.find(d => (d.nome || "").toLowerCase().includes(q));
+      if(primeiro){
+        window.location.href = "dorama.html?nome=" + encodeURIComponent(primeiro.nome);
+      }
+    }
+  });
+}
+
+// =====================
+// Notícias + Tradução (com fallback)  [mantido igual ao seu]
 // =====================
 function limparHtml(texto) {
   return (texto || "").replace(/<[^>]*>?/gm, "").trim();
 }
-
 function formatarData(pubDate) {
   if (!pubDate) return "";
   const d = new Date(pubDate);
   if (isNaN(d.getTime())) return "";
   return d.toLocaleDateString("pt-BR", { day:"2-digit", month:"short", year:"numeric" });
 }
-
 function pegarImagemNoticia(item){
   if (item.thumbnail && item.thumbnail.startsWith("http")) return item.thumbnail;
   if (item.enclosure && item.enclosure.link && item.enclosure.link.startsWith("http")) return item.enclosure.link;
@@ -190,24 +366,17 @@ function pegarImagemNoticia(item){
   if (match && match[1] && match[1].startsWith("http")) return match[1];
   return "";
 }
-
-// Cache local (pra ficar rápido)
-const CACHE_KEY = "trad_cache_home_v3";
+const CACHE_KEY = "trad_cache_home_v4";
 const tradCache = JSON.parse(localStorage.getItem(CACHE_KEY) || "{}");
 function salvarCache(){ localStorage.setItem(CACHE_KEY, JSON.stringify(tradCache)); }
-
-// 1) tenta LibreTranslate (POST)
-// 2) se falhar, tenta MyMemory (GET)
-// 3) se falhar, volta original
 const LT_ENDPOINT = "https://translate.argosopentech.com/translate";
 
 async function traduzirParaPT(texto) {
   const t = (texto || "").trim();
   if (!t) return "";
-  const curto = t.slice(0, 240); // curto pra evitar erro/limite
+  const curto = t.slice(0, 240);
   if (tradCache[curto]) return tradCache[curto];
 
-  // TENTA 1: LibreTranslate
   try{
     const resp = await fetch(LT_ENDPOINT, {
       method: "POST",
@@ -222,7 +391,6 @@ async function traduzirParaPT(texto) {
     }
   } catch(e){}
 
-  // TENTA 2: MyMemory
   try{
     const url = "https://api.mymemory.translated.net/get?q=" + encodeURIComponent(curto) + "&langpair=en|pt-BR";
     const resp2 = await fetch(url);
@@ -237,7 +405,6 @@ async function traduzirParaPT(texto) {
 
 async function carregarNoticiasAutomaticas(forcar=false) {
   const grid = document.getElementById("grid-noticias");
-
   grid.innerHTML = `
     <div class="noticia">
       <div class="conteudo">
@@ -254,12 +421,10 @@ async function carregarNoticiasAutomaticas(forcar=false) {
 
     const resp = await fetch(url);
     const data = await resp.json();
-
     if (!data.items || !Array.isArray(data.items)) throw new Error("Sem notícias");
 
     const top = data.items.slice(0, 6);
 
-    // render rápido (inglês) + "Traduzindo…"
     grid.innerHTML = top.map((n, idx) => {
       const img = pegarImagemNoticia(n);
       const descLimpo = limparHtml(n.description);
@@ -280,7 +445,6 @@ async function carregarNoticiasAutomaticas(forcar=false) {
       `;
     }).join("");
 
-    // traduz por cima
     top.forEach((n, idx) => {
       (async () => {
         const card = document.getElementById(`home_news_${idx}`);
@@ -312,7 +476,10 @@ async function carregarNoticiasAutomaticas(forcar=false) {
   }
 }
 
+// Init
 window.onload = () => {
+  carregarTop5();
+  setupBuscaHome();
   carregarDoramaDaSemana();
   carregarNoticiasAutomaticas(false);
 };
