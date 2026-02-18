@@ -20,7 +20,7 @@
 <meta name="twitter:image" content="https://planetadorama.com.br/imagens/og-capa.jpg">
 
 <style>
-/* (SEU CSS ORIGINAL INTACTO — não alterei nada visual) */
+/* ===== SEU CSS ORIGINAL (INALTERADO) ===== */
 body { margin:0; font-family: Arial, sans-serif; background:#fff0f6; color:#333; }
 header { background: linear-gradient(90deg, #ff7eb3, #b983ff); padding:20px; text-align:center; color:white; }
 nav a { margin: 0 10px; color:white; text-decoration:none; font-weight:bold; }
@@ -68,7 +68,7 @@ footer{ background:#b983ff; color:white; text-align:center; padding:15px; }
 <script src="doramas.js"></script>
 <script>
 
-// ===== GERAR SLUG AUTOMATICAMENTE =====
+// ===== FUNÇÃO PARA CRIAR SLUG =====
 function criarSlug(nome){
   return nome
     .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
@@ -76,10 +76,6 @@ function criarSlug(nome){
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/(^-|-$)/g, "");
 }
-
-doramas.forEach(d => {
-  d.slug = criarSlug(d.nome);
-});
 
 // ===== HELPERS =====
 function parseNota(nota){
@@ -91,13 +87,15 @@ function parseNota(nota){
 // ===== TOP 5 =====
 function carregarTop5(){
   const area = document.getElementById("top5-cards");
+  if(!area || !Array.isArray(doramas)) return;
+
   const top = [...doramas]
     .map(d => ({...d, _notaNum: parseNota(d.nota)}))
     .sort((a,b) => b._notaNum - a._notaNum)
     .slice(0, 5);
 
   area.innerHTML = top.map(d => `
-    <div class="card click small" onclick="window.location.href='/doramas/${d.slug}.html'">
+    <div class="card click small" onclick="window.location.href='/doramas/${criarSlug(d.nome)}.html'">
       <img src="${d.imagem}" alt="${d.nome}" loading="lazy">
       <div>
         <h3>${d.nome}</h3>
@@ -110,10 +108,10 @@ function carregarTop5(){
 // ===== DORAMA DA SEMANA =====
 function carregarDoramaDaSemana() {
   const area = document.getElementById("dorama-semana");
+  area.innerHTML = "";
   const escolhido = doramas[Math.floor(Math.random() * doramas.length)];
-
   area.innerHTML = `
-    <div class="card click" onclick="window.location.href='/doramas/${escolhido.slug}.html'">
+    <div class="card click" onclick="window.location.href='/doramas/${criarSlug(escolhido.nome)}.html'">
       <img src="${escolhido.imagem}" alt="${escolhido.nome}" loading="lazy">
       <div>
         <h3>${escolhido.nome}</h3>
