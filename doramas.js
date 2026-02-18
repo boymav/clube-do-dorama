@@ -1243,3 +1243,14 @@ Romântico e muito emocionante.`
 }
 
 ];
+function criarSlug(nome) {
+  return nome
+    .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/(^-|-$)/g, "");
+}
+
+doramas.forEach(d => {
+  d.slug = criarSlug(d.nome);
+});
