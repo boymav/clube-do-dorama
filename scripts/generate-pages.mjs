@@ -13,10 +13,6 @@ function slugify(str) {
     .replace(/(^-|-$)/g, "");
 }
 
-function stripHtml(s) {
-  return String(s || "").replace(/<[^>]*>/g, "").trim();
-}
-
 function escapeHtml(s) {
   return String(s || "")
     .replace(/&/g, "&amp;")
@@ -25,23 +21,26 @@ function escapeHtml(s) {
     .replace(/"/g, "&quot;");
 }
 
-function pickGenre(tags = []) {
-  // pega 1 gênero “principal” só pra Schema não ficar bagunçado
-  const known = ["romance", "comedia", "fantasia", "intenso", "triste", "alegre"];
-  const t = tags.find(x => known.includes(String(x).toLowerCase()));
-  return t ? t[0].toUpperCase() + t.slice(1) : "Drama";
+function stripHtml(s) {
+  return String(s || "").replace(/<[^>]*>/g, "").trim();
 }
 
 function parseRating(nota) {
-  // Ex: "9.2/10 – MyDramaList"
   const m = String(nota || "").match(/(\d+(?:\.\d+)?)[ ]*\/[ ]*10/);
   return m ? m[1] : null;
+}
+
+function pickGenre(tags = []) {
+  const known = ["romance", "comedia", "fantasia", "intenso", "triste", "alegre"];
+  const t = tags.find(x => known.includes(String(x).toLowerCase()));
+  return t ? t[0].toUpperCase() + t.slice(1) : "Drama";
 }
 
 const outDir = path.join(process.cwd(), "doramas");
 fs.mkdirSync(outDir, { recursive: true });
 
 const pages = [];
+const today = new Date().toISOString().split("T")[0];
 
 for (const d of doramas) {
   if (!d?.nome) continue;
@@ -49,9 +48,8 @@ for (const d of doramas) {
   const slug = slugify(d.nome);
   const url = `${SITE}/doramas/${slug}.html`;
 
-  const title = `${d.nome} – Sinopse, Elenco e Onde Assistir | Planeta Dorama`;
+  const title = `${d.nome} – Sinopse, Resumo e Trailer | Planeta Dorama`;
 
-  // description curta: usa descricao se tiver, senão corta do resumo
   const baseDesc = stripHtml(d.descricao || d.resumo || "");
   const description =
     (baseDesc.length > 155 ? baseDesc.slice(0, 155).trim() + "…" : baseDesc) ||
@@ -66,10 +64,10 @@ for (const d of doramas) {
   const descricaoHtml = escapeHtml(d.descricao || "").replace(/\n/g, "<br>");
 
   const tagsList = (d.tags || [])
-    .map(t => `<a class="tag" href="${SITE}/listas.html#${slugify(t)}">${escapeHtml(t)}</a>`)
+    .map(t => `<span class="tag">${escapeHtml(t)}</span>`)
     .join(" ");
 
-  // Links internos: 6 recomendações simples (mesmas tags)
+  // recomendações simples (mesmas tags)
   const recs = doramas
     .filter(x => x?.nome && x.nome !== d.nome)
     .map(x => {
@@ -105,14 +103,17 @@ for (const d of doramas) {
   <meta name="description" content="${escapeHtml(description)}">
   <link rel="canonical" href="${url}">
   <meta name="robots" content="index,follow">
+
   <meta property="og:title" content="${escapeHtml(d.nome)} | Planeta Dorama">
   <meta property="og:description" content="${escapeHtml(description)}">
   <meta property="og:url" content="${url}">
   <meta property="og:type" content="website">
   ${poster ? `<meta property="og:image" content="${escapeHtml(poster)}">` : ""}
 
+  <script type="application/ld+json">${JSON.stringify(schema)}</script>
+
   <style>
-    body{font-family:Arial,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;margin:0;background:#0b1020;color:#eaf0ff}
+    body{font-family:Arial,system-ui;margin:0;background:#0b1020;color:#eaf0ff}
     header,main,footer{max-width:980px;margin:0 auto;padding:18px}
     a{color:#9bd0ff;text-decoration:none}
     a:hover{text-decoration:underline}
@@ -128,8 +129,6 @@ for (const d of doramas) {
     ul{margin:8px 0 0 18px}
     @media (max-width:820px){.grid{grid-template-columns:1fr}}
   </style>
-
-  <script type="application/ld+json">${JSON.stringify(schema)}</script>
 </head>
 <body>
   <header>
@@ -148,7 +147,6 @@ for (const d of doramas) {
         <h1>${escapeHtml(d.nome)}</h1>
 
         ${d.descricao ? `<h2>Sinopse</h2><p>${descricaoHtml}</p>` : ""}
-
         ${d.resumo ? `<h2>Resumo</h2><p>${resumoHtml}</p>` : ""}
 
         ${trailer && String(trailer).includes("youtube.com/embed")
@@ -174,16 +172,16 @@ for (const d of doramas) {
 </html>`;
 
   fs.writeFileSync(path.join(outDir, `${slug}.html`), html, "utf-8");
-  pages.push({ slug, url, lastmod: new Date().toISOString().split("T")[0] });
+  pages.push({ slug, url, lastmod: today, nome: d.nome });
 }
 
-/* Página índice dos doramas (boa para linkagem interna) */
+// índice /doramas/
 const indexHtml = `<!doctype html>
 <html lang="pt-BR">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Doramas | Planeta Dorama</title>
+  <title>Todos os Doramas | Planeta Dorama</title>
   <meta name="description" content="Lista de doramas do Planeta Dorama com páginas individuais: sinopse, resumo e trailer.">
   <link rel="canonical" href="${SITE}/doramas/">
   <meta name="robots" content="index,follow">
@@ -200,15 +198,15 @@ const indexHtml = `<!doctype html>
 <body>
   <header>
     <a href="${SITE}/">← Voltar para o início</a>
-    <h1>Doramas</h1>
+    <h1>Todos os Doramas</h1>
   </header>
 
   <main class="card">
     <input id="q" placeholder="Pesquisar dorama..." />
     <ul id="list">
       ${pages
-        .sort((a,b)=>a.slug.localeCompare(b.slug))
-        .map(p => `<li><a href="${SITE}/doramas/${p.slug}.html">${p.slug.replace(/-/g," ")}</a></li>`)
+        .sort((a,b)=>a.nome.localeCompare(b.nome))
+        .map(p => `<li><a href="${SITE}/doramas/${p.slug}.html">${escapeHtml(p.nome)}</a></li>`)
         .join("")}
     </ul>
   </main>
@@ -228,15 +226,21 @@ const indexHtml = `<!doctype html>
 </html>`;
 fs.writeFileSync(path.join(outDir, "index.html"), indexHtml, "utf-8");
 
-/* sitemap.xml */
+// sitemap.xml (inclui home + /doramas/ + cada dorama)
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>${SITE}/</loc><lastmod>${new Date().toISOString().split("T")[0]}</lastmod></url>
-  <url><loc>${SITE}/doramas/</loc><lastmod>${new Date().toISOString().split("T")[0]}</lastmod></url>
-  ${pages
-    .map(p => `<url><loc>${p.url}</loc><lastmod>${p.lastmod}</lastmod></url>`)
-    .join("\n  ")}
+  <url><loc>${SITE}/</loc><lastmod>${today}</lastmod></url>
+  <url><loc>${SITE}/doramas/</loc><lastmod>${today}</lastmod></url>
+  ${pages.map(p => `<url><loc>${p.url}</loc><lastmod>${p.lastmod}</lastmod></url>`).join("\n  ")}
 </urlset>`;
 fs.writeFileSync(path.join(process.cwd(), "sitemap.xml"), sitemap, "utf-8");
 
-console.log(`✅ Geradas ${pages.length} páginas em /doramas e sitemap.xml atualizado.`);
+// robots.txt (simples e correto)
+const robots = `User-agent: *
+Allow: /
+
+Sitemap: ${SITE}/sitemap.xml
+`;
+fs.writeFileSync(path.join(process.cwd(), "robots.txt"), robots, "utf-8");
+
+console.log(`✅ Geradas ${pages.length} páginas em /doramas + sitemap.xml + robots.txt`);
