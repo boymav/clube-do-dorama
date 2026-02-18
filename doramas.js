@@ -289,7 +289,7 @@ cheio de drama e emoções intensas.`
  tags:["romance","alegre","intenso"],
  nota:"8.6/10 – MyDramaList",
  descricao:"Jovens tentam realizar seus sonhos no mundo das startups.\nAmor, ambição e desafios se misturam.\nInspirador e emocionante.",
- imagem:"https://image.tmdb.org/t/p/w500/8C6r0H6F7cZq9rH7G1x2Lk9Uq5R.jpg",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/start%20up.jpg",
  trailer:"https://www.youtube.com/embed/BemKyzbLDDc",
  resumo:`Seo Dal Mi sonha em se tornar uma grande empresária.
 Ela entra no competitivo mundo das startups coreanas.
