@@ -319,11 +319,13 @@ function carregar(){
     </div>
   `;
 
-  document.getElementById("conteudo-detalhe").innerHTML=`
-    <div class="resumo-trailer">
-      <div>
-        <p class="texto">${dorama.descricao}</p>
-      </div>
+  const textoCompleto = (dorama.resumo || dorama.descricao || "").replaceAll("\n","<br>");
+
+document.getElementById("conteudo-detalhe").innerHTML=`
+  <div class="resumo-trailer">
+    <div>
+      <p class="texto">${textoCompleto}</p>
+    </div>
       ${dorama.trailer?`
       <div class="trailer-box" id="secTrailer">
         <h3>🎬 Trailer</h3>
