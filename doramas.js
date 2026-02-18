@@ -818,7 +818,7 @@ Mostra amizade verdadeira e amor sincero.
  tags:["alegre","romance"],
  nota:"9.1/10 – MyDramaList",
  descricao:"Cinco médicos são amigos há anos.\nEles dividem a rotina do hospital e a vida pessoal.\nHumano, leve e emocionante.",
- imagem:"",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/hospital%20playlist.webp",
  trailer:"https://www.youtube.com/embed/xqIM2cenBAs",
  resumo:`Cinco médicos são amigos desde a faculdade.
 Eles trabalham no mesmo hospital.
