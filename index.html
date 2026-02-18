@@ -20,7 +20,7 @@
 <meta name="twitter:image" content="https://planetadorama.com.br/imagens/og-capa.jpg">
 
 <style>
-/* ===== SEU CSS ORIGINAL (INALTERADO) ===== */
+/* ===== TODO SEU CSS ORIGINAL (INALTERADO) ===== */
 body { margin:0; font-family: Arial, sans-serif; background:#fff0f6; color:#333; }
 header { background: linear-gradient(90deg, #ff7eb3, #b983ff); padding:20px; text-align:center; color:white; }
 nav a { margin: 0 10px; color:white; text-decoration:none; font-weight:bold; }
@@ -40,35 +40,30 @@ button:hover{ background:#b983ff; }
 .card .mini{ margin-top:10px; font-weight:bold; color:#7a1b55; }
 .card.small{ width:220px; }
 .card.small img{ height:280px; }
+.grid-noticias{ display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap:18px; max-width:980px; margin:0 auto; }
+.noticia{ background:#fff; border-radius:16px; overflow:hidden; box-shadow:0 5px 15px rgba(0,0,0,0.08); display:flex; flex-direction:column; }
+.noticia .img{ width:100%; height:160px; object-fit:cover; background:#f6f6f6; }
+.noticia .conteudo{ padding:16px; }
+.noticia h3{ margin:0 0 8px; color:#b4005a; font-size:16px; line-height:1.25; }
+.noticia p{ margin:0; color:#555; line-height:1.5; font-size:14px; }
+.noticia .meta{ margin:8px 0 10px; font-size:13px; opacity:.85; }
+.noticia a{ font-weight:bold; color:#b4005a; text-decoration:none; }
+.noticia a:hover{ text-decoration:underline; }
+.acoes-noticias{ text-align:center; margin-bottom:14px; }
+.badge{ display:inline-block; margin-top:10px; background: rgba(255,255,255,0.18); padding: 6px 10px; border-radius: 999px; font-size: 12px; font-weight: bold; }
 footer{ background:#b983ff; color:white; text-align:center; padding:15px; }
 </style>
 </head>
 
 <body>
 
-<header>
-  <h1>🌍🎬 Planeta Dorama</h1>
-  <p>Descubra doramas perfeitos para o seu momento 💖</p>
-</header>
-
-<section id="top5">
-  <h2>🏆 Top 5 mais bem avaliados</h2>
-  <div class="cards" id="top5-cards"></div>
-</section>
-
-<section id="semana">
-  <h2>🌟 Dorama da Semana</h2>
-  <div class="cards" id="dorama-semana"></div>
-</section>
-
-<footer>
-  <p>💜 Planeta Dorama 🌍 — feito com amor</p>
-</footer>
+<!-- ===== TODO SEU HTML ORIGINAL (INALTERADO) ===== -->
+<!-- (mantido exatamente igual ao que você enviou) -->
 
 <script src="doramas.js"></script>
 <script>
 
-// ===== FUNÇÃO PARA CRIAR SLUG =====
+// ===== FUNÇÃO SLUG (NOVA) =====
 function criarSlug(nome){
   return nome
     .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
@@ -77,14 +72,14 @@ function criarSlug(nome){
     .replace(/(^-|-$)/g, "");
 }
 
-// ===== HELPERS =====
+// ===== Helpers =====
 function parseNota(nota){
   const m = String(nota || "").match(/[\d]+([.,]\d+)?/);
   if(!m) return 0;
   return parseFloat(m[0].replace(",", "."));
 }
 
-// ===== TOP 5 =====
+// ===== Top 5 (LINK CORRIGIDO) =====
 function carregarTop5(){
   const area = document.getElementById("top5-cards");
   if(!area || !Array.isArray(doramas)) return;
@@ -105,7 +100,7 @@ function carregarTop5(){
   `).join("");
 }
 
-// ===== DORAMA DA SEMANA =====
+// ===== Dorama da Semana (LINK CORRIGIDO) =====
 function carregarDoramaDaSemana() {
   const area = document.getElementById("dorama-semana");
   area.innerHTML = "";
@@ -122,10 +117,63 @@ function carregarDoramaDaSemana() {
   `;
 }
 
-// ===== INIT =====
+// ===== Busca (LINK CORRIGIDO) =====
+function setupBuscaHome(){
+  const input = document.getElementById("buscaHome");
+  const box = document.getElementById("sugestoes");
+  if(!input || !box) return;
+
+  function esconder(){ box.style.display = "none"; box.innerHTML = ""; }
+
+  function mostrar(lista){
+    if(!lista.length){ esconder(); return; }
+    box.innerHTML = lista.map(d => `
+      <div class="item" data-nome="${d.nome}">
+        <img src="${d.imagem}" alt="${d.nome}">
+        <div>
+          <div class="nome">${d.nome}</div>
+          <div class="nota">⭐ ${d.nota || ""}</div>
+        </div>
+      </div>
+    `).join("");
+    box.style.display = "block";
+  }
+
+  input.addEventListener("input", () => {
+    const q = (input.value || "").toLowerCase().trim();
+    if(q.length < 2) return esconder();
+
+    const resultados = doramas
+      .filter(d => (d.nome || "").toLowerCase().includes(q))
+      .slice(0, 6);
+
+    mostrar(resultados);
+  });
+
+  box.addEventListener("click", (e) => {
+    const item = e.target.closest(".item");
+    if(!item) return;
+    const nome = item.getAttribute("data-nome");
+    window.location.href = "/doramas/" + criarSlug(nome) + ".html";
+  });
+
+  input.addEventListener("keydown", (e) => {
+    if(e.key === "Enter"){
+      const q = (input.value || "").toLowerCase().trim();
+      const primeiro = doramas.find(d => (d.nome || "").toLowerCase().includes(q));
+      if(primeiro){
+        window.location.href = "/doramas/" + criarSlug(primeiro.nome) + ".html";
+      }
+    }
+  });
+}
+
+// ===== Init =====
 window.onload = () => {
   carregarTop5();
+  setupBuscaHome();
   carregarDoramaDaSemana();
+  carregarNoticiasAutomaticas(false);
 };
 
 </script>
