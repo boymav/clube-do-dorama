@@ -232,4 +232,11 @@ fs.writeFileSync(path.join(outDir, "index.html"), indexHtml, "utf-8");
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>${SITE}/</loc><lastmod>${new Date().toISOString().split("T")[0]}</lastmod></url>
-  <url><loc>${SITE}/doramas/
+  <url><loc>${SITE}/doramas/</loc><lastmod>${new Date().toISOString().split("T")[0]}</lastmod></url>
+  ${pages
+    .map(p => `<url><loc>${p.url}</loc><lastmod>${p.lastmod}</lastmod></url>`)
+    .join("\n  ")}
+</urlset>`;
+fs.writeFileSync(path.join(process.cwd(), "sitemap.xml"), sitemap, "utf-8");
+
+console.log(`✅ Geradas ${pages.length} páginas em /doramas e sitemap.xml atualizado.`);
