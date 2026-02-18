@@ -313,7 +313,7 @@ fracassos e perseverança.
  tags:["romance","alegre","comedia"],
  nota:"8.9/10 – MyDramaList",
  descricao:"Uma dentista se muda para uma vila à beira-mar.\nEla conhece um faz-tudo muito carismático.\nRomance leve e aconchegante.",
- imagem:"https://wallpapercave.com/wp/wp9840099.jpg",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/hometown%20cha.jpg",
  trailer:"https://www.youtube.com/embed/jwXKxXz7T9Q",
  resumo:`Yoon Hye Jin é uma dentista inteligente e determinada.
 Após problemas na cidade grande, ela decide recomeçar em uma pequena vila litorânea.
@@ -358,7 +358,7 @@ realista e cheia de diálogos profundos.`
  tags:["romance","fantasia","intenso"],
  nota:"8.7/10 – MyDramaList",
  descricao:"Dois mundos se conectam através de um webtoon.\nRealidade e ficção se misturam.\nRomance cheio de ação.",
- imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/w.jpg",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/w%20two%20words.webp",
  trailer:"https://www.youtube.com/embed/iFyUFFcGd9k",
  resumo:`Oh Yeon Joo é uma médica cujo pai é autor de um famoso webtoon.
 Um dia, ela é misteriosamente puxada para dentro da história.
@@ -381,7 +381,7 @@ mistério e fantasia de forma intensa.
  tags:["romance","fantasia","intenso"],
  nota:"8.8/10 – MyDramaList",
  descricao:"Três pessoas conseguem prever o futuro em sonhos.\nEles tentam evitar tragédias.\nSuspense com romance.",
- imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/sleeping.jpg",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/whire%20you%20we%20sleeping.webp",
  trailer:"https://www.youtube.com/embed/Uc3kNn1dS8c",
  resumo:`Nam Hong Joo começa a ter sonhos que mostram tragédias futuras.
 Ela percebe que precisa agir para impedir que esses acontecimentos se tornem realidade.
@@ -405,7 +405,7 @@ coragem e amor inesperado.`
  tags:["romance","alegre","comedia"],
  nota:"8.5/10 – MyDramaList",
  descricao:"Uma curadora de arte leva uma vida dupla.\nEla é fã secreta de um idol.\nRomance divertido e leve.",
- imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/private.jpg",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/her%20private%20life.jpg",
  trailer:"https://www.youtube.com/embed/nH9xqk1jVhY",
  resumo:`Sung Deok Mi é uma curadora de arte profissional e respeitada.
 Mas fora do trabalho, ela vive secretamente como fã obsessiva de um idol.
