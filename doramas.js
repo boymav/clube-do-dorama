@@ -726,7 +726,7 @@ Mostra ambição, obsessão e consequências.
  tags:["alegre","triste"],
  nota:"8.8/10 – MyDramaList",
  descricao:"Um jogador de beisebol vai parar na prisão.\nHistórias humanas se cruzam.\nDrama com humor e emoção.",
- imagem:"",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/prison%20playbook.jfif",
  trailer:"https://www.youtube.com/embed/lqCw0wV0W6I",
  resumo:`Kim Je Hyuk é um famoso jogador de beisebol.
 De repente, ele vai parar na prisão.
@@ -745,7 +745,7 @@ Equilibra drama com humor inteligente.
  tags:["romance","alegre"],
  nota:"8.3/10 – MyDramaList",
  descricao:"Destinos se cruzam de forma inesperada.\nLaços se fortalecem.\nRomance simples e agradável.",
- imagem:"",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/because%20of%20meeting%20you.jpg",
  trailer:"https://www.youtube.com/embed/3xYb5Qk6g6M",
  resumo:`Duas famílias têm seus destinos ligados por segredos do passado.
 Uma jovem luta para descobrir sua verdadeira identidade.
@@ -763,7 +763,7 @@ Mostra superação e amor verdadeiro.
  tags:["fantasia","intenso"],
  nota:"8.4/10 – MyDramaList",
  descricao:"Um mundo antigo marcado por guerras e poder.\nDestinos se entrelaçam.\nÉpico histórico.",
- imagem:"",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/arthdal%20chronicles.jpg",
  trailer:"https://www.youtube.com/embed/nzYOLtB9YlI",
  resumo:`Em um mundo antigo chamado Arthdal,
 tribos lutam por poder e sobrevivência.
@@ -781,7 +781,7 @@ Tem batalhas, traições e romances.
  tags:["triste","intenso"],
  nota:"9.2/10 – MyDramaList",
  descricao:"Duas almas feridas se apoiam.\nVida adulta com dores reais.\nProfundo e tocante.",
- imagem:"",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/my%20mister.jfif",
  trailer:"https://www.youtube.com/embed/LuSx0R9GZ7M",
  resumo:`Park Dong Hoon é um homem comum,
 sobrecarregado por problemas da vida adulta.
@@ -800,7 +800,7 @@ Mostra como pequenas gentilezas salvam vidas.
  tags:["alegre","romance"],
  nota:"8.7/10 – MyDramaList",
  descricao:"Amigos lutam por seus sonhos.\nRomance nasce aos poucos.\nMotivador e divertido.",
- imagem:"",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/flight%20for%20my%20way.webp",
  trailer:"https://www.youtube.com/embed/If3H0qUeEwE",
  resumo:`Ko Dong Man e Choi Ae Ra são amigos de infância.
 Eles sonham em alcançar grandes objetivos.
@@ -836,7 +836,7 @@ Tem romance leve e momentos emocionantes.
  tags:["romance","comedia","alegre"],
  nota:"8.6/10 – MyDramaList",
  descricao:"Um encontro falso vira romance real.\nSegredos e situações engraçadas surgem.\nLeve e viciante.",
- imagem:"",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/a%20business%20proposal.jpg",
  trailer:"https://www.youtube.com/embed/mh4R-WXRhQo",
  resumo:`Shin Ha Ri vai a um encontro às cegas no lugar da amiga.
 Mas descobre que o pretendente é seu chefe.
@@ -854,7 +854,7 @@ o romance floresce.
  tags:["romance","triste"],
  nota:"7.6/10 – MyDramaList",
  descricao:"Um romance intenso e complicado.\nSentimentos confusos dominam o casal.\nRealista e melancólico.",
- imagem:"",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/nevert.jfif",
  trailer:"https://www.youtube.com/embed/0z9nGQ9F3pA",
  resumo:`Yoo Na Bi não acredita mais no amor.
 Park Jae Eon gosta de flertar, mas evita compromisso.
@@ -872,7 +872,7 @@ Sentimentos confusos e inseguranças reais.
  tags:["romance","alegre"],
  nota:"7.5/10 – MyDramaList",
  descricao:"Um aplicativo revela quem gosta de você.\nTriângulos amorosos surgem.\nRomance jovem.",
- imagem:"",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/love%20alarm.webp",
  trailer:"https://www.youtube.com/embed/8U1i6cQ6pF8",
  resumo:`Um aplicativo chamado Love Alarm
 avisa quando alguém próximo gosta de você.
@@ -890,7 +890,7 @@ Mostra como tecnologia influencia o amor.
  tags:["romance","triste","intenso"],
  nota:"8.4/10 – MyDramaList",
  descricao:"Amor proibido em tempos políticos difíceis.\nSegredos e sacrifícios.\nDrama intenso.",
- imagem:"",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/snowdrop.webp",
  trailer:"https://www.youtube.com/embed/gcXc1M5gTgk",
  resumo:`Eun Young Ro encontra um homem ferido
 e decide escondê-lo em seu dormitório.
@@ -908,7 +908,7 @@ Sacrifícios e escolhas difíceis surgem.
  tags:["intenso","triste"],
  nota:"8.9/10 – MyDramaList",
  descricao:"Um serial killer assombra a Coreia.\nQuestões morais profundas surgem.\nSuspense psicológico pesado.",
- imagem:"",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/mouse.jpg",
  trailer:"https://www.youtube.com/embed/9E5c8FfCkqE",
  resumo:`Um assassino em série começa a espalhar terror.
 A polícia tenta capturá-lo a qualquer custo.
@@ -926,7 +926,7 @@ Pesado, psicológico e surpreendente.`
  tags:["intenso","triste"],
  nota:"9.0/10 – MyDramaList",
  descricao:"Um walkie-talkie liga passado e presente.\nCasos antigos são reabertos.\nSuspense brilhante.",
- imagem:"",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/signal.jpg",
  trailer:"https://www.youtube.com/embed/RsdJLm7Swkw",
  resumo:`Um detetive encontra um rádio misterioso.
 Ele consegue falar com um policial do passado.
@@ -944,7 +944,7 @@ Um dos melhores suspenses coreanos.`
  tags:["intenso","triste"],
  nota:"8.9/10 – MyDramaList",
  descricao:"Uma praga transforma pessoas em monstros.\nUm príncipe luta para salvar o reino.\nAção histórica com terror.",
- imagem:"",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/kngdom.webp",
  trailer:"https://www.youtube.com/embed/4l-yByZpaaM",
  resumo:`Durante a era Joseon,
 uma praga transforma pessoas em mortos-vivos.
@@ -962,7 +962,7 @@ Tem ação intensa e cenas fortes.
  tags:["intenso","triste"],
  nota:"8.3/10 – MyDramaList",
  descricao:"Humanos se transformam em monstros.\nSobrevivência e drama.\nSombrio e intenso.",
- imagem:"",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/sweet%20home.jpg",
  trailer:"https://www.youtube.com/embed/7rI56NmD33Y",
  resumo:`Pessoas começam a se transformar em monstros.
 Um grupo fica preso em um prédio.
@@ -980,7 +980,7 @@ Intenso e visualmente impactante.`
  tags:["intenso","triste"],
  nota:"8.7/10 – MyDramaList",
  descricao:"Uma mulher busca vingança.\nEla entra no mundo do crime.\nAção pesada.",
- imagem:"",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/my%20name.jpg",
  trailer:"https://www.youtube.com/embed/MaJ7ZT70ve4",
  resumo:`Após o assassinato do pai,
 uma jovem decide se vingar.
@@ -998,7 +998,7 @@ ela perde quem realmente é.
  tags:["alegre","romance"],
  nota:"8.1/10 – MyDramaList",
  descricao:"Entregadores sonham com uma vida melhor.\nRomance simples e inspirador.\nMotivador.",
- imagem:"",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/strongest%20deliv.jpg",
  trailer:"https://www.youtube.com/embed/6gW6pFZKXkY",
  resumo:`Jovens entregadores trabalham duro todos os dias.
 Eles sonham em abrir o próprio negócio.
@@ -1014,7 +1014,7 @@ Mostra a luta da juventude comum.
  tags:["romance","triste"],
  nota:"8.8/10 – MyDramaList",
  descricao:"Amor em meio a um momento histórico.\nEscolhas difíceis e dor.\nMuito emocionante.",
- imagem:"",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/youth%20of%20may.webp",
  trailer:"https://www.youtube.com/embed/j4KJY4R8r3I",
  resumo:`Durante o levante de Gwangju,
 um estudante de medicina conhece uma enfermeira.
@@ -1030,7 +1030,7 @@ Uma história de amor em tempos difíceis.`
  tags:["romance","alegre"],
  nota:"8.3/10 – MyDramaList",
  descricao:"Uma mulher desafia padrões sociais.\nEla se torna historiadora.\nRomance histórico leve.",
- imagem:"",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/rockie%20storian.jfif",
  trailer:"https://www.youtube.com/embed/8v9WnM7DkX8",
  resumo:`Em uma época em que mulheres não tinham voz,
 Goo Hae Ryung decide virar historiadora.
@@ -1046,7 +1046,7 @@ Leve, divertido e inspirador.`
  tags:["romance","triste","intenso"],
  nota:"9.0/10 – MyDramaList",
  descricao:"Um rei se apaixona por uma dama da corte.\nAmor impossível.\nHistórico emocionante.",
- imagem:"",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/the%20red%20sleeve.jpeg",
  trailer:"https://www.youtube.com/embed/P3c1gL0lTzA",
  resumo:`Um príncipe herdeiro se apaixona
 por uma dama da corte.
@@ -1062,7 +1062,7 @@ Emocionante e marcante.`
  tags:["fantasia","romance","intenso"],
  nota:"9.0/10 – MyDramaList",
  descricao:"Almas trocam de corpos.\nMagia e destino se cruzam.\nFantasia envolvente.",
- imagem:"",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/alchemy%20of%20souls.webp",
  trailer:"https://www.youtube.com/embed/50kLmhGpt1s",
  resumo:`Em um mundo mágico,
 almas podem trocar de corpo.
@@ -1080,7 +1080,7 @@ Fantasia épica e envolvente.`
  tags:["romance","intenso"],
  nota:"8.2/10 – MyDramaList",
  descricao:"Um médico com passado doloroso.\nAmor e conspirações.\nDrama médico intenso.",
- imagem:"",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/doctor%20stranger.webp",
  trailer:"https://www.youtube.com/embed/L1fF9vDqC_w",
  resumo:`Criado na Coreia do Norte,
 um médico genial foge para o Sul.
@@ -1095,7 +1095,7 @@ Drama cheio de tensão e romance.`
  tags:["triste","romance"],
  nota:"8.9/10 – MyDramaList",
  descricao:"Relação difícil entre mãe e filho.\nSegundas chances.\nEmocionante.",
- imagem:"",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/the%20good%20bad%20mother.jpg",
  trailer:"https://www.youtube.com/embed/WvGz0C5yN6g",
  resumo:`Uma mãe rígida cria o filho com severidade.
 Anos depois, um acidente muda tudo.
@@ -1110,7 +1110,7 @@ Emocionante e cheio de aprendizado.`
  tags:["alegre","intenso"],
  nota:"8.4/10 – MyDramaList",
  descricao:"Um policial corrupto enfrenta seu outro lado.\nAção e humor.\nDiferente e divertido.",
- imagem:"",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/bad%20and%20crazy.webp",
  trailer:"https://www.youtube.com/embed/1S-2m3h3K9Q",
  resumo:`Um policial ambicioso começa a ver
 um misterioso justiceiro.
@@ -1126,7 +1126,7 @@ Diferente e viciante.`
  tags:["romance","alegre"],
  nota:"8.6/10 – MyDramaList",
  descricao:"Uma mulher recomeça a carreira.\nAmor nasce no trabalho.\nDoce e inspirador.",
- imagem:"",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/romance%20is%20a%20bonus%20book.jpg",
  trailer:"https://www.youtube.com/embed/0mYbKz4X6f8",
  resumo:`Uma mulher divorciada tenta voltar ao mercado.
 Ela consegue emprego em uma editora.
@@ -1141,7 +1141,7 @@ Doce e confortável de assistir.`
  tags:["triste","alegre"],
  nota:"8.9/10 – MyDramaList",
  descricao:"Um senhor sonha em aprender balé.\nAmizade entre gerações.\nLindo e sensível.",
- imagem:"",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/navillera.webp",
  trailer:"https://www.youtube.com/embed/6hT0u8v4zYg",
  resumo:`Um senhor de 70 anos decide aprender balé.
 Ele encontra um jovem talentoso e perdido.
@@ -1156,7 +1156,7 @@ Muito sensível e emocionante.`
  tags:["intenso","triste"],
  nota:"8.8/10 – MyDramaList",
  descricao:"Soldados caçam desertores do exército.\nRealidade dura.\nDrama forte.",
- imagem:"",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/d%20p.jpg",
  trailer:"https://www.youtube.com/embed/0cZ7o0WnP2Y",
  resumo:`Um soldado entra para a equipe
 que captura desertores.
@@ -1171,7 +1171,7 @@ Realista e impactante.`
  tags:["triste","alegre"],
  nota:"9.1/10 – MyDramaList",
  descricao:"Jovens lidam com histórias de pessoas falecidas.\nLuto e empatia.\nExtremamente tocante.",
- imagem:"",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/move%20to%20heaven.webp",
  trailer:"https://www.youtube.com/embed/A-er_AJioOA",
  resumo:`Um jovem com Asperger trabalha limpando
 pertences de pessoas falecidas.
@@ -1186,7 +1186,7 @@ Extremamente sensível e humano.`
  tags:["intenso","triste"],
  nota:"8.8/10 – MyDramaList",
  descricao:"Três irmãs enfrentam uma família poderosa.\nSegredos e corrupção.\nSuspense moderno.",
- imagem:"",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/little%20woman.jpg",
  trailer:"https://www.youtube.com/embed/2Fq5C8YVg5A",
  resumo:`Três irmãs pobres se envolvem
 em um caso milionário misterioso.
@@ -1201,7 +1201,7 @@ Suspense moderno e elegante.`
  tags:["intenso"],
  nota:"9.0/10 – MyDramaList",
  descricao:"Um homem renasce em família rica.\nBusca vingança.\nDrama corporativo forte.",
- imagem:"",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/reborn%20ric.jfif",
  trailer:"https://www.youtube.com/embed/IsQ4c0w9f0A",
  resumo:`Após ser traído e morto,
 um homem renasce como herdeiro da família rica.
@@ -1216,7 +1216,7 @@ Drama corporativo cheio de estratégia.`
  tags:["intenso","romance"],
  nota:"8.6/10 – MyDramaList",
  descricao:"Um advogado vira lenda do crime.\nConspirações perigosas.\nSuspense eletrizante.",
- imagem:"",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/big%20mouth.webp",
  trailer:"https://www.youtube.com/embed/twK-hz0Xv1c",
  resumo:`Um advogado comum é acusado
 de ser um grande criminoso.
@@ -1231,7 +1231,7 @@ Suspense cheio de tensão.`
  tags:["romance","triste"],
  nota:"9.2/10 – MyDramaList",
  descricao:"Um casal enfrenta crise profunda.\nAmor, dor e reconciliação.\nMuito emocionante.",
- imagem:"",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/queen%20of%20tears.webp",
  trailer:"https://www.youtube.com/embed/GS3xYzV5C0Y",
  resumo:`Um casal rico enfrenta crise no casamento.
 O amor parece ter acabado.
