@@ -522,7 +522,7 @@ superação e empatia.`
  nota:"8.3/10 – MyDramaList",
  descricao:"Universos paralelos se conectam.\nUm rei busca salvar seu mundo.\nRomance épico com fantasia.",
  imagem:"",
- trailer:"https://www.youtube.com/embed/xkE1uC-dC2U",
+ trailer:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/the%20king%20eternalllll.jpg",
  resumo:`Lee Gon é o imperador da Coreia em um universo paralelo.
 Ele descobre a existência de uma porta que liga dois mundos.
 
@@ -590,7 +590,7 @@ mistério e química intensa entre o casal.
  tags:["romance","alegre","comedia"],
  nota:"8.6/10 – MyDramaList",
  descricao:"Uma garota se passa por garoto para trabalhar.\nUm romance inesperado surge.\nClássico divertido e romântico.",
- imagem:"",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/coffeee.jpg",
  trailer:"https://www.youtube.com/embed/8x5Q9xvW7lE",
  resumo:`Go Eun Chan se disfarça de homem para conseguir emprego.
 Ela começa a trabalhar em um café onde todos os funcionários são homens.
