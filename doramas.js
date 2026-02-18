@@ -521,7 +521,7 @@ superação e empatia.`
  tags:["romance","fantasia","intenso"],
  nota:"8.3/10 – MyDramaList",
  descricao:"Universos paralelos se conectam.\nUm rei busca salvar seu mundo.\nRomance épico com fantasia.",
- imagem:"",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/the%20king%20eternalllll.jpg",
  trailer:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/the%20king%20eternalllll.jpg",
  resumo:`Lee Gon é o imperador da Coreia em um universo paralelo.
 Ele descobre a existência de uma porta que liga dois mundos.
