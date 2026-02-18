@@ -272,11 +272,20 @@ function toggleFav(nome){
   return l.includes(nome);
 }
 
+/* ✅ NOVO: mesma regra de slug do seu site */
+function criarSlug(nome){
+  return String(nome || "")
+    .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/(^-|-$)/g, "");
+}
+
 function estrelas(nota){
   const m=String(nota||"").match(/[\d]+([.,]\d+)?/);
   if(!m) return "";
-  const n=parseFloat(m[0].replace(",","."));
-  const n5=n/2;
+  const n=parseFloat(m[0].replace(",","."));  // 0-10
+  const n5=n/2;                               // 0-5
   const cheio=Math.floor(n5);
   const meio=n5%1>=0.5?1:0;
   const vazio=5-cheio-meio;
@@ -295,8 +304,42 @@ function compartilhar(nome){
   }
 }
 
-function carregar(){
+/* ✅ NOVO: tenta redirecionar para /doramas/slug.html.
+   Se não existir (para não dar 404), continua abrindo aqui como antes. */
+async function tentarRedirecionarParaPaginaPropria(nome){
+  const slug = criarSlug(nome);
+  const destino = `/doramas/${slug}.html`;
+
+  try{
+    const resp = await fetch(destino, { method:"HEAD", cache:"no-store" });
+    if(resp.ok){
+      // replace: não volta para esta URL no "voltar"
+      window.location.replace(destino);
+      return true;
+    }
+  }catch(e){}
+  return false;
+}
+
+async function carregar(){
   const nome=new URLSearchParams(window.location.search).get("nome");
+
+  // Se abrir sem nome, mostra mensagem simples
+  if(!nome){
+    document.getElementById("conteudo-detalhe").innerHTML = `
+      <div style="max-width:980px;margin:18px auto;background:white;padding:22px;border-radius:18px;box-shadow:0 10px 25px rgba(0,0,0,0.08)">
+        <h2 style="margin:0 0 8px;color:#d63384;">Nenhum dorama selecionado</h2>
+        <p style="margin:0;line-height:1.6;">Volte para a Home e escolha um dorama.</p>
+      </div>
+    `;
+    return;
+  }
+
+  // ✅ Se existir página própria, manda pra lá
+  const redirecionou = await tentarRedirecionarParaPaginaPropria(nome);
+  if(redirecionou) return;
+
+  // Fallback: modo antigo (como já era)
   const dorama=doramas.find(d=>d.nome===nome);
   if(!dorama) return;
 
@@ -335,11 +378,11 @@ function carregar(){
 
   const textoCompleto = (dorama.resumo || dorama.descricao || "").replaceAll("\n","<br>");
 
-document.getElementById("conteudo-detalhe").innerHTML=`
-  <div class="resumo-trailer">
-    <div>
-      <p class="texto">${textoCompleto}</p>
-    </div>
+  document.getElementById("conteudo-detalhe").innerHTML=`
+    <div class="resumo-trailer">
+      <div>
+        <p class="texto">${textoCompleto}</p>
+      </div>
       ${dorama.trailer?`
       <div class="trailer-box" id="secTrailer">
         <h3>🎬 Trailer</h3>
