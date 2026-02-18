@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Planeta Dorama 🌍</title>
+
 <meta name="description" content="Planeta Dorama 🌍: listas, recomendações, dorama da semana, notícias e um guia completo para você encontrar o dorama perfeito.">
 
 <meta property="og:site_name" content="Planeta Dorama 🌍">
@@ -17,6 +18,7 @@
 <meta name="twitter:title" content="Planeta Dorama 🌍">
 <meta name="twitter:description" content="Listas, recomendações e guia completo de doramas.">
 <meta name="twitter:image" content="https://planetadorama.com.br/imagens/og-capa.jpg">
+
 <style>
 body { margin:0; font-family: Arial, sans-serif; background:#fff0f6; color:#333; }
 header { background: linear-gradient(90deg, #ff7eb3, #b983ff); padding:20px; text-align:center; color:white; }
@@ -248,19 +250,14 @@ footer{ background:#b983ff; color:white; text-align:center; padding:15px; }
 
 <script src="doramas.js"></script>
 <script>
-// =====================
 // Helpers
-// =====================
 function parseNota(nota){
-  // pega o primeiro número que aparecer (ex: "9.2", "9,2/10", "Nota: 8.7")
   const m = String(nota || "").match(/[\d]+([.,]\d+)?/);
   if(!m) return 0;
   return parseFloat(m[0].replace(",", "."));
 }
 
-// =====================
-// Top 5 automático
-// =====================
+// Top 5
 function carregarTop5(){
   const area = document.getElementById("top5-cards");
   if(!area || !Array.isArray(doramas)) return;
@@ -281,9 +278,7 @@ function carregarTop5(){
   `).join("");
 }
 
-// =====================
 // Dorama da Semana
-// =====================
 function carregarDoramaDaSemana() {
   const area = document.getElementById("dorama-semana");
   area.innerHTML = "";
@@ -300,9 +295,7 @@ function carregarDoramaDaSemana() {
   `;
 }
 
-// =====================
 // Busca inteligente (Home)
-// =====================
 function setupBuscaHome(){
   const input = document.getElementById("buscaHome");
   const box = document.getElementById("sugestoes");
@@ -358,9 +351,7 @@ function setupBuscaHome(){
   });
 }
 
-// =====================
-// Notícias + Tradução (com fallback)  [mantido igual ao seu]
-// =====================
+// Notícias + Tradução
 function limparHtml(texto) {
   return (texto || "").replace(/<[^>]*>?/gm, "").trim();
 }
@@ -378,6 +369,7 @@ function pegarImagemNoticia(item){
   if (match && match[1] && match[1].startsWith("http")) return match[1];
   return "";
 }
+
 const CACHE_KEY = "trad_cache_home_v4";
 const tradCache = JSON.parse(localStorage.getItem(CACHE_KEY) || "{}");
 function salvarCache(){ localStorage.setItem(CACHE_KEY, JSON.stringify(tradCache)); }
@@ -445,7 +437,7 @@ async function carregarNoticiasAutomaticas(forcar=false) {
         <div class="noticia" id="home_news_${idx}">
           ${img ? `<img class="img" src="${img}" alt="Notícia">` : ``}
           <div class="conteudo">
-            <h3 class="t">${n.}</h3>
+            <h3 class="t">${n.title}</h3>
             <div class="meta">AsianWiki • ${formatarData(n.pubDate)}</div>
             <p class="d">${descCurto}</p>
             <p style="margin-top:10px;">
