@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Descubra seu Dorama 🤖 | Clube do Dorama</title>
+<title>Descubra seu Dorama 🤖 | Planeta Dorama 🌍</title>
 
 <style>
 body{
@@ -190,12 +190,12 @@ footer{
 
 <header>
   <h1 style="margin:0;">🤖 Descubra seu Dorama</h1>
-  <a href="index.html">⬅ Voltar para o início</a>
+  <a href="index.html">⬅ Voltar para o início 🌍</a>
 </header>
 
 <div class="container">
   <h2 class="titulo">Me diga como você está se sentindo</h2>
-  <p class="sub">Eu vou sugerir 3 doramas perfeitos pro seu momento ✨</p>
+  <p class="sub">Eu vou sugerir 3 doramas perfeitos no Planeta Dorama 🌍 ✨</p>
 
   <div class="painel">
     <div class="linha-busca">
@@ -220,7 +220,7 @@ footer{
 </div>
 
 <footer>
-  💜 Clube do Dorama — feito com amor
+  💜 Planeta Dorama 🌍 — feito com amor
 </footer>
 
 <script src="doramas.js"></script>
@@ -267,7 +267,6 @@ function buscar() {
     resultados = doramas;
   }
 
-  // 3 sugestões aleatórias
   resultados = resultados.sort(() => 0.5 - Math.random()).slice(0, 3);
 
   const div = document.getElementById("resultado");
@@ -295,7 +294,6 @@ function buscar() {
   });
 }
 
-// Buscar ao apertar Enter
 document.getElementById("entrada").addEventListener("keydown", (e) => {
   if(e.key === "Enter") buscar();
 });
