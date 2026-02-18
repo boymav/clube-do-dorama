@@ -633,7 +633,7 @@ O dorama mistura fantasia com romance clássico.
  tags:["romance","fantasia","comedia"],
  nota:"8.6/10 – MyDramaList",
  descricao:"Uma sereia chega ao mundo humano.\nEla se apaixona por um golpista.\nRomance divertido e mágico.",
- imagem:"",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/the%20legend%20of.jfif",
  trailer:"https://www.youtube.com/embed/4YfK6qK8g9Y",
  resumo:`Shim Cheong é uma sereia que acaba no mundo moderno.
 Ela conhece Heo Joon Jae, um golpista charmoso.
@@ -652,7 +652,7 @@ Uma história encantadora e apaixonante.`
  tags:["romance","fantasia","triste"],
  nota:"8.4/10 – MyDramaList",
  descricao:"Uma mulher faz um contrato com a própria destruição.\nEles vivem um amor impossível.\nRomance melancólico.",
- imagem:"",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/doom%20at%20your.jfif",
  trailer:"https://www.youtube.com/embed/s8G3vWJ5R8E",
  resumo:`Tak Dong Kyung descobre que tem pouco tempo de vida.
 Em desespero, deseja que o mundo acabe.
@@ -671,7 +671,7 @@ Fala sobre vida, dor e esperança.`
  tags:["romance","triste","alegre"],
  nota:"8.8/10 – MyDramaList",
  descricao:"Ex-namorados se reencontram anos depois.\nSentimentos mal resolvidos voltam.\nRomance realista e sensível.",
- imagem:"",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/our%20beloved%20summer.png",
  trailer:"https://www.youtube.com/embed/3QfHqzF4P6k",
  resumo:`Choi Ung e Kook Yeon Soo foram namorados na juventude.
 Após o término, prometeram nunca mais se ver.
@@ -690,7 +690,7 @@ Delicado e emocionante.`
  tags:["intenso","romance","triste"],
  nota:"9.1/10 – MyDramaList",
  descricao:"Um homem esconde um passado sombrio.\nSua esposa é detetive.\nSuspense psicológico poderoso.",
- imagem:"",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/flower%20of%20evil.webp",
  trailer:"https://www.youtube.com/embed/SlDhptm8ZqY",
  resumo:`Baek Hee Sung parece ter uma vida perfeita.
 Mas ele esconde um passado perigoso.
@@ -708,7 +708,7 @@ Questiona confiança e identidade.
  tags:["intenso","triste"],
  nota:"8.9/10 – MyDramaList",
  descricao:"Famílias ricas disputam o futuro dos filhos.\nPressão extrema e ambição.\nCrítica social forte.",
- imagem:"",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/sky%20castle.webp",
  trailer:"https://www.youtube.com/embed/8R9P6kWzF4A",
  resumo:`Famílias da elite vivem em um condomínio luxuoso.
 Elas fazem de tudo para garantir o sucesso acadêmico dos filhos.
