@@ -2,12 +2,12 @@
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8">
-<title>Dorama | Clube do Dorama</title>
+<title>Dorama | Planeta Dorama 🌍</title>
 <link rel="stylesheet" href="style.css">
 
 <style>
 
-/* FUNDO BONITO */
+/* FUNDO */
 body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
@@ -28,19 +28,34 @@ body {
 #conteudo-detalhe h2 {
     font-size: 32px;
     color: #d63384;
-    margin-bottom: 20px;
-}
-
-/* IMAGEM PADRONIZADA */
-#conteudo-detalhe img {
-    width: 100%;
-    height: 450px;
-    object-fit: cover;
-    border-radius: 15px;
     margin-bottom: 25px;
+    text-align: center;
 }
 
-/* TEXTO MAIS CONFORTÁVEL */
+/* ===== NOVO PADRÃO DE IMAGEM ===== */
+
+.poster-wrap{
+    width: min(420px, 100%);
+    aspect-ratio: 2 / 3; /* padrão de poster */
+    margin: 0 auto 30px auto;
+    background: #fff0f6;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.10);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.poster-wrap img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* NÃO corta */
+    object-position: center;
+    display: block;
+}
+
+/* TEXTO */
 #conteudo-detalhe p {
     font-size: 18px;
     line-height: 1.8;
@@ -87,9 +102,9 @@ body {
 
 <body>
 
-<header>
-    <h1>🌸 Clube do Dorama</h1>
-    <a href="index.html">⬅ Voltar</a>
+<header style="text-align:center;padding:20px;background:linear-gradient(90deg,#ff7eb3,#b983ff);color:white;">
+    <h1 style="margin:0;">🌍 Planeta Dorama</h1>
+    <a href="index.html" style="color:white;text-decoration:none;font-weight:bold;">⬅ Voltar</a>
 </header>
 
 <section id="conteudo-detalhe"></section>
@@ -109,7 +124,6 @@ function carregarDorama() {
 
     if (!dorama) return;
 
-    // 🔹 LÓGICA CORRETA DA IMAGEM
     let imagemFinal = dorama.imagem;
 
     if (!imagemFinal && dorama.trailer) {
@@ -122,7 +136,11 @@ function carregarDorama() {
     document.getElementById("conteudo-detalhe").innerHTML = `
         <h2>${dorama.nome}</h2>
 
-        ${imagemFinal ? `<img src="${imagemFinal}">` : ""}
+        ${imagemFinal ? `
+            <div class="poster-wrap">
+                <img src="${imagemFinal}" alt="${dorama.nome}">
+            </div>
+        ` : ""}
 
         ${dorama.trailer ? `
             <div>
@@ -142,7 +160,7 @@ function carregarDorama() {
         <p><strong>⭐ ${dorama.nota}</strong></p>
     `;
 
-    document.title = dorama.nome + " | Clube do Dorama";
+    document.title = dorama.nome + " | Planeta Dorama 🌍";
 }
 
 carregarDorama();
