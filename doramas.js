@@ -313,7 +313,7 @@ fracassos e perseverança.
  tags:["romance","alegre","comedia"],
  nota:"8.9/10 – MyDramaList",
  descricao:"Uma dentista se muda para uma vila à beira-mar.\nEla conhece um faz-tudo muito carismático.\nRomance leve e aconchegante.",
- imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/hometown.webp",
+ imagem:"https://wallpapercave.com/wp/wp9840099.jpg",
  trailer:"https://www.youtube.com/embed/jwXKxXz7T9Q",
  resumo:`Yoon Hye Jin é uma dentista inteligente e determinada.
 Após problemas na cidade grande, ela decide recomeçar em uma pequena vila litorânea.
