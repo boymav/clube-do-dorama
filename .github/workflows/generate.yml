@@ -23,6 +23,6 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git add doramas sitemap.xml
+          git add doramas sitemap.xml robots.txt
           git commit -m "chore: generate dorama pages" || echo "Nothing to commit"
           git push
