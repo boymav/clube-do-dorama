@@ -428,7 +428,7 @@ Perfeito para quem quer algo doce e divertido.`
  tags:["romance","alegre","comedia"],
  nota:"8.4/10 – MyDramaList",
  descricao:"Uma atriz trabalha como secretária temporária.\nEla se envolve com um advogado sério.\nDoce e romântico.",
- imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/touch.jpg",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/touch%20your%20heart.avif",
  trailer:"https://www.youtube.com/embed/1h7H6qY3u4I",
  resumo:`Oh Yoon Seo é uma atriz que precisa recuperar sua reputação.
 Para isso, ela começa a trabalhar como secretária em um escritório de advocacia.
