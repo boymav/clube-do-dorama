@@ -1,6 +1,6 @@
 import fs from "fs";
 import path from "path";
-import { doramas } from "../doramas.js";
+import { doramas } from "../doramas-data.js";
 
 const SITE = "https://planetadorama.com.br";
 
