@@ -2,109 +2,234 @@
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Dorama | Planeta Dorama 🌍</title>
 <link rel="stylesheet" href="style.css">
 
 <style>
-
 /* FUNDO */
-body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(135deg, #ffe6f2, #fff0f7);
+body{
+  margin:0;
+  font-family:'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #ffe6f2, #fff0f7);
+}
+
+/* HEADER (se o style.css já tiver, pode remover esse inline depois) */
+header{
+  text-align:center;
+  padding:20px;
+  background:linear-gradient(90deg,#ff7eb3,#b983ff);
+  color:white;
+}
+header h1{ margin:0; }
+header a{
+  color:white;
+  text-decoration:none;
+  font-weight:bold;
+  display:inline-block;
+  margin-top:8px;
 }
 
 /* CAIXA CENTRAL */
-#conteudo-detalhe {
-    max-width: 900px;
-    margin: 50px auto;
-    background: white;
-    padding: 40px;
-    border-radius: 20px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+#conteudo-detalhe{
+  max-width: 980px;
+  margin: 50px auto;
+  background: white;
+  padding: 34px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
 
 /* TÍTULO */
-#conteudo-detalhe h2 {
-    font-size: 32px;
-    color: #d63384;
-    margin-bottom: 25px;
-    text-align: center;
+#conteudo-detalhe h2{
+  font-size: 32px;
+  color: #d63384;
+  margin: 0 0 18px;
 }
 
-/* ===== NOVO PADRÃO DE IMAGEM ===== */
+/* Layout premium (desktop) */
+.detalhe-grid{
+  display:grid;
+  grid-template-columns: 420px 1fr;
+  gap: 26px;
+  align-items:start;
+}
 
+/* Em telas pequenas volta a ficar em coluna */
+@media (max-width: 900px){
+  #conteudo-detalhe{ margin:20px; padding:24px; }
+  #conteudo-detalhe h2{ font-size:24px; }
+  .detalhe-grid{ grid-template-columns: 1fr; }
+}
+
+/* Poster padronizado (SEM CORTAR) */
 .poster-wrap{
-    width: min(420px, 100%);
-    aspect-ratio: 2 / 3; /* padrão de poster */
-    margin: 0 auto 30px auto;
-    background: #fff0f6;
-    border-radius: 18px;
-    overflow: hidden;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.10);
-    display:flex;
-    align-items:center;
-    justify-content:center;
+  width: min(420px, 100%);
+  aspect-ratio: 2 / 3;   /* padrão poster */
+  background: #fff0f6;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.10);
+  display:flex;
+  align-items:center;
+  justify-content:center;
 }
 
 .poster-wrap img{
-    width: 100%;
-    height: 100%;
-    object-fit: contain; /* NÃO corta */
-    object-position: center;
-    display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;   /* NÃO corta */
+  object-position: center;
+  display:block;
 }
 
-/* TEXTO */
-#conteudo-detalhe p {
-    font-size: 18px;
-    line-height: 1.8;
-    color: #444;
-    text-align: justify;
+/* Texto */
+.texto{
+  font-size: 18px;
+  line-height: 1.8;
+  color: #444;
+  text-align: justify;
+  margin: 0;
+}
+@media (max-width:900px){
+  .texto{ font-size:16px; }
 }
 
-/* NOTA */
-#conteudo-detalhe strong {
-    font-size: 20px;
-    color: #ff4d94;
+/* Nota */
+.nota{
+  margin-top: 14px;
+  font-weight: bold;
+  font-size: 18px;
+  color: #ff4d94;
 }
 
-/* TRAILER */
-#conteudo-detalhe iframe {
-    width: 100%;
-    height: 400px;
-    border-radius: 16px;
-    margin-top: 15px;
+/* Botões */
+.botoes{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  margin: 12px 0 10px;
+}
+.btn-acao{
+  padding: 12px 16px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 15px;
+  background: #ff7eb3;
+  color: #fff;
+}
+.btn-acao:hover{ background:#b983ff; }
+.btn-sec{
+  background:#f3e8ff;
+  color:#5a2b82;
+  border: 1px solid rgba(185,131,255,0.45);
+}
+.btn-sec:hover{ background:#ead7ff; }
+.mini-msg{
+  font-size: 13px;
+  opacity: .85;
+  margin-top: 6px;
 }
 
-@media (max-width: 768px) {
-    #conteudo-detalhe {
-        margin: 20px;
-        padding: 25px;
-    }
-
-    #conteudo-detalhe h2 {
-        font-size: 24px;
-    }
-
-    #conteudo-detalhe p {
-        font-size: 16px;
-    }
-
-    #conteudo-detalhe iframe {
-        height: 250px;
-    }
+/* Trailer responsivo (16:9) */
+.trailer-box{
+  margin-top: 16px;
+}
+.trailer-box h3{
+  font-size:22px;
+  color:#d63384;
+  margin: 0 0 10px;
+}
+.video-wrap{
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 22px rgba(0,0,0,0.10);
+  background:#000;
+}
+.video-wrap iframe{
+  width:100%;
+  height:100%;
+  border:0;
+  display:block;
 }
 
+/* Relacionados */
+.relacionados{
+  margin-top: 28px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(0,0,0,0.08);
+}
+.relacionados h3{
+  margin: 0 0 12px;
+  color:#d63384;
+  font-size: 22px;
+}
+.cards-mini{
+  display:flex;
+  flex-wrap:wrap;
+  gap: 14px;
+}
+.card-mini{
+  width: 190px;
+  background:#fff;
+  border-radius: 16px;
+  overflow:hidden;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.10);
+  cursor:pointer;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.card-mini:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 10px 26px rgba(0,0,0,0.14);
+}
+.card-mini img{
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  display:block;
+}
+.card-mini .info{
+  padding: 10px 10px 12px;
+}
+.card-mini .info strong{
+  font-size: 14px;
+  color:#333;
+  display:block;
+  margin-bottom:6px;
+}
+.card-mini .info span{
+  font-size: 13px;
+  opacity: .85;
+}
+
+/* Pequeno detalhe para "tags" */
+.tags{
+  margin-top: 6px;
+  font-size: 13px;
+  opacity: 0.85;
+}
+.tag{
+  display:inline-block;
+  background:#f3e8ff;
+  border: 1px solid rgba(185,131,255,0.35);
+  color:#5a2b82;
+  padding: 6px 10px;
+  border-radius: 999px;
+  margin: 4px 6px 0 0;
+  font-weight:bold;
+}
 </style>
-
 </head>
 
 <body>
 
-<header style="text-align:center;padding:20px;background:linear-gradient(90deg,#ff7eb3,#b983ff);color:white;">
-    <h1 style="margin:0;">🌍 Planeta Dorama</h1>
-    <a href="index.html" style="color:white;text-decoration:none;font-weight:bold;">⬅ Voltar</a>
+<header>
+  <h1>🌍 Planeta Dorama</h1>
+  <a href="index.html">⬅ Voltar</a>
 </header>
 
 <section id="conteudo-detalhe"></section>
@@ -112,59 +237,157 @@ body {
 <script src="script.js"></script>
 <script src="doramas.js"></script>
 <script>
+const FAV_KEY = "pd_favoritos_v1";
 
-function carregarDorama() {
+function getFavoritos(){
+  try { return JSON.parse(localStorage.getItem(FAV_KEY) || "[]"); }
+  catch(e){ return []; }
+}
 
-    const params = new URLSearchParams(window.location.search);
-    const nome = params.get("nome");
+function setFavoritos(lista){
+  localStorage.setItem(FAV_KEY, JSON.stringify(lista));
+}
 
-    if (!nome) return;
+function isFav(nome){
+  const favs = getFavoritos();
+  return favs.includes(nome);
+}
 
-    const dorama = doramas.find(d => d.nome === nome);
+function toggleFav(nome){
+  const favs = getFavoritos();
+  const idx = favs.indexOf(nome);
+  if(idx >= 0) favs.splice(idx, 1);
+  else favs.push(nome);
+  setFavoritos(favs);
+  return favs.includes(nome);
+}
 
-    if (!dorama) return;
+function escaparHtml(str){
+  return (str || "").replace(/[&<>"']/g, m => ({
+    "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"
+  }[m]));
+}
 
-    let imagemFinal = dorama.imagem;
+function sugestoesRelacionadas(doramaAtual){
+  const atualTags = Array.isArray(doramaAtual.tags) ? doramaAtual.tags : [];
 
-    if (!imagemFinal && dorama.trailer) {
-        const videoId = dorama.trailer.split("/embed/")[1];
-        if (videoId) {
-            imagemFinal = "https://img.youtube.com/vi/" + videoId + "/hqdefault.jpg";
-        }
-    }
+  // Se tiver tags: pega semelhantes
+  if(atualTags.length > 0){
+    const similares = doramas
+      .filter(d => d.nome !== doramaAtual.nome)
+      .filter(d => Array.isArray(d.tags) && d.tags.some(t => atualTags.includes(t)));
 
-    document.getElementById("conteudo-detalhe").innerHTML = `
-        <h2>${dorama.nome}</h2>
+    // embaralha e pega 6
+    return similares.sort(() => 0.5 - Math.random()).slice(0, 6);
+  }
 
-        ${imagemFinal ? `
-            <div class="poster-wrap">
-                <img src="${imagemFinal}" alt="${dorama.nome}">
+  // Fallback: aleatórios (se não tiver tags)
+  return doramas
+    .filter(d => d.nome !== doramaAtual.nome)
+    .sort(() => 0.5 - Math.random())
+    .slice(0, 6);
+}
+
+function carregarDorama(){
+  const params = new URLSearchParams(window.location.search);
+  const nome = params.get("nome");
+  if(!nome) return;
+
+  const dorama = doramas.find(d => d.nome === nome);
+  if(!dorama) return;
+
+  // imagem (com fallback do trailer, como você já tinha)
+  let imagemFinal = dorama.imagem;
+  if (!imagemFinal && dorama.trailer) {
+    const videoId = dorama.trailer.split("/embed/")[1];
+    if (videoId) imagemFinal = "https://img.youtube.com/vi/" + videoId + "/hqdefault.jpg";
+  }
+
+  const resumoFinal = (dorama.resumo || dorama.descricao || "").replaceAll("\n","<br>");
+
+  const tagsHtml = Array.isArray(dorama.tags) && dorama.tags.length
+    ? `<div class="tags">${dorama.tags.map(t => `<span class="tag">${escaparHtml(t)}</span>`).join("")}</div>`
+    : "";
+
+  const fav = isFav(dorama.nome);
+
+  const relacionados = sugestoesRelacionadas(dorama);
+  const relacionadosHtml = relacionados.length ? `
+    <div class="relacionados">
+      <h3>✨ Doramas parecidos</h3>
+      <div class="cards-mini">
+        ${relacionados.map(d => `
+          <div class="card-mini" onclick="window.location.href='dorama.html?nome=${encodeURIComponent(d.nome)}'">
+            <img src="${d.imagem}" alt="${escaparHtml(d.nome)}">
+            <div class="info">
+              <strong>${escaparHtml(d.nome)}</strong>
+              <span>⭐ ${escaparHtml(d.nota || "")}</span>
             </div>
+          </div>
+        `).join("")}
+      </div>
+    </div>
+  ` : "";
+
+  document.getElementById("conteudo-detalhe").innerHTML = `
+    <h2>${escaparHtml(dorama.nome)}</h2>
+
+    <div class="detalhe-grid">
+      <div>
+        ${imagemFinal ? `
+          <div class="poster-wrap">
+            <img src="${imagemFinal}" alt="${escaparHtml(dorama.nome)}">
+          </div>
         ` : ""}
+
+        ${tagsHtml}
+      </div>
+
+      <div>
+        <div class="botoes">
+          <button id="btnFav" class="btn-acao">${fav ? "💜 Favoritado ✅" : "🤍 Favoritar"}</button>
+          ${dorama.trailer ? `<button class="btn-acao btn-sec" id="btnTrailer">🎬 Ver trailer</button>` : ""}
+        </div>
+        <div class="mini-msg">Dica: seus favoritos ficam salvos no seu navegador.</div>
+
+        <p class="texto">${resumoFinal}</p>
+        <div class="nota">⭐ ${escaparHtml(dorama.nota || "")}</div>
 
         ${dorama.trailer ? `
-            <div>
-                <h3 style="font-size:22px;color:#d63384;">🎬 Trailer</h3>
-                <iframe 
-                    src="${dorama.trailer}" 
-                    frameborder="0" 
-                    allowfullscreen>
-                </iframe>
+          <div class="trailer-box" id="secTrailer">
+            <h3>🎬 Trailer</h3>
+            <div class="video-wrap">
+              <iframe src="${dorama.trailer}" allowfullscreen></iframe>
             </div>
+          </div>
         ` : ""}
+      </div>
+    </div>
 
-        <p>
-            ${(dorama.resumo || dorama.descricao).replaceAll("\n","<br>")}
-        </p>
+    ${relacionadosHtml}
+  `;
 
-        <p><strong>⭐ ${dorama.nota}</strong></p>
-    `;
+  // eventos
+  const btnFav = document.getElementById("btnFav");
+  if(btnFav){
+    btnFav.addEventListener("click", () => {
+      const agoraFav = toggleFav(dorama.nome);
+      btnFav.textContent = agoraFav ? "💜 Favoritado ✅" : "🤍 Favoritar";
+    });
+  }
 
-    document.title = dorama.nome + " | Planeta Dorama 🌍";
+  const btnTrailer = document.getElementById("btnTrailer");
+  if(btnTrailer){
+    btnTrailer.addEventListener("click", () => {
+      const alvo = document.getElementById("secTrailer");
+      if(alvo) alvo.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+  }
+
+  document.title = dorama.nome + " | Planeta Dorama 🌍";
 }
 
 carregarDorama();
-
 </script>
 
 </body>
