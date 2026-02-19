@@ -143,13 +143,24 @@ footer {
 
 <script src="doramas.js"></script>
 <script>
+// ✅ NOVO: mesma regra de slug do site
+function criarSlug(nome){
+  return String(nome || "")
+    .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/(^-|-$)/g, "");
+}
+
 function render(lista) {
   const c = document.getElementById("todos-doramas");
   c.innerHTML = "";
 
   lista.forEach(d => {
+    const slug = criarSlug(d.nome);
+
     c.innerHTML += `
-      <div class="card" onclick="window.location.href='dorama.html?nome=${encodeURIComponent(d.nome)}'">
+      <div class="card" onclick="window.location.href='/doramas/${slug}.html'">
         <img src="${d.imagem}" alt="${d.nome}">
         <div>
           <h3>${d.nome}</h3>
