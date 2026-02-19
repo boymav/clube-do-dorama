@@ -59,6 +59,22 @@
     .card.small{ width:220px; }
     .card.small img{ height:280px; }
 
+    /* Botão Netflix */
+    .btn-netflix{
+      display:inline-block;
+      margin-top:10px;
+      padding:8px 14px;
+      border-radius:999px;
+      background:#e50914;
+      color:#fff;
+      text-decoration:none;
+      font-weight:bold;
+      font-size:14px;
+    }
+    .btn-netflix:hover{
+      opacity:0.9;
+    }
+
     /* Notícias */
     .grid-noticias{
       display:grid;
@@ -159,6 +175,7 @@
   <nav style="margin-top:16px;">
     <a href="#inicio">Início</a>
     <a href="#top5">Top 5 ⭐</a>
+    <a href="#lista-netflix-2026">Netflix Romance 2026 💘</a>
     <a href="#listas">Listas 💖</a>
     <a href="#semana">Dorama da semana 🌟</a>
     <a href="#noticias">Notícias 📰</a>
@@ -179,6 +196,21 @@
 <section id="top5">
   <h2>🏆 Top 5 mais bem avaliados</h2>
   <div class="cards" id="top5-cards"></div>
+</section>
+
+<!-- NOVA SEÇÃO: lista da Netflix 2026 em cards bonitos -->
+<section id="lista-netflix-2026">
+  <h2>💘 Novidade: Melhores doramas coreanos de romance na Netflix (2026)</h2>
+  <p style="text-align:center; max-width:750px; margin:0 auto 20px;">
+    Esses são alguns dos doramas de romance mais amados pelos fãs e que você encontra na Netflix.
+    Clique para saber mais sobre cada um ou para abrir a busca da série diretamente na Netflix.
+  </p>
+  <div class="cards" id="lista-netflix-cards"></div>
+  <p style="text-align:center; margin-top:16px;">
+    <a href="listas/melhores-doramas-coreanos-romance-netflix-2026.html">
+      👉 Ver lista completa com explicação de cada dorama
+    </a>
+  </p>
 </section>
 
 <section id="listas">
@@ -261,19 +293,20 @@
     if(!area || !Array.isArray(doramas)) return;
 
     const top = [...doramas]
-      .map(d => ({...d, _notaNum: parseNota(d.nota)}))
-      .sort((a,b) => b._notaNum - a._notaNum)
+      .map(function(d){ return Object.assign({}, d, { _notaNum: parseNota(d.nota) }); })
+      .sort(function(a,b){ return b._notaNum - a._notaNum; })
       .slice(0, 5);
 
-    area.innerHTML = top.map(d => (
+    area.innerHTML = top.map(function(d){
+      return '' +
       '<div class="card click small" onclick="window.location.href=\'/doramas/' + criarSlug(d.nome) + '.html\'">' +
         '<img src="' + d.imagem + '" alt="' + d.nome + '" loading="lazy">' +
         '<div>' +
           '<h3>' + d.nome + '</h3>' +
           '<div class="mini">⭐ ' + (d.nota || '') + '</div>' +
         '</div>' +
-      '</div>'
-    )).join("");
+      '</div>';
+    }).join("");
   }
 
   // Dorama da Semana
@@ -287,10 +320,52 @@
         '<img src="' + escolhido.imagem + '" alt="' + escolhido.nome + '" loading="lazy">' +
         '<div>' +
           '<h3>' + escolhido.nome + '</h3>' +
-          '<p>' + (String(escolhido.descricao || "").replaceAll("\n","<br>")) + '</p>' +
+          '<p>' + (String(escolhido.descricao || "").replace(/\n/g,"<br>")) + '</p>' +
           '<div class="mini">⭐ ' + (escolhido.nota || '') + '</div>' +
         '</div>' +
       '</div>';
+  }
+
+  // NOVO: Lista Netflix Romance 2026
+  function carregarListaNetflixRomance(){
+    const area = document.getElementById("lista-netflix-cards");
+    if (!area || !Array.isArray(doramas)) return;
+
+    const nomes = [
+      "Pousando no Amor",
+      "Sorriso Real",
+      "Tudo Bem Não Ser Normal",
+      "Vinte e Cinco, Vinte e Um",
+      "Pretendente Surpresa",
+      "Hometown Cha-Cha-Cha",
+      "Advogada Extraordinária"
+    ];
+
+    var lista = nomes.map(function(nome){
+      var d = doramas.find(function(x){
+        return (x.nome || "").toLowerCase() === nome.toLowerCase();
+      });
+      if (d) return d;
+      return { nome:nome, imagem:"imagens/capa-padrao.jpg", nota:"", descricao:"" };
+    });
+
+    area.innerHTML = lista.map(function(d){
+      var primeiraFrase = "";
+      if (d.descricao){
+        primeiraFrase = String(d.descricao).split("\n")[0];
+      }
+      var urlNetflix = "https://www.netflix.com/search?q=" + encodeURIComponent(d.nome);
+      return '' +
+      '<div class="card">' +
+        '<img src="' + d.imagem + '" alt="' + d.nome + '" loading="lazy">' +
+        '<div>' +
+          '<h3>' + d.nome + '</h3>' +
+          '<p>' + primeiraFrase + '</p>' +
+          '<div class="mini">⭐ ' + (d.nota || '') + '</div>' +
+          '<a class="btn-netflix" href="' + urlNetflix + '" target="_blank" rel="noopener noreferrer">Ver na Netflix</a>' +
+        '</div>' +
+      '</div>';
+    }).join("");
   }
 
   // Busca inteligente
@@ -303,45 +378,48 @@
 
     function mostrar(lista){
       if(!lista.length){ esconder(); return; }
-      box.innerHTML = lista.map(d =>
+      box.innerHTML = lista.map(function(d){
+        return '' +
         '<div class="item" data-nome="' + encodeURIComponent(d.nome) + '">' +
           '<img src="' + d.imagem + '" alt="' + d.nome + '">' +
           '<div>' +
             '<div class="nome">' + d.nome + '</div>' +
             '<div class="nota">⭐ ' + (d.nota || '') + '</div>' +
           '</div>' +
-        '</div>'
-      ).join("");
+        '</div>';
+      }).join("");
       box.style.display = "block";
     }
 
-    input.addEventListener("input", () => {
+    input.addEventListener("input", function(){
       const q = (input.value || "").toLowerCase().trim();
       if(q.length < 2) return esconder();
 
       const resultados = doramas
-        .filter(d => (d.nome || "").toLowerCase().includes(q))
+        .filter(function(d){ return (d.nome || "").toLowerCase().includes(q); })
         .slice(0, 6);
 
       mostrar(resultados);
     });
 
-    box.addEventListener("click", (e) => {
+    box.addEventListener("click", function(e){
       const item = e.target.closest(".item");
       if(!item) return;
       const nome = decodeURIComponent(item.getAttribute("data-nome"));
       window.location.href = "/doramas/" + criarSlug(nome) + ".html";
     });
 
-    document.addEventListener("click", (e) => {
+    document.addEventListener("click", function(e){
       if(e.target === input || box.contains(e.target)) return;
       esconder();
     });
 
-    input.addEventListener("keydown", (e) => {
+    input.addEventListener("keydown", function(e){
       if(e.key === "Enter"){
         const q = (input.value || "").toLowerCase().trim();
-        const primeiro = doramas.find(d => (d.nome || "").toLowerCase().includes(q));
+        const primeiro = doramas.find(function(d){
+          return (d.nome || "").toLowerCase().includes(q);
+        });
         if(primeiro){
           window.location.href = "/doramas/" + criarSlug(primeiro.nome) + ".html";
         }
@@ -427,11 +505,11 @@
 
       const top = data.items.slice(0, 6);
 
-      grid.innerHTML = top.map((n, idx) => {
+      grid.innerHTML = top.map(function(n, idx){
         const img = pegarImagemNoticia(n);
         const descLimpo = limparHtml(n.description);
         const descCurto = descLimpo.slice(0, 160) + (descLimpo.length > 160 ? "..." : "");
-        return (
+        return '' +
           '<div class="noticia" id="home_news_' + idx + '">' +
             (img ? '<img class="img" src="' + img + '" alt="Notícia">' : '') +
             '<div class="conteudo">' +
@@ -441,12 +519,11 @@
               '<p style="margin-top:10px;"><a href="' + n.link + '" target="_blank" rel="noopener noreferrer">Ler notícia original →</a></p>' +
               '<p class="trad" style="margin-top:10px; font-size:12px; opacity:0.75;">Traduzindo…</p>' +
             '</div>' +
-          '</div>'
-        );
+          '</div>';
       }).join("");
 
-      top.forEach((n, idx) => {
-        (async () => {
+      top.forEach(function(n, idx){
+        (async function(){
           const card = document.getElementById("home_news_" + idx);
           if (!card) return;
 
@@ -474,10 +551,11 @@
   }
 
   // Inicialização
-  window.onload = () => {
+  window.onload = function(){
     carregarTop5();
     setupBuscaHome();
     carregarDoramaDaSemana();
+    carregarListaNetflixRomance();
     carregarNoticiasAutomaticas(false);
   };
 </script>
