@@ -1,247 +1,423 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sky Castle | Planeta Dorama</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sky Castle – Sinopse, Resumo e Trailer | Planeta Dorama</title>
+  <meta name="description" content="Famílias ricas disputam o futuro dos filhos.
+Pressão extrema e ambição.
+Crítica social forte.">
+  <link rel="canonical" href="https://planetadorama.com.br/doramas/sky-castle.html">
+  <meta name="robots" content="index,follow">
 
-<style>
-body{
-  margin:0;
-  font-family: Arial, sans-serif;
-  background: radial-gradient(circle at top, #1e1e2f, #0f0f1a);
-  color:white;
-}
+  <meta property="og:title" content="Sky Castle | Planeta Dorama">
+  <meta property="og:description" content="Famílias ricas disputam o futuro dos filhos.
+Pressão extrema e ambição.
+Crítica social forte.">
+  <meta property="og:url" content="https://planetadorama.com.br/doramas/sky-castle.html">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/sky%20castle.webp">
 
-header{
-  padding:20px;
-  text-align:center;
-}
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"TVSeries","name":"Sky Castle","url":"https://planetadorama.com.br/doramas/sky-castle.html","image":"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/sky%20castle.webp","aggregateRating":{"@type":"AggregateRating","ratingValue":"8.9","ratingCount":"100"}}</script>
 
-header a{
-  color:#ff7eb3;
-  text-decoration:none;
-  font-weight:bold;
-}
+  <style>
+    :root{
+      --bg:#0b0b0f;
+      --card:#14141b;
+      --muted:rgba(255,255,255,.72);
+      --muted2:rgba(255,255,255,.55);
+      --accent:#e50914;
+      --radius:18px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: Arial, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      background:var(--bg);
+      color:#fff;
+    }
+    a{color:inherit}
+    .topbar{
+      max-width:1100px;
+      margin:0 auto;
+      padding:14px 14px 0;
+    }
+    .back{
+      display:inline-flex;
+      gap:8px;
+      align-items:center;
+      text-decoration:none;
+      font-weight:bold;
+      color:rgba(255,255,255,.85);
+    }
+    .back:hover{color:#fff}
 
-.container{
-  max-width:1100px;
-  margin:30px auto;
-  padding:0 20px;
-}
+    /* ===== HERO NETFLIX ===== */
+    .hero{
+      position:relative;
+      max-width:1100px;
+      margin:12px auto 0;
+      border-radius:24px;
+      overflow:hidden;
+      background: #111;
+      box-shadow: 0 18px 60px rgba(0,0,0,.55);
+    }
+    .hero::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background-image: var(--bgimg);
+      background-size: cover;
+      background-position: center;
+      filter: blur(28px) saturate(1.2);
+      transform: scale(1.2);
+      opacity: .55;
+    }
+    .hero::after{
+      content:"";
+      position:absolute;
+      inset:0;
+      background: linear-gradient(90deg,
+        rgba(0,0,0,.92) 0%,
+        rgba(0,0,0,.72) 45%,
+        rgba(0,0,0,.30) 100%
+      );
+    }
+    .hero-inner{
+      position:relative;
+      z-index:1;
+      padding:18px;
+      display:grid;
+      grid-template-columns: 180px 1fr;
+      gap:16px;
+      align-items:center;
+    }
 
-.hero{
-  display:flex;
-  gap:40px;
-  align-items:center;
-}
+    /* poster */
+    .poster{
+      width:180px;
+      aspect-ratio:2/3;
+      border-radius: var(--radius);
+      overflow:hidden;
+      background: rgba(255,255,255,.08);
+      border: 1px solid rgba(255,255,255,.10);
+    }
+    .poster img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      display:block;
+    }
 
-.poster img{
-  width:320px;
-  border-radius:20px;
-  box-shadow:0 20px 40px rgba(0,0,0,0.6);
-}
+    /* info */
+    h1{
+      margin:0 0 10px;
+      font-size: 26px;
+      line-height:1.15;
+    }
+    .meta{
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px;
+      align-items:center;
+      margin-bottom:10px;
+    }
+    .pill{
+      display:inline-flex;
+      align-items:center;
+      gap:6px;
+      padding:8px 10px;
+      border-radius:999px;
+      background: rgba(255,255,255,.10);
+      border: 1px solid rgba(255,255,255,.12);
+      font-size: 13px;
+    }
+    .stars{letter-spacing:1px; opacity:.9}
+    .tags{margin-top:6px}
+    .tag{
+      display:inline-block;
+      padding:7px 10px;
+      border-radius:999px;
+      background: rgba(229,9,20,.18);
+      border: 1px solid rgba(229,9,20,.32);
+      margin: 8px 8px 0 0;
+      font-size: 12px;
+      color:#fff;
+      opacity:.95;
+    }
 
-.hero-info h1{
-  margin:0 0 15px;
-  font-size:38px;
-}
+    .desc{
+      margin:10px 0 0;
+      color: var(--muted);
+      line-height:1.55;
+      font-size: 14px;
+      max-width: 70ch;
+    }
 
-.hero-info p{
-  font-size:18px;
-  line-height:1.6;
-  opacity:0.9;
-}
+    .actions{
+      margin-top:14px;
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+    }
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:8px;
+      padding:11px 14px;
+      border-radius: 14px;
+      text-decoration:none;
+      font-weight:bold;
+      border:1px solid rgba(255,255,255,.14);
+      background: rgba(255,255,255,.08);
+      color:#fff;
+    }
+    .btn:hover{background: rgba(255,255,255,.12)}
+    .btn-primary{
+      background: var(--accent);
+      border-color: rgba(0,0,0,.0);
+    }
+    .btn-primary:hover{filter:brightness(1.05)}
 
-.tags span{
-  display:inline-block;
-  background:#ff7eb3;
-  color:white;
-  padding:6px 12px;
-  border-radius:20px;
-  margin:6px 6px 0 0;
-  font-size:13px;
-}
+    /* ===== CONTENT ===== */
+    .wrap{
+      max-width:1100px;
+      margin:16px auto 60px;
+      padding:0 14px;
+    }
+    .section{
+      background: var(--card);
+      border:1px solid rgba(255,255,255,.08);
+      border-radius: 22px;
+      padding:16px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.30);
+    }
+    .h2{
+      margin:0 0 10px;
+      font-size: 18px;
+    }
+    .text{
+      color: var(--muted);
+      line-height:1.8;
+      font-size: 15px;
+      margin:0;
+    }
 
-.trailer{
-  margin-top:40px;
-}
+    /* trailer responsive */
+    .trailer{
+      margin-top:14px;
+    }
+    .video{
+      position:relative;
+      width:100%;
+      padding-top:56.25%;
+      border-radius: 18px;
+      overflow:hidden;
+      border:1px solid rgba(255,255,255,.10);
+      box-shadow: 0 18px 45px rgba(0,0,0,.45);
+      background:#000;
+    }
+    .video iframe{
+      position:absolute;
+      inset:0;
+      width:100%;
+      height:100%;
+      border:0;
+    }
+    .hint{
+      margin-top:10px;
+      color: var(--muted2);
+      font-size: 13px;
+      line-height:1.4;
+    }
 
-.video-wrap{
-  margin-top:10px;
-  border-radius:20px;
-  overflow:hidden;
-  box-shadow:0 25px 50px rgba(0,0,0,0.7);
-}
+    /* recomendados netflix */
+    .row{
+      margin-top:16px;
+    }
+    .row-head{
+      display:flex;
+      align-items:end;
+      justify-content:space-between;
+      gap:10px;
+      margin-bottom:10px;
+    }
+    .row-head small{color:var(--muted2)}
+    .rec-scroller{
+      display:flex;
+      gap:12px;
+      overflow:auto;
+      padding-bottom:6px;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+    }
+    .rec-card{
+      flex: 0 0 140px;
+      scroll-snap-align: start;
+      text-decoration:none;
+      border-radius: 14px;
+      overflow:hidden;
+      background:#111;
+      border:1px solid rgba(255,255,255,.08);
+      box-shadow: 0 10px 24px rgba(0,0,0,.35);
+      transition: transform .18s ease;
+    }
+    .rec-card:hover{transform: translateY(-6px)}
+    .rec-card img{
+      width:100%;
+      height:190px;
+      object-fit:cover;
+      display:block;
+    }
+    .rec-title{
+      padding:8px 10px;
+      font-size: 12px;
+      color: rgba(255,255,255,.88);
+      line-height:1.25;
+      min-height: 40px;
+    }
 
-.video-wrap iframe{
-  width:100%;
-  height:500px;
-  border:0;
-}
+    footer{
+      max-width:1100px;
+      margin: 40px auto 26px;
+      padding: 0 14px;
+      color: rgba(255,255,255,.45);
+      text-align:center;
+      font-size: 13px;
+    }
 
-.recomendados{
-  margin-top:50px;
-}
-
-.rec-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
-  gap:20px;
-}
-
-.rec-card{
-  background:#1b1b2a;
-  border-radius:16px;
-  overflow:hidden;
-  text-decoration:none;
-  color:white;
-  transition:transform .2s ease;
-}
-
-.rec-card:hover{
-  transform:translateY(-8px);
-}
-
-.rec-card img{
-  width:100%;
-  height:240px;
-  object-fit:cover;
-}
-
-.rec-info{
-  padding:10px;
-}
-
-.rec-nome{
-  font-weight:bold;
-}
-
-.rec-nota{
-  font-size:13px;
-  opacity:0.8;
-}
-
-footer{
-  margin-top:60px;
-  text-align:center;
-  padding:20px;
-  opacity:0.6;
-}
-</style>
+    /* desktop melhora */
+    @media (min-width: 860px){
+      .hero-inner{padding:22px; grid-template-columns: 240px 1fr; gap:22px;}
+      .poster{width:240px;}
+      h1{font-size: 36px;}
+      .desc{font-size: 15px;}
+      .section{padding:20px;}
+      .rec-card{flex-basis: 180px;}
+      .rec-card img{height:240px;}
+      .rec-title{font-size: 13px;}
+    }
+  </style>
 </head>
 
 <body>
+  <div class="topbar">
+    <a class="back" href="https://planetadorama.com.br/">← Voltar para Planeta Dorama</a>
+  </div>
 
-<header>
-  <a href="https://planetadorama.com.br/">← Voltar para Planeta Dorama</a>
-</header>
-
-<div class="container">
-
-  <div class="hero">
-    <div class="poster">
-      <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/sky%20castle.webp" alt="Sky Castle">
-    </div>
-
-    <div class="hero-info">
-      <h1>Sky Castle</h1>
-      <div class="tags">
-        <span>intenso</span><span>triste</span>
+  <section class="hero" style="--bgimg:url('https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/sky%20castle.webp')">
+    <div class="hero-inner">
+      <div class="poster">
+        <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/sky%20castle.webp" alt="Pôster do dorama Sky Castle" loading="lazy">
       </div>
-      <p><strong>Nota:</strong> 8.9/10 – MyDramaList ★★★★✩</p>
-      <p>Famílias ricas disputam o futuro dos filhos.
-Pressão extrema e ambição.
-Crítica social forte.</p>
+
+      <div>
+        <h1>Sky Castle</h1>
+
+        <div class="meta">
+          <span class="pill">⭐ 8.9/10 – MyDramaList</span>
+          <span class="pill"><span class="stars">★★★★✩</span></span>
+        </div>
+
+        <div class="tags"><span class="tag">intenso</span><span class="tag">triste</span></div>
+
+        <p class="desc">Famílias ricas disputam o futuro dos filhos.<br>Pressão extrema e ambição.<br>Crítica social forte.</p>
+
+        <div class="actions">
+          <a class="btn btn-primary" href="#trailer">▶ Trailer</a>
+          <a class="btn" href="https://planetadorama.com.br/todos.html">📚 Todos os doramas</a>
+        </div>
+      </div>
     </div>
+  </section>
+
+  <div class="wrap">
+    <section class="section">
+      <h2 class="h2">Resumo</h2><p class="text">Famílias da elite vivem em um condomínio luxuoso.<br>Elas fazem de tudo para garantir o sucesso acadêmico dos filhos.<br><br>A pressão é extrema.<br>Segredos e manipulações surgem.<br><br>O dorama critica o sistema educacional.<br>Mostra ambição, obsessão e consequências.<br><br>É forte, realista e impactante.</p>
+      
+      
+        <div class="trailer" id="trailer">
+          <h2 class="h2">Trailer</h2>
+          <div class="video">
+            <iframe src="https://www.youtube.com/embed/8R9P6kWzF4A" title="Trailer Sky Castle" allowfullscreen></iframe>
+          </div>
+          <div class="hint">Se aparecer “vídeo indisponível”, é o próprio YouTube bloqueando o trailer.</div>
+        </div>
+      
+    </section>
+
+    <section class="row">
+      <div class="row-head">
+        <h2 class="h2" style="margin:0;">Recomendados</h2>
+        <small>arraste para o lado →</small>
+      </div>
+      <div class="rec-scroller">
+        
+        <a class="rec-card" href="https://planetadorama.com.br/doramas/crash-landing-on-you.html" title="Crash Landing on You">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/crash-landing.jpg" alt="Crash Landing on You" loading="lazy">
+          <div class="rec-title">Crash Landing on You</div>
+        </a>
+      
+        <a class="rec-card" href="https://planetadorama.com.br/doramas/its-okay-to-not-be-okay.html" title="Its Okay to Not Be Okay">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/its%20ok%20do%20not%20be%20ok.jpg" alt="Its Okay to Not Be Okay" loading="lazy">
+          <div class="rec-title">Its Okay to Not Be Okay</div>
+        </a>
+      
+        <a class="rec-card" href="https://planetadorama.com.br/doramas/moon-lovers-scarlet-heart-ryeo.html" title="Moon Lovers: Scarlet Heart Ryeo">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/moon%20lovers%201.webp" alt="Moon Lovers: Scarlet Heart Ryeo" loading="lazy">
+          <div class="rec-title">Moon Lovers: Scarlet Heart Ryeo</div>
+        </a>
+      
+        <a class="rec-card" href="https://planetadorama.com.br/doramas/mr-sunshine.html" title="Mr. Sunshine">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/mr%20sunshine.webp" alt="Mr. Sunshine" loading="lazy">
+          <div class="rec-title">Mr. Sunshine</div>
+        </a>
+      
+        <a class="rec-card" href="https://planetadorama.com.br/doramas/flower-of-evil.html" title="Flower of Evil">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/flower%20of%20evil.webp" alt="Flower of Evil" loading="lazy">
+          <div class="rec-title">Flower of Evil</div>
+        </a>
+      
+        <a class="rec-card" href="https://planetadorama.com.br/doramas/my-mister.html" title="My Mister">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/my%20mister.jfif" alt="My Mister" loading="lazy">
+          <div class="rec-title">My Mister</div>
+        </a>
+      
+        <a class="rec-card" href="https://planetadorama.com.br/doramas/snowdrop.html" title="Snowdrop">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/snowdrop.webp" alt="Snowdrop" loading="lazy">
+          <div class="rec-title">Snowdrop</div>
+        </a>
+      
+        <a class="rec-card" href="https://planetadorama.com.br/doramas/mouse.html" title="Mouse">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/mouse.jpg" alt="Mouse" loading="lazy">
+          <div class="rec-title">Mouse</div>
+        </a>
+      
+        <a class="rec-card" href="https://planetadorama.com.br/doramas/signal.html" title="Signal">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/signal.jpg" alt="Signal" loading="lazy">
+          <div class="rec-title">Signal</div>
+        </a>
+      
+        <a class="rec-card" href="https://planetadorama.com.br/doramas/kingdom.html" title="Kingdom">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/kngdom.webp" alt="Kingdom" loading="lazy">
+          <div class="rec-title">Kingdom</div>
+        </a>
+      
+        <a class="rec-card" href="https://planetadorama.com.br/doramas/sweet-home.html" title="Sweet Home">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/sweet%20home.jpg" alt="Sweet Home" loading="lazy">
+          <div class="rec-title">Sweet Home</div>
+        </a>
+      
+        <a class="rec-card" href="https://planetadorama.com.br/doramas/my-name.html" title="My Name">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/my%20name.jpg" alt="My Name" loading="lazy">
+          <div class="rec-title">My Name</div>
+        </a>
+      
+      </div>
+    </section>
   </div>
 
-  
-  <div class="trailer">
-    <h2>Trailer</h2>
-    <div class="video-wrap">
-      <iframe src="https://www.youtube.com/embed/8R9P6kWzF4A" allowfullscreen></iframe>
-    </div>
-  </div>
-  
-
-  <div class="recomendados">
-    <h2>Recomendados</h2>
-    <div class="rec-grid">
-      
-        <a class="rec-card" href="https://planetadorama.com.br/doramas/crash-landing-on-you.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/crash-landing.jpg" alt="Crash Landing on You">
-          <div class="rec-info">
-            <div class="rec-nome">Crash Landing on You</div>
-            <div class="rec-nota">⭐ 9.2/10 – MyDramaList</div>
-          </div>
-        </a>
-      
-        <a class="rec-card" href="https://planetadorama.com.br/doramas/goblin.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/Goblin.jpg" alt="Goblin">
-          <div class="rec-info">
-            <div class="rec-nome">Goblin</div>
-            <div class="rec-nota">⭐ 8.8/10 – MyDramaList</div>
-          </div>
-        </a>
-      
-        <a class="rec-card" href="https://planetadorama.com.br/doramas/business-proposal.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/a-business-proposal-recap-episode-one-two-main.jpeg" alt="Business Proposal">
-          <div class="rec-info">
-            <div class="rec-nome">Business Proposal</div>
-            <div class="rec-nota">⭐ 8.6/10 – MyDramaList</div>
-          </div>
-        </a>
-      
-        <a class="rec-card" href="https://planetadorama.com.br/doramas/strong-woman-do-bong-soon.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/strong-woman-do-bong-soon.jpg" alt="Strong Woman Do Bong Soon">
-          <div class="rec-info">
-            <div class="rec-nome">Strong Woman Do Bong Soon</div>
-            <div class="rec-nota">⭐ 8.7/10 – MyDramaList</div>
-          </div>
-        </a>
-      
-        <a class="rec-card" href="https://planetadorama.com.br/doramas/its-okay-to-not-be-okay.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/its%20ok%20do%20not%20be%20ok.jpg" alt="Its Okay to Not Be Okay">
-          <div class="rec-info">
-            <div class="rec-nome">Its Okay to Not Be Okay</div>
-            <div class="rec-nota">⭐ 9.0/10 – MyDramaList</div>
-          </div>
-        </a>
-      
-        <a class="rec-card" href="https://planetadorama.com.br/doramas/itaewon-class.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/itaewon%20class.webp" alt="Itaewon Class">
-          <div class="rec-info">
-            <div class="rec-nome">Itaewon Class</div>
-            <div class="rec-nota">⭐ 8.9/10 – MyDramaList</div>
-          </div>
-        </a>
-      
-        <a class="rec-card" href="https://planetadorama.com.br/doramas/vincenzo.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/vincenzo.jpg" alt="Vincenzo">
-          <div class="rec-info">
-            <div class="rec-nome">Vincenzo</div>
-            <div class="rec-nota">⭐ 8.8/10 – MyDramaList</div>
-          </div>
-        </a>
-      
-        <a class="rec-card" href="https://planetadorama.com.br/doramas/reply-1988.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/reply%201988.jpg" alt="Reply 1988">
-          <div class="rec-info">
-            <div class="rec-nome">Reply 1988</div>
-            <div class="rec-nota">⭐ 9.1/10 – MyDramaList</div>
-          </div>
-        </a>
-      
-    </div>
-  </div>
-
-</div>
-
-<footer>
-© 2026 Planeta Dorama
-</footer>
-
+  <footer>© 2026 Planeta Dorama</footer>
 </body>
 </html>
