@@ -1,417 +1,502 @@
-import fs from "fs";
-import path from "path";
-import { doramas } from "../doramas-data.js";
-
-const SITE = "https://planetadorama.com.br";
-
-function slugify(str) {
-  return String(str || "")
-    .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
-    .toLowerCase()
-    .replace(/&/g, "and")
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/(^-|-$)/g, "");
-}
-
-function stripHtml(s) {
-  return String(s || "").replace(/<[^>]*>/g, "").trim();
-}
-
-function escapeHtml(s) {
-  return String(s || "")
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;");
-}
-
-function parseRating(nota) {
-  const m = String(nota || "").match(/(\d+(?:\.\d+)?)[ ]*\/[ ]*10/);
-  return m ? m[1] : null;
-}
-
-function pickGenre(tags = []) {
-  const known = ["romance", "comedia", "fantasia", "intenso", "triste", "alegre"];
-  const t = tags.find(x => known.includes(String(x).toLowerCase()));
-  return t ? t[0].toUpperCase() + t.slice(1) : "Drama";
-}
-
-function estrelas(nota) {
-  const m = String(nota || "").match(/[\d]+([.,]\d+)?/);
-  if (!m) return "";
-  const n = parseFloat(m[0].replace(",", ".")); // 0-10
-  const n5 = n / 2; // 0-5
-  const cheio = Math.floor(n5);
-  const meio = (n5 % 1) >= 0.5 ? 1 : 0;
-  const vazio = 5 - cheio - meio;
-  return "★".repeat(cheio) + (meio ? "☆" : "") + "✩".repeat(vazio);
-}
-
-const outDir = path.join(process.cwd(), "doramas");
-fs.mkdirSync(outDir, { recursive: true });
-
-const pages = [];
-const today = new Date().toISOString().split("T")[0];
-
-for (const d of doramas) {
-  if (!d?.nome) continue;
-
-  const slug = slugify(d.nome);
-  const url = `${SITE}/doramas/${slug}.html`;
-
-  const title = `${d.nome} – Sinopse, Resumo e Trailer | Planeta Dorama`;
-  const baseDesc = stripHtml(d.descricao || d.resumo || "");
-  const description =
-    (baseDesc.length > 155 ? baseDesc.slice(0, 155).trim() + "…" : baseDesc) ||
-    `Veja sinopse, resumo, trailer e informações sobre ${d.nome} no Planeta Dorama.`;
-
-  const ratingValue = parseRating(d.nota);
-  const genre = pickGenre(d.tags || []);
-  const poster = d.imagem || "";
-  const trailer = d.trailer || "";
-
-  const resumoHtml = escapeHtml(d.resumo || "").replace(/\n/g, "<br>");
-  const descricaoHtml = escapeHtml(d.descricao || "").replace(/\n/g, "<br>");
-
-  const tagsList = (d.tags || [])
-    .slice(0, 8)
-    .map(t => `<span class="chip">${escapeHtml(t)}</span>`)
-    .join("");
-
-  // Recomendados: prioriza quem compartilha mais tags, com foto
-  const recs = doramas
-    .filter(x => x?.nome && x.nome !== d.nome)
-    .map(x => {
-      const score = (x.tags || []).reduce((acc, t) => acc + ((d.tags || []).includes(t) ? 1 : 0), 0);
-      return { x, score };
-    })
-    .sort((a, b) => b.score - a.score)
-    .slice(0, 8)
-    .map(({ x }) => {
-      const s = slugify(x.nome);
-      const img = x.imagem || "";
-      return `
-        <div class="card-mini" onclick="window.location.href='${SITE}/doramas/${s}.html'">
-          ${img ? `<img src="${escapeHtml(img)}" alt="${escapeHtml(x.nome)}" loading="lazy">` : ""}
-          <div class="info">
-            <div class="nome-mini">${escapeHtml(x.nome)}</div>
-            <div class="nota-mini">⭐ ${escapeHtml(x.nota || "")}</div>
-          </div>
-        </div>
-      `;
-    })
-    .join("");
-
-  const schema = {
-    "@context": "https://schema.org",
-    "@type": "TVSeries",
-    name: d.nome,
-    genre,
-    url,
-    image: poster || undefined,
-    aggregateRating: ratingValue
-      ? { "@type": "AggregateRating", ratingValue, ratingCount: "100" }
-      : undefined
-  };
-
-  const html = `<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>${escapeHtml(title)}</title>
-  <meta name="description" content="${escapeHtml(description)}">
-  <link rel="canonical" href="${url}">
-  <meta name="robots" content="index,follow">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Planeta Dorama 🌍</title>
 
-  <meta property="og:title" content="${escapeHtml(d.nome)} | Planeta Dorama">
-  <meta property="og:description" content="${escapeHtml(description)}">
-  <meta property="og:url" content="${url}">
-  <meta property="og:type" content="website">
-  ${poster ? `<meta property="og:image" content="${escapeHtml(poster)}">` : ""}
+<meta name="description" content="Planeta Dorama 🌍: listas, recomendações, dorama da semana, notícias e um guia completo para você encontrar o dorama perfeito.">
 
-  <script type="application/ld+json">${JSON.stringify(schema)}</script>
+<meta property="og:site_name" content="Planeta Dorama 🌍">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Planeta Dorama 🌍">
+<meta property="og:description" content="Listas, recomendações, dorama da semana e guia completo de doramas.">
+<meta property="og:url" content="https://planetadorama.com.br/">
+<meta property="og:image" content="https://planetadorama.com.br/imagens/og-capa.jpg">
 
-  <style>
-    :root{
-      --rosa:#ff7eb3;
-      --roxo:#b983ff;
-      --texto:#333;
-      --bg1:#ffe6f2;
-      --bg2:#fff0f7;
-    }
-    body{
-      margin:0;
-      font-family: Arial, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
-      background: linear-gradient(135deg, var(--bg1), var(--bg2));
-      color: var(--texto);
-    }
-    header{
-      text-align:center;
-      padding:18px;
-      background:linear-gradient(90deg,var(--rosa),var(--roxo));
-      color:white;
-    }
-    header a{ color:white; text-decoration:none; font-weight:bold; }
-    .hero{
-      position: relative;
-      max-width: 1100px;
-      margin: 22px auto 0;
-      border-radius: 22px;
-      overflow: hidden;
-      box-shadow: 0 16px 40px rgba(0,0,0,0.14);
-    }
-    .hero::before{
-      content:"";
-      position:absolute;
-      inset:0;
-      background-image: var(--hero-bg);
-      background-size: cover;
-      background-position: center;
-      filter: blur(22px);
-      transform: scale(1.15);
-    }
-    .hero::after{
-      content:"";
-      position:absolute;
-      inset:0;
-      background: linear-gradient(90deg,
-        rgba(20,0,20,0.75),
-        rgba(20,0,20,0.40),
-        rgba(20,0,20,0.12)
-      );
-    }
-    .hero-inner{
-      position: relative;
-      z-index:1;
-      padding:26px;
-      display:grid;
-      grid-template-columns: 360px 1fr;
-      gap:22px;
-      align-items:center;
-      color:#fff;
-    }
-    @media(max-width:900px){
-      .hero{ margin:16px 14px 0; }
-      .hero-inner{ grid-template-columns:1fr; text-align:center; }
-    }
-    .poster{
-      max-width:360px;
-      aspect-ratio:2/3;
-      border-radius:18px;
-      overflow:hidden;
-      background:rgba(255,255,255,0.08);
-      box-shadow:0 12px 30px rgba(0,0,0,0.28);
-      margin:auto;
-    }
-    .poster img{ width:100%; height:100%; object-fit:contain; background: rgba(255,255,255,0.06); }
-    .hero-title{ margin:0 0 10px; font-size:34px; }
-    @media(max-width:900px){ .hero-title{ font-size:26px; } }
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Planeta Dorama 🌍">
+<meta name="twitter:description" content="Listas, recomendações e guia completo de doramas.">
+<meta name="twitter:image" content="https://planetadorama.com.br/imagens/og-capa.jpg">
 
-    .chip{
-      display:inline-block;
-      padding:8px 12px;
-      border-radius:999px;
-      background:rgba(255,255,255,0.15);
-      margin:6px 6px 0 0;
-      font-size:13px;
-      font-weight:bold;
-    }
-    .stars{ font-size:18px; letter-spacing:2px; }
+<style>
+body { margin:0; font-family: Arial, sans-serif; background:#fff0f6; color:#333; }
+header { background: linear-gradient(90deg, #ff7eb3, #b983ff); padding:20px; text-align:center; color:white; }
+nav a { margin: 0 10px; color:white; text-decoration:none; font-weight:bold; }
+section { padding:40px 20px; }
+h2 { text-align:center; color:#b4005a; }
 
-    .conteudo{
-      max-width:980px;
-      margin:18px auto 50px;
-      background:white;
-      padding:28px;
-      border-radius:20px;
-      box-shadow:0 10px 25px rgba(0,0,0,0.10);
-    }
-    @media(max-width:900px){
-      .conteudo{ margin:16px 14px; padding:20px; }
-    }
-    .sec-title{ color:#d63384; margin:0 0 10px; }
-    .texto{ font-size:18px; line-height:1.8; }
+button{
+  padding:14px 22px; margin:8px;
+  background:#ff7eb3; color:white; border:none;
+  border-radius:12px; cursor:pointer; font-weight:bold; font-size:18px;
+}
+button:hover{ background:#b983ff; }
 
-    .resumo-trailer{
-      display:grid;
-      grid-template-columns:1.05fr 0.95fr;
-      gap:18px;
-      align-items:start;
-    }
-    @media(max-width:900px){
-      .resumo-trailer{ grid-template-columns:1fr; }
-    }
+.btn-pequeno{
+  padding:10px 14px; font-size:14px; border-radius:10px; margin:6px;
+}
 
-    /* Trailer mais bonito */
-    .trailer-box h3{
-      font-size:16px;
-      color:#d63384;
-      margin:0 0 8px;
-    }
-    .video-wrap{
-      aspect-ratio:16/9;
-      border-radius:16px;
-      overflow:hidden;
-      border:2px solid rgba(255,126,179,0.65);
-      box-shadow:0 16px 38px rgba(0,0,0,0.18);
-      background:#000;
-    }
-    .video-wrap iframe{ width:100%; height:100%; border:0; }
+/* Cards */
+.cards{ display:flex; flex-wrap:wrap; gap:20px; justify-content:center; }
+.card{
+  background:white; width:300px; border-radius:18px; overflow:hidden;
+  box-shadow:0 5px 15px rgba(0,0,0,0.1);
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+.card.click{ cursor:pointer; }
+.card.click:hover{ transform: translateY(-8px); box-shadow:0 10px 25px rgba(0,0,0,0.15); }
+.card img{ width:100%; height:380px; object-fit:cover; display:block; }
+.card div{ padding:16px; }
+.card h3{ margin:0 0 8px; }
+.card p{ margin:0; color:#555; line-height:1.45; }
+.card .mini{ margin-top:10px; font-weight:bold; color:#7a1b55; }
 
-    /* Recomendados com fotos */
-    .relacionados{ margin-top:28px; }
-    .cards-mini{ display:flex; flex-wrap:wrap; gap:14px; }
-    .card-mini{
-      width:190px;
-      border-radius:16px;
-      overflow:hidden;
-      box-shadow:0 6px 18px rgba(0,0,0,0.10);
-      cursor:pointer;
-      background:#fff;
-      transition: transform .2s ease, box-shadow .2s ease;
-    }
-    .card-mini:hover{
-      transform: translateY(-6px);
-      box-shadow:0 12px 26px rgba(0,0,0,0.14);
-    }
-    .card-mini img{ width:100%; height:230px; object-fit:cover; display:block; }
-    .card-mini .info{ padding:10px; }
-    .nome-mini{ font-weight:bold; margin-bottom:6px; }
-    .nota-mini{ font-size:13px; opacity:.85; color:#7a1b55; }
+/* Cards menores (Top 5) */
+.card.small{ width:220px; }
+.card.small img{ height:280px; }
+.card.small .mini{ margin-top:8px; }
 
-    footer{
-      background:linear-gradient(90deg,var(--rosa),var(--roxo));
-      color:white;
-      text-align:center;
-      padding:14px;
-    }
-  </style>
+/* Notícias */
+.grid-noticias{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap:18px; max-width:980px; margin:0 auto;
+}
+.noticia{
+  background:#fff; border-radius:16px; overflow:hidden;
+  box-shadow:0 5px 15px rgba(0,0,0,0.08);
+  display:flex; flex-direction:column;
+}
+.noticia .img{ width:100%; height:160px; object-fit:cover; background:#f6f6f6; }
+.noticia .conteudo{ padding:16px; }
+.noticia h3{ margin:0 0 8px; color:#b4005a; font-size:16px; line-height:1.25; }
+.noticia p{ margin:0; color:#555; line-height:1.5; font-size:14px; }
+.noticia .meta{ margin:8px 0 10px; font-size:13px; opacity:.85; }
+.noticia a{ font-weight:bold; color:#b4005a; text-decoration:none; }
+.noticia a:hover{ text-decoration:underline; }
+.acoes-noticias{ text-align:center; margin-bottom:14px; }
+
+.badge{
+  display:inline-block;
+  margin-top:10px;
+  background: rgba(255,255,255,0.18);
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* ===== BUSCA INTELIGENTE ===== */
+.busca-wrap{
+  max-width: 720px;
+  margin: 16px auto 0;
+  position: relative;
+  text-align: left;
+}
+
+.busca-input{
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,0.55);
+  outline: none;
+  font-size: 16px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+.busca-input:focus{
+  border-color: rgba(255,255,255,0.85);
+  box-shadow: 0 10px 22px rgba(0,0,0,0.16);
+}
+
+.sugestoes{
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  right: 0;
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.18);
+  display: none;
+  z-index: 50;
+}
+
+.sugestoes .item{
+  display:flex;
+  gap:12px;
+  align-items:center;
+  padding: 10px 12px;
+  cursor: pointer;
+}
+
+.sugestoes .item:hover{
+  background: #fff0f6;
+}
+
+.sugestoes img{
+  width: 46px;
+  height: 64px;
+  object-fit: cover;
+  border-radius: 10px;
+  flex: 0 0 auto;
+}
+
+.sugestoes .nome{
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 4px;
+}
+
+.sugestoes .nota{
+  font-size: 13px;
+  opacity: 0.85;
+  color:#7a1b55;
+}
+
+footer{ background:#b983ff; color:white; text-align:center; padding:15px; }
+</style>
 </head>
 
 <body>
 
 <header>
-  <h1 style="margin:0;">🌍 Planeta Dorama</h1>
-  <a href="${SITE}/">⬅ Voltar</a>
+  <h1>🌍🎬 Planeta Dorama</h1>
+  <p>Descubra doramas perfeitos para o seu momento 💖</p>
+
+  <div class="badge">✅ HOME (v4) — Busca + Top 5</div>
+
+  <!-- Busca inteligente -->
+  <div class="busca-wrap">
+    <input id="buscaHome" class="busca-input" type="text" placeholder="🔎 Buscar dorama... Ex: Goblin, Vincenzo, Reply 1988" autocomplete="off">
+    <div id="sugestoes" class="sugestoes"></div>
+  </div>
+
+  <nav style="margin-top:16px;">
+    <a href="#inicio">Início</a>
+    <a href="#top5">Top 5 ⭐</a>
+    <a href="#listas">Listas 💖</a>
+    <a href="#semana">Dorama da semana 🌟</a>
+    <a href="#noticias">Notícias 📰</a>
+    <a href="todos.html">Todos os Doramas 📚</a>
+    <a href="favoritos.html">💜 Favoritos</a>
+    <a href="descubra.html">Descubra 🤖</a>
+  </nav>
 </header>
 
-<section class="hero" style="--hero-bg:url('${escapeHtml(poster)}')">
-  <div class="hero-inner">
-    <div class="poster">
-      ${poster ? `<img src="${escapeHtml(poster)}" alt="Pôster do dorama ${escapeHtml(d.nome)}" loading="lazy">` : ""}
-    </div>
-
-    <div>
-      <h2 class="hero-title">${escapeHtml(d.nome)}</h2>
-      <div>
-        ${d.nota ? `<span class="chip">⭐ ${escapeHtml(d.nota)}</span>` : ""}
-        ${d.nota ? `<span class="chip"><span class="stars">${estrelas(d.nota)}</span></span>` : ""}
-        ${tagsList}
-      </div>
-    </div>
-  </div>
+<section id="inicio">
+  <h2>✨ Bem-vindo(a)</h2>
+  <p style="text-align:center; max-width:700px; margin:auto;">
+    O <b>Planeta Dorama 🌍</b> é um espaço feito para quem ama histórias emocionantes,
+    românticas, divertidas e intensas.
+  </p>
 </section>
 
-<section class="conteudo">
-  ${d.descricao ? `<h2 class="sec-title">Sinopse</h2><p class="texto">${descricaoHtml}</p>` : ""}
-  ${d.resumo ? `<h2 class="sec-title" style="margin-top:18px;">Resumo</h2><p class="texto">${resumoHtml}</p>` : ""}
+<section id="top5">
+  <h2>🏆 Top 5 mais bem avaliados</h2>
+  <p style="text-align:center; margin:0 auto 14px; max-width:780px; opacity:0.85;">
+    Ranking automático baseado na nota do seu <code>doramas.js</code>.
+  </p>
+  <div class="cards" id="top5-cards"></div>
+</section>
 
-  ${(trailer && String(trailer).includes("youtube.com/embed")) ? `
-    <div class="resumo-trailer" style="margin-top:22px;">
-      <div></div>
-      <div class="trailer-box" id="secTrailer">
-        <h3>🎬 Trailer</h3>
-        <div class="video-wrap">
-          <iframe src="${escapeHtml(trailer)}" title="Trailer ${escapeHtml(d.nome)}" allowfullscreen></iframe>
-        </div>
+<section id="listas">
+  <h2>📋 Listas de Doramas</h2>
+  <div style="text-align:center; margin-bottom:10px;">
+    <button onclick="window.location.href='categoria.html?tipo=romance'">💖 Românticos</button>
+    <button onclick="window.location.href='categoria.html?tipo=triste'">😭 Tristes</button>
+    <button onclick="window.location.href='categoria.html?tipo=intenso'">🔥 Intensos</button>
+    <button onclick="window.location.href='categoria.html?tipo=alegre'">😊 Leves</button>
+  </div>
+  <p style="text-align:center; margin:0; opacity:0.85;">
+    Clique e veja 10 doramas perfeitos pra cada emoção ✨
+  </p>
+</section>
+
+<section id="semana">
+  <h2>🌟 Dorama da Semana</h2>
+  <div class="cards" id="dorama-semana"></div>
+  <p style="text-align:center; max-width:800px; margin: 14px auto 0; opacity:0.85;">
+    Esse dorama muda automaticamente (aleatório) quando a página abre.
+  </p>
+</section>
+
+<section id="noticias">
+  <h2>📰 Notícias do Momento</h2>
+
+  <div class="acoes-noticias">
+    <button class="btn-pequeno" onclick="carregarNoticiasAutomaticas(true)">🔄 Atualizar notícias</button>
+    <button class="btn-pequeno" onclick="window.location.href='noticias.html'">📰 Ver mais notícias</button>
+  </div>
+
+  <div class="grid-noticias" id="grid-noticias">
+    <div class="noticia">
+      <div class="conteudo">
+        <h3>📰 Carregando notícias...</h3>
+        <p>Aguarde alguns segundos ✨</p>
       </div>
     </div>
-  ` : ""}
-
-  <div class="relacionados">
-    <h2 class="sec-title">Recomendados</h2>
-    <div class="cards-mini">
-      ${recs || "<p>Em breve mais recomendações ✨</p>"}
-    </div>
   </div>
+
+  <p style="text-align:center; margin-top:14px; opacity:0.85;">
+    Notícias automáticas + tradução PT-BR ✅
+  </p>
 </section>
 
 <footer>
-  © ${new Date().getFullYear()} Planeta Dorama
+  <p>💜 Planeta Dorama 🌍 — feito com amor</p>
 </footer>
 
-</body>
-</html>`;
-
-  fs.writeFileSync(path.join(outDir, `${slug}.html`), html, "utf-8");
-  pages.push({ slug, url, lastmod: today, nome: d.nome });
+<script src="doramas.js"></script>
+<script>
+// ===== MELHORIA: SLUG PARA URL SEO =====
+function criarSlug(nome){
+  return String(nome || "")
+    .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/(^-|-$)/g, "");
 }
 
-// /doramas/index.html (lista com busca)
-const indexHtml = `<!doctype html>
-<html lang="pt-BR">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Todos os Doramas | Planeta Dorama</title>
-  <meta name="description" content="Lista de doramas do Planeta Dorama com páginas individuais: sinopse, resumo e trailer.">
-  <link rel="canonical" href="${SITE}/doramas/">
-  <meta name="robots" content="index,follow">
-  <style>
-    body{font-family:Arial,system-ui;margin:0;background:#fff0f6;color:#333}
-    header,main{max-width:980px;margin:0 auto;padding:18px}
-    .card{background:#fff;border:1px solid rgba(0,0,0,.06);border-radius:14px;padding:18px;box-shadow:0 8px 18px rgba(0,0,0,.08)}
-    input{width:100%;padding:12px 14px;border-radius:12px;border:1px solid rgba(0,0,0,.15);background:#fff;color:#333}
-    ul{margin:12px 0 0 18px}
-    a{color:#b4005a;text-decoration:none;font-weight:bold}
-    a:hover{text-decoration:underline}
-  </style>
-</head>
-<body>
-  <header>
-    <a href="${SITE}/">← Voltar para o início</a>
-    <h1>Todos os Doramas</h1>
-  </header>
+// Helpers
+function parseNota(nota){
+  const m = String(nota || "").match(/[\d]+([.,]\d+)?/);
+  if(!m) return 0;
+  return parseFloat(m[0].replace(",", "."));
+}
 
-  <main class="card">
-    <input id="q" placeholder="Pesquisar dorama..." />
-    <ul id="list">
-      ${pages
-        .sort((a,b)=>a.nome.localeCompare(b.nome))
-        .map(p => `<li><a href="${SITE}/doramas/${p.slug}.html">${escapeHtml(p.nome)}</a></li>`)
-        .join("")}
-    </ul>
-  </main>
+// Top 5
+function carregarTop5(){
+  const area = document.getElementById("top5-cards");
+  if(!area || !Array.isArray(doramas)) return;
 
-  <script>
-    const q = document.getElementById('q');
-    const list = document.getElementById('list');
-    const items = Array.from(list.querySelectorAll('li'));
-    q.addEventListener('input', () => {
-      const v = q.value.toLowerCase().trim();
-      for (const li of items) li.style.display = li.textContent.toLowerCase().includes(v) ? '' : 'none';
+  const top = [...doramas]
+    .map(d => ({...d, _notaNum: parseNota(d.nota)}))
+    .sort((a,b) => b._notaNum - a._notaNum)
+    .slice(0, 5);
+
+  area.innerHTML = top.map(d => `
+    <div class="card click small" onclick="window.location.href='/doramas/${criarSlug(d.nome)}.html'">
+      <img src="${d.imagem}" alt="${d.nome}" loading="lazy">
+      <div>
+        <h3>${d.nome}</h3>
+        <div class="mini">⭐ ${d.nota || ""}</div>
+      </div>
+    </div>
+  `).join("");
+}
+
+// Dorama da Semana
+function carregarDoramaDaSemana() {
+  const area = document.getElementById("dorama-semana");
+  area.innerHTML = "";
+  const escolhido = doramas[Math.floor(Math.random() * doramas.length)];
+  area.innerHTML = `
+    <div class="card click" onclick="window.location.href='/doramas/${criarSlug(escolhido.nome)}.html'">
+      <img src="${escolhido.imagem}" alt="${escolhido.nome}" loading="lazy">
+      <div>
+        <h3>${escolhido.nome}</h3>
+        <p>${(escolhido.descricao || "").replaceAll("\n","<br>")}</p>
+        <div class="mini">⭐ ${escolhido.nota || ""}</div>
+      </div>
+    </div>
+  `;
+}
+
+// Busca inteligente (Home)
+function setupBuscaHome(){
+  const input = document.getElementById("buscaHome");
+  const box = document.getElementById("sugestoes");
+  if(!input || !box) return;
+
+  function esconder(){ box.style.display = "none"; box.innerHTML = ""; }
+
+  function mostrar(lista){
+    if(!lista.length){ esconder(); return; }
+    box.innerHTML = lista.map(d => `
+      <div class="item" data-nome="${encodeURIComponent(d.nome)}">
+        <img src="${d.imagem}" alt="${d.nome}">
+        <div>
+          <div class="nome">${d.nome}</div>
+          <div class="nota">⭐ ${d.nota || ""}</div>
+        </div>
+      </div>
+    `).join("");
+    box.style.display = "block";
+  }
+
+  input.addEventListener("input", () => {
+    const q = (input.value || "").toLowerCase().trim();
+    if(q.length < 2) return esconder();
+
+    const resultados = doramas
+      .filter(d => (d.nome || "").toLowerCase().includes(q))
+      .slice(0, 6);
+
+    mostrar(resultados);
+  });
+
+  box.addEventListener("click", (e) => {
+    const item = e.target.closest(".item");
+    if(!item) return;
+    const nome = decodeURIComponent(item.getAttribute("data-nome"));
+    window.location.href = "/doramas/" + criarSlug(nome) + ".html";
+  });
+
+  document.addEventListener("click", (e) => {
+    if(e.target === input || box.contains(e.target)) return;
+    esconder();
+  });
+
+  input.addEventListener("keydown", (e) => {
+    if(e.key === "Enter"){
+      const q = (input.value || "").toLowerCase().trim();
+      const primeiro = doramas.find(d => (d.nome || "").toLowerCase().includes(q));
+      if(primeiro){
+        window.location.href = "/doramas/" + criarSlug(primeiro.nome) + ".html";
+      }
+    }
+  });
+}
+
+// Notícias + Tradução
+function limparHtml(texto) {
+  return (texto || "").replace(/<[^>]*>?/gm, "").trim();
+}
+function formatarData(pubDate) {
+  if (!pubDate) return "";
+  const d = new Date(pubDate);
+  if (isNaN(d.getTime())) return "";
+  return d.toLocaleDateString("pt-BR", { day:"2-digit", month:"short", year:"numeric" });
+}
+function pegarImagemNoticia(item){
+  if (item.thumbnail && item.thumbnail.startsWith("http")) return item.thumbnail;
+  if (item.enclosure && item.enclosure.link && item.enclosure.link.startsWith("http")) return item.enclosure.link;
+  const html = item.description || "";
+  const match = html.match(/<img[^>]+src=["']([^"']+)["']/i);
+  if (match && match[1] && match[1].startsWith("http")) return match[1];
+  return "";
+}
+
+const CACHE_KEY = "trad_cache_home_v4";
+const tradCache = JSON.parse(localStorage.getItem(CACHE_KEY) || "{}");
+function salvarCache(){ localStorage.setItem(CACHE_KEY, JSON.stringify(tradCache)); }
+const LT_ENDPOINT = "https://translate.argosopentech.com/translate";
+
+async function traduzirParaPT(texto) {
+  const t = (texto || "").trim();
+  if (!t) return "";
+  const curto = t.slice(0, 240);
+  if (tradCache[curto]) return tradCache[curto];
+
+  try{
+    const resp = await fetch(LT_ENDPOINT, {
+      method: "POST",
+      headers: { "Content-Type":"application/json" },
+      body: JSON.stringify({ q: curto, source:"en", target:"pt", format:"text" })
     });
-  </script>
+    if (resp.ok) {
+      const data = await resp.json();
+      const out = (data.translatedText || curto).trim();
+      tradCache[curto] = out; salvarCache();
+      return out;
+    }
+  } catch(e){}
+
+  try{
+    const url = "https://api.mymemory.translated.net/get?q=" + encodeURIComponent(curto) + "&langpair=en|pt-BR";
+    const resp2 = await fetch(url);
+    const data2 = await resp2.json();
+    const out2 = (data2.responseData && data2.responseData.translatedText) ? data2.responseData.translatedText.trim() : curto;
+    tradCache[curto] = out2; salvarCache();
+    return out2;
+  } catch(e){}
+
+  return curto;
+}
+
+async function carregarNoticiasAutomaticas(forcar=false) {
+  const grid = document.getElementById("grid-noticias");
+  grid.innerHTML = `
+    <div class="noticia">
+      <div class="conteudo">
+        <h3>📰 Carregando notícias...</h3>
+        <p>Aguarde alguns segundos ✨</p>
+      </div>
+    </div>
+  `;
+
+  try {
+    const extra = forcar ? ("&cacheBust=" + Date.now()) : "";
+    const feed = "https://blog.asianwiki.com/feed/";
+    const url = "https://api.rss2json.com/v1/api.json?rss_url=" + encodeURIComponent(feed) + extra;
+
+    const resp = await fetch(url);
+    const data = await resp.json();
+    if (!data.items || !Array.isArray(data.items)) throw new Error("Sem notícias");
+
+    const top = data.items.slice(0, 6);
+
+    grid.innerHTML = top.map((n, idx) => {
+      const img = pegarImagemNoticia(n);
+      const descLimpo = limparHtml(n.description);
+      const descCurto = descLimpo.slice(0, 160) + (descLimpo.length > 160 ? "..." : "");
+      return `
+        <div class="noticia" id="home_news_${idx}">
+          ${img ? `<img class="img" src="${img}" alt="Notícia">` : ``}
+          <div class="conteudo">
+            <h3 class="t">${n.title}</h3>
+            <div class="meta">AsianWiki • ${formatarData(n.pubDate)}</div>
+            <p class="d">${descCurto}</p>
+            <p style="margin-top:10px;">
+              <a href="${n.link}" target="_blank" rel="noopener noreferrer">Ler notícia original →</a>
+            </p>
+            <p class="trad" style="margin-top:10px; font-size:12px; opacity:0.75;">Traduzindo…</p>
+          </div>
+        </div>
+      `;
+    }).join("");
+
+    top.forEach((n, idx) => {
+      (async () => {
+        const card = document.getElementById(`home_news_${idx}`);
+        if (!card) return;
+
+        const descLimpo = limparHtml(n.description);
+        const descCurto = descLimpo.slice(0, 160) + (descLimpo.length > 160 ? "..." : "");
+
+        const tituloPT = await traduzirParaPT(n.title);
+        const descPT   = await traduzirParaPT(descCurto);
+
+        card.querySelector(".t").innerText = tituloPT;
+        card.querySelector(".d").innerText = descPT;
+
+        const p = card.querySelector(".trad");
+        if (p) p.remove();
+      })();
+    });
+
+  } catch (e) {
+    grid.innerHTML = `
+      <div class="noticia">
+        <div class="conteudo">
+          <h3>😢 Não foi possível carregar</h3>
+          <p>Tente atualizar. Se persistir, pode ser limite do RSS2JSON ou da tradução.</p>
+        </div>
+      </div>
+    `;
+  }
+}
+
+// Init
+window.onload = () => {
+  carregarTop5();
+  setupBuscaHome();
+  carregarDoramaDaSemana();
+  carregarNoticiasAutomaticas(false);
+};
+</script>
+
 </body>
-</html>`;
-fs.writeFileSync(path.join(outDir, "index.html"), indexHtml, "utf-8");
-
-// sitemap.xml
-const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>${SITE}/</loc><lastmod>${today}</lastmod></url>
-  <url><loc>${SITE}/doramas/</loc><lastmod>${today}</lastmod></url>
-  ${pages.map(p => `<url><loc>${p.url}</loc><lastmod>${p.lastmod}</lastmod></url>`).join("\n  ")}
-</urlset>`;
-fs.writeFileSync(path.join(process.cwd(), "sitemap.xml"), sitemap, "utf-8");
-
-// robots.txt
-const robots = `User-agent: *
-Allow: /
-
-Sitemap: ${SITE}/sitemap.xml
-`;
-fs.writeFileSync(path.join(process.cwd(), "robots.txt"), robots, "utf-8");
-
-console.log(\`✅ Geradas \${pages.length} páginas bonitas em /doramas + sitemap.xml + robots.txt\`);
+</html>
