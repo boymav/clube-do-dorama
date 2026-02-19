@@ -22,119 +22,257 @@ Lindo e sensível.">
 
   <style>
     :root{
-      --bg:#0b0b0f;
-      --card:#14141b;
-      --muted:rgba(255,255,255,.72);
-      --muted2:rgba(255,255,255,.55);
-      --accent:#e50914;
+      --rosa:#ff7eb3;
+      --roxo:#b983ff;
+
+      /* meio-termo: fundo mais “cinema”, mas ainda fofo */
+      --bgA:#140a16;
+      --bgB:#1b0f22;
+      --card:#ffffff;
+      --text:#333;
+      --muted:#555;
+
+      --shadow: 0 14px 35px rgba(0,0,0,0.22);
+      --shadow2: 0 18px 55px rgba(0,0,0,0.28);
+
       --radius:18px;
     }
+
     *{box-sizing:border-box}
-    body{margin:0;font-family:Arial,system-ui;background:var(--bg);color:#fff}
+    body{
+      margin:0;
+      font-family: Arial, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      background:
+        radial-gradient(900px 500px at 15% 8%, rgba(255,126,179,0.20), transparent 60%),
+        radial-gradient(900px 500px at 85% 15%, rgba(185,131,255,0.20), transparent 55%),
+        linear-gradient(135deg, var(--bgA), var(--bgB));
+      color:#fff;
+    }
     a{color:inherit}
 
     .topbar{max-width:1100px;margin:0 auto;padding:14px 14px 0}
-    .back{display:inline-flex;gap:8px;align-items:center;text-decoration:none;font-weight:bold;color:rgba(255,255,255,.85)}
-    .back:hover{color:#fff}
+    .back{
+      display:inline-flex;gap:8px;align-items:center;text-decoration:none;font-weight:bold;
+      color: rgba(255,255,255,0.90);
+    }
+    .back:hover{opacity:.9}
 
-    /* HERO Netflix */
+    /* HERO premium (mas com cores da home) */
     .hero{
-      position:relative;max-width:1100px;margin:12px auto 0;border-radius:24px;overflow:hidden;
-      background:#111;box-shadow:0 18px 60px rgba(0,0,0,.55);
+      position:relative;
+      max-width:1100px;
+      margin:12px auto 0;
+      border-radius:24px;
+      overflow:hidden;
+      box-shadow: var(--shadow2);
+      background: linear-gradient(90deg, rgba(255,126,179,0.95), rgba(185,131,255,0.95));
     }
     .hero::before{
-      content:"";position:absolute;inset:0;background-image:var(--bgimg);background-size:cover;background-position:center;
-      filter:blur(28px) saturate(1.2);transform:scale(1.2);opacity:.55;
+      content:"";
+      position:absolute;
+      inset:0;
+      background-image: var(--bgimg);
+      background-size: cover;
+      background-position: center;
+      filter: blur(28px) saturate(1.2);
+      transform: scale(1.2);
+      opacity:.35;
     }
     .hero::after{
-      content:"";position:absolute;inset:0;
-      background:linear-gradient(90deg,rgba(0,0,0,.92) 0%,rgba(0,0,0,.72) 45%,rgba(0,0,0,.30) 100%);
+      content:"";
+      position:absolute;
+      inset:0;
+      background:
+        linear-gradient(90deg,
+          rgba(20,0,20,0.65) 0%,
+          rgba(20,0,20,0.35) 55%,
+          rgba(20,0,20,0.08) 100%
+        );
     }
 
     .hero-inner{
-      position:relative;z-index:1;padding:18px;display:grid;grid-template-columns: 210px 1fr;
-      gap:16px;align-items:center;
+      position:relative;
+      z-index:1;
+      padding:18px;
+      display:grid;
+      grid-template-columns: 230px 1fr;
+      gap:16px;
+      align-items:center;
+      color:#fff;
     }
 
-    /* POSTER MAIOR */
+    /* Poster maior */
     .poster{
-      width:210px;aspect-ratio:2/3;border-radius:var(--radius);overflow:hidden;
-      background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.10);
-      box-shadow:0 16px 45px rgba(0,0,0,.55);
+      width:230px;
+      aspect-ratio:2/3;
+      border-radius: var(--radius);
+      overflow:hidden;
+      background: rgba(255,255,255,0.14);
+      border: 1px solid rgba(255,255,255,0.25);
+      box-shadow: 0 18px 45px rgba(0,0,0,0.35);
     }
-    .poster img{width:100%;height:100%;object-fit:cover;display:block}
+    .poster img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      display:block;
+    }
 
     h1{margin:0 0 10px;font-size:26px;line-height:1.15}
     .meta{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:10px}
     .pill{
-      display:inline-flex;align-items:center;gap:6px;padding:8px 10px;border-radius:999px;
-      background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.12);font-size:13px;
+      display:inline-flex;align-items:center;gap:6px;
+      padding:8px 10px;border-radius:999px;
+      background: rgba(255,255,255,0.18);
+      border: 1px solid rgba(255,255,255,0.24);
+      font-size:13px;font-weight:bold;
+      backdrop-filter: blur(6px);
     }
-    .stars{letter-spacing:1px;opacity:.9}
+    .stars{letter-spacing:1px;opacity:.95}
+
     .tags{margin-top:6px}
     .tag{
-      display:inline-block;padding:7px 10px;border-radius:999px;background:rgba(229,9,20,.18);
-      border:1px solid rgba(229,9,20,.32);margin:8px 8px 0 0;font-size:12px;color:#fff;opacity:.95;
+      display:inline-block;
+      padding:7px 10px;
+      border-radius:999px;
+      background: rgba(255,255,255,0.16);
+      border: 1px solid rgba(255,255,255,0.22);
+      margin:8px 8px 0 0;
+      font-size:12px;
+      color:#fff;
+      font-weight:bold;
+      backdrop-filter: blur(6px);
     }
-    .desc{margin:10px 0 0;color:var(--muted);line-height:1.55;font-size:14px;max-width:70ch}
+
+    .desc{
+      margin:10px 0 0;
+      color: rgba(255,255,255,0.92);
+      line-height:1.55;
+      font-size:14px;
+      max-width:70ch;
+    }
 
     .actions{margin-top:14px;display:flex;flex-wrap:wrap;gap:10px}
+
+    /* Botões streaming + vibe home */
     .btn{
-      display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:11px 14px;border-radius:14px;
-      text-decoration:none;font-weight:bold;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.08);color:#fff;
+      display:inline-flex;align-items:center;justify-content:center;gap:8px;
+      padding:11px 14px;border-radius:14px;
+      text-decoration:none;font-weight:bold;
+      border:1px solid rgba(255,255,255,0.22);
+      background: rgba(255,255,255,0.14);
+      color:#fff;
       cursor:pointer;
+      backdrop-filter: blur(8px);
     }
-    .btn:hover{background:rgba(255,255,255,.12)}
-    .btn-primary{background:var(--accent);border-color:transparent}
-    .btn-primary:hover{filter:brightness(1.05)}
+    .btn:hover{background: rgba(255,255,255,0.20)}
+    .btn-primary{
+      background: rgba(255,255,255,0.92);
+      color:#7a1b55;
+      border-color: rgba(255,255,255,0.92);
+      box-shadow: 0 10px 24px rgba(0,0,0,0.18);
+    }
+    .btn-primary:hover{filter:brightness(1.03)}
+    .btn-fav.on{
+      background: rgba(255,255,255,0.92);
+      color:#7a1b55;
+      border-color: rgba(255,255,255,0.92);
+    }
 
-    .btn-fav.on{background:rgba(229,9,20,.25);border-color:rgba(229,9,20,.45)}
-    .btn-fav.on:hover{background:rgba(229,9,20,.32)}
-
-    /* Conteúdo */
+    /* Conteúdo em cards brancos (vibe home) */
     .wrap{max-width:1100px;margin:16px auto 60px;padding:0 14px}
     .section{
-      background:var(--card);border:1px solid rgba(255,255,255,.08);border-radius:22px;padding:16px;
-      box-shadow:0 10px 30px rgba(0,0,0,.30);
+      background: var(--card);
+      color: var(--text);
+      border:1px solid rgba(0,0,0,0.06);
+      border-radius:22px;
+      padding:16px;
+      box-shadow: var(--shadow);
     }
-    .h2{margin:0 0 10px;font-size:18px}
-    .text{color:var(--muted);line-height:1.8;font-size:15px;margin:0}
+    .h2{margin:0 0 10px;font-size:18px;color:#b4005a}
+    .text{color: var(--muted);line-height:1.8;font-size:15px;margin:0}
 
-    /* Trailer responsivo */
+    /* Trailer bonito (premium) */
     .trailer{margin-top:14px}
     .video{
-      position:relative;width:100%;padding-top:56.25%;
-      border-radius:18px;overflow:hidden;border:1px solid rgba(255,255,255,.10);
-      box-shadow:0 18px 45px rgba(0,0,0,.45);background:#000;
+      position:relative;
+      width:100%;
+      padding-top:56.25%;
+      border-radius:18px;
+      overflow:hidden;
+      border:2px solid rgba(255,126,179,0.55);
+      box-shadow: 0 18px 45px rgba(0,0,0,0.22);
+      background:#000;
+    }
+    .video::after{
+      content:"";
+      position:absolute;
+      inset:0;
+      pointer-events:none;
+      background: radial-gradient(circle at 15% 10%, rgba(255,126,179,0.20), transparent 55%),
+                  radial-gradient(circle at 85% 10%, rgba(185,131,255,0.20), transparent 55%);
     }
     .video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
-    .hint{margin-top:10px;color:var(--muted2);font-size:13px;line-height:1.4}
+    .hint{margin-top:10px;color:#7a1b55;font-size:13px;opacity:.85}
 
-    /* Recomendados estilo Netflix */
+    /* Recomendados: carrossel com toque “Netflix”, mas leve */
     .row{margin-top:16px}
     .row-head{display:flex;align-items:end;justify-content:space-between;gap:10px;margin-bottom:10px}
-    .row-head small{color:var(--muted2)}
+    .row-head small{color: rgba(255,255,255,0.75)}
     .rec-scroller{
-      display:flex;gap:12px;overflow:auto;padding-bottom:6px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;
+      display:flex;gap:12px;overflow:auto;padding-bottom:6px;
+      scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;
     }
     .rec-card{
-      flex:0 0 150px;scroll-snap-align:start;text-decoration:none;border-radius:14px;overflow:hidden;background:#111;
-      border:1px solid rgba(255,255,255,.08);box-shadow:0 10px 24px rgba(0,0,0,.35);transition:transform .18s ease;
+      flex:0 0 150px;
+      scroll-snap-align:start;
+      text-decoration:none;
+      border-radius:14px;
+      overflow:hidden;
+      background: rgba(255,255,255,0.10);
+      border:1px solid rgba(255,255,255,0.14);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.18);
+      transition: transform .18s ease, box-shadow .18s ease;
+      backdrop-filter: blur(8px);
     }
-    .rec-card:hover{transform:translateY(-6px)}
-    .rec-card img{width:100%;height:205px;object-fit:cover;display:block}
-    .rec-title{padding:8px 10px;font-size:12px;color:rgba(255,255,255,.88);line-height:1.25;min-height:40px}
+    .rec-card:hover{
+      transform: translateY(-6px);
+      box-shadow: 0 18px 40px rgba(0,0,0,0.26);
+    }
+    .rec-card img{
+      width:100%;
+      height:205px;
+      object-fit:cover;
+      display:block;
+      filter: saturate(1.05);
+    }
+    .rec-title{
+      padding:8px 10px;
+      font-size:12px;
+      color: rgba(255,255,255,0.92);
+      line-height:1.25;
+      min-height:40px;
+      font-weight:bold;
+    }
 
-    footer{max-width:1100px;margin:40px auto 26px;padding:0 14px;color:rgba(255,255,255,.45);text-align:center;font-size:13px}
+    footer{
+      max-width:1100px;
+      margin:40px auto 26px;
+      padding:0 14px;
+      color: rgba(255,255,255,0.70);
+      text-align:center;
+      font-size:13px;
+      opacity:.9;
+    }
 
     /* Desktop */
     @media (min-width: 860px){
-      .hero-inner{padding:22px;grid-template-columns: 320px 1fr;gap:22px;}
-      .poster{width:320px;}
+      .hero-inner{padding:22px; grid-template-columns: 340px 1fr; gap:22px;}
+      .poster{width:340px;}
       h1{font-size:38px;}
       .section{padding:20px;}
-      .rec-card{flex-basis: 200px;}
-      .rec-card img{height:270px;}
+      .rec-card{flex-basis: 210px;}
+      .rec-card img{height:280px;}
       .rec-title{font-size:13px;}
     }
   </style>
@@ -190,7 +328,7 @@ Lindo e sensível.">
 
     <section class="row">
       <div class="row-head">
-        <h2 class="h2" style="margin:0;">Recomendados</h2>
+        <h2 class="h2" style="margin:0; color:#fff;">Recomendados</h2>
         <small>arraste para o lado →</small>
       </div>
       <div class="rec-scroller">
