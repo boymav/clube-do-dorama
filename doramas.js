@@ -1240,7 +1240,50 @@ Mas um acontecimento muda tudo.
 Eles precisam redescobrir sentimentos.
 
 Romântico e muito emocionante.`
+},
+{
+  nome: "Pousando no Amor",
+  imagem: "imagens/pousando-no-amor.jpg",
+  nota: "9.7",
+  tipo: "romance",
+  descricao: "Uma empresária sul-coreana sofre um acidente e cai na Coreia do Norte, onde conhece um oficial do exército que muda completamente sua vida."
+},
+{
+  nome: "Sorriso Real",
+  imagem: "imagens/sorriso-real.jpg",
+  nota: "9.2",
+  tipo: "romance",
+  descricao: "Um herdeiro sério e uma funcionária simpática se aproximam dentro de um hotel de luxo, em uma comédia romântica leve e envolvente."
+},
+{
+  nome: "Tudo Bem Não Ser Normal",
+  imagem: "imagens/tudo-bem-nao-ser-normal.jpg",
+  nota: "9.5",
+  tipo: "romance",
+  descricao: "Um cuidador de pacientes psiquiátricos e uma escritora de livros infantis se conectam enquanto enfrentam traumas do passado."
+},
+{
+  nome: "Vinte e Cinco, Vinte e Um",
+  imagem: "imagens/vinte-e-cinco-vinte-e-um.jpg",
+  nota: "9.3",
+  tipo: "romance",
+  descricao: "Dois jovens se conhecem durante tempos difíceis e desenvolvem uma relação intensa marcada por sonhos e amadurecimento."
+},
+{
+  nome: "Pretendente Surpresa",
+  imagem: "imagens/pretendente-surpresa.jpg",
+  nota: "9.1",
+  tipo: "romance",
+  descricao: "Uma funcionária vai a um encontro às cegas no lugar da amiga e descobre que o pretendente é o CEO da empresa onde trabalha."
+},
+{
+  nome: "Advogada Extraordinária",
+  imagem: "imagens/advogada-extraordinaria.jpg",
+  nota: "9.6",
+  tipo: "romance",
+  descricao: "Uma advogada brilhante com autismo enfrenta desafios profissionais e vive uma história de amor delicada e especial."
 }
+
 
 ];
 function criarSlug(nome) {
