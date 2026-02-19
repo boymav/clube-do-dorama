@@ -8,7 +8,7 @@
 
   <meta name="description" content="Descubra os melhores doramas coreanos de romance disponíveis na Netflix em 2026. Lista atualizada com histórias emocionantes, casais inesquecíveis e dicas de qual dorama assistir primeiro.">
 
-  <!-- Adsense (opcional, se quiser em todas as páginas) -->
+  <!-- Adsense (opcional) -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5053782942464082"
        crossorigin="anonymous"></script>
 
@@ -33,16 +33,13 @@
     }
     main{
       padding:40px 20px;
-      max-width:900px;
-      margin:0 auto;
-      background:#fff;
-      box-shadow:0 5px 18px rgba(0,0,0,0.1);
-      border-radius:18px;
-      margin-top:30px;
+      max-width:1000px;
+      margin:0 auto 40px;
     }
     h1{
       color:#b4005a;
       margin-top:0;
+      text-align:left;
     }
     h2{
       color:#7a1b55;
@@ -56,11 +53,90 @@
       color:white;
       text-align:center;
       padding:15px;
-      margin-top:40px;
     }
     footer a{
       color:#fff;
       text-decoration:underline;
+    }
+
+    /* Cards de doramas */
+    .cards{
+      display:flex;
+      flex-wrap:wrap;
+      gap:20px;
+      justify-content:center;
+      margin:20px 0 30px;
+    }
+    .card{
+      background:#fff;
+      width:290px;
+      border-radius:18px;
+      overflow:hidden;
+      box-shadow:0 5px 15px rgba(0,0,0,0.12);
+      display:flex;
+      flex-direction:column;
+    }
+    .card img{
+      width:100%;
+      height:360px;
+      object-fit:cover;
+      display:block;
+    }
+    .card-body{
+      padding:14px 14px 16px;
+    }
+    .card-body h3{
+      margin:0 0 6px;
+      font-size:18px;
+    }
+    .card-body p{
+      margin:0;
+      font-size:14px;
+      color:#555;
+    }
+    .nota-mini{
+      margin-top:8px;
+      font-weight:bold;
+      color:#7a1b55;
+      font-size:14px;
+    }
+    .card-botoes{
+      margin-top:10px;
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px;
+    }
+    .btn-netflix,
+    .btn-detalhes{
+      display:inline-block;
+      padding:7px 12px;
+      border-radius:999px;
+      font-size:13px;
+      font-weight:bold;
+      text-decoration:none;
+      cursor:pointer;
+    }
+    .btn-netflix{
+      background:#e50914;
+      color:#fff;
+    }
+    .btn-netflix:hover{
+      opacity:0.9;
+    }
+    .btn-detalhes{
+      background:#ff7eb3;
+      color:#fff;
+    }
+    .btn-detalhes:hover{
+      background:#b983ff;
+    }
+
+    .texto-explicacao{
+      background:#fff;
+      padding:22px 18px;
+      border-radius:18px;
+      box-shadow:0 5px 18px rgba(0,0,0,0.1);
+      margin-bottom:25px;
     }
   </style>
 </head>
@@ -80,87 +156,157 @@
   <main>
     <h1>Melhores Doramas Coreanos de Romance na Netflix em 2026</h1>
 
-    <p>
-      Se você ama histórias emocionantes, casais intensos e romances que fazem o coração bater mais forte,
-      essa lista é para você. Em 2026, a Netflix continua trazendo doramas coreanos de romance que conquistam
-      fãs no mundo inteiro.
-    </p>
+    <div class="texto-explicacao">
+      <p>
+        Se você ama histórias emocionantes, casais intensos e romances que fazem o coração bater mais forte,
+        essa lista é para você. Em 2026, a Netflix continua trazendo doramas coreanos de romance que conquistam
+        fãs no mundo inteiro.
+      </p>
+
+      <p>
+        Aqui você encontra alguns dos principais doramas de romance disponíveis na plataforma, com histórias
+        envolventes, personagens marcantes e muita emoção. Guarde esta página nos favoritos para voltar depois,
+        porque a lista pode ser atualizada ao longo do ano.
+      </p>
+
+      <p>
+        Logo abaixo você vê os doramas em destaque com capa, nota e botões para abrir a busca diretamente na
+        Netflix ou ver mais detalhes aqui no Planeta Dorama.
+      </p>
+    </div>
+
+    <h2>💘 Doramas em destaque na Netflix</h2>
+    <div id="cards-lista-netflix" class="cards">
+      <!-- Os cards serão inseridos via JavaScript -->
+    </div>
+
+    <h2>Sobre cada dorama</h2>
 
     <p>
-      Aqui você encontra alguns dos principais doramas de romance disponíveis na plataforma, com histórias
-      envolventes, personagens marcantes e muita emoção. Guarde esta página nos favoritos para voltar depois,
-      porque a lista pode ser atualizada ao longo do ano.
+      Abaixo você encontra uma explicação em texto sobre cada um dos doramas desta lista.
+      Assim você pode decidir por qual começar ou qual combina mais com o seu momento.
     </p>
 
-    <h2>1. Pousando no Amor (Crash Landing on You)</h2>
+    <h3>1. Pousando no Amor (Crash Landing on You)</h3>
     <p>
       Uma herdeira sul-coreana sofre um acidente e acaba na Coreia do Norte, onde conhece um oficial do exército
       que muda sua vida completamente. O romance entre os dois é intenso, proibido e cheio de momentos marcantes.
       É um dos doramas de romance mais queridos pelos fãs.
     </p>
 
-    <h2>2. Sorriso Real (King the Land)</h2>
+    <h3>2. Sorriso Real (King the Land)</h3>
     <p>
       Um herdeiro sério e uma funcionária simpática se aproximam em meio aos conflitos dentro de um grande hotel
       de luxo. A química entre o casal principal é forte e o dorama é cheio de cenas engraçadas e românticas,
       perfeito para quem gosta de comédia romântica leve.
     </p>
 
-    <h2>3. Tudo Bem Não Ser Normal (It’s Okay to Not Be Okay)</h2>
+    <h3>3. Tudo Bem Não Ser Normal (It’s Okay to Not Be Okay)</h3>
     <p>
       Um cuidador de pacientes psiquiátricos e uma escritora de livros infantis se conectam enquanto lidam com
       traumas do passado. O dorama mistura romance, dor e cura emocional, com uma fotografia linda e atuações
       muito marcantes.
     </p>
 
-    <h2>4. Vinte e Cinco, Vinte e Um</h2>
+    <h3>4. Vinte e Cinco, Vinte e Um</h3>
     <p>
       Acompanhamos a vida de jovens que perseguem seus sonhos enquanto descobrem o amor e as dificuldades da vida
       adulta. O romance é doce, mas também cheio de momentos de saudade e amadurecimento. Ótimo para quem gosta
       de nostalgia e emoção.
     </p>
 
-    <h2>5. Pretendente Surpresa (Business Proposal)</h2>
+    <h3>5. Pretendente Surpresa (Business Proposal)</h3>
     <p>
       Depois de aceitar substituir a amiga em um encontro às cegas, uma funcionária descobre que o pretendente
       é justamente o CEO da empresa onde ela trabalha. A partir daí começa um romance cheio de cenas engraçadas
       e muita química. É um dos doramas de comédia romântica mais divertidos da Netflix.
     </p>
 
-    <h2>6. Hometown Cha-Cha-Cha</h2>
+    <h3>6. Hometown Cha-Cha-Cha</h3>
     <p>
       Uma dentista da cidade grande se muda para uma vila litorânea e conhece um morador misterioso que faz de
       tudo na comunidade. O romance cresce aos poucos, com clima aconchegante e muitos momentos fofos. Ideal
       para quem gosta de histórias leves e confortáveis.
     </p>
 
-    <h2>7. Advogada Extraordinária (Extraordinary Attorney Woo)</h2>
+    <h3>7. Advogada Extraordinária (Extraordinary Attorney Woo)</h3>
     <p>
       Embora não seja um dorama focado apenas em romance, ele traz uma história de amor delicada e especial,
       envolvendo uma jovem advogada autista e um colega de trabalho. O relacionamento dos dois é construído com
       cuidado, respeito e muita sensibilidade.
     </p>
 
-    <h2>Por que assistir doramas de romance na Netflix?</h2>
     <p>
-      A Netflix oferece doramas com boa qualidade de imagem, legendas em português e, em muitos casos, versões
-      dubladas. Isso facilita bastante a vida de quem está começando nesse mundo e quer algo prático para assistir.
-    </p>
-
-    <p>
-      Outro ponto positivo é que a plataforma tem doramas de vários estilos: romance leve, drama intenso, comédia
-      romântica, histórico, escolar e muito mais. Sempre vale a pena conferir as novidades do catálogo.
-    </p>
-
-    <p>
-      Confira também outras listas e recomendações no
-      <a href="../index.html">Planeta Dorama</a>.
+      Para mais listas e recomendações, volte para a
+      <a href="../index.html">página inicial do Planeta Dorama</a>.
     </p>
   </main>
 
   <footer>
     <p>💜 Planeta Dorama 🌍 — Todos os direitos reservados</p>
   </footer>
+
+  <!-- Dados dos doramas -->
+  <script src="../doramas.js"></script>
+
+  <script>
+    function criarSlug(nome){
+      return String(nome || "")
+        .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+        .toLowerCase()
+        .replace(/[^a-z0-9]+/g, "-")
+        .replace(/(^-|-$)/g, "");
+    }
+
+    function montarCardsListaNetflix(){
+      var area = document.getElementById("cards-lista-netflix");
+      if (!area || !Array.isArray(doramas)) return;
+
+      var nomes = [
+        "Pousando no Amor",
+        "Sorriso Real",
+        "Tudo Bem Não Ser Normal",
+        "Vinte e Cinco, Vinte e Um",
+        "Pretendente Surpresa",
+        "Hometown Cha-Cha-Cha",
+        "Advogada Extraordinária"
+      ];
+
+      var lista = nomes.map(function(nome){
+        var d = doramas.find(function(x){
+          return (x.nome || "").toLowerCase() === nome.toLowerCase();
+        });
+
+        if (d) return d;
+        return { nome:nome, imagem:"../imagens/capa-padrao.jpg", nota:"", descricao:"" };
+      });
+
+      area.innerHTML = lista.map(function(d){
+        var primeiraFrase = "";
+        if (d.descricao){
+          primeiraFrase = String(d.descricao).split("\n")[0];
+        }
+        var urlNetflix = "https://www.netflix.com/search?q=" + encodeURIComponent(d.nome);
+        var urlDetalhes = "/doramas/" + criarSlug(d.nome) + ".html";
+
+        return '' +
+          '<div class="card">' +
+            '<img src="' + d.imagem + '" alt="' + d.nome + '" loading="lazy">' +
+            '<div class="card-body">' +
+              '<h3>' + d.nome + '</h3>' +
+              '<p>' + primeiraFrase + '</p>' +
+              '<div class="nota-mini">⭐ ' + (d.nota || '') + '</div>' +
+              '<div class="card-botoes">' +
+                '<a class="btn-netflix" href="' + urlNetflix + '" target="_blank" rel="noopener noreferrer">Ver na Netflix</a>' +
+                '<a class="btn-detalhes" href="' + urlDetalhes + '">Ver detalhes</a>' +
+              '</div>' +
+            '</div>' +
+          '</div>';
+      }).join("");
+    }
+
+    window.onload = montarCardsListaNetflix;
+  </script>
 
 </body>
 </html>
