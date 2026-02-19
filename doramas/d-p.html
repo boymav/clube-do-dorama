@@ -30,273 +30,112 @@ Drama forte.">
       --radius:18px;
     }
     *{box-sizing:border-box}
-    body{
-      margin:0;
-      font-family: Arial, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
-      background:var(--bg);
-      color:#fff;
-    }
+    body{margin:0;font-family:Arial,system-ui;background:var(--bg);color:#fff}
     a{color:inherit}
-    .topbar{
-      max-width:1100px;
-      margin:0 auto;
-      padding:14px 14px 0;
-    }
-    .back{
-      display:inline-flex;
-      gap:8px;
-      align-items:center;
-      text-decoration:none;
-      font-weight:bold;
-      color:rgba(255,255,255,.85);
-    }
+
+    .topbar{max-width:1100px;margin:0 auto;padding:14px 14px 0}
+    .back{display:inline-flex;gap:8px;align-items:center;text-decoration:none;font-weight:bold;color:rgba(255,255,255,.85)}
     .back:hover{color:#fff}
 
-    /* ===== HERO NETFLIX ===== */
+    /* HERO Netflix */
     .hero{
-      position:relative;
-      max-width:1100px;
-      margin:12px auto 0;
-      border-radius:24px;
-      overflow:hidden;
-      background: #111;
-      box-shadow: 0 18px 60px rgba(0,0,0,.55);
+      position:relative;max-width:1100px;margin:12px auto 0;border-radius:24px;overflow:hidden;
+      background:#111;box-shadow:0 18px 60px rgba(0,0,0,.55);
     }
     .hero::before{
-      content:"";
-      position:absolute;
-      inset:0;
-      background-image: var(--bgimg);
-      background-size: cover;
-      background-position: center;
-      filter: blur(28px) saturate(1.2);
-      transform: scale(1.2);
-      opacity: .55;
+      content:"";position:absolute;inset:0;background-image:var(--bgimg);background-size:cover;background-position:center;
+      filter:blur(28px) saturate(1.2);transform:scale(1.2);opacity:.55;
     }
     .hero::after{
-      content:"";
-      position:absolute;
-      inset:0;
-      background: linear-gradient(90deg,
-        rgba(0,0,0,.92) 0%,
-        rgba(0,0,0,.72) 45%,
-        rgba(0,0,0,.30) 100%
-      );
+      content:"";position:absolute;inset:0;
+      background:linear-gradient(90deg,rgba(0,0,0,.92) 0%,rgba(0,0,0,.72) 45%,rgba(0,0,0,.30) 100%);
     }
+
     .hero-inner{
-      position:relative;
-      z-index:1;
-      padding:18px;
-      display:grid;
-      grid-template-columns: 180px 1fr;
-      gap:16px;
-      align-items:center;
+      position:relative;z-index:1;padding:18px;display:grid;grid-template-columns: 210px 1fr;
+      gap:16px;align-items:center;
     }
 
-    /* poster */
+    /* POSTER MAIOR */
     .poster{
-      width:180px;
-      aspect-ratio:2/3;
-      border-radius: var(--radius);
-      overflow:hidden;
-      background: rgba(255,255,255,.08);
-      border: 1px solid rgba(255,255,255,.10);
+      width:210px;aspect-ratio:2/3;border-radius:var(--radius);overflow:hidden;
+      background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.10);
+      box-shadow:0 16px 45px rgba(0,0,0,.55);
     }
-    .poster img{
-      width:100%;
-      height:100%;
-      object-fit:cover;
-      display:block;
-    }
+    .poster img{width:100%;height:100%;object-fit:cover;display:block}
 
-    /* info */
-    h1{
-      margin:0 0 10px;
-      font-size: 26px;
-      line-height:1.15;
-    }
-    .meta{
-      display:flex;
-      flex-wrap:wrap;
-      gap:8px;
-      align-items:center;
-      margin-bottom:10px;
-    }
+    h1{margin:0 0 10px;font-size:26px;line-height:1.15}
+    .meta{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:10px}
     .pill{
-      display:inline-flex;
-      align-items:center;
-      gap:6px;
-      padding:8px 10px;
-      border-radius:999px;
-      background: rgba(255,255,255,.10);
-      border: 1px solid rgba(255,255,255,.12);
-      font-size: 13px;
+      display:inline-flex;align-items:center;gap:6px;padding:8px 10px;border-radius:999px;
+      background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.12);font-size:13px;
     }
-    .stars{letter-spacing:1px; opacity:.9}
+    .stars{letter-spacing:1px;opacity:.9}
     .tags{margin-top:6px}
     .tag{
-      display:inline-block;
-      padding:7px 10px;
-      border-radius:999px;
-      background: rgba(229,9,20,.18);
-      border: 1px solid rgba(229,9,20,.32);
-      margin: 8px 8px 0 0;
-      font-size: 12px;
-      color:#fff;
-      opacity:.95;
+      display:inline-block;padding:7px 10px;border-radius:999px;background:rgba(229,9,20,.18);
+      border:1px solid rgba(229,9,20,.32);margin:8px 8px 0 0;font-size:12px;color:#fff;opacity:.95;
     }
+    .desc{margin:10px 0 0;color:var(--muted);line-height:1.55;font-size:14px;max-width:70ch}
 
-    .desc{
-      margin:10px 0 0;
-      color: var(--muted);
-      line-height:1.55;
-      font-size: 14px;
-      max-width: 70ch;
-    }
-
-    .actions{
-      margin-top:14px;
-      display:flex;
-      flex-wrap:wrap;
-      gap:10px;
-    }
+    .actions{margin-top:14px;display:flex;flex-wrap:wrap;gap:10px}
     .btn{
-      display:inline-flex;
-      align-items:center;
-      justify-content:center;
-      gap:8px;
-      padding:11px 14px;
-      border-radius: 14px;
-      text-decoration:none;
-      font-weight:bold;
-      border:1px solid rgba(255,255,255,.14);
-      background: rgba(255,255,255,.08);
-      color:#fff;
+      display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:11px 14px;border-radius:14px;
+      text-decoration:none;font-weight:bold;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.08);color:#fff;
+      cursor:pointer;
     }
-    .btn:hover{background: rgba(255,255,255,.12)}
-    .btn-primary{
-      background: var(--accent);
-      border-color: rgba(0,0,0,.0);
-    }
+    .btn:hover{background:rgba(255,255,255,.12)}
+    .btn-primary{background:var(--accent);border-color:transparent}
     .btn-primary:hover{filter:brightness(1.05)}
 
-    /* ===== CONTENT ===== */
-    .wrap{
-      max-width:1100px;
-      margin:16px auto 60px;
-      padding:0 14px;
-    }
+    .btn-fav.on{background:rgba(229,9,20,.25);border-color:rgba(229,9,20,.45)}
+    .btn-fav.on:hover{background:rgba(229,9,20,.32)}
+
+    /* Conteúdo */
+    .wrap{max-width:1100px;margin:16px auto 60px;padding:0 14px}
     .section{
-      background: var(--card);
-      border:1px solid rgba(255,255,255,.08);
-      border-radius: 22px;
-      padding:16px;
-      box-shadow: 0 10px 30px rgba(0,0,0,.30);
+      background:var(--card);border:1px solid rgba(255,255,255,.08);border-radius:22px;padding:16px;
+      box-shadow:0 10px 30px rgba(0,0,0,.30);
     }
-    .h2{
-      margin:0 0 10px;
-      font-size: 18px;
-    }
-    .text{
-      color: var(--muted);
-      line-height:1.8;
-      font-size: 15px;
-      margin:0;
-    }
+    .h2{margin:0 0 10px;font-size:18px}
+    .text{color:var(--muted);line-height:1.8;font-size:15px;margin:0}
 
-    /* trailer responsive */
-    .trailer{
-      margin-top:14px;
-    }
+    /* Trailer responsivo */
+    .trailer{margin-top:14px}
     .video{
-      position:relative;
-      width:100%;
-      padding-top:56.25%;
-      border-radius: 18px;
-      overflow:hidden;
-      border:1px solid rgba(255,255,255,.10);
-      box-shadow: 0 18px 45px rgba(0,0,0,.45);
-      background:#000;
+      position:relative;width:100%;padding-top:56.25%;
+      border-radius:18px;overflow:hidden;border:1px solid rgba(255,255,255,.10);
+      box-shadow:0 18px 45px rgba(0,0,0,.45);background:#000;
     }
-    .video iframe{
-      position:absolute;
-      inset:0;
-      width:100%;
-      height:100%;
-      border:0;
-    }
-    .hint{
-      margin-top:10px;
-      color: var(--muted2);
-      font-size: 13px;
-      line-height:1.4;
-    }
+    .video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+    .hint{margin-top:10px;color:var(--muted2);font-size:13px;line-height:1.4}
 
-    /* recomendados netflix */
-    .row{
-      margin-top:16px;
-    }
-    .row-head{
-      display:flex;
-      align-items:end;
-      justify-content:space-between;
-      gap:10px;
-      margin-bottom:10px;
-    }
+    /* Recomendados estilo Netflix */
+    .row{margin-top:16px}
+    .row-head{display:flex;align-items:end;justify-content:space-between;gap:10px;margin-bottom:10px}
     .row-head small{color:var(--muted2)}
     .rec-scroller{
-      display:flex;
-      gap:12px;
-      overflow:auto;
-      padding-bottom:6px;
-      scroll-snap-type: x mandatory;
-      -webkit-overflow-scrolling: touch;
+      display:flex;gap:12px;overflow:auto;padding-bottom:6px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;
     }
     .rec-card{
-      flex: 0 0 140px;
-      scroll-snap-align: start;
-      text-decoration:none;
-      border-radius: 14px;
-      overflow:hidden;
-      background:#111;
-      border:1px solid rgba(255,255,255,.08);
-      box-shadow: 0 10px 24px rgba(0,0,0,.35);
-      transition: transform .18s ease;
+      flex:0 0 150px;scroll-snap-align:start;text-decoration:none;border-radius:14px;overflow:hidden;background:#111;
+      border:1px solid rgba(255,255,255,.08);box-shadow:0 10px 24px rgba(0,0,0,.35);transition:transform .18s ease;
     }
-    .rec-card:hover{transform: translateY(-6px)}
-    .rec-card img{
-      width:100%;
-      height:190px;
-      object-fit:cover;
-      display:block;
-    }
-    .rec-title{
-      padding:8px 10px;
-      font-size: 12px;
-      color: rgba(255,255,255,.88);
-      line-height:1.25;
-      min-height: 40px;
-    }
+    .rec-card:hover{transform:translateY(-6px)}
+    .rec-card img{width:100%;height:205px;object-fit:cover;display:block}
+    .rec-title{padding:8px 10px;font-size:12px;color:rgba(255,255,255,.88);line-height:1.25;min-height:40px}
 
-    footer{
-      max-width:1100px;
-      margin: 40px auto 26px;
-      padding: 0 14px;
-      color: rgba(255,255,255,.45);
-      text-align:center;
-      font-size: 13px;
-    }
+    footer{max-width:1100px;margin:40px auto 26px;padding:0 14px;color:rgba(255,255,255,.45);text-align:center;font-size:13px}
 
-    /* desktop melhora */
+    /* Desktop */
     @media (min-width: 860px){
-      .hero-inner{padding:22px; grid-template-columns: 240px 1fr; gap:22px;}
-      .poster{width:240px;}
-      h1{font-size: 36px;}
-      .desc{font-size: 15px;}
+      .hero-inner{padding:22px;grid-template-columns: 320px 1fr;gap:22px;}
+      .poster{width:320px;}
+      h1{font-size:38px;}
       .section{padding:20px;}
-      .rec-card{flex-basis: 180px;}
-      .rec-card img{height:240px;}
-      .rec-title{font-size: 13px;}
+      .rec-card{flex-basis: 200px;}
+      .rec-card img{height:270px;}
+      .rec-title{font-size:13px;}
     }
   </style>
 </head>
@@ -313,7 +152,7 @@ Drama forte.">
       </div>
 
       <div>
-        <h1>D.P.</h1>
+        <h1 id="nome">D.P.</h1>
 
         <div class="meta">
           <span class="pill">⭐ 8.8/10 – MyDramaList</span>
@@ -326,6 +165,8 @@ Drama forte.">
 
         <div class="actions">
           <a class="btn btn-primary" href="#trailer">▶ Trailer</a>
+          <button class="btn btn-fav" id="btnFav" type="button">🤍 Favoritar</button>
+          <button class="btn" id="btnShare" type="button">🔗 Compartilhar</button>
           <a class="btn" href="https://planetadorama.com.br/todos.html">📚 Todos os doramas</a>
         </div>
       </div>
@@ -335,7 +176,7 @@ Drama forte.">
   <div class="wrap">
     <section class="section">
       <h2 class="h2">Resumo</h2><p class="text">Um soldado entra para a equipe<br>que captura desertores.<br><br>Ele descobre abusos dentro do exército.<br>Cada caso revela injustiças.<br><br>Realista e impactante.</p>
-      
+
       
         <div class="trailer" id="trailer">
           <h2 class="h2">Trailer</h2>
@@ -419,5 +260,61 @@ Drama forte.">
   </div>
 
   <footer>© 2026 Planeta Dorama</footer>
+
+  <script>
+    const FAV_KEY = "pd_favoritos_v1";
+    const nome = "D.P.";
+    const pageUrl = "https://planetadorama.com.br/doramas/d-p.html";
+
+    function getFav(){
+      try { return JSON.parse(localStorage.getItem(FAV_KEY) || "[]"); }
+      catch(e){ return []; }
+    }
+    function setFav(list){
+      localStorage.setItem(FAV_KEY, JSON.stringify(list));
+    }
+    function isFav(){
+      return getFav().includes(nome);
+    }
+    function toggleFav(){
+      let list = getFav();
+      if(list.includes(nome)){
+        list = list.filter(n => n !== nome);
+      }else{
+        list.push(nome);
+      }
+      setFav(list);
+      return list.includes(nome);
+    }
+    function updateFavBtn(){
+      const btn = document.getElementById("btnFav");
+      if(!btn) return;
+      const on = isFav();
+      btn.textContent = on ? "💜 Favoritado" : "🤍 Favoritar";
+      btn.classList.toggle("on", on);
+    }
+
+    document.getElementById("btnFav")?.addEventListener("click", () => {
+      toggleFav();
+      updateFavBtn();
+    });
+
+    document.getElementById("btnShare")?.addEventListener("click", async () => {
+      const text = "🎬 Dorama: " + nome + "\nVeja aqui: " + pageUrl;
+      if (navigator.share) {
+        try { await navigator.share({ title: nome, text, url: pageUrl }); } catch(e){}
+      } else {
+        try {
+          await navigator.clipboard.writeText(pageUrl);
+          alert("Link copiado! ✅");
+        } catch(e) {
+          const wa = "https://wa.me/?text=" + encodeURIComponent(text);
+          window.open(wa, "_blank");
+        }
+      }
+    });
+
+    updateFavBtn();
+  </script>
 </body>
 </html>
