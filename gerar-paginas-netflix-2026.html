@@ -1,1 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Gerar páginas Netflix 2026 | Planeta Dorama</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <style>
+    body{
+      font-family: Arial, sans-serif;
+      background:#fff0f6;
+      padding:20px;
+      color:#333;
+    }
+    h1{
+      color:#b4005a;
+    }
+    .box{
+      background:#fff;
+      border-radius:16px;
+      padding:16px;
+      box-shadow:0 4px 14px rgba(0,0,0,0.12);
+      margin-bottom:18px;
+    }
+    button, a.btn-download{
+      display:inline-block;
+      margin-top:10px;
+      padding:8px 14px;
+      border-radius:999px;
+      border:none;
+      background:#ff7eb3;
+      color:#fff;
+      text-decoration:none;
+      font-weight:bold;
+      cursor:pointer;
+      font-size:14px;
+    }
+    a.btn-download:hover, button:hover{
+      background:#b983ff;
+    }
+    .erro{
+      color:#b4005a;
+      font-weight:bold;
+    }
+    code{
+      background:#f2f2f2;
+      padding:2px 4px;
+      border-radius:4px;
+      font-size:13px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Gerar páginas de doramas – Netflix Romance 2026</h1>
+
+  <div class="box">
+    <p><strong>Como usar:</strong></p>
+    <ol>
+      <li>Deixe este arquivo na mesma pasta do <code>doramas.js</code> (na raiz do site).</li>
+      <li>Abra este arquivo no navegador: <code>/gerar-paginas-netflix-2026.html</code>.</li>
+      <li>O script vai listar os doramas da Netflix 2026.</li>
+      <li>Clique em cada botão “Baixar página” para baixar o arquivo <code>.html</code>.</li>
+      <li>Envie esses arquivos para a pasta <code>doramas/</code> no GitHub.</li>
+    </ol>
+    <p>Depois disso, os links como <code>/doramas/pousando-no-amor.html</code> vão parar de dar 404.</p>
+  </div>
+
+  <div id="saida" class="box">
+    Carregando doramas...
+  </div>
+
+  <!-- Importa os dados dos doramas -->
+  <script src="doramas.js"></script>
+
+  <script>
+    // Se por algum motivo o criarSlug não existir no doramas.js, define aqui.
+    if (typeof criarSlug !== "function") {
+      function criarSlug(nome) {
+        return String(nome || "")
+          .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+          .toLowerCase()
+          .replace(/[^a-z0-9]+/g, "-")
+          .replace(/(^-|-$)/g, "");
+      }
+    }
+
+    const nomesNetflix2026 = [
+      "Pousando no Amor",
+      "Sorriso Real",
+      "Tudo Bem Não Ser Normal",
+      "Vinte e Cinco, Vinte e Um",
+      "Pretendente Surpresa",
+      "Advogada Extraordinária"
+    ];
+
+    function gerarHtmlDorama(d) {
+      const slug = d.slug || criarSlug(d.nome);
+      const nota = d.nota || "";
+      const descricaoCurta = d.descricao || "";
+      const imagem = d.imagem || "../imagens/capa-padrao.jpg";
+      const urlNetflix = "https://www.netflix.com/search?q=" + encodeURIComponent(d.nome);
+
+      // Página individual do dorama
+      return `<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>${d.nome} | Planeta Dorama</title>
+<meta name="description" content="Tudo sobre ${d.nome}: sinopse, onde assistir e informações desse dorama.">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5053782942464082"
+     crossorigin="anonymous"></script>
+<style>
+  body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:#fff0f6;
+    color:#333;
+  }
+  header{
+    background:linear-gradient(90deg,#ff7eb3,#b983ff);
+    padding:20px;
+    text-align:center;
+    color:white;
+  }
+  nav a{
+    margin:0 10px;
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+  }
+  main{
+    max-width:900px;
+    margin:30px auto 40px;
+    padding:20px;
+    background:#fff;
+    border-radius:18px;
+    box-shadow:0 5px 18px rgba(0,0,0,0.12);
+  }
+  h1{
+    margin-top:0;
+    color:#b4005a;
+  }
+  .info-topo{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+  }
+  .info-topo img{
+    width:260px;
+    max-width:100%;
+    border-radius:16px;
+    object-fit:cover;
+  }
+  .meta{
+    font-size:14px;
+    margin-bottom:10px;
+    color:#555;
+  }
+  .nota{
+    font-weight:bold;
+    color:#7a1b55;
+    margin:8px 0;
+  }
+  .btn-netflix{
+    display:inline-block;
+    margin-top:10px;
+    padding:8px 14px;
+    border-radius:999px;
+    background:#e50914;
+    color:#fff;
+    font-size:14px;
+    font-weight:bold;
+    text-decoration:none;
+  }
+  .btn-netflix:hover{
+    opacity:0.9;
+  }
+  h2{
+    color:#7a1b55;
+    margin-top:26px;
+  }
+  p{
+    line-height:1.6;
+    margin:8px 0;
+  }
+  footer{
+    background:#b983ff;
+    color:white;
+    text-align:center;
+    padding:15px;
+  }
+  footer a{
+    color:#fff;
+    text-decoration:underline;
+  }
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>🌍 Planeta Dorama</h1>
+  <nav>
+    <a href="../index.html">Início</a>
+    <a href="../todos.html">Todos os Doramas</a>
+    <a href="../favoritos.html">Favoritos</a>
+    <a href="../contato.html">Contato</a>
+  </nav>
+</header>
+
+<main>
+  <div class="info-topo">
+    <img src="${imagem}" alt="${d.nome}">
+    <div>
+      <h1>${d.nome}</h1>
+      <div class="meta">Dorama coreano • Romance • Netflix</div>
+      <div class="nota">⭐ ${nota}</div>
+      <p>${descricaoCurta}</p>
+      <a class="btn-netflix" href="${urlNetflix}" target="_blank" rel="noopener noreferrer">
+        Ver na Netflix
+      </a>
+    </div>
+  </div>
+
+  <h2>Sinopse</h2>
+  <p>${descricaoCurta}</p>
+
+  <h2>Onde assistir</h2>
+  <p>Atualmente, <strong>${d.nome}</strong> está disponível na <strong>Netflix</strong> (sujeito a mudanças de catálogo).</p>
+
+  <h2>Veja também</h2>
+  <p>
+    • Outros doramas de romance na
+      <a href="../listas/melhores-doramas-coreanos-romance-netflix-2026.html">lista da Netflix 2026</a><br>
+    • Descubra um dorama aleatório em <a href="../descubra.html">Descubra 🤖</a>
+  </p>
+</main>
+
+<footer>
+  <p>💜 Planeta Dorama 🌍 — Todos os direitos reservados</p>
+</footer>
+
+</body>
+</html>`;
+    }
+
+    function initGerador(){
+      const saida = document.getElementById("saida");
+
+      if (!Array.isArray(doramas)) {
+        saida.innerHTML = "<p class='erro'>Erro: doramas.js não foi carregado corretamente.</p>";
+        return;
+      }
+
+      let html = "<h2>Doramas encontrados (Netflix Romance 2026)</h2>";
+
+      nomesNetflix2026.forEach(function(nome){
+        const d = doramas.find(x => (x.nome || "").toLowerCase() === nome.toLowerCase());
+        if (!d) {
+          html += "<p class='erro'>Não encontrado no doramas.js: <strong>" + nome + "</strong></p>";
+          return;
+        }
+
+        const slug = d.slug || criarSlug(d.nome);
+        const arquivo = slug + ".html";
+
+        // Cria o HTML da página
+        const conteudo = gerarHtmlDorama(d);
+        const blob = new Blob([conteudo], {type:"text/html"});
+        const url = URL.createObjectURL(blob);
+
+        html += `
+          <div class="box">
+            <p><strong>${d.nome}</strong></p>
+            <p>Arquivo sugerido: <code>doramas/${arquivo}</code></p>
+            <a class="btn-download" href="${url}" download="${arquivo}">
+              Baixar página: ${d.nome}
+            </a>
+          </div>
+        `;
+      });
+
+      saida.innerHTML = html;
+    }
+
+    // Espera o doramas.js carregar
+    window.onload = initGerador;
+  </script>
+
+</body>
+</html>
