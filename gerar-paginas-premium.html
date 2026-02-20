@@ -122,7 +122,7 @@
     return txt.replace(/\n/g,"<br>");
   }
 
-  function gerarRecomendados(dorama, todos, slugAtual){
+  function gerarRecomendados(dorama, todos){
     const tags = Array.isArray(dorama.tags) ? dorama.tags : [];
     let candidatos = todos.filter(x => x !== dorama);
 
@@ -136,7 +136,6 @@
       candidatos = todos.filter(x => x !== dorama);
     }
 
-    // embaralhar e pegar até 4
     candidatos = [...candidatos].sort(() => Math.random() - 0.5).slice(0,4);
 
     if(!candidatos.length) return "";
@@ -171,7 +170,7 @@
     const imagem = d.imagem || "https://planetadorama.com.br/imagens/og-capa.jpg";
     const tags = Array.isArray(d.tags) ? d.tags.join(", ") : "";
     const trailer = d.trailer || "";
-    const recomendadosHtml = gerarRecomendados(d, todos, slug);
+    const recomendadosHtml = gerarRecomendados(d, todos);
 
     const trailerBloco = trailer ? `
     <section class="bloco">
@@ -180,6 +179,10 @@
         <iframe src="${trailer}" loading="lazy" allowfullscreen></iframe>
       </div>
     </section>` : "";
+
+    const tagsHtml = tags
+      ? tags.split(",").map(t => `<span class="tag">${t.trim()}</span>`).join("")
+      : "";
 
     return `<!doctype html>
 <html lang="pt-BR">
@@ -201,21 +204,6 @@
   <meta name="twitter:title" content="${d.nome} | Planeta Dorama">
   <meta name="twitter:description" content="${descCurta}">
   <meta name="twitter:image" content="${imagem}">
-
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"TVSeries",
-    "name":${JSON.stringify(d.nome)},
-    "url":"${urlPagina}",
-    "image":"${imagem}",
-    "aggregateRating":{
-      "@type":"AggregateRating",
-      "ratingValue":"${(String(nota).match(/\\d+(?:[\\.,]\\d+)?/)||["8.5"])[0].replace(",","." )}",
-      "ratingCount":"100"
-    }
-  }
-  </script>
 
   <style>
     :root{
@@ -488,7 +476,7 @@
         <h1>${d.nome}</h1>
         <div class="nota">⭐ ${nota}</div>
         <div class="tags">
-          ${tags ? tags.split(",").map(t => `<span class="tag">${t.trim()}</span>`).join("") : ""}
+          ${tagsHtml}
         </div>
         <div class="desc-curta">${descCurta}</div>
       </div>
@@ -558,27 +546,31 @@
     updateFavBtn();
   }
 
-  document.getElementById("btnFav").addEventListener("click", toggleFav);
+  const btnFav = document.getElementById("btnFav");
+  if(btnFav) btnFav.addEventListener("click", toggleFav);
 
-  document.getElementById("btnShare").addEventListener("click", async () => {
-    const text = "Olha esse dorama que encontrei no Planeta Dorama: " + nome + " " + pageUrl;
-    if(navigator.share){
-      try{
-        await navigator.share({ title:nome, text, url:pageUrl });
-      }catch(e){}
-    } else if(navigator.clipboard){
-      try{
-        await navigator.clipboard.writeText(pageUrl);
-        alert("Link copiado! ✅");
-      }catch(e){
+  const btnShare = document.getElementById("btnShare");
+  if(btnShare){
+    btnShare.addEventListener("click", async () => {
+      const text = "Olha esse dorama que encontrei no Planeta Dorama: " + nome + " " + pageUrl;
+      if(navigator.share){
+        try{
+          await navigator.share({ title:nome, text, url:pageUrl });
+        }catch(e){}
+      } else if(navigator.clipboard){
+        try{
+          await navigator.clipboard.writeText(pageUrl);
+          alert("Link copiado! ✅");
+        }catch(e){
+          const wa = "https://wa.me/?text=" + encodeURIComponent(text);
+          window.open(wa, "_blank");
+        }
+      } else {
         const wa = "https://wa.me/?text=" + encodeURIComponent(text);
         window.open(wa, "_blank");
       }
-    } else {
-      const wa = "https://wa.me/?text=" + encodeURIComponent(text);
-      window.open(wa, "_blank");
-    }
-  });
+    });
+  }
 
   updateFavBtn();
 </script>
@@ -588,28 +580,33 @@
   }
 
   async function gerarPaginasPremium(){
-    if(!Array.isArray(doramas) || !doramas.length){
-      log("❌ Não encontrei lista de doramas no doramas.js");
-      return;
+    try{
+      if(!Array.isArray(doramas) || !doramas.length){
+        log("❌ Não encontrei lista de doramas no doramas.js");
+        return;
+      }
+
+      log("✅ Lendo " + doramas.length + " doramas...");
+      const zip = new JSZip();
+      const pasta = zip.folder("doramas");
+
+      doramas.forEach(d => {
+        if(!d || !d.nome) return;
+        const slug = d.slug || criarSlug(d.nome);
+        const html = montarHtmlPremium(d, doramas);
+        const nomeArquivo = slug + ".html";
+        pasta.file(nomeArquivo, html);
+        log("✔ Criada página: doramas/" + nomeArquivo);
+      });
+
+      log("\n⏳ Compactando tudo em ZIP...");
+      const blob = await zip.generateAsync({type:"blob"});
+      saveAs(blob, "paginas-doramas-premium.zip");
+      log("🎉 Pronto! ZIP baixado. Extraia e envie os arquivos para a pasta /doramas no GitHub.");
+    }catch(e){
+      log("❌ Erro ao gerar: " + e.message);
+      console.error(e);
     }
-
-    log("✅ Lendo " + doramas.length + " doramas...");
-    const zip = new JSZip();
-    const pasta = zip.folder("doramas");
-
-    doramas.forEach(d => {
-      if(!d || !d.nome) return;
-      const slug = d.slug || criarSlug(d.nome);
-      const html = montarHtmlPremium(d, doramas);
-      const nomeArquivo = slug + ".html";
-      pasta.file(nomeArquivo, html);
-      log("✔ Criada página: doramas/" + nomeArquivo);
-    });
-
-    log("\n⏳ Compactando tudo em ZIP...");
-    const blob = await zip.generateAsync({type:"blob"});
-    saveAs(blob, "paginas-doramas-premium.zip");
-    log("🎉 Pronto! ZIP baixado. Extraia e envie os arquivos para a pasta /doramas no GitHub.");
   }
 </script>
 
