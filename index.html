@@ -331,56 +331,49 @@
     `;
   }
 
-  // ===== LISTA NETFLIX ROMANCE 2026 (HOME) =====
-  function carregarListaNetflixRomance(){
-    const area = document.getElementById("lista-netflix-cards");
-    if (!area || !Array.isArray(doramas)) return;
+ // NOVO: Lista Netflix Romance 2026 (mesmo estilo do Top 5)
+function carregarListaNetflixRomance(){
+  const area = document.getElementById("lista-netflix-cards");
+  if (!area || !Array.isArray(doramas)) return;
 
-    const nomes = [
-      "Pousando no Amor",
-      "Sorriso Real",
-      "Tudo Bem Não Ser Normal",
-      "Vinte e Cinco, Vinte e Um",
-      "Pretendente Surpresa",
-      "Hometown Cha-Cha-Cha",
-      "Advogada Extraordinária"
-    ];
+  const nomes = [
+    "Pousando no Amor",
+    "Sorriso Real",
+    "Tudo Bem Não Ser Normal",
+    "Vinte e Cinco, Vinte e Um",
+    "Pretendente Surpresa",
+    "Hometown Cha-Cha-Cha",
+    "Advogada Extraordinária"
+  ];
 
-    var lista = nomes.map(function(nome){
-      var d = doramas.find(function(x){
-        return (x.nome || "").toLowerCase() === nome.toLowerCase();
-      });
-      if (d) return d;
-      return { nome:nome, imagem:"imagens/capa-padrao.jpg", nota:"", descricao:"" };
+  var lista = nomes.map(function(nome){
+    var d = doramas.find(function(x){
+      return (x.nome || "").toLowerCase() === nome.toLowerCase();
     });
+    if (d) return d;
+    return { nome:nome, imagem:"imagens/capa-padrao.jpg", nota:"", descricao:"" };
+  });
 
-    area.innerHTML = lista.map(function(d){
-      var primeiraFrase = "";
-      if (d.descricao){
-        primeiraFrase = String(d.descricao).split("\n")[0];
-      }
-      var urlNetflix   = "https://www.netflix.com/search?q=" + encodeURIComponent(d.nome);
-      var urlDetalhes  = "dorama.html?nome=" + encodeURIComponent(d.nome);
+  area.innerHTML = lista.map(function(d){
+    var primeiraFrase = "";
+    if (d.descricao){
+      primeiraFrase = String(d.descricao).split("\n")[0];
+    }
+    var urlNetflix  = "https://www.netflix.com/search?q=" + encodeURIComponent(d.nome);
+    var urlDetalhes = "/doramas/" + criarSlug(d.nome) + ".html";
 
-      return `
-        <div class="card click" onclick="window.location.href='${urlDetalhes}'">
-          <img src="${d.imagem}" alt="${d.nome}" loading="lazy">
-          <div>
-            <h3>${d.nome}</h3>
-            <p>${primeiraFrase}</p>
-            <div class="mini">⭐ ${d.nota || ''}</div>
-            <a class="btn-netflix"
-               href="${urlNetflix}"
-               target="_blank"
-               rel="noopener noreferrer"
-               onclick="event.stopPropagation();">
-               Ver na Netflix
-            </a>
-          </div>
-        </div>
-      `;
-    }).join("");
-  }
+    return '' +
+      '<div class="card click small" onclick="window.location.href=\'' + urlDetalhes + '\'">' +
+        '<img src="' + d.imagem + '" alt="' + d.nome + '" loading="lazy">' +
+        '<div>' +
+          '<h3>' + d.nome + '</h3>' +
+          '<p>' + primeiraFrase + '</p>' +
+          '<div class="mini">⭐ ' + (d.nota || '') + '</div>' +
+          '<a class="btn-netflix" href="' + urlNetflix + '" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation();">Ver na Netflix</a>' +
+        '</div>' +
+      '</div>';
+  }).join("");
+}
 
   // ===== BUSCA INTELIGENTE (HOME) =====
   function setupBuscaHome(){
