@@ -1,193 +1,119 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Todos os Doramas 📚 | Planeta Dorama 🌍</title>
-<meta name="description" content="Planeta Dorama 🌍: listas, recomendações, dorama da semana, notícias e um guia completo para você encontrar o dorama perfeito.">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todos os Doramas | Planeta Dorama 🌍</title>
 
-<meta property="og:site_name" content="Planeta Dorama 🌍">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Planeta Dorama 🌍">
-<meta property="og:description" content="Listas, recomendações, dorama da semana e guia completo de doramas.">
-<meta property="og:url" content="https://planetadorama.com.br/">
-<meta property="og:image" content="https://planetadorama.com.br/imagens/og-capa.jpg">
+  <meta name="description" content="Veja todos os doramas cadastrados no Planeta Dorama. Lista completa com nota e imagem.">
 
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Planeta Dorama 🌍">
-<meta name="twitter:description" content="Listas, recomendações e guia completo de doramas.">
-<meta name="twitter:image" content="https://planetadorama.com.br/imagens/og-capa.jpg">
-
-<style>
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #fff0f6;
-    color: #333;
-}
-
-header {
-    background: linear-gradient(90deg, #ff7eb3, #b983ff);
-    padding: 20px;
-    text-align: center;
-    color: white;
-}
-
-header a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-section {
-    padding: 30px 20px 40px;
-}
-
-h2 {
-    text-align: center;
-    color: #b4005a;
-    margin-top: 0;
-}
-
-.cards {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
-
-.card {
-    background: white;
-    width: 260px;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
-}
-.card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-}
-
-.card img {
-    width: 100%;
-    height: 350px;
-    object-fit: cover;
-}
-
-.card div {
-    padding: 15px;
-}
-
-.filtro {
-    text-align: center;
-    margin: 15px 0 25px;
-}
-
-input[type="text"] {
-    padding: 14px 16px;
-    width: min(520px, 92%);
-    border-radius: 10px;
-    border: 1px solid #ccc;
-    font-size: 16px;
-}
-
-button {
-    padding: 14px 18px;
-    margin-left: 8px;
-    background: #ff7eb3;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 16px;
-}
-button:hover {
-    background: #b983ff;
-}
-
-footer {
-    background: #b983ff;
-    color: white;
-    text-align: center;
-    padding: 15px;
-}
-</style>
+  <style>
+    body{
+      margin:0;
+      font-family: Arial, sans-serif;
+      background:#fff0f6;
+      color:#333;
+    }
+    header{
+      background:linear-gradient(90deg,#ff7eb3,#b983ff);
+      padding:20px;
+      color:#fff;
+      text-align:center;
+    }
+    header a{
+      color:#fff;
+      text-decoration:none;
+      font-weight:bold;
+    }
+    main{
+      max-width:1100px;
+      margin:30px auto 40px;
+      padding:0 15px;
+    }
+    h1{
+      text-align:center;
+      color:#b4005a;
+    }
+    .grid{
+      display:grid;
+      grid-template-columns: repeat(auto-fill,minmax(220px,1fr));
+      gap:18px;
+      margin-top:25px;
+    }
+    .card{
+      background:#fff;
+      border-radius:18px;
+      overflow:hidden;
+      box-shadow:0 6px 18px rgba(0,0,0,0.10);
+      cursor:pointer;
+      transition:transform 0.2s ease;
+    }
+    .card:hover{
+      transform:translateY(-4px);
+    }
+    .card img{
+      width:100%;
+      height:280px;
+      object-fit:cover;
+    }
+    .card-conteudo{
+      padding:12px;
+    }
+    .card h3{
+      margin:0 0 6px;
+      font-size:16px;
+      color:#b4005a;
+    }
+    .nota{
+      font-size:14px;
+      font-weight:bold;
+      color:#7a1b55;
+    }
+    footer{
+      background:#b983ff;
+      color:#fff;
+      text-align:center;
+      padding:15px;
+    }
+  </style>
 </head>
-
 <body>
 
 <header>
-    <h1 style="margin:0;">📚 Todos os Doramas</h1>
-    <p style="margin:8px 0 0;">
-        <a href="index.html">⬅ Voltar para a página inicial 🌍</a>
-    </p>
+  <h1>🌍 Planeta Dorama</h1>
+  <p><a href="index.html">⬅ Voltar para a página inicial</a></p>
 </header>
 
-<section>
-    <h2>Explore todos os doramas do Planeta Dorama 🌍</h2>
-
-    <div class="filtro">
-        <input id="busca" type="text" placeholder="Digite um nome… Ex: Goblin, Vincenzo, Reply 1988">
-        <button onclick="filtrar()">Pesquisar</button>
-    </div>
-
-    <div id="todos-doramas" class="cards"></div>
-</section>
+<main>
+  <h1>Todos os Doramas</h1>
+  <div class="grid" id="lista"></div>
+</main>
 
 <footer>
-    <p>💜 Planeta Dorama 🌍 — feito com amor</p>
+  <p>💜 Planeta Dorama 🌍</p>
 </footer>
 
 <script src="doramas.js"></script>
 <script>
-// ✅ NOVO: mesma regra de slug do site
-function criarSlug(nome){
-  return String(nome || "")
-    .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/(^-|-$)/g, "");
-}
+  function carregarTodos(){
+    const container = document.getElementById("lista");
+    if(!Array.isArray(doramas)) return;
 
-function render(lista) {
-  const c = document.getElementById("todos-doramas");
-  c.innerHTML = "";
-
-  lista.forEach(d => {
-    const slug = criarSlug(d.nome);
-
-    c.innerHTML += `
-      <div class="card" onclick="window.location.href='/doramas/${slug}.html'">
-        <img src="${d.imagem}" alt="${d.nome}">
-        <div>
-          <h3>${d.nome}</h3>
-          <p>${(d.descricao || "").replaceAll("\n","<br>")}</p>
-          <p>⭐ ${d.nota || ""}</p>
+    container.innerHTML = doramas.map(d => {
+      const url = "doramas/" + d.slug + ".html";
+      return `
+        <div class="card" onclick="window.location.href='${url}'">
+          <img src="${d.imagem}" alt="${d.nome}" loading="lazy">
+          <div class="card-conteudo">
+            <h3>${d.nome}</h3>
+            <div class="nota">⭐ ${d.nota || ""}</div>
+          </div>
         </div>
-      </div>
-    `;
-  });
-}
+      `;
+    }).join("");
+  }
 
-function filtrar() {
-  const texto = (document.getElementById("busca").value || "").toLowerCase().trim();
-  if (!texto) return render(doramas);
-
-  const filtrados = doramas.filter(d =>
-    (d.nome || "").toLowerCase().includes(texto)
-  );
-
-  render(filtrados);
-}
-
-document.getElementById("busca").addEventListener("keydown", (e) => {
-  if (e.key === "Enter") filtrar();
-});
-
-render(doramas);
+  window.onload = carregarTodos;
 </script>
 
 </body>
