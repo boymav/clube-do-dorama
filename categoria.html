@@ -5,7 +5,7 @@
   <title>Categoria | Planeta Dorama 🌍</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Explore doramas por emoção: românticos, tristes, intensos e leves no Planeta Dorama.">
+  <meta name="description" content="Veja doramas separados por emoção: românticos, tristes, intensos e leves.">
 
   <style>
     body{
@@ -61,7 +61,7 @@
       box-shadow: 0 8px 20px rgba(0,0,0,0.15);
     }
 
-    .card img{
+    .card img {
       width: 100%;
       height: 320px;
       object-fit: cover;
@@ -103,6 +103,7 @@
       color:#fff;
       text-align:center;
       padding:15px;
+      font-size:14px;
     }
   </style>
 </head>
@@ -120,7 +121,7 @@
 
 <script src="doramas.js"></script>
 <script>
-  // mesma lógica de slug usada na home
+  // mesmo slug da home
   function criarSlug(nome){
     return String(nome || "")
       .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
@@ -180,14 +181,10 @@
 
     const tipoNormalizado = String(tipo).toLowerCase().trim();
 
+    // pega só doramas com essa tag
     const filtrados = doramas
-      .filter(function(d){
-        if(!Array.isArray(d.tags)) return false;
-        return d.tags.some(function(tag){
-          return String(tag).toLowerCase().trim() === tipoNormalizado;
-        });
-      })
-      .slice(0, 30); // até 30, se quiser aumentar as listas no futuro
+      .filter(d => Array.isArray(d.tags) && d.tags.some(tag => String(tag).toLowerCase().trim() === tipoNormalizado))
+      .slice(0, 10); // 👈 AQUI: só 10 doramas
 
     if(filtrados.length === 0){
       container.innerHTML = '<p class="msg-vazia">Nenhum dorama encontrado nessa categoria ainda.</p>';
@@ -196,7 +193,6 @@
 
     container.innerHTML = filtrados.map(criarCard).join("");
 
-    // ajusta o título da aba
     document.title = nomeBonito(tipo) + " | Planeta Dorama 🌍";
   }
 
