@@ -1,61 +1,115 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>W: Two Worlds | Planeta Dorama 🌍</title>
-  <meta name="description" content="Dois mundos se conectam através de um webtoon.">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>W: Two Worlds – Sinopse, Resumo e Trailer | Planeta Dorama</title>
+  <meta name="description" content="Dois mundos se conectam através de um webtoon.
+Realidade e ficção se misturam.
+Romance cheio de ação.">
+  <link rel="canonical" href="https://planetadorama.com.br/doramas/w-two-worlds.html">
+  <meta name="robots" content="index,follow">
 
-  <meta property="og:site_name" content="Planeta Dorama 🌍">
-  <meta property="og:type" content="article">
-  <meta property="og:title" content="W: Two Worlds | Planeta Dorama 🌍">
-  <meta property="og:description" content="Dois mundos se conectam através de um webtoon.">
+  <meta property="og:title" content="W: Two Worlds | Planeta Dorama">
+  <meta property="og:description" content="Dois mundos se conectam através de um webtoon.
+Realidade e ficção se misturam.
+Romance cheio de ação.">
   <meta property="og:url" content="https://planetadorama.com.br/doramas/w-two-worlds.html">
+  <meta property="og:type" content="website">
   <meta property="og:image" content="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/w%20two%20words.webp">
 
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="W: Two Worlds | Planeta Dorama 🌍">
-  <meta name="twitter:description" content="Dois mundos se conectam através de um webtoon.">
-  <meta name="twitter:image" content="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/w%20two%20words.webp">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"TVSeries","name":"W: Two Worlds","url":"https://planetadorama.com.br/doramas/w-two-worlds.html","image":"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/w%20two%20words.webp","aggregateRating":{"@type":"AggregateRating","ratingValue":"8.7","ratingCount":"100"}}</script>
 
   <style>
     :root{
       --rosa:#ff7eb3;
       --roxo:#b983ff;
-      --texto:#333;
+
+      /* meio-termo: fundo mais “cinema”, mas ainda fofo */
+      --bgA:#140a16;
+      --bgB:#1b0f22;
+      --card:#ffffff;
+      --text:#333;
+      --muted:#555;
+
+      --shadow: 0 14px 35px rgba(0,0,0,0.22);
+      --shadow2: 0 18px 55px rgba(0,0,0,0.28);
+
+      --radius:18px;
     }
+
+    *{box-sizing:border-box}
     body{
       margin:0;
-      font-family: Arial, sans-serif;
-      background:#fff0f6;
-      color:var(--texto);
-    }
-    header{
-      background:linear-gradient(90deg,var(--rosa),var(--roxo));
+      font-family: Arial, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      background:
+        radial-gradient(900px 500px at 15% 8%, rgba(255,126,179,0.20), transparent 60%),
+        radial-gradient(900px 500px at 85% 15%, rgba(185,131,255,0.20), transparent 55%),
+        linear-gradient(135deg, var(--bgA), var(--bgB));
       color:#fff;
-      text-align:center;
-      padding:20px;
     }
-    header a{
-      color:#fff;
-      text-decoration:none;
-      font-weight:bold;
-      display:inline-block;
-      margin-top:8px;
+    a{color:inherit}
+
+    .topbar{max-width:1100px;margin:0 auto;padding:14px 14px 0}
+    .back{
+      display:inline-flex;gap:8px;align-items:center;text-decoration:none;font-weight:bold;
+      color: rgba(255,255,255,0.90);
     }
-    .container{
-      max-width:1100px;
-      margin:20px auto 40px;
-      padding:0 16px;
-    }
+    .back:hover{opacity:.9}
+
+    /* HERO premium (mas com cores da home) */
     .hero{
-      background:#fff;
-      border-radius:20px;
-      box-shadow:0 10px 25px rgba(0,0,0,0.12);
+      position:relative;
+      max-width:1100px;
+      margin:12px auto 0;
+      border-radius:24px;
       overflow:hidden;
+      box-shadow: var(--shadow2);
+      background: linear-gradient(90deg, rgba(255,126,179,0.95), rgba(185,131,255,0.95));
+    }
+    .hero::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background-image: var(--bgimg);
+      background-size: cover;
+      background-position: center;
+      filter: blur(28px) saturate(1.2);
+      transform: scale(1.2);
+      opacity:.35;
+    }
+    .hero::after{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:
+        linear-gradient(90deg,
+          rgba(20,0,20,0.65) 0%,
+          rgba(20,0,20,0.35) 55%,
+          rgba(20,0,20,0.08) 100%
+        );
+    }
+
+    .hero-inner{
+      position:relative;
+      z-index:1;
+      padding:18px;
       display:grid;
-      grid-template-columns: 320px 1fr;
-      gap:20px;
+      grid-template-columns: 230px 1fr;
+      gap:16px;
+      align-items:center;
+      color:#fff;
+    }
+
+    /* Poster maior */
+    .poster{
+      width:230px;
+      aspect-ratio:2/3;
+      border-radius: var(--radius);
+      overflow:hidden;
+      background: rgba(255,255,255,0.14);
+      border: 1px solid rgba(255,255,255,0.25);
+      box-shadow: 0 18px 45px rgba(0,0,0,0.35);
     }
     .poster img{
       width:100%;
@@ -63,126 +117,342 @@
       object-fit:cover;
       display:block;
     }
-    .poster{
-      height:100%;
-      max-height:460px;
-      overflow:hidden;
+
+    h1{margin:0 0 10px;font-size:26px;line-height:1.15}
+    .meta{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:10px}
+    .pill{
+      display:inline-flex;align-items:center;gap:6px;
+      padding:8px 10px;border-radius:999px;
+      background: rgba(255,255,255,0.18);
+      border: 1px solid rgba(255,255,255,0.24);
+      font-size:13px;font-weight:bold;
+      backdrop-filter: blur(6px);
     }
-    .hero-text{
-      padding:18px 18px 18px 0;
-    }
-    .hero-text h1{
-      margin:0 0 10px;
-      font-size:28px;
-      color:#b4005a;
-    }
-    .chips{
-      margin-bottom:10px;
-    }
-    .chip{
+    .stars{letter-spacing:1px;opacity:.95}
+
+    .tags{margin-top:6px}
+    .tag{
       display:inline-block;
-      background:#ffe6f4;
-      color:#b4005a;
-      padding:6px 10px;
+      padding:7px 10px;
       border-radius:999px;
-      font-size:13px;
-      margin:4px 6px 0 0;
-      font-weight:bold;
-    }
-    .nota{
-      margin-top:8px;
-      font-size:15px;
-      color:#7a1b55;
-      font-weight:bold;
-    }
-    .bloco{
-      margin-top:24px;
-      background:#fff;
-      padding:18px;
-      border-radius:18px;
-      box-shadow:0 6px 16px rgba(0,0,0,0.08);
-    }
-    .bloco h2{
-      margin:0 0 10px;
-      color:#b4005a;
-      font-size:20px;
-    }
-    .bloco p{
-      margin:0;
-      line-height:1.7;
-      font-size:16px;
-    }
-    .video-wrap{
-      margin-top:10px;
-      aspect-ratio:16/9;
-      border-radius:16px;
-      overflow:hidden;
-      border:2px solid rgba(255,126,179,0.6);
-    }
-    .video-wrap iframe{
-      width:100%;
-      height:100%;
-      border:0;
-    }
-    footer{
-      text-align:center;
-      padding:15px;
-      background:#b983ff;
+      background: rgba(255,255,255,0.16);
+      border: 1px solid rgba(255,255,255,0.22);
+      margin:8px 8px 0 0;
+      font-size:12px;
       color:#fff;
-      font-size:14px;
+      font-weight:bold;
+      backdrop-filter: blur(6px);
     }
-    footer a{ color:#fff; text-decoration:underline; }
-    @media(max-width:800px){
-      .hero{
-        grid-template-columns:1fr;
-      }
-      .hero-text{
-        padding:16px;
-      }
+
+    .desc{
+      margin:10px 0 0;
+      color: rgba(255,255,255,0.92);
+      line-height:1.55;
+      font-size:14px;
+      max-width:70ch;
+    }
+
+    .actions{margin-top:14px;display:flex;flex-wrap:wrap;gap:10px}
+
+    /* Botões streaming + vibe home */
+    .btn{
+      display:inline-flex;align-items:center;justify-content:center;gap:8px;
+      padding:11px 14px;border-radius:14px;
+      text-decoration:none;font-weight:bold;
+      border:1px solid rgba(255,255,255,0.22);
+      background: rgba(255,255,255,0.14);
+      color:#fff;
+      cursor:pointer;
+      backdrop-filter: blur(8px);
+    }
+    .btn:hover{background: rgba(255,255,255,0.20)}
+    .btn-primary{
+      background: rgba(255,255,255,0.92);
+      color:#7a1b55;
+      border-color: rgba(255,255,255,0.92);
+      box-shadow: 0 10px 24px rgba(0,0,0,0.18);
+    }
+    .btn-primary:hover{filter:brightness(1.03)}
+    .btn-fav.on{
+      background: rgba(255,255,255,0.92);
+      color:#7a1b55;
+      border-color: rgba(255,255,255,0.92);
+    }
+
+    /* Conteúdo em cards brancos (vibe home) */
+    .wrap{max-width:1100px;margin:16px auto 60px;padding:0 14px}
+    .section{
+      background: var(--card);
+      color: var(--text);
+      border:1px solid rgba(0,0,0,0.06);
+      border-radius:22px;
+      padding:16px;
+      box-shadow: var(--shadow);
+    }
+    .h2{margin:0 0 10px;font-size:18px;color:#b4005a}
+    .text{color: var(--muted);line-height:1.8;font-size:15px;margin:0}
+
+    /* Trailer bonito (premium) */
+    .trailer{margin-top:14px}
+    .video{
+      position:relative;
+      width:100%;
+      padding-top:56.25%;
+      border-radius:18px;
+      overflow:hidden;
+      border:2px solid rgba(255,126,179,0.55);
+      box-shadow: 0 18px 45px rgba(0,0,0,0.22);
+      background:#000;
+    }
+    .video::after{
+      content:"";
+      position:absolute;
+      inset:0;
+      pointer-events:none;
+      background: radial-gradient(circle at 15% 10%, rgba(255,126,179,0.20), transparent 55%),
+                  radial-gradient(circle at 85% 10%, rgba(185,131,255,0.20), transparent 55%);
+    }
+    .video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+    .hint{margin-top:10px;color:#7a1b55;font-size:13px;opacity:.85}
+
+    /* Recomendados: carrossel com toque “Netflix”, mas leve */
+    .row{margin-top:16px}
+    .row-head{display:flex;align-items:end;justify-content:space-between;gap:10px;margin-bottom:10px}
+    .row-head small{color: rgba(255,255,255,0.75)}
+    .rec-scroller{
+      display:flex;gap:12px;overflow:auto;padding-bottom:6px;
+      scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;
+    }
+    .rec-card{
+      flex:0 0 150px;
+      scroll-snap-align:start;
+      text-decoration:none;
+      border-radius:14px;
+      overflow:hidden;
+      background: rgba(255,255,255,0.10);
+      border:1px solid rgba(255,255,255,0.14);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.18);
+      transition: transform .18s ease, box-shadow .18s ease;
+      backdrop-filter: blur(8px);
+    }
+    .rec-card:hover{
+      transform: translateY(-6px);
+      box-shadow: 0 18px 40px rgba(0,0,0,0.26);
+    }
+    .rec-card img{
+      width:100%;
+      height:205px;
+      object-fit:cover;
+      display:block;
+      filter: saturate(1.05);
+    }
+    .rec-title{
+      padding:8px 10px;
+      font-size:12px;
+      color: rgba(255,255,255,0.92);
+      line-height:1.25;
+      min-height:40px;
+      font-weight:bold;
+    }
+
+    footer{
+      max-width:1100px;
+      margin:40px auto 26px;
+      padding:0 14px;
+      color: rgba(255,255,255,0.70);
+      text-align:center;
+      font-size:13px;
+      opacity:.9;
+    }
+
+    /* Desktop */
+    @media (min-width: 860px){
+      .hero-inner{padding:22px; grid-template-columns: 340px 1fr; gap:22px;}
+      .poster{width:340px;}
+      h1{font-size:38px;}
+      .section{padding:20px;}
+      .rec-card{flex-basis: 210px;}
+      .rec-card img{height:280px;}
+      .rec-title{font-size:13px;}
     }
   </style>
 </head>
+
 <body>
+  <div class="topbar">
+    <a class="back" href="https://planetadorama.com.br/">← Voltar para Planeta Dorama</a>
+  </div>
 
-<header>
-  <h1>🌍 Planeta Dorama</h1>
-  <a href="../index.html">⬅ Voltar para a página inicial</a>
-</header>
-
-<div class="container">
-  <section class="hero">
-    <div class="poster">
-      <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/w%20two%20words.webp" alt="W: Two Worlds">
-    </div>
-    <div class="hero-text">
-      <h1>W: Two Worlds</h1>
-      <div class="chips">
-        
-        
-        
+  <section class="hero" style="--bgimg:url('https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/w%20two%20words.webp')">
+    <div class="hero-inner">
+      <div class="poster">
+        <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/w%20two%20words.webp" alt="Pôster do dorama W: Two Worlds" loading="lazy">
       </div>
-      <div class="nota">⭐ 8.7/10 – MyDramaList</div>
-      <div class="bloco" style="margin-top:16px;">
-        <h2>Sobre o dorama</h2>
-        <p>Oh Yeon Joo é uma médica cujo pai é autor de um famoso webtoon.<br>Um dia, ela é misteriosamente puxada para dentro da história.<br><br>Lá ela conhece Kang Chul,<br>o protagonista do quadrinho.<br><br>Os dois tentam entender como os mundos real e fictício se conectam.<br><br>Enquanto enfrentam perigos,<br>o romance cresce entre eles.<br><br>Mistura ação,<br>mistério e fantasia de forma intensa.<br><br>É um dorama criativo e cheio de reviravoltas.</p>
+
+      <div>
+        <h1 id="nome">W: Two Worlds</h1>
+
+        <div class="meta">
+          <span class="pill">⭐ 8.7/10 – MyDramaList</span>
+          <span class="pill"><span class="stars">★★★★✩</span></span>
+        </div>
+
+        <div class="tags"><span class="tag">romance</span><span class="tag">fantasia</span><span class="tag">intenso</span></div>
+
+        <p class="desc">Dois mundos se conectam através de um webtoon.<br>Realidade e ficção se misturam.<br>Romance cheio de ação.</p>
+
+        <div class="actions">
+          <a class="btn btn-primary" href="#trailer">▶ Trailer</a>
+          <button class="btn btn-fav" id="btnFav" type="button">🤍 Favoritar</button>
+          <button class="btn" id="btnShare" type="button">🔗 Compartilhar</button>
+          <a class="btn" href="https://planetadorama.com.br/todos.html">📚 Todos os doramas</a>
+        </div>
       </div>
     </div>
   </section>
 
-  
-      <section class="bloco">
-        <h2>🎬 Trailer</h2>
-        <div class="video-wrap">
-          <iframe src="https://www.youtube.com/embed/iFyUFFcGd9k" allowfullscreen loading="lazy"></iframe>
+  <div class="wrap">
+    <section class="section">
+      <h2 class="h2">Resumo</h2><p class="text">Oh Yeon Joo é uma médica cujo pai é autor de um famoso webtoon.<br>Um dia, ela é misteriosamente puxada para dentro da história.<br><br>Lá ela conhece Kang Chul,<br>o protagonista do quadrinho.<br><br>Os dois tentam entender como os mundos real e fictício se conectam.<br><br>Enquanto enfrentam perigos,<br>o romance cresce entre eles.<br><br>Mistura ação,<br>mistério e fantasia de forma intensa.<br><br>É um dorama criativo e cheio de reviravoltas.</p>
+
+      
+        <div class="trailer" id="trailer">
+          <h2 class="h2">Trailer</h2>
+          <div class="video">
+            <iframe src="https://www.youtube.com/embed/iFyUFFcGd9k" title="Trailer W: Two Worlds" allowfullscreen></iframe>
+          </div>
+          <div class="hint">Se aparecer “vídeo indisponível”, é o próprio YouTube bloqueando o trailer.</div>
         </div>
-      </section>
-    
-</div>
+      
+    </section>
 
-<footer>
-  <p>💜 Planeta Dorama 🌍 — feito com amor</p>
-  <p><a href="../index.html">Voltar para o início</a></p>
-</footer>
+    <section class="row">
+      <div class="row-head">
+        <h2 class="h2" style="margin:0; color:#fff;">Recomendados</h2>
+        <small>arraste para o lado →</small>
+      </div>
+      <div class="rec-scroller">
+        
+        <a class="rec-card" href="https://planetadorama.com.br/doramas/while-you-were-sleeping.html" title="While You Were Sleeping">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/whire%20you%20we%20sleeping.webp" alt="While You Were Sleeping" loading="lazy">
+          <div class="rec-title">While You Were Sleeping</div>
+        </a>
+      
+        <a class="rec-card" href="https://planetadorama.com.br/doramas/the-king-eternal-monarch.html" title="The King: Eternal Monarch">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/the%20king%20eternalllll.jpg" alt="The King: Eternal Monarch" loading="lazy">
+          <div class="rec-title">The King: Eternal Monarch</div>
+        </a>
+      
+        <a class="rec-card" href="https://planetadorama.com.br/doramas/alchemy-of-souls.html" title="Alchemy of Souls">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/alchemy%20of%20souls.webp" alt="Alchemy of Souls" loading="lazy">
+          <div class="rec-title">Alchemy of Souls</div>
+        </a>
+      
+        <a class="rec-card" href="https://planetadorama.com.br/doramas/crash-landing-on-you.html" title="Crash Landing on You">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/crash-landing.jpg" alt="Crash Landing on You" loading="lazy">
+          <div class="rec-title">Crash Landing on You</div>
+        </a>
+      
+        <a class="rec-card" href="https://planetadorama.com.br/doramas/goblin.html" title="Goblin">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/Goblin.jpg" alt="Goblin" loading="lazy">
+          <div class="rec-title">Goblin</div>
+        </a>
+      
+        <a class="rec-card" href="https://planetadorama.com.br/doramas/its-okay-to-not-be-okay.html" title="Its Okay to Not Be Okay">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/its%20ok%20do%20not%20be%20ok.jpg" alt="Its Okay to Not Be Okay" loading="lazy">
+          <div class="rec-title">Its Okay to Not Be Okay</div>
+        </a>
+      
+        <a class="rec-card" href="https://planetadorama.com.br/doramas/itaewon-class.html" title="Itaewon Class">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/itaewon%20class.webp" alt="Itaewon Class" loading="lazy">
+          <div class="rec-title">Itaewon Class</div>
+        </a>
+      
+        <a class="rec-card" href="https://planetadorama.com.br/doramas/hotel-del-luna.html" title="Hotel Del Luna">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/hotel%20del%20luna.jpg" alt="Hotel Del Luna" loading="lazy">
+          <div class="rec-title">Hotel Del Luna</div>
+        </a>
+      
+        <a class="rec-card" href="https://planetadorama.com.br/doramas/descendants-of-the-sun.html" title="Descendants of the Sun">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/Descendants%20of%20the%20Sun.jpg" alt="Descendants of the Sun" loading="lazy">
+          <div class="rec-title">Descendants of the Sun</div>
+        </a>
+      
+        <a class="rec-card" href="https://planetadorama.com.br/doramas/my-love-from-the-star.html" title="My Love from the Star">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/You_Who_Came_From_the_Stars_Cover.jpg" alt="My Love from the Star" loading="lazy">
+          <div class="rec-title">My Love from the Star</div>
+        </a>
+      
+        <a class="rec-card" href="https://planetadorama.com.br/doramas/moon-lovers-scarlet-heart-ryeo.html" title="Moon Lovers: Scarlet Heart Ryeo">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/moon%20lovers%201.webp" alt="Moon Lovers: Scarlet Heart Ryeo" loading="lazy">
+          <div class="rec-title">Moon Lovers: Scarlet Heart Ryeo</div>
+        </a>
+      
+        <a class="rec-card" href="https://planetadorama.com.br/doramas/start-up.html" title="Start-Up">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/start%20up.jpg" alt="Start-Up" loading="lazy">
+          <div class="rec-title">Start-Up</div>
+        </a>
+      
+      </div>
+    </section>
+  </div>
 
+  <footer>© 2026 Planeta Dorama</footer>
+
+  <script>
+    const FAV_KEY = "pd_favoritos_v1";
+    const nome = "W: Two Worlds";
+    const pageUrl = "https://planetadorama.com.br/doramas/w-two-worlds.html";
+
+    function getFav(){
+      try { return JSON.parse(localStorage.getItem(FAV_KEY) || "[]"); }
+      catch(e){ return []; }
+    }
+    function setFav(list){
+      localStorage.setItem(FAV_KEY, JSON.stringify(list));
+    }
+    function isFav(){
+      return getFav().includes(nome);
+    }
+    function toggleFav(){
+      let list = getFav();
+      if(list.includes(nome)){
+        list = list.filter(n => n !== nome);
+      }else{
+        list.push(nome);
+      }
+      setFav(list);
+      return list.includes(nome);
+    }
+    function updateFavBtn(){
+      const btn = document.getElementById("btnFav");
+      if(!btn) return;
+      const on = isFav();
+      btn.textContent = on ? "💜 Favoritado" : "🤍 Favoritar";
+      btn.classList.toggle("on", on);
+    }
+
+    document.getElementById("btnFav")?.addEventListener("click", () => {
+      toggleFav();
+      updateFavBtn();
+    });
+
+    document.getElementById("btnShare")?.addEventListener("click", async () => {
+      const text = "🎬 Dorama: " + nome + "\nVeja aqui: " + pageUrl;
+      if (navigator.share) {
+        try { await navigator.share({ title: nome, text, url: pageUrl }); } catch(e){}
+      } else {
+        try {
+          await navigator.clipboard.writeText(pageUrl);
+          alert("Link copiado! ✅");
+        } catch(e) {
+          const wa = "https://wa.me/?text=" + encodeURIComponent(text);
+          window.open(wa, "_blank");
+        }
+      }
+    });
+
+    updateFavBtn();
+  </script>
 </body>
 </html>
