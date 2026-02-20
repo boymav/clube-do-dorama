@@ -1242,49 +1242,98 @@ Eles precisam redescobrir sentimentos.
 Romântico e muito emocionante.`
 },
 {
-  nome: "Pousando no Amor",
-  imagem: "imagens/pousando-no-amor.jpg",
-  nota: "9.7",
-  tipo: "romance",
-  descricao: "Uma empresária sul-coreana sofre um acidente e cai na Coreia do Norte, onde conhece um oficial do exército que muda completamente sua vida."
-},
-{
-  nome: "Sorriso Real",
-  imagem: "imagens/sorriso-real.jpg",
-  nota: "9.2",
-  tipo: "romance",
-  descricao: "Um herdeiro sério e uma funcionária simpática se aproximam dentro de um hotel de luxo, em uma comédia romântica leve e envolvente."
-},
-{
-  nome: "Tudo Bem Não Ser Normal",
-  imagem: "imagens/tudo-bem-nao-ser-normal.jpg",
-  nota: "9.5",
-  tipo: "romance",
-  descricao: "Um cuidador de pacientes psiquiátricos e uma escritora de livros infantis se conectam enquanto enfrentam traumas do passado."
-},
-{
-  nome: "Vinte e Cinco, Vinte e Um",
-  imagem: "imagens/vinte-e-cinco-vinte-e-um.jpg",
-  nota: "9.3",
-  tipo: "romance",
-  descricao: "Dois jovens se conhecem durante tempos difíceis e desenvolvem uma relação intensa marcada por sonhos e amadurecimento."
-},
-{
-  nome: "Pretendente Surpresa",
-  imagem: "imagens/pretendente-surpresa.jpg",
-  nota: "9.1",
-  tipo: "romance",
-  descricao: "Uma funcionária vai a um encontro às cegas no lugar da amiga e descobre que o pretendente é o CEO da empresa onde trabalha."
-},
-{
-  nome: "Advogada Extraordinária",
-  imagem: "imagens/advogada-extraordinaria.jpg",
-  nota: "9.6",
-  tipo: "romance",
-  descricao: "Uma advogada brilhante com autismo enfrenta desafios profissionais e vive uma história de amor delicada e especial."
+    nome:"Pousando no Amor",
+    tags:["romance","intenso"],
+    nota:"9.0/10 – MyDramaList",
+    descricao:"Uma herdeira sul-coreana cai acidentalmente na Coreia do Norte.\nLá ela conhece um oficial do exército e nasce um romance proibido.",
+    imagem:"https://planetadorama.com.br/imagens/pousando-no-amor.jpg",
+    trailer:"",
+    resumo:`Yoon Se Ri é uma rica empresária da Coreia do Sul.
+Durante um acidente de parapente, ela cai na Coreia do Norte.
+Lá, é salva pelo oficial Ri Jeong Hyeok.
+Eles tentam mantê-la em segredo enquanto ela procura uma forma de voltar.
+No meio do perigo e das diferenças políticas, os dois acabam se apaixonando.
+É um dorama de romance intenso, com muita emoção e cenas de tirar o fôlego.`
+  },
+  {
+    nome:"Sorriso Real",
+    tags:["romance","alegre"],
+    nota:"8.7/10 – MyDramaList",
+    descricao:"Um herdeiro de hotel e uma funcionária cheia de energia vivem um romance fofo no meio de mal-entendidos e contratos.",
+    imagem:"https://planetadorama.com.br/imagens/sorriso-real.jpg",
+    trailer:"",
+    resumo:`Cheon Sa Rang trabalha em um hotel de luxo e ama o que faz.
+Ela conhece Gu Won, um herdeiro frio e sério.
+Os dois começam brigando por tudo, mas aos poucos o clima muda.
+O dorama é cheio de cenas fofas, humor e muita química.
+Perfeito pra quem gosta de romances leves e divertidos.`
+  },
+  {
+    nome:"Tudo Bem Não Ser Normal",
+    tags:["romance","intenso","triste"],
+    nota:"9.0/10 – MyDramaList",
+    descricao:"Um cuidador de enfermaria psiquiátrica e uma escritora de livros infantis com traumas profundos se curam juntos.",
+    imagem:"https://planetadorama.com.br/imagens/tudo-bem-nao-ser-normal.jpg",
+    trailer:"",
+    resumo:`Moon Gang Tae trabalha em um hospital psiquiátrico.
+Ele sempre cuidou sozinho do irmão mais velho.
+Ko Moon Young é uma escritora famosa, talentosa e cheia de traumas.
+Os dois têm cicatrizes emocionais diferentes, mas acabam se aproximando.
+É um dorama sobre cura, traumas, família e amor verdadeiro.`
+  },
+  {
+    nome:"Vinte e Cinco, Vinte e Um",
+    tags:["romance","triste"],
+    nota:"8.9/10 – MyDramaList",
+    descricao:"Um romance juvenil entre uma esgrimista cheia de sonhos e um jovem que perdeu tudo por causa de uma crise financeira.",
+    imagem:"https://planetadorama.com.br/imagens/vinte-e-cinco-vinte-e-um.jpg",
+    trailer:"",
+    resumo:`Na Hee Do é uma esgrimista determinada.
+Baek Yi Jin é um jovem que viu a família perder tudo.
+Eles se conhecem na juventude e criam uma ligação muito forte.
+O dorama mostra amizade, sonhos, amadurecimento e um amor marcante.
+É emocionante e mexe muito com a nostalgia.`
+  },
+  {
+    nome:"Pretendente Surpresa",
+    tags:["romance","comedia","alegre"],
+    nota:"8.8/10 – MyDramaList",
+    descricao:"Uma jovem vai a um encontro às cegas no lugar da amiga e descobre que o pretendente é o CEO da empresa onde trabalha.",
+    imagem:"https://planetadorama.com.br/imagens/pretendente-surpresa.jpg",
+    trailer:"",
+    resumo:`Shin Ha Ri aceita substituir a amiga em um encontro às cegas.
+Ela faz de tudo para estragar o encontro, mas dá errado.
+O homem é Kang Tae Moo, o CEO da empresa onde ela trabalha.
+Ele decide que quer se casar com a “moça do encontro”.
+O resultado é um romance cheio de confusões, humor e cenas icônicas.`
+  },
+  {
+    nome:"Advogada Extraordinária",
+    tags:["romance","alegre","emocionante"],
+    nota:"9.0/10 – MyDramaList",
+    descricao:"Uma jovem advogada autista com QI altíssimo enfrenta preconceitos e mostra todo o seu talento nos tribunais.",
+    imagem:"https://planetadorama.com.br/imagens/advogada-extraordinaria.jpg",
+    trailer:"",
+    resumo:`Woo Young Woo é uma advogada genial e autista.
+Ela tem memória impressionante e grande talento para resolver casos.
+No escritório, sofre preconceito, mas também encontra pessoas que a apoiam.
+O dorama mostra inclusão, empatia e um romance muito fofo.
+É sensível, inspirador e cheio de casos interessantes.`
+  },
+  {
+    nome:"Hometown Cha-Cha-Cha",
+    tags:["romance","alegre"],
+    nota:"8.9/10 – MyDramaList",
+    descricao:"Uma dentista da cidade grande se muda para um vilarejo costeiro e conhece um faz-tudo carismático.",
+    imagem:"https://planetadorama.com.br/imagens/hometown-cha-cha-cha.jpg",
+    trailer:"",
+    resumo:`Yoon Hye Jin é uma dentista muito direta e sincera.
+Depois de problemas na cidade grande, ela se muda para uma vila à beira-mar.
+Lá conhece Hong Du Sik, um homem que ajuda todo mundo na vila.
+No começo, eles batem bastante de frente.
+Com o tempo, nasce um romance leve, acolhedor e cheio de momentos engraçados.
+É um dorama perfeito pra quem quer algo quentinho pro coração.`
 }
-
-
 ];
 function criarSlug(nome) {
   return nome
