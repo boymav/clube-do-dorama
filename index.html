@@ -287,46 +287,51 @@
     return parseFloat(m[0].replace(",", "."));
   }
 
-  // Top 5
+  // ===== TOP 5 =====
   function carregarTop5(){
     const area = document.getElementById("top5-cards");
     if(!area || !Array.isArray(doramas)) return;
 
     const top = [...doramas]
-      .map(function(d){ return Object.assign({}, d, { _notaNum: parseNota(d.nota) }); })
-      .sort(function(a,b){ return b._notaNum - a._notaNum; })
+      .map(d => Object.assign({}, d, { _notaNum: parseNota(d.nota) }))
+      .sort((a,b) => b._notaNum - a._notaNum)
       .slice(0, 5);
 
-    area.innerHTML = top.map(function(d){
-      return '' +
-      '<div class="card click small" onclick="window.location.href=\'/doramas/' + criarSlug(d.nome) + '.html\'">' +
-        '<img src="' + d.imagem + '" alt="' + d.nome + '" loading="lazy">' +
-        '<div>' +
-          '<h3>' + d.nome + '</h3>' +
-          '<div class="mini">⭐ ' + (d.nota || '') + '</div>' +
-        '</div>' +
-      '</div>';
+    area.innerHTML = top.map(d => {
+      const url = "dorama.html?nome=" + encodeURIComponent(d.nome);
+      return `
+        <div class="card click small" onclick="window.location.href='${url}'">
+          <img src="${d.imagem}" alt="${d.nome}" loading="lazy">
+          <div>
+            <h3>${d.nome}</h3>
+            <div class="mini">⭐ ${d.nota || ''}</div>
+          </div>
+        </div>
+      `;
     }).join("");
   }
 
-  // Dorama da Semana
+  // ===== DORAMA DA SEMANA =====
   function carregarDoramaDaSemana() {
     const area = document.getElementById("dorama-semana");
     if (!area || !Array.isArray(doramas) || doramas.length === 0) return;
 
     const escolhido = doramas[Math.floor(Math.random() * doramas.length)];
-    area.innerHTML =
-      '<div class="card click" onclick="window.location.href=\'/doramas/' + criarSlug(escolhido.nome) + '.html\'">' +
-        '<img src="' + escolhido.imagem + '" alt="' + escolhido.nome + '" loading="lazy">' +
-        '<div>' +
-          '<h3>' + escolhido.nome + '</h3>' +
-          '<p>' + (String(escolhido.descricao || "").replace(/\n/g,"<br>")) + '</p>' +
-          '<div class="mini">⭐ ' + (escolhido.nota || '') + '</div>' +
-        '</div>' +
-      '</div>';
+    const url = "dorama.html?nome=" + encodeURIComponent(escolhido.nome);
+
+    area.innerHTML = `
+      <div class="card click" onclick="window.location.href='${url}'">
+        <img src="${escolhido.imagem}" alt="${escolhido.nome}" loading="lazy">
+        <div>
+          <h3>${escolhido.nome}</h3>
+          <p>${String(escolhido.descricao || "").replace(/\n/g,"<br>")}</p>
+          <div class="mini">⭐ ${escolhido.nota || ""}</div>
+        </div>
+      </div>
+    `;
   }
 
-  // NOVO: Lista Netflix Romance 2026
+  // ===== LISTA NETFLIX ROMANCE 2026 (HOME) =====
   function carregarListaNetflixRomance(){
     const area = document.getElementById("lista-netflix-cards");
     if (!area || !Array.isArray(doramas)) return;
@@ -354,21 +359,30 @@
       if (d.descricao){
         primeiraFrase = String(d.descricao).split("\n")[0];
       }
-      var urlNetflix = "https://www.netflix.com/search?q=" + encodeURIComponent(d.nome);
-      return '' +
-      '<div class="card">' +
-        '<img src="' + d.imagem + '" alt="' + d.nome + '" loading="lazy">' +
-        '<div>' +
-          '<h3>' + d.nome + '</h3>' +
-          '<p>' + primeiraFrase + '</p>' +
-          '<div class="mini">⭐ ' + (d.nota || '') + '</div>' +
-          '<a class="btn-netflix" href="' + urlNetflix + '" target="_blank" rel="noopener noreferrer">Ver na Netflix</a>' +
-        '</div>' +
-      '</div>';
+      var urlNetflix   = "https://www.netflix.com/search?q=" + encodeURIComponent(d.nome);
+      var urlDetalhes  = "dorama.html?nome=" + encodeURIComponent(d.nome);
+
+      return `
+        <div class="card click" onclick="window.location.href='${urlDetalhes}'">
+          <img src="${d.imagem}" alt="${d.nome}" loading="lazy">
+          <div>
+            <h3>${d.nome}</h3>
+            <p>${primeiraFrase}</p>
+            <div class="mini">⭐ ${d.nota || ''}</div>
+            <a class="btn-netflix"
+               href="${urlNetflix}"
+               target="_blank"
+               rel="noopener noreferrer"
+               onclick="event.stopPropagation();">
+               Ver na Netflix
+            </a>
+          </div>
+        </div>
+      `;
     }).join("");
   }
 
-  // Busca inteligente
+  // ===== BUSCA INTELIGENTE (HOME) =====
   function setupBuscaHome(){
     const input = document.getElementById("buscaHome");
     const box = document.getElementById("sugestoes");
@@ -406,7 +420,7 @@
       const item = e.target.closest(".item");
       if(!item) return;
       const nome = decodeURIComponent(item.getAttribute("data-nome"));
-      window.location.href = "/doramas/" + criarSlug(nome) + ".html";
+      window.location.href = "dorama.html?nome=" + encodeURIComponent(nome);
     });
 
     document.addEventListener("click", function(e){
@@ -421,13 +435,13 @@
           return (d.nome || "").toLowerCase().includes(q);
         });
         if(primeiro){
-          window.location.href = "/doramas/" + criarSlug(primeiro.nome) + ".html";
+          window.location.href = "dorama.html?nome=" + encodeURIComponent(primeiro.nome);
         }
       }
     });
   }
 
-  // Notícias
+  // ===== NOTÍCIAS (igual estava) =====
   function limparHtml(texto) {
     return (texto || "").replace(/<[^>]*>?/gm, "").trim();
   }
