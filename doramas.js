@@ -10,7 +10,7 @@ Os ventos a levam acidentalmente para território da Coreia do Norte.
 Ela é encontrada por Ri Jeong-hyeok, um oficial do exército norte-coreano extremamente disciplinado e reservado.
 Mesmo sabendo dos riscos, ele decide escondê-la e protegê-la.
 
-Enquanto tentam encontrar uma maneira segura de enviá-la de volta para casa,
+Enquanto tentam encontrar uma maneiraa segura de enviá-la de volta para casa,
 os dois começam a se aproximar e a criar sentimentos profundos.
 
 A história mostra as diferenças culturais entre as duas Coreias,
