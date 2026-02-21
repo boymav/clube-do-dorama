@@ -238,6 +238,29 @@ footer{
 
 <script src="doramas.js"></script>
 <script>
+  // Títulos em PT + EN para exibição amigável
+  const TITULOS_PT = {
+    "Crash Landing on You": "Pousando no Amor (Crash Landing on You)",
+    "Pousando no Amor": "Pousando no Amor (Crash Landing on You)",
+    "Its Okay to Not Be Okay": "Tudo Bem Não Ser Normal (Its Okay to Not Be Okay)",
+    "Tudo Bem Não Ser Normal": "Tudo Bem Não Ser Normal (Its Okay to Not Be Okay)",
+    "Business Proposal": "Pretendente Surpresa (Business Proposal)",
+    "A Business Proposal": "Pretendente Surpresa (Business Proposal)",
+    "Pretendente Surpresa": "Pretendente Surpresa (Business Proposal)",
+    "Extraordinary Attorney Woo": "Advogada Extraordinária (Extraordinary Attorney Woo)",
+    "Advogada Extraordinária": "Advogada Extraordinária (Extraordinary Attorney Woo)",
+    "Sorriso Real": "Sorriso Real (King the Land)",
+    "Vinte e Cinco, Vinte e Um": "Vinte e Cinco, Vinte e Um (Twenty-Five Twenty-One)",
+    "Queen of Tears": "Rainha das Lágrimas (Queen of Tears)"
+  };
+
+  function nomeExibicao(d){
+    const nome = d && d.nome ? String(d.nome) : "";
+    return TITULOS_PT[nome] || nome;
+  }
+
+</script>
+<script>
 function atalho(tag){
   const mapaTexto = {
     triste: "quero algo triste",
@@ -295,10 +318,10 @@ function buscar() {
 
   resultados.forEach(d => {
     div.innerHTML += `
-      <div class="card" onclick="window.location.href='dorama.html?nome=${encodeURIComponent(d.nome)}'">
+      <div class="card" onclick="window.location.href='doramas/' + (d.slug || criarSlug(d.nome)) + '.html'">
         <img src="${d.imagem}" alt="${d.nome}">
         <div class="info">
-          <h3>${d.nome}</h3>
+          <h3>${nomeExibicao(d)}</h3>
           <p>${(d.descricao || "").replaceAll("\n","<br>")}</p>
           <div class="nota">⭐ ${d.nota || ""}</div>
         </div>
@@ -310,6 +333,17 @@ function buscar() {
 document.getElementById("entrada").addEventListener("keydown", (e) => {
   if(e.key === "Enter") buscar();
 });
+</script>
+
+
+<script>
+  function criarSlug(nome){
+    return String(nome || "")
+      .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/(^-|-$)/g, "");
+  }
 </script>
 
 </body>
