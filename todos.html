@@ -95,6 +95,29 @@
 
 <script src="doramas.js"></script>
 <script>
+  // Títulos em PT + EN para exibição amigável
+  const TITULOS_PT = {
+    "Crash Landing on You": "Pousando no Amor (Crash Landing on You)",
+    "Pousando no Amor": "Pousando no Amor (Crash Landing on You)",
+    "Its Okay to Not Be Okay": "Tudo Bem Não Ser Normal (Its Okay to Not Be Okay)",
+    "Tudo Bem Não Ser Normal": "Tudo Bem Não Ser Normal (Its Okay to Not Be Okay)",
+    "Business Proposal": "Pretendente Surpresa (Business Proposal)",
+    "A Business Proposal": "Pretendente Surpresa (Business Proposal)",
+    "Pretendente Surpresa": "Pretendente Surpresa (Business Proposal)",
+    "Extraordinary Attorney Woo": "Advogada Extraordinária (Extraordinary Attorney Woo)",
+    "Advogada Extraordinária": "Advogada Extraordinária (Extraordinary Attorney Woo)",
+    "Sorriso Real": "Sorriso Real (King the Land)",
+    "Vinte e Cinco, Vinte e Um": "Vinte e Cinco, Vinte e Um (Twenty-Five Twenty-One)",
+    "Queen of Tears": "Rainha das Lágrimas (Queen of Tears)"
+  };
+
+  function nomeExibicao(d){
+    const nome = d && d.nome ? String(d.nome) : "";
+    return TITULOS_PT[nome] || nome;
+  }
+
+</script>
+<script>
   function carregarTodos(){
     const container = document.getElementById("lista");
     if(!Array.isArray(doramas)) return;
@@ -105,7 +128,7 @@
         <div class="card" onclick="window.location.href='${url}'">
           <img src="${d.imagem}" alt="${d.nome}" loading="lazy">
           <div class="card-conteudo">
-            <h3>${d.nome}</h3>
+            <h3>${nomeExibicao(d)}</h3>
             <div class="nota">⭐ ${d.nota || ""}</div>
           </div>
         </div>
