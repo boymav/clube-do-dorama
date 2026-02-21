@@ -162,7 +162,11 @@
   function montarHtmlPremium(d, todos){
     const slug = d.slug || criarSlug(d.nome);
     const urlPagina = "https://planetadorama.com.br/doramas/" + slug + ".html";
-    const tituloPagina = d.nome + " – Sinopse, Resumo e Trailer | Planeta Dorama";
+    const nomeExibicao = (d.nomePT && d.nomeEN)
+      ? `${d.nomePT} (${d.nomeEN})`
+      : (d.nomePT || d.nomeEN || d.nome);
+
+    const tituloPagina = nomeExibicao + " – Elenco, Sinopse e Trailer | Planeta Dorama";
     const descCurta = primeiraFrase(d) || ("Saiba tudo sobre o dorama " + d.nome + ".");
     const descAttr = descCurta.replace(/"/g,"&quot;");
     const corpo = corpoTexto(d);
@@ -194,14 +198,14 @@
   <link rel="canonical" href="${urlPagina}">
   <meta name="robots" content="index,follow">
 
-  <meta property="og:title" content="${d.nome} | Planeta Dorama">
+  <meta property="og:title" content="${nomeExibicao} | Planeta Dorama">
   <meta property="og:description" content="${descCurta}">
   <meta property="og:url" content="${urlPagina}">
   <meta property="og:type" content="website">
   <meta property="og:image" content="${imagem}">
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="${d.nome} | Planeta Dorama">
+  <meta name="twitter:title" content="${nomeExibicao} | Planeta Dorama">
   <meta name="twitter:description" content="${descCurta}">
   <meta name="twitter:image" content="${imagem}">
 
@@ -473,7 +477,7 @@
     </div>
     <div class="hero-info">
       <div>
-        <h1>${d.nome}</h1>
+        <h1>${nomeExibicao}</h1>
         <div class="nota">⭐ ${nota}</div>
         <div class="tags">
           ${tagsHtml}
@@ -496,7 +500,7 @@
     <div class="bloco">
       <h2>Onde assistir</h2>
       <p>Este dorama costuma estar disponível em plataformas de streaming como a <b>Netflix</b>, mas o catálogo pode mudar com o tempo.</p>
-      <p><b>Dica:</b> pesquise pelo nome <b>"${d.nome}"</b> diretamente na sua plataforma favorita.</p>
+      <p><b>Dica:</b> pesquise pelo nome <b>"${nomeExibicao}"</b> diretamente na sua plataforma favorita.</p>
     </div>
   </section>
 
