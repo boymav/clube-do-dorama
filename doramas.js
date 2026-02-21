@@ -1,6 +1,8 @@
 const doramas = [
 {
  nome:"Crash Landing on You",
+ nomeEN:"Crash Landing on You",
+ nomePT:"Pousando no Amor",
  tags:["triste","romance","intenso"],
  nota:"9.2/10 – MyDramaList",
  descricao:"Uma empresária sul-coreana sofre um acidente e vai parar na Coreia do Norte.\nLá, conhece um oficial sério e protetor.\nUm romance intenso marcado por sacrifícios e emoção.",
@@ -47,6 +49,8 @@ O final é emocionante e inesquecível.`
 },
 {
  nome:"Business Proposal",
+ nomeEN:"Business Proposal",
+ nomePT:"Pretendente Surpresa",
  tags:["alegre","comedia","romance"],
  nota:"8.6/10 – MyDramaList",
  descricao:"Um encontro às cegas vira confusão quando ela conhece o próprio chefe.\nSituações engraçadas e muito romance.\nLeve, divertido e perfeito para relaxar.",
@@ -63,6 +67,8 @@ O final é emocionante e inesquecível.`
 },
 {
  nome:"Its Okay to Not Be Okay",
+ nomeEN:"Its Okay to Not Be Okay",
+ nomePT:"Tudo Bem Não Ser Normal",
  tags:["romance","intenso","triste"],
  nota:"9.0/10 – MyDramaList",
  descricao:"Um cuidador emocionalmente fechado conhece uma escritora excêntrica.\nAmbos carregam traumas profundos.\nUma história sensível sobre cura e amor.",
@@ -310,6 +316,8 @@ fracassos e perseverança.
 },
 {
  nome:"Hometown Cha-Cha-Cha",
+ nomeEN:"Hometown Cha-Cha-Cha",
+ nomePT:"Hometown Cha-Cha-Cha",
  tags:["romance","alegre","comedia"],
  nota:"8.9/10 – MyDramaList",
  descricao:"Uma dentista se muda para uma vila à beira-mar.\nEla conhece um faz-tudo muito carismático.\nRomance leve e aconchegante.",
@@ -494,6 +502,8 @@ Uma história sensível sobre segundas chances.`
 },
 {
  nome:"Extraordinary Attorney Woo",
+ nomeEN:"Extraordinary Attorney Woo",
+ nomePT:"Advogada Extraordinária",
  tags:["alegre","romance"],
  nota:"9.0/10 – MyDramaList",
  descricao:"Uma advogada brilhante dentro do espectro autista.\nEla enfrenta desafios no trabalho.\nDoce, humano e inspirador.",
@@ -830,24 +840,6 @@ O dorama mostra amizade verdadeira.
 Tem romance leve e momentos emocionantes.
 
 É confortável, humano e cheio de carinho.`
-},
-{
- nome:"A Business Proposal",
- tags:["romance","comedia","alegre"],
- nota:"8.6/10 – MyDramaList",
- descricao:"Um encontro falso vira romance real.\nSegredos e situações engraçadas surgem.\nLeve e viciante.",
- imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/a%20business%20proposal.jpg",
- trailer:"https://www.youtube.com/embed/mh4R-WXRhQo",
- resumo:`Shin Ha Ri vai a um encontro às cegas no lugar da amiga.
-Mas descobre que o pretendente é seu chefe.
-
-Para evitar problemas,
-ela mantém a farsa por mais tempo do que deveria.
-
-Entre situações engraçadas,
-o romance floresce.
-
-É rápido, divertido e apaixonante.`
 },
 {
  nome:"Nevertheless",
@@ -1241,22 +1233,10 @@ Eles precisam redescobrir sentimentos.
 
 Romântico e muito emocionante.`
 },
-{
-    nome:"Pousando no Amor",
-    tags:["romance","intenso"],
-    nota:"9.0/10 – MyDramaList",
-    descricao:"Uma herdeira sul-coreana cai acidentalmente na Coreia do Norte.\nLá ela conhece um oficial do exército e nasce um romance proibido.",
-    imagem:"https://planetadorama.com.br/imagens/pousando-no-amor.jpg",
-    trailer:"",
-    resumo:`Yoon Se Ri é uma rica empresária da Coreia do Sul.
-Durante um acidente de parapente, ela cai na Coreia do Norte.
-Lá, é salva pelo oficial Ri Jeong Hyeok.
-Eles tentam mantê-la em segredo enquanto ela procura uma forma de voltar.
-No meio do perigo e das diferenças políticas, os dois acabam se apaixonando.
-É um dorama de romance intenso, com muita emoção e cenas de tirar o fôlego.`
-  },
   {
     nome:"Sorriso Real",
+    nomeEN:"King the Land",
+    nomePT:"Sorriso Real",
     tags:["romance","alegre"],
     nota:"8.7/10 – MyDramaList",
     descricao:"Um herdeiro de hotel e uma funcionária cheia de energia vivem um romance fofo no meio de mal-entendidos e contratos.",
@@ -1268,21 +1248,10 @@ Os dois começam brigando por tudo, mas aos poucos o clima muda.
 O dorama é cheio de cenas fofas, humor e muita química.
 Perfeito pra quem gosta de romances leves e divertidos.`
   },
-  {
-    nome:"Tudo Bem Não Ser Normal",
-    tags:["romance","intenso","triste"],
-    nota:"9.0/10 – MyDramaList",
-    descricao:"Um cuidador de enfermaria psiquiátrica e uma escritora de livros infantis com traumas profundos se curam juntos.",
-    imagem:"https://planetadorama.com.br/imagens/tudo-bem-nao-ser-normal.jpg",
-    trailer:"",
-    resumo:`Moon Gang Tae trabalha em um hospital psiquiátrico.
-Ele sempre cuidou sozinho do irmão mais velho.
-Ko Moon Young é uma escritora famosa, talentosa e cheia de traumas.
-Os dois têm cicatrizes emocionais diferentes, mas acabam se aproximando.
-É um dorama sobre cura, traumas, família e amor verdadeiro.`
-  },
-  {
+    {
     nome:"Vinte e Cinco, Vinte e Um",
+    nomeEN:"Twenty-Five Twenty-One",
+    nomePT:"Vinte e Cinco, Vinte e Um",
     tags:["romance","triste"],
     nota:"8.9/10 – MyDramaList",
     descricao:"Um romance juvenil entre uma esgrimista cheia de sonhos e um jovem que perdeu tudo por causa de uma crise financeira.",
@@ -1294,46 +1263,7 @@ Eles se conhecem na juventude e criam uma ligação muito forte.
 O dorama mostra amizade, sonhos, amadurecimento e um amor marcante.
 É emocionante e mexe muito com a nostalgia.`
   },
-  {
-    nome:"Pretendente Surpresa",
-    tags:["romance","comedia","alegre"],
-    nota:"8.8/10 – MyDramaList",
-    descricao:"Uma jovem vai a um encontro às cegas no lugar da amiga e descobre que o pretendente é o CEO da empresa onde trabalha.",
-    imagem:"https://planetadorama.com.br/imagens/pretendente-surpresa.jpg",
-    trailer:"",
-    resumo:`Shin Ha Ri aceita substituir a amiga em um encontro às cegas.
-Ela faz de tudo para estragar o encontro, mas dá errado.
-O homem é Kang Tae Moo, o CEO da empresa onde ela trabalha.
-Ele decide que quer se casar com a “moça do encontro”.
-O resultado é um romance cheio de confusões, humor e cenas icônicas.`
-  },
-  {
-    nome:"Advogada Extraordinária",
-    tags:["romance","alegre","emocionante"],
-    nota:"9.0/10 – MyDramaList",
-    descricao:"Uma jovem advogada autista com QI altíssimo enfrenta preconceitos e mostra todo o seu talento nos tribunais.",
-    imagem:"https://planetadorama.com.br/imagens/advogada-extraordinaria.jpg",
-    trailer:"",
-    resumo:`Woo Young Woo é uma advogada genial e autista.
-Ela tem memória impressionante e grande talento para resolver casos.
-No escritório, sofre preconceito, mas também encontra pessoas que a apoiam.
-O dorama mostra inclusão, empatia e um romance muito fofo.
-É sensível, inspirador e cheio de casos interessantes.`
-  },
-  {
-    nome:"Hometown Cha-Cha-Cha",
-    tags:["romance","alegre"],
-    nota:"8.9/10 – MyDramaList",
-    descricao:"Uma dentista da cidade grande se muda para um vilarejo costeiro e conhece um faz-tudo carismático.",
-    imagem:"https://planetadorama.com.br/imagens/hometown-cha-cha-cha.jpg",
-    trailer:"",
-    resumo:`Yoon Hye Jin é uma dentista muito direta e sincera.
-Depois de problemas na cidade grande, ela se muda para uma vila à beira-mar.
-Lá conhece Hong Du Sik, um homem que ajuda todo mundo na vila.
-No começo, eles batem bastante de frente.
-Com o tempo, nasce um romance leve, acolhedor e cheio de momentos engraçados.
-É um dorama perfeito pra quem quer algo quentinho pro coração.`
-}
+      
 ];
 function criarSlug(nome) {
   return nome
