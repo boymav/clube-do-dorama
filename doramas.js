@@ -1265,8 +1265,9 @@ O dorama mostra amizade, sonhos, amadurecimento e um amor marcante.
   },
       
 ];
-function criarSlug(nome) {
-  return nome
+function criarSlug(nome, nomeEN) {
+  const base = nomeEN || nome;
+  return String(base || "")
     .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, "-")
@@ -1274,5 +1275,5 @@ function criarSlug(nome) {
 }
 
 doramas.forEach(d => {
-  d.slug = criarSlug(d.nome);
+  d.slug = criarSlug(d.nome, d.nomeEN);
 });
