@@ -1,6 +1,6 @@
 const doramas = [
 {
- nome:"Crash Landing on You",
+ nome:"Pousando no Amor (Crash Landing on You)",
  nomeEN:"Crash Landing on You",
  nomePT:"Pousando no Amor",
  tags:["triste","romance","intenso"],
@@ -48,7 +48,7 @@ Mostra que até seres imortais desejam uma vida comum.
 O final é emocionante e inesquecível.`
 },
 {
- nome:"Business Proposal",
+ nome:"Pretendente Surpresa (Business Proposal)",
  nomeEN:"Business Proposal",
  nomePT:"Pretendente Surpresa",
  tags:["alegre","comedia","romance"],
@@ -66,7 +66,7 @@ O final é emocionante e inesquecível.`
  trailer:"https://www.youtube.com/embed/XLW8yB7Yx0E"
 },
 {
- nome:"Its Okay to Not Be Okay",
+ nome:"Tudo Bem Não Ser Normal (Its Okay to Not Be Okay)",
  nomeEN:"Its Okay to Not Be Okay",
  nomePT:"Tudo Bem Não Ser Normal",
  tags:["romance","intenso","triste"],
@@ -501,7 +501,7 @@ amor familiar e crescimento pessoal.
 Uma história sensível sobre segundas chances.`
 },
 {
- nome:"Extraordinary Attorney Woo",
+ nome:"Advogada Extraordinária (Extraordinary Attorney Woo)",
  nomeEN:"Extraordinary Attorney Woo",
  nomePT:"Advogada Extraordinária",
  tags:["alegre","romance"],
@@ -1234,7 +1234,7 @@ Eles precisam redescobrir sentimentos.
 Romântico e muito emocionante.`
 },
   {
-    nome:"Sorriso Real",
+    nome:"Sorriso Real (King the Land)",
     nomeEN:"King the Land",
     nomePT:"Sorriso Real",
     tags:["romance","alegre"],
@@ -1249,7 +1249,7 @@ O dorama é cheio de cenas fofas, humor e muita química.
 Perfeito pra quem gosta de romances leves e divertidos.`
   },
     {
-    nome:"Vinte e Cinco, Vinte e Um",
+    nome:"Vinte e Cinco, Vinte e Um (Twenty-Five Twenty-One)",
     nomeEN:"Twenty-Five Twenty-One",
     nomePT:"Vinte e Cinco, Vinte e Um",
     tags:["romance","triste"],
