@@ -315,9 +315,9 @@
     if(!area || !Array.isArray(doramas)) return;
 
     const top = [...doramas]
-      .map(d => Object.assign({}, d, { _notaNum: parseNota(d.nota) }))
-      .sort((a,b) => b._notaNum - a._notaNum)
-      .slice(0, 5);
+  .map(d => Object.assign({}, d, { _notaNum: parseNota(d.nota) }))
+  .sort((a,b) => b._notaNum - a._notaNum)
+  .slice(0, 5);
 
     area.innerHTML = top.map(d => {
       const url = "doramas/" + (d.slug || criarSlug(d.nome)) + ".html";
