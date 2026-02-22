@@ -54,7 +54,7 @@ O final é emocionante e inesquecível.`
  tags:["alegre","comedia","romance"],
  nota:"8.6/10 – MyDramaList",
  descricao:"Um encontro às cegas vira confusão quando ela conhece o próprio chefe.\nSituações engraçadas e muito romance.\nLeve, divertido e perfeito para relaxar.",
- imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/a-business-proposal-recap-episode-one-two-main.jpeg",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/pretendente%20surpresa.jpg",
  trailer:"https://www.youtube.com/embed/mh4R-WXRhQo"
 },
 {
@@ -72,7 +72,7 @@ O final é emocionante e inesquecível.`
  tags:["romance","intenso","triste"],
  nota:"9.0/10 – MyDramaList",
  descricao:"Um cuidador emocionalmente fechado conhece uma escritora excêntrica.\nAmbos carregam traumas profundos.\nUma história sensível sobre cura e amor.",
- imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/its%20ok%20do%20not%20be%20ok.jpg",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/tudo%20bem%20nao%20ser%20normal.jpg",
  trailer:"https://www.youtube.com/embed/50ek4HQo0bc"
 },
 {
@@ -1240,7 +1240,7 @@ Romântico e muito emocionante.`
     tags:["romance","alegre"],
     nota:"8.7/10 – MyDramaList",
     descricao:"Um herdeiro de hotel e uma funcionária cheia de energia vivem um romance fofo no meio de mal-entendidos e contratos.",
-    imagem:"https://planetadorama.com.br/imagens/sorriso-real.jpg",
+    imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/sorriso%20real.webp",
     trailer:"",
     resumo:`Cheon Sa Rang trabalha em um hotel de luxo e ama o que faz.
 Ela conhece Gu Won, um herdeiro frio e sério.
@@ -1255,7 +1255,7 @@ Perfeito pra quem gosta de romances leves e divertidos.`
     tags:["romance","triste"],
     nota:"8.9/10 – MyDramaList",
     descricao:"Um romance juvenil entre uma esgrimista cheia de sonhos e um jovem que perdeu tudo por causa de uma crise financeira.",
-    imagem:"https://planetadorama.com.br/imagens/vinte-e-cinco-vinte-e-um.jpg",
+    imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/vinte%20e%20cinto.jpg",
     trailer:"",
     resumo:`Na Hee Do é uma esgrimista determinada.
 Baek Yi Jin é um jovem que viu a família perder tudo.
@@ -1276,4 +1276,5 @@ function criarSlug(nome, nomeEN) {
 
 doramas.forEach(d => {
   d.slug = criarSlug(d.nome, d.nomeEN);
+
 });
