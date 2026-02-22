@@ -1,1 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Melhores doramas coreanos de romance na Netflix (2026) | Planeta Dorama 🌍</title>
+<meta name="description" content="Lista especial com 10 doramas coreanos de romance para ver na Netflix em 2026. Resumos rápidos, onde assistir e links para a página completa de cada dorama.">
 
+<link rel="stylesheet" href="../style.css">
+<style>
+:root{
+  --rosa:#ff7eb3;
+  --roxo:#b983ff;
+  --texto:#333;
+}
+
+body{
+  margin:0;
+  font-family:'Segoe UI',system-ui,-apple-system,BlinkMacSystemFont,sans-serif;
+  background:linear-gradient(135deg,#ffe6f2,#fff0f7);
+  color:var(--texto);
+}
+
+header{
+  background:linear-gradient(90deg,var(--rosa),var(--roxo));
+  color:white;
+  padding:18px 16px 16px;
+  text-align:center;
+}
+header h1{ margin:0; font-size:24px; }
+header p{ margin:6px 0 0; opacity:0.95; }
+
+header nav{
+  margin-top:10px;
+  display:flex;
+  gap:12px;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+header nav a{
+  color:white;
+  text-decoration:none;
+  font-size:14px;
+  padding:6px 10px;
+  border-radius:999px;
+  border:1px solid rgba(255,255,255,0.6);
+}
+
+main{
+  max-width:980px;
+  margin:22px auto 40px;
+  padding:0 14px 24px;
+}
+
+.intro{
+  background:white;
+  border-radius:18px;
+  padding:16px 18px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.08);
+  margin-bottom:20px;
+}
+
+.lista-grid{
+  display:flex;
+  flex-direction:column;
+  gap:14px;
+}
+
+.card-lista{
+  background:white;
+  border-radius:16px;
+  padding:10px;
+  display:flex;
+  gap:12px;
+  align-items:flex-start;
+  box-shadow:0 8px 20px rgba(0,0,0,0.06);
+}
+.card-lista img{
+  width:110px;
+  height:160px;
+  object-fit:cover;
+  border-radius:12px;
+}
+.card-lista h2{
+  margin:0 0 4px;
+  font-size:17px;
+}
+.card-lista .tag{
+  display:inline-block;
+  font-size:11px;
+  padding:2px 8px;
+  border-radius:999px;
+  background:rgba(185,131,255,0.12);
+  color:#5b3a8c;
+  margin-bottom:6px;
+}
+.card-lista p{
+  margin:0 0 6px;
+  font-size:14px;
+  line-height:1.4;
+}
+.card-lista .meta{
+  font-size:13px;
+  opacity:0.8;
+}
+
+.card-lista .acoes{
+  margin-top:4px;
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+}
+.card-lista .acoes a{
+  font-size:13px;
+  text-decoration:none;
+  padding:6px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,0.08);
+}
+.card-lista .acoes a.principal{
+  background:var(--rosa);
+  color:white;
+  border:none;
+}
+
+@media(max-width:720px){
+  .card-lista{
+    flex-direction:row;
+  }
+  .card-lista img{
+    width:88px;
+    height:130px;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Melhores doramas coreanos de romance na Netflix (2026)</h1>
+  <p>Uma lista caprichada com 10 doramas românticos pra maratonar na Netflix.</p>
+  <nav>
+    <a href="../index.html">🏠 Início</a>
+    <a href="../todos.html">📚 Todos os doramas</a>
+    <a href="../descubra.html">🔍 Descubra seu dorama</a>
+    <a href="../favoritos.html">⭐ Favoritos</a>
+  </nav>
+</header>
+
+<main>
+  <section class="intro">
+    <p>Esta lista foi montada usando a base oficial do <b>Planeta Dorama</b>. Os cards abaixo puxam as informações direto do <code>doramas.js</code>, então sempre que você atualizar nota, imagem ou tags por lá, esta lista também fica atualizada automaticamente.</p>
+    <p>Use esta página como modelo: para criar novas listas semanais, copie este arquivo, mude o título e os nomes na lista de doramas logo abaixo, e pronto. 😊</p>
+  </section>
+
+  <section id="lista-netflix">
+    <div class="lista-grid" id="lista-container"></div>
+  </section>
+</main>
+
+<script src="../doramas.js"></script>
+<script>
+// Nomes usados para montar a lista (devem existir em doramas.js)
+const nomesLista = [
+  "Pousando no Amor",
+  "Sorriso Real",
+  "Tudo Bem Não Ser Normal",
+  "Vinte e Cinco, Vinte e Um",
+  "Pretendente Surpresa",
+  "Hometown Cha-Cha-Cha",
+  "Extraordinary Attorney Woo"
+];
+
+function criarSlug(nome, nomeEN){
+  const base = nomeEN || nome;
+  return String(base || "")
+    .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g,"-")
+    .replace(/(^-|-$)/g,"");
+}
+
+function montarLista(){
+  if(typeof doramas === "undefined"){
+    console.error("doramas.js não carregado");
+    return;
+  }
+
+  const container = document.getElementById("lista-container");
+  const itens = nomesLista.map((nome, idx) => {
+    const alvo = (nome || "").toLowerCase();
+    const d = doramas.find(d => {
+      const n1 = (d.nome   || "").toLowerCase();
+      const n2 = (d.nomePT || "").toLowerCase();
+      const n3 = (d.nomeEN || "").toLowerCase();
+      return n1 === alvo || n2 === alvo || n3 === alvo;
+    });
+
+    if(!d){
+      return `
+      <article class="card-lista">
+        <div>
+          <h2>${idx+1}. ${nome}</h2>
+          <p>Não encontrado na base de doramas. Confira o nome no doramas.js.</p>
+        </div>
+      </article>`;
+    }
+
+    const slug = d.slug || criarSlug(d.nome, d.nomeEN);
+    const urlDetalhes = "../doramas/" + slug + ".html";
+    const urlNetflix  = "https://www.netflix.com/search?q=" + encodeURIComponent(d.nome || d.nomePT || d.nomeEN || "");
+    const img = d.imagem || "../imagens/capa-padrao.jpg";
+    const nota = d.nota ? `⭐ ${d.nota}` : "";
+    const resumo = d.resumo || d.descricao || "";
+
+    return `
+    <article class="card-lista">
+      <img src="${img}" alt="${d.nome}">
+      <div>
+        <span class="tag">#${idx+1} na nossa lista</span>
+        <h2>${d.nome}</h2>
+        <p>${resumo}</p>
+        <div class="meta">${nota}</div>
+        <div class="acoes">
+          <a class="principal" href="${urlDetalhes}">Ver página completa</a>
+          <a href="${urlNetflix}" target="_blank" rel="noopener noreferrer">Buscar na Netflix</a>
+        </div>
+      </div>
+    </article>`;
+  }).join("");
+
+  container.innerHTML = itens;
+}
+
+document.addEventListener("DOMContentLoaded", montarLista);
+</script>
+
+</body>
+</html>
