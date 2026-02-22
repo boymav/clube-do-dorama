@@ -273,8 +273,9 @@ function toggleFav(nome){
 }
 
 /* ✅ NOVO: mesma regra de slug do seu site */
-function criarSlug(nome){
-  return String(nome || "")
+function criarSlug(nome, nomeEN){
+  const base = nomeEN || nome;
+  return String(base || "")
     .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, "-")
@@ -306,8 +307,22 @@ function compartilhar(nome){
 
 /* ✅ NOVO: tenta redirecionar para /doramas/slug.html.
    Se não existir (para não dar 404), continua abrindo aqui como antes. */
-async function tentarRedirecionarParaPaginaPropria(nome){
-  const slug = criarSlug(nome);
+async async function tentarRedirecionarParaPaginaPropria(nome){
+  const alvo = String(nome || "").toLowerCase();
+
+  let escolhido = null;
+  if (typeof doramas !== "undefined" && Array.isArray(doramas)){
+    escolhido = doramas.find(function(d){
+      const n1 = (d.nome   || "").toLowerCase();
+      const n2 = (d.nomePT || "").toLowerCase();
+      const n3 = (d.nomeEN || "").toLowerCase();
+      return n1 === alvo || n2 === alvo || n3 === alvo;
+    });
+  }
+
+  const baseNome = escolhido ? (escolhido.nome || nome) : nome;
+  const baseEN   = escolhido ? (escolhido.nomeEN || undefined) : undefined;
+  const slug = (escolhido && escolhido.slug) ? escolhido.slug : criarSlug(baseNome, baseEN);
   const destino = `/doramas/${slug}.html`;
 
   try{
