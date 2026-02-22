@@ -74,13 +74,13 @@
       display:grid;
       grid-template-columns: minmax(0,320px) minmax(0,1fr);
       gap:0;
-      border-radius:22px;
+      border-radius:26px;
       overflow:hidden;
       background:
-        radial-gradient(circle at top left,rgba(255,126,179,0.18),transparent 55%),
-        radial-gradient(circle at bottom right,rgba(185,131,255,0.18),transparent 55%),
+        radial-gradient(circle at top left,rgba(255,126,179,0.16),transparent 55%),
+        radial-gradient(circle at bottom right,rgba(185,131,255,0.16),transparent 55%),
         #ffffff;
-      box-shadow:var(--shadow);
+      box-shadow:0 22px 48px rgba(0,0,0,0.16);
       min-height:340px;
     }
     .poster{
@@ -109,15 +109,25 @@
       justify-content:space-between;
     }
     .hero-info h1{
-      margin:0 0 6px;
-      font-size:26px;
+      margin:0 0 8px;
+      font-size:28px;
       letter-spacing:0.02em;
+      background:linear-gradient(90deg,#ff7eb3,#b983ff);
+      -webkit-background-clip:text;
+      color:transparent;
     }
     .nota{
-      font-weight:bold;
-      color:var(--accent);
-      margin:4px 0 8px;
+      display:inline-flex;
+      align-items:center;
+      gap:6px;
+      font-weight:600;
       font-size:15px;
+      padding:5px 12px;
+      border-radius:999px;
+      background:linear-gradient(135deg,#ffb347,#ff7eb3);
+      color:#201021;
+      margin:4px 0 10px;
+      box-shadow:0 6px 16px rgba(0,0,0,0.18);
     }
     .tags{
       margin:4px 0 10px;
@@ -326,21 +336,21 @@
       <h2>Recomendados para você</h2>
       <div class="rec-grid">
         
-        <a class="rec-card" href="/doramas/arthdal-chronicles.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/arthdal%20chronicles.jpg" alt="Arthdal Chronicles" loading="lazy">
-          <div class="rec-title">Arthdal Chronicles</div>
+        <a class="rec-card" href="/doramas/twenty-five-twenty-one.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/vinte%20e%20cinto.jpg" alt="Vinte e Cinco, Vinte e Um (Twenty-Five Twenty-One)" loading="lazy">
+          <div class="rec-title">Vinte e Cinco, Vinte e Um (Twenty-Five Twenty-One)</div>
         </a>
-        <a class="rec-card" href="/doramas/the-red-sleeve.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/the%20red%20sleeve.jpeg" alt="The Red Sleeve" loading="lazy">
-          <div class="rec-title">The Red Sleeve</div>
+        <a class="rec-card" href="/doramas/sweet-home.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/sweet%20home.jpg" alt="Sweet Home" loading="lazy">
+          <div class="rec-title">Sweet Home</div>
         </a>
-        <a class="rec-card" href="/doramas/itaewon-class.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/itaewon%20class.webp" alt="Itaewon Class" loading="lazy">
-          <div class="rec-title">Itaewon Class</div>
+        <a class="rec-card" href="/doramas/nevertheless.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/nevert.jfif" alt="Nevertheless" loading="lazy">
+          <div class="rec-title">Nevertheless</div>
         </a>
-        <a class="rec-card" href="/doramas/18-again.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/18againn.jpg" alt="18 Again" loading="lazy">
-          <div class="rec-title">18 Again</div>
+        <a class="rec-card" href="/doramas/while-you-were-sleeping.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/whire%20you%20we%20sleeping.webp" alt="While You Were Sleeping" loading="lazy">
+          <div class="rec-title">While You Were Sleeping</div>
         </a>
       </div>
     </section>

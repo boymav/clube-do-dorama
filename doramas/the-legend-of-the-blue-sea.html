@@ -74,13 +74,13 @@
       display:grid;
       grid-template-columns: minmax(0,320px) minmax(0,1fr);
       gap:0;
-      border-radius:22px;
+      border-radius:26px;
       overflow:hidden;
       background:
-        radial-gradient(circle at top left,rgba(255,126,179,0.18),transparent 55%),
-        radial-gradient(circle at bottom right,rgba(185,131,255,0.18),transparent 55%),
+        radial-gradient(circle at top left,rgba(255,126,179,0.16),transparent 55%),
+        radial-gradient(circle at bottom right,rgba(185,131,255,0.16),transparent 55%),
         #ffffff;
-      box-shadow:var(--shadow);
+      box-shadow:0 22px 48px rgba(0,0,0,0.16);
       min-height:340px;
     }
     .poster{
@@ -109,15 +109,25 @@
       justify-content:space-between;
     }
     .hero-info h1{
-      margin:0 0 6px;
-      font-size:26px;
+      margin:0 0 8px;
+      font-size:28px;
       letter-spacing:0.02em;
+      background:linear-gradient(90deg,#ff7eb3,#b983ff);
+      -webkit-background-clip:text;
+      color:transparent;
     }
     .nota{
-      font-weight:bold;
-      color:var(--accent);
-      margin:4px 0 8px;
+      display:inline-flex;
+      align-items:center;
+      gap:6px;
+      font-weight:600;
       font-size:15px;
+      padding:5px 12px;
+      border-radius:999px;
+      background:linear-gradient(135deg,#ffb347,#ff7eb3);
+      color:#201021;
+      margin:4px 0 10px;
+      box-shadow:0 6px 16px rgba(0,0,0,0.18);
     }
     .tags{
       margin:4px 0 10px;
@@ -330,17 +340,17 @@
           <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/extraordinay%20attorney.jpg" alt="Advogada Extraordinária (Extraordinary Attorney Woo)" loading="lazy">
           <div class="rec-title">Advogada Extraordinária (Extraordinary Attorney Woo)</div>
         </a>
-        <a class="rec-card" href="/doramas/its-okay-to-not-be-okay.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/tudo%20bem%20nao%20ser%20normal.jpg" alt="Tudo Bem Não Ser Normal (Its Okay to Not Be Okay)" loading="lazy">
-          <div class="rec-title">Tudo Bem Não Ser Normal (Its Okay to Not Be Okay)</div>
+        <a class="rec-card" href="/doramas/big-mouth.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/big%20mouth.webp" alt="Big Mouth" loading="lazy">
+          <div class="rec-title">Big Mouth</div>
         </a>
-        <a class="rec-card" href="/doramas/youth-of-may.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/youth%20of%20may.webp" alt="Youth of May" loading="lazy">
-          <div class="rec-title">Youth of May</div>
+        <a class="rec-card" href="/doramas/reply-1988.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/reply%201988.jpg" alt="Reply 1988" loading="lazy">
+          <div class="rec-title">Reply 1988</div>
         </a>
-        <a class="rec-card" href="/doramas/strong-woman-do-bong-soon.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/strong-woman-do-bong-soon.jpg" alt="Strong Woman Do Bong Soon" loading="lazy">
-          <div class="rec-title">Strong Woman Do Bong Soon</div>
+        <a class="rec-card" href="/doramas/because-this-is-my-first-life.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/because%20this%20is.jfif" alt="Because This Is My First Life" loading="lazy">
+          <div class="rec-title">Because This Is My First Life</div>
         </a>
       </div>
     </section>

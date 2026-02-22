@@ -74,13 +74,13 @@
       display:grid;
       grid-template-columns: minmax(0,320px) minmax(0,1fr);
       gap:0;
-      border-radius:22px;
+      border-radius:26px;
       overflow:hidden;
       background:
-        radial-gradient(circle at top left,rgba(255,126,179,0.18),transparent 55%),
-        radial-gradient(circle at bottom right,rgba(185,131,255,0.18),transparent 55%),
+        radial-gradient(circle at top left,rgba(255,126,179,0.16),transparent 55%),
+        radial-gradient(circle at bottom right,rgba(185,131,255,0.16),transparent 55%),
         #ffffff;
-      box-shadow:var(--shadow);
+      box-shadow:0 22px 48px rgba(0,0,0,0.16);
       min-height:340px;
     }
     .poster{
@@ -109,15 +109,25 @@
       justify-content:space-between;
     }
     .hero-info h1{
-      margin:0 0 6px;
-      font-size:26px;
+      margin:0 0 8px;
+      font-size:28px;
       letter-spacing:0.02em;
+      background:linear-gradient(90deg,#ff7eb3,#b983ff);
+      -webkit-background-clip:text;
+      color:transparent;
     }
     .nota{
-      font-weight:bold;
-      color:var(--accent);
-      margin:4px 0 8px;
+      display:inline-flex;
+      align-items:center;
+      gap:6px;
+      font-weight:600;
       font-size:15px;
+      padding:5px 12px;
+      border-radius:999px;
+      background:linear-gradient(135deg,#ffb347,#ff7eb3);
+      color:#201021;
+      margin:4px 0 10px;
+      box-shadow:0 6px 16px rgba(0,0,0,0.18);
     }
     .tags{
       margin:4px 0 10px;
@@ -326,21 +336,21 @@
       <h2>Recomendados para você</h2>
       <div class="rec-grid">
         
-        <a class="rec-card" href="/doramas/my-id-is-gangnam-beauty.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/my%20id%20is%20gangnam.webp" alt="My ID is Gangnam Beauty" loading="lazy">
-          <div class="rec-title">My ID is Gangnam Beauty</div>
+        <a class="rec-card" href="/doramas/start-up.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/start%20up.jpg" alt="Start-Up" loading="lazy">
+          <div class="rec-title">Start-Up</div>
         </a>
-        <a class="rec-card" href="/doramas/flower-of-evil.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/flower%20of%20evil.webp" alt="Flower of Evil" loading="lazy">
-          <div class="rec-title">Flower of Evil</div>
+        <a class="rec-card" href="/doramas/goblin.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/Goblin.jpg" alt="Goblin" loading="lazy">
+          <div class="rec-title">Goblin</div>
         </a>
-        <a class="rec-card" href="/doramas/true-beauty.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/True%20Beauty.jpg" alt="True Beauty" loading="lazy">
-          <div class="rec-title">True Beauty</div>
+        <a class="rec-card" href="/doramas/business-proposal.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/pretendente%20surpresa.jpg" alt="Pretendente Surpresa (Business Proposal)" loading="lazy">
+          <div class="rec-title">Pretendente Surpresa (Business Proposal)</div>
         </a>
-        <a class="rec-card" href="/doramas/mr-sunshine.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/mr%20sunshine.webp" alt="Mr. Sunshine" loading="lazy">
-          <div class="rec-title">Mr. Sunshine</div>
+        <a class="rec-card" href="/doramas/the-legend-of-the-blue-sea.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/the%20legend%20of.jfif" alt="The Legend of the Blue Sea" loading="lazy">
+          <div class="rec-title">The Legend of the Blue Sea</div>
         </a>
       </div>
     </section>
