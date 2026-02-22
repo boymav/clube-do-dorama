@@ -3,113 +3,89 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>The Heirs – Sinopse, Resumo e Trailer | Planeta Dorama</title>
-  <meta name="description" content="Jovens ricos vivem conflitos amorosos e familiares.
-Diferenças sociais marcam os relacionamentos.
-Clássico do romance escolar.">
+  <title>The Heirs – Elenco, Sinopse e Trailer | Planeta Dorama</title>
+  <meta name="description" content="Jovens ricos vivem conflitos amorosos e familiares.">
   <link rel="canonical" href="https://planetadorama.com.br/doramas/the-heirs.html">
   <meta name="robots" content="index,follow">
 
   <meta property="og:title" content="The Heirs | Planeta Dorama">
-  <meta property="og:description" content="Jovens ricos vivem conflitos amorosos e familiares.
-Diferenças sociais marcam os relacionamentos.
-Clássico do romance escolar.">
+  <meta property="og:description" content="Jovens ricos vivem conflitos amorosos e familiares.">
   <meta property="og:url" content="https://planetadorama.com.br/doramas/the-heirs.html">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/The%20Heirs.jpg">
 
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"TVSeries","name":"The Heirs","url":"https://planetadorama.com.br/doramas/the-heirs.html","image":"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/The%20Heirs.jpg","aggregateRating":{"@type":"AggregateRating","ratingValue":"8.1","ratingCount":"100"}}</script>
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="The Heirs | Planeta Dorama">
+  <meta name="twitter:description" content="Jovens ricos vivem conflitos amorosos e familiares.">
+  <meta name="twitter:image" content="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/The%20Heirs.jpg">
 
   <style>
     :root{
-      --rosa:#ff7eb3;
-      --roxo:#b983ff;
-
-      /* meio-termo: fundo mais “cinema”, mas ainda fofo */
-      --bgA:#140a16;
-      --bgB:#1b0f22;
-      --card:#ffffff;
-      --text:#333;
-      --muted:#555;
-
-      --shadow: 0 14px 35px rgba(0,0,0,0.22);
-      --shadow2: 0 18px 55px rgba(0,0,0,0.28);
-
-      --radius:18px;
+      --bg:#05020b;
+      --card:#12071f;
+      --accent:#ff7eb3;
+      --accent2:#b983ff;
+      --text:#f8f6ff;
+      --sub:#c0b2ff;
+      --shadow:0 18px 45px rgba(0,0,0,0.75);
     }
-
     *{box-sizing:border-box}
     body{
       margin:0;
-      font-family: Arial, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
-      background:
-        radial-gradient(900px 500px at 15% 8%, rgba(255,126,179,0.20), transparent 60%),
-        radial-gradient(900px 500px at 85% 15%, rgba(185,131,255,0.20), transparent 55%),
-        linear-gradient(135deg, var(--bgA), var(--bgB));
+      font-family:Arial,system-ui,sans-serif;
+      background:radial-gradient(circle at top,#201040,#05020b 55%);
+      color:var(--text);
+    }
+    header{
+      padding:16px 18px 10px;
       color:#fff;
     }
-    a{color:inherit}
-
-    .topbar{max-width:1100px;margin:0 auto;padding:14px 14px 0}
-    .back{
-      display:inline-flex;gap:8px;align-items:center;text-decoration:none;font-weight:bold;
-      color: rgba(255,255,255,0.90);
+    .topbar{
+      max-width:1100px;
+      margin:0 auto;
+      padding:4px 4px 0;
     }
+    .back{
+      display:inline-flex;
+      gap:8px;
+      align-items:center;
+      text-decoration:none;
+      font-weight:bold;
+      color:rgba(255,255,255,0.9);
+      font-size:14px;
+    }
+    .back span{font-size:18px}
     .back:hover{opacity:.9}
+    .logo{
+      margin-top:6px;
+      font-size:18px;
+      font-weight:bold;
+    }
+    .logo span{opacity:.8;font-weight:normal;font-size:14px}
 
-    /* HERO premium (mas com cores da home) */
+    .wrap{
+      max-width:1100px;
+      margin:10px auto 30px;
+      padding:0 12px 24px;
+    }
+
     .hero{
       position:relative;
-      max-width:1100px;
-      margin:12px auto 0;
-      border-radius:24px;
-      overflow:hidden;
-      box-shadow: var(--shadow2);
-      background: linear-gradient(90deg, rgba(255,126,179,0.95), rgba(185,131,255,0.95));
-    }
-    .hero::before{
-      content:"";
-      position:absolute;
-      inset:0;
-      background-image: var(--bgimg);
-      background-size: cover;
-      background-position: center;
-      filter: blur(28px) saturate(1.2);
-      transform: scale(1.2);
-      opacity:.35;
-    }
-    .hero::after{
-      content:"";
-      position:absolute;
-      inset:0;
-      background:
-        linear-gradient(90deg,
-          rgba(20,0,20,0.65) 0%,
-          rgba(20,0,20,0.35) 55%,
-          rgba(20,0,20,0.08) 100%
-        );
-    }
-
-    .hero-inner{
-      position:relative;
-      z-index:1;
-      padding:18px;
       display:grid;
-      grid-template-columns: 230px 1fr;
-      gap:16px;
-      align-items:center;
-      color:#fff;
-    }
-
-    /* Poster maior */
-    .poster{
-      width:230px;
-      aspect-ratio:2/3;
-      border-radius: var(--radius);
+      grid-template-columns: minmax(0,320px) minmax(0,1fr);
+      gap:0;
+      border-radius:22px;
       overflow:hidden;
-      background: rgba(255,255,255,0.14);
-      border: 1px solid rgba(255,255,255,0.25);
-      box-shadow: 0 18px 45px rgba(0,0,0,0.35);
+      background:
+        radial-gradient(circle at top left,rgba(255,126,179,0.35),transparent 55%),
+        radial-gradient(circle at bottom right,rgba(185,131,255,0.35),transparent 55%),
+        #12071f;
+      box-shadow:var(--shadow);
+      min-height:340px;
+    }
+    .poster{
+      position:relative;
+      overflow:hidden;
     }
     .poster img{
       width:100%;
@@ -117,342 +93,329 @@ Clássico do romance escolar.">
       object-fit:cover;
       display:block;
     }
-
-    h1{margin:0 0 10px;font-size:26px;line-height:1.15}
-    .meta{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:10px}
-    .pill{
-      display:inline-flex;align-items:center;gap:6px;
-      padding:8px 10px;border-radius:999px;
-      background: rgba(255,255,255,0.18);
-      border: 1px solid rgba(255,255,255,0.24);
-      font-size:13px;font-weight:bold;
-      backdrop-filter: blur(6px);
-    }
-    .stars{letter-spacing:1px;opacity:.95}
-
-    .tags{margin-top:6px}
-    .tag{
-      display:inline-block;
-      padding:7px 10px;
-      border-radius:999px;
-      background: rgba(255,255,255,0.16);
-      border: 1px solid rgba(255,255,255,0.22);
-      margin:8px 8px 0 0;
-      font-size:12px;
-      color:#fff;
-      font-weight:bold;
-      backdrop-filter: blur(6px);
-    }
-
-    .desc{
-      margin:10px 0 0;
-      color: rgba(255,255,255,0.92);
-      line-height:1.55;
-      font-size:14px;
-      max-width:70ch;
-    }
-
-    .actions{margin-top:14px;display:flex;flex-wrap:wrap;gap:10px}
-
-    /* Botões streaming + vibe home */
-    .btn{
-      display:inline-flex;align-items:center;justify-content:center;gap:8px;
-      padding:11px 14px;border-radius:14px;
-      text-decoration:none;font-weight:bold;
-      border:1px solid rgba(255,255,255,0.22);
-      background: rgba(255,255,255,0.14);
-      color:#fff;
-      cursor:pointer;
-      backdrop-filter: blur(8px);
-    }
-    .btn:hover{background: rgba(255,255,255,0.20)}
-    .btn-primary{
-      background: rgba(255,255,255,0.92);
-      color:#7a1b55;
-      border-color: rgba(255,255,255,0.92);
-      box-shadow: 0 10px 24px rgba(0,0,0,0.18);
-    }
-    .btn-primary:hover{filter:brightness(1.03)}
-    .btn-fav.on{
-      background: rgba(255,255,255,0.92);
-      color:#7a1b55;
-      border-color: rgba(255,255,255,0.92);
-    }
-
-    /* Conteúdo em cards brancos (vibe home) */
-    .wrap{max-width:1100px;margin:16px auto 60px;padding:0 14px}
-    .section{
-      background: var(--card);
-      color: var(--text);
-      border:1px solid rgba(0,0,0,0.06);
-      border-radius:22px;
-      padding:16px;
-      box-shadow: var(--shadow);
-    }
-    .h2{margin:0 0 10px;font-size:18px;color:#b4005a}
-    .text{color: var(--muted);line-height:1.8;font-size:15px;margin:0}
-
-    /* Trailer bonito (premium) */
-    .trailer{margin-top:14px}
-    .video{
-      position:relative;
-      width:100%;
-      padding-top:56.25%;
-      border-radius:18px;
-      overflow:hidden;
-      border:2px solid rgba(255,126,179,0.55);
-      box-shadow: 0 18px 45px rgba(0,0,0,0.22);
-      background:#000;
-    }
-    .video::after{
+    .poster::after{
       content:"";
       position:absolute;
       inset:0;
-      pointer-events:none;
-      background: radial-gradient(circle at 15% 10%, rgba(255,126,179,0.20), transparent 55%),
-                  radial-gradient(circle at 85% 10%, rgba(185,131,255,0.20), transparent 55%);
+      background:linear-gradient(to right,rgba(0,0,0,0.4),transparent);
     }
-    .video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
-    .hint{margin-top:10px;color:#7a1b55;font-size:13px;opacity:.85}
 
-    /* Recomendados: carrossel com toque “Netflix”, mas leve */
-    .row{margin-top:16px}
-    .row-head{display:flex;align-items:end;justify-content:space-between;gap:10px;margin-bottom:10px}
-    .row-head small{color: rgba(255,255,255,0.75)}
-    .rec-scroller{
-      display:flex;gap:12px;overflow:auto;padding-bottom:6px;
-      scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;
+    .hero-info{
+      padding:18px 20px 18px 18px;
+      position:relative;
+      z-index:1;
+      display:flex;
+      flex-direction:column;
+      justify-content:space-between;
+    }
+    .hero-info h1{
+      margin:0 0 6px;
+      font-size:26px;
+      letter-spacing:0.02em;
+    }
+    .nota{
+      font-weight:bold;
+      color:var(--accent);
+      margin:4px 0 8px;
+      font-size:15px;
+    }
+    .tags{
+      margin:4px 0 10px;
+    }
+    .tag{
+      display:inline-block;
+      padding:4px 9px;
+      border-radius:999px;
+      background:rgba(0,0,0,0.35);
+      border:1px solid rgba(255,255,255,0.15);
+      font-size:11px;
+      margin:0 6px 4px 0;
+      text-transform:uppercase;
+      letter-spacing:0.08em;
+      color:var(--sub);
+    }
+    .desc-curta{
+      font-size:14px;
+      line-height:1.6;
+      color:#e7dcff;
+    }
+    .acoes{
+      margin-top:12px;
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px;
+    }
+    .btn{
+      border:none;
+      border-radius:999px;
+      padding:7px 14px;
+      font-size:13px;
+      font-weight:bold;
+      display:inline-flex;
+      align-items:center;
+      gap:6px;
+      cursor:pointer;
+      background:rgba(0,0,0,0.35);
+      color:#fff;
+      border:1px solid rgba(255,255,255,0.25);
+    }
+    .btn:hover{background:rgba(0,0,0,0.6);}
+    .btn-primary{
+      background:linear-gradient(90deg,var(--accent),var(--accent2));
+      color:#28021c;
+      border:none;
+    }
+    .btn-primary:hover{filter:brightness(1.05);}
+    #btnFav.fav-ativo{
+      background:rgba(255,255,255,0.15);
+      border-color:var(--accent);
+      color:var(--accent);
+    }
+
+    .colunas{
+      display:grid;
+      grid-template-columns:minmax(0,2.2fr) minmax(0,1.2fr);
+      gap:18px;
+      margin-top:22px;
+    }
+
+    .bloco{
+      background:rgba(9,3,18,0.95);
+      border-radius:18px;
+      padding:16px 16px 18px;
+      box-shadow:0 10px 28px rgba(0,0,0,0.7);
+      border:1px solid rgba(255,255,255,0.03);
+    }
+    .bloco h2{
+      margin:0 0 10px;
+      font-size:18px;
+      color:var(--accent);
+    }
+    .bloco p{
+      margin:0 0 8px;
+      font-size:14px;
+      line-height:1.8;
+      color:#e3dcff;
+    }
+
+    .video-wrap{
+      margin-top:8px;
+      border-radius:16px;
+      overflow:hidden;
+      border:1px solid rgba(255,255,255,0.1);
+      aspect-ratio:16/9;
+    }
+    .video-wrap iframe{
+      width:100%;
+      height:100%;
+      border:0;
+    }
+
+    .rec-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fill,minmax(140px,1fr));
+      gap:10px;
+      margin-top:4px;
     }
     .rec-card{
-      flex:0 0 150px;
-      scroll-snap-align:start;
+      display:block;
       text-decoration:none;
+      color:#fff;
       border-radius:14px;
       overflow:hidden;
-      background: rgba(255,255,255,0.10);
-      border:1px solid rgba(255,255,255,0.14);
-      box-shadow: 0 12px 30px rgba(0,0,0,0.18);
-      transition: transform .18s ease, box-shadow .18s ease;
-      backdrop-filter: blur(8px);
-    }
-    .rec-card:hover{
-      transform: translateY(-6px);
-      box-shadow: 0 18px 40px rgba(0,0,0,0.26);
+      background:#14071f;
+      border:1px solid rgba(255,255,255,0.05);
+      box-shadow:0 8px 22px rgba(0,0,0,0.75);
+      transition:transform .18s ease, box-shadow .18s ease, border-color .18s ease;
     }
     .rec-card img{
       width:100%;
-      height:205px;
+      height:180px;
       object-fit:cover;
       display:block;
-      filter: saturate(1.05);
     }
     .rec-title{
-      padding:8px 10px;
-      font-size:12px;
-      color: rgba(255,255,255,0.92);
-      line-height:1.25;
-      min-height:40px;
-      font-weight:bold;
+      padding:8px 9px 10px;
+      font-size:13px;
+      white-space:nowrap;
+      overflow:hidden;
+      text-overflow:ellipsis;
+    }
+    .rec-card:hover{
+      transform:translateY(-3px);
+      box-shadow:0 12px 30px rgba(0,0,0,0.9);
+      border-color:var(--accent);
     }
 
     footer{
-      max-width:1100px;
-      margin:40px auto 26px;
-      padding:0 14px;
-      color: rgba(255,255,255,0.70);
       text-align:center;
+      color:#a99bd8;
       font-size:13px;
-      opacity:.9;
+      padding:16px 10px 20px;
+      border-top:1px solid rgba(255,255,255,0.05);
+      background:#07020f;
     }
+    footer a{color:var(--accent);text-decoration:none;}
+    footer a:hover{text-decoration:underline;}
 
-    /* Desktop */
-    @media (min-width: 860px){
-      .hero-inner{padding:22px; grid-template-columns: 340px 1fr; gap:22px;}
-      .poster{width:340px;}
-      h1{font-size:38px;}
-      .section{padding:20px;}
-      .rec-card{flex-basis: 210px;}
-      .rec-card img{height:280px;}
-      .rec-title{font-size:13px;}
+    @media(max-width:860px){
+      .hero{
+        grid-template-columns:1fr;
+      }
+      .hero-info{
+        padding:14px 14px 16px;
+      }
+      .colunas{
+        grid-template-columns:1fr;
+      }
     }
   </style>
 </head>
-
 <body>
+
+<header>
   <div class="topbar">
-    <a class="back" href="https://planetadorama.com.br/">← Voltar para Planeta Dorama</a>
+    <a class="back" href="../index.html"><span>←</span> Voltar para Planeta Dorama</a>
+    <div class="logo">Planeta Dorama 🌍 <span>ficha do dorama</span></div>
   </div>
+</header>
 
-  <section class="hero" style="--bgimg:url('https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/The%20Heirs.jpg')">
-    <div class="hero-inner">
-      <div class="poster">
-        <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/The%20Heirs.jpg" alt="Pôster do dorama The Heirs" loading="lazy">
-      </div>
-
+<div class="wrap">
+  <section class="hero">
+    <div class="poster">
+      <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/The%20Heirs.jpg" alt="Pôster do dorama The Heirs">
+    </div>
+    <div class="hero-info">
       <div>
-        <h1 id="nome">The Heirs</h1>
-
-        <div class="meta">
-          <span class="pill">⭐ 8.1/10 – MyDramaList</span>
-          <span class="pill"><span class="stars">★★★★✩</span></span>
+        <h1>The Heirs</h1>
+        <div class="nota">⭐ 8.1/10 – MyDramaList</div>
+        <div class="tags">
+          <span class="tag">romance</span><span class="tag">triste</span>
         </div>
-
-        <div class="tags"><span class="tag">romance</span><span class="tag">triste</span></div>
-
-        <p class="desc">Jovens ricos vivem conflitos amorosos e familiares.<br>Diferenças sociais marcam os relacionamentos.<br>Clássico do romance escolar.</p>
-
-        <div class="actions">
-          <a class="btn btn-primary" href="#trailer">▶ Trailer</a>
-          <button class="btn btn-fav" id="btnFav" type="button">🤍 Favoritar</button>
-          <button class="btn" id="btnShare" type="button">🔗 Compartilhar</button>
-          <a class="btn" href="https://planetadorama.com.br/todos.html">📚 Todos os doramas</a>
-        </div>
+        <div class="desc-curta">Jovens ricos vivem conflitos amorosos e familiares.</div>
+      </div>
+      <div class="acoes">
+        <button class="btn btn-primary" onclick="window.location.href='../index.html'">🏠 Início</button>
+        <button class="btn" id="btnFav">🤍 Favoritar</button>
+        <button class="btn" id="btnShare">📤 Compartilhar</button>
       </div>
     </div>
   </section>
 
-  <div class="wrap">
-    <section class="section">
-      <h2 class="h2">Resumo</h2><p class="text">Kim Tan é herdeiro de um grande império empresarial.<br>Ele estuda em uma escola exclusiva para jovens ricos.<br><br>Cha Eun Sang é uma garota simples,<br>que acaba entrando nesse mundo de luxo e competição.<br><br>Os dois se apaixonam,<br>mas enfrentam forte oposição da família dele.<br><br>Além do romance,<br>o dorama mostra rivalidades,<br>amizades e conflitos de classe social.<br><br>É um clássico do romance escolar coreano,<br>cheio de drama e emoções intensas.</p>
+  <section class="colunas">
+    <div class="bloco">
+      <h2>Resumo</h2>
+      <p>Kim Tan é herdeiro de um grande império empresarial.<br>Ele estuda em uma escola exclusiva para jovens ricos.<br><br>Cha Eun Sang é uma garota simples,<br>que acaba entrando nesse mundo de luxo e competição.<br><br>Os dois se apaixonam,<br>mas enfrentam forte oposição da família dele.<br><br>Além do romance,<br>o dorama mostra rivalidades,<br>amizades e conflitos de classe social.<br><br>É um clássico do romance escolar coreano,<br>cheio de drama e emoções intensas.</p>
+    </div>
+    <div class="bloco">
+      <h2>Onde assistir</h2>
+      <p>Este dorama costuma estar disponível em plataformas de streaming como a <b>Netflix</b>, mas o catálogo pode mudar com o tempo.</p>
+      <p><b>Dica:</b> pesquise pelo nome <b>"The Heirs"</b> diretamente na sua plataforma favorita.</p>
+    </div>
+  </section>
 
-      
-        <div class="trailer" id="trailer">
-          <h2 class="h2">Trailer</h2>
-          <div class="video">
-            <iframe src="https://www.youtube.com/embed/FrUG0q9p4qk" title="Trailer The Heirs" allowfullscreen></iframe>
-          </div>
-          <div class="hint">Se aparecer “vídeo indisponível”, é o próprio YouTube bloqueando o trailer.</div>
-        </div>
-      
-    </section>
-
-    <section class="row">
-      <div class="row-head">
-        <h2 class="h2" style="margin:0; color:#fff;">Recomendados</h2>
-        <small>arraste para o lado →</small>
+  
+    <section class="bloco">
+      <h2>🎬 Trailer</h2>
+      <div class="video-wrap">
+        <iframe src="https://www.youtube.com/embed/FrUG0q9p4qk" loading="lazy" allowfullscreen></iframe>
       </div>
-      <div class="rec-scroller">
+    </section>
+  
+    <section class="bloco">
+      <h2>Recomendados para você</h2>
+      <div class="rec-grid">
         
-        <a class="rec-card" href="https://planetadorama.com.br/doramas/crash-landing-on-you.html" title="Crash Landing on You">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/crash-landing.jpg" alt="Crash Landing on You" loading="lazy">
-          <div class="rec-title">Crash Landing on You</div>
+        <a class="rec-card" href="/doramas/true-beauty.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/True%20Beauty.jpg" alt="True Beauty" loading="lazy">
+          <div class="rec-title">True Beauty</div>
         </a>
-      
-        <a class="rec-card" href="https://planetadorama.com.br/doramas/goblin.html" title="Goblin">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/Goblin.jpg" alt="Goblin" loading="lazy">
-          <div class="rec-title">Goblin</div>
+        <a class="rec-card" href="/doramas/w-two-worlds.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/w%20two%20words.webp" alt="W: Two Worlds" loading="lazy">
+          <div class="rec-title">W: Two Worlds</div>
         </a>
-      
-        <a class="rec-card" href="https://planetadorama.com.br/doramas/its-okay-to-not-be-okay.html" title="Its Okay to Not Be Okay">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/its%20ok%20do%20not%20be%20ok.jpg" alt="Its Okay to Not Be Okay" loading="lazy">
-          <div class="rec-title">Its Okay to Not Be Okay</div>
-        </a>
-      
-        <a class="rec-card" href="https://planetadorama.com.br/doramas/hotel-del-luna.html" title="Hotel Del Luna">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/hotel%20del%20luna.jpg" alt="Hotel Del Luna" loading="lazy">
-          <div class="rec-title">Hotel Del Luna</div>
-        </a>
-      
-        <a class="rec-card" href="https://planetadorama.com.br/doramas/moon-lovers-scarlet-heart-ryeo.html" title="Moon Lovers: Scarlet Heart Ryeo">
+        <a class="rec-card" href="/doramas/moon-lovers-scarlet-heart-ryeo.html">
           <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/moon%20lovers%201.webp" alt="Moon Lovers: Scarlet Heart Ryeo" loading="lazy">
           <div class="rec-title">Moon Lovers: Scarlet Heart Ryeo</div>
         </a>
-      
-        <a class="rec-card" href="https://planetadorama.com.br/doramas/because-this-is-my-first-life.html" title="Because This Is My First Life">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/because%20this%20is.jfif" alt="Because This Is My First Life" loading="lazy">
-          <div class="rec-title">Because This Is My First Life</div>
+        <a class="rec-card" href="/doramas/weightlifting-fairy-kim-bok-joo.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/Weightlifting%20Fairy%20Kim%20Bok%20Joo.webp" alt="Weightlifting Fairy Kim Bok Joo" loading="lazy">
+          <div class="rec-title">Weightlifting Fairy Kim Bok Joo</div>
         </a>
-      
-        <a class="rec-card" href="https://planetadorama.com.br/doramas/18-again.html" title="18 Again">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/18againn.jpg" alt="18 Again" loading="lazy">
-          <div class="rec-title">18 Again</div>
-        </a>
-      
-        <a class="rec-card" href="https://planetadorama.com.br/doramas/mr-sunshine.html" title="Mr. Sunshine">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/mr%20sunshine.webp" alt="Mr. Sunshine" loading="lazy">
-          <div class="rec-title">Mr. Sunshine</div>
-        </a>
-      
-        <a class="rec-card" href="https://planetadorama.com.br/doramas/doom-at-your-service.html" title="Doom at Your Service">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/doom%20at%20your.jfif" alt="Doom at Your Service" loading="lazy">
-          <div class="rec-title">Doom at Your Service</div>
-        </a>
-      
-        <a class="rec-card" href="https://planetadorama.com.br/doramas/our-beloved-summer.html" title="Our Beloved Summer">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/our%20beloved%20summer.png" alt="Our Beloved Summer" loading="lazy">
-          <div class="rec-title">Our Beloved Summer</div>
-        </a>
-      
-        <a class="rec-card" href="https://planetadorama.com.br/doramas/flower-of-evil.html" title="Flower of Evil">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/flower%20of%20evil.webp" alt="Flower of Evil" loading="lazy">
-          <div class="rec-title">Flower of Evil</div>
-        </a>
-      
-        <a class="rec-card" href="https://planetadorama.com.br/doramas/nevertheless.html" title="Nevertheless">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/nevert.jfif" alt="Nevertheless" loading="lazy">
-          <div class="rec-title">Nevertheless</div>
-        </a>
-      
       </div>
     </section>
-  </div>
+</div>
 
-  <footer>© 2026 Planeta Dorama</footer>
+<footer>
+  <p>💜 Planeta Dorama 🌍 — todos os direitos reservados</p>
+  <p><a href="../politica.html">Política de Privacidade</a> • <a href="../termos.html">Termos de Uso</a></p>
+</footer>
 
-  <script>
-    const FAV_KEY = "pd_favoritos_v1";
-    const nome = "The Heirs";
-    const pageUrl = "https://planetadorama.com.br/doramas/the-heirs.html";
+<script>
+  const FAV_KEY = "pd_favoritos_v1";
+  const nome = "The Heirs";
+  const pageUrl = "https://planetadorama.com.br/doramas/the-heirs.html";
 
-    function getFav(){
-      try { return JSON.parse(localStorage.getItem(FAV_KEY) || "[]"); }
-      catch(e){ return []; }
+  function getFav(){
+    try { return JSON.parse(localStorage.getItem(FAV_KEY) || "[]"); }
+    catch(e){ return []; }
+  }
+  function setFav(list){
+    localStorage.setItem(FAV_KEY, JSON.stringify(list));
+  }
+  function isFav(){
+    return getFav().includes(nome);
+  }
+  function updateFavBtn(){
+    const btn = document.getElementById("btnFav");
+    if(!btn) return;
+    if(isFav()){
+      btn.classList.add("fav-ativo");
+      btn.innerHTML = "💜 Favorito";
+    } else {
+      btn.classList.remove("fav-ativo");
+      btn.innerHTML = "🤍 Favoritar";
     }
-    function setFav(list){
-      localStorage.setItem(FAV_KEY, JSON.stringify(list));
+  }
+  function toggleFav(){
+    let list = getFav();
+    if(isFav()){
+      list = list.filter(n => n !== nome);
+    } else {
+      list.push(nome);
     }
-    function isFav(){
-      return getFav().includes(nome);
-    }
-    function toggleFav(){
-      let list = getFav();
-      if(list.includes(nome)){
-        list = list.filter(n => n !== nome);
-      }else{
-        list.push(nome);
-      }
-      setFav(list);
-      return list.includes(nome);
-    }
-    function updateFavBtn(){
-      const btn = document.getElementById("btnFav");
-      if(!btn) return;
-      const on = isFav();
-      btn.textContent = on ? "💜 Favoritado" : "🤍 Favoritar";
-      btn.classList.toggle("on", on);
-    }
+    setFav(list);
+    updateFavBtn();
+  }
 
-    document.getElementById("btnFav")?.addEventListener("click", () => {
-      toggleFav();
-      updateFavBtn();
-    });
+  const btnFav = document.getElementById("btnFav");
+  if(btnFav) btnFav.addEventListener("click", toggleFav);
 
-    document.getElementById("btnShare")?.addEventListener("click", async () => {
-      const text = "🎬 Dorama: " + nome + "\nVeja aqui: " + pageUrl;
-      if (navigator.share) {
-        try { await navigator.share({ title: nome, text, url: pageUrl }); } catch(e){}
-      } else {
-        try {
+  const btnShare = document.getElementById("btnShare");
+  if(btnShare){
+    btnShare.addEventListener("click", async () => {
+      const text = "Olha esse dorama que encontrei no Planeta Dorama: " + nome + " " + pageUrl;
+      if(navigator.share){
+        try{
+          await navigator.share({ title:nome, text, url:pageUrl });
+        }catch(e){}
+      } else if(navigator.clipboard){
+        try{
           await navigator.clipboard.writeText(pageUrl);
           alert("Link copiado! ✅");
-        } catch(e) {
+        }catch(e){
           const wa = "https://wa.me/?text=" + encodeURIComponent(text);
           window.open(wa, "_blank");
         }
+      } else {
+        const wa = "https://wa.me/?text=" + encodeURIComponent(text);
+        window.open(wa, "_blank");
       }
     });
+  }
 
-    updateFavBtn();
-  </script>
+  updateFavBtn();
+</script>
+
 </body>
 </html>
