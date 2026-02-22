@@ -125,8 +125,9 @@
     box.scrollTop = box.scrollHeight;
   }
 
-  function criarSlug(nome){
-    return String(nome || "")
+  function criarSlug(nome, nomeEN){
+    const base = nomeEN || nome;
+    return String(base || "")
       .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
       .toLowerCase()
       .replace(/[^a-z0-9]+/g, "-")
@@ -164,7 +165,7 @@
     if(!candidatos.length) return "";
 
     const itens = candidatos.map(c => {
-      const slug = c.slug || criarSlug(c.nome);
+      const slug = c.slug || criarSlug(c.nome, c.nomeEN);
       const url = "/doramas/" + slug + ".html";
       return `
         <a class="rec-card" href="${url}">
@@ -183,7 +184,7 @@
   }
 
   function montarHtmlPremium(d, todos){
-    const slug = d.slug || criarSlug(d.nome);
+    const slug = d.slug || criarSlug(d.nome, d.nomeEN);
     const urlPagina = "https://planetadorama.com.br/doramas/" + slug + ".html";
     const nomeExibicao = window.nomeExibicao ? window.nomeExibicao(d) : (d.nome || "");
 
@@ -617,7 +618,7 @@
 
       doramas.forEach(d => {
         if(!d || !d.nome) return;
-        const slug = d.slug || criarSlug(d.nome);
+        const slug = d.slug || criarSlug(d.nome, d.nomeEN);
         const html = montarHtmlPremium(d, doramas);
         const nomeArquivo = slug + ".html";
         pasta.file(nomeArquivo, html);
