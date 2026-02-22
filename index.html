@@ -343,12 +343,16 @@ function carregarListaNetflixRomance(){
     "Vinte e Cinco, Vinte e Um",
     "Pretendente Surpresa",
     "Hometown Cha-Cha-Cha",
-    "Extraordinary Attorney Woo"
+    "Advogada Extraordinária"
   ];
 
   var lista = nomes.map(function(nome){
     var d = doramas.find(function(x){
-      return (x.nome || "").toLowerCase() === nome.toLowerCase();
+      const alvo = (nome || "").toLowerCase();
+      const n1 = (x.nome || "").toLowerCase();
+      const n2 = (x.nomePT || "").toLowerCase();
+      const n3 = (x.nomeEN || "").toLowerCase();
+      return n1 === alvo || n2 === alvo || n3 === alvo;
     });
     if (d) return d;
     return { nome:nome, imagem:"imagens/capa-padrao.jpg", nota:"", descricao:"" };
