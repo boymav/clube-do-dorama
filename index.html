@@ -273,8 +273,9 @@
 
 <script>
   // Utilidades
-  function criarSlug(nome){
-    return String(nome || "")
+  function criarSlug(nome, nomeEN){
+    const base = nomeEN || nome;
+    return String(base || "")
       .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
       .toLowerCase()
       .replace(/[^a-z0-9]+/g, "-")
@@ -298,7 +299,8 @@
       .slice(0, 5);
 
     area.innerHTML = top.map(d => {
-      const url = "dorama.html?nome=" + encodeURIComponent(d.nome);
+      const slug = d.slug || criarSlug(d.nome, d.nomeEN);
+      const url = "/doramas/" + slug + ".html";
       return `
         <div class="card click small" onclick="window.location.href='${url}'">
           <img src="${d.imagem}" alt="${d.nome}" loading="lazy">
@@ -317,7 +319,8 @@
     if (!area || !Array.isArray(doramas) || doramas.length === 0) return;
 
     const escolhido = doramas[Math.floor(Math.random() * doramas.length)];
-    const url = "dorama.html?nome=" + encodeURIComponent(escolhido.nome);
+    const slug = escolhido.slug || criarSlug(escolhido.nome, escolhido.nomeEN);
+    const url = "/doramas/" + slug + ".html";
 
     area.innerHTML = `
       <div class="card click" onclick="window.location.href='${url}'">
@@ -364,7 +367,8 @@ function carregarListaNetflixRomance(){
       primeiraFrase = String(d.descricao).split("\n")[0];
     }
     var urlNetflix  = "https://www.netflix.com/search?q=" + encodeURIComponent(d.nome);
-    var urlDetalhes = "/doramas/" + criarSlug(d.nome) + ".html";
+    var slug        = d.slug || criarSlug(d.nome, d.nomeEN);
+    var urlDetalhes = "/doramas/" + slug + ".html";
 
     return '' +
       '<div class="card click small" onclick="window.location.href=\'' + urlDetalhes + '\'">' +
@@ -417,7 +421,23 @@ function carregarListaNetflixRomance(){
       const item = e.target.closest(".item");
       if(!item) return;
       const nome = decodeURIComponent(item.getAttribute("data-nome"));
-      window.location.href = "dorama.html?nome=" + encodeURIComponent(nome);
+      const alvo = (nome || "").toLowerCase();
+      let escolhido = null;
+      if (Array.isArray(doramas)){
+        escolhido = doramas.find(function(d){
+          const n1 = (d.nome   || "").toLowerCase();
+          const n2 = (d.nomePT || "").toLowerCase();
+          const n3 = (d.nomeEN || "").toLowerCase();
+          return n1 === alvo || n2 === alvo || n3 === alvo;
+        });
+      }
+      if(escolhido){
+        const slug = escolhido.slug || criarSlug(escolhido.nome, escolhido.nomeEN);
+        window.location.href = "/doramas/" + slug + ".html";
+      }else{
+        const slugFallback = criarSlug(nome);
+        window.location.href = "/doramas/" + slugFallback + ".html";
+      }
     });
 
     document.addEventListener("click", function(e){
@@ -432,7 +452,8 @@ function carregarListaNetflixRomance(){
           return (d.nome || "").toLowerCase().includes(q);
         });
         if(primeiro){
-          window.location.href = "dorama.html?nome=" + encodeURIComponent(primeiro.nome);
+          const slug = primeiro.slug || criarSlug(primeiro.nome, primeiro.nomeEN);
+          window.location.href = "/doramas/" + slug + ".html";
         }
       }
     });
