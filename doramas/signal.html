@@ -38,7 +38,7 @@
     }
     header{
       padding:16px 18px 10px;
-      color:#fff;
+      color:var(--text);
     }
     .topbar{
       max-width:1100px;
@@ -51,7 +51,7 @@
       align-items:center;
       text-decoration:none;
       font-weight:bold;
-      color:rgba(255,255,255,0.9);
+      color:var(--text);
       font-size:14px;
     }
     .back span{font-size:18px}
@@ -60,6 +60,7 @@
       margin-top:6px;
       font-size:18px;
       font-weight:bold;
+      color:var(--text);
     }
     .logo span{opacity:.8;font-weight:normal;font-size:14px}
 
@@ -149,6 +150,15 @@
       line-height:1.6;
       color:#444;
     }
+    .elenco{
+      font-size:14px;
+      margin-top:4px;
+      color:#555;
+    }
+    .elenco strong{
+      color:#b983ff;
+    }
+
     .acoes{
       margin-top:12px;
       display:flex;
@@ -299,6 +309,7 @@
       <div>
         <h1>Signal</h1>
         <div class="nota">⭐ 9.0/10 – MyDramaList</div>
+        <div class="elenco"><strong>👥 Elenco:</strong> Lee Je-hoon • Kim Hye-soo • Cho Jin-woong • Jang Hyun-sung • Jung Hae-kyun</div>
         <div class="tags">
           <span class="tag">intenso</span><span class="tag">triste</span>
         </div>
@@ -306,8 +317,8 @@
       </div>
       <div class="acoes">
         <button class="btn btn-primary" onclick="window.location.href='../index.html'">🏠 Início</button>
-        <button class="btn" id="btnFav">🤍 Favoritar</button>
-        <button class="btn" id="btnShare">📤 Compartilhar</button>
+        <button class="btn btn-primary" id="btnFav">🤍 Favoritar</button>
+        <button class="btn btn-primary" id="btnShare">📤 Compartilhar</button>
       </div>
     </div>
   </section>
@@ -336,21 +347,21 @@
       <h2>Recomendados para você</h2>
       <div class="rec-grid">
         
-        <a class="rec-card" href="/doramas/navillera.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/navillera.webp" alt="Navillera" loading="lazy">
-          <div class="rec-title">Navillera</div>
+        <a class="rec-card" href="/doramas/start-up.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/start%20up.jpg" alt="Start-Up" loading="lazy">
+          <div class="rec-title">Start-Up</div>
         </a>
-        <a class="rec-card" href="/doramas/hotel-del-luna.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/hotel%20del%20luna.jpg" alt="Hotel Del Luna" loading="lazy">
-          <div class="rec-title">Hotel Del Luna</div>
+        <a class="rec-card" href="/doramas/mr-sunshine.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/mr%20sunshine.webp" alt="Mr. Sunshine" loading="lazy">
+          <div class="rec-title">Mr. Sunshine</div>
         </a>
-        <a class="rec-card" href="/doramas/goblin.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/Goblin.jpg" alt="Goblin" loading="lazy">
-          <div class="rec-title">Goblin</div>
+        <a class="rec-card" href="/doramas/my-mister.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/my%20mister.jfif" alt="My Mister" loading="lazy">
+          <div class="rec-title">My Mister</div>
         </a>
-        <a class="rec-card" href="/doramas/doctor-stranger.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/doctor%20stranger.webp" alt="Doctor Stranger" loading="lazy">
-          <div class="rec-title">Doctor Stranger</div>
+        <a class="rec-card" href="/doramas/its-okay-to-not-be-okay.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/tudo%20bem%20nao%20ser%20normal.jpg" alt="Tudo Bem Não Ser Normal (Its Okay to Not Be Okay)" loading="lazy">
+          <div class="rec-title">Tudo Bem Não Ser Normal (Its Okay to Not Be Okay)</div>
         </a>
       </div>
     </section>

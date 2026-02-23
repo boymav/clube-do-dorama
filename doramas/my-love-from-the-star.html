@@ -38,7 +38,7 @@
     }
     header{
       padding:16px 18px 10px;
-      color:#fff;
+      color:var(--text);
     }
     .topbar{
       max-width:1100px;
@@ -51,7 +51,7 @@
       align-items:center;
       text-decoration:none;
       font-weight:bold;
-      color:rgba(255,255,255,0.9);
+      color:var(--text);
       font-size:14px;
     }
     .back span{font-size:18px}
@@ -60,6 +60,7 @@
       margin-top:6px;
       font-size:18px;
       font-weight:bold;
+      color:var(--text);
     }
     .logo span{opacity:.8;font-weight:normal;font-size:14px}
 
@@ -149,6 +150,15 @@
       line-height:1.6;
       color:#444;
     }
+    .elenco{
+      font-size:14px;
+      margin-top:4px;
+      color:#555;
+    }
+    .elenco strong{
+      color:#b983ff;
+    }
+
     .acoes{
       margin-top:12px;
       display:flex;
@@ -299,6 +309,7 @@
       <div>
         <h1>My Love from the Star</h1>
         <div class="nota">⭐ 8.6/10 – MyDramaList</div>
+        <div class="elenco"><strong>👥 Elenco:</strong> Kim Soo-hyun • Jun Ji-hyun • Park Hae-jin • Yoo In-na • Shin Sung-rok</div>
         <div class="tags">
           <span class="tag">romance</span><span class="tag">comedia</span><span class="tag">fantasia</span>
         </div>
@@ -306,8 +317,8 @@
       </div>
       <div class="acoes">
         <button class="btn btn-primary" onclick="window.location.href='../index.html'">🏠 Início</button>
-        <button class="btn" id="btnFav">🤍 Favoritar</button>
-        <button class="btn" id="btnShare">📤 Compartilhar</button>
+        <button class="btn btn-primary" id="btnFav">🤍 Favoritar</button>
+        <button class="btn btn-primary" id="btnShare">📤 Compartilhar</button>
       </div>
     </div>
   </section>
@@ -336,21 +347,21 @@
       <h2>Recomendados para você</h2>
       <div class="rec-grid">
         
-        <a class="rec-card" href="/doramas/goblin.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/Goblin.jpg" alt="Goblin" loading="lazy">
-          <div class="rec-title">Goblin</div>
+        <a class="rec-card" href="/doramas/snowdrop.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/snowdrop.webp" alt="Snowdrop" loading="lazy">
+          <div class="rec-title">Snowdrop</div>
         </a>
-        <a class="rec-card" href="/doramas/the-heirs.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/The%20Heirs.jpg" alt="The Heirs" loading="lazy">
-          <div class="rec-title">The Heirs</div>
+        <a class="rec-card" href="/doramas/hotel-del-luna.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/hotel%20del%20luna.jpg" alt="Hotel Del Luna" loading="lazy">
+          <div class="rec-title">Hotel Del Luna</div>
         </a>
-        <a class="rec-card" href="/doramas/our-beloved-summer.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/our%20beloved%20summer.png" alt="Our Beloved Summer" loading="lazy">
-          <div class="rec-title">Our Beloved Summer</div>
+        <a class="rec-card" href="/doramas/the-legend-of-the-blue-sea.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/the%20legend%20of.jfif" alt="The Legend of the Blue Sea" loading="lazy">
+          <div class="rec-title">The Legend of the Blue Sea</div>
         </a>
-        <a class="rec-card" href="/doramas/extraordinary-attorney-woo.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/extraordinay%20attorney.jpg" alt="Advogada Extraordinária (Extraordinary Attorney Woo)" loading="lazy">
-          <div class="rec-title">Advogada Extraordinária (Extraordinary Attorney Woo)</div>
+        <a class="rec-card" href="/doramas/because-this-is-my-first-life.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/because%20this%20is.jfif" alt="Because This Is My First Life" loading="lazy">
+          <div class="rec-title">Because This Is My First Life</div>
         </a>
       </div>
     </section>

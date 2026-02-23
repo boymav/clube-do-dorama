@@ -38,7 +38,7 @@
     }
     header{
       padding:16px 18px 10px;
-      color:#fff;
+      color:var(--text);
     }
     .topbar{
       max-width:1100px;
@@ -51,7 +51,7 @@
       align-items:center;
       text-decoration:none;
       font-weight:bold;
-      color:rgba(255,255,255,0.9);
+      color:var(--text);
       font-size:14px;
     }
     .back span{font-size:18px}
@@ -60,6 +60,7 @@
       margin-top:6px;
       font-size:18px;
       font-weight:bold;
+      color:var(--text);
     }
     .logo span{opacity:.8;font-weight:normal;font-size:14px}
 
@@ -149,6 +150,15 @@
       line-height:1.6;
       color:#444;
     }
+    .elenco{
+      font-size:14px;
+      margin-top:4px;
+      color:#555;
+    }
+    .elenco strong{
+      color:#b983ff;
+    }
+
     .acoes{
       margin-top:12px;
       display:flex;
@@ -299,6 +309,7 @@
       <div>
         <h1>Doom at Your Service</h1>
         <div class="nota">⭐ 8.4/10 – MyDramaList</div>
+        <div class="elenco"><strong>👥 Elenco:</strong> Park Bo-young • Seo In-guk • Lee Soo-hyuk • Kang Tae-oh • Shin Do-hyun</div>
         <div class="tags">
           <span class="tag">romance</span><span class="tag">fantasia</span><span class="tag">triste</span>
         </div>
@@ -306,8 +317,8 @@
       </div>
       <div class="acoes">
         <button class="btn btn-primary" onclick="window.location.href='../index.html'">🏠 Início</button>
-        <button class="btn" id="btnFav">🤍 Favoritar</button>
-        <button class="btn" id="btnShare">📤 Compartilhar</button>
+        <button class="btn btn-primary" id="btnFav">🤍 Favoritar</button>
+        <button class="btn btn-primary" id="btnShare">📤 Compartilhar</button>
       </div>
     </div>
   </section>
@@ -336,17 +347,17 @@
       <h2>Recomendados para você</h2>
       <div class="rec-grid">
         
-        <a class="rec-card" href="/doramas/itaewon-class.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/itaewon%20class.webp" alt="Itaewon Class" loading="lazy">
-          <div class="rec-title">Itaewon Class</div>
+        <a class="rec-card" href="/doramas/little-women.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/little%20woman.jpg" alt="Little Women" loading="lazy">
+          <div class="rec-title">Little Women</div>
         </a>
-        <a class="rec-card" href="/doramas/hospital-playlist.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/hospital%20playlist.webp" alt="Hospital Playlist" loading="lazy">
-          <div class="rec-title">Hospital Playlist</div>
+        <a class="rec-card" href="/doramas/my-id-is-gangnam-beauty.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/my%20id%20is%20gangnam.webp" alt="My ID is Gangnam Beauty" loading="lazy">
+          <div class="rec-title">My ID is Gangnam Beauty</div>
         </a>
-        <a class="rec-card" href="/doramas/flower-of-evil.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/flower%20of%20evil.webp" alt="Flower of Evil" loading="lazy">
-          <div class="rec-title">Flower of Evil</div>
+        <a class="rec-card" href="/doramas/start-up.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/start%20up.jpg" alt="Start-Up" loading="lazy">
+          <div class="rec-title">Start-Up</div>
         </a>
         <a class="rec-card" href="/doramas/its-okay-to-not-be-okay.html">
           <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/tudo%20bem%20nao%20ser%20normal.jpg" alt="Tudo Bem Não Ser Normal (Its Okay to Not Be Okay)" loading="lazy">

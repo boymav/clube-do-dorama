@@ -38,7 +38,7 @@
     }
     header{
       padding:16px 18px 10px;
-      color:#fff;
+      color:var(--text);
     }
     .topbar{
       max-width:1100px;
@@ -51,7 +51,7 @@
       align-items:center;
       text-decoration:none;
       font-weight:bold;
-      color:rgba(255,255,255,0.9);
+      color:var(--text);
       font-size:14px;
     }
     .back span{font-size:18px}
@@ -60,6 +60,7 @@
       margin-top:6px;
       font-size:18px;
       font-weight:bold;
+      color:var(--text);
     }
     .logo span{opacity:.8;font-weight:normal;font-size:14px}
 
@@ -149,6 +150,15 @@
       line-height:1.6;
       color:#444;
     }
+    .elenco{
+      font-size:14px;
+      margin-top:4px;
+      color:#555;
+    }
+    .elenco strong{
+      color:#b983ff;
+    }
+
     .acoes{
       margin-top:12px;
       display:flex;
@@ -299,6 +309,7 @@
       <div>
         <h1>Moon Lovers: Scarlet Heart Ryeo</h1>
         <div class="nota">⭐ 8.7/10 – MyDramaList</div>
+        <div class="elenco"><strong>👥 Elenco:</strong> Lee Joon-gi • IU • Kang Ha-neul • Hong Jong-hyun • Nam Joo-hyuk</div>
         <div class="tags">
           <span class="tag">romance</span><span class="tag">triste</span><span class="tag">intenso</span>
         </div>
@@ -306,8 +317,8 @@
       </div>
       <div class="acoes">
         <button class="btn btn-primary" onclick="window.location.href='../index.html'">🏠 Início</button>
-        <button class="btn" id="btnFav">🤍 Favoritar</button>
-        <button class="btn" id="btnShare">📤 Compartilhar</button>
+        <button class="btn btn-primary" id="btnFav">🤍 Favoritar</button>
+        <button class="btn btn-primary" id="btnShare">📤 Compartilhar</button>
       </div>
     </div>
   </section>
@@ -336,21 +347,21 @@
       <h2>Recomendados para você</h2>
       <div class="rec-grid">
         
-        <a class="rec-card" href="/doramas/my-name.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/my%20name.jpg" alt="My Name" loading="lazy">
-          <div class="rec-title">My Name</div>
+        <a class="rec-card" href="/doramas/the-red-sleeve.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/the%20red%20sleeve.jpeg" alt="The Red Sleeve" loading="lazy">
+          <div class="rec-title">The Red Sleeve</div>
         </a>
-        <a class="rec-card" href="/doramas/nevertheless.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/nevert.jfif" alt="Nevertheless" loading="lazy">
-          <div class="rec-title">Nevertheless</div>
+        <a class="rec-card" href="/doramas/doom-at-your-service.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/doom%20at%20your.jfif" alt="Doom at Your Service" loading="lazy">
+          <div class="rec-title">Doom at Your Service</div>
         </a>
-        <a class="rec-card" href="/doramas/arthdal-chronicles.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/arthdal%20chronicles.jpg" alt="Arthdal Chronicles" loading="lazy">
-          <div class="rec-title">Arthdal Chronicles</div>
+        <a class="rec-card" href="/doramas/strong-woman-do-bong-soon.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/strong-woman-do-bong-soon.jpg" alt="Strong Woman Do Bong Soon" loading="lazy">
+          <div class="rec-title">Strong Woman Do Bong Soon</div>
         </a>
-        <a class="rec-card" href="/doramas/sky-castle.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/sky%20castle.webp" alt="Sky Castle" loading="lazy">
-          <div class="rec-title">Sky Castle</div>
+        <a class="rec-card" href="/doramas/while-you-were-sleeping.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/whire%20you%20we%20sleeping.webp" alt="While You Were Sleeping" loading="lazy">
+          <div class="rec-title">While You Were Sleeping</div>
         </a>
       </div>
     </section>
