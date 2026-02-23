@@ -1336,7 +1336,7 @@ O dorama mostra amizade, sonhos, amadurecimento e um amor marcante.
     nota:"8.9/10 – MyDramaList",
     elenco:["Song Hye-kyo", "Lee Do-hyun", "Lim Ji-yeon", "Yeom Hye-ran", "Park Sung-hoon"],
     descricao:"Uma mulher marcada por bullying cruel na escola.\nAnos depois, ela volta decidida a se vingar de quem destruiu sua vida.",
-    imagem:"https://planetadorama.com.br/imagens/the-glory.jpg",
+    imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/the%20glory.webp",
     trailer:"https://www.youtube.com/embed/UpwtUNagGqI",
     resumo:`Moon Dong Eun sofreu agressões brutais e humilhações constantes na época do colégio.
 Ninguém a protegeu, nem a escola, nem os adultos ao redor.
