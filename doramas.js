@@ -1307,7 +1307,7 @@ Romântico e muito emocionante.`
  elenco:["Lee Jun-ho", "Im Yoon-ah", "Go Won-hee", "Kim Ga-eun", "Ahn Se-ha"],
     descricao:"Um herdeiro de hotel e uma funcionária cheia de energia vivem um romance fofo no meio de mal-entendidos e contratos.",
     imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/sorriso%20real.webp",
-    trailer:"",
+   trailer:"https://www.youtube.com/embed/7WhO_qF0Q2Q",
     resumo:`Cheon Sa Rang trabalha em um hotel de luxo e ama o que faz.
 Ela conhece Gu Won, um herdeiro frio e sério.
 Os dois começam brigando por tudo, mas aos poucos o clima muda.
@@ -1323,7 +1323,7 @@ Perfeito pra quem gosta de romances leves e divertidos.`
  elenco:["Kim Tae-ri", "Nam Joo-hyuk", "Bona", "Choi Hyun-wook", "Lee Joo-myung"],
     descricao:"Um romance juvenil entre uma esgrimista cheia de sonhos e um jovem que perdeu tudo por causa de uma crise financeira.",
     imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/vinte%20e%20cinto.jpg",
-    trailer:"",
+    trailer:"https://www.youtube.com/embed/PBCXHOskDQ4",
     resumo:`Na Hee Do é uma esgrimista determinada.
 Baek Yi Jin é um jovem que viu a família perder tudo.
 Eles se conhecem na juventude e criam uma ligação muito forte.
