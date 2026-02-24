@@ -130,7 +130,7 @@ Mostra que felicidade muitas vezes está nas coisas simples da vida.`
  elenco:["IU", "Yeo Jin-goo", "Shin Jung-geun", "P.O", "Kang Mi-na"],
  descricao:"Um hotel misterioso recebe apenas almas perdidas.\nSua dona carrega uma grande culpa do passado.\nFantasia com romance e emoção.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/hotel%20del%20luna.jpg",
- trailer:"https://www.youtube.com/watch?v=f-Eaa3f3gDo",
+ trailer:"https://www.youtube.com/embed/lJ3_1v8sB48",
  resumo:`O Hotel Del Luna não é um hotel comum.
 Ele recebe apenas almas que ainda têm assuntos pendentes antes de partir.
 
@@ -831,7 +831,7 @@ Tem batalhas, traições e romances.
  elenco:["Lee Sun-kyun", "IU", "Lee Ji-ah", "Jang Ki-yong", "Park Ho-san"],
  descricao:"Duas almas feridas se apoiam.\nVida adulta com dores reais.\nProfundo e tocante.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/my%20mister.jfif",
- trailer:"https://www.youtube.com/watch?v=-i5RybTJbHI",
+ trailer:"https://www.youtube.com/embed/LuSx0R9GZ7M",
  resumo:`Park Dong Hoon é um homem comum,
 sobrecarregado por problemas da vida adulta.
 
@@ -1336,7 +1336,7 @@ O dorama mostra amizade, sonhos, amadurecimento e um amor marcante.
     nota:"8.9/10 – MyDramaList",
     elenco:["Song Hye-kyo", "Lee Do-hyun", "Lim Ji-yeon", "Yeom Hye-ran", "Park Sung-hoon"],
     descricao:"Uma mulher marcada por bullying cruel na escola.\nAnos depois, ela volta decidida a se vingar de quem destruiu sua vida.",
-    imagem:"https://planetadorama.com.br/imagens/the-glory.jpg",
+    imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/the%20glory.webp",
     trailer:"https://www.youtube.com/embed/UpwtUNagGqI",
     resumo:`Moon Dong Eun sofreu agressões brutais e humilhações constantes na época do colégio.
 Ninguém a protegeu, nem a escola, nem os adultos ao redor.
@@ -1353,7 +1353,7 @@ O dorama mostra bullying pesado, trauma, culpa e a busca por justiça em um sist
     nota:"9.0/10 – MyDramaList",
     elenco:["Shin Hye-sun", "Kim Jung-hyun", "Seol In-ah", "Na In-woo", "Bae Jong-ok"],
     descricao:"Um chef moderno acorda preso no corpo de uma rainha da era Joseon.\nConfusão, política e muita comédia em um só dorama.",
-    imagem:"https://planetadorama.com.br/imagens/mr-queen.jpg",
+    imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/mr%20queen.webp",
     trailer:"https://www.youtube.com/embed/H1vplUsGDoI",
     resumo:`Jang Bong Hwan é um chef de cozinha talentoso nos tempos atuais.
 Após um acidente misterioso, sua alma acaba presa no corpo da Rainha Cheorin, na era Joseon.
@@ -1370,7 +1370,7 @@ O dorama mistura comédia absurda, romance, drama histórico e momentos emociona
     nota:"8.8/10 – MyDramaList",
     elenco:["Park Min-young", "Na In-woo", "Lee Yi-kyung", "Song Ha-yoon", "Lee Gi-kwang"],
     descricao:"Uma mulher traída pelo marido e pela melhor amiga ganha a chance de voltar no tempo.\nDessa vez, ela decide mudar o próprio destino.",
-    imagem:"https://planetadorama.com.br/imagens/marry-my-husband.jpg",
+    imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/marry%20my%20husband.webp",
     trailer:"https://www.youtube.com/embed/lfJGSxXf9Xg",
     resumo:`Kang Ji Won descobre que o marido a trai com sua melhor amiga.
 Depois de sofrer uma grande injustiça, ela acaba morrendo.
@@ -1387,7 +1387,7 @@ O dorama mistura romance, drama, fantasia e vingança, com uma história viciant
     nota:"9.0/10 – MyDramaList",
     elenco:["Shin Ha-kyun", "Yeo Jin-goo", "Choi Sung-eun", "Choi Dae-hoon", "Chun Ho-jin"],
     descricao:"Dois detetives investigam assassinatos em série ligados ao passado.\nEles precisam descobrir quem é o verdadeiro monstro.",
-    imagem:"https://planetadorama.com.br/imagens/beyond-evil.jpg",
+    imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/beyond%20evil.jpg",
     trailer:"https://www.youtube.com/embed/zQCOdcBAWtU",
     resumo:`Lee Dong Sik é um ex-detetive brilhante que agora leva uma vida tranquila em uma pequena delegacia.
 Quando uma série de assassinatos com o mesmo padrão de um caso antigo volta a acontecer, tudo muda.
@@ -1404,7 +1404,7 @@ O dorama questiona quem é o verdadeiro monstro: o assassino ou a sociedade que 
     nota:"8.6/10 – MyDramaList",
     elenco:["Shin Hye-sun", "Ahn Bo-hyun", "Ha Yoon-kyung", "Ahn Dong-goo", "Cha Chung-hwa"],
     descricao:"Uma mulher lembra de todas as suas vidas passadas.\nNa 19ª vida, ela decide reencontrar o amor que perdeu na anterior.",
-    imagem:"https://planetadorama.com.br/imagens/see-you-in-my-19th-life.jpg",
+    imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/see%20you%20im%20my.webp",
     trailer:"https://www.youtube.com/embed/zgvMWFEfm_0",
     resumo:`Ban Ji Eum é diferente de qualquer pessoa: ela se lembra de todas as suas vidas passadas.
 Na sua 18ª vida, ela conhece um menino especial e cria um laço muito forte com ele.
@@ -1421,7 +1421,7 @@ Fala sobre destino, segundas chances e sobre como as conexões verdadeiras podem
     nota:"8.7/10 – MyDramaList",
     elenco:["Ji Chang-wook", "Shin Hye-sun", "Kim Mi-kyung", "Seo Hyun-chul", "Shin Dong-mi"],
     descricao:"Uma fotógrafa que caiu em desgraça volta para a cidade natal.\nLá, reencontra um antigo amor e tenta recomeçar a vida.",
-    imagem:"https://planetadorama.com.br/imagens/welcome-to-samdal-ri.jpg",
+    imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/welcome%20to%20san.jpg",
     trailer:"https://www.youtube.com/embed/VKMluVzOWNY",
     resumo:`Cho Sam Dal é uma fotógrafa que fez sucesso na cidade grande, mas vê sua carreira desmoronar após um escândalo.
 Sem saída, ela volta para Samdal-ri, sua cidade natal à beira-mar.
@@ -1437,7 +1437,7 @@ Enquanto tenta se reerguer, Sam Dal revive memórias, cura feridas antigas e red
     nota:"8.3/10 – MyDramaList",
     elenco:["Park Seo-joon", "Han So-hee", "Claudia Kim", "Wi Ha-joon", "Kim Hae-sook"],
     descricao:"Em 1945, durante a ocupação japonesa, duas pessoas enfrentam uma criatura criada pela ganância humana.",
-    imagem:"https://planetadorama.com.br/imagens/gyeongseong-creature.jpg",
+    imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/gieogsong%20creature.webp",
     trailer:"https://www.youtube.com/embed/X8Noy8MInY0",
     resumo:`A história se passa em Gyeongseong, em 1945, período em que a Coreia estava sob ocupação japonesa.
 Jang Tae Sang é um comerciante influente, conhecido por saber de tudo o que acontece na cidade.
@@ -1454,7 +1454,7 @@ Além da criatura, também mostra a crueldade humana e o peso da guerra na vida 
     nota:"8.4/10 – MyDramaList",
     elenco:["Ahn Hyo-seop", "Jeon Yeo-been", "Kang Hoon", "Rowoon", "Park Hyuk-kwon"],
     descricao:"Uma mulher em luto pelo namorado recebe um misterioso walkman.\nAo ouvi-lo, ela acaba viajando no tempo para 1998.",
-    imagem:"https://planetadorama.com.br/imagens/a-time-called-you.jpg",
+    imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/i%20time%20called%20you.webp",
     trailer:"https://www.youtube.com/embed/c_sKheuGE7o",
     resumo:`Han Jun Hee ainda sofre pela morte do namorado, Koo Yeon Jun.
 Um dia, ela recebe uma fita cassete e um antigo walkman.
@@ -1471,7 +1471,7 @@ O dorama mistura viagem no tempo, mistério, romance e drama.
     nota:"8.5/10 – MyDramaList",
     elenco:["Lee Dong-wook", "Jo Bo-ah", "Kim Bum", "Kim Yong-ji", "Hwang Hee"],
     descricao:"Um antigo espírito raposa de nove caudas vive no mundo moderno.\nEle reencontra um amor do passado enquanto caça criaturas perigosas.",
-    imagem:"https://planetadorama.com.br/imagens/tale-of-the-nine-tailed.jpg",
+    imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/tale%20of%20the%20nine%20talled.jfif",
     trailer:"https://www.youtube.com/embed/VLzgY1JMRss",
     resumo:`Lee Yeon é um gumiho, uma raposa de nove caudas que antes protegia montanhas.
 Agora, ele vive no mundo moderno, trabalhando para eliminar criaturas perigosas que ameaçam os humanos.
@@ -1488,7 +1488,7 @@ Tem clima sombrio em alguns momentos, mas também muitas cenas emocionantes e ro
     nota:"8.1/10 – MyDramaList",
     elenco:["Im Si-wan", "Lee Dong-wook", "Lee Jung-eun", "Lee Hyun-wook", "Park Jong-hwan"],
     descricao:"Um jovem se muda para uma pensão barata em Seul.\nLogo, ele percebe que há algo muito errado com seus vizinhos.",
-    imagem:"https://planetadorama.com.br/imagens/strangers-from-hell.jpg",
+    imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/strangest%20from%20hell.webp",
     trailer:"https://www.youtube.com/embed/bc85-DZwopU",
     resumo:`Yoon Jong Woo se muda do interior para Seul em busca de emprego.
 Para economizar, ele aluga um quarto em uma pensão antiga e estranha.
@@ -1513,4 +1513,3 @@ doramas.forEach(d => {
   d.slug = criarSlug(d.nome, d.nomeEN);
 
 });
-
