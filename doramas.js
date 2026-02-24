@@ -130,7 +130,7 @@ Mostra que felicidade muitas vezes está nas coisas simples da vida.`
  elenco:["IU", "Yeo Jin-goo", "Shin Jung-geun", "P.O", "Kang Mi-na"],
  descricao:"Um hotel misterioso recebe apenas almas perdidas.\nSua dona carrega uma grande culpa do passado.\nFantasia com romance e emoção.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/hotel%20del%20luna.jpg",
- trailer:"https://www.youtube.com/embed/lJ3_1v8sB48",
+ trailer:"https://www.youtube.com/watch?v=f-Eaa3f3gDo",
  resumo:`O Hotel Del Luna não é um hotel comum.
 Ele recebe apenas almas que ainda têm assuntos pendentes antes de partir.
 
