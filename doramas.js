@@ -831,7 +831,7 @@ Tem batalhas, traições e romances.
  elenco:["Lee Sun-kyun", "IU", "Lee Ji-ah", "Jang Ki-yong", "Park Ho-san"],
  descricao:"Duas almas feridas se apoiam.\nVida adulta com dores reais.\nProfundo e tocante.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/my%20mister.jfif",
- trailer:"https://www.youtube.com/watch?v=f-Eaa3f3gDo",
+ trailer:"https://youtu.be/f-Eaa3f3gDo?si=tCF16jzA8rZbuZoN",
  resumo:`Park Dong Hoon é um homem comum,
 sobrecarregado por problemas da vida adulta.
 
