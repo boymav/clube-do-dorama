@@ -1500,6 +1500,149 @@ Quanto mais ele tenta fugir daquela atmosfera, mais preso ele parece ficar.
 O dorama é pesado, claustrofóbico e cheio de tensão psicológica, ideal para quem gosta de histórias sombrias e perturbadoras.`
   }
 
+
+,
+{
+ nome:"Crash Course in Romance",
+ tags:["romance","comedia","drama"],
+ nota:"8.8/10 – MyDramaList",
+ elenco:["Jeon Do-yeon","Jung Kyung-ho","Lee Bong-ryun","Oh Eui-sik"],
+ descricao:"Uma mãe dona de restaurante se envolve com um professor famoso.",
+ imagem:"",
+ trailer:"https://www.youtube.com/embed/YkR3z8GdY9o",
+ resumo:`Nam Haeng Seon é uma ex-atleta que hoje administra um pequeno restaurante.
+Sua filha entra no competitivo mundo das aulas particulares.
+Ela conhece Choi Chi Yeol, um professor famoso e frio.
+Os dois começam com conflitos,
+mas aos poucos criam uma ligação sincera.
+Mistura romance adulto com crítica ao sistema educacional.
+Leve, emocionante e muito popular.`
+},
+{
+ nome:"My Dearest",
+ tags:["historico","romance","intenso"],
+ nota:"8.9/10 – MyDramaList",
+ elenco:["Namkoong Min","Ahn Eun-jin","Lee Hak-joo","Lee Da-in"],
+ descricao:"Amor em tempos de guerra na era Joseon.",
+ imagem:"",
+ trailer:"https://www.youtube.com/embed/7gQf9bP2k2Q",
+ resumo:`Durante a invasão Qing,
+um homem misterioso e uma jovem nobre se aproximam.
+O amor deles nasce em meio à guerra e sofrimento.
+A história mostra lealdade, dor e sobrevivência.
+Visual cinematográfico e atuação intensa.
+Um dos maiores sucessos históricos recentes.`
+},
+{
+ nome:"The Worst of Evil",
+ tags:["acao","crime","intenso"],
+ nota:"8.7/10 – MyDramaList",
+ elenco:["Ji Chang-wook","Wi Ha-joon","Im Se-mi"],
+ descricao:"Um policial se infiltra em cartel de drogas internacional.",
+ imagem:"",
+ trailer:"https://www.youtube.com/embed/fVxM6j9R6nQ",
+ resumo:`Um policial aceita missão secreta perigosa.
+Ele se infiltra em organização criminosa poderosa.
+A tensão cresce conforme sua identidade quase é descoberta.
+Ação pesada e atmosfera sombria.
+Muito elogiado por realismo e atuações.`
+},
+{
+ nome:"Bloodhounds",
+ tags:["acao","crime","intenso"],
+ nota:"8.6/10 – MyDramaList",
+ elenco:["Woo Do-hwan","Lee Sang-yi","Kim Sae-ron"],
+ descricao:"Dois boxeadores enfrentam agiotas violentos.",
+ imagem:"",
+ trailer:"https://www.youtube.com/embed/8gk4g5kYp5E",
+ resumo:`Dois jovens entram no mundo perigoso dos empréstimos ilegais.
+Eles enfrentam um vilão cruel e poderoso.
+Cheio de cenas de luta intensas.
+Mostra amizade e lealdade.
+Rápido, violento e muito viciante.`
+},
+{
+ nome:"Agency",
+ tags:["drama","corporativo","intenso"],
+ nota:"8.4/10 – MyDramaList",
+ elenco:["Lee Bo-young","Son Na-eun","Jo Sung-ha"],
+ descricao:"Uma executiva luta para sobreviver em empresa dominada por homens.",
+ imagem:"",
+ trailer:"https://www.youtube.com/embed/3q7J9e1X9yE",
+ resumo:`Go Ah In é a primeira mulher a chegar ao topo de uma agência de publicidade.
+Ela enfrenta preconceito e competição cruel.
+Mostra ambição e política corporativa.
+Drama adulto e estratégico.
+Muito comentado por sua crítica social.`
+},
+{
+ nome:"Doctor Cha",
+ tags:["romance","drama","superacao"],
+ nota:"8.5/10 – MyDramaList",
+ elenco:["Uhm Jung-hwa","Kim Byung-chul","Myung Se-bin"],
+ descricao:"Uma dona de casa decide retomar carreira médica.",
+ imagem:"",
+ trailer:"https://www.youtube.com/embed/9m3k2Xv8h4A",
+ resumo:`Após anos dedicada à família,
+Cha Jung Sook decide voltar à medicina.
+Ela enfrenta desafios e redescobre sua identidade.
+O dorama fala sobre segunda chance.
+Emocionante e inspirador.`
+},
+{
+ nome:"Island",
+ tags:["fantasia","acao","terror"],
+ nota:"8.3/10 – MyDramaList",
+ elenco:["Kim Nam-gil","Lee Da-hee","Cha Eun-woo"],
+ descricao:"Demônios atacam ilha misteriosa.",
+ imagem:"",
+ trailer:"https://www.youtube.com/embed/6n0vP1g7Z8k",
+ resumo:`Uma mulher descobre estar ligada a forças sobrenaturais.
+Um caçador de demônios a protege.
+Mistura ação e fantasia sombria.
+Visual marcante e atmosfera intensa.`
+},
+{
+ nome:"The Devil Judge",
+ tags:["suspense","politico","intenso"],
+ nota:"8.8/10 – MyDramaList",
+ elenco:["Ji Sung","Kim Min-jung","Jinyoung"],
+ descricao:"Um juiz transforma julgamentos em reality show nacional.",
+ imagem:"",
+ trailer:"https://www.youtube.com/embed/k5qvF9g6Z6E",
+ resumo:`Em um futuro distópico,
+julgamentos são transmitidos ao vivo.
+Um juiz carismático manipula o sistema.
+Questiona justiça e corrupção.
+Tenso e provocador.`
+},
+{
+ nome:"Under the Queen's Umbrella",
+ tags:["historico","drama","familia"],
+ nota:"8.8/10 – MyDramaList",
+ elenco:["Kim Hye-soo","Kim Hae-sook","Choi Won-young"],
+ descricao:"Uma rainha tenta proteger seus filhos problemáticos.",
+ imagem:"",
+ trailer:"https://www.youtube.com/embed/3l5uZ5Yk3gE",
+ resumo:`A rainha enfrenta intrigas no palácio.
+Ela luta para garantir o futuro dos filhos.
+Drama histórico focado em maternidade.
+Elegante e muito elogiado.`
+},
+{
+ nome:"My Liberation Notes",
+ tags:["drama","romance","realista"],
+ nota:"8.9/10 – MyDramaList",
+ elenco:["Lee Min-ki","Kim Ji-won","Son Seok-koo"],
+ descricao:"Três irmãos buscam sentido na vida adulta.",
+ imagem:"",
+ trailer:"https://www.youtube.com/embed/2kV5F1Q8e6Y",
+ resumo:`Três irmãos vivem rotina cansativa no interior.
+Eles sonham com liberdade emocional.
+Um estranho misterioso muda suas vidas.
+Profundo, reflexivo e muito humano.`
+}
+
 ];function criarSlug(nome, nomeEN) {
   const base = nomeEN || nome;
   return String(base || "")
