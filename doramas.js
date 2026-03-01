@@ -1508,7 +1508,7 @@ O dorama é pesado, claustrofóbico e cheio de tensão psicológica, ideal para 
  nota:"8.8/10 – MyDramaList",
  elenco:["Jeon Do-yeon","Jung Kyung-ho","Lee Bong-ryun","Oh Eui-sik"],
  descricao:"Uma mãe dona de restaurante se envolve com um professor famoso.",
- imagem:"",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/crash%20course.webp",
  trailer:"https://www.youtube.com/embed/YkR3z8GdY9o",
  resumo:`Nam Haeng Seon é uma ex-atleta que hoje administra um pequeno restaurante.
 Sua filha entra no competitivo mundo das aulas particulares.
@@ -1524,7 +1524,7 @@ Leve, emocionante e muito popular.`
  nota:"8.9/10 – MyDramaList",
  elenco:["Namkoong Min","Ahn Eun-jin","Lee Hak-joo","Lee Da-in"],
  descricao:"Amor em tempos de guerra na era Joseon.",
- imagem:"",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/my%20dearest.jpeg",
  trailer:"https://www.youtube.com/embed/7gQf9bP2k2Q",
  resumo:`Durante a invasão Qing,
 um homem misterioso e uma jovem nobre se aproximam.
@@ -1539,7 +1539,7 @@ Um dos maiores sucessos históricos recentes.`
  nota:"8.7/10 – MyDramaList",
  elenco:["Ji Chang-wook","Wi Ha-joon","Im Se-mi"],
  descricao:"Um policial se infiltra em cartel de drogas internacional.",
- imagem:"",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/the%20worst%20of%20evil.webp",
  trailer:"https://www.youtube.com/embed/fVxM6j9R6nQ",
  resumo:`Um policial aceita missão secreta perigosa.
 Ele se infiltra em organização criminosa poderosa.
@@ -1553,7 +1553,7 @@ Muito elogiado por realismo e atuações.`
  nota:"8.6/10 – MyDramaList",
  elenco:["Woo Do-hwan","Lee Sang-yi","Kim Sae-ron"],
  descricao:"Dois boxeadores enfrentam agiotas violentos.",
- imagem:"",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/bloodhounds.webp",
  trailer:"https://www.youtube.com/embed/8gk4g5kYp5E",
  resumo:`Dois jovens entram no mundo perigoso dos empréstimos ilegais.
 Eles enfrentam um vilão cruel e poderoso.
@@ -1567,7 +1567,7 @@ Rápido, violento e muito viciante.`
  nota:"8.4/10 – MyDramaList",
  elenco:["Lee Bo-young","Son Na-eun","Jo Sung-ha"],
  descricao:"Uma executiva luta para sobreviver em empresa dominada por homens.",
- imagem:"",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/agency.webp",
  trailer:"https://www.youtube.com/embed/3q7J9e1X9yE",
  resumo:`Go Ah In é a primeira mulher a chegar ao topo de uma agência de publicidade.
 Ela enfrenta preconceito e competição cruel.
@@ -1581,7 +1581,7 @@ Muito comentado por sua crítica social.`
  nota:"8.5/10 – MyDramaList",
  elenco:["Uhm Jung-hwa","Kim Byung-chul","Myung Se-bin"],
  descricao:"Uma dona de casa decide retomar carreira médica.",
- imagem:"",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/doctor%20cha.jpg",
  trailer:"https://www.youtube.com/embed/9m3k2Xv8h4A",
  resumo:`Após anos dedicada à família,
 Cha Jung Sook decide voltar à medicina.
@@ -1595,7 +1595,7 @@ Emocionante e inspirador.`
  nota:"8.3/10 – MyDramaList",
  elenco:["Kim Nam-gil","Lee Da-hee","Cha Eun-woo"],
  descricao:"Demônios atacam ilha misteriosa.",
- imagem:"",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/island.webp",
  trailer:"https://www.youtube.com/embed/6n0vP1g7Z8k",
  resumo:`Uma mulher descobre estar ligada a forças sobrenaturais.
 Um caçador de demônios a protege.
@@ -1608,7 +1608,7 @@ Visual marcante e atmosfera intensa.`
  nota:"8.8/10 – MyDramaList",
  elenco:["Ji Sung","Kim Min-jung","Jinyoung"],
  descricao:"Um juiz transforma julgamentos em reality show nacional.",
- imagem:"",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/the%20devil%20judge.jpg",
  trailer:"https://www.youtube.com/embed/k5qvF9g6Z6E",
  resumo:`Em um futuro distópico,
 julgamentos são transmitidos ao vivo.
@@ -1622,7 +1622,7 @@ Tenso e provocador.`
  nota:"8.8/10 – MyDramaList",
  elenco:["Kim Hye-soo","Kim Hae-sook","Choi Won-young"],
  descricao:"Uma rainha tenta proteger seus filhos problemáticos.",
- imagem:"",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/under%20the%20queen%20umbrella.webp",
  trailer:"https://www.youtube.com/embed/3l5uZ5Yk3gE",
  resumo:`A rainha enfrenta intrigas no palácio.
 Ela luta para garantir o futuro dos filhos.
@@ -1635,7 +1635,7 @@ Elegante e muito elogiado.`
  nota:"8.9/10 – MyDramaList",
  elenco:["Lee Min-ki","Kim Ji-won","Son Seok-koo"],
  descricao:"Três irmãos buscam sentido na vida adulta.",
- imagem:"",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/my%20liberation%20notes.webp",
  trailer:"https://www.youtube.com/embed/2kV5F1Q8e6Y",
  resumo:`Três irmãos vivem rotina cansativa no interior.
 Eles sonham com liberdade emocional.
