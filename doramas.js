@@ -35,6 +35,7 @@ o casal enfrenta escolhas difíceis e grandes sacrifícios.
  descricao:"Um ser imortal busca alguém para quebrar sua maldição.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/Goblin.jpg",
  resumo:`Kim Shin é um general traído que acaba sendo amaldiçoado com a imortalidade. 
+    trailer: 'https://www.youtube.com/embed/8AcNEVUzV4o',
 Séculos depois, ele ainda vive entre os humanos carregando culpa e solidão.
 A única forma de quebrar a maldição é encontrar sua noiva destinada.
 Ji Eun Tak é uma jovem otimista que consegue ver fantasmas.
@@ -67,7 +68,7 @@ O final é emocionante e inesquecível.`
  elenco:["Park Bo-young", "Park Hyung-sik", "Ji Soo", "Ahn Woo-yeon", "Shim Hye-jin"],
  descricao:"Uma jovem nasce com força sobrenatural.\nEla tenta viver normalmente enquanto protege quem ama.\nMistura perfeita de comédia, ação e romance.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/strong-woman-do-bong-soon.jpg",
- trailer:"https://www.youtube.com/embed/XLW8yB7Yx0E"
+ trailer:"https://www.youtube.com/embed/znds8S2kKg4"
 },
 {
  nome:"Tudo Bem Não Ser Normal (Its Okay to Not Be Okay)",
@@ -78,7 +79,7 @@ O final é emocionante e inesquecível.`
  elenco:["Kim Soo-hyun", "Seo Ye-ji", "Oh Jung-se", "Park Gyu-young", "Kim Joo-hun"],
  descricao:"Um cuidador emocionalmente fechado conhece uma escritora excêntrica.\nAmbos carregam traumas profundos.\nUma história sensível sobre cura e amor.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/tudo%20bem%20nao%20ser%20normal.jpg",
- trailer:"https://www.youtube.com/embed/50ek4HQo0bc"
+ trailer:"https://www.youtube.com/embed/1H__LNPCc80"
 },
 {
  nome:"Itaewon Class",
@@ -105,7 +106,7 @@ O final é emocionante e inesquecível.`
  elenco:["Hyeri", "Ryu Jun-yeol", "Park Bo-gum", "Go Kyung-pyo", "Lee Dong-hwi"],
  descricao:"Famílias e amigos vivem no mesmo bairro nos anos 80.\nHistória cheia de nostalgia e afeto.\nUm dorama sobre crescer e amar.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/reply%201988.jpg",
- trailer:"https://www.youtube.com/embed/5V2Yz0uA4xY",
+ trailer:"https://www.youtube.com/embed/g_6mhs6PxoE",
  resumo:`A história acompanha cinco amigos que cresceram juntos em um bairro simples de Seul nos anos 80.
 Cada família tem suas dificuldades, sonhos e momentos engraçados.
 
@@ -156,7 +157,7 @@ com muita emoção e reflexões sobre arrependimento e perdão.`
  elenco:["Song Joong-ki", "Song Hye-kyo", "Jin Goo", "Kim Ji-won", "Onew"],
  descricao:"Um soldado e uma médica se apaixonam em missão humanitária.\nEles enfrentam perigos constantes.\nRomance com ação e drama.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/Descendants%20of%20the%20Sun.jpg",
- trailer:"https://www.youtube.com/embed/wFJmU5m6cZg",
+ trailer:"https://www.youtube.com/embed/Q27dAWOLTNs",
  resumo:`Yoo Si Jin é um capitão das forças especiais,
 acostumado a viver situações perigosas.
 
@@ -288,7 +289,7 @@ O dorama mistura história, política e paixão profunda.
  elenco:["Lee Min-ho", "Park Shin-hye", "Kim Woo-bin", "Kim Ji-won", "Kang Min-hyuk"],
  descricao:"Jovens ricos vivem conflitos amorosos e familiares.\nDiferenças sociais marcam os relacionamentos.\nClássico do romance escolar.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/The%20Heirs.jpg",
- trailer:"https://www.youtube.com/embed/FrUG0q9p4qk",
+ trailer:"https://www.youtube.com/embed/Y0WSF5ikpvU",
  resumo:`Kim Tan é herdeiro de um grande império empresarial.
 Ele estuda em uma escola exclusiva para jovens ricos.
 
@@ -339,7 +340,7 @@ fracassos e perseverança.
  elenco:["Shin Min-a", "Kim Seon-ho", "Lee Sang-yi", "Gong Min-jung", "In Gyo-jin"],
  descricao:"Uma dentista se muda para uma vila à beira-mar.\nEla conhece um faz-tudo muito carismático.\nRomance leve e aconchegante.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/hometown%20cha.jpg",
- trailer:"https://www.youtube.com/embed/jwXKxXz7T9Q",
+ trailer:"https://www.youtube.com/embed/DsodZLGmpIQ",
  resumo:`Yoon Hye Jin é uma dentista inteligente e determinada.
 Após problemas na cidade grande, ela decide recomeçar em uma pequena vila litorânea.
 
@@ -363,7 +364,7 @@ cheio de carinho e crescimento pessoal.`
  elenco:["Lee Min-ki", "Jung So-min", "Esom", "Park Byung-eun", "Kim Ga-eun"],
  descricao:"Um casamento por contrato muda duas vidas.\nEles aprendem a lidar com sentimentos reais.\nRomance maduro e sensível.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/because%20this%20is.jfif",
- trailer:"https://www.youtube.com/embed/8xHh8Gg8YyA",
+ trailer:"https://www.youtube.com/embed/YtfNG2bnh5Y",
  resumo:`Nam Se Hee é um homem introvertido que só pensa em pagar sua casa.
 Yoon Ji Ho é uma escritora desempregada procurando estabilidade.
 
@@ -386,7 +387,7 @@ realista e cheia de diálogos profundos.`
  elenco:["Lee Jong-suk", "Han Hyo-joo", "Jung Yoo-jin", "Lee Tae-hwan", "Park Won-sang"],
  descricao:"Dois mundos se conectam através de um webtoon.\nRealidade e ficção se misturam.\nRomance cheio de ação.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/w%20two%20words.webp",
- trailer:"https://www.youtube.com/embed/iFyUFFcGd9k",
+ trailer:"https://www.youtube.com/embed/h_Nf1vTOy2s",
  resumo:`Oh Yeon Joo é uma médica cujo pai é autor de um famoso webtoon.
 Um dia, ela é misteriosamente puxada para dentro da história.
 
@@ -410,7 +411,7 @@ mistério e fantasia de forma intensa.
  elenco:["Bae Suzy", "Lee Jong-suk", "Jung Hae-in", "Lee Sang-yeob", "Ko Sung-hee"],
  descricao:"Três pessoas conseguem prever o futuro em sonhos.\nEles tentam evitar tragédias.\nSuspense com romance.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/whire%20you%20we%20sleeping.webp",
- trailer:"https://www.youtube.com/embed/Uc3kNn1dS8c",
+ trailer:"https://www.youtube.com/embed/8_rEZV3n3mk",
  resumo:`Nam Hong Joo começa a ter sonhos que mostram tragédias futuras.
 Ela percebe que precisa agir para impedir que esses acontecimentos se tornem realidade.
 
@@ -435,7 +436,7 @@ coragem e amor inesperado.`
  elenco:["Park Min-young", "Kim Jae-wook", "Ahn Bo-hyun", "Park Jin-joo", "Kim Mi-kyung"],
  descricao:"Uma curadora de arte leva uma vida dupla.\nEla é fã secreta de um idol.\nRomance divertido e leve.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/her%20private%20life.jpg",
- trailer:"https://www.youtube.com/embed/nH9xqk1jVhY",
+ trailer:"https://www.youtube.com/embed/V_QJ0jLKWFo",
  resumo:`Sung Deok Mi é uma curadora de arte profissional e respeitada.
 Mas fora do trabalho, ela vive secretamente como fã obsessiva de um idol.
 
@@ -459,7 +460,7 @@ Perfeito para quem quer algo doce e divertido.`
  elenco:["Yoo In-na", "Lee Dong-wook", "Lee Sang-woo", "Son Sung-yoon", "Oh Jung-se"],
  descricao:"Uma atriz trabalha como secretária temporária.\nEla se envolve com um advogado sério.\nDoce e romântico.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/touch%20your%20heartt.jpg",
- trailer:"https://www.youtube.com/embed/1h7H6qY3u4I",
+ trailer:"https://www.youtube.com/embed/7Sdq9d3aN3g",
  resumo:`Oh Yoon Seo é uma atriz que precisa recuperar sua reputação.
 Para isso, ela começa a trabalhar como secretária em um escritório de advocacia.
 
@@ -483,7 +484,7 @@ Ideal para quem ama romance puro.`
  elenco:["Im Soo-hyang", "Cha Eun-woo", "Jo Woo-ri", "Kwak Dong-yeon", "Min Do-hee"],
  descricao:"Uma jovem muda sua aparência para recomeçar.\nEla enfrenta preconceitos na faculdade.\nMensagem forte sobre autoestima.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/my%20id%20is%20gangnam.webp",
- trailer:"https://www.youtube.com/embed/dx9RzYdX6JY",
+ trailer:"https://www.youtube.com/embed/pBwTLwHzV8I",
  resumo:`Kang Mi Rae sofre bullying durante toda a vida por causa de sua aparência.
 Ao entrar na universidade, ela decide fazer cirurgia plástica para recomeçar.
 
@@ -506,7 +507,7 @@ leve e reflexiva sobre amor próprio.`
  elenco:["Kim Ha-neul", "Yoon Sang-hyun", "Lee Do-hyun", "Roh Jeong-eui", "Lee Mi-do"],
  descricao:"Um homem volta ao corpo de seus 18 anos.\nEle tenta consertar erros do passado.\nComédia com emoção.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/18againn.jpg",
- trailer:"https://www.youtube.com/embed/W9mRk8q9vXU",
+ trailer:"https://www.youtube.com/embed/neLAy_Gpc-Y",
  resumo:`Hong Dae Young sente que sua vida está desmoronando.
 Seu casamento está em crise e ele perdeu o emprego.
 
@@ -605,7 +606,7 @@ Uma história profunda e emocionante.`
  elenco:["Ji Chang-wook", "Park Min-young", "Yoo Ji-tae", "Kim Mi-kyung", "Park Sang-won"],
  descricao:"Um mensageiro misterioso trabalha nas sombras.\nEle se envolve com uma jornalista.\nAção, romance e suspense.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/healer.webp",
- trailer:"https://www.youtube.com/embed/1u4Z8M4H0Xk",
+ trailer:"https://www.youtube.com/embed/EcOhZLULyFA",
  resumo:`Seo Jung Hoo é conhecido como “Healer”.
 Ele realiza missões secretas e vive isolado.
 
@@ -630,7 +631,7 @@ mistério e química intensa entre o casal.
  elenco:["Gong Yoo", "Yoon Eun-hye", "Lee Sun-kyun", "Chae Jung-an", "Kim Jae-wook"],
  descricao:"Uma garota se passa por garoto para trabalhar.\nUm romance inesperado surge.\nClássico divertido e romântico.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/coffeee.jpg",
- trailer:"https://www.youtube.com/embed/8x5Q9xvW7lE",
+ trailer:"https://www.youtube.com/embed/OMaPvruMhuI",
  resumo:`Go Eun Chan se disfarça de homem para conseguir emprego.
 Ela começa a trabalhar em um café onde todos os funcionários são homens.
 
@@ -652,7 +653,7 @@ leve, divertido e cheio de química.`
  elenco:["Hyun Bin", "Ha Ji-won", "Yoon Sang-hyun", "Kim Sa-rang", "Lee Philip"],
  descricao:"Um casal troca de corpos misteriosamente.\nEles aprendem a se entender.\nRomance clássico com fantasia.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/secret%20garden.jpg",
- trailer:"https://www.youtube.com/embed/1kX9mG5JxqA",
+ trailer:"https://www.youtube.com/embed/9xMLDDm7oGU",
  resumo:`Kim Joo Won é um empresário arrogante.
 Gil Ra Im é uma dublê humilde e corajosa.
 
@@ -675,7 +676,7 @@ O dorama mistura fantasia com romance clássico.
  elenco:["Jun Ji-hyun", "Lee Min-ho", "Lee Hee-joon", "Shin Won-ho", "Shin Hye-sun"],
  descricao:"Uma sereia chega ao mundo humano.\nEla se apaixona por um golpista.\nRomance divertido e mágico.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/the%20legend%20of.jfif",
- trailer:"https://www.youtube.com/embed/4YfK6qK8g9Y",
+ trailer:"https://www.youtube.com/embed/G_jt3EwBMwU",
  resumo:`Shim Cheong é uma sereia que acaba no mundo moderno.
 Ela conhece Heo Joon Jae, um golpista charmoso.
 
@@ -695,7 +696,7 @@ Uma história encantadora e apaixonante.`
  elenco:["Park Bo-young", "Seo In-guk", "Lee Soo-hyuk", "Kang Tae-oh", "Shin Do-hyun"],
  descricao:"Uma mulher faz um contrato com a própria destruição.\nEles vivem um amor impossível.\nRomance melancólico.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/doom%20at%20your.jfif",
- trailer:"https://www.youtube.com/embed/s8G3vWJ5R8E",
+ trailer:"https://www.youtube.com/embed/_V5w-SG8ERs",
  resumo:`Tak Dong Kyung descobre que tem pouco tempo de vida.
 Em desespero, deseja que o mundo acabe.
 
@@ -715,7 +716,7 @@ Fala sobre vida, dor e esperança.`
  elenco:["Choi Woo-shik", "Kim Da-mi", "Kim Sung-cheol", "Roh Jeong-eui", "Park Jin-joo"],
  descricao:"Ex-namorados se reencontram anos depois.\nSentimentos mal resolvidos voltam.\nRomance realista e sensível.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/our%20beloved%20summer.png",
- trailer:"https://www.youtube.com/embed/3QfHqzF4P6k",
+ trailer:"https://www.youtube.com/embed/p_dDoDQ8u94",
  resumo:`Choi Ung e Kook Yeon Soo foram namorados na juventude.
 Após o término, prometeram nunca mais se ver.
 
@@ -735,7 +736,7 @@ Delicado e emocionante.`
  elenco:["Lee Joon-gi", "Moon Chae-won", "Seo Hyun-woo", "Jang Hee-jin", "Nam Gi-ae"],
  descricao:"Um homem esconde um passado sombrio.\nSua esposa é detetive.\nSuspense psicológico poderoso.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/flower%20of%20evil.webp",
- trailer:"https://www.youtube.com/embed/SlDhptm8ZqY",
+ trailer:"https://www.youtube.com/embed/C1Cp24Ngdfc",
  resumo:`Baek Hee Sung parece ter uma vida perfeita.
 Mas ele esconde um passado perigoso.
 
@@ -754,7 +755,7 @@ Questiona confiança e identidade.
  elenco:["Yum Jung-ah", "Lee Tae-ran", "Yoon Se-ah", "Oh Na-ra", "Kim Seo-hyung"],
  descricao:"Famílias ricas disputam o futuro dos filhos.\nPressão extrema e ambição.\nCrítica social forte.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/sky%20castle.webp",
- trailer:"https://www.youtube.com/embed/8R9P6kWzF4A",
+ trailer:"https://www.youtube.com/embed/FcVKzEYaC1s",
  resumo:`Famílias da elite vivem em um condomínio luxuoso.
 Elas fazem de tudo para garantir o sucesso acadêmico dos filhos.
 
@@ -773,7 +774,7 @@ Mostra ambição, obsessão e consequências.
  elenco:["Park Hae-soo", "Jung Kyung-ho", "Krystal Jung", "Choi Moo-sung", "Jung Woong-in"],
  descricao:"Um jogador de beisebol vai parar na prisão.\nHistórias humanas se cruzam.\nDrama com humor e emoção.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/prison%20playbook.jfif",
- trailer:"https://www.youtube.com/embed/lqCw0wV0W6I",
+ trailer:"https://www.youtube.com/embed/MAyHcIzvjnY",
  resumo:`Kim Je Hyuk é um famoso jogador de beisebol.
 De repente, ele vai parar na prisão.
 
@@ -812,7 +813,7 @@ Mostra superação e amor verdadeiro.
  elenco:["Song Joong-ki", "Jang Dong-gun", "Kim Ji-won", "Kim Ok-vin", "Park Hae-joon"],
  descricao:"Um mundo antigo marcado por guerras e poder.\nDestinos se entrelaçam.\nÉpico histórico.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/arthdal%20chronicles.jpg",
- trailer:"https://www.youtube.com/embed/nzYOLtB9YlI",
+ trailer:"https://www.youtube.com/embed/nWf3aEvyR5k",
  resumo:`Em um mundo antigo chamado Arthdal,
 tribos lutam por poder e sobrevivência.
 
@@ -831,7 +832,7 @@ Tem batalhas, traições e romances.
  elenco:["Lee Sun-kyun", "IU", "Lee Ji-ah", "Jang Ki-yong", "Park Ho-san"],
  descricao:"Duas almas feridas se apoiam.\nVida adulta com dores reais.\nProfundo e tocante.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/my%20mister.jfif",
- trailer:"https://www.youtube.com/embed/LuSx0R9GZ7M",
+ trailer:"https://www.youtube.com/embed/f-Eaa3f3gDo",
  resumo:`Park Dong Hoon é um homem comum,
 sobrecarregado por problemas da vida adulta.
 
@@ -851,7 +852,7 @@ Mostra como pequenas gentilezas salvam vidas.
  elenco:["Park Seo-joon", "Kim Ji-won", "Ahn Jae-hong", "Song Ha-yoon", "Kim Sung-oh"],
  descricao:"Amigos lutam por seus sonhos.\nRomance nasce aos poucos.\nMotivador e divertido.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/flight%20for%20my%20way.webp",
- trailer:"https://www.youtube.com/embed/If3H0qUeEwE",
+ trailer:"https://www.youtube.com/embed/LKGAhuJC01s",
  resumo:`Ko Dong Man e Choi Ae Ra são amigos de infância.
 Eles sonham em alcançar grandes objetivos.
 
@@ -889,7 +890,7 @@ Tem romance leve e momentos emocionantes.
  elenco:["Han So-hee", "Song Kang", "Chae Jong-hyeop", "Yang Hye-ji", "Lee Yul-eum"],
  descricao:"Um romance intenso e complicado.\nSentimentos confusos dominam o casal.\nRealista e melancólico.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/nevert.jfif",
- trailer:"https://www.youtube.com/embed/0z9nGQ9F3pA",
+ trailer:"https://www.youtube.com/embed/xJCTxUuu3js",
  resumo:`Yoo Na Bi não acredita mais no amor.
 Park Jae Eon gosta de flertar, mas evita compromisso.
 
@@ -908,7 +909,7 @@ Sentimentos confusos e inseguranças reais.
  elenco:["Kim So-hyun", "Jung Ga-ram", "Song Kang", "Go Min-si", "Shin Seung-ho"],
  descricao:"Um aplicativo revela quem gosta de você.\nTriângulos amorosos surgem.\nRomance jovem.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/love%20alarm.webp",
- trailer:"https://www.youtube.com/embed/8U1i6cQ6pF8",
+ trailer:"https://www.youtube.com/embed/8sXTfzaLmiQ",
  resumo:`Um aplicativo chamado Love Alarm
 avisa quando alguém próximo gosta de você.
 
@@ -927,7 +928,7 @@ Mostra como tecnologia influencia o amor.
  elenco:["Jung Hae-in", "Jisoo", "Yoo In-na", "Jang Seung-jo", "Kim Hye-yoon"],
  descricao:"Amor proibido em tempos políticos difíceis.\nSegredos e sacrifícios.\nDrama intenso.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/snowdrop.webp",
- trailer:"https://www.youtube.com/embed/gcXc1M5gTgk",
+ trailer:"https://www.youtube.com/embed/ff0dEyYiYi0",
  resumo:`Eun Young Ro encontra um homem ferido
 e decide escondê-lo em seu dormitório.
 
@@ -946,7 +947,7 @@ Sacrifícios e escolhas difíceis surgem.
  elenco:["Lee Seung-gi", "Lee Hee-joon", "Park Ju-hyun", "Kyung Soo-jin", "Pyo Ji-hoon"],
  descricao:"Um serial killer assombra a Coreia.\nQuestões morais profundas surgem.\nSuspense psicológico pesado.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/mouse.jpg",
- trailer:"https://www.youtube.com/embed/9E5c8FfCkqE",
+ trailer:"https://www.youtube.com/embed/Q6Nki1_8RBU",
  resumo:`Um assassino em série começa a espalhar terror.
 A polícia tenta capturá-lo a qualquer custo.
 
@@ -1041,7 +1042,7 @@ ela perde quem realmente é.
  elenco:["Go Kyung-pyo", "Chae Soo-bin", "Kim Seon-ho", "Go Won-hee", "Kim Eui-sung"],
  descricao:"Entregadores sonham com uma vida melhor.\nRomance simples e inspirador.\nMotivador.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/strongest%20deliv.jpg",
- trailer:"https://www.youtube.com/embed/6gW6pFZKXkY",
+ trailer:"https://www.youtube.com/embed/3ckbHHEuKU4",
  resumo:`Jovens entregadores trabalham duro todos os dias.
 Eles sonham em abrir o próprio negócio.
 
@@ -1058,7 +1059,7 @@ Mostra a luta da juventude comum.
  elenco:["Lee Do-hyun", "Go Min-si", "Lee Sang-yi", "Geum Sae-rok", "Oh Man-seok"],
  descricao:"Amor em meio a um momento histórico.\nEscolhas difíceis e dor.\nMuito emocionante.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/youth%20of%20may.webp",
- trailer:"https://www.youtube.com/embed/j4KJY4R8r3I",
+ trailer:"https://www.youtube.com/embed/NZPOPMnmBPw",
  resumo:`Durante o levante de Gwangju,
 um estudante de medicina conhece uma enfermeira.
 
@@ -1075,7 +1076,7 @@ Uma história de amor em tempos difíceis.`
  elenco:["Shin Se-kyung", "Cha Eun-woo", "Park Ki-woong", "Lee Ji-hoon", "Kim Yeo-jin"],
  descricao:"Uma mulher desafia padrões sociais.\nEla se torna historiadora.\nRomance histórico leve.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/rockie%20storian.jfif",
- trailer:"https://www.youtube.com/embed/8v9WnM7DkX8",
+ trailer:"https://www.youtube.com/embed/GqaGhUJ9Vgs",
  resumo:`Em uma época em que mulheres não tinham voz,
 Goo Hae Ryung decide virar historiadora.
 
@@ -1092,7 +1093,7 @@ Leve, divertido e inspirador.`
  elenco:["Lee Jun-ho", "Lee Se-young", "Kang Hoon", "Lee Deok-hwa", "Jang Hye-jin"],
  descricao:"Um rei se apaixona por uma dama da corte.\nAmor impossível.\nHistórico emocionante.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/the%20red%20sleeve.jpeg",
- trailer:"https://www.youtube.com/embed/P3c1gL0lTzA",
+ trailer:"https://www.youtube.com/embed/WQYshmtVv-g",
  resumo:`Um príncipe herdeiro se apaixona
 por uma dama da corte.
 
@@ -1128,7 +1129,7 @@ Fantasia épica e envolvente.`
  elenco:["Lee Jong-suk", "Jin Se-yeon", "Park Hae-jin", "Kang So-ra", "Choi Jung-woo"],
  descricao:"Um médico com passado doloroso.\nAmor e conspirações.\nDrama médico intenso.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/doctor%20stranger.webp",
- trailer:"https://www.youtube.com/embed/L1fF9vDqC_w",
+ trailer:"https://www.youtube.com/embed/jxK23ljG98E",
  resumo:`Criado na Coreia do Norte,
 um médico genial foge para o Sul.
 
@@ -1144,7 +1145,7 @@ Drama cheio de tensão e romance.`
  elenco:["Ra Mi-ran", "Lee Do-hyun", "Ahn Eun-jin", "Yoo In-soo", "Jung Woong-in"],
  descricao:"Relação difícil entre mãe e filho.\nSegundas chances.\nEmocionante.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/the%20good%20bad%20mother.jpg",
- trailer:"https://www.youtube.com/embed/WvGz0C5yN6g",
+ trailer:"https://www.youtube.com/embed/CzVi_hIZ3mc",
  resumo:`Uma mãe rígida cria o filho com severidade.
 Anos depois, um acidente muda tudo.
 
@@ -1160,7 +1161,7 @@ Emocionante e cheio de aprendizado.`
  elenco:["Lee Dong-wook", "Wi Ha-joon", "Han Ji-eun", "Cha Hak-yeon", "Sung Ji-ru"],
  descricao:"Um policial corrupto enfrenta seu outro lado.\nAção e humor.\nDiferente e divertido.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/bad%20and%20crazy.webp",
- trailer:"https://www.youtube.com/embed/1S-2m3h3K9Q",
+ trailer:"https://www.youtube.com/embed/OV0Buf_qh6Q",
  resumo:`Um policial ambicioso começa a ver
 um misterioso justiceiro.
 
@@ -1177,7 +1178,7 @@ Diferente e viciante.`
  elenco:["Lee Na-young", "Lee Jong-suk", "Wi Ha-joon", "Jung Yoo-jin", "Kim Tae-woo"],
  descricao:"Uma mulher recomeça a carreira.\nAmor nasce no trabalho.\nDoce e inspirador.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/romance%20is%20a%20bonus%20book.jpg",
- trailer:"https://www.youtube.com/embed/0mYbKz4X6f8",
+ trailer:"https://www.youtube.com/embed/zjeXZEtEI2A",
  resumo:`Uma mulher divorciada tenta voltar ao mercado.
 Ela consegue emprego em uma editora.
 
@@ -1193,7 +1194,7 @@ Doce e confortável de assistir.`
  elenco:["Park In-hwan", "Song Kang", "Na Moon-hee", "Hong Seung-hee", "Kim Tae-hoon"],
  descricao:"Um senhor sonha em aprender balé.\nAmizade entre gerações.\nLindo e sensível.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/navillera.webp",
- trailer:"https://www.youtube.com/embed/6hT0u8v4zYg",
+ trailer:"https://www.youtube.com/embed/ZrR8RrltK5Y",
  resumo:`Um senhor de 70 anos decide aprender balé.
 Ele encontra um jovem talentoso e perdido.
 
@@ -1209,7 +1210,7 @@ Muito sensível e emocionante.`
  elenco:["Jung Hae-in", "Koo Kyo-hwan", "Kim Sung-kyun", "Son Suk-ku", "Cho Hyun-chul"],
  descricao:"Soldados caçam desertores do exército.\nRealidade dura.\nDrama forte.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/d%20p.jpg",
- trailer:"https://www.youtube.com/embed/0cZ7o0WnP2Y",
+ trailer:"https://www.youtube.com/embed/yOJKbWangCc",
  resumo:`Um soldado entra para a equipe
 que captura desertores.
 
@@ -1241,7 +1242,7 @@ Extremamente sensível e humano.`
  elenco:["Kim Go-eun", "Nam Ji-hyun", "Park Ji-hu", "Wi Ha-joon", "Uhm Ji-won"],
  descricao:"Três irmãs enfrentam uma família poderosa.\nSegredos e corrupção.\nSuspense moderno.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/little%20woman.jpg",
- trailer:"https://www.youtube.com/embed/2Fq5C8YVg5A",
+ trailer:"https://www.youtube.com/embed/Y52PRIHr-YI",
  resumo:`Três irmãs pobres se envolvem
 em um caso milionário misterioso.
 
@@ -1257,7 +1258,7 @@ Suspense moderno e elegante.`
  elenco:["Song Joong-ki", "Lee Sung-min", "Shin Hyun-bin", "Kim Nam-hee", "Park Ji-hyun"],
  descricao:"Um homem renasce em família rica.\nBusca vingança.\nDrama corporativo forte.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/reborn%20ric.jfif",
- trailer:"https://www.youtube.com/embed/IsQ4c0w9f0A",
+ trailer:"https://www.youtube.com/embed/duw6V0Ez9ys",
  resumo:`Após ser traído e morto,
 um homem renasce como herdeiro da família rica.
 
@@ -1273,7 +1274,7 @@ Drama corporativo cheio de estratégia.`
  elenco:["Lee Jong-suk", "Im Yoon-ah", "Kim Joo-hun", "Yang Kyung-won", "Kwak Dong-yeon"],
  descricao:"Um advogado vira lenda do crime.\nConspirações perigosas.\nSuspense eletrizante.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/big%20mouth.webp",
- trailer:"https://www.youtube.com/embed/twK-hz0Xv1c",
+ trailer:"https://www.youtube.com/embed/-0VgJeSp8b0",
  resumo:`Um advogado comum é acusado
 de ser um grande criminoso.
 
@@ -1289,7 +1290,7 @@ Suspense cheio de tensão.`
  elenco:["Kim Soo-hyun", "Kim Ji-won", "Park Sung-hoon", "Kwak Dong-yeon", "Lee Joo-bin"],
  descricao:"Um casal enfrenta crise profunda.\nAmor, dor e reconciliação.\nMuito emocionante.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/queen%20of%20tears.webp",
- trailer:"https://www.youtube.com/embed/GS3xYzV5C0Y",
+ trailer:"https://www.youtube.com/embed/Gg2D8zrzlOA",
  resumo:`Um casal rico enfrenta crise no casamento.
 O amor parece ter acabado.
 
@@ -1307,7 +1308,7 @@ Romântico e muito emocionante.`
  elenco:["Lee Jun-ho", "Im Yoon-ah", "Go Won-hee", "Kim Ga-eun", "Ahn Se-ha"],
     descricao:"Um herdeiro de hotel e uma funcionária cheia de energia vivem um romance fofo no meio de mal-entendidos e contratos.",
     imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/sorriso%20real.webp",
-    trailer:"https://www.youtube.com/embed/7WhO_qF0Q2Q",
+    trailer:"https://www.youtube.com/embed/AGF16szMOmo",
     resumo:`Cheon Sa Rang trabalha em um hotel de luxo e ama o que faz.
 Ela conhece Gu Won, um herdeiro frio e sério.
 Os dois começam brigando por tudo, mas aos poucos o clima muda.
@@ -1323,21 +1324,22 @@ Perfeito pra quem gosta de romances leves e divertidos.`
  elenco:["Kim Tae-ri", "Nam Joo-hyuk", "Bona", "Choi Hyun-wook", "Lee Joo-myung"],
     descricao:"Um romance juvenil entre uma esgrimista cheia de sonhos e um jovem que perdeu tudo por causa de uma crise financeira.",
     imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/vinte%20e%20cinto.jpg",
-    trailer:"https://www.youtube.com/embed/PBCXHOskDQ4",
+    trailer:"https://www.youtube.com/embed/TuffFHNmGrM",
     resumo:`Na Hee Do é uma esgrimista determinada.
 Baek Yi Jin é um jovem que viu a família perder tudo.
 Eles se conhecem na juventude e criam uma ligação muito forte.
 O dorama mostra amizade, sonhos, amadurecimento e um amor marcante.
 É emocionante e mexe muito com a nostalgia.`
   },
-  {
+      
+,
     nome:"The Glory",
     tags:["drama","vinganca","intenso"],
     nota:"8.9/10 – MyDramaList",
     elenco:["Song Hye-kyo", "Lee Do-hyun", "Lim Ji-yeon", "Yeom Hye-ran", "Park Sung-hoon"],
-    descricao:"Uma mulher marcada por bullying cruel na escola.\nAnos depois, ela volta decidida a se vingar de quem destruiu sua vida.",
-    imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/the%20glory.webp",
-    trailer:"https://www.youtube.com/embed/UpwtUNagGqI",
+        descricao:"Uma mulher marcada por bullying cruel na escola.\nAnos depois, ela volta decidida a se vingar de quem destruiu sua vida.",
+    imagem:"https://planetadorama.com.br/imagens/the-glory.jpg",
+    trailer:"",
     resumo:`Moon Dong Eun sofreu agressões brutais e humilhações constantes na época do colégio.
 Ninguém a protegeu, nem a escola, nem os adultos ao redor.
 
@@ -1352,9 +1354,9 @@ O dorama mostra bullying pesado, trauma, culpa e a busca por justiça em um sist
     tags:["comedia","fantasia","historico"],
     nota:"9.0/10 – MyDramaList",
     elenco:["Shin Hye-sun", "Kim Jung-hyun", "Seol In-ah", "Na In-woo", "Bae Jong-ok"],
-    descricao:"Um chef moderno acorda preso no corpo de uma rainha da era Joseon.\nConfusão, política e muita comédia em um só dorama.",
-    imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/mr%20queen.webp",
-    trailer:"https://www.youtube.com/embed/H1vplUsGDoI",
+        descricao:"Um chef moderno acorda preso no corpo de uma rainha da era Joseon.\nConfusão, política e muita comédia em um só dorama.",
+    imagem:"https://planetadorama.com.br/imagens/mr-queen.jpg",
+    trailer:"",
     resumo:`Jang Bong Hwan é um chef de cozinha talentoso nos tempos atuais.
 Após um acidente misterioso, sua alma acaba presa no corpo da Rainha Cheorin, na era Joseon.
 
@@ -1369,9 +1371,9 @@ O dorama mistura comédia absurda, romance, drama histórico e momentos emociona
     tags:["vinganca","fantasia","romance"],
     nota:"8.8/10 – MyDramaList",
     elenco:["Park Min-young", "Na In-woo", "Lee Yi-kyung", "Song Ha-yoon", "Lee Gi-kwang"],
-    descricao:"Uma mulher traída pelo marido e pela melhor amiga ganha a chance de voltar no tempo.\nDessa vez, ela decide mudar o próprio destino.",
-    imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/marry%20my%20husband.webp",
-    trailer:"https://www.youtube.com/embed/lfJGSxXf9Xg",
+        descricao:"Uma mulher traída pelo marido e pela melhor amiga ganha a chance de voltar no tempo.\nDessa vez, ela decide mudar o próprio destino.",
+    imagem:"https://planetadorama.com.br/imagens/marry-my-husband.jpg",
+    trailer:"",
     resumo:`Kang Ji Won descobre que o marido a trai com sua melhor amiga.
 Depois de sofrer uma grande injustiça, ela acaba morrendo.
 
@@ -1386,9 +1388,9 @@ O dorama mistura romance, drama, fantasia e vingança, com uma história viciant
     tags:["suspense","policial","intenso"],
     nota:"9.0/10 – MyDramaList",
     elenco:["Shin Ha-kyun", "Yeo Jin-goo", "Choi Sung-eun", "Choi Dae-hoon", "Chun Ho-jin"],
-    descricao:"Dois detetives investigam assassinatos em série ligados ao passado.\nEles precisam descobrir quem é o verdadeiro monstro.",
-    imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/beyond%20evil.jpg",
-    trailer:"https://www.youtube.com/embed/zQCOdcBAWtU",
+        descricao:"Dois detetives investigam assassinatos em série ligados ao passado.\nEles precisam descobrir quem é o verdadeiro monstro.",
+    imagem:"https://planetadorama.com.br/imagens/beyond-evil.jpg",
+    trailer:"",
     resumo:`Lee Dong Sik é um ex-detetive brilhante que agora leva uma vida tranquila em uma pequena delegacia.
 Quando uma série de assassinatos com o mesmo padrão de um caso antigo volta a acontecer, tudo muda.
 
@@ -1403,9 +1405,9 @@ O dorama questiona quem é o verdadeiro monstro: o assassino ou a sociedade que 
     tags:["romance","fantasia","emocionante"],
     nota:"8.6/10 – MyDramaList",
     elenco:["Shin Hye-sun", "Ahn Bo-hyun", "Ha Yoon-kyung", "Ahn Dong-goo", "Cha Chung-hwa"],
-    descricao:"Uma mulher lembra de todas as suas vidas passadas.\nNa 19ª vida, ela decide reencontrar o amor que perdeu na anterior.",
-    imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/see%20you%20im%20my.webp",
-    trailer:"https://www.youtube.com/embed/zgvMWFEfm_0",
+        descricao:"Uma mulher lembra de todas as suas vidas passadas.\nNa 19ª vida, ela decide reencontrar o amor que perdeu na anterior.",
+    imagem:"https://planetadorama.com.br/imagens/see-you-in-my-19th-life.jpg",
+    trailer:"",
     resumo:`Ban Ji Eum é diferente de qualquer pessoa: ela se lembra de todas as suas vidas passadas.
 Na sua 18ª vida, ela conhece um menino especial e cria um laço muito forte com ele.
 
@@ -1420,9 +1422,9 @@ Fala sobre destino, segundas chances e sobre como as conexões verdadeiras podem
     tags:["romance","comedia","aconchegante"],
     nota:"8.7/10 – MyDramaList",
     elenco:["Ji Chang-wook", "Shin Hye-sun", "Kim Mi-kyung", "Seo Hyun-chul", "Shin Dong-mi"],
-    descricao:"Uma fotógrafa que caiu em desgraça volta para a cidade natal.\nLá, reencontra um antigo amor e tenta recomeçar a vida.",
-    imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/welcome%20to%20san.jpg",
-    trailer:"https://www.youtube.com/embed/VKMluVzOWNY",
+        descricao:"Uma fotógrafa que caiu em desgraça volta para a cidade natal.\nLá, reencontra um antigo amor e tenta recomeçar a vida.",
+    imagem:"https://planetadorama.com.br/imagens/welcome-to-samdal-ri.jpg",
+    trailer:"",
     resumo:`Cho Sam Dal é uma fotógrafa que fez sucesso na cidade grande, mas vê sua carreira desmoronar após um escândalo.
 Sem saída, ela volta para Samdal-ri, sua cidade natal à beira-mar.
 
@@ -1437,8 +1439,8 @@ Enquanto tenta se reerguer, Sam Dal revive memórias, cura feridas antigas e red
     nota:"8.3/10 – MyDramaList",
     elenco:["Park Seo-joon", "Han So-hee", "Claudia Kim", "Wi Ha-joon", "Kim Hae-sook"],
     descricao:"Em 1945, durante a ocupação japonesa, duas pessoas enfrentam uma criatura criada pela ganância humana.",
-    imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/gieogsong%20creature.webp",
-    trailer:"https://www.youtube.com/embed/X8Noy8MInY0",
+    imagem:"https://planetadorama.com.br/imagens/gyeongseong-creature.jpg",
+    trailer:"",
     resumo:`A história se passa em Gyeongseong, em 1945, período em que a Coreia estava sob ocupação japonesa.
 Jang Tae Sang é um comerciante influente, conhecido por saber de tudo o que acontece na cidade.
 
@@ -1453,9 +1455,9 @@ Além da criatura, também mostra a crueldade humana e o peso da guerra na vida 
     tags:["romance","fantasia","drama"],
     nota:"8.4/10 – MyDramaList",
     elenco:["Ahn Hyo-seop", "Jeon Yeo-been", "Kang Hoon", "Rowoon", "Park Hyuk-kwon"],
-    descricao:"Uma mulher em luto pelo namorado recebe um misterioso walkman.\nAo ouvi-lo, ela acaba viajando no tempo para 1998.",
-    imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/i%20time%20called%20you.webp",
-    trailer:"https://www.youtube.com/embed/c_sKheuGE7o",
+        descricao:"Uma mulher em luto pelo namorado recebe um misterioso walkman.\nAo ouvi-lo, ela acaba viajando no tempo para 1998.",
+    imagem:"https://planetadorama.com.br/imagens/a-time-called-you.jpg",
+    trailer:"",
     resumo:`Han Jun Hee ainda sofre pela morte do namorado, Koo Yeon Jun.
 Um dia, ela recebe uma fita cassete e um antigo walkman.
 
@@ -1470,9 +1472,9 @@ O dorama mistura viagem no tempo, mistério, romance e drama.
     tags:["fantasia","romance","acao"],
     nota:"8.5/10 – MyDramaList",
     elenco:["Lee Dong-wook", "Jo Bo-ah", "Kim Bum", "Kim Yong-ji", "Hwang Hee"],
-    descricao:"Um antigo espírito raposa de nove caudas vive no mundo moderno.\nEle reencontra um amor do passado enquanto caça criaturas perigosas.",
-    imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/tale%20of%20the%20nine%20talled.jfif",
-    trailer:"https://www.youtube.com/embed/VLzgY1JMRss",
+        descricao:"Um antigo espírito raposa de nove caudas vive no mundo moderno.\nEle reencontra um amor do passado enquanto caça criaturas perigosas.",
+    imagem:"https://planetadorama.com.br/imagens/tale-of-the-nine-tailed.jpg",
+    trailer:"",
     resumo:`Lee Yeon é um gumiho, uma raposa de nove caudas que antes protegia montanhas.
 Agora, ele vive no mundo moderno, trabalhando para eliminar criaturas perigosas que ameaçam os humanos.
 
@@ -1487,9 +1489,9 @@ Tem clima sombrio em alguns momentos, mas também muitas cenas emocionantes e ro
     tags:["terror","suspense","psicologico"],
     nota:"8.1/10 – MyDramaList",
     elenco:["Im Si-wan", "Lee Dong-wook", "Lee Jung-eun", "Lee Hyun-wook", "Park Jong-hwan"],
-    descricao:"Um jovem se muda para uma pensão barata em Seul.\nLogo, ele percebe que há algo muito errado com seus vizinhos.",
-    imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/strangest%20from%20hell.webp",
-    trailer:"https://www.youtube.com/embed/bc85-DZwopU",
+        descricao:"Um jovem se muda para uma pensão barata em Seul.\nLogo, ele percebe que há algo muito errado com seus vizinhos.",
+    imagem:"https://planetadorama.com.br/imagens/strangers-from-hell.jpg",
+    trailer:"",
     resumo:`Yoon Jong Woo se muda do interior para Seul em busca de emprego.
 Para economizar, ele aluga um quarto em uma pensão antiga e estranha.
 
@@ -1499,149 +1501,6 @@ Barulhos à noite, olhares estranhos e uma sensação constante de perigo tomam 
 Quanto mais ele tenta fugir daquela atmosfera, mais preso ele parece ficar.
 O dorama é pesado, claustrofóbico e cheio de tensão psicológica, ideal para quem gosta de histórias sombrias e perturbadoras.`
   }
-
-
-,
-{
- nome:"Crash Course in Romance",
- tags:["romance","comedia","drama"],
- nota:"8.8/10 – MyDramaList",
- elenco:["Jeon Do-yeon","Jung Kyung-ho","Lee Bong-ryun","Oh Eui-sik"],
- descricao:"Uma mãe dona de restaurante se envolve com um professor famoso.",
- imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/crash%20course.webp",
- trailer:"https://www.youtube.com/embed/6tTzO7N2Qco",
- resumo:`Nam Haeng Seon é uma ex-atleta que hoje administra um pequeno restaurante.
-Sua filha entra no competitivo mundo das aulas particulares.
-Ela conhece Choi Chi Yeol, um professor famoso e frio.
-Os dois começam com conflitos,
-mas aos poucos criam uma ligação sincera.
-Mistura romance adulto com crítica ao sistema educacional.
-Leve, emocionante e muito popular.`
-},
-{
- nome:"My Dearest",
- tags:["historico","romance","intenso"],
- nota:"8.9/10 – MyDramaList",
- elenco:["Namkoong Min","Ahn Eun-jin","Lee Hak-joo","Lee Da-in"],
- descricao:"Amor em tempos de guerra na era Joseon.",
- imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/my%20dearest.jpeg",
- trailer:"https://www.youtube.com/embed/7gQf9bP2k2Q",
- resumo:`Durante a invasão Qing,
-um homem misterioso e uma jovem nobre se aproximam.
-O amor deles nasce em meio à guerra e sofrimento.
-A história mostra lealdade, dor e sobrevivência.
-Visual cinematográfico e atuação intensa.
-Um dos maiores sucessos históricos recentes.`
-},
-{
- nome:"The Worst of Evil",
- tags:["acao","crime","intenso"],
- nota:"8.7/10 – MyDramaList",
- elenco:["Ji Chang-wook","Wi Ha-joon","Im Se-mi"],
- descricao:"Um policial se infiltra em cartel de drogas internacional.",
- imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/the%20worst%20of%20evil.webp",
- trailer:"https://www.youtube.com/embed/8Ny3C4I9F0Q",
- resumo:`Um policial aceita missão secreta perigosa.
-Ele se infiltra em organização criminosa poderosa.
-A tensão cresce conforme sua identidade quase é descoberta.
-Ação pesada e atmosfera sombria.
-Muito elogiado por realismo e atuações.`
-},
-{
- nome:"Bloodhounds",
- tags:["acao","crime","intenso"],
- nota:"8.6/10 – MyDramaList",
- elenco:["Woo Do-hwan","Lee Sang-yi","Kim Sae-ron"],
- descricao:"Dois boxeadores enfrentam agiotas violentos.",
- imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/bloodhounds.webp",
- trailer:"https://www.youtube.com/embed/8Uu_xxGkJ_w",
- resumo:`Dois jovens entram no mundo perigoso dos empréstimos ilegais.
-Eles enfrentam um vilão cruel e poderoso.
-Cheio de cenas de luta intensas.
-Mostra amizade e lealdade.
-Rápido, violento e muito viciante.`
-},
-{
- nome:"Agency",
- tags:["drama","corporativo","intenso"],
- nota:"8.4/10 – MyDramaList",
- elenco:["Lee Bo-young","Son Na-eun","Jo Sung-ha"],
- descricao:"Uma executiva luta para sobreviver em empresa dominada por homens.",
- imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/agency.webp",
- trailer:"https://www.youtube.com/embed/3q7J9e1X9yE",
- resumo:`Go Ah In é a primeira mulher a chegar ao topo de uma agência de publicidade.
-Ela enfrenta preconceito e competição cruel.
-Mostra ambição e política corporativa.
-Drama adulto e estratégico.
-Muito comentado por sua crítica social.`
-},
-{
- nome:"Doctor Cha",
- tags:["romance","drama","superacao"],
- nota:"8.5/10 – MyDramaList",
- elenco:["Uhm Jung-hwa","Kim Byung-chul","Myung Se-bin"],
- descricao:"Uma dona de casa decide retomar carreira médica.",
- imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/doctor%20cha.jpg",
- trailer:"https://www.youtube.com/embed/HE6kI8wN3aE",
- resumo:`Após anos dedicada à família,
-Cha Jung Sook decide voltar à medicina.
-Ela enfrenta desafios e redescobre sua identidade.
-O dorama fala sobre segunda chance.
-Emocionante e inspirador.`
-},
-{
- nome:"Island",
- tags:["fantasia","acao","terror"],
- nota:"8.3/10 – MyDramaList",
- elenco:["Kim Nam-gil","Lee Da-hee","Cha Eun-woo"],
- descricao:"Demônios atacam ilha misteriosa.",
- imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/island.webp",
- trailer:"https://www.youtube.com/embed/3pSUxZLwK0Q",
- resumo:`Uma mulher descobre estar ligada a forças sobrenaturais.
-Um caçador de demônios a protege.
-Mistura ação e fantasia sombria.
-Visual marcante e atmosfera intensa.`
-},
-{
- nome:"The Devil Judge",
- tags:["suspense","politico","intenso"],
- nota:"8.8/10 – MyDramaList",
- elenco:["Ji Sung","Kim Min-jung","Jinyoung"],
- descricao:"Um juiz transforma julgamentos em reality show nacional.",
- imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/the%20devil%20judge.jpg",
- trailer:"https://www.youtube.com/embed/k5qvF9g6Z6E",
- resumo:`Em um futuro distópico,
-julgamentos são transmitidos ao vivo.
-Um juiz carismático manipula o sistema.
-Questiona justiça e corrupção.
-Tenso e provocador.`
-},
-{
- nome:"Under the Queen's Umbrella",
- tags:["historico","drama","familia"],
- nota:"8.8/10 – MyDramaList",
- elenco:["Kim Hye-soo","Kim Hae-sook","Choi Won-young"],
- descricao:"Uma rainha tenta proteger seus filhos problemáticos.",
- imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/under%20the%20queen%20umbrella.webp",
- trailer:"https://www.youtube.com/embed/3l5uZ5Yk3gE",
- resumo:`A rainha enfrenta intrigas no palácio.
-Ela luta para garantir o futuro dos filhos.
-Drama histórico focado em maternidade.
-Elegante e muito elogiado.`
-},
-{
- nome:"My Liberation Notes",
- tags:["drama","romance","realista"],
- nota:"8.9/10 – MyDramaList",
- elenco:["Lee Min-ki","Kim Ji-won","Son Seok-koo"],
- descricao:"Três irmãos buscam sentido na vida adulta.",
- imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/my%20liberation%20notes.webp",
- trailer:"https://www.youtube.com/embed/2kV5F1Q8e6Y",
- resumo:`Três irmãos vivem rotina cansativa no interior.
-Eles sonham com liberdade emocional.
-Um estranho misterioso muda suas vidas.
-Profundo, reflexivo e muito humano.`
-}
 
 ];function criarSlug(nome, nomeEN) {
   const base = nomeEN || nome;
