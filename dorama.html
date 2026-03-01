@@ -326,7 +326,7 @@ function compartilhar(nome){
 
 /* ✅ NOVO: tenta redirecionar para /doramas/slug.html.
    Se não existir (para não dar 404), continua abrindo aqui como antes. */
-async async function tentarRedirecionarParaPaginaPropria(nome){
+async function tentarRedirecionarParaPaginaPropria(nome){
   const alvo = String(nome || "").toLowerCase();
 
   let escolhido = null;
