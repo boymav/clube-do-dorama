@@ -22,12 +22,16 @@ e os perigos políticos que os cercam.
 Entre momentos de humor, tensão e romance proibido,
 o casal enfrenta escolhas difíceis e grandes sacrifícios.
 
-É uma história emocionante sobre amor que ultrapassa fronteiras e ideologias.`,
+É uma história emocionante sobre amor que ultrapassa fronteiras e ideologias.
+
+No Brasil, esse dorama também é conhecido como "Pousando no Amor".`,
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/crash-landing.jpg",
  trailer:"https://www.youtube.com/embed/eXMjTXL2Vks"
 },
 {
  nome:"Goblin",
+  nomePT:"Goblin: O Solitário e Grande Deus",
+  nomeEN:"Goblin",
  tags:["romance","fantasia","triste"],
  nota:"8.8/10 – MyDramaList",
  descricao:"Um ser imortal busca alguém para quebrar sua maldição.",
@@ -45,12 +49,8 @@ Cada episódio constrói uma ligação intensa entre os personagens.
 O passado e o presente se conectam de forma surpreendente.
 O romance é delicado, mas cheio de sofrimento.
 Mostra que até seres imortais desejam uma vida comum.
-O final é emocionante e inesquecível.
-
-No Brasil, esse dorama também é conhecido como "Goblin: O Solitário e Grande Deus".`
-}  nomePT:"Goblin: O Solitário e Grande Deus",
-  nomeEN:"Goblin",
-,
+O final é emocionante e inesquecível.`
+},
 {
  nome:"Pretendente Surpresa (Business Proposal)",
  nomeEN:"Business Proposal",
@@ -58,19 +58,19 @@ No Brasil, esse dorama também é conhecido como "Goblin: O Solitário e Grande 
  tags:["alegre","comedia","romance"],
  nota:"8.6/10 – MyDramaList",
  descricao:"Um encontro às cegas vira confusão quando ela conhece o próprio chefe.\nSituações engraçadas e muito romance.\nLeve, divertido e perfeito para relaxar.",
- imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/a-business-proposal-recap-episode-one-two-main.jpeg",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/pretendente%20surpresa.jpg",
  trailer:"https://www.youtube.com/embed/mh4R-WXRhQo"
 },
 {
  nome:"Strong Woman Do Bong Soon",
+  nomePT:"Mulher Forte Do Bong-soon",
+  nomeEN:"Strong Woman Do Bong Soon",
  tags:["alegre","comedia","romance"],
  nota:"8.7/10 – MyDramaList",
  descricao:"Uma jovem nasce com força sobrenatural.\nEla tenta viver normalmente enquanto protege quem ama.\nMistura perfeita de comédia, ação e romance.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/strong-woman-do-bong-soon.jpg",
  trailer:"https://www.youtube.com/embed/XLW8yB7Yx0E"
-}  nomePT:"Mulher Forte Do Bong-soon",
-  nomeEN:"Strong Woman Do Bong Soon",
-,
+},
 {
  nome:"Tudo Bem Não Ser Normal (Its Okay to Not Be Okay)",
  nomeEN:"Its Okay to Not Be Okay",
@@ -78,7 +78,7 @@ No Brasil, esse dorama também é conhecido como "Goblin: O Solitário e Grande 
  tags:["romance","intenso","triste"],
  nota:"9.0/10 – MyDramaList",
  descricao:"Um cuidador emocionalmente fechado conhece uma escritora excêntrica.\nAmbos carregam traumas profundos.\nUma história sensível sobre cura e amor.",
- imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/its%20ok%20do%20not%20be%20ok.jpg",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/tudo%20bem%20nao%20ser%20normal.jpg",
  trailer:"https://www.youtube.com/embed/50ek4HQo0bc"
 },
 {
@@ -148,6 +148,8 @@ com muita emoção e reflexões sobre arrependimento e perdão.`
 },
 {
  nome:"Descendants of the Sun",
+  nomePT:"Descendentes do Sol",
+  nomeEN:"Descendants of the Sun",
  tags:["romance","intenso"],
  nota:"8.7/10 – MyDramaList",
  descricao:"Um soldado e uma médica se apaixonam em missão humanitária.\nEles enfrentam perigos constantes.\nRomance com ação e drama.",
@@ -168,14 +170,12 @@ enfrentam terremotos, doenças e conflitos armados.
 O dorama mistura ação intensa com romance emocionante.
 
 Mostra coragem, amizade e sacrifícios,
-além de um amor que precisa sobreviver em meio ao caos.
-
-No Brasil, esse dorama também é conhecido como "Descendentes do Sol".`
-}  nomePT:"Descendentes do Sol",
-  nomeEN:"Descendants of the Sun",
-,
+além de um amor que precisa sobreviver em meio ao caos.`
+},
 {
  nome:"My Love from the Star",
+  nomePT:"Meu Amor das Estrelas",
+  nomeEN:"My Love from the Star",
  tags:["romance","comedia","fantasia"],
  nota:"8.6/10 – MyDramaList",
  descricao:"Um alienígena vive na Terra há séculos.\nEle se apaixona por uma atriz famosa.\nRomance leve com toques de fantasia.",
@@ -198,14 +198,12 @@ precisam enfrentar perigos e segredos do passado.
 O dorama mistura romance, comédia e fantasia
 de uma forma leve e emocionante.
 
-É uma história sobre amar mesmo quando o tempo é limitado.
-
-No Brasil, esse dorama também é conhecido como "Meu Amor das Estrelas".`
-}  nomePT:"Meu Amor das Estrelas",
-  nomeEN:"My Love from the Star",
-,
+É uma história sobre amar mesmo quando o tempo é limitado.`
+},
 {
  nome:"Weightlifting Fairy Kim Bok Joo",
+  nomePT:"Fada do Levantamento de Peso Kim Bok-Joo",
+  nomeEN:"Weightlifting Fairy Kim Bok Joo",
  tags:["alegre","romance","comedia"],
  nota:"8.8/10 – MyDramaList",
  descricao:"Uma jovem atleta sonha em ser campeã de levantamento de peso.\nEla vive sua juventude entre amigos e amor.\nDoce, divertido e inspirador.",
@@ -228,14 +226,12 @@ pressão esportiva e o primeiro amor.
 
 É leve, divertido e extremamente aconchegante.
 
-Uma história simples, mas cheia de coração.
-
-No Brasil, esse dorama também é conhecido como "Fada do Levantamento de Peso Kim Bok-Joo".`
-}  nomePT:"Fada do Levantamento de Peso Kim Bok-Joo",
-  nomeEN:"Weightlifting Fairy Kim Bok Joo",
-,
+Uma história simples, mas cheia de coração.`
+},
 {
  nome:"True Beauty",
+  nomePT:"Beleza Verdadeira",
+  nomeEN:"True Beauty",
  tags:["alegre","romance","comedia"],
  nota:"8.4/10 – MyDramaList",
  descricao:"Uma garota aprende a se maquiar para esconder inseguranças.\nEla vive um triângulo amoroso na escola.\nComédia romântica leve.",
@@ -259,14 +255,12 @@ amizade e amadurecimento.
 
 É divertido, romântico e cheio de momentos fofos.
 
-Mostra que beleza verdadeira vai muito além da aparência.
-
-No Brasil, esse dorama também é conhecido como "Beleza Verdadeira".`
-}  nomePT:"Beleza Verdadeira",
-  nomeEN:"True Beauty",
-,
+Mostra que beleza verdadeira vai muito além da aparência.`
+},
 {
  nome:"Moon Lovers: Scarlet Heart Ryeo",
+  nomePT:"Amantes da Lua: Coração Escarlate Ryeo",
+  nomeEN:"Moon Lovers: Scarlet Heart Ryeo",
  tags:["romance","triste","intenso"],
  nota:"8.7/10 – MyDramaList",
  descricao:"Uma mulher volta no tempo para a era Goryeo.\nEla se envolve com vários príncipes.\nRomance histórico cheio de dor.",
@@ -287,14 +281,12 @@ mas marcado por dor e sacrifício.
 
 O dorama mistura história, política e paixão profunda.
 
-É conhecido por seu final emocionante e inesquecível.
-
-No Brasil, esse dorama também é conhecido como "Amantes da Lua: Coração Escarlate Ryeo".`
-}  nomePT:"Amantes da Lua: Coração Escarlate Ryeo",
-  nomeEN:"Moon Lovers: Scarlet Heart Ryeo",
-,
+É conhecido por seu final emocionante e inesquecível.`
+},
 {
  nome:"The Heirs",
+  nomePT:"Os Herdeiros",
+  nomeEN:"The Heirs",
  tags:["romance","triste"],
  nota:"8.1/10 – MyDramaList",
  descricao:"Jovens ricos vivem conflitos amorosos e familiares.\nDiferenças sociais marcam os relacionamentos.\nClássico do romance escolar.",
@@ -314,12 +306,8 @@ o dorama mostra rivalidades,
 amizades e conflitos de classe social.
 
 É um clássico do romance escolar coreano,
-cheio de drama e emoções intensas.
-
-No Brasil, esse dorama também é conhecido como "Os Herdeiros".`
-}  nomePT:"Os Herdeiros",
-  nomeEN:"The Heirs",
-,
+cheio de drama e emoções intensas.`
+},
 {
  nome:"Start-Up",
  tags:["romance","alegre","intenso"],
@@ -554,7 +542,9 @@ O dorama é emocionante,
 humano e inspirador.
 
 Mostra inclusão,
-superação e empatia.`
+superação e empatia.
+
+No Brasil, esse dorama também é conhecido como "Advogada Extraordinária".`
 },
 {
  nome:"The King: Eternal Monarch",
@@ -727,6 +717,8 @@ Delicado e emocionante.`
 },
 {
  nome:"Flower of Evil",
+  nomePT:"Flor do Mal",
+  nomeEN:"Flower of Evil",
  tags:["intenso","romance","triste"],
  nota:"9.1/10 – MyDramaList",
  descricao:"Um homem esconde um passado sombrio.\nSua esposa é detetive.\nSuspense psicológico poderoso.",
@@ -741,12 +733,8 @@ A tensão cresce a cada episódio.
 O dorama mistura romance com suspense psicológico.
 Questiona confiança e identidade.
 
-É intenso e cheio de reviravoltas.
-
-No Brasil, esse dorama também é conhecido como "Flor do Mal".`
-}  nomePT:"Flor do Mal",
-  nomeEN:"Flower of Evil",
-,
+É intenso e cheio de reviravoltas.`
+},
 {
  nome:"Sky Castle",
  tags:["intenso","triste"],
@@ -1254,6 +1242,8 @@ Suspense cheio de tensão.`
 },
 {
  nome:"Queen of Tears",
+  nomePT:"Rainha das Lágrimas",
+  nomeEN:"Queen of Tears",
  tags:["romance","triste"],
  nota:"9.2/10 – MyDramaList",
  descricao:"Um casal enfrenta crise profunda.\nAmor, dor e reconciliação.\nMuito emocionante.",
@@ -1265,7 +1255,9 @@ O amor parece ter acabado.
 Mas um acontecimento muda tudo.
 Eles precisam redescobrir sentimentos.
 
-Romântico e muito emocionante.`
+Romântico e muito emocionante.
+
+No Brasil, esse dorama também é conhecido como "Rainha das Lágrimas".`
 },
   {
     nome:"Sorriso Real (King the Land)",
@@ -1274,13 +1266,15 @@ Romântico e muito emocionante.`
     tags:["romance","alegre"],
     nota:"8.7/10 – MyDramaList",
     descricao:"Um herdeiro de hotel e uma funcionária cheia de energia vivem um romance fofo no meio de mal-entendidos e contratos.",
-    imagem:"https://planetadorama.com.br/imagens/sorriso-real.jpg",
+    imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/sorriso%20real.webp",
     trailer:"",
     resumo:`Cheon Sa Rang trabalha em um hotel de luxo e ama o que faz.
 Ela conhece Gu Won, um herdeiro frio e sério.
 Os dois começam brigando por tudo, mas aos poucos o clima muda.
 O dorama é cheio de cenas fofas, humor e muita química.
-Perfeito pra quem gosta de romances leves e divertidos.`
+Perfeito pra quem gosta de romances leves e divertidos.
+
+No Brasil, esse dorama também é conhecido como "Sorriso Real".`
   },
     {
     nome:"Vinte e Cinco, Vinte e Um (Twenty-Five Twenty-One)",
@@ -1289,13 +1283,15 @@ Perfeito pra quem gosta de romances leves e divertidos.`
     tags:["romance","triste"],
     nota:"8.9/10 – MyDramaList",
     descricao:"Um romance juvenil entre uma esgrimista cheia de sonhos e um jovem que perdeu tudo por causa de uma crise financeira.",
-    imagem:"https://planetadorama.com.br/imagens/vinte-e-cinco-vinte-e-um.jpg",
+    imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/vinte%20e%20cinto.jpg",
     trailer:"",
     resumo:`Na Hee Do é uma esgrimista determinada.
 Baek Yi Jin é um jovem que viu a família perder tudo.
 Eles se conhecem na juventude e criam uma ligação muito forte.
 O dorama mostra amizade, sonhos, amadurecimento e um amor marcante.
-É emocionante e mexe muito com a nostalgia.`
+É emocionante e mexe muito com a nostalgia.
+
+No Brasil, esse dorama também é conhecido como "Vinte e Cinco, Vinte e Um".`
   },
       
 ];
@@ -1310,4 +1306,6 @@ function criarSlug(nome, nomeEN) {
 
 doramas.forEach(d => {
   d.slug = criarSlug(d.nome, d.nomeEN);
+
 });
+
