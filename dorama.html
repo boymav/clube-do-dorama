@@ -120,8 +120,13 @@ header a{
 
 /* Título */
 .hero-title{
-  margin:0 0 10px;
+  margin:0 0 6px;
   font-size:34px;
+}
+.hero-alt-title{
+  margin:0 0 10px;
+  font-size:14px;
+  color:#555;
 }
 @media(max-width:900px){
   .hero-title{ font-size:26px; }
@@ -326,7 +331,7 @@ function compartilhar(nome){
 
 /* ✅ NOVO: tenta redirecionar para /doramas/slug.html.
    Se não existir (para não dar 404), continua abrindo aqui como antes. */
-async function tentarRedirecionarParaPaginaPropria(nome){
+async async function tentarRedirecionarParaPaginaPropria(nome){
   const alvo = String(nome || "").toLowerCase();
 
   let escolhido = null;
@@ -428,7 +433,8 @@ async function carregar(){
     </div>
   `;
 
-  document.title=dorama.nome+" | Planeta Dorama 🌍";
+  const tituloPagina = dorama.nomePT ? `${dorama.nomePT} (${dorama.nome})` : dorama.nome;
+  document.title = tituloPagina + " | Planeta Dorama 🌍";
 }
 
 carregar();
