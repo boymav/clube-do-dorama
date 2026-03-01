@@ -558,7 +558,7 @@ superação e empatia.`
  elenco:["Lee Min-ho", "Kim Go-eun", "Woo Do-hwan", "Kim Kyung-nam", "Jung Eun-chae"],
  descricao:"Universos paralelos se conectam.\nUm rei busca salvar seu mundo.\nRomance épico com fantasia.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/the%20king%20eternalllll.jpg",
- trailer:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/the%20king%20eternalllll.jpg",
+ trailer:"https://www.youtube.com/embed/N1L1iaFZQ9I",
  resumo:`Lee Gon é o imperador da Coreia em um universo paralelo.
 Ele descobre a existência de uma porta que liga dois mundos.
 
@@ -1307,7 +1307,7 @@ Romântico e muito emocionante.`
  elenco:["Lee Jun-ho", "Im Yoon-ah", "Go Won-hee", "Kim Ga-eun", "Ahn Se-ha"],
     descricao:"Um herdeiro de hotel e uma funcionária cheia de energia vivem um romance fofo no meio de mal-entendidos e contratos.",
     imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/sorriso%20real.webp",
-    trailer:"",
+    trailer:"https://www.youtube.com/embed/7WhO_qF0Q2Q",
     resumo:`Cheon Sa Rang trabalha em um hotel de luxo e ama o que faz.
 Ela conhece Gu Won, um herdeiro frio e sério.
 Os dois começam brigando por tudo, mas aos poucos o clima muda.
@@ -1323,7 +1323,7 @@ Perfeito pra quem gosta de romances leves e divertidos.`
  elenco:["Kim Tae-ri", "Nam Joo-hyuk", "Bona", "Choi Hyun-wook", "Lee Joo-myung"],
     descricao:"Um romance juvenil entre uma esgrimista cheia de sonhos e um jovem que perdeu tudo por causa de uma crise financeira.",
     imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/vinte%20e%20cinto.jpg",
-    trailer:"",
+    trailer:"https://www.youtube.com/embed/PBCXHOskDQ4",
     resumo:`Na Hee Do é uma esgrimista determinada.
 Baek Yi Jin é um jovem que viu a família perder tudo.
 Eles se conhecem na juventude e criam uma ligação muito forte.
@@ -1509,7 +1509,7 @@ O dorama é pesado, claustrofóbico e cheio de tensão psicológica, ideal para 
  elenco:["Jeon Do-yeon","Jung Kyung-ho","Lee Bong-ryun","Oh Eui-sik"],
  descricao:"Uma mãe dona de restaurante se envolve com um professor famoso.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/crash%20course.webp",
- trailer:"https://www.youtube.com/embed/YkR3z8GdY9o",
+ trailer:"https://www.youtube.com/embed/6tTzO7N2Qco",
  resumo:`Nam Haeng Seon é uma ex-atleta que hoje administra um pequeno restaurante.
 Sua filha entra no competitivo mundo das aulas particulares.
 Ela conhece Choi Chi Yeol, um professor famoso e frio.
@@ -1540,7 +1540,7 @@ Um dos maiores sucessos históricos recentes.`
  elenco:["Ji Chang-wook","Wi Ha-joon","Im Se-mi"],
  descricao:"Um policial se infiltra em cartel de drogas internacional.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/the%20worst%20of%20evil.webp",
- trailer:"https://www.youtube.com/embed/fVxM6j9R6nQ",
+ trailer:"https://www.youtube.com/embed/8Ny3C4I9F0Q",
  resumo:`Um policial aceita missão secreta perigosa.
 Ele se infiltra em organização criminosa poderosa.
 A tensão cresce conforme sua identidade quase é descoberta.
@@ -1554,7 +1554,7 @@ Muito elogiado por realismo e atuações.`
  elenco:["Woo Do-hwan","Lee Sang-yi","Kim Sae-ron"],
  descricao:"Dois boxeadores enfrentam agiotas violentos.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/bloodhounds.webp",
- trailer:"https://www.youtube.com/embed/8gk4g5kYp5E",
+ trailer:"https://www.youtube.com/embed/8Uu_xxGkJ_w",
  resumo:`Dois jovens entram no mundo perigoso dos empréstimos ilegais.
 Eles enfrentam um vilão cruel e poderoso.
 Cheio de cenas de luta intensas.
@@ -1582,7 +1582,7 @@ Muito comentado por sua crítica social.`
  elenco:["Uhm Jung-hwa","Kim Byung-chul","Myung Se-bin"],
  descricao:"Uma dona de casa decide retomar carreira médica.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/doctor%20cha.jpg",
- trailer:"https://www.youtube.com/embed/9m3k2Xv8h4A",
+ trailer:"https://www.youtube.com/embed/HE6kI8wN3aE",
  resumo:`Após anos dedicada à família,
 Cha Jung Sook decide voltar à medicina.
 Ela enfrenta desafios e redescobre sua identidade.
@@ -1596,7 +1596,7 @@ Emocionante e inspirador.`
  elenco:["Kim Nam-gil","Lee Da-hee","Cha Eun-woo"],
  descricao:"Demônios atacam ilha misteriosa.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/island.webp",
- trailer:"https://www.youtube.com/embed/6n0vP1g7Z8k",
+ trailer:"https://www.youtube.com/embed/3pSUxZLwK0Q",
  resumo:`Uma mulher descobre estar ligada a forças sobrenaturais.
 Um caçador de demônios a protege.
 Mistura ação e fantasia sombria.
