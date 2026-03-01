@@ -157,7 +157,7 @@ com muita emoção e reflexões sobre arrependimento e perdão.`
  elenco:["Song Joong-ki", "Song Hye-kyo", "Jin Goo", "Kim Ji-won", "Onew"],
  descricao:"Um soldado e uma médica se apaixonam em missão humanitária.\nEles enfrentam perigos constantes.\nRomance com ação e drama.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/Descendants%20of%20the%20Sun.jpg",
- trailer:"https://www.youtube.com/embed/wFJmU5m6cZg",
+ trailer:"https://www.youtube.com/embed/wkHjOTFv60g",
  resumo:`Yoo Si Jin é um capitão das forças especiais,
 acostumado a viver situações perigosas.
 
