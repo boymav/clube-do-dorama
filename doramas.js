@@ -106,7 +106,7 @@ O final é emocionante e inesquecível.`
  elenco:["Hyeri", "Ryu Jun-yeol", "Park Bo-gum", "Go Kyung-pyo", "Lee Dong-hwi"],
  descricao:"Famílias e amigos vivem no mesmo bairro nos anos 80.\nHistória cheia de nostalgia e afeto.\nUm dorama sobre crescer e amar.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/reply%201988.jpg",
- trailer:"https://www.youtube.com/watch?v=hDI4IpZoaG4",
+ trailer:"https://www.youtube.com/embed/hDI4IpZoaG4",
  resumo:`A história acompanha cinco amigos que cresceram juntos em um bairro simples de Seul nos anos 80.
 Cada família tem suas dificuldades, sonhos e momentos engraçados.
 
