@@ -2,10 +2,10 @@
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8">
-  <!-- AdSense -->
+
+  <!-- AdSense Auto Ads -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5053782942464082"
        crossorigin="anonymous"></script>
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Dorama | Planeta Dorama 🌍</title>
 <meta name="description" content="Planeta Dorama 🌍: listas, recomendações, dorama da semana, notícias e um guia completo para você encontrar o dorama perfeito.">
@@ -77,9 +77,9 @@ header a{
   position:absolute;
   inset:0;
   background: linear-gradient(90deg,
-    rgba(255,255,255,0.92),
-    rgba(255,240,247,0.94),
-    rgba(255,255,255,0.96)
+    rgba(20,0,20,0.75),
+    rgba(20,0,20,0.40),
+    rgba(20,0,20,0.10)
   );
 }
 
@@ -255,21 +255,6 @@ header a{
   <a href="index.html">⬅ Voltar</a>
 </header>
 
-  <!-- Anúncio responsivo (configure data-ad-slot no AdSense) -->
-  <div class="anuncio-responsivo" style="margin:16px auto; max-width: 970px; text-align:center;">
-    <ins class="adsbygoogle"
-         style="display:block"
-         data-ad-client="ca-pub-5053782942464082"
-         data-ad-slot="8006670140"
-         data-ad-format="auto"
-         data-full-width-responsive="true"></ins>
-  </div>
-  <script>
-    (adsbygoogle = window.adsbygoogle || []).push({});
-  </script>
-
-
-
 <section id="hero" class="hero" style="display:none;">
   <div class="hero-inner" id="hero-inner"></div>
 </section>
@@ -292,9 +277,8 @@ function toggleFav(nome){
 }
 
 /* ✅ NOVO: mesma regra de slug do seu site */
-function criarSlug(nome, nomeEN){
-  const base = nomeEN || nome;
-  return String(base || "")
+function criarSlug(nome){
+  return String(nome || "")
     .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, "-")
@@ -326,22 +310,8 @@ function compartilhar(nome){
 
 /* ✅ NOVO: tenta redirecionar para /doramas/slug.html.
    Se não existir (para não dar 404), continua abrindo aqui como antes. */
-async async function tentarRedirecionarParaPaginaPropria(nome){
-  const alvo = String(nome || "").toLowerCase();
-
-  let escolhido = null;
-  if (typeof doramas !== "undefined" && Array.isArray(doramas)){
-    escolhido = doramas.find(function(d){
-      const n1 = (d.nome   || "").toLowerCase();
-      const n2 = (d.nomePT || "").toLowerCase();
-      const n3 = (d.nomeEN || "").toLowerCase();
-      return n1 === alvo || n2 === alvo || n3 === alvo;
-    });
-  }
-
-  const baseNome = escolhido ? (escolhido.nome || nome) : nome;
-  const baseEN   = escolhido ? (escolhido.nomeEN || undefined) : undefined;
-  const slug = (escolhido && escolhido.slug) ? escolhido.slug : criarSlug(baseNome, baseEN);
+async function tentarRedirecionarParaPaginaPropria(nome){
+  const slug = criarSlug(nome);
   const destino = `/doramas/${slug}.html`;
 
   try{
