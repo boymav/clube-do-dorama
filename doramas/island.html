@@ -14,20 +14,49 @@
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5053782942464082"
   crossorigin="anonymous"></script>
 
-  <!-- Schema Google -->
+  <!-- Schema Google (forte) -->
   <script type="application/ld+json">
   {
-   "@context":"https://schema.org",
-   "@type":"TVSeries",
-   "name":"Island",
-   "description":"Demônios atacam ilha misteriosa.",
-   "image":"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/island.webp",
-   "aggregateRating":{
-    "@type":"AggregateRating",
-    "ratingValue":"8.3/10 – MyDramaList",
-    "bestRating":"10",
-    "ratingCount":"1"
-   }
+    "@context":"https://schema.org",
+    "@graph":[
+      {
+        "@type":"WebSite",
+        "@id":"https://planetadorama.com.br/#website",
+        "url":"https://planetadorama.com.br/",
+        "name":"Planeta Dorama",
+        "inLanguage":"pt-BR"
+      },
+      {
+        "@type":"WebPage",
+        "@id":"https://planetadorama.com.br/doramas/island.html#webpage",
+        "url":"https://planetadorama.com.br/doramas/island.html",
+        "name":"Island – Elenco, Sinopse e Trailer | Planeta Dorama",
+        "isPartOf":{"@id":"https://planetadorama.com.br/#website"},
+        "inLanguage":"pt-BR",
+        "description":"Demônios atacam ilha misteriosa.",
+        "primaryImageOfPage":{"@type":"ImageObject","url":"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/island.webp"}
+      },
+      {
+        "@type":"BreadcrumbList",
+        "@id":"https://planetadorama.com.br/doramas/island.html#breadcrumb",
+        "itemListElement":[
+          {"@type":"ListItem","position":1,"name":"Início","item":"https://planetadorama.com.br/"},
+          {"@type":"ListItem","position":2,"name":"Doramas","item":"https://planetadorama.com.br/todos.html"},
+          {"@type":"ListItem","position":3,"name":"Island","item":"https://planetadorama.com.br/doramas/island.html"}
+        ]
+      },
+      {
+        "@type":"TVSeries",
+        "@id":"https://planetadorama.com.br/doramas/island.html#tvseries",
+        "url":"https://planetadorama.com.br/doramas/island.html",
+        "name":"Island",
+        "description":"Demônios atacam ilha misteriosa.",
+        "image":"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/island.webp",
+        "inLanguage":"pt-BR",
+        "genre":["fantasia", "acao", "terror"],
+        "actor":[{"@type":"Person","name":"Kim Nam-gil"}, {"@type":"Person","name":"Lee Da-hee"}, {"@type":"Person","name":"Cha Eun-woo"}]
+      }
+    ]
   }
   </script>
 
@@ -371,21 +400,21 @@
       <h2>Recomendados para você</h2>
       <div class="rec-grid">
         
+        <a class="rec-card" href="/doramas/goblin.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/Goblin.jpg" alt="Goblin" loading="lazy">
+          <div class="rec-title">Goblin</div>
+        </a>
         <a class="rec-card" href="/doramas/hotel-del-luna.html">
           <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/hotel%20del%20luna.jpg" alt="Hotel Del Luna" loading="lazy">
           <div class="rec-title">Hotel Del Luna</div>
         </a>
-        <a class="rec-card" href="/doramas/doom-at-your-service.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/doom%20at%20your.jfif" alt="Doom at Your Service" loading="lazy">
-          <div class="rec-title">Doom at Your Service</div>
+        <a class="rec-card" href="/doramas/a-time-called-you.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/i%20time%20called%20you.webp" alt="A Time Called You" loading="lazy">
+          <div class="rec-title">A Time Called You</div>
         </a>
-        <a class="rec-card" href="/doramas/marry-my-husband.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/marry%20my%20husband.webp" alt="Marry My Husband" loading="lazy">
-          <div class="rec-title">Marry My Husband</div>
-        </a>
-        <a class="rec-card" href="/doramas/the-legend-of-the-blue-sea.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/the%20legend%20of.jfif" alt="The Legend of the Blue Sea" loading="lazy">
-          <div class="rec-title">The Legend of the Blue Sea</div>
+        <a class="rec-card" href="/doramas/tale-of-the-nine-tailed.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/tale%20of%20the%20nine%20talled.jfif" alt="Tale of the Nine Tailed" loading="lazy">
+          <div class="rec-title">Tale of the Nine Tailed</div>
         </a>
       </div>
     </section>

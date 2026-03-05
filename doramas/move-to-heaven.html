@@ -14,20 +14,49 @@
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5053782942464082"
   crossorigin="anonymous"></script>
 
-  <!-- Schema Google -->
+  <!-- Schema Google (forte) -->
   <script type="application/ld+json">
   {
-   "@context":"https://schema.org",
-   "@type":"TVSeries",
-   "name":"Move to Heaven",
-   "description":"Jovens lidam com histórias de pessoas falecidas.",
-   "image":"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/move%20to%20heaven.webp",
-   "aggregateRating":{
-    "@type":"AggregateRating",
-    "ratingValue":"9.1/10 – MyDramaList",
-    "bestRating":"10",
-    "ratingCount":"1"
-   }
+    "@context":"https://schema.org",
+    "@graph":[
+      {
+        "@type":"WebSite",
+        "@id":"https://planetadorama.com.br/#website",
+        "url":"https://planetadorama.com.br/",
+        "name":"Planeta Dorama",
+        "inLanguage":"pt-BR"
+      },
+      {
+        "@type":"WebPage",
+        "@id":"https://planetadorama.com.br/doramas/move-to-heaven.html#webpage",
+        "url":"https://planetadorama.com.br/doramas/move-to-heaven.html",
+        "name":"Move to Heaven – Elenco, Sinopse e Trailer | Planeta Dorama",
+        "isPartOf":{"@id":"https://planetadorama.com.br/#website"},
+        "inLanguage":"pt-BR",
+        "description":"Jovens lidam com histórias de pessoas falecidas.",
+        "primaryImageOfPage":{"@type":"ImageObject","url":"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/move%20to%20heaven.webp"}
+      },
+      {
+        "@type":"BreadcrumbList",
+        "@id":"https://planetadorama.com.br/doramas/move-to-heaven.html#breadcrumb",
+        "itemListElement":[
+          {"@type":"ListItem","position":1,"name":"Início","item":"https://planetadorama.com.br/"},
+          {"@type":"ListItem","position":2,"name":"Doramas","item":"https://planetadorama.com.br/todos.html"},
+          {"@type":"ListItem","position":3,"name":"Move to Heaven","item":"https://planetadorama.com.br/doramas/move-to-heaven.html"}
+        ]
+      },
+      {
+        "@type":"TVSeries",
+        "@id":"https://planetadorama.com.br/doramas/move-to-heaven.html#tvseries",
+        "url":"https://planetadorama.com.br/doramas/move-to-heaven.html",
+        "name":"Move to Heaven",
+        "description":"Jovens lidam com histórias de pessoas falecidas.",
+        "image":"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/move%20to%20heaven.webp",
+        "inLanguage":"pt-BR",
+        "genre":["triste", "alegre"],
+        "actor":[{"@type":"Person","name":"Tang Joon-sang"}, {"@type":"Person","name":"Lee Je-hoon"}, {"@type":"Person","name":"Hong Seung-hee"}, {"@type":"Person","name":"Ji Jin-hee"}, {"@type":"Person","name":"Im Won-hee"}]
+      }
+    ]
   }
   </script>
 
@@ -371,21 +400,21 @@
       <h2>Recomendados para você</h2>
       <div class="rec-grid">
         
-        <a class="rec-card" href="/doramas/business-proposal.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/pretendente%20surpresa.jpg" alt="Pretendente Surpresa (Business Proposal)" loading="lazy">
-          <div class="rec-title">Pretendente Surpresa (Business Proposal)</div>
+        <a class="rec-card" href="/doramas/strongest-deliveryman.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/strongest%20deliv.jpg" alt="Strongest Deliveryman" loading="lazy">
+          <div class="rec-title">Strongest Deliveryman</div>
         </a>
-        <a class="rec-card" href="/doramas/king-the-land.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/sorriso%20real.webp" alt="Sorriso Real (King the Land)" loading="lazy">
-          <div class="rec-title">Sorriso Real (King the Land)</div>
+        <a class="rec-card" href="/doramas/start-up.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/start%20up.jpg" alt="Start-Up" loading="lazy">
+          <div class="rec-title">Start-Up</div>
         </a>
-        <a class="rec-card" href="/doramas/touch-your-heart.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/touch%20your%20heartt.jpg" alt="Touch Your Heart" loading="lazy">
-          <div class="rec-title">Touch Your Heart</div>
+        <a class="rec-card" href="/doramas/the-heirs.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/The%20Heirs.jpg" alt="The Heirs" loading="lazy">
+          <div class="rec-title">The Heirs</div>
         </a>
-        <a class="rec-card" href="/doramas/mr-sunshine.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/mr%20sunshine.webp" alt="Mr. Sunshine" loading="lazy">
-          <div class="rec-title">Mr. Sunshine</div>
+        <a class="rec-card" href="/doramas/coffee-prince.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/coffeee.jpg" alt="Coffee Prince" loading="lazy">
+          <div class="rec-title">Coffee Prince</div>
         </a>
       </div>
     </section>

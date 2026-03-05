@@ -14,20 +14,49 @@
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5053782942464082"
   crossorigin="anonymous"></script>
 
-  <!-- Schema Google -->
+  <!-- Schema Google (forte) -->
   <script type="application/ld+json">
   {
-   "@context":"https://schema.org",
-   "@type":"TVSeries",
-   "name":"Crash Course in Romance",
-   "description":"Uma mãe dona de restaurante se envolve com um professor famoso.",
-   "image":"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/crash%20course.webp",
-   "aggregateRating":{
-    "@type":"AggregateRating",
-    "ratingValue":"8.8/10 – MyDramaList",
-    "bestRating":"10",
-    "ratingCount":"1"
-   }
+    "@context":"https://schema.org",
+    "@graph":[
+      {
+        "@type":"WebSite",
+        "@id":"https://planetadorama.com.br/#website",
+        "url":"https://planetadorama.com.br/",
+        "name":"Planeta Dorama",
+        "inLanguage":"pt-BR"
+      },
+      {
+        "@type":"WebPage",
+        "@id":"https://planetadorama.com.br/doramas/crash-course-in-romance.html#webpage",
+        "url":"https://planetadorama.com.br/doramas/crash-course-in-romance.html",
+        "name":"Crash Course in Romance – Elenco, Sinopse e Trailer | Planeta Dorama",
+        "isPartOf":{"@id":"https://planetadorama.com.br/#website"},
+        "inLanguage":"pt-BR",
+        "description":"Uma mãe dona de restaurante se envolve com um professor famoso.",
+        "primaryImageOfPage":{"@type":"ImageObject","url":"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/crash%20course.webp"}
+      },
+      {
+        "@type":"BreadcrumbList",
+        "@id":"https://planetadorama.com.br/doramas/crash-course-in-romance.html#breadcrumb",
+        "itemListElement":[
+          {"@type":"ListItem","position":1,"name":"Início","item":"https://planetadorama.com.br/"},
+          {"@type":"ListItem","position":2,"name":"Doramas","item":"https://planetadorama.com.br/todos.html"},
+          {"@type":"ListItem","position":3,"name":"Crash Course in Romance","item":"https://planetadorama.com.br/doramas/crash-course-in-romance.html"}
+        ]
+      },
+      {
+        "@type":"TVSeries",
+        "@id":"https://planetadorama.com.br/doramas/crash-course-in-romance.html#tvseries",
+        "url":"https://planetadorama.com.br/doramas/crash-course-in-romance.html",
+        "name":"Crash Course in Romance",
+        "description":"Uma mãe dona de restaurante se envolve com um professor famoso.",
+        "image":"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/crash%20course.webp",
+        "inLanguage":"pt-BR",
+        "genre":["romance", "comedia", "drama"],
+        "actor":[{"@type":"Person","name":"Jeon Do-yeon"}, {"@type":"Person","name":"Jung Kyung-ho"}, {"@type":"Person","name":"Lee Bong-ryun"}, {"@type":"Person","name":"Oh Eui-sik"}]
+      }
+    ]
   }
   </script>
 
@@ -371,10 +400,6 @@
       <h2>Recomendados para você</h2>
       <div class="rec-grid">
         
-        <a class="rec-card" href="/doramas/the-heirs.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/The%20Heirs.jpg" alt="The Heirs" loading="lazy">
-          <div class="rec-title">The Heirs</div>
-        </a>
         <a class="rec-card" href="/doramas/crash-landing-on-you.html">
           <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/crash-landing.jpg" alt="Pousando no Amor (Crash Landing on You)" loading="lazy">
           <div class="rec-title">Pousando no Amor (Crash Landing on You)</div>
@@ -383,9 +408,13 @@
           <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/hotel%20del%20luna.jpg" alt="Hotel Del Luna" loading="lazy">
           <div class="rec-title">Hotel Del Luna</div>
         </a>
-        <a class="rec-card" href="/doramas/my-dearest.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/my%20dearest.jpeg" alt="My Dearest" loading="lazy">
-          <div class="rec-title">My Dearest</div>
+        <a class="rec-card" href="/doramas/hometown-cha-cha-cha.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/hometown%20cha.jpg" alt="Hometown Cha-Cha-Cha" loading="lazy">
+          <div class="rec-title">Hometown Cha-Cha-Cha</div>
+        </a>
+        <a class="rec-card" href="/doramas/the-good-bad-mother.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/the%20good%20bad%20mother.jpg" alt="The Good Bad Mother" loading="lazy">
+          <div class="rec-title">The Good Bad Mother</div>
         </a>
       </div>
     </section>

@@ -14,20 +14,49 @@
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5053782942464082"
   crossorigin="anonymous"></script>
 
-  <!-- Schema Google -->
+  <!-- Schema Google (forte) -->
   <script type="application/ld+json">
   {
-   "@context":"https://schema.org",
-   "@type":"TVSeries",
-   "name":"Hospital Playlist",
-   "description":"Cinco médicos são amigos há anos.",
-   "image":"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/hospital%20playlist.webp",
-   "aggregateRating":{
-    "@type":"AggregateRating",
-    "ratingValue":"9.1/10 – MyDramaList",
-    "bestRating":"10",
-    "ratingCount":"1"
-   }
+    "@context":"https://schema.org",
+    "@graph":[
+      {
+        "@type":"WebSite",
+        "@id":"https://planetadorama.com.br/#website",
+        "url":"https://planetadorama.com.br/",
+        "name":"Planeta Dorama",
+        "inLanguage":"pt-BR"
+      },
+      {
+        "@type":"WebPage",
+        "@id":"https://planetadorama.com.br/doramas/hospital-playlist.html#webpage",
+        "url":"https://planetadorama.com.br/doramas/hospital-playlist.html",
+        "name":"Hospital Playlist – Elenco, Sinopse e Trailer | Planeta Dorama",
+        "isPartOf":{"@id":"https://planetadorama.com.br/#website"},
+        "inLanguage":"pt-BR",
+        "description":"Cinco médicos são amigos há anos.",
+        "primaryImageOfPage":{"@type":"ImageObject","url":"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/hospital%20playlist.webp"}
+      },
+      {
+        "@type":"BreadcrumbList",
+        "@id":"https://planetadorama.com.br/doramas/hospital-playlist.html#breadcrumb",
+        "itemListElement":[
+          {"@type":"ListItem","position":1,"name":"Início","item":"https://planetadorama.com.br/"},
+          {"@type":"ListItem","position":2,"name":"Doramas","item":"https://planetadorama.com.br/todos.html"},
+          {"@type":"ListItem","position":3,"name":"Hospital Playlist","item":"https://planetadorama.com.br/doramas/hospital-playlist.html"}
+        ]
+      },
+      {
+        "@type":"TVSeries",
+        "@id":"https://planetadorama.com.br/doramas/hospital-playlist.html#tvseries",
+        "url":"https://planetadorama.com.br/doramas/hospital-playlist.html",
+        "name":"Hospital Playlist",
+        "description":"Cinco médicos são amigos há anos.",
+        "image":"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/hospital%20playlist.webp",
+        "inLanguage":"pt-BR",
+        "genre":["alegre", "romance"],
+        "actor":[{"@type":"Person","name":"Jo Jung-suk"}, {"@type":"Person","name":"Yoo Yeon-seok"}, {"@type":"Person","name":"Jung Kyung-ho"}, {"@type":"Person","name":"Kim Dae-myung"}, {"@type":"Person","name":"Jeon Mi-do"}]
+      }
+    ]
   }
   </script>
 
@@ -371,21 +400,21 @@
       <h2>Recomendados para você</h2>
       <div class="rec-grid">
         
-        <a class="rec-card" href="/doramas/extraordinary-attorney-woo.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/extraordinay%20attorney.jpg" alt="Advogada Extraordinária (Extraordinary Attorney Woo)" loading="lazy">
-          <div class="rec-title">Advogada Extraordinária (Extraordinary Attorney Woo)</div>
+        <a class="rec-card" href="/doramas/start-up.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/start%20up.jpg" alt="Start-Up" loading="lazy">
+          <div class="rec-title">Start-Up</div>
         </a>
-        <a class="rec-card" href="/doramas/the-legend-of-the-blue-sea.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/the%20legend%20of.jfif" alt="The Legend of the Blue Sea" loading="lazy">
-          <div class="rec-title">The Legend of the Blue Sea</div>
+        <a class="rec-card" href="/doramas/prison-playbook.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/prison%20playbook.jfif" alt="Prison Playbook" loading="lazy">
+          <div class="rec-title">Prison Playbook</div>
         </a>
-        <a class="rec-card" href="/doramas/touch-your-heart.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/touch%20your%20heartt.jpg" alt="Touch Your Heart" loading="lazy">
-          <div class="rec-title">Touch Your Heart</div>
+        <a class="rec-card" href="/doramas/the-red-sleeve.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/the%20red%20sleeve.jpeg" alt="The Red Sleeve" loading="lazy">
+          <div class="rec-title">The Red Sleeve</div>
         </a>
-        <a class="rec-card" href="/doramas/itaewon-class.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/itaewon%20class.webp" alt="Itaewon Class" loading="lazy">
-          <div class="rec-title">Itaewon Class</div>
+        <a class="rec-card" href="/doramas/strong-woman-do-bong-soon.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/strong-woman-do-bong-soon.jpg" alt="Strong Woman Do Bong Soon" loading="lazy">
+          <div class="rec-title">Strong Woman Do Bong Soon</div>
         </a>
       </div>
     </section>

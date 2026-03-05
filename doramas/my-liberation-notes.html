@@ -14,20 +14,49 @@
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5053782942464082"
   crossorigin="anonymous"></script>
 
-  <!-- Schema Google -->
+  <!-- Schema Google (forte) -->
   <script type="application/ld+json">
   {
-   "@context":"https://schema.org",
-   "@type":"TVSeries",
-   "name":"My Liberation Notes",
-   "description":"Três irmãos buscam sentido na vida adulta.",
-   "image":"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/my%20liberation%20notes.webp",
-   "aggregateRating":{
-    "@type":"AggregateRating",
-    "ratingValue":"8.9/10 – MyDramaList",
-    "bestRating":"10",
-    "ratingCount":"1"
-   }
+    "@context":"https://schema.org",
+    "@graph":[
+      {
+        "@type":"WebSite",
+        "@id":"https://planetadorama.com.br/#website",
+        "url":"https://planetadorama.com.br/",
+        "name":"Planeta Dorama",
+        "inLanguage":"pt-BR"
+      },
+      {
+        "@type":"WebPage",
+        "@id":"https://planetadorama.com.br/doramas/my-liberation-notes.html#webpage",
+        "url":"https://planetadorama.com.br/doramas/my-liberation-notes.html",
+        "name":"My Liberation Notes – Elenco, Sinopse e Trailer | Planeta Dorama",
+        "isPartOf":{"@id":"https://planetadorama.com.br/#website"},
+        "inLanguage":"pt-BR",
+        "description":"Três irmãos buscam sentido na vida adulta.",
+        "primaryImageOfPage":{"@type":"ImageObject","url":"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/my%20liberation%20notes.webp"}
+      },
+      {
+        "@type":"BreadcrumbList",
+        "@id":"https://planetadorama.com.br/doramas/my-liberation-notes.html#breadcrumb",
+        "itemListElement":[
+          {"@type":"ListItem","position":1,"name":"Início","item":"https://planetadorama.com.br/"},
+          {"@type":"ListItem","position":2,"name":"Doramas","item":"https://planetadorama.com.br/todos.html"},
+          {"@type":"ListItem","position":3,"name":"My Liberation Notes","item":"https://planetadorama.com.br/doramas/my-liberation-notes.html"}
+        ]
+      },
+      {
+        "@type":"TVSeries",
+        "@id":"https://planetadorama.com.br/doramas/my-liberation-notes.html#tvseries",
+        "url":"https://planetadorama.com.br/doramas/my-liberation-notes.html",
+        "name":"My Liberation Notes",
+        "description":"Três irmãos buscam sentido na vida adulta.",
+        "image":"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/my%20liberation%20notes.webp",
+        "inLanguage":"pt-BR",
+        "genre":["drama", "romance", "realista"],
+        "actor":[{"@type":"Person","name":"Lee Min-ki"}, {"@type":"Person","name":"Kim Ji-won"}, {"@type":"Person","name":"Son Seok-koo"}]
+      }
+    ]
   }
   </script>
 
@@ -371,21 +400,21 @@
       <h2>Recomendados para você</h2>
       <div class="rec-grid">
         
+        <a class="rec-card" href="/doramas/moon-lovers-scarlet-heart-ryeo.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/moon%20lovers%201.webp" alt="Moon Lovers: Scarlet Heart Ryeo" loading="lazy">
+          <div class="rec-title">Moon Lovers: Scarlet Heart Ryeo</div>
+        </a>
         <a class="rec-card" href="/doramas/strong-woman-do-bong-soon.html">
           <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/strong-woman-do-bong-soon.jpg" alt="Strong Woman Do Bong Soon" loading="lazy">
           <div class="rec-title">Strong Woman Do Bong Soon</div>
         </a>
-        <a class="rec-card" href="/doramas/reply-1988.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/reply%201988.jpg" alt="Reply 1988" loading="lazy">
-          <div class="rec-title">Reply 1988</div>
+        <a class="rec-card" href="/doramas/descendants-of-the-sun.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/Descendants%20of%20the%20Sun.jpg" alt="Descendants of the Sun" loading="lazy">
+          <div class="rec-title">Descendants of the Sun</div>
         </a>
-        <a class="rec-card" href="/doramas/youth-of-may.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/youth%20of%20may.webp" alt="Youth of May" loading="lazy">
-          <div class="rec-title">Youth of May</div>
-        </a>
-        <a class="rec-card" href="/doramas/my-id-is-gangnam-beauty.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/my%20id%20is%20gangnam.webp" alt="My ID is Gangnam Beauty" loading="lazy">
-          <div class="rec-title">My ID is Gangnam Beauty</div>
+        <a class="rec-card" href="/doramas/under-the-queen-s-umbrella.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/under%20the%20queen%20umbrella.webp" alt="Under the Queen's Umbrella" loading="lazy">
+          <div class="rec-title">Under the Queen's Umbrella</div>
         </a>
       </div>
     </section>

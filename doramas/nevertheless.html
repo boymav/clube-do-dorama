@@ -14,20 +14,49 @@
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5053782942464082"
   crossorigin="anonymous"></script>
 
-  <!-- Schema Google -->
+  <!-- Schema Google (forte) -->
   <script type="application/ld+json">
   {
-   "@context":"https://schema.org",
-   "@type":"TVSeries",
-   "name":"Nevertheless",
-   "description":"Um romance intenso e complicado.",
-   "image":"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/nevert.jfif",
-   "aggregateRating":{
-    "@type":"AggregateRating",
-    "ratingValue":"7.6/10 – MyDramaList",
-    "bestRating":"10",
-    "ratingCount":"1"
-   }
+    "@context":"https://schema.org",
+    "@graph":[
+      {
+        "@type":"WebSite",
+        "@id":"https://planetadorama.com.br/#website",
+        "url":"https://planetadorama.com.br/",
+        "name":"Planeta Dorama",
+        "inLanguage":"pt-BR"
+      },
+      {
+        "@type":"WebPage",
+        "@id":"https://planetadorama.com.br/doramas/nevertheless.html#webpage",
+        "url":"https://planetadorama.com.br/doramas/nevertheless.html",
+        "name":"Nevertheless – Elenco, Sinopse e Trailer | Planeta Dorama",
+        "isPartOf":{"@id":"https://planetadorama.com.br/#website"},
+        "inLanguage":"pt-BR",
+        "description":"Um romance intenso e complicado.",
+        "primaryImageOfPage":{"@type":"ImageObject","url":"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/nevert.jfif"}
+      },
+      {
+        "@type":"BreadcrumbList",
+        "@id":"https://planetadorama.com.br/doramas/nevertheless.html#breadcrumb",
+        "itemListElement":[
+          {"@type":"ListItem","position":1,"name":"Início","item":"https://planetadorama.com.br/"},
+          {"@type":"ListItem","position":2,"name":"Doramas","item":"https://planetadorama.com.br/todos.html"},
+          {"@type":"ListItem","position":3,"name":"Nevertheless","item":"https://planetadorama.com.br/doramas/nevertheless.html"}
+        ]
+      },
+      {
+        "@type":"TVSeries",
+        "@id":"https://planetadorama.com.br/doramas/nevertheless.html#tvseries",
+        "url":"https://planetadorama.com.br/doramas/nevertheless.html",
+        "name":"Nevertheless",
+        "description":"Um romance intenso e complicado.",
+        "image":"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/nevert.jfif",
+        "inLanguage":"pt-BR",
+        "genre":["romance", "triste"],
+        "actor":[{"@type":"Person","name":"Han So-hee"}, {"@type":"Person","name":"Song Kang"}, {"@type":"Person","name":"Chae Jong-hyeop"}, {"@type":"Person","name":"Yang Hye-ji"}, {"@type":"Person","name":"Lee Yul-eum"}]
+      }
+    ]
   }
   </script>
 
@@ -371,21 +400,21 @@
       <h2>Recomendados para você</h2>
       <div class="rec-grid">
         
-        <a class="rec-card" href="/doramas/touch-your-heart.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/touch%20your%20heartt.jpg" alt="Touch Your Heart" loading="lazy">
-          <div class="rec-title">Touch Your Heart</div>
+        <a class="rec-card" href="/doramas/strong-woman-do-bong-soon.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/strong-woman-do-bong-soon.jpg" alt="Strong Woman Do Bong Soon" loading="lazy">
+          <div class="rec-title">Strong Woman Do Bong Soon</div>
         </a>
-        <a class="rec-card" href="/doramas/tale-of-the-nine-tailed.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/tale%20of%20the%20nine%20talled.jfif" alt="Tale of the Nine Tailed" loading="lazy">
-          <div class="rec-title">Tale of the Nine Tailed</div>
+        <a class="rec-card" href="/doramas/goblin.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/Goblin.jpg" alt="Goblin" loading="lazy">
+          <div class="rec-title">Goblin</div>
         </a>
-        <a class="rec-card" href="/doramas/hometown-cha-cha-cha.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/hometown%20cha.jpg" alt="Hometown Cha-Cha-Cha" loading="lazy">
-          <div class="rec-title">Hometown Cha-Cha-Cha</div>
+        <a class="rec-card" href="/doramas/youth-of-may.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/youth%20of%20may.webp" alt="Youth of May" loading="lazy">
+          <div class="rec-title">Youth of May</div>
         </a>
-        <a class="rec-card" href="/doramas/hotel-del-luna.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/hotel%20del%20luna.jpg" alt="Hotel Del Luna" loading="lazy">
-          <div class="rec-title">Hotel Del Luna</div>
+        <a class="rec-card" href="/doramas/start-up.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/start%20up.jpg" alt="Start-Up" loading="lazy">
+          <div class="rec-title">Start-Up</div>
         </a>
       </div>
     </section>

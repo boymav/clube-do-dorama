@@ -14,20 +14,49 @@
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5053782942464082"
   crossorigin="anonymous"></script>
 
-  <!-- Schema Google -->
+  <!-- Schema Google (forte) -->
   <script type="application/ld+json">
   {
-   "@context":"https://schema.org",
-   "@type":"TVSeries",
-   "name":"Agency",
-   "description":"Uma executiva luta para sobreviver em empresa dominada por homens.",
-   "image":"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/agency.webp",
-   "aggregateRating":{
-    "@type":"AggregateRating",
-    "ratingValue":"8.4/10 – MyDramaList",
-    "bestRating":"10",
-    "ratingCount":"1"
-   }
+    "@context":"https://schema.org",
+    "@graph":[
+      {
+        "@type":"WebSite",
+        "@id":"https://planetadorama.com.br/#website",
+        "url":"https://planetadorama.com.br/",
+        "name":"Planeta Dorama",
+        "inLanguage":"pt-BR"
+      },
+      {
+        "@type":"WebPage",
+        "@id":"https://planetadorama.com.br/doramas/agency.html#webpage",
+        "url":"https://planetadorama.com.br/doramas/agency.html",
+        "name":"Agency – Elenco, Sinopse e Trailer | Planeta Dorama",
+        "isPartOf":{"@id":"https://planetadorama.com.br/#website"},
+        "inLanguage":"pt-BR",
+        "description":"Uma executiva luta para sobreviver em empresa dominada por homens.",
+        "primaryImageOfPage":{"@type":"ImageObject","url":"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/agency.webp"}
+      },
+      {
+        "@type":"BreadcrumbList",
+        "@id":"https://planetadorama.com.br/doramas/agency.html#breadcrumb",
+        "itemListElement":[
+          {"@type":"ListItem","position":1,"name":"Início","item":"https://planetadorama.com.br/"},
+          {"@type":"ListItem","position":2,"name":"Doramas","item":"https://planetadorama.com.br/todos.html"},
+          {"@type":"ListItem","position":3,"name":"Agency","item":"https://planetadorama.com.br/doramas/agency.html"}
+        ]
+      },
+      {
+        "@type":"TVSeries",
+        "@id":"https://planetadorama.com.br/doramas/agency.html#tvseries",
+        "url":"https://planetadorama.com.br/doramas/agency.html",
+        "name":"Agency",
+        "description":"Uma executiva luta para sobreviver em empresa dominada por homens.",
+        "image":"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/agency.webp",
+        "inLanguage":"pt-BR",
+        "genre":["drama", "corporativo", "intenso"],
+        "actor":[{"@type":"Person","name":"Lee Bo-young"}, {"@type":"Person","name":"Son Na-eun"}, {"@type":"Person","name":"Jo Sung-ha"}]
+      }
+    ]
   }
   </script>
 
@@ -371,21 +400,21 @@
       <h2>Recomendados para você</h2>
       <div class="rec-grid">
         
-        <a class="rec-card" href="/doramas/under-the-queen-s-umbrella.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/under%20the%20queen%20umbrella.webp" alt="Under the Queen's Umbrella" loading="lazy">
-          <div class="rec-title">Under the Queen's Umbrella</div>
-        </a>
-        <a class="rec-card" href="/doramas/sky-castle.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/sky%20castle.webp" alt="Sky Castle" loading="lazy">
-          <div class="rec-title">Sky Castle</div>
-        </a>
         <a class="rec-card" href="/doramas/a-time-called-you.html">
           <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/i%20time%20called%20you.webp" alt="A Time Called You" loading="lazy">
           <div class="rec-title">A Time Called You</div>
         </a>
-        <a class="rec-card" href="/doramas/the-devil-judge.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/the%20devil%20judge.jpg" alt="The Devil Judge" loading="lazy">
-          <div class="rec-title">The Devil Judge</div>
+        <a class="rec-card" href="/doramas/bad-and-crazy.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/bad%20and%20crazy.webp" alt="Bad and Crazy" loading="lazy">
+          <div class="rec-title">Bad and Crazy</div>
+        </a>
+        <a class="rec-card" href="/doramas/crash-landing-on-you.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/crash-landing.jpg" alt="Pousando no Amor (Crash Landing on You)" loading="lazy">
+          <div class="rec-title">Pousando no Amor (Crash Landing on You)</div>
+        </a>
+        <a class="rec-card" href="/doramas/w-two-worlds.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/w%20two%20words.webp" alt="W: Two Worlds" loading="lazy">
+          <div class="rec-title">W: Two Worlds</div>
         </a>
       </div>
     </section>

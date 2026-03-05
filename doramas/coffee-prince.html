@@ -14,20 +14,49 @@
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5053782942464082"
   crossorigin="anonymous"></script>
 
-  <!-- Schema Google -->
+  <!-- Schema Google (forte) -->
   <script type="application/ld+json">
   {
-   "@context":"https://schema.org",
-   "@type":"TVSeries",
-   "name":"Coffee Prince",
-   "description":"Uma garota se passa por garoto para trabalhar.",
-   "image":"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/coffeee.jpg",
-   "aggregateRating":{
-    "@type":"AggregateRating",
-    "ratingValue":"8.6/10 – MyDramaList",
-    "bestRating":"10",
-    "ratingCount":"1"
-   }
+    "@context":"https://schema.org",
+    "@graph":[
+      {
+        "@type":"WebSite",
+        "@id":"https://planetadorama.com.br/#website",
+        "url":"https://planetadorama.com.br/",
+        "name":"Planeta Dorama",
+        "inLanguage":"pt-BR"
+      },
+      {
+        "@type":"WebPage",
+        "@id":"https://planetadorama.com.br/doramas/coffee-prince.html#webpage",
+        "url":"https://planetadorama.com.br/doramas/coffee-prince.html",
+        "name":"Coffee Prince – Elenco, Sinopse e Trailer | Planeta Dorama",
+        "isPartOf":{"@id":"https://planetadorama.com.br/#website"},
+        "inLanguage":"pt-BR",
+        "description":"Uma garota se passa por garoto para trabalhar.",
+        "primaryImageOfPage":{"@type":"ImageObject","url":"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/coffeee.jpg"}
+      },
+      {
+        "@type":"BreadcrumbList",
+        "@id":"https://planetadorama.com.br/doramas/coffee-prince.html#breadcrumb",
+        "itemListElement":[
+          {"@type":"ListItem","position":1,"name":"Início","item":"https://planetadorama.com.br/"},
+          {"@type":"ListItem","position":2,"name":"Doramas","item":"https://planetadorama.com.br/todos.html"},
+          {"@type":"ListItem","position":3,"name":"Coffee Prince","item":"https://planetadorama.com.br/doramas/coffee-prince.html"}
+        ]
+      },
+      {
+        "@type":"TVSeries",
+        "@id":"https://planetadorama.com.br/doramas/coffee-prince.html#tvseries",
+        "url":"https://planetadorama.com.br/doramas/coffee-prince.html",
+        "name":"Coffee Prince",
+        "description":"Uma garota se passa por garoto para trabalhar.",
+        "image":"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/coffeee.jpg",
+        "inLanguage":"pt-BR",
+        "genre":["romance", "alegre", "comedia"],
+        "actor":[{"@type":"Person","name":"Gong Yoo"}, {"@type":"Person","name":"Yoon Eun-hye"}, {"@type":"Person","name":"Lee Sun-kyun"}, {"@type":"Person","name":"Chae Jung-an"}, {"@type":"Person","name":"Kim Jae-wook"}]
+      }
+    ]
   }
   </script>
 
@@ -371,21 +400,21 @@
       <h2>Recomendados para você</h2>
       <div class="rec-grid">
         
-        <a class="rec-card" href="/doramas/crash-landing-on-you.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/crash-landing.jpg" alt="Pousando no Amor (Crash Landing on You)" loading="lazy">
-          <div class="rec-title">Pousando no Amor (Crash Landing on You)</div>
+        <a class="rec-card" href="/doramas/mr-sunshine.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/mr%20sunshine.webp" alt="Mr. Sunshine" loading="lazy">
+          <div class="rec-title">Mr. Sunshine</div>
         </a>
-        <a class="rec-card" href="/doramas/w-two-worlds.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/w%20two%20words.webp" alt="W: Two Worlds" loading="lazy">
-          <div class="rec-title">W: Two Worlds</div>
+        <a class="rec-card" href="/doramas/healer.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/healer.webp" alt="Healer" loading="lazy">
+          <div class="rec-title">Healer</div>
         </a>
-        <a class="rec-card" href="/doramas/the-king-eternal-monarch.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/the%20king%20eternalllll.jpg" alt="The King: Eternal Monarch" loading="lazy">
-          <div class="rec-title">The King: Eternal Monarch</div>
+        <a class="rec-card" href="/doramas/prison-playbook.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/prison%20playbook.jfif" alt="Prison Playbook" loading="lazy">
+          <div class="rec-title">Prison Playbook</div>
         </a>
-        <a class="rec-card" href="/doramas/our-beloved-summer.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/our%20beloved%20summer.png" alt="Our Beloved Summer" loading="lazy">
-          <div class="rec-title">Our Beloved Summer</div>
+        <a class="rec-card" href="/doramas/my-love-from-the-star.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/You_Who_Came_From_the_Stars_Cover.jpg" alt="My Love from the Star" loading="lazy">
+          <div class="rec-title">My Love from the Star</div>
         </a>
       </div>
     </section>

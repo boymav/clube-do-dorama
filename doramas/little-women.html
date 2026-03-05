@@ -14,20 +14,49 @@
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5053782942464082"
   crossorigin="anonymous"></script>
 
-  <!-- Schema Google -->
+  <!-- Schema Google (forte) -->
   <script type="application/ld+json">
   {
-   "@context":"https://schema.org",
-   "@type":"TVSeries",
-   "name":"Little Women",
-   "description":"Três irmãs enfrentam uma família poderosa.",
-   "image":"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/little%20woman.jpg",
-   "aggregateRating":{
-    "@type":"AggregateRating",
-    "ratingValue":"8.8/10 – MyDramaList",
-    "bestRating":"10",
-    "ratingCount":"1"
-   }
+    "@context":"https://schema.org",
+    "@graph":[
+      {
+        "@type":"WebSite",
+        "@id":"https://planetadorama.com.br/#website",
+        "url":"https://planetadorama.com.br/",
+        "name":"Planeta Dorama",
+        "inLanguage":"pt-BR"
+      },
+      {
+        "@type":"WebPage",
+        "@id":"https://planetadorama.com.br/doramas/little-women.html#webpage",
+        "url":"https://planetadorama.com.br/doramas/little-women.html",
+        "name":"Little Women – Elenco, Sinopse e Trailer | Planeta Dorama",
+        "isPartOf":{"@id":"https://planetadorama.com.br/#website"},
+        "inLanguage":"pt-BR",
+        "description":"Três irmãs enfrentam uma família poderosa.",
+        "primaryImageOfPage":{"@type":"ImageObject","url":"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/little%20woman.jpg"}
+      },
+      {
+        "@type":"BreadcrumbList",
+        "@id":"https://planetadorama.com.br/doramas/little-women.html#breadcrumb",
+        "itemListElement":[
+          {"@type":"ListItem","position":1,"name":"Início","item":"https://planetadorama.com.br/"},
+          {"@type":"ListItem","position":2,"name":"Doramas","item":"https://planetadorama.com.br/todos.html"},
+          {"@type":"ListItem","position":3,"name":"Little Women","item":"https://planetadorama.com.br/doramas/little-women.html"}
+        ]
+      },
+      {
+        "@type":"TVSeries",
+        "@id":"https://planetadorama.com.br/doramas/little-women.html#tvseries",
+        "url":"https://planetadorama.com.br/doramas/little-women.html",
+        "name":"Little Women",
+        "description":"Três irmãs enfrentam uma família poderosa.",
+        "image":"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/little%20woman.jpg",
+        "inLanguage":"pt-BR",
+        "genre":["intenso", "triste"],
+        "actor":[{"@type":"Person","name":"Kim Go-eun"}, {"@type":"Person","name":"Nam Ji-hyun"}, {"@type":"Person","name":"Park Ji-hu"}, {"@type":"Person","name":"Wi Ha-joon"}, {"@type":"Person","name":"Uhm Ji-won"}]
+      }
+    ]
   }
   </script>
 
@@ -371,21 +400,21 @@
       <h2>Recomendados para você</h2>
       <div class="rec-grid">
         
-        <a class="rec-card" href="/doramas/the-devil-judge.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/the%20devil%20judge.jpg" alt="The Devil Judge" loading="lazy">
-          <div class="rec-title">The Devil Judge</div>
+        <a class="rec-card" href="/doramas/bloodhounds.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/bloodhounds.webp" alt="Bloodhounds" loading="lazy">
+          <div class="rec-title">Bloodhounds</div>
         </a>
-        <a class="rec-card" href="/doramas/nevertheless.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/nevert.jfif" alt="Nevertheless" loading="lazy">
-          <div class="rec-title">Nevertheless</div>
+        <a class="rec-card" href="/doramas/the-red-sleeve.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/the%20red%20sleeve.jpeg" alt="The Red Sleeve" loading="lazy">
+          <div class="rec-title">The Red Sleeve</div>
         </a>
-        <a class="rec-card" href="/doramas/the-heirs.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/The%20Heirs.jpg" alt="The Heirs" loading="lazy">
-          <div class="rec-title">The Heirs</div>
+        <a class="rec-card" href="/doramas/mr-sunshine.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/mr%20sunshine.webp" alt="Mr. Sunshine" loading="lazy">
+          <div class="rec-title">Mr. Sunshine</div>
         </a>
-        <a class="rec-card" href="/doramas/beyond-evil.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/beyond%20evil.jpg" alt="Beyond Evil" loading="lazy">
-          <div class="rec-title">Beyond Evil</div>
+        <a class="rec-card" href="/doramas/navillera.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/navillera.webp" alt="Navillera" loading="lazy">
+          <div class="rec-title">Navillera</div>
         </a>
       </div>
     </section>

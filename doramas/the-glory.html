@@ -14,20 +14,49 @@
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5053782942464082"
   crossorigin="anonymous"></script>
 
-  <!-- Schema Google -->
+  <!-- Schema Google (forte) -->
   <script type="application/ld+json">
   {
-   "@context":"https://schema.org",
-   "@type":"TVSeries",
-   "name":"The Glory",
-   "description":"Uma mulher marcada por bullying cruel na escola.",
-   "image":"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/the%20glory.webp",
-   "aggregateRating":{
-    "@type":"AggregateRating",
-    "ratingValue":"8.9/10 – MyDramaList",
-    "bestRating":"10",
-    "ratingCount":"1"
-   }
+    "@context":"https://schema.org",
+    "@graph":[
+      {
+        "@type":"WebSite",
+        "@id":"https://planetadorama.com.br/#website",
+        "url":"https://planetadorama.com.br/",
+        "name":"Planeta Dorama",
+        "inLanguage":"pt-BR"
+      },
+      {
+        "@type":"WebPage",
+        "@id":"https://planetadorama.com.br/doramas/the-glory.html#webpage",
+        "url":"https://planetadorama.com.br/doramas/the-glory.html",
+        "name":"The Glory – Elenco, Sinopse e Trailer | Planeta Dorama",
+        "isPartOf":{"@id":"https://planetadorama.com.br/#website"},
+        "inLanguage":"pt-BR",
+        "description":"Uma mulher marcada por bullying cruel na escola.",
+        "primaryImageOfPage":{"@type":"ImageObject","url":"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/the%20glory.webp"}
+      },
+      {
+        "@type":"BreadcrumbList",
+        "@id":"https://planetadorama.com.br/doramas/the-glory.html#breadcrumb",
+        "itemListElement":[
+          {"@type":"ListItem","position":1,"name":"Início","item":"https://planetadorama.com.br/"},
+          {"@type":"ListItem","position":2,"name":"Doramas","item":"https://planetadorama.com.br/todos.html"},
+          {"@type":"ListItem","position":3,"name":"The Glory","item":"https://planetadorama.com.br/doramas/the-glory.html"}
+        ]
+      },
+      {
+        "@type":"TVSeries",
+        "@id":"https://planetadorama.com.br/doramas/the-glory.html#tvseries",
+        "url":"https://planetadorama.com.br/doramas/the-glory.html",
+        "name":"The Glory",
+        "description":"Uma mulher marcada por bullying cruel na escola.",
+        "image":"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/the%20glory.webp",
+        "inLanguage":"pt-BR",
+        "genre":["drama", "vinganca", "intenso"],
+        "actor":[{"@type":"Person","name":"Song Hye-kyo"}, {"@type":"Person","name":"Lee Do-hyun"}, {"@type":"Person","name":"Lim Ji-yeon"}, {"@type":"Person","name":"Yeom Hye-ran"}, {"@type":"Person","name":"Park Sung-hoon"}]
+      }
+    ]
   }
   </script>
 
@@ -371,21 +400,21 @@
       <h2>Recomendados para você</h2>
       <div class="rec-grid">
         
-        <a class="rec-card" href="/doramas/w-two-worlds.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/w%20two%20words.webp" alt="W: Two Worlds" loading="lazy">
-          <div class="rec-title">W: Two Worlds</div>
-        </a>
-        <a class="rec-card" href="/doramas/healer.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/healer.webp" alt="Healer" loading="lazy">
-          <div class="rec-title">Healer</div>
-        </a>
-        <a class="rec-card" href="/doramas/the-red-sleeve.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/the%20red%20sleeve.jpeg" alt="The Red Sleeve" loading="lazy">
-          <div class="rec-title">The Red Sleeve</div>
-        </a>
         <a class="rec-card" href="/doramas/crash-landing-on-you.html">
           <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/crash-landing.jpg" alt="Pousando no Amor (Crash Landing on You)" loading="lazy">
           <div class="rec-title">Pousando no Amor (Crash Landing on You)</div>
+        </a>
+        <a class="rec-card" href="/doramas/beyond-evil.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/beyond%20evil.jpg" alt="Beyond Evil" loading="lazy">
+          <div class="rec-title">Beyond Evil</div>
+        </a>
+        <a class="rec-card" href="/doramas/start-up.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/start%20up.jpg" alt="Start-Up" loading="lazy">
+          <div class="rec-title">Start-Up</div>
+        </a>
+        <a class="rec-card" href="/doramas/reborn-rich.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/reborn%20ric.jfif" alt="Reborn Rich" loading="lazy">
+          <div class="rec-title">Reborn Rich</div>
         </a>
       </div>
     </section>

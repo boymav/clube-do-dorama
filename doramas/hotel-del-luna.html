@@ -14,20 +14,49 @@
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5053782942464082"
   crossorigin="anonymous"></script>
 
-  <!-- Schema Google -->
+  <!-- Schema Google (forte) -->
   <script type="application/ld+json">
   {
-   "@context":"https://schema.org",
-   "@type":"TVSeries",
-   "name":"Hotel Del Luna",
-   "description":"Um hotel misterioso recebe apenas almas perdidas.",
-   "image":"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/hotel%20del%20luna.jpg",
-   "aggregateRating":{
-    "@type":"AggregateRating",
-    "ratingValue":"8.9/10 – MyDramaList",
-    "bestRating":"10",
-    "ratingCount":"1"
-   }
+    "@context":"https://schema.org",
+    "@graph":[
+      {
+        "@type":"WebSite",
+        "@id":"https://planetadorama.com.br/#website",
+        "url":"https://planetadorama.com.br/",
+        "name":"Planeta Dorama",
+        "inLanguage":"pt-BR"
+      },
+      {
+        "@type":"WebPage",
+        "@id":"https://planetadorama.com.br/doramas/hotel-del-luna.html#webpage",
+        "url":"https://planetadorama.com.br/doramas/hotel-del-luna.html",
+        "name":"Hotel Del Luna – Elenco, Sinopse e Trailer | Planeta Dorama",
+        "isPartOf":{"@id":"https://planetadorama.com.br/#website"},
+        "inLanguage":"pt-BR",
+        "description":"Um hotel misterioso recebe apenas almas perdidas.",
+        "primaryImageOfPage":{"@type":"ImageObject","url":"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/hotel%20del%20luna.jpg"}
+      },
+      {
+        "@type":"BreadcrumbList",
+        "@id":"https://planetadorama.com.br/doramas/hotel-del-luna.html#breadcrumb",
+        "itemListElement":[
+          {"@type":"ListItem","position":1,"name":"Início","item":"https://planetadorama.com.br/"},
+          {"@type":"ListItem","position":2,"name":"Doramas","item":"https://planetadorama.com.br/todos.html"},
+          {"@type":"ListItem","position":3,"name":"Hotel Del Luna","item":"https://planetadorama.com.br/doramas/hotel-del-luna.html"}
+        ]
+      },
+      {
+        "@type":"TVSeries",
+        "@id":"https://planetadorama.com.br/doramas/hotel-del-luna.html#tvseries",
+        "url":"https://planetadorama.com.br/doramas/hotel-del-luna.html",
+        "name":"Hotel Del Luna",
+        "description":"Um hotel misterioso recebe apenas almas perdidas.",
+        "image":"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/hotel%20del%20luna.jpg",
+        "inLanguage":"pt-BR",
+        "genre":["romance", "triste", "fantasia"],
+        "actor":[{"@type":"Person","name":"IU"}, {"@type":"Person","name":"Yeo Jin-goo"}, {"@type":"Person","name":"Shin Jung-geun"}, {"@type":"Person","name":"P.O"}, {"@type":"Person","name":"Kang Mi-na"}]
+      }
+    ]
   }
   </script>
 
@@ -371,21 +400,21 @@
       <h2>Recomendados para você</h2>
       <div class="rec-grid">
         
-        <a class="rec-card" href="/doramas/her-private-life.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/her%20private%20life.jpg" alt="Her Private Life" loading="lazy">
-          <div class="rec-title">Her Private Life</div>
+        <a class="rec-card" href="/doramas/doctor-cha.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/doctor%20cha.jpg" alt="Doctor Cha" loading="lazy">
+          <div class="rec-title">Doctor Cha</div>
         </a>
-        <a class="rec-card" href="/doramas/hometown-cha-cha-cha.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/hometown%20cha.jpg" alt="Hometown Cha-Cha-Cha" loading="lazy">
-          <div class="rec-title">Hometown Cha-Cha-Cha</div>
+        <a class="rec-card" href="/doramas/extraordinary-attorney-woo.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/extraordinay%20attorney.jpg" alt="Advogada Extraordinária (Extraordinary Attorney Woo)" loading="lazy">
+          <div class="rec-title">Advogada Extraordinária (Extraordinary Attorney Woo)</div>
         </a>
-        <a class="rec-card" href="/doramas/the-king-eternal-monarch.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/the%20king%20eternalllll.jpg" alt="The King: Eternal Monarch" loading="lazy">
-          <div class="rec-title">The King: Eternal Monarch</div>
+        <a class="rec-card" href="/doramas/my-mister.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/my%20mister.jfif" alt="My Mister" loading="lazy">
+          <div class="rec-title">My Mister</div>
         </a>
-        <a class="rec-card" href="/doramas/weightlifting-fairy-kim-bok-joo.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/Weightlifting%20Fairy%20Kim%20Bok%20Joo.webp" alt="Weightlifting Fairy Kim Bok Joo" loading="lazy">
-          <div class="rec-title">Weightlifting Fairy Kim Bok Joo</div>
+        <a class="rec-card" href="/doramas/start-up.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/start%20up.jpg" alt="Start-Up" loading="lazy">
+          <div class="rec-title">Start-Up</div>
         </a>
       </div>
     </section>

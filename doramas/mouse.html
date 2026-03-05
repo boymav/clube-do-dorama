@@ -14,20 +14,49 @@
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5053782942464082"
   crossorigin="anonymous"></script>
 
-  <!-- Schema Google -->
+  <!-- Schema Google (forte) -->
   <script type="application/ld+json">
   {
-   "@context":"https://schema.org",
-   "@type":"TVSeries",
-   "name":"Mouse",
-   "description":"Um serial killer assombra a Coreia.",
-   "image":"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/mouse.jpg",
-   "aggregateRating":{
-    "@type":"AggregateRating",
-    "ratingValue":"8.9/10 – MyDramaList",
-    "bestRating":"10",
-    "ratingCount":"1"
-   }
+    "@context":"https://schema.org",
+    "@graph":[
+      {
+        "@type":"WebSite",
+        "@id":"https://planetadorama.com.br/#website",
+        "url":"https://planetadorama.com.br/",
+        "name":"Planeta Dorama",
+        "inLanguage":"pt-BR"
+      },
+      {
+        "@type":"WebPage",
+        "@id":"https://planetadorama.com.br/doramas/mouse.html#webpage",
+        "url":"https://planetadorama.com.br/doramas/mouse.html",
+        "name":"Mouse – Elenco, Sinopse e Trailer | Planeta Dorama",
+        "isPartOf":{"@id":"https://planetadorama.com.br/#website"},
+        "inLanguage":"pt-BR",
+        "description":"Um serial killer assombra a Coreia.",
+        "primaryImageOfPage":{"@type":"ImageObject","url":"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/mouse.jpg"}
+      },
+      {
+        "@type":"BreadcrumbList",
+        "@id":"https://planetadorama.com.br/doramas/mouse.html#breadcrumb",
+        "itemListElement":[
+          {"@type":"ListItem","position":1,"name":"Início","item":"https://planetadorama.com.br/"},
+          {"@type":"ListItem","position":2,"name":"Doramas","item":"https://planetadorama.com.br/todos.html"},
+          {"@type":"ListItem","position":3,"name":"Mouse","item":"https://planetadorama.com.br/doramas/mouse.html"}
+        ]
+      },
+      {
+        "@type":"TVSeries",
+        "@id":"https://planetadorama.com.br/doramas/mouse.html#tvseries",
+        "url":"https://planetadorama.com.br/doramas/mouse.html",
+        "name":"Mouse",
+        "description":"Um serial killer assombra a Coreia.",
+        "image":"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/mouse.jpg",
+        "inLanguage":"pt-BR",
+        "genre":["intenso", "triste"],
+        "actor":[{"@type":"Person","name":"Lee Seung-gi"}, {"@type":"Person","name":"Lee Hee-joon"}, {"@type":"Person","name":"Park Ju-hyun"}, {"@type":"Person","name":"Kyung Soo-jin"}, {"@type":"Person","name":"Pyo Ji-hoon"}]
+      }
+    ]
   }
   </script>
 
@@ -371,21 +400,21 @@
       <h2>Recomendados para você</h2>
       <div class="rec-grid">
         
-        <a class="rec-card" href="/doramas/nevertheless.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/nevert.jfif" alt="Nevertheless" loading="lazy">
-          <div class="rec-title">Nevertheless</div>
+        <a class="rec-card" href="/doramas/the-heirs.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/The%20Heirs.jpg" alt="The Heirs" loading="lazy">
+          <div class="rec-title">The Heirs</div>
         </a>
-        <a class="rec-card" href="/doramas/itaewon-class.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/itaewon%20class.webp" alt="Itaewon Class" loading="lazy">
-          <div class="rec-title">Itaewon Class</div>
+        <a class="rec-card" href="/doramas/moon-lovers-scarlet-heart-ryeo.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/moon%20lovers%201.webp" alt="Moon Lovers: Scarlet Heart Ryeo" loading="lazy">
+          <div class="rec-title">Moon Lovers: Scarlet Heart Ryeo</div>
         </a>
-        <a class="rec-card" href="/doramas/twenty-five-twenty-one.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/vinte%20e%20cinto.jpg" alt="Vinte e Cinco, Vinte e Um (Twenty-Five Twenty-One)" loading="lazy">
-          <div class="rec-title">Vinte e Cinco, Vinte e Um (Twenty-Five Twenty-One)</div>
+        <a class="rec-card" href="/doramas/healer.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/healer.webp" alt="Healer" loading="lazy">
+          <div class="rec-title">Healer</div>
         </a>
-        <a class="rec-card" href="/doramas/agency.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/agency.webp" alt="Agency" loading="lazy">
-          <div class="rec-title">Agency</div>
+        <a class="rec-card" href="/doramas/navillera.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/navillera.webp" alt="Navillera" loading="lazy">
+          <div class="rec-title">Navillera</div>
         </a>
       </div>
     </section>

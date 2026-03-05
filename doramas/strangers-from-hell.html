@@ -14,20 +14,49 @@
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5053782942464082"
   crossorigin="anonymous"></script>
 
-  <!-- Schema Google -->
+  <!-- Schema Google (forte) -->
   <script type="application/ld+json">
   {
-   "@context":"https://schema.org",
-   "@type":"TVSeries",
-   "name":"Strangers from Hell",
-   "description":"Um jovem se muda para uma pensão barata em Seul.",
-   "image":"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/strangest%20from%20hell.webp",
-   "aggregateRating":{
-    "@type":"AggregateRating",
-    "ratingValue":"8.1/10 – MyDramaList",
-    "bestRating":"10",
-    "ratingCount":"1"
-   }
+    "@context":"https://schema.org",
+    "@graph":[
+      {
+        "@type":"WebSite",
+        "@id":"https://planetadorama.com.br/#website",
+        "url":"https://planetadorama.com.br/",
+        "name":"Planeta Dorama",
+        "inLanguage":"pt-BR"
+      },
+      {
+        "@type":"WebPage",
+        "@id":"https://planetadorama.com.br/doramas/strangers-from-hell.html#webpage",
+        "url":"https://planetadorama.com.br/doramas/strangers-from-hell.html",
+        "name":"Strangers from Hell – Elenco, Sinopse e Trailer | Planeta Dorama",
+        "isPartOf":{"@id":"https://planetadorama.com.br/#website"},
+        "inLanguage":"pt-BR",
+        "description":"Um jovem se muda para uma pensão barata em Seul.",
+        "primaryImageOfPage":{"@type":"ImageObject","url":"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/strangest%20from%20hell.webp"}
+      },
+      {
+        "@type":"BreadcrumbList",
+        "@id":"https://planetadorama.com.br/doramas/strangers-from-hell.html#breadcrumb",
+        "itemListElement":[
+          {"@type":"ListItem","position":1,"name":"Início","item":"https://planetadorama.com.br/"},
+          {"@type":"ListItem","position":2,"name":"Doramas","item":"https://planetadorama.com.br/todos.html"},
+          {"@type":"ListItem","position":3,"name":"Strangers from Hell","item":"https://planetadorama.com.br/doramas/strangers-from-hell.html"}
+        ]
+      },
+      {
+        "@type":"TVSeries",
+        "@id":"https://planetadorama.com.br/doramas/strangers-from-hell.html#tvseries",
+        "url":"https://planetadorama.com.br/doramas/strangers-from-hell.html",
+        "name":"Strangers from Hell",
+        "description":"Um jovem se muda para uma pensão barata em Seul.",
+        "image":"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/strangest%20from%20hell.webp",
+        "inLanguage":"pt-BR",
+        "genre":["terror", "suspense", "psicologico"],
+        "actor":[{"@type":"Person","name":"Im Si-wan"}, {"@type":"Person","name":"Lee Dong-wook"}, {"@type":"Person","name":"Lee Jung-eun"}, {"@type":"Person","name":"Lee Hyun-wook"}, {"@type":"Person","name":"Park Jong-hwan"}]
+      }
+    ]
   }
   </script>
 
@@ -371,21 +400,21 @@
       <h2>Recomendados para você</h2>
       <div class="rec-grid">
         
-        <a class="rec-card" href="/doramas/the-devil-judge.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/the%20devil%20judge.jpg" alt="The Devil Judge" loading="lazy">
-          <div class="rec-title">The Devil Judge</div>
+        <a class="rec-card" href="/doramas/gyeongseong-creature.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/gieogsong%20creature.webp" alt="Gyeongseong Creature" loading="lazy">
+          <div class="rec-title">Gyeongseong Creature</div>
         </a>
         <a class="rec-card" href="/doramas/beyond-evil.html">
           <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/beyond%20evil.jpg" alt="Beyond Evil" loading="lazy">
           <div class="rec-title">Beyond Evil</div>
         </a>
+        <a class="rec-card" href="/doramas/the-devil-judge.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/the%20devil%20judge.jpg" alt="The Devil Judge" loading="lazy">
+          <div class="rec-title">The Devil Judge</div>
+        </a>
         <a class="rec-card" href="/doramas/island.html">
           <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/island.webp" alt="Island" loading="lazy">
           <div class="rec-title">Island</div>
-        </a>
-        <a class="rec-card" href="/doramas/gyeongseong-creature.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/gieogsong%20creature.webp" alt="Gyeongseong Creature" loading="lazy">
-          <div class="rec-title">Gyeongseong Creature</div>
         </a>
       </div>
     </section>

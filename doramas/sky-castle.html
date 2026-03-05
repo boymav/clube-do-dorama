@@ -14,20 +14,49 @@
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5053782942464082"
   crossorigin="anonymous"></script>
 
-  <!-- Schema Google -->
+  <!-- Schema Google (forte) -->
   <script type="application/ld+json">
   {
-   "@context":"https://schema.org",
-   "@type":"TVSeries",
-   "name":"Sky Castle",
-   "description":"Famílias ricas disputam o futuro dos filhos.",
-   "image":"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/sky%20castle.webp",
-   "aggregateRating":{
-    "@type":"AggregateRating",
-    "ratingValue":"8.9/10 – MyDramaList",
-    "bestRating":"10",
-    "ratingCount":"1"
-   }
+    "@context":"https://schema.org",
+    "@graph":[
+      {
+        "@type":"WebSite",
+        "@id":"https://planetadorama.com.br/#website",
+        "url":"https://planetadorama.com.br/",
+        "name":"Planeta Dorama",
+        "inLanguage":"pt-BR"
+      },
+      {
+        "@type":"WebPage",
+        "@id":"https://planetadorama.com.br/doramas/sky-castle.html#webpage",
+        "url":"https://planetadorama.com.br/doramas/sky-castle.html",
+        "name":"Sky Castle – Elenco, Sinopse e Trailer | Planeta Dorama",
+        "isPartOf":{"@id":"https://planetadorama.com.br/#website"},
+        "inLanguage":"pt-BR",
+        "description":"Famílias ricas disputam o futuro dos filhos.",
+        "primaryImageOfPage":{"@type":"ImageObject","url":"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/sky%20castle.webp"}
+      },
+      {
+        "@type":"BreadcrumbList",
+        "@id":"https://planetadorama.com.br/doramas/sky-castle.html#breadcrumb",
+        "itemListElement":[
+          {"@type":"ListItem","position":1,"name":"Início","item":"https://planetadorama.com.br/"},
+          {"@type":"ListItem","position":2,"name":"Doramas","item":"https://planetadorama.com.br/todos.html"},
+          {"@type":"ListItem","position":3,"name":"Sky Castle","item":"https://planetadorama.com.br/doramas/sky-castle.html"}
+        ]
+      },
+      {
+        "@type":"TVSeries",
+        "@id":"https://planetadorama.com.br/doramas/sky-castle.html#tvseries",
+        "url":"https://planetadorama.com.br/doramas/sky-castle.html",
+        "name":"Sky Castle",
+        "description":"Famílias ricas disputam o futuro dos filhos.",
+        "image":"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/sky%20castle.webp",
+        "inLanguage":"pt-BR",
+        "genre":["intenso", "triste"],
+        "actor":[{"@type":"Person","name":"Yum Jung-ah"}, {"@type":"Person","name":"Lee Tae-ran"}, {"@type":"Person","name":"Yoon Se-ah"}, {"@type":"Person","name":"Oh Na-ra"}, {"@type":"Person","name":"Kim Seo-hyung"}]
+      }
+    ]
   }
   </script>
 
@@ -371,21 +400,21 @@
       <h2>Recomendados para você</h2>
       <div class="rec-grid">
         
+        <a class="rec-card" href="/doramas/move-to-heaven.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/move%20to%20heaven.webp" alt="Move to Heaven" loading="lazy">
+          <div class="rec-title">Move to Heaven</div>
+        </a>
         <a class="rec-card" href="/doramas/sweet-home.html">
           <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/sweet%20home.jpg" alt="Sweet Home" loading="lazy">
           <div class="rec-title">Sweet Home</div>
         </a>
-        <a class="rec-card" href="/doramas/while-you-were-sleeping.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/whire%20you%20we%20sleeping.webp" alt="While You Were Sleeping" loading="lazy">
-          <div class="rec-title">While You Were Sleeping</div>
+        <a class="rec-card" href="/doramas/hotel-del-luna.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/hotel%20del%20luna.jpg" alt="Hotel Del Luna" loading="lazy">
+          <div class="rec-title">Hotel Del Luna</div>
         </a>
-        <a class="rec-card" href="/doramas/twenty-five-twenty-one.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/vinte%20e%20cinto.jpg" alt="Vinte e Cinco, Vinte e Um (Twenty-Five Twenty-One)" loading="lazy">
-          <div class="rec-title">Vinte e Cinco, Vinte e Um (Twenty-Five Twenty-One)</div>
-        </a>
-        <a class="rec-card" href="/doramas/kingdom.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/kngdom.webp" alt="Kingdom" loading="lazy">
-          <div class="rec-title">Kingdom</div>
+        <a class="rec-card" href="/doramas/queen-of-tears.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/queen%20of%20tears.webp" alt="Queen of Tears" loading="lazy">
+          <div class="rec-title">Queen of Tears</div>
         </a>
       </div>
     </section>

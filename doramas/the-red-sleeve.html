@@ -14,20 +14,49 @@
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5053782942464082"
   crossorigin="anonymous"></script>
 
-  <!-- Schema Google -->
+  <!-- Schema Google (forte) -->
   <script type="application/ld+json">
   {
-   "@context":"https://schema.org",
-   "@type":"TVSeries",
-   "name":"The Red Sleeve",
-   "description":"Um rei se apaixona por uma dama da corte.",
-   "image":"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/the%20red%20sleeve.jpeg",
-   "aggregateRating":{
-    "@type":"AggregateRating",
-    "ratingValue":"9.0/10 – MyDramaList",
-    "bestRating":"10",
-    "ratingCount":"1"
-   }
+    "@context":"https://schema.org",
+    "@graph":[
+      {
+        "@type":"WebSite",
+        "@id":"https://planetadorama.com.br/#website",
+        "url":"https://planetadorama.com.br/",
+        "name":"Planeta Dorama",
+        "inLanguage":"pt-BR"
+      },
+      {
+        "@type":"WebPage",
+        "@id":"https://planetadorama.com.br/doramas/the-red-sleeve.html#webpage",
+        "url":"https://planetadorama.com.br/doramas/the-red-sleeve.html",
+        "name":"The Red Sleeve – Elenco, Sinopse e Trailer | Planeta Dorama",
+        "isPartOf":{"@id":"https://planetadorama.com.br/#website"},
+        "inLanguage":"pt-BR",
+        "description":"Um rei se apaixona por uma dama da corte.",
+        "primaryImageOfPage":{"@type":"ImageObject","url":"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/the%20red%20sleeve.jpeg"}
+      },
+      {
+        "@type":"BreadcrumbList",
+        "@id":"https://planetadorama.com.br/doramas/the-red-sleeve.html#breadcrumb",
+        "itemListElement":[
+          {"@type":"ListItem","position":1,"name":"Início","item":"https://planetadorama.com.br/"},
+          {"@type":"ListItem","position":2,"name":"Doramas","item":"https://planetadorama.com.br/todos.html"},
+          {"@type":"ListItem","position":3,"name":"The Red Sleeve","item":"https://planetadorama.com.br/doramas/the-red-sleeve.html"}
+        ]
+      },
+      {
+        "@type":"TVSeries",
+        "@id":"https://planetadorama.com.br/doramas/the-red-sleeve.html#tvseries",
+        "url":"https://planetadorama.com.br/doramas/the-red-sleeve.html",
+        "name":"The Red Sleeve",
+        "description":"Um rei se apaixona por uma dama da corte.",
+        "image":"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/the%20red%20sleeve.jpeg",
+        "inLanguage":"pt-BR",
+        "genre":["romance", "triste", "intenso"],
+        "actor":[{"@type":"Person","name":"Lee Jun-ho"}, {"@type":"Person","name":"Lee Se-young"}, {"@type":"Person","name":"Kang Hoon"}, {"@type":"Person","name":"Lee Deok-hwa"}, {"@type":"Person","name":"Jang Hye-jin"}]
+      }
+    ]
   }
   </script>
 
@@ -371,21 +400,21 @@
       <h2>Recomendados para você</h2>
       <div class="rec-grid">
         
-        <a class="rec-card" href="/doramas/prison-playbook.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/prison%20playbook.jfif" alt="Prison Playbook" loading="lazy">
-          <div class="rec-title">Prison Playbook</div>
+        <a class="rec-card" href="/doramas/love-alarm.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/love%20alarm.webp" alt="Love Alarm" loading="lazy">
+          <div class="rec-title">Love Alarm</div>
         </a>
-        <a class="rec-card" href="/doramas/romance-is-a-bonus-book.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/romance%20is%20a%20bonus%20book.jpg" alt="Romance Is a Bonus Book" loading="lazy">
-          <div class="rec-title">Romance Is a Bonus Book</div>
+        <a class="rec-card" href="/doramas/start-up.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/start%20up.jpg" alt="Start-Up" loading="lazy">
+          <div class="rec-title">Start-Up</div>
         </a>
-        <a class="rec-card" href="/doramas/crash-landing-on-you.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/crash-landing.jpg" alt="Pousando no Amor (Crash Landing on You)" loading="lazy">
-          <div class="rec-title">Pousando no Amor (Crash Landing on You)</div>
+        <a class="rec-card" href="/doramas/big-mouth.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/big%20mouth.webp" alt="Big Mouth" loading="lazy">
+          <div class="rec-title">Big Mouth</div>
         </a>
-        <a class="rec-card" href="/doramas/hospital-playlist.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/hospital%20playlist.webp" alt="Hospital Playlist" loading="lazy">
-          <div class="rec-title">Hospital Playlist</div>
+        <a class="rec-card" href="/doramas/crash-course-in-romance.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/crash%20course.webp" alt="Crash Course in Romance" loading="lazy">
+          <div class="rec-title">Crash Course in Romance</div>
         </a>
       </div>
     </section>
