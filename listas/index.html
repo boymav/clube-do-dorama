@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Listas de Doramas – Top 10 por tema (2026) | Planeta Dorama</title>
+  <title>Listas de Doramas — Descubra o próximo dorama perfeito | Planeta Dorama</title>
 
   <!-- AdSense (Auto Ads) -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5053782942464082"
     crossorigin="anonymous"></script>
 
   <!-- SEO -->
-  <meta name="description" content="Escolha uma lista e descubra 10 doramas por tema. Páginas feitas para bombar no Google e trazer gente nova pro Planeta Dorama.">
+  <meta name="description" content="Descubra listas de doramas da Netflix, romance, curtos, escolares, suspense, ação e muito mais. Encontre seu próximo dorama perfeito no Planeta Dorama.">
   <link rel="canonical" href="https://planetadorama.com.br/listas/index.html">
 
   <!-- OpenGraph -->
@@ -70,6 +70,72 @@
   .ads{ margin: 18px auto; max-width: 970px; text-align:center; }
   footer{ background:#b983ff; color:white; text-align:center; padding:15px; margin-top:24px; }
   footer a{ color:#fff; text-decoration:underline; }
+
+/* melhorias visuais do hub de listas */
+.wrap{max-width:1100px}
+.hero-listas{
+  background:linear-gradient(135deg, rgba(255,126,179,0.14), rgba(185,131,255,0.18));
+  border:1px solid rgba(255,255,255,0.45);
+  border-radius:26px;
+  padding:24px 20px;
+  margin:8px auto 24px;
+  box-shadow:0 10px 28px rgba(0,0,0,0.08);
+}
+.hero-listas h2{margin:0 0 10px}
+.hero-listas p{max-width:860px;margin:0 auto;color:#555;line-height:1.7;font-size:16px;text-align:center}
+.hero-mini{
+  display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:16px
+}
+.hero-chip{
+  background:#fff;border:1px solid rgba(0,0,0,0.06);border-radius:999px;
+  padding:8px 12px;font-size:13px;font-weight:bold;color:#7a1b55
+}
+.destaques{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:16px;
+  margin:18px 0 26px;
+}
+.destaque{
+  background:white;
+  border-radius:22px;
+  padding:18px;
+  box-shadow:0 10px 24px rgba(0,0,0,0.08);
+  border:1px solid rgba(0,0,0,0.05);
+}
+.destaque .k{font-size:13px;color:#7a1b55;font-weight:bold;margin-bottom:6px}
+.destaque h3{margin:0 0 8px;font-size:20px;color:#b4005a}
+.destaque p{margin:0;color:#555;line-height:1.6;font-size:14px}
+.grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:18px;
+  margin-top:8px;
+}
+.card{
+  background:rgba(255,255,255,0.92);
+  border-radius:22px;
+  padding:18px;
+  box-shadow:0 10px 24px rgba(0,0,0,0.08);
+  text-decoration:none;color:inherit;
+  border:1px solid rgba(0,0,0,0.05);
+}
+.card:hover{transform:translateY(-4px);box-shadow:0 14px 28px rgba(0,0,0,0.12)}
+.card .t{font-weight:900;color:#222;font-size:18px;line-height:1.35;margin-bottom:8px}
+.card .s{color:#555;font-size:14px;line-height:1.6}
+.card .cta{margin-top:10px;font-size:13px;font-weight:bold;color:#b4005a}
+.blocos-ajuda{
+  display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:28px
+}
+.box-ajuda{
+  background:white;border-radius:20px;padding:18px;box-shadow:0 8px 18px rgba(0,0,0,0.06)
+}
+.box-ajuda h3{margin:0 0 8px;color:#b4005a}
+.box-ajuda p{margin:0;color:#555;line-height:1.6}
+@media(max-width:900px){
+  .destaques,.blocos-ajuda,.grid{grid-template-columns:1fr}
+}
+
 </style>
 </head>
 <body>
@@ -84,19 +150,52 @@
   </nav>
 </header>
 
+
 <div class="wrap">
-  <h2>📌 Listas que bombam</h2>
-  <p class="sub">Escolha uma lista e descubra 10 doramas por tema. Páginas feitas para bombar no Google e trazer gente nova pro Planeta Dorama.</p>
+  <section class="hero-listas">
+    <h2>📌 Listas de Doramas para descobrir o próximo dorama</h2>
+    <p>
+      Escolha uma lista e encontre mais rápido o que assistir. Aqui você vai achar seleções por tema,
+      como <strong>doramas da Netflix</strong>, <strong>romance</strong>, <strong>curtos para maratonar</strong>,
+      <strong>suspense</strong>, <strong>ação</strong>, <strong>escolares</strong> e muito mais.
+    </p>
+    <div class="hero-mini">
+      <span class="hero-chip">🎬 Netflix</span>
+      <span class="hero-chip">💖 Romance</span>
+      <span class="hero-chip">⚡ Curtos</span>
+      <span class="hero-chip">😭 Emocionantes</span>
+      <span class="hero-chip">🕵️ Suspense</span>
+      <span class="hero-chip">🏫 Escolar</span>
+    </div>
+  </section>
 
   <div class="botoes">
     <a class="btn-cat" href="/listas/melhores-doramas-netflix.html">🎬 Netflix</a>
-<a class="btn-cat" href="/listas/melhores-doramas-romance.html">💖 Romance</a>
-<a class="btn-cat" href="/listas/doramas-curtos.html">⚡ Curtos</a>
-<a class="btn-cat" href="/listas/doramas-para-chorar.html">😭 Pra chorar</a>
-<a class="btn-cat" href="/listas/doramas-de-suspense.html">🕵️ Suspense</a>
-<a class="btn-cat" href="/listas/doramas-de-acao.html">🔥 Ação</a>
-<a class="btn-cat" href="/listas/doramas-escolares.html">🏫 Escolar</a>
-<a class="btn-cat" href="/listas/doramas-para-assistir-em-casal.html">💑 Em casal</a>
+    <a class="btn-cat" href="/listas/melhores-doramas-romance.html">💖 Romance</a>
+    <a class="btn-cat" href="/listas/doramas-curtos.html">⚡ Curtos</a>
+    <a class="btn-cat" href="/listas/doramas-para-chorar.html">😭 Pra chorar</a>
+    <a class="btn-cat" href="/listas/doramas-de-suspense.html">🕵️ Suspense</a>
+    <a class="btn-cat" href="/listas/doramas-de-acao.html">🔥 Ação</a>
+    <a class="btn-cat" href="/listas/doramas-escolares.html">🏫 Escolar</a>
+    <a class="btn-cat" href="/listas/doramas-para-assistir-em-casal.html">💑 Em casal</a>
+  </div>
+
+  <div class="destaques">
+    <div class="destaque">
+      <div class="k">✨ Mais buscadas</div>
+      <h3>Comece pelas listas mais populares</h3>
+      <p>Se você chegou agora, o melhor caminho é começar por Netflix, romance e doramas curtos. Essas listas costumam ajudar a decidir mais rápido.</p>
+    </div>
+    <div class="destaque">
+      <div class="k">💡 Escolha fácil</div>
+      <h3>Encontre pelo seu momento</h3>
+      <p>Quer algo leve, emocionante, intenso ou bom para ver em casal? As listas abaixo foram organizadas para facilitar sua escolha.</p>
+    </div>
+    <div class="destaque">
+      <div class="k">🌍 Planeta Dorama</div>
+      <h3>Mais páginas para explorar</h3>
+      <p>Além das listas, você também pode abrir a ficha completa de cada dorama, ver trailer, elenco e onde assistir.</p>
+    </div>
   </div>
 
   <div class="ads">
@@ -115,37 +214,63 @@
 
   <div class="grid">
     <a class="card" href="/listas/melhores-doramas-netflix.html">
-      <div class="t">🎬 Netflix — Os 10 melhores doramas da Netflix para maratonar (2026)</div>
-      <div class="s">Top doramas famosos e muito assistidos na Netflix.</div>
+      <div class="t">🎬 Os 10 melhores doramas da Netflix para maratonar</div>
+      <div class="s">Uma seleção com doramas famosos, muito assistidos e perfeitos para quem quer começar por títulos populares.</div>
+      <div class="cta">Abrir lista →</div>
     </a>
-<a class="card" href="/listas/melhores-doramas-romance.html">
-      <div class="t">💖 Romance — Os 10 melhores doramas românticos de todos os tempos (2026)</div>
-      <div class="s">Casais inesquecíveis, química e histórias marcantes.</div>
+
+    <a class="card" href="/listas/melhores-doramas-romance.html">
+      <div class="t">💖 Os 10 melhores doramas românticos</div>
+      <div class="s">Casais marcantes, química forte e histórias apaixonantes para quem ama romance coreano.</div>
+      <div class="cta">Abrir lista →</div>
     </a>
-<a class="card" href="/listas/doramas-curtos.html">
-      <div class="t">⚡ Curtos — 10 doramas curtos para maratonar rápido (poucos episódios)</div>
-      <div class="s">Perfeitos pra terminar em 1–2 dias.</div>
+
+    <a class="card" href="/listas/doramas-curtos.html">
+      <div class="t">⚡ 10 doramas curtos para maratonar rápido</div>
+      <div class="s">Perfeitos para quem quer ver algo viciante, com poucos episódios e sem compromisso longo.</div>
+      <div class="cta">Abrir lista →</div>
     </a>
-<a class="card" href="/listas/doramas-para-chorar.html">
-      <div class="t">😭 Pra chorar — 10 doramas para chorar muito (emocionantes)</div>
-      <div class="s">Prepare o lencinho: dramas emocionantes.</div>
+
+    <a class="card" href="/listas/doramas-para-chorar.html">
+      <div class="t">😭 10 doramas para chorar muito</div>
+      <div class="s">Histórias emocionantes, intensas e inesquecíveis para quem quer algo que mexa de verdade com o coração.</div>
+      <div class="cta">Abrir lista →</div>
     </a>
-<a class="card" href="/listas/doramas-de-suspense.html">
-      <div class="t">🕵️ Suspense — 10 doramas de suspense e mistério que prendem do começo ao fim</div>
-      <div class="s">Reviravoltas, mistérios e tensão.</div>
+
+    <a class="card" href="/listas/doramas-de-suspense.html">
+      <div class="t">🕵️ Doramas de suspense e mistério</div>
+      <div class="s">Reviravoltas, segredos e investigações para quem gosta de tensão do primeiro ao último episódio.</div>
+      <div class="cta">Abrir lista →</div>
     </a>
-<a class="card" href="/listas/doramas-de-acao.html">
-      <div class="t">🔥 Ação — 10 doramas de ação e pancadaria (muito viciantes)</div>
-      <div class="s">Adrenalina, luta e tramas fortes.</div>
+
+    <a class="card" href="/listas/doramas-de-acao.html">
+      <div class="t">🔥 Doramas de ação e pancadaria</div>
+      <div class="s">Adrenalina, luta e tramas fortes para quem quer emoção e ritmo acelerado.</div>
+      <div class="cta">Abrir lista →</div>
     </a>
-<a class="card" href="/listas/doramas-escolares.html">
-      <div class="t">🏫 Escolar — 10 doramas escolares (school) que todo mundo ama</div>
-      <div class="s">Escola, amizade, romance e drama.</div>
+
+    <a class="card" href="/listas/doramas-escolares.html">
+      <div class="t">🏫 Doramas escolares</div>
+      <div class="s">Escola, amizade, romance e crescimento pessoal em histórias leves e populares entre fãs do gênero.</div>
+      <div class="cta">Abrir lista →</div>
     </a>
-<a class="card" href="/listas/doramas-para-assistir-em-casal.html">
-      <div class="t">💑 Em casal — 10 doramas para assistir em casal (romance leve e divertido)</div>
-      <div class="s">Leves, divertidos e gostosos de ver a dois.</div>
+
+    <a class="card" href="/listas/doramas-para-assistir-em-casal.html">
+      <div class="t">💑 Doramas para assistir em casal</div>
+      <div class="s">Romances leves, gostosos de ver e perfeitos para maratonar juntos.</div>
+      <div class="cta">Abrir lista →</div>
     </a>
+  </div>
+
+  <div class="blocos-ajuda">
+    <div class="box-ajuda">
+      <h3>📝 Como escolher uma lista</h3>
+      <p>Se você está começando agora, abra primeiro Netflix ou Romance. Se quer algo rápido, vá em Curtos. Se quer emoção, escolha Pra chorar ou Suspense.</p>
+    </div>
+    <div class="box-ajuda">
+      <h3>💜 Explore mais no site</h3>
+      <p>Depois de abrir uma lista, clique nas páginas dos doramas para ver mais detalhes, trailer, elenco e onde assistir.</p>
+    </div>
   </div>
 
   <div class="ads" style="margin-top:24px;">
