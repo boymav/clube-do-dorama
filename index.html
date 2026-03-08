@@ -157,6 +157,25 @@
 
     footer{ background:#b983ff; color:white; text-align:center; padding:15px; }
     footer a{ color:#fff; text-decoration:underline; }
+  
+    /* Populares do momento */
+    .cards.populares .card{
+      width:240px;
+    }
+    .cards.populares .card img{
+      height:320px;
+    }
+    .tag-popular{
+      display:inline-block;
+      margin-bottom:8px;
+      padding:6px 10px;
+      border-radius:999px;
+      background:#fff0f6;
+      color:#7a1b55;
+      font-size:12px;
+      font-weight:bold;
+    }
+
   </style>
 </head>
 
@@ -175,8 +194,8 @@
   <nav style="margin-top:16px;">
     <a href="#inicio">Início</a>
     <a href="#top5">Top 5 ⭐</a>
-    <a href="#lista-netflix-2026">🔥 Listas em destaque 💘</a>
-    <a href="#listas">Listas 💖</a>
+    <a href="#lista-netflix-2026">💘 Romance Netflix 2026</a>
+    <a href="listas/index.html">Listas que bombam 💖</a>
     <a href="#semana">Dorama da semana 🌟</a>
     <a href="#noticias">Notícias 📰</a>
     <a href="todos.html">Todos os Doramas 📚</a>
@@ -240,39 +259,50 @@
     Clique para saber mais sobre cada um ou para abrir a busca da série diretamente na Netflix.
   </p>
   <div class="cards" id="lista-netflix-cards"></div>
-  <p style="text-align:center; margin-top:16px;">
-    <a href="listas/melhores-doramas-coreanos-romance-netflix-2026.html">
-      👉 Ver lista completa com explicação de cada dorama
-    </a>
-  </p>
 </section>
+
 
 <section id="listas">
   <h2>📋 Listas de Doramas</h2>
-  <div style="text-align:center; margin-bottom:10px;">
-    <button onclick="window.location.href='categoria.html?tipo=romance'">💖 Românticos</button>
-    <button onclick="window.location.href='categoria.html?tipo=triste'">😭 Tristes</button>
-    <button onclick="window.location.href='categoria.html?tipo=intenso'">🔥 Intensos</button>
-    <button onclick="window.location.href='categoria.html?tipo=alegre'">😊 Leves</button>
-  </div>
-  <p style="text-align:center; margin:0; opacity:0.85;">
-    Clique e veja 10 doramas perfeitos pra cada emoção ✨
+  <p style="text-align:center; margin:0 auto 14px; max-width:850px; opacity:0.92;">
+    Aqui estão as listas feitas para trazer gente nova do Google e ajudar você a escolher rápido o próximo dorama.
+    São páginas com títulos que as pessoas realmente pesquisam.
   </p>
 
-  <!-- Link da nova lista -->
-  <div style="text-align:center; margin-top:15px;">
+  <div style="text-align:center; margin-top:10px;">
+    <button class="btn-pequeno" onclick="window.location.href='listas/index.html'">📌 Ver todas as listas</button>
+    <button class="btn-pequeno" onclick="window.location.href='listas/melhores-doramas-netflix.html'">🎬 Doramas da Netflix</button>
+    <button class="btn-pequeno" onclick="window.location.href='listas/melhores-doramas-romance.html'">💖 Melhores Romances</button>
+    <button class="btn-pequeno" onclick="window.location.href='listas/doramas-curtos.html'">⚡ Doramas Curtos</button>
+    <button class="btn-pequeno" onclick="window.location.href='listas/doramas-para-chorar.html'">😭 Pra Chorar</button>
+    <button class="btn-pequeno" onclick="window.location.href='listas/doramas-de-suspense.html'">🕵️ Suspense</button>
+    <button class="btn-pequeno" onclick="window.location.href='listas/doramas-de-acao.html'">🔥 Ação</button>
+    <button class="btn-pequeno" onclick="window.location.href='listas/doramas-escolares.html'">🏫 Escolares</button>
+    <button class="btn-pequeno" onclick="window.location.href='listas/doramas-para-assistir-em-casal.html'">💑 Em Casal</button>
+  </div>
+
+  <div style="text-align:center; margin-top:12px; opacity:0.9;">
     <a href="listas/melhores-doramas-coreanos-romance-netflix-2026.html">
-      Melhores doramas coreanos de romance na Netflix em 2026
+      👉 Lista especial: Romance na Netflix (2026)
     </a>
   </div>
+</section>
+
+
+<section id="populares-momento">
+  <h2>🔥 Doramas populares do momento</h2>
+  <p style="text-align:center; max-width:780px; margin:0 auto 20px;">
+    Se você quer começar por doramas muito comentados e amados pelos fãs, aqui estão alguns dos títulos
+    mais populares para abrir agora e descobrir novas histórias no Planeta Dorama.
+  </p>
+  <div class="cards populares" id="populares-cards"></div>
 </section>
 
 <section id="semana">
   <h2>🌟 Dorama da Semana</h2>
-  <p id="semana-info" style="text-align:center; max-width:800px; margin: 0 auto 10px; color:#7a1b55; font-weight:bold;"></p>
   <div class="cards" id="dorama-semana"></div>
   <p style="text-align:center; max-width:800px; margin: 14px auto 0; opacity:0.85;">
-    Este dorama muda automaticamente uma vez por semana.
+    Esse dorama muda automaticamente (aleatório) quando a página abre.
   </p>
 </section>
 
@@ -349,57 +379,11 @@
   }
 
   // ===== DORAMA DA SEMANA =====
-  function formatarPeriodoSemana(dataBase){
-    const d = new Date(dataBase);
-    const diaSemana = d.getDay(); // 0 domingo, 1 segunda
-    const diffParaSegunda = (diaSemana === 0 ? -6 : 1 - diaSemana);
-
-    const inicio = new Date(d);
-    inicio.setDate(d.getDate() + diffParaSegunda);
-    inicio.setHours(0, 0, 0, 0);
-
-    const fim = new Date(inicio);
-    fim.setDate(inicio.getDate() + 6);
-
-    const opcoes = { day: "2-digit", month: "long" };
-    const inicioTxt = inicio.toLocaleDateString("pt-BR", opcoes);
-    const fimTxt = fim.toLocaleDateString("pt-BR", opcoes);
-
-    return "Semana de " + inicioTxt + " a " + fimTxt;
-  }
-
   function carregarDoramaDaSemana() {
     const area = document.getElementById("dorama-semana");
-    const info = document.getElementById("semana-info");
     if (!area || !Array.isArray(doramas) || doramas.length === 0) return;
 
-    const chave = "pd_dorama_semana";
-    const salvo = JSON.parse(localStorage.getItem(chave) || "{}");
-
-    const agora = Date.now();
-    const umaSemana = 7 * 24 * 60 * 60 * 1000;
-
-    let escolhido = null;
-    let dataBase = agora;
-
-    if (salvo.nome && salvo.data && (agora - salvo.data) < umaSemana) {
-      escolhido = doramas.find(d => d.nome === salvo.nome);
-      dataBase = salvo.data;
-    }
-
-    if (!escolhido) {
-      escolhido = doramas[Math.floor(Math.random() * doramas.length)];
-      dataBase = agora;
-      localStorage.setItem(chave, JSON.stringify({
-        nome: escolhido.nome,
-        data: dataBase
-      }));
-    }
-
-    if (info) {
-      info.textContent = formatarPeriodoSemana(dataBase);
-    }
-
+    const escolhido = doramas[Math.floor(Math.random() * doramas.length)];
     const slug = escolhido.slug || criarSlug(escolhido.nome, escolhido.nomeEN);
     const url = "/doramas/" + slug + ".html";
 
@@ -408,8 +392,7 @@
         <img src="${escolhido.imagem}" alt="${escolhido.nome}" loading="lazy">
         <div>
           <h3>${escolhido.nome}</h3>
-          <p>${String(escolhido.descricao || "").replace(/
-/g,"<br>")}</p>
+          <p>${String(escolhido.descricao || "").replace(/\n/g,"<br>")}</p>
           <div class="mini">⭐ ${escolhido.nota || ""}</div>
         </div>
       </div>
@@ -428,7 +411,7 @@ function carregarListaNetflixRomance(){
     "Vinte e Cinco, Vinte e Um",
     "Pretendente Surpresa",
     "Hometown Cha-Cha-Cha",
-    "Advogada Extraordinária"
+    "Extraordinary Attorney Woo"
   ];
 
   var lista = nomes.map(function(nome){
@@ -465,6 +448,51 @@ function carregarListaNetflixRomance(){
   }).join("");
 }
 
+
+  // ===== DORAMAS POPULARES DO MOMENTO =====
+  function carregarPopularesDoMomento(){
+    const area = document.getElementById("populares-cards");
+    if(!area || !Array.isArray(doramas)) return;
+
+    const nomes = [
+      "Queen of Tears",
+      "Alchemy of Souls",
+      "Extraordinary Attorney Woo",
+      "My Name",
+      "Sweet Home"
+    ];
+
+    const lista = nomes.map(function(nome){
+      const d = doramas.find(function(x){
+        const alvo = (nome || "").toLowerCase();
+        const n1 = (x.nome || "").toLowerCase();
+        const n2 = (x.nomePT || "").toLowerCase();
+        const n3 = (x.nomeEN || "").toLowerCase();
+        return n1 === alvo || n2 === alvo || n3 === alvo;
+      });
+      if(d) return d;
+      return { nome:nome, imagem:"imagens/capa-padrao.jpg", nota:"", descricao:"" };
+    });
+
+    area.innerHTML = lista.map(function(d, idx){
+      var slug = d.slug || criarSlug(d.nome, d.nomeEN);
+      var url = "/doramas/" + slug + ".html";
+      var primeiraFrase = d.descricao ? String(d.descricao).split("\n")[0] : "";
+      var tag = idx < 2 ? "🔥 Muito buscado" : "⭐ Popular";
+
+      return '' +
+        '<div class="card click small" onclick="window.location.href=\'' + url + '\'">' +
+          '<img src="' + d.imagem + '" alt="' + d.nome + '" loading="lazy">' +
+          '<div>' +
+            '<span class="tag-popular">' + tag + '</span>' +
+            '<h3>' + d.nome + '</h3>' +
+            '<p>' + primeiraFrase + '</p>' +
+            '<div class="mini">⭐ ' + (d.nota || '') + '</div>' +
+          '</div>' +
+        '</div>';
+    }).join("");
+  }
+
   // ===== BUSCA INTELIGENTE (HOME) =====
   function setupBuscaHome(){
     const input = document.getElementById("buscaHome");
@@ -493,7 +521,12 @@ function carregarListaNetflixRomance(){
       if(q.length < 2) return esconder();
 
       const resultados = doramas
-        .filter(function(d){ return (d.nome || "").toLowerCase().includes(q); })
+        .filter(function(d){
+          const n1 = (d.nome || "").toLowerCase();
+          const n2 = (d.nomePT || "").toLowerCase();
+          const n3 = (d.nomeEN || "").toLowerCase();
+          return n1.includes(q) || n2.includes(q) || n3.includes(q);
+        })
         .slice(0, 6);
 
       mostrar(resultados);
@@ -531,7 +564,10 @@ function carregarListaNetflixRomance(){
       if(e.key === "Enter"){
         const q = (input.value || "").toLowerCase().trim();
         const primeiro = doramas.find(function(d){
-          return (d.nome || "").toLowerCase().includes(q);
+          const n1 = (d.nome || "").toLowerCase();
+          const n2 = (d.nomePT || "").toLowerCase();
+          const n3 = (d.nomeEN || "").toLowerCase();
+          return n1.includes(q) || n2.includes(q) || n3.includes(q);
         });
         if(primeiro){
           const slug = primeiro.slug || criarSlug(primeiro.nome, primeiro.nomeEN);
@@ -670,6 +706,7 @@ function carregarListaNetflixRomance(){
     setupBuscaHome();
     carregarDoramaDaSemana();
     carregarListaNetflixRomance();
+    carregarPopularesDoMomento();
     carregarNoticiasAutomaticas(false);
   };
 </script>
