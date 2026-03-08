@@ -176,7 +176,7 @@
     <a href="#inicio">Início</a>
     <a href="#top5">Top 5 ⭐</a>
     <a href="#lista-netflix-2026">🔥 Listas em destaque 💘</a>
-    <a href="listas/index.html">Listas 💖</a>
+    <a href="#listas">Listas 💖</a>
     <a href="#semana">Dorama da semana 🌟</a>
     <a href="#noticias">Notícias 📰</a>
     <a href="todos.html">Todos os Doramas 📚</a>
@@ -240,6 +240,11 @@
     Clique para saber mais sobre cada um ou para abrir a busca da série diretamente na Netflix.
   </p>
   <div class="cards" id="lista-netflix-cards"></div>
+  <p style="text-align:center; margin-top:16px;">
+    <a href="listas/melhores-doramas-coreanos-romance-netflix-2026.html">
+      👉 Ver lista completa com explicação de cada dorama
+    </a>
+  </p>
 </section>
 
 <section id="listas">
@@ -260,32 +265,11 @@
       Melhores doramas coreanos de romance na Netflix em 2026
     </a>
   </div>
-
-  <!-- NOVO: acesso rápido às listas que bombam (não muda o resto do site) -->
-  <div style="text-align:center; margin-top:18px;">
-    <h3 style="margin:0 0 10px; color:#b4005a;">🔥 Listas que bombam</h3>
-
-    <button class="btn-pequeno" onclick="window.location.href='listas/index.html'">📌 Ver todas as listas</button>
-    <button class="btn-pequeno" onclick="window.location.href='listas/melhores-doramas-netflix.html'">🎬 Doramas da Netflix</button>
-    <button class="btn-pequeno" onclick="window.location.href='listas/melhores-doramas-romance.html'">💖 Melhores Romances</button>
-    <button class="btn-pequeno" onclick="window.location.href='listas/doramas-curtos.html'">⚡ Doramas Curtos</button>
-    <button class="btn-pequeno" onclick="window.location.href='listas/doramas-para-chorar.html'">😭 Pra Chorar</button>
-    <button class="btn-pequeno" onclick="window.location.href='listas/doramas-de-suspense.html'">🕵️ Suspense</button>
-    <button class="btn-pequeno" onclick="window.location.href='listas/doramas-de-acao.html'">🔥 Ação</button>
-    <button class="btn-pequeno" onclick="window.location.href='listas/doramas-escolares.html'">🏫 Escolares</button>
-    <button class="btn-pequeno" onclick="window.location.href='listas/doramas-para-assistir-em-casal.html'">💑 Em Casal</button>
-
-    <div style="margin-top:10px; opacity:0.9;">
-      <a href="listas/melhores-doramas-coreanos-romance-netflix-2026.html">
-        👉 Lista completa: Romance na Netflix (2026)
-      </a>
-    </div>
-  </div>
-
 </section>
 
 <section id="semana">
   <h2>🌟 Dorama da Semana</h2>
+  <p id="semana-info" style="text-align:center; max-width:800px; margin: 0 auto 10px; opacity:0.9; color:#7a1b55; font-weight:bold;"></p>
   <div class="cards" id="dorama-semana"></div>
   <p style="text-align:center; max-width:800px; margin: 14px auto 0; opacity:0.85;">
     Este dorama muda automaticamente uma vez por semana.
@@ -365,28 +349,55 @@
   }
 
   // ===== DORAMA DA SEMANA =====
+  function formatarPeriodoSemana(dataBase){
+    const d = new Date(dataBase);
+    const diaSemana = d.getDay(); // 0 domingo, 1 segunda
+    const diffParaSegunda = (diaSemana === 0 ? -6 : 1 - diaSemana);
+
+    const inicio = new Date(d);
+    inicio.setDate(d.getDate() + diffParaSegunda);
+    inicio.setHours(0,0,0,0);
+
+    const fim = new Date(inicio);
+    fim.setDate(inicio.getDate() + 6);
+
+    const opcoes = { day: "2-digit", month: "long" };
+    const inicioTxt = inicio.toLocaleDateString("pt-BR", opcoes);
+    const fimTxt = fim.toLocaleDateString("pt-BR", opcoes);
+
+    return "Semana de " + inicioTxt + " a " + fimTxt;
+  }
+
   function carregarDoramaDaSemana() {
     const area = document.getElementById("dorama-semana");
+    const info = document.getElementById("semana-info");
     if (!area || !Array.isArray(doramas) || doramas.length === 0) return;
 
     const chave = "pd_dorama_semana";
     const salvo = JSON.parse(localStorage.getItem(chave) || "{}");
 
     const agora = Date.now();
-    const semana = 7 * 24 * 60 * 60 * 1000;
+    const umaSemana = 7 * 24 * 60 * 60 * 1000;
 
     let escolhido = null;
+    let dataBase = agora;
 
-    if (salvo.nome && (agora - salvo.data) < semana) {
+    if (salvo.nome && salvo.data && (agora - salvo.data) < umaSemana) {
       escolhido = doramas.find(d => d.nome === salvo.nome);
+      dataBase = salvo.data;
     }
 
     if (!escolhido) {
       escolhido = doramas[Math.floor(Math.random() * doramas.length)];
+      dataBase = agora;
       localStorage.setItem(chave, JSON.stringify({
         nome: escolhido.nome,
-        data: agora
+        data: dataBase
       }));
+    }
+
+    if (info) {
+      info.textContent = formatarPeriodoSemana(dataBase);
     }
 
     const slug = escolhido.slug || criarSlug(escolhido.nome, escolhido.nomeEN);
