@@ -175,8 +175,8 @@
   <nav style="margin-top:16px;">
     <a href="#inicio">Início</a>
     <a href="#top5">Top 5 ⭐</a>
-    <a href="#lista-netflix-2026">💘 Romance Netflix 2026</a>
-    <a href="listas/index.html">Listas que bombam 💖</a>
+    <a href="#lista-netflix-2026">🔥 Listas em destaque 💘</a>
+    <a href="listas/index.html">Listas 💖</a>
     <a href="#semana">Dorama da semana 🌟</a>
     <a href="#noticias">Notícias 📰</a>
     <a href="todos.html">Todos os Doramas 📚</a>
@@ -242,15 +242,29 @@
   <div class="cards" id="lista-netflix-cards"></div>
 </section>
 
-
 <section id="listas">
   <h2>📋 Listas de Doramas</h2>
-  <p style="text-align:center; margin:0 auto 14px; max-width:850px; opacity:0.92;">
-    Aqui estão as listas feitas para trazer gente nova do Google e ajudar você a escolher rápido o próximo dorama.
-    São páginas com títulos que as pessoas realmente pesquisam.
+  <div style="text-align:center; margin-bottom:10px;">
+    <button onclick="window.location.href='categoria.html?tipo=romance'">💖 Românticos</button>
+    <button onclick="window.location.href='categoria.html?tipo=triste'">😭 Tristes</button>
+    <button onclick="window.location.href='categoria.html?tipo=intenso'">🔥 Intensos</button>
+    <button onclick="window.location.href='categoria.html?tipo=alegre'">😊 Leves</button>
+  </div>
+  <p style="text-align:center; margin:0; opacity:0.85;">
+    Clique e veja 10 doramas perfeitos pra cada emoção ✨
   </p>
 
-  <div style="text-align:center; margin-top:10px;">
+  <!-- Link da nova lista -->
+  <div style="text-align:center; margin-top:15px;">
+    <a href="listas/melhores-doramas-coreanos-romance-netflix-2026.html">
+      Melhores doramas coreanos de romance na Netflix em 2026
+    </a>
+  </div>
+
+  <!-- NOVO: acesso rápido às listas que bombam (não muda o resto do site) -->
+  <div style="text-align:center; margin-top:18px;">
+    <h3 style="margin:0 0 10px; color:#b4005a;">🔥 Listas que bombam</h3>
+
     <button class="btn-pequeno" onclick="window.location.href='listas/index.html'">📌 Ver todas as listas</button>
     <button class="btn-pequeno" onclick="window.location.href='listas/melhores-doramas-netflix.html'">🎬 Doramas da Netflix</button>
     <button class="btn-pequeno" onclick="window.location.href='listas/melhores-doramas-romance.html'">💖 Melhores Romances</button>
@@ -260,21 +274,21 @@
     <button class="btn-pequeno" onclick="window.location.href='listas/doramas-de-acao.html'">🔥 Ação</button>
     <button class="btn-pequeno" onclick="window.location.href='listas/doramas-escolares.html'">🏫 Escolares</button>
     <button class="btn-pequeno" onclick="window.location.href='listas/doramas-para-assistir-em-casal.html'">💑 Em Casal</button>
+
+    <div style="margin-top:10px; opacity:0.9;">
+      <a href="listas/melhores-doramas-coreanos-romance-netflix-2026.html">
+        👉 Lista completa: Romance na Netflix (2026)
+      </a>
+    </div>
   </div>
 
-  <div style="text-align:center; margin-top:12px; opacity:0.9;">
-    <a href="listas/melhores-doramas-coreanos-romance-netflix-2026.html">
-      👉 Lista especial: Romance na Netflix (2026)
-    </a>
-  </div>
 </section>
-
 
 <section id="semana">
   <h2>🌟 Dorama da Semana</h2>
   <div class="cards" id="dorama-semana"></div>
   <p style="text-align:center; max-width:800px; margin: 14px auto 0; opacity:0.85;">
-    Esse dorama muda automaticamente (aleatório) quando a página abre.
+    Este dorama muda automaticamente uma vez por semana.
   </p>
 </section>
 
@@ -355,15 +369,15 @@
     const area = document.getElementById("dorama-semana");
     if (!area || !Array.isArray(doramas) || doramas.length === 0) return;
 
-    const chave = "dorama_semana_planeta";
+    const chave = "pd_dorama_semana";
     const salvo = JSON.parse(localStorage.getItem(chave) || "{}");
 
     const agora = Date.now();
-    const umaSemana = 7 * 24 * 60 * 60 * 1000;
+    const semana = 7 * 24 * 60 * 60 * 1000;
 
-    let escolhido;
+    let escolhido = null;
 
-    if (salvo.nome && (agora - salvo.data) < umaSemana) {
+    if (salvo.nome && (agora - salvo.data) < semana) {
       escolhido = doramas.find(d => d.nome === salvo.nome);
     }
 
@@ -402,7 +416,7 @@ function carregarListaNetflixRomance(){
     "Vinte e Cinco, Vinte e Um",
     "Pretendente Surpresa",
     "Hometown Cha-Cha-Cha",
-    "Extraordinary Attorney Woo"
+    "Advogada Extraordinária"
   ];
 
   var lista = nomes.map(function(nome){
@@ -467,12 +481,7 @@ function carregarListaNetflixRomance(){
       if(q.length < 2) return esconder();
 
       const resultados = doramas
-        .filter(function(d){
-          const n1 = (d.nome || "").toLowerCase();
-          const n2 = (d.nomePT || "").toLowerCase();
-          const n3 = (d.nomeEN || "").toLowerCase();
-          return n1.includes(q) || n2.includes(q) || n3.includes(q);
-        })
+        .filter(function(d){ return (d.nome || "").toLowerCase().includes(q); })
         .slice(0, 6);
 
       mostrar(resultados);
@@ -510,10 +519,7 @@ function carregarListaNetflixRomance(){
       if(e.key === "Enter"){
         const q = (input.value || "").toLowerCase().trim();
         const primeiro = doramas.find(function(d){
-          const n1 = (d.nome || "").toLowerCase();
-          const n2 = (d.nomePT || "").toLowerCase();
-          const n3 = (d.nomeEN || "").toLowerCase();
-          return n1.includes(q) || n2.includes(q) || n3.includes(q);
+          return (d.nome || "").toLowerCase().includes(q);
         });
         if(primeiro){
           const slug = primeiro.slug || criarSlug(primeiro.nome, primeiro.nomeEN);
