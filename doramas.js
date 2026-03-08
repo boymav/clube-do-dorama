@@ -1745,7 +1745,7 @@ No Brasil, esse dorama também é conhecido como "Estamos Mortos".`
  elenco:["Kim Hye-yoon","Rowoon","Lee Jae-wook","Lee Na-eun","Jung Gun-joo"],
  descricao:"Uma estudante descobre que vive dentro de um manhwa e decide mudar o próprio destino.\nRomance escolar com fantasia e humor.\nFofo, diferente e viciante.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/extraordinary%20you.jpg",
- trailer:"https://www.youtube.com/embed/v9x5izZHD_M",
+ trailer:"https://www.youtube.com/embed/9SkLALS_F9Q",
  resumo:`Eun Dan Oh é uma estudante de escola rica que um dia descobre algo chocante:
 ela é apenas uma personagem de um manhwa, e nem sequer é a protagonista da história.
 
