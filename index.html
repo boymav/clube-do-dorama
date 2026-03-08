@@ -202,7 +202,7 @@
 
 
 <!-- Widget: Listas que bombam (automático, sem mexer no resto) -->
-<div class="box-listas" style="position:fixed;left:20px;top:240px;background:rgba(255,255,255,0.78);border:2px solid rgba(0,0,0,0.08);border-radius:18px;padding:14px;max-width:260px;box-shadow:0 10px 30px rgba(0,0,0,0.08);z-index:5;">
+<div class="box-listas" style="background:rgba(255,255,255,0.78);border:2px solid rgba(0,0,0,0.08);border-radius:18px;padding:14px;max-width:260px;box-shadow:0 10px 30px rgba(0,0,0,0.08);">
   <h3 style="margin:0 0 10px;font-size:16px;line-height:1.2;">🔥 Listas que bombam</h3>
   <p style="margin:0 0 12px;font-size:13px;line-height:1.5;color:#333;">
     Escolha rápida para maratonar. Atualizamos sempre.
@@ -374,10 +374,10 @@
 
 <section id="semana">
   <h2>🌟 Dorama da Semana</h2>
-  <p id="semana-info" style="text-align:center;font-weight:bold;color:#7a1b55;margin-bottom:10px;"></p>
+  <p id="semana-info" style="text-align:center; font-weight:bold; color:#7a1b55; margin: 0 auto 10px;"></p>
   <div class="cards" id="dorama-semana"></div>
   <p style="text-align:center; max-width:800px; margin: 14px auto 0; opacity:0.85;">
-    Esse dorama muda automaticamente (aleatório) quando a página abre.
+    Este dorama muda automaticamente uma vez por semana.
   </p>
 </section>
 
@@ -500,7 +500,7 @@
       }));
     }
 
-    if(info){
+    if (info) {
       info.textContent = formatarSemana(dataBase);
     }
 
@@ -512,8 +512,7 @@
         <img src="${escolhido.imagem}" alt="${escolhido.nome}" loading="lazy">
         <div>
           <h3>${escolhido.nome}</h3>
-          <p>${String(escolhido.descricao || "").replace(/
-/g,"<br>")}</p>
+          <p>${String(escolhido.descricao || "").replace(/\n/g,"<br>")}</p>
           <div class="mini">⭐ ${escolhido.nota || ""}</div>
         </div>
       </div>
