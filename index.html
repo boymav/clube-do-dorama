@@ -383,7 +383,26 @@
     const area = document.getElementById("dorama-semana");
     if (!area || !Array.isArray(doramas) || doramas.length === 0) return;
 
-    const escolhido = doramas[Math.floor(Math.random() * doramas.length)];
+    const chave = "pd_dorama_semana";
+    const salvo = JSON.parse(localStorage.getItem(chave) || "{}");
+
+    const agora = Date.now();
+    const umaSemana = 7 * 24 * 60 * 60 * 1000;
+
+    let escolhido = null;
+
+    if (salvo.nome && salvo.data && (agora - salvo.data) < umaSemana) {
+      escolhido = doramas.find(d => d.nome === salvo.nome);
+    }
+
+    if (!escolhido) {
+      escolhido = doramas[Math.floor(Math.random() * doramas.length)];
+      localStorage.setItem(chave, JSON.stringify({
+        nome: escolhido.nome,
+        data: agora
+      }));
+    }
+
     const slug = escolhido.slug || criarSlug(escolhido.nome, escolhido.nomeEN);
     const url = "/doramas/" + slug + ".html";
 
