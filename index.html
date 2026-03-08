@@ -157,25 +157,6 @@
 
     footer{ background:#b983ff; color:white; text-align:center; padding:15px; }
     footer a{ color:#fff; text-decoration:underline; }
-  
-    /* Populares do momento */
-    .cards.populares .card{
-      width:240px;
-    }
-    .cards.populares .card img{
-      height:320px;
-    }
-    .tag-popular{
-      display:inline-block;
-      margin-bottom:8px;
-      padding:6px 10px;
-      border-radius:999px;
-      background:#fff0f6;
-      color:#7a1b55;
-      font-size:12px;
-      font-weight:bold;
-    }
-
   </style>
 </head>
 
@@ -289,21 +270,11 @@
 </section>
 
 
-<section id="populares-momento">
-  <h2>🔥 Doramas populares do momento</h2>
-  <p style="text-align:center; max-width:780px; margin:0 auto 20px;">
-    Se você quer começar por doramas muito comentados e amados pelos fãs, aqui estão alguns dos títulos
-    mais populares para abrir agora e descobrir novas histórias no Planeta Dorama.
-  </p>
-  <div class="cards populares" id="populares-cards"></div>
-</section>
-
 <section id="semana">
   <h2>🌟 Dorama da Semana</h2>
-  <p id="semana-periodo" style="text-align:center; margin: -4px 0 14px; color:#7a1b55; font-weight:bold;"></p>
   <div class="cards" id="dorama-semana"></div>
   <p style="text-align:center; max-width:800px; margin: 14px auto 0; opacity:0.85;">
-    O destaque fica no ar durante 7 dias e depois muda automaticamente para um novo dorama.
+    Esse dorama muda automaticamente (aleatório) quando a página abre.
   </p>
 </section>
 
@@ -380,26 +351,8 @@
   }
 
   // ===== DORAMA DA SEMANA =====
-  function formatarPeriodoSemana(timestamp){
-    const base = new Date(timestamp);
-    const dia = base.getDay();
-    const diffParaSegunda = (dia === 0 ? -6 : 1 - dia);
-    const inicio = new Date(base);
-    inicio.setDate(base.getDate() + diffParaSegunda);
-    inicio.setHours(0,0,0,0);
-
-    const fim = new Date(inicio);
-    fim.setDate(inicio.getDate() + 6);
-
-    const opcoes = { day:"2-digit", month:"long" };
-    const inicioTxt = inicio.toLocaleDateString("pt-BR", opcoes);
-    const fimTxt = fim.toLocaleDateString("pt-BR", opcoes);
-    return "Semana de " + inicioTxt + " a " + fimTxt;
-  }
-
   function carregarDoramaDaSemana() {
     const area = document.getElementById("dorama-semana");
-    const periodo = document.getElementById("semana-periodo");
     if (!area || !Array.isArray(doramas) || doramas.length === 0) return;
 
     const chave = "dorama_semana_planeta";
@@ -408,25 +361,18 @@
     const agora = Date.now();
     const umaSemana = 7 * 24 * 60 * 60 * 1000;
 
-    let escolhido = null;
-    let dataBase = agora;
+    let escolhido;
 
-    if (salvo.nome && salvo.data && (agora - salvo.data) < umaSemana) {
+    if (salvo.nome && (agora - salvo.data) < umaSemana) {
       escolhido = doramas.find(d => d.nome === salvo.nome);
-      dataBase = salvo.data;
     }
 
     if (!escolhido) {
       escolhido = doramas[Math.floor(Math.random() * doramas.length)];
-      dataBase = agora;
       localStorage.setItem(chave, JSON.stringify({
         nome: escolhido.nome,
-        data: dataBase
+        data: agora
       }));
-    }
-
-    if (periodo) {
-      periodo.textContent = formatarPeriodoSemana(dataBase);
     }
 
     const slug = escolhido.slug || criarSlug(escolhido.nome, escolhido.nomeEN);
@@ -437,8 +383,7 @@
         <img src="${escolhido.imagem}" alt="${escolhido.nome}" loading="lazy">
         <div>
           <h3>${escolhido.nome}</h3>
-          <p>${String(escolhido.descricao || "").replace(/
-/g,"<br>")}</p>
+          <p>${String(escolhido.descricao || "").replace(/\n/g,"<br>")}</p>
           <div class="mini">⭐ ${escolhido.nota || ""}</div>
         </div>
       </div>
@@ -493,51 +438,6 @@ function carregarListaNetflixRomance(){
       '</div>';
   }).join("");
 }
-
-
-  // ===== DORAMAS POPULARES DO MOMENTO =====
-  function carregarPopularesDoMomento(){
-    const area = document.getElementById("populares-cards");
-    if(!area || !Array.isArray(doramas)) return;
-
-    const nomes = [
-      "Queen of Tears",
-      "Alchemy of Souls",
-      "Extraordinary Attorney Woo",
-      "My Name",
-      "Sweet Home"
-    ];
-
-    const lista = nomes.map(function(nome){
-      const d = doramas.find(function(x){
-        const alvo = (nome || "").toLowerCase();
-        const n1 = (x.nome || "").toLowerCase();
-        const n2 = (x.nomePT || "").toLowerCase();
-        const n3 = (x.nomeEN || "").toLowerCase();
-        return n1 === alvo || n2 === alvo || n3 === alvo;
-      });
-      if(d) return d;
-      return { nome:nome, imagem:"imagens/capa-padrao.jpg", nota:"", descricao:"" };
-    });
-
-    area.innerHTML = lista.map(function(d, idx){
-      var slug = d.slug || criarSlug(d.nome, d.nomeEN);
-      var url = "/doramas/" + slug + ".html";
-      var primeiraFrase = d.descricao ? String(d.descricao).split("\n")[0] : "";
-      var tag = idx < 2 ? "🔥 Muito buscado" : "⭐ Popular";
-
-      return '' +
-        '<div class="card click small" onclick="window.location.href=\'' + url + '\'">' +
-          '<img src="' + d.imagem + '" alt="' + d.nome + '" loading="lazy">' +
-          '<div>' +
-            '<span class="tag-popular">' + tag + '</span>' +
-            '<h3>' + d.nome + '</h3>' +
-            '<p>' + primeiraFrase + '</p>' +
-            '<div class="mini">⭐ ' + (d.nota || '') + '</div>' +
-          '</div>' +
-        '</div>';
-    }).join("");
-  }
 
   // ===== BUSCA INTELIGENTE (HOME) =====
   function setupBuscaHome(){
@@ -752,7 +652,6 @@ function carregarListaNetflixRomance(){
     setupBuscaHome();
     carregarDoramaDaSemana();
     carregarListaNetflixRomance();
-    carregarPopularesDoMomento();
     carregarNoticiasAutomaticas(false);
   };
 </script>
