@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Planeta Dorama 🌍 — Doramas, Listas, Recomendações e Onde Assistir</title>
+  <title>Planeta Dorama 🌍</title>
 
   <!-- AdSense -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5053782942464082"
@@ -175,7 +175,7 @@
   <nav style="margin-top:16px;">
     <a href="#inicio">Início</a>
     <a href="#top5">Top 5 ⭐</a>
-    <a href="#lista-netflix-2026">🔥 Listas em destaque 💘</a>
+    <a href="#lista-netflix-2026">Netflix Romance 2026 💘</a>
     <a href="#listas">Listas 💖</a>
     <a href="#semana">Dorama da semana 🌟</a>
     <a href="#noticias">Notícias 📰</a>
@@ -184,128 +184,6 @@
     <a href="descubra.html">Descubra 🤖</a>
   </nav>
 </header>
-
-  <!-- Anúncio responsivo (configure data-ad-slot no AdSense) -->
-  <div class="anuncio-responsivo" style="margin:16px auto; max-width: 970px; text-align:center;">
-    <ins class="adsbygoogle"
-         style="display:block"
-         data-ad-client="ca-pub-5053782942464082"
-         data-ad-slot="8006670140"
-         data-ad-format="auto"
-         data-full-width-responsive="true"></ins>
-  </div>
-  <script>
-    window.addEventListener('load', function () {
-      try { (adsbygoogle = window.adsbygoogle || []).push({}); } catch (e) {}
-    });
-  </script>
-
-
-<!-- Widget: Listas que bombam (automático, sem mexer no resto) -->
-<div class="box-listas" style="background:rgba(255,255,255,0.78);border:2px solid rgba(0,0,0,0.08);border-radius:18px;padding:14px;max-width:260px;box-shadow:0 10px 30px rgba(0,0,0,0.08);">
-  <h3 style="margin:0 0 10px;font-size:16px;line-height:1.2;">🔥 Listas que bombam</h3>
-  <p style="margin:0 0 12px;font-size:13px;line-height:1.5;color:#333;">
-    Escolha rápida para maratonar. Atualizamos sempre.
-  </p>
-
-  <div id="listasBombam" style="display:flex;flex-direction:column;gap:10px;">
-    <!-- Fallback (caso não consiga carregar automaticamente) -->
-    <a href="/listas/melhores-doramas-coreanos-romance-netflix-2026.html" style="display:block;text-decoration:none;background:#fff;border:1px solid rgba(0,0,0,0.08);border-radius:14px;padding:10px 12px;">
-      <div style="font-weight:800;font-size:13px;color:#222;">❤️ Romance na Netflix (2026)</div>
-      <div style="font-size:12px;color:#555;margin-top:2px;">Os melhores doramas românticos para ver agora.</div>
-    </a>
-  </div>
-
-  <a href="/listas/index.html" style="display:inline-block;margin-top:12px;font-size:13px;font-weight:800;text-decoration:none;">
-    Ver todas as listas →
-  </a>
-</div>
-
-<script>
-/*
-  Widget automático:
-  - Busca /listas/index.html (mesmo domínio)
-  - Pega os primeiros links de listas e monta os cards aqui
-  - Se falhar, mantém o fallback (não quebra nada)
-*/
-(function(){
-  const container = document.getElementById('listasBombam');
-  if(!container) return;
-
-  function card(href, title){
-    const emoji = (title.match(/^([\p{Extended_Pictographic}]+)/u) || [])[0] || "📌";
-    const cleanTitle = title.replace(/^([\p{Extended_Pictographic}]+)\s*/u, "").trim();
-    const subtitle = "Clique para ver a lista completa.";
-    return `
-      <a href="${href}" style="display:block;text-decoration:none;background:#fff;border:1px solid rgba(0,0,0,0.08);border-radius:14px;padding:10px 12px;">
-        <div style="font-weight:800;font-size:13px;color:#222;">${emoji} ${cleanTitle}</div>
-        <div style="font-size:12px;color:#555;margin-top:2px;">${subtitle}</div>
-      </a>
-    `;
-  }
-
-  fetch('/listas/index.html', { cache: 'no-store' })
-    .then(r => r.text())
-    .then(txt => {
-      const doc = new DOMParser().parseFromString(txt, 'text/html');
-
-      // tenta achar links de listas (qualquer <a> que aponte para /listas/*.html e não seja o index)
-      const links = Array.from(doc.querySelectorAll('a'))
-        .map(a => ({ href: a.getAttribute('href') || "", title: (a.textContent || "").trim() }))
-        .filter(x =>
-          x.href &&
-          x.title &&
-          x.href.includes('/listas/') &&
-          x.href.endsWith('.html') &&
-          !x.href.endsWith('/listas/index.html') &&
-          !x.href.endsWith('listas/index.html')
-        );
-
-      // remove duplicados por href
-      const seen = new Set();
-      const uniq = [];
-      for(const l of links){
-        const href = l.href.startsWith('http') ? l.href : l.href;
-        if(seen.has(href)) continue;
-        seen.add(href);
-        uniq.push({ href, title: l.title });
-        if(uniq.length >= 4) break;
-      }
-
-      if(uniq.length){
-        container.innerHTML = uniq.map(x => card(x.href, x.title)).join('');
-      }
-    })
-    .catch(()=>{ /* mantém fallback */ });
-})();
-</script>
-<div style="font-size:12px;color:#555;margin-top:2px;">Os melhores doramas românticos para ver agora.</div>
-    </a>
-
-    <a href="/listas/melhores-doramas-netflix-2026.html" style="display:block;text-decoration:none;background:#fff;border:1px solid rgba(0,0,0,0.08);border-radius:14px;padding:10px 12px;">
-      <div style="font-weight:800;font-size:13px;color:#222;">🎬 Melhores doramas da Netflix</div>
-      <div style="font-size:12px;color:#555;margin-top:2px;">Top escolhas para maratonar em 2026.</div>
-    </a>
-
-    <a href="/listas/doramas-curtos-para-maratonar.html" style="display:block;text-decoration:none;background:#fff;border:1px solid rgba(0,0,0,0.08);border-radius:14px;padding:10px 12px;">
-      <div style="font-weight:800;font-size:13px;color:#222;">⚡ Doramas curtos</div>
-      <div style="font-size:12px;color:#555;margin-top:2px;">Poucos episódios, história viciante.</div>
-    </a>
-
-    <a href="/listas/doramas-para-chorar.html" style="display:block;text-decoration:none;background:#fff;border:1px solid rgba(0,0,0,0.08);border-radius:14px;padding:10px 12px;">
-      <div style="font-weight:800;font-size:13px;color:#222;">😭 Doramas para chorar</div>
-      <div style="font-size:12px;color:#555;margin-top:2px;">Emocionantes pra ver com lencinho.</div>
-    </a>
-  </div>
-
-  <a href="/listas/index.html" style="display:inline-block;margin-top:12px;font-size:13px;font-weight:800;text-decoration:none;">
-    Ver todas as listas →
-  </a>
-</div>
-
-
-
-
 
 <section id="inicio">
   <h2>✨ Bem-vindo(a)</h2>
@@ -319,23 +197,6 @@
   <h2>🏆 Top 5 mais bem avaliados</h2>
   <div class="cards" id="top5-cards"></div>
 </section>
-
-  <!-- Anúncio responsivo (fixo) -->
-  <div class="ads-home" style="max-width:970px;margin:26px auto;">
-    <ins class="adsbygoogle"
-         style="display:block"
-         data-ad-client="ca-pub-5053782942464082"
-         data-ad-slot="8006670140"
-         data-ad-format="auto"
-         data-full-width-responsive="true"></ins>
-  </div>
-  <script>
-    window.addEventListener('load', function () {
-      try { (adsbygoogle = window.adsbygoogle || []).push({}); } catch (e) {}
-    });
-  </script>
-
-
 
 <!-- NOVA SEÇÃO: lista da Netflix 2026 em cards bonitos -->
 <section id="lista-netflix-2026">
@@ -519,7 +380,7 @@
     `;
   }
 
- // NOVO: Lista 🔥 Listas em destaque (mesmo estilo do Top 5)
+ // NOVO: Lista Netflix Romance 2026 (mesmo estilo do Top 5)
 function carregarListaNetflixRomance(){
   const area = document.getElementById("lista-netflix-cards");
   if (!area || !Array.isArray(doramas)) return;
