@@ -1699,7 +1699,7 @@ Profundo, reflexivo e muito humano.`
  nota:"8.4/10 – MyDramaList",
  elenco:["Lee Jung-jae","Park Hae-soo","Wi Ha-joon","Jung Ho-yeon","Oh Young-soo"],
  descricao:"Centenas de pessoas endividadas aceitam participar de jogos infantis com prêmio bilionário.\nMas perder significa morrer.\nTenso, brutal e viciante.",
- imagem:"https://planetadorama.com.br/imagens/capa-padrao.jpg",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/round%206.jpg",
  trailer:"https://www.youtube.com/embed/oqxAJKy0ii4",
  resumo:`Seong Gi Hun é um homem endividado e sem rumo na vida.
 Um dia, ele recebe um convite misterioso para participar de jogos com um prêmio enorme em dinheiro.
@@ -1723,7 +1723,7 @@ No Brasil, esse dorama também é conhecido como "Round 6".`
  nota:"8.4/10 – MyDramaList",
  elenco:["Park Ji-hu","Yoon Chan-young","Cho Yi-hyun","Lomon","Yoo In-soo"],
  descricao:"Um surto zumbi toma conta de uma escola e um grupo de estudantes precisa lutar para sobreviver.\nMuito tenso e cheio de ação.\nPerfeito para quem gosta de sobrevivência e suspense.",
- imagem:"https://planetadorama.com.br/imagens/capa-padrao.jpg",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/all%20of%20us%20are%20dead.jfif",
  trailer:"https://www.youtube.com/embed/IN5TD4VRcSM",
  resumo:`Tudo começa quando um experimento dá errado e um vírus se espalha dentro de uma escola.
 Em pouco tempo, alunos e professores começam a se transformar em zumbis.
@@ -1744,7 +1744,7 @@ No Brasil, esse dorama também é conhecido como "Estamos Mortos".`
  nota:"8.2/10 – MyDramaList",
  elenco:["Kim Hye-yoon","Rowoon","Lee Jae-wook","Lee Na-eun","Jung Gun-joo"],
  descricao:"Uma estudante descobre que vive dentro de um manhwa e decide mudar o próprio destino.\nRomance escolar com fantasia e humor.\nFofo, diferente e viciante.",
- imagem:"https://planetadorama.com.br/imagens/capa-padrao.jpg",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/extraordinary%20you.jpg",
  trailer:"https://www.youtube.com/embed/SE9K3nzcUjY",
  resumo:`Eun Dan Oh é uma estudante de escola rica que um dia descobre algo chocante:
 ela é apenas uma personagem de um manhwa, e nem sequer é a protagonista da história.
@@ -1763,7 +1763,7 @@ O dorama mistura romance escolar, fantasia e comédia de um jeito leve e criativ
  nota:"8.8/10 – MyDramaList",
  elenco:["Park Ji-hoon","Choi Hyun-wook","Hong Kyung","Shin Seung-ho","Lee Yeon"],
  descricao:"Um aluno quieto e brilhante enfrenta violência escolar usando inteligência e estratégia.\nDrama escolar pesado e muito elogiado.\nTenso do começo ao fim.",
- imagem:"https://planetadorama.com.br/imagens/capa-padrao.jpg",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/weak%20hero%20class.jpg",
  trailer:"https://www.youtube.com/embed/R_AqK8h0XwE",
  resumo:`Yeon Si Eun é um dos melhores alunos da escola, mas fisicamente parece frágil.
 Por trás da aparência calma, ele usa inteligência, observação e estratégia para enfrentar o bullying e a violência ao seu redor.
