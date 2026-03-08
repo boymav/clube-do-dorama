@@ -186,25 +186,6 @@
 
     footer{ background:#b983ff; color:white; text-align:center; padding:15px; }
     footer a{ color:#fff; text-decoration:underline; }
-  
-    /* Populares do momento */
-    .cards.populares .card{
-      width:240px;
-    }
-    .cards.populares .card img{
-      height:320px;
-    }
-    .tag-popular{
-      display:inline-block;
-      margin-bottom:8px;
-      padding:6px 10px;
-      border-radius:999px;
-      background:#fff0f6;
-      color:#7a1b55;
-      font-size:12px;
-      font-weight:bold;
-    }
-
   </style>
 </head>
 
@@ -225,6 +206,13 @@
     <a class="atalho-pill" href="#top5">⭐ Top 5</a>
     <a class="atalho-pill" href="#listas">📋 Listas de Doramas</a>
     <a class="atalho-pill" href="#lista-netflix-2026">🎬 Netflix</a>
+    <a class="atalho-pill" href="listas/melhores-doramas-romance.html">💖 Romance</a>
+    <a class="atalho-pill" href="listas/doramas-curtos.html">⚡ Curtos</a>
+    <a class="atalho-pill" href="listas/doramas-para-chorar.html">😭 Pra chorar</a>
+    <a class="atalho-pill" href="listas/doramas-de-suspense.html">🕵️ Suspense</a>
+    <a class="atalho-pill" href="listas/doramas-de-acao.html">🔥 Ação</a>
+    <a class="atalho-pill" href="listas/doramas-escolares.html">🏫 Escolares</a>
+    <a class="atalho-pill" href="listas/doramas-para-assistir-em-casal.html">💑 Em casal</a>
     <a class="atalho-pill" href="favoritos.html">💜 Favoritos</a>
     <a class="atalho-pill" href="descubra.html">🤖 Descubra</a>
   </div>
@@ -294,30 +282,11 @@
   <p style="text-align:center; margin:0 auto 14px; max-width:850px; opacity:0.92;">
     Explore listas prontas para encontrar mais rápido o próximo dorama perfeito para o seu momento.
   </p>
-  <div class="atalhos-home" style="margin-top:10px;">
-    <a class="atalho-pill" href="listas/melhores-doramas-netflix.html">🎬 Netflix</a>
-    <a class="atalho-pill" href="listas/melhores-doramas-romance.html">💖 Romance</a>
-    <a class="atalho-pill" href="listas/doramas-curtos.html">⚡ Curtos</a>
-    <a class="atalho-pill" href="listas/doramas-para-chorar.html">😭 Pra chorar</a>
-    <a class="atalho-pill" href="listas/doramas-de-suspense.html">🕵️ Suspense</a>
-    <a class="atalho-pill" href="listas/doramas-de-acao.html">🔥 Ação</a>
-    <a class="atalho-pill" href="listas/doramas-escolares.html">🏫 Escolares</a>
-    <a class="atalho-pill" href="listas/doramas-para-assistir-em-casal.html">💑 Em casal</a>
-  </div>
   <div style="text-align:center; margin-top:12px; opacity:0.9;">
     <a href="listas/index.html">👉 Ver todas as listas</a>
   </div>
 </section>
 
-
-<section id="populares-momento">
-  <h2>🔥 Doramas populares do momento</h2>
-  <p style="text-align:center; max-width:780px; margin:0 auto 20px;">
-    Se você quer começar por doramas muito comentados e amados pelos fãs, aqui estão alguns dos títulos
-    mais populares para abrir agora e descobrir novas histórias no Planeta Dorama.
-  </p>
-  <div class="cards populares" id="populares-cards"></div>
-</section>
 
 <section id="semana">
   <h2>🌟 Dorama da Semana</h2>
@@ -468,51 +437,6 @@ function carregarListaNetflixRomance(){
       '</div>';
   }).join("");
 }
-
-
-  // ===== DORAMAS POPULARES DO MOMENTO =====
-  function carregarPopularesDoMomento(){
-    const area = document.getElementById("populares-cards");
-    if(!area || !Array.isArray(doramas)) return;
-
-    const nomes = [
-      "Queen of Tears",
-      "Alchemy of Souls",
-      "Extraordinary Attorney Woo",
-      "My Name",
-      "Sweet Home"
-    ];
-
-    const lista = nomes.map(function(nome){
-      const d = doramas.find(function(x){
-        const alvo = (nome || "").toLowerCase();
-        const n1 = (x.nome || "").toLowerCase();
-        const n2 = (x.nomePT || "").toLowerCase();
-        const n3 = (x.nomeEN || "").toLowerCase();
-        return n1 === alvo || n2 === alvo || n3 === alvo;
-      });
-      if(d) return d;
-      return { nome:nome, imagem:"imagens/capa-padrao.jpg", nota:"", descricao:"" };
-    });
-
-    area.innerHTML = lista.map(function(d, idx){
-      var slug = d.slug || criarSlug(d.nome, d.nomeEN);
-      var url = "/doramas/" + slug + ".html";
-      var primeiraFrase = d.descricao ? String(d.descricao).split("\n")[0] : "";
-      var tag = idx < 2 ? "🔥 Muito buscado" : "⭐ Popular";
-
-      return '' +
-        '<div class="card click small" onclick="window.location.href=\'' + url + '\'">' +
-          '<img src="' + d.imagem + '" alt="' + d.nome + '" loading="lazy">' +
-          '<div>' +
-            '<span class="tag-popular">' + tag + '</span>' +
-            '<h3>' + d.nome + '</h3>' +
-            '<p>' + primeiraFrase + '</p>' +
-            '<div class="mini">⭐ ' + (d.nota || '') + '</div>' +
-          '</div>' +
-        '</div>';
-    }).join("");
-  }
 
   // ===== BUSCA INTELIGENTE (HOME) =====
   function setupBuscaHome(){
@@ -727,7 +651,6 @@ function carregarListaNetflixRomance(){
     setupBuscaHome();
     carregarDoramaDaSemana();
     carregarListaNetflixRomance();
-    carregarPopularesDoMomento();
     carregarNoticiasAutomaticas(false);
   };
 </script>
