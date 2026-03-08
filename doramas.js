@@ -1764,7 +1764,7 @@ O dorama mistura romance escolar, fantasia e comédia de um jeito leve e criativ
  elenco:["Park Ji-hoon","Choi Hyun-wook","Hong Kyung","Shin Seung-ho","Lee Yeon"],
  descricao:"Um aluno quieto e brilhante enfrenta violência escolar usando inteligência e estratégia.\nDrama escolar pesado e muito elogiado.\nTenso do começo ao fim.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/weak%20hero%20class.jpg",
- trailer:"https://www.youtube.com/embed/bmbl65oiUgA",
+ trailer:"https://www.youtube.com/embed/eXMjTXL2Vks",
  resumo:`Yeon Si Eun é um dos melhores alunos da escola, mas fisicamente parece frágil.
 Por trás da aparência calma, ele usa inteligência, observação e estratégia para enfrentar o bullying e a violência ao seu redor.
 
