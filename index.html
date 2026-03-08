@@ -300,9 +300,10 @@
 
 <section id="semana">
   <h2>🌟 Dorama da Semana</h2>
+  <p id="semana-periodo" style="text-align:center; margin: -4px 0 14px; color:#7a1b55; font-weight:bold;"></p>
   <div class="cards" id="dorama-semana"></div>
   <p style="text-align:center; max-width:800px; margin: 14px auto 0; opacity:0.85;">
-    Esse dorama muda automaticamente (aleatório) quando a página abre.
+    O destaque fica no ar durante 7 dias e depois muda automaticamente para um novo dorama.
   </p>
 </section>
 
@@ -379,11 +380,55 @@
   }
 
   // ===== DORAMA DA SEMANA =====
+  function formatarPeriodoSemana(timestamp){
+    const base = new Date(timestamp);
+    const dia = base.getDay();
+    const diffParaSegunda = (dia === 0 ? -6 : 1 - dia);
+    const inicio = new Date(base);
+    inicio.setDate(base.getDate() + diffParaSegunda);
+    inicio.setHours(0,0,0,0);
+
+    const fim = new Date(inicio);
+    fim.setDate(inicio.getDate() + 6);
+
+    const opcoes = { day:"2-digit", month:"long" };
+    const inicioTxt = inicio.toLocaleDateString("pt-BR", opcoes);
+    const fimTxt = fim.toLocaleDateString("pt-BR", opcoes);
+    return "Semana de " + inicioTxt + " a " + fimTxt;
+  }
+
   function carregarDoramaDaSemana() {
     const area = document.getElementById("dorama-semana");
+    const periodo = document.getElementById("semana-periodo");
     if (!area || !Array.isArray(doramas) || doramas.length === 0) return;
 
-    const escolhido = doramas[Math.floor(Math.random() * doramas.length)];
+    const chave = "dorama_semana_planeta";
+    const salvo = JSON.parse(localStorage.getItem(chave) || "{}");
+
+    const agora = Date.now();
+    const umaSemana = 7 * 24 * 60 * 60 * 1000;
+
+    let escolhido = null;
+    let dataBase = agora;
+
+    if (salvo.nome && salvo.data && (agora - salvo.data) < umaSemana) {
+      escolhido = doramas.find(d => d.nome === salvo.nome);
+      dataBase = salvo.data;
+    }
+
+    if (!escolhido) {
+      escolhido = doramas[Math.floor(Math.random() * doramas.length)];
+      dataBase = agora;
+      localStorage.setItem(chave, JSON.stringify({
+        nome: escolhido.nome,
+        data: dataBase
+      }));
+    }
+
+    if (periodo) {
+      periodo.textContent = formatarPeriodoSemana(dataBase);
+    }
+
     const slug = escolhido.slug || criarSlug(escolhido.nome, escolhido.nomeEN);
     const url = "/doramas/" + slug + ".html";
 
@@ -392,7 +437,8 @@
         <img src="${escolhido.imagem}" alt="${escolhido.nome}" loading="lazy">
         <div>
           <h3>${escolhido.nome}</h3>
-          <p>${String(escolhido.descricao || "").replace(/\n/g,"<br>")}</p>
+          <p>${String(escolhido.descricao || "").replace(/
+/g,"<br>")}</p>
           <div class="mini">⭐ ${escolhido.nota || ""}</div>
         </div>
       </div>
