@@ -155,6 +155,32 @@
       color:#7a1b55;
     }
 
+
+    .atalhos-home{
+      display:flex;
+      flex-wrap:wrap;
+      gap:12px;
+      justify-content:center;
+      margin:18px auto 4px;
+      max-width:1100px;
+    }
+    .atalho-pill{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:12px 18px;
+      background:rgba(255,255,255,0.88);
+      color:#7a1b55;
+      text-decoration:none;
+      border-radius:999px;
+      font-weight:bold;
+      box-shadow:0 6px 18px rgba(0,0,0,0.10);
+    }
+    .atalho-pill:hover{
+      background:#fff;
+      transform:translateY(-1px);
+    }
+
     footer{ background:#b983ff; color:white; text-align:center; padding:15px; }
     footer a{ color:#fff; text-decoration:underline; }
   </style>
@@ -183,6 +209,15 @@
     <a href="favoritos.html">💜 Favoritos</a>
     <a href="descubra.html">Descubra 🤖</a>
   </nav>
+
+  <div class="atalhos-home">
+    <a class="atalho-pill" href="#inicio">🏠 Início</a>
+    <a class="atalho-pill" href="#top5">⭐ Top 5</a>
+    <a class="atalho-pill" href="#listas">📋 Listas de Doramas</a>
+    <a class="atalho-pill" href="#lista-netflix-2026">🎬 Netflix</a>
+    <a class="atalho-pill" href="favoritos.html">💜 Favoritos</a>
+    <a class="atalho-pill" href="descubra.html">🤖 Descubra</a>
+  </div>
 </header>
 
 <section id="inicio">
@@ -192,6 +227,30 @@
     românticas, divertidas e intensas.
   </p>
 </section>
+
+
+<section id="listas">
+  <h2>📋 Listas de Doramas</h2>
+  <p style="text-align:center; margin:0 auto 14px; max-width:850px; opacity:0.92;">
+    Explore listas prontas para encontrar mais rápido o próximo dorama perfeito para o seu momento.
+  </p>
+
+  <div style="text-align:center; margin-top:10px;">
+    <button class="btn-pequeno" onclick="window.location.href='listas/melhores-doramas-netflix.html'">🎬 Netflix</button>
+    <button class="btn-pequeno" onclick="window.location.href='listas/melhores-doramas-romance.html'">💖 Romance</button>
+    <button class="btn-pequeno" onclick="window.location.href='listas/doramas-curtos.html'">⚡ Curtos</button>
+    <button class="btn-pequeno" onclick="window.location.href='listas/doramas-para-chorar.html'">😭 Pra chorar</button>
+    <button class="btn-pequeno" onclick="window.location.href='listas/doramas-de-suspense.html'">🕵️ Suspense</button>
+    <button class="btn-pequeno" onclick="window.location.href='listas/doramas-de-acao.html'">🔥 Ação</button>
+    <button class="btn-pequeno" onclick="window.location.href='listas/doramas-escolares.html'">🏫 Escolares</button>
+    <button class="btn-pequeno" onclick="window.location.href='listas/doramas-para-assistir-em-casal.html'">💑 Em casal</button>
+  </div>
+
+  <div style="text-align:center; margin-top:12px; opacity:0.9;">
+    <a href="listas/index.html">👉 Ver todas as listas</a>
+  </div>
+</section>
+
 
 <section id="top5">
   <h2>🏆 Top 5 mais bem avaliados</h2>
@@ -211,26 +270,6 @@
       👉 Ver lista completa com explicação de cada dorama
     </a>
   </p>
-</section>
-
-<section id="listas">
-  <h2>📋 Listas de Doramas</h2>
-  <div style="text-align:center; margin-bottom:10px;">
-    <button onclick="window.location.href='categoria.html?tipo=romance'">💖 Românticos</button>
-    <button onclick="window.location.href='categoria.html?tipo=triste'">😭 Tristes</button>
-    <button onclick="window.location.href='categoria.html?tipo=intenso'">🔥 Intensos</button>
-    <button onclick="window.location.href='categoria.html?tipo=alegre'">😊 Leves</button>
-  </div>
-  <p style="text-align:center; margin:0; opacity:0.85;">
-    Clique e veja 10 doramas perfeitos pra cada emoção ✨
-  </p>
-
-  <!-- Link da nova lista -->
-  <div style="text-align:center; margin-top:15px;">
-    <a href="listas/melhores-doramas-coreanos-romance-netflix-2026.html">
-      Melhores doramas coreanos de romance na Netflix em 2026
-    </a>
-  </div>
 </section>
 
 <section id="semana">
