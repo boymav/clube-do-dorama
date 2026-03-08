@@ -1745,7 +1745,7 @@ No Brasil, esse dorama também é conhecido como "Estamos Mortos".`
  elenco:["Kim Hye-yoon","Rowoon","Lee Jae-wook","Lee Na-eun","Jung Gun-joo"],
  descricao:"Uma estudante descobre que vive dentro de um manhwa e decide mudar o próprio destino.\nRomance escolar com fantasia e humor.\nFofo, diferente e viciante.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/extraordinary%20you.jpg",
- trailer:"https://www.youtube.com/embed/SE9K3nzcUjY",
+ trailer:"https://www.youtube.com/embed/Bt3SxMxtoUY",
  resumo:`Eun Dan Oh é uma estudante de escola rica que um dia descobre algo chocante:
 ela é apenas uma personagem de um manhwa, e nem sequer é a protagonista da história.
 
@@ -1764,7 +1764,7 @@ O dorama mistura romance escolar, fantasia e comédia de um jeito leve e criativ
  elenco:["Park Ji-hoon","Choi Hyun-wook","Hong Kyung","Shin Seung-ho","Lee Yeon"],
  descricao:"Um aluno quieto e brilhante enfrenta violência escolar usando inteligência e estratégia.\nDrama escolar pesado e muito elogiado.\nTenso do começo ao fim.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/weak%20hero%20class.jpg",
- trailer:"https://www.youtube.com/embed/R_AqK8h0XwE",
+ trailer:"https://www.youtube.com/embed/5LaEQSN-q7A",
  resumo:`Yeon Si Eun é um dos melhores alunos da escola, mas fisicamente parece frágil.
 Por trás da aparência calma, ele usa inteligência, observação e estratégia para enfrentar o bullying e a violência ao seu redor.
 
