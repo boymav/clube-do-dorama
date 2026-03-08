@@ -1690,7 +1690,105 @@ Um estranho misterioso muda suas vidas.
 Profundo, reflexivo e muito humano.`
 }
 
-];function criarSlug(nome, nomeEN) {
+
+,
+{
+ nome:"Squid Game",
+ nomeEN:"Squid Game",
+ nomePT:"Round 6",
+ tags:["intenso","triste","netflix"],
+ nota:"8.4/10 – MyDramaList",
+ elenco:["Lee Jung-jae","Park Hae-soo","Wi Ha-joon","Jung Ho-yeon","Oh Young-soo"],
+ descricao:"Centenas de pessoas endividadas aceitam participar de jogos infantis com prêmio bilionário.
+Mas perder significa morrer.
+Tenso, brutal e viciante.",
+ imagem:"https://planetadorama.com.br/imagens/capa-padrao.jpg",
+ trailer:"https://www.youtube.com/embed/oqxAJKy0ii4",
+ resumo:`Seong Gi Hun é um homem endividado e sem rumo na vida.
+Um dia, ele recebe um convite misterioso para participar de jogos com um prêmio enorme em dinheiro.
+
+Ao chegar ao local, descobre que centenas de pessoas estão na mesma situação.
+Todos aceitam competir em brincadeiras infantis, mas logo percebem a verdade cruel:
+quem perde, morre.
+
+Enquanto tenta sobreviver, Gi Hun cria alianças e enfrenta escolhas morais difíceis.
+O dorama mistura crítica social, suspense e muita tensão.
+
+É uma história sobre desespero, desigualdade e até onde alguém vai por dinheiro.
+
+No Brasil, esse dorama também é conhecido como "Round 6".`
+}
+,
+{
+ nome:"All of Us Are Dead",
+ nomeEN:"All of Us Are Dead",
+ nomePT:"Estamos Mortos",
+ tags:["intenso","triste","escolar","netflix"],
+ nota:"8.4/10 – MyDramaList",
+ elenco:["Park Ji-hu","Yoon Chan-young","Cho Yi-hyun","Lomon","Yoo In-soo"],
+ descricao:"Um surto zumbi toma conta de uma escola e um grupo de estudantes precisa lutar para sobreviver.
+Muito tenso e cheio de ação.
+Perfeito para quem gosta de sobrevivência e suspense.",
+ imagem:"https://planetadorama.com.br/imagens/capa-padrao.jpg",
+ trailer:"https://www.youtube.com/embed/IN5TD4VRcSM",
+ resumo:`Tudo começa quando um experimento dá errado e um vírus se espalha dentro de uma escola.
+Em pouco tempo, alunos e professores começam a se transformar em zumbis.
+
+Presos no colégio, um grupo de estudantes tenta sobreviver enquanto procura uma forma de escapar.
+Sem ajuda imediata, eles precisam enfrentar medo, fome, perdas e decisões difíceis.
+
+O dorama mistura ação, suspense e emoção, mostrando amizade, coragem e desespero em meio ao caos.
+É uma das séries coreanas mais populares da Netflix para quem gosta de tensão e sobrevivência.
+
+No Brasil, esse dorama também é conhecido como "Estamos Mortos".`
+}
+,
+{
+ nome:"Extraordinary You",
+ nomeEN:"Extraordinary You",
+ nomePT:"Extraordinary You",
+ tags:["romance","alegre","fantasia","escolar"],
+ nota:"8.2/10 – MyDramaList",
+ elenco:["Kim Hye-yoon","Rowoon","Lee Jae-wook","Lee Na-eun","Jung Gun-joo"],
+ descricao:"Uma estudante descobre que vive dentro de um manhwa e decide mudar o próprio destino.
+Romance escolar com fantasia e humor.
+Fofo, diferente e viciante.",
+ imagem:"https://planetadorama.com.br/imagens/capa-padrao.jpg",
+ trailer:"https://www.youtube.com/embed/SE9K3nzcUjY",
+ resumo:`Eun Dan Oh é uma estudante de escola rica que um dia descobre algo chocante:
+ela é apenas uma personagem de um manhwa, e nem sequer é a protagonista da história.
+
+Ao perceber que seu destino já foi escrito, ela decide lutar para mudar tudo.
+Nesse processo, conhece um garoto sem nome dentro da história e começa a se apaixonar.
+
+O dorama mistura romance escolar, fantasia e comédia de um jeito leve e criativo.
+É perfeito para quem gosta de triângulo amoroso, cenas fofas e histórias de juventude com um toque diferente.`
+}
+,
+{
+ nome:"Weak Hero Class 1",
+ nomeEN:"Weak Hero Class 1",
+ nomePT:"Weak Hero Class 1",
+ tags:["intenso","triste","escolar"],
+ nota:"8.8/10 – MyDramaList",
+ elenco:["Park Ji-hoon","Choi Hyun-wook","Hong Kyung","Shin Seung-ho","Lee Yeon"],
+ descricao:"Um aluno quieto e brilhante enfrenta violência escolar usando inteligência e estratégia.
+Drama escolar pesado e muito elogiado.
+Tenso do começo ao fim.",
+ imagem:"https://planetadorama.com.br/imagens/capa-padrao.jpg",
+ trailer:"https://www.youtube.com/embed/R_AqK8h0XwE",
+ resumo:`Yeon Si Eun é um dos melhores alunos da escola, mas fisicamente parece frágil.
+Por trás da aparência calma, ele usa inteligência, observação e estratégia para enfrentar o bullying e a violência ao seu redor.
+
+Ao lado de novos amigos, ele entra em conflitos cada vez mais perigosos dentro e fora da escola.
+O dorama mostra amizade, lealdade, trauma e a dureza da vida escolar de forma intensa.
+
+É um dos dramas escolares mais elogiados dos últimos anos, perfeito para quem gosta de histórias fortes e realistas.`
+}
+
+
+];
+function criarSlug(nome, nomeEN) {
   const base = nomeEN || nome;
   return String(base || "")
     .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
