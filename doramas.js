@@ -1690,7 +1690,6 @@ Um estranho misterioso muda suas vidas.
 Profundo, reflexivo e muito humano.`
 }
 
-
 ,
 {
  nome:"Squid Game",
@@ -1717,8 +1716,7 @@ O dorama mistura crítica social, suspense e muita tensão.
 É uma história sobre desespero, desigualdade e até onde alguém vai por dinheiro.
 
 No Brasil, esse dorama também é conhecido como "Round 6".`
-}
-,
+},
 {
  nome:"All of Us Are Dead",
  nomeEN:"All of Us Are Dead",
@@ -1741,8 +1739,7 @@ O dorama mistura ação, suspense e emoção, mostrando amizade, coragem e deses
 É uma das séries coreanas mais populares da Netflix para quem gosta de tensão e sobrevivência.
 
 No Brasil, esse dorama também é conhecido como "Estamos Mortos".`
-}
-,
+},
 {
  nome:"Extraordinary You",
  nomeEN:"Extraordinary You",
@@ -1763,8 +1760,7 @@ Nesse processo, conhece um garoto sem nome dentro da história e começa a se ap
 
 O dorama mistura romance escolar, fantasia e comédia de um jeito leve e criativo.
 É perfeito para quem gosta de triângulo amoroso, cenas fofas e histórias de juventude com um toque diferente.`
-}
-,
+},
 {
  nome:"Weak Hero Class 1",
  nomeEN:"Weak Hero Class 1",
@@ -1786,9 +1782,7 @@ O dorama mostra amizade, lealdade, trauma e a dureza da vida escolar de forma in
 É um dos dramas escolares mais elogiados dos últimos anos, perfeito para quem gosta de histórias fortes e realistas.`
 }
 
-
-];
-function criarSlug(nome, nomeEN) {
+];function criarSlug(nome, nomeEN) {
   const base = nomeEN || nome;
   return String(base || "")
     .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
