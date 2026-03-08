@@ -1724,7 +1724,7 @@ No Brasil, esse dorama também é conhecido como "Round 6".`
  elenco:["Park Ji-hu","Yoon Chan-young","Cho Yi-hyun","Lomon","Yoo In-soo"],
  descricao:"Um surto zumbi toma conta de uma escola e um grupo de estudantes precisa lutar para sobreviver.\nMuito tenso e cheio de ação.\nPerfeito para quem gosta de sobrevivência e suspense.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/all%20of%20us%20are%20dead.jfif",
- trailer:"https://www.youtube.com/embed/IN5TD4VRcSM",
+ trailer:"https://www.youtube.com/embed/bmbl65oiUgA",
  resumo:`Tudo começa quando um experimento dá errado e um vírus se espalha dentro de uma escola.
 Em pouco tempo, alunos e professores começam a se transformar em zumbis.
 
