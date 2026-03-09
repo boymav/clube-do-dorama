@@ -1717,7 +1717,7 @@ Mesmo sendo um clássico mais antigo, continua muito procurado por fãs de doram
  nota:"8.2/10 – MyDramaList",
  elenco:["Kim So-hyun","Nam Joo-hyuk","Yook Sung-jae","Lee Pil-mo","Cho Soo-hyang"],
  descricao:"Duas garotas idênticas têm destinos cruzados em uma escola marcada por bullying e segredos.\nDrama escolar com romance e mistério.",
- imagem:"https://planetadorama.com.br/imagens/capa-padrao.jpg",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/school%202015%20who%20are%20you.jpg",
  trailer:"https://www.youtube.com/embed/5IkR87l2aJ0",
  resumo:`Go Eun Byul e Lee Eun Bi são gêmeas separadas que levam vidas completamente diferentes.
 Quando um acidente misterioso acontece, uma delas assume a vida da outra e passa a estudar em uma escola cheia de conflitos.
@@ -1733,7 +1733,7 @@ O dorama fala sobre bullying, identidade, trauma e amizade, enquanto também con
  nota:"7.8/10 – MyDramaList",
  elenco:["Kim Se-jeong","Kim Jung-hyun","Jang Dong-yoon","Han Joo-wan","Han Sun-hwa"],
  descricao:"Uma estudante tenta sobreviver à pressão escolar enquanto um misterioso aluno causa confusão na escola.\nLeve, jovem e divertido.",
- imagem:"https://planetadorama.com.br/imagens/capa-padrao.jpg",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/school%202017.jpg",
  trailer:"https://www.youtube.com/embed/_R-c5HSEqP4",
  resumo:`Ra Eun Ho é uma estudante alegre que sonha em entrar na faculdade de artes, mas vive lutando contra as cobranças da escola.
 Tudo muda quando um misterioso aluno conhecido como X começa a provocar confusões dentro do colégio.
@@ -1749,7 +1749,7 @@ Entre punições, amizades, pressão acadêmica e romance, a história mostra o 
  nota:"8.0/10 – MyDramaList",
  elenco:["Suzy","Kim Soo-hyun","Taecyeon","IU","Wooyoung"],
  descricao:"Jovens talentosos entram em uma escola de artes para realizar o sonho de se tornarem estrelas.\nMúsica, romance e juventude.",
- imagem:"https://planetadorama.com.br/imagens/capa-padrao.jpg",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/dream%20hight.jpg",
  trailer:"https://www.youtube.com/embed/-B7r0QG2KqU",
  resumo:`Dream High acompanha um grupo de jovens que entra em uma escola de artes com o sonho de se tornar cantor, dançarino ou astro da música.
 Cada personagem chega com inseguranças, talentos e dificuldades próprias.
@@ -1765,7 +1765,7 @@ Ao longo da história, eles enfrentam rivalidade, amadurecimento, apresentaçõe
  nota:"8.4/10 – MyDramaList",
  elenco:["Ong Seong-wu","Kim Hyang-gi","Shin Seung-ho","Kang Ki-young","Moonbin"],
  descricao:"Um estudante solitário tenta recomeçar a vida em uma nova escola.\nDrama escolar sensível, romântico e realista.",
- imagem:"https://planetadorama.com.br/imagens/capa-padrao.jpg",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/moment%20of%20eighteen.jfif",
  trailer:"https://www.youtube.com/embed/wnQ-A0g9M9U",
  resumo:`Choi Joon Woo é um garoto reservado que precisa se adaptar a uma nova escola depois de vários problemas no passado.
 Lá ele conhece Yoo Soo Bin, uma aluna brilhante que vive sob forte pressão da mãe, e Ma Hwi Young, o estudante popular da turma.
