@@ -30,7 +30,7 @@ No Brasil, esse dorama também é conhecido como "Pousando no Amor".`,
  trailer:"https://www.youtube.com/embed/eXMjTXL2Vks"
 },
 {
- nome:"Goblin",
+ nome:"Goblin: O Solitário e Grande Deus (Goblin)",
   nomePT:"Goblin: O Solitário e Grande Deus",
   nomeEN:"Goblin",
  tags:["romance","fantasia","triste"],
@@ -68,7 +68,7 @@ No Brasil, esse dorama também é conhecido como "Goblin: O Solitário e Grande 
  trailer:"https://www.youtube.com/embed/mh4R-WXRhQo"
 },
 {
- nome:"Strong Woman Do Bong Soon",
+ nome:"Mulher Forte Do Bong-soon (Strong Woman Do Bong Soon)",
   nomePT:"Mulher Forte Do Bong-soon",
   nomeEN:"Strong Woman Do Bong Soon",
  tags:["alegre","comedia","romance"],
@@ -159,7 +159,7 @@ mas é marcado por destino e sacrifício.
 com muita emoção e reflexões sobre arrependimento e perdão.`
 },
 {
- nome:"Descendants of the Sun",
+ nome:"Descendentes do Sol (Descendants of the Sun)",
   nomePT:"Descendentes do Sol",
   nomeEN:"Descendants of the Sun",
  tags:["romance","intenso"],
@@ -188,7 +188,7 @@ além de um amor que precisa sobreviver em meio ao caos.
 No Brasil, esse dorama também é conhecido como "Descendentes do Sol".`
 },
 {
- nome:"My Love from the Star",
+ nome:"Meu Amor das Estrelas (My Love from the Star)",
   nomePT:"Meu Amor das Estrelas",
   nomeEN:"My Love from the Star",
  tags:["romance","comedia","fantasia"],
@@ -219,7 +219,7 @@ de uma forma leve e emocionante.
 No Brasil, esse dorama também é conhecido como "Meu Amor das Estrelas".`
 },
 {
- nome:"Weightlifting Fairy Kim Bok Joo",
+ nome:"Fada do Levantamento de Peso Kim Bok-Joo (Weightlifting Fairy Kim Bok Joo)",
   nomePT:"Fada do Levantamento de Peso Kim Bok-Joo",
   nomeEN:"Weightlifting Fairy Kim Bok Joo",
  tags:["alegre","romance","comedia"],
@@ -250,7 +250,7 @@ Uma história simples, mas cheia de coração.
 No Brasil, esse dorama também é conhecido como "Fada do Levantamento de Peso Kim Bok-Joo".`
 },
 {
- nome:"True Beauty",
+ nome:"Beleza Verdadeira (True Beauty)",
   nomePT:"Beleza Verdadeira",
   nomeEN:"True Beauty",
  tags:["alegre","romance","comedia"],
@@ -282,7 +282,7 @@ Mostra que beleza verdadeira vai muito além da aparência.
 No Brasil, esse dorama também é conhecido como "Beleza Verdadeira".`
 },
 {
- nome:"Moon Lovers: Scarlet Heart Ryeo",
+ nome:"Amantes da Lua: Coração Escarlate Ryeo (Moon Lovers: Scarlet Heart Ryeo)",
   nomePT:"Amantes da Lua: Coração Escarlate Ryeo",
   nomeEN:"Moon Lovers: Scarlet Heart Ryeo",
  tags:["romance","triste","intenso"],
@@ -311,7 +311,7 @@ O dorama mistura história, política e paixão profunda.
 No Brasil, esse dorama também é conhecido como "Amantes da Lua: Coração Escarlate Ryeo".`
 },
 {
- nome:"The Heirs",
+ nome:"Os Herdeiros (The Heirs)",
   nomePT:"Os Herdeiros",
   nomeEN:"The Heirs",
  tags:["romance","triste"],
@@ -764,7 +764,7 @@ Mostra crescimento pessoal e reconciliação.
 Delicado e emocionante.`
 },
 {
- nome:"Flower of Evil",
+ nome:"Flor do Mal (Flower of Evil)",
   nomePT:"Flor do Mal",
   nomeEN:"Flower of Evil",
  tags:["intenso","romance","triste"],
@@ -1322,7 +1322,7 @@ Sua esposa luta para provar sua inocência.
 Suspense cheio de tensão.`
 },
 {
- nome:"Queen of Tears",
+ nome:"Rainha das Lágrimas (Queen of Tears)",
   nomePT:"Rainha das Lágrimas",
   nomeEN:"Queen of Tears",
  tags:["romance","triste"],
@@ -1446,253 +1446,9 @@ O dorama questiona quem é o verdadeiro monstro: o assassino ou a sociedade que 
 É um thriller denso, cheio de tensão, ótimas atuações e roteiro muito bem amarrado.`
   },
   {
-    nome:"See You in My 19th Life",
-    tags:["romance","fantasia","emocionante"],
-    nota:"8.6/10 – MyDramaList",
-    elenco:["Shin Hye-sun", "Ahn Bo-hyun", "Ha Yoon-kyung", "Ahn Dong-goo", "Cha Chung-hwa"],
-    descricao:"Uma mulher lembra de todas as suas vidas passadas.\nNa 19ª vida, ela decide reencontrar o amor que perdeu na anterior.",
-    imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/see%20you%20im%20my.webp",
-    trailer:"https://www.youtube.com/embed/zgvMWFEfm_0",
-    resumo:`Ban Ji Eum é diferente de qualquer pessoa: ela se lembra de todas as suas vidas passadas.
-Na sua 18ª vida, ela conhece um menino especial e cria um laço muito forte com ele.
-
-Depois de um acidente trágico, ela reencarna na 19ª vida.
-Determinada, ela vai atrás desse amor do passado, agora já crescido, para tentar se aproximar dele novamente.
-
-O dorama mistura romance, fantasia, humor e emoção.
-Fala sobre destino, segundas chances e sobre como as conexões verdadeiras podem atravessar o tempo.`
-  },
-  {
-    nome:"Welcome to Samdal-ri",
-    tags:["romance","comedia","aconchegante"],
-    nota:"8.7/10 – MyDramaList",
-    elenco:["Ji Chang-wook", "Shin Hye-sun", "Kim Mi-kyung", "Seo Hyun-chul", "Shin Dong-mi"],
-    descricao:"Uma fotógrafa que caiu em desgraça volta para a cidade natal.\nLá, reencontra um antigo amor e tenta recomeçar a vida.",
-    imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/welcome%20to%20san.jpg",
-    trailer:"https://www.youtube.com/embed/VKMluVzOWNY",
-    resumo:`Cho Sam Dal é uma fotógrafa que fez sucesso na cidade grande, mas vê sua carreira desmoronar após um escândalo.
-Sem saída, ela volta para Samdal-ri, sua cidade natal à beira-mar.
-
-Lá, ela reencontra Cho Yong Pil, amigo de infância e antigo amor, que nunca saiu da região.
-Enquanto tenta se reerguer, Sam Dal revive memórias, cura feridas antigas e redescobre o que realmente importa.
-
-É um dorama aconchegante, com clima de cidade pequena, personagens carismáticos e uma história de segunda chance na vida e no amor.`
-  },
-  {
-    nome:"Gyeongseong Creature",
-    tags:["suspense","terror","historico"],
-    nota:"8.3/10 – MyDramaList",
-    elenco:["Park Seo-joon", "Han So-hee", "Claudia Kim", "Wi Ha-joon", "Kim Hae-sook"],
-    descricao:"Em 1945, durante a ocupação japonesa, duas pessoas enfrentam uma criatura criada pela ganância humana.",
-    imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/gieogsong%20creature.webp",
-    trailer:"https://www.youtube.com/embed/X8Noy8MInY0",
-    resumo:`A história se passa em Gyeongseong, em 1945, período em que a Coreia estava sob ocupação japonesa.
-Jang Tae Sang é um comerciante influente, conhecido por saber de tudo o que acontece na cidade.
-
-Quando pessoas começam a desaparecer em uma instalação misteriosa, ele acaba se envolvendo com Yoon Chae Ok, uma jovem especialista em encontrar pessoas desaparecidas.
-Os dois descobrem experimentos secretos que deram origem a uma criatura monstruosa.
-
-O dorama mistura terror, suspense, ação e drama histórico.
-Além da criatura, também mostra a crueldade humana e o peso da guerra na vida das pessoas comuns.`
-  },
-  {
-    nome:"A Time Called You",
-    tags:["romance","fantasia","drama"],
-    nota:"8.4/10 – MyDramaList",
-    elenco:["Ahn Hyo-seop", "Jeon Yeo-been", "Kang Hoon", "Rowoon", "Park Hyuk-kwon"],
-    descricao:"Uma mulher em luto pelo namorado recebe um misterioso walkman.\nAo ouvi-lo, ela acaba viajando no tempo para 1998.",
-    imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/i%20time%20called%20you.webp",
-    trailer:"https://www.youtube.com/embed/c_sKheuGE7o",
-    resumo:`Han Jun Hee ainda sofre pela morte do namorado, Koo Yeon Jun.
-Um dia, ela recebe uma fita cassete e um antigo walkman.
-
-Ao apertar o play, ela acorda em 1998, no corpo de uma estudante chamada Kwon Min Joo.
-Lá, ela conhece Nam Si Heon, um garoto que é idêntico ao seu amor do presente.
-
-O dorama mistura viagem no tempo, mistério, romance e drama.
-É cheio de emoção, reviravoltas e reflexões sobre destino, perdas e segundas chances.`
-  },
-  {
-    nome:"Tale of the Nine Tailed",
-    tags:["fantasia","romance","acao"],
-    nota:"8.5/10 – MyDramaList",
-    elenco:["Lee Dong-wook", "Jo Bo-ah", "Kim Bum", "Kim Yong-ji", "Hwang Hee"],
-    descricao:"Um antigo espírito raposa de nove caudas vive no mundo moderno.\nEle reencontra um amor do passado enquanto caça criaturas perigosas.",
-    imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/tale%20of%20the%20nine%20talled.jfif",
-    trailer:"https://www.youtube.com/embed/VLzgY1JMRss",
-    resumo:`Lee Yeon é um gumiho, uma raposa de nove caudas que antes protegia montanhas.
-Agora, ele vive no mundo moderno, trabalhando para eliminar criaturas perigosas que ameaçam os humanos.
-
-Quando conhece Nam Ji Ah, uma produtora de TV determinada, ele começa a acreditar que ela pode ser a reencarnação de seu grande amor do passado.
-Ao mesmo tempo, seu meio-irmão Lee Rang causa problemas por ressentimento e dor acumulada.
-
-O dorama mistura fantasia, ação, romance e drama familiar.
-Tem clima sombrio em alguns momentos, mas também muitas cenas emocionantes e românticas.`
-  },
-  {
-    nome:"Strangers from Hell",
-    tags:["terror","suspense","psicologico"],
-    nota:"8.1/10 – MyDramaList",
-    elenco:["Im Si-wan", "Lee Dong-wook", "Lee Jung-eun", "Lee Hyun-wook", "Park Jong-hwan"],
-    descricao:"Um jovem se muda para uma pensão barata em Seul.\nLogo, ele percebe que há algo muito errado com seus vizinhos.",
-    imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/strangest%20from%20hell.webp",
-    trailer:"https://www.youtube.com/embed/bc85-DZwopU",
-    resumo:`Yoon Jong Woo se muda do interior para Seul em busca de emprego.
-Para economizar, ele aluga um quarto em uma pensão antiga e estranha.
-
-Com o tempo, começa a notar comportamentos bizarros e inquietantes nos outros moradores.
-Barulhos à noite, olhares estranhos e uma sensação constante de perigo tomam conta do lugar.
-
-Quanto mais ele tenta fugir daquela atmosfera, mais preso ele parece ficar.
-O dorama é pesado, claustrofóbico e cheio de tensão psicológica, ideal para quem gosta de histórias sombrias e perturbadoras.`
-  }
-
-
 ,
 {
- nome:"Crash Course in Romance",
- tags:["romance","comedia","drama"],
- nota:"8.8/10 – MyDramaList",
- elenco:["Jeon Do-yeon","Jung Kyung-ho","Lee Bong-ryun","Oh Eui-sik"],
- descricao:"Uma mãe dona de restaurante se envolve com um professor famoso.",
- imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/crash%20course.webp",
- trailer:"https://www.youtube.com/embed/M0roNIisQ5w",
- resumo:`Nam Haeng Seon é uma ex-atleta que hoje administra um pequeno restaurante.
-Sua filha entra no competitivo mundo das aulas particulares.
-Ela conhece Choi Chi Yeol, um professor famoso e frio.
-Os dois começam com conflitos,
-mas aos poucos criam uma ligação sincera.
-Mistura romance adulto com crítica ao sistema educacional.
-Leve, emocionante e muito popular.`
-},
-{
- nome:"My Dearest",
- tags:["historico","romance","intenso"],
- nota:"8.9/10 – MyDramaList",
- elenco:["Namkoong Min","Ahn Eun-jin","Lee Hak-joo","Lee Da-in"],
- descricao:"Amor em tempos de guerra na era Joseon.",
- imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/my%20dearest.jpeg",
- trailer:"https://www.youtube.com/embed/CZlxbotr8Ms",
- resumo:`Durante a invasão Qing,
-um homem misterioso e uma jovem nobre se aproximam.
-O amor deles nasce em meio à guerra e sofrimento.
-A história mostra lealdade, dor e sobrevivência.
-Visual cinematográfico e atuação intensa.
-Um dos maiores sucessos históricos recentes.`
-},
-{
- nome:"The Worst of Evil",
- tags:["acao","crime","intenso"],
- nota:"8.7/10 – MyDramaList",
- elenco:["Ji Chang-wook","Wi Ha-joon","Im Se-mi"],
- descricao:"Um policial se infiltra em cartel de drogas internacional.",
- imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/the%20worst%20of%20evil.webp",
- trailer:"https://www.youtube.com/embed/L5qtpG1kqfI",
- resumo:`Um policial aceita missão secreta perigosa.
-Ele se infiltra em organização criminosa poderosa.
-A tensão cresce conforme sua identidade quase é descoberta.
-Ação pesada e atmosfera sombria.
-Muito elogiado por realismo e atuações.`
-},
-{
- nome:"Bloodhounds",
- tags:["acao","crime","intenso"],
- nota:"8.6/10 – MyDramaList",
- elenco:["Woo Do-hwan","Lee Sang-yi","Kim Sae-ron"],
- descricao:"Dois boxeadores enfrentam agiotas violentos.",
- imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/bloodhounds.webp",
- trailer:"https://www.youtube.com/embed/eyiR8pO50JE",
- resumo:`Dois jovens entram no mundo perigoso dos empréstimos ilegais.
-Eles enfrentam um vilão cruel e poderoso.
-Cheio de cenas de luta intensas.
-Mostra amizade e lealdade.
-Rápido, violento e muito viciante.`
-},
-{
- nome:"Agency",
- tags:["drama","corporativo","intenso"],
- nota:"8.4/10 – MyDramaList",
- elenco:["Lee Bo-young","Son Na-eun","Jo Sung-ha"],
- descricao:"Uma executiva luta para sobreviver em empresa dominada por homens.",
- imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/agency.webp",
- trailer:"https://www.youtube.com/embed/UZgXPPo2YmU",
- resumo:`Go Ah In é a primeira mulher a chegar ao topo de uma agência de publicidade.
-Ela enfrenta preconceito e competição cruel.
-Mostra ambição e política corporativa.
-Drama adulto e estratégico.
-Muito comentado por sua crítica social.`
-},
-{
- nome:"Doctor Cha",
- tags:["romance","drama","superacao"],
- nota:"8.5/10 – MyDramaList",
- elenco:["Uhm Jung-hwa","Kim Byung-chul","Myung Se-bin"],
- descricao:"Uma dona de casa decide retomar carreira médica.",
- imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/doctor%20cha.jpg",
- trailer:"https://www.youtube.com/embed/qDjF9Bkib28",
- resumo:`Após anos dedicada à família,
-Cha Jung Sook decide voltar à medicina.
-Ela enfrenta desafios e redescobre sua identidade.
-O dorama fala sobre segunda chance.
-Emocionante e inspirador.`
-},
-{
- nome:"Island",
- tags:["fantasia","acao","terror"],
- nota:"8.3/10 – MyDramaList",
- elenco:["Kim Nam-gil","Lee Da-hee","Cha Eun-woo"],
- descricao:"Demônios atacam ilha misteriosa.",
- imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/island.webp",
- trailer:"https://www.youtube.com/embed/RJn21G18Ocs",
- resumo:`Uma mulher descobre estar ligada a forças sobrenaturais.
-Um caçador de demônios a protege.
-Mistura ação e fantasia sombria.
-Visual marcante e atmosfera intensa.`
-},
-{
- nome:"The Devil Judge",
- tags:["suspense","politico","intenso"],
- nota:"8.8/10 – MyDramaList",
- elenco:["Ji Sung","Kim Min-jung","Jinyoung"],
- descricao:"Um juiz transforma julgamentos em reality show nacional.",
- imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/the%20devil%20judge.jpg",
- trailer:"https://www.youtube.com/embed/EnJE8_oomP4",
- resumo:`Em um futuro distópico,
-julgamentos são transmitidos ao vivo.
-Um juiz carismático manipula o sistema.
-Questiona justiça e corrupção.
-Tenso e provocador.`
-},
-{
- nome:"Under the Queen's Umbrella",
- tags:["historico","drama","familia"],
- nota:"8.8/10 – MyDramaList",
- elenco:["Kim Hye-soo","Kim Hae-sook","Choi Won-young"],
- descricao:"Uma rainha tenta proteger seus filhos problemáticos.",
- imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/under%20the%20queen%20umbrella.webp",
- trailer:"https://www.youtube.com/embed/PW6oCJXONYk",
- resumo:`A rainha enfrenta intrigas no palácio.
-Ela luta para garantir o futuro dos filhos.
-Drama histórico focado em maternidade.
-Elegante e muito elogiado.`
-},
-{
- nome:"My Liberation Notes",
- tags:["drama","romance","realista"],
- nota:"8.9/10 – MyDramaList",
- elenco:["Lee Min-ki","Kim Ji-won","Son Seok-koo"],
- descricao:"Três irmãos buscam sentido na vida adulta.",
- imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/my%20liberation%20notes.webp",
- trailer:"https://www.youtube.com/embed/FQEm4dPZsNo",
- resumo:`Três irmãos vivem rotina cansativa no interior.
-Eles sonham com liberdade emocional.
-Um estranho misterioso muda suas vidas.
-Profundo, reflexivo e muito humano.`
-}
-
-,
-{
- nome:"Squid Game",
+ nome:"Round 6 (Squid Game)",
  nomeEN:"Squid Game",
  nomePT:"Round 6",
  tags:["intenso","triste","netflix"],
@@ -1716,7 +1472,7 @@ O dorama mistura crítica social, suspense e muita tensão.
 No Brasil, esse dorama também é conhecido como "Round 6".`
 },
 {
- nome:"All of Us Are Dead",
+ nome:"Estamos Mortos (All of Us Are Dead)",
  nomeEN:"All of Us Are Dead",
  nomePT:"Estamos Mortos",
  tags:["intenso","triste","escolar","netflix"],
@@ -1772,9 +1528,95 @@ Ao lado de novos amigos, ele entra em conflitos cada vez mais perigosos dentro e
 O dorama mostra amizade, lealdade, trauma e a dureza da vida escolar de forma intensa.
 
 É um dos dramas escolares mais elogiados dos últimos anos, perfeito para quem gosta de histórias fortes e realistas.`
+},
+{
+ nome:"Boys Over Flowers",
+ nomePT:"Boys Over Flowers",
+ nomeEN:"Boys Over Flowers",
+ tags:["romance","escolar","triste"],
+ nota:"8.1/10 – MyDramaList",
+ elenco:["Lee Min-ho","Ku Hye-sun","Kim Hyun-joong","Kim Bum","Kim Joon"],
+ descricao:"Uma jovem simples entra em uma escola de elite e se envolve com os garotos mais poderosos do colégio.\nClássico absoluto do romance escolar coreano.",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/boys%20over%20flowers.webp",
+ trailer:"https://www.youtube.com/embed/PW6oCJXONYk",
+ resumo:`Geum Jan Di é uma garota humilde que acaba entrando em uma escola frequentada pelos filhos das famílias mais ricas da Coreia.
+Lá ela cruza o caminho do F4, grupo formado pelos quatro garotos mais populares e temidos do colégio.
+
+O líder do grupo é Goo Jun Pyo, arrogante e impulsivo, mas que aos poucos começa a mudar por causa dela.
+Ao mesmo tempo, Jan Di se aproxima de Yoon Ji Hoo, o membro mais calmo e sensível do grupo.
+
+O dorama mistura romance, rivalidade, diferenças sociais e muitos conflitos escolares.
+Mesmo sendo um clássico mais antigo, continua muito procurado por fãs de doramas escolares e romances coreanos famosos.`
+},
+{
+ nome:"School 2015: Who Are You",
+ nomePT:"School 2015: Quem É Você?",
+ nomeEN:"School 2015: Who Are You",
+ tags:["escolar","romance","suspense"],
+ nota:"8.2/10 – MyDramaList",
+ elenco:["Kim So-hyun","Nam Joo-hyuk","Yook Sung-jae","Lee Pil-mo","Cho Soo-hyang"],
+ descricao:"Duas garotas idênticas têm destinos cruzados em uma escola marcada por bullying e segredos.\nDrama escolar com romance e mistério.",
+ imagem:"https://planetadorama.com.br/imagens/capa-padrao.jpg",
+ trailer:"https://www.youtube.com/embed/5IkR87l2aJ0",
+ resumo:`Go Eun Byul e Lee Eun Bi são gêmeas separadas que levam vidas completamente diferentes.
+Quando um acidente misterioso acontece, uma delas assume a vida da outra e passa a estudar em uma escola cheia de conflitos.
+
+O dorama fala sobre bullying, identidade, trauma e amizade, enquanto também constrói um triângulo amoroso marcante.
+É um dos títulos escolares mais conhecidos da franquia School e costuma aparecer entre os doramas de escola mais lembrados pelos fãs.`
+},
+{
+ nome:"School 2017",
+ nomePT:"School 2017",
+ nomeEN:"School 2017",
+ tags:["escolar","romance","alegre"],
+ nota:"7.8/10 – MyDramaList",
+ elenco:["Kim Se-jeong","Kim Jung-hyun","Jang Dong-yoon","Han Joo-wan","Han Sun-hwa"],
+ descricao:"Uma estudante tenta sobreviver à pressão escolar enquanto um misterioso aluno causa confusão na escola.\nLeve, jovem e divertido.",
+ imagem:"https://planetadorama.com.br/imagens/capa-padrao.jpg",
+ trailer:"https://www.youtube.com/embed/_R-c5HSEqP4",
+ resumo:`Ra Eun Ho é uma estudante alegre que sonha em entrar na faculdade de artes, mas vive lutando contra as cobranças da escola.
+Tudo muda quando um misterioso aluno conhecido como X começa a provocar confusões dentro do colégio.
+
+Entre punições, amizades, pressão acadêmica e romance, a história mostra o cotidiano de adolescentes tentando encontrar seu lugar.
+É um dorama escolar mais leve e fácil de assistir, bom para quem gosta de juventude, casal fofo e clima colegial.`
+},
+{
+ nome:"Dream High",
+ nomePT:"Dream High",
+ nomeEN:"Dream High",
+ tags:["escolar","romance","alegre"],
+ nota:"8.0/10 – MyDramaList",
+ elenco:["Suzy","Kim Soo-hyun","Taecyeon","IU","Wooyoung"],
+ descricao:"Jovens talentosos entram em uma escola de artes para realizar o sonho de se tornarem estrelas.\nMúsica, romance e juventude.",
+ imagem:"https://planetadorama.com.br/imagens/capa-padrao.jpg",
+ trailer:"https://www.youtube.com/embed/-B7r0QG2KqU",
+ resumo:`Dream High acompanha um grupo de jovens que entra em uma escola de artes com o sonho de se tornar cantor, dançarino ou astro da música.
+Cada personagem chega com inseguranças, talentos e dificuldades próprias.
+
+Ao longo da história, eles enfrentam rivalidade, amadurecimento, apresentações e romances que nascem dentro da escola.
+É um dos doramas escolares musicais mais famosos da Coreia e continua sendo muito lembrado por fãs antigos e por quem gosta de séries juvenis coreanas.`
+},
+{
+ nome:"Moment at Eighteen",
+ nomePT:"Moment at Eighteen",
+ nomeEN:"Moment at Eighteen",
+ tags:["escolar","romance","triste"],
+ nota:"8.4/10 – MyDramaList",
+ elenco:["Ong Seong-wu","Kim Hyang-gi","Shin Seung-ho","Kang Ki-young","Moonbin"],
+ descricao:"Um estudante solitário tenta recomeçar a vida em uma nova escola.\nDrama escolar sensível, romântico e realista.",
+ imagem:"https://planetadorama.com.br/imagens/capa-padrao.jpg",
+ trailer:"https://www.youtube.com/embed/wnQ-A0g9M9U",
+ resumo:`Choi Joon Woo é um garoto reservado que precisa se adaptar a uma nova escola depois de vários problemas no passado.
+Lá ele conhece Yoo Soo Bin, uma aluna brilhante que vive sob forte pressão da mãe, e Ma Hwi Young, o estudante popular da turma.
+
+O dorama mostra amizade, insegurança, amadurecimento e a dor típica dessa fase da vida.
+É uma história escolar mais sensível e realista, muito indicada para quem gosta de juventude, romance e desenvolvimento emocional dos personagens.`
 }
 
-];function criarSlug(nome, nomeEN) {
+
+];
+
+function criarSlug(nome, nomeEN) {
   const base = nomeEN || nome;
   return String(base || "")
     .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
@@ -1785,107 +1627,4 @@ O dorama mostra amizade, lealdade, trauma e a dureza da vida escolar de forma in
 
 doramas.forEach(d => {
   d.slug = criarSlug(d.nome, d.nomeEN);
-
 });
-,
-{
- nome:"Round 6 (Squid Game)",
- nomeEN:"Squid Game",
- nomePT:"Round 6",
- tags:["intenso","triste","netflix"],
- nota:"8.4/10 – MyDramaList",
- elenco:["Lee Jung-jae","Park Hae-soo","Wi Ha-joon","Jung Ho-yeon","Oh Young-soo"],
- descricao:"Jogos mortais com prêmio bilionário.",
- imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/round%206.jpg",
- trailer:"https://www.youtube.com/embed/oqxAJKy0ii4"
-},
-{
- nome:"Estamos Mortos (All of Us Are Dead)",
- nomeEN:"All of Us Are Dead",
- nomePT:"Estamos Mortos",
- tags:["intenso","escolar","netflix"],
- nota:"8.4/10 – MyDramaList",
- elenco:["Park Ji-hu","Yoon Chan-young","Cho Yi-hyun","Lomon"],
- descricao:"Estudantes lutam para sobreviver a um surto zumbi.",
- imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/all%20of%20us%20are%20dead.jfif",
- trailer:"https://www.youtube.com/embed/bmbl65oiUgA"
-},
-{
- nome:"Extraordinary You",
- nomeEN:"Extraordinary You",
- nomePT:"Extraordinary You",
- tags:["romance","fantasia","escolar"],
- nota:"8.2/10 – MyDramaList",
- elenco:["Kim Hye-yoon","Rowoon","Lee Jae-wook"],
- descricao:"Uma estudante descobre que vive dentro de um manhwa.",
- imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/extraordinary%20you.jpg",
- trailer:"https://www.youtube.com/embed/P7tXFw3wtmw"
-},
-{
- nome:"Weak Hero Class 1",
- nomeEN:"Weak Hero Class 1",
- nomePT:"Weak Hero Class 1",
- tags:["intenso","escolar"],
- nota:"8.8/10 – MyDramaList",
- elenco:["Park Ji-hoon","Choi Hyun-wook"],
- descricao:"Aluno aparentemente frágil enfrenta bullying.",
- imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/weak%20hero%20class.jpg",
- trailer:"https://www.youtube.com/embed/5LaEQSN-q7A"
-},
-{
- nome:"Boys Over Flowers",
- nomeEN:"Boys Over Flowers",
- nomePT:"Boys Over Flowers",
- tags:["romance","escolar"],
- nota:"8.1/10 – MyDramaList",
- elenco:["Lee Min-ho","Ku Hye-sun","Kim Hyun-joong"],
- descricao:"Clássico romance escolar com o grupo F4.",
- imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/boys%20over%20flowers.webp",
- trailer:"https://www.youtube.com/embed/PW6oCJXONYk"
-},
-{
- nome:"School 2015: Who Are You",
- nomeEN:"School 2015: Who Are You",
- nomePT:"School 2015",
- tags:["romance","escolar"],
- nota:"8.2/10 – MyDramaList",
- elenco:["Kim So-hyun","Nam Joo-hyuk"],
- descricao:"Drama escolar com mistério e identidade trocada.",
- imagem:"https://planetadorama.com.br/imagens/capa-padrao.jpg",
- trailer:"https://www.youtube.com/embed/5IkR87l2aJ0"
-},
-{
- nome:"School 2017",
- nomeEN:"School 2017",
- nomePT:"School 2017",
- tags:["romance","escolar"],
- nota:"7.8/10 – MyDramaList",
- elenco:["Kim Se-jeong","Kim Jung-hyun"],
- descricao:"Vida escolar cheia de pressão e romance.",
- imagem:"https://planetadorama.com.br/imagens/capa-padrao.jpg",
- trailer:"https://www.youtube.com/embed/_R-c5HSEqP4"
-},
-{
- nome:"Dream High",
- nomeEN:"Dream High",
- nomePT:"Dream High",
- tags:["romance","escolar"],
- nota:"8.0/10 – MyDramaList",
- elenco:["Suzy","Kim Soo-hyun","IU"],
- descricao:"Estudantes de artes sonham virar estrelas.",
- imagem:"https://planetadorama.com.br/imagens/capa-padrao.jpg",
- trailer:"https://www.youtube.com/embed/-B7r0QG2KqU"
-},
-{
- nome:"Moment at Eighteen",
- nomeEN:"Moment at Eighteen",
- nomePT:"Moment at Eighteen",
- tags:["romance","escolar"],
- nota:"8.4/10 – MyDramaList",
- elenco:["Ong Seong-wu","Kim Hyang-gi"],
- descricao:"Drama juvenil sobre amizade e crescimento.",
- imagem:"https://planetadorama.com.br/imagens/capa-padrao.jpg",
- trailer:"https://www.youtube.com/embed/wnQ-A0g9M9U"
-}
-
-];
