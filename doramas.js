@@ -30,7 +30,7 @@ No Brasil, esse dorama também é conhecido como "Pousando no Amor".`,
  trailer:"https://www.youtube.com/embed/eXMjTXL2Vks"
 },
 {
- nome:"Goblin: O Solitário e Grande Deus (Goblin)",
+ nome:"Goblin",
   nomePT:"Goblin: O Solitário e Grande Deus",
   nomeEN:"Goblin",
  tags:["romance","fantasia","triste"],
@@ -68,7 +68,7 @@ No Brasil, esse dorama também é conhecido como "Goblin: O Solitário e Grande 
  trailer:"https://www.youtube.com/embed/mh4R-WXRhQo"
 },
 {
- nome:"Mulher Forte Do Bong-soon (Strong Woman Do Bong Soon)",
+ nome:"Strong Woman Do Bong Soon",
   nomePT:"Mulher Forte Do Bong-soon",
   nomeEN:"Strong Woman Do Bong Soon",
  tags:["alegre","comedia","romance"],
@@ -159,7 +159,7 @@ mas é marcado por destino e sacrifício.
 com muita emoção e reflexões sobre arrependimento e perdão.`
 },
 {
- nome:"Descendentes do Sol (Descendants of the Sun)",
+ nome:"Descendants of the Sun",
   nomePT:"Descendentes do Sol",
   nomeEN:"Descendants of the Sun",
  tags:["romance","intenso"],
@@ -188,7 +188,7 @@ além de um amor que precisa sobreviver em meio ao caos.
 No Brasil, esse dorama também é conhecido como "Descendentes do Sol".`
 },
 {
- nome:"Meu Amor das Estrelas (My Love from the Star)",
+ nome:"My Love from the Star",
   nomePT:"Meu Amor das Estrelas",
   nomeEN:"My Love from the Star",
  tags:["romance","comedia","fantasia"],
@@ -219,7 +219,7 @@ de uma forma leve e emocionante.
 No Brasil, esse dorama também é conhecido como "Meu Amor das Estrelas".`
 },
 {
- nome:"Fada do Levantamento de Peso Kim Bok-Joo (Weightlifting Fairy Kim Bok Joo)",
+ nome:"Weightlifting Fairy Kim Bok Joo",
   nomePT:"Fada do Levantamento de Peso Kim Bok-Joo",
   nomeEN:"Weightlifting Fairy Kim Bok Joo",
  tags:["alegre","romance","comedia"],
@@ -250,7 +250,7 @@ Uma história simples, mas cheia de coração.
 No Brasil, esse dorama também é conhecido como "Fada do Levantamento de Peso Kim Bok-Joo".`
 },
 {
- nome:"Beleza Verdadeira (True Beauty)",
+ nome:"True Beauty",
   nomePT:"Beleza Verdadeira",
   nomeEN:"True Beauty",
  tags:["alegre","romance","comedia"],
@@ -282,7 +282,7 @@ Mostra que beleza verdadeira vai muito além da aparência.
 No Brasil, esse dorama também é conhecido como "Beleza Verdadeira".`
 },
 {
- nome:"Amantes da Lua: Coração Escarlate Ryeo (Moon Lovers: Scarlet Heart Ryeo)",
+ nome:"Moon Lovers: Scarlet Heart Ryeo",
   nomePT:"Amantes da Lua: Coração Escarlate Ryeo",
   nomeEN:"Moon Lovers: Scarlet Heart Ryeo",
  tags:["romance","triste","intenso"],
@@ -311,7 +311,7 @@ O dorama mistura história, política e paixão profunda.
 No Brasil, esse dorama também é conhecido como "Amantes da Lua: Coração Escarlate Ryeo".`
 },
 {
- nome:"Os Herdeiros (The Heirs)",
+ nome:"The Heirs",
   nomePT:"Os Herdeiros",
   nomeEN:"The Heirs",
  tags:["romance","triste"],
@@ -764,7 +764,7 @@ Mostra crescimento pessoal e reconciliação.
 Delicado e emocionante.`
 },
 {
- nome:"Flor do Mal (Flower of Evil)",
+ nome:"Flower of Evil",
   nomePT:"Flor do Mal",
   nomeEN:"Flower of Evil",
  tags:["intenso","romance","triste"],
@@ -1322,7 +1322,7 @@ Sua esposa luta para provar sua inocência.
 Suspense cheio de tensão.`
 },
 {
- nome:"Rainha das Lágrimas (Queen of Tears)",
+ nome:"Queen of Tears",
   nomePT:"Rainha das Lágrimas",
   nomeEN:"Queen of Tears",
  tags:["romance","triste"],
@@ -1692,7 +1692,7 @@ Profundo, reflexivo e muito humano.`
 
 ,
 {
- nome:"Round 6 (Squid Game)",
+ nome:"Squid Game",
  nomeEN:"Squid Game",
  nomePT:"Round 6",
  tags:["intenso","triste","netflix"],
@@ -1716,7 +1716,7 @@ O dorama mistura crítica social, suspense e muita tensão.
 No Brasil, esse dorama também é conhecido como "Round 6".`
 },
 {
- nome:"Estamos Mortos (All of Us Are Dead)",
+ nome:"All of Us Are Dead",
  nomeEN:"All of Us Are Dead",
  nomePT:"Estamos Mortos",
  tags:["intenso","triste","escolar","netflix"],
