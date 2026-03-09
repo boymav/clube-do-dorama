@@ -1689,90 +1689,91 @@ Eles sonham com liberdade emocional.
 Um estranho misterioso muda suas vidas.
 Profundo, reflexivo e muito humano.`
 }
-
 ,
 {
- nome:"Squid Game",
- nomeEN:"Squid Game",
- nomePT:"Round 6",
- tags:["intenso","triste","netflix"],
- nota:"8.4/10 – MyDramaList",
- elenco:["Lee Jung-jae","Park Hae-soo","Wi Ha-joon","Jung Ho-yeon","Oh Young-soo"],
- descricao:"Centenas de pessoas endividadas aceitam participar de jogos infantis com prêmio bilionário.\nMas perder significa morrer.\nTenso, brutal e viciante.",
- imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/round%206.jpg",
- trailer:"https://www.youtube.com/embed/oqxAJKy0ii4",
- resumo:`Seong Gi Hun é um homem endividado e sem rumo na vida.
-Um dia, ele recebe um convite misterioso para participar de jogos com um prêmio enorme em dinheiro.
+ nome:"Boys Over Flowers",
+ nomePT:"Boys Over Flowers",
+ nomeEN:"Boys Over Flowers",
+ tags:["romance","escolar","triste"],
+ nota:"8.1/10 – MyDramaList",
+ elenco:["Lee Min-ho", "Ku Hye-sun", "Kim Hyun-joong", "Kim Bum", "Kim Joon"],
+ descricao:"Uma jovem simples entra em uma escola de elite e se envolve com os garotos mais poderosos do colégio.\nClássico absoluto do romance escolar coreano.",
+ imagem:"https://planetadorama.com.br/imagens/capa-padrao.jpg",
+ trailer:"https://www.youtube.com/embed/oau8Y2nWkR0",
+ resumo:`Geum Jan Di é uma garota humilde que acaba entrando em uma escola frequentada pelos filhos das famílias mais ricas da Coreia.
+Lá ela cruza o caminho do F4, grupo formado pelos quatro garotos mais populares e temidos do colégio.
 
-Ao chegar ao local, descobre que centenas de pessoas estão na mesma situação.
-Todos aceitam competir em brincadeiras infantis, mas logo percebem a verdade cruel:
-quem perde, morre.
+O líder do grupo é Goo Jun Pyo, arrogante e impulsivo, mas que aos poucos começa a mudar por causa dela.
+Ao mesmo tempo, Jan Di se aproxima de Yoon Ji Hoo, o membro mais calmo e sensível do grupo.
 
-Enquanto tenta sobreviver, Gi Hun cria alianças e enfrenta escolhas morais difíceis.
-O dorama mistura crítica social, suspense e muita tensão.
-
-É uma história sobre desespero, desigualdade e até onde alguém vai por dinheiro.
-
-No Brasil, esse dorama também é conhecido como "Round 6".`
+O dorama mistura romance, rivalidade, diferenças sociais e muitos conflitos escolares.
+Mesmo sendo um clássico mais antigo, continua muito procurado por fãs de doramas escolares e romances coreanos famosos.`
 },
 {
- nome:"All of Us Are Dead",
- nomeEN:"All of Us Are Dead",
- nomePT:"Estamos Mortos",
- tags:["intenso","triste","escolar","netflix"],
- nota:"8.4/10 – MyDramaList",
- elenco:["Park Ji-hu","Yoon Chan-young","Cho Yi-hyun","Lomon","Yoo In-soo"],
- descricao:"Um surto zumbi toma conta de uma escola e um grupo de estudantes precisa lutar para sobreviver.\nMuito tenso e cheio de ação.\nPerfeito para quem gosta de sobrevivência e suspense.",
- imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/all%20of%20us%20are%20dead.jfif",
- trailer:"https://www.youtube.com/embed/bmbl65oiUgA",
- resumo:`Tudo começa quando um experimento dá errado e um vírus se espalha dentro de uma escola.
-Em pouco tempo, alunos e professores começam a se transformar em zumbis.
-
-Presos no colégio, um grupo de estudantes tenta sobreviver enquanto procura uma forma de escapar.
-Sem ajuda imediata, eles precisam enfrentar medo, fome, perdas e decisões difíceis.
-
-O dorama mistura ação, suspense e emoção, mostrando amizade, coragem e desespero em meio ao caos.
-É uma das séries coreanas mais populares da Netflix para quem gosta de tensão e sobrevivência.
-
-No Brasil, esse dorama também é conhecido como "Estamos Mortos".`
-},
-{
- nome:"Extraordinary You",
- nomeEN:"Extraordinary You",
- nomePT:"Extraordinary You",
- tags:["romance","alegre","fantasia","escolar"],
+ nome:"School 2015: Who Are You",
+ nomePT:"School 2015: Quem É Você?",
+ nomeEN:"School 2015: Who Are You",
+ tags:["escolar","romance","suspense"],
  nota:"8.2/10 – MyDramaList",
- elenco:["Kim Hye-yoon","Rowoon","Lee Jae-wook","Lee Na-eun","Jung Gun-joo"],
- descricao:"Uma estudante descobre que vive dentro de um manhwa e decide mudar o próprio destino.\nRomance escolar com fantasia e humor.\nFofo, diferente e viciante.",
- imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/extraordinary%20you.jpg",
- trailer:"https://www.youtube.com/embed/P7tXFw3wtmw",
- resumo:`Eun Dan Oh é uma estudante de escola rica que um dia descobre algo chocante:
-ela é apenas uma personagem de um manhwa, e nem sequer é a protagonista da história.
+ elenco:["Kim So-hyun", "Nam Joo-hyuk", "Yook Sung-jae", "Lee Pil-mo", "Cho Soo-hyang"],
+ descricao:"Duas garotas idênticas têm destinos cruzados em uma escola marcada por bullying e segredos.\nDrama escolar com romance e mistério.",
+ imagem:"https://planetadorama.com.br/imagens/capa-padrao.jpg",
+ trailer:"https://www.youtube.com/embed/5IkR87l2aJ0",
+ resumo:`Go Eun Byul e Lee Eun Bi são gêmeas separadas que levam vidas completamente diferentes.
+Quando um acidente misterioso acontece, uma delas assume a vida da outra e passa a estudar em uma escola cheia de conflitos.
 
-Ao perceber que seu destino já foi escrito, ela decide lutar para mudar tudo.
-Nesse processo, conhece um garoto sem nome dentro da história e começa a se apaixonar.
-
-O dorama mistura romance escolar, fantasia e comédia de um jeito leve e criativo.
-É perfeito para quem gosta de triângulo amoroso, cenas fofas e histórias de juventude com um toque diferente.`
+O dorama fala sobre bullying, identidade, trauma e amizade, enquanto também constrói um triângulo amoroso marcante.
+É um dos títulos escolares mais conhecidos da franquia School e costuma aparecer entre os doramas de escola mais lembrados pelos fãs.`
 },
 {
- nome:"Weak Hero Class 1",
- nomeEN:"Weak Hero Class 1",
- nomePT:"Weak Hero Class 1",
- tags:["intenso","triste","escolar"],
- nota:"8.8/10 – MyDramaList",
- elenco:["Park Ji-hoon","Choi Hyun-wook","Hong Kyung","Shin Seung-ho","Lee Yeon"],
- descricao:"Um aluno quieto e brilhante enfrenta violência escolar usando inteligência e estratégia.\nDrama escolar pesado e muito elogiado.\nTenso do começo ao fim.",
- imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/weak%20hero%20class.jpg",
- trailer:"https://www.youtube.com/embed/5LaEQSN-q7A",
- resumo:`Yeon Si Eun é um dos melhores alunos da escola, mas fisicamente parece frágil.
-Por trás da aparência calma, ele usa inteligência, observação e estratégia para enfrentar o bullying e a violência ao seu redor.
+ nome:"School 2017",
+ nomePT:"School 2017",
+ nomeEN:"School 2017",
+ tags:["escolar","romance","alegre"],
+ nota:"7.8/10 – MyDramaList",
+ elenco:["Kim Se-jeong", "Kim Jung-hyun", "Jang Dong-yoon", "Han Joo-wan", "Han Sun-hwa"],
+ descricao:"Uma estudante tenta sobreviver à pressão escolar enquanto um misterioso aluno causa confusão na escola.\nLeve, jovem e divertido.",
+ imagem:"https://planetadorama.com.br/imagens/capa-padrao.jpg",
+ trailer:"https://www.youtube.com/embed/_R-c5HSEqP4",
+ resumo:`Ra Eun Ho é uma estudante alegre que sonha em entrar na faculdade de artes, mas vive lutando contra as cobranças da escola.
+Tudo muda quando um misterioso aluno conhecido como X começa a provocar confusões dentro do colégio.
 
-Ao lado de novos amigos, ele entra em conflitos cada vez mais perigosos dentro e fora da escola.
-O dorama mostra amizade, lealdade, trauma e a dureza da vida escolar de forma intensa.
+Entre punições, amizades, pressão acadêmica e romance, a história mostra o cotidiano de adolescentes tentando encontrar seu lugar.
+É um dorama escolar mais leve e fácil de assistir, bom para quem gosta de juventude, casal fofo e clima colegial.`
+},
+{
+ nome:"Dream High",
+ nomePT:"Dream High",
+ nomeEN:"Dream High",
+ tags:["escolar","romance","alegre"],
+ nota:"8.0/10 – MyDramaList",
+ elenco:["Suzy", "Kim Soo-hyun", "Taecyeon", "IU", "Wooyoung"],
+ descricao:"Jovens talentosos entram em uma escola de artes para realizar o sonho de se tornarem estrelas.\nMúsica, romance e juventude.",
+ imagem:"https://planetadorama.com.br/imagens/capa-padrao.jpg",
+ trailer:"https://www.youtube.com/embed/-B7r0QG2KqU",
+ resumo:`Dream High acompanha um grupo de jovens que entra em uma escola de artes com o sonho de se tornar cantor, dançarino ou astro da música.
+Cada personagem chega com inseguranças, talentos e dificuldades próprias.
 
-É um dos dramas escolares mais elogiados dos últimos anos, perfeito para quem gosta de histórias fortes e realistas.`
+Ao longo da história, eles enfrentam rivalidade, amadurecimento, apresentações e romances que nascem dentro da escola.
+É um dos doramas escolares musicais mais famosos da Coreia e continua sendo muito lembrado por fãs antigos e por quem gosta de séries juvenis coreanas.`
+},
+{
+ nome:"Moment at Eighteen",
+ nomePT:"Moment at Eighteen",
+ nomeEN:"Moment at Eighteen",
+ tags:["escolar","romance","triste"],
+ nota:"8.4/10 – MyDramaList",
+ elenco:["Ong Seong-wu", "Kim Hyang-gi", "Shin Seung-ho", "Kang Ki-young", "Moonbin"],
+ descricao:"Um estudante solitário tenta recomeçar a vida em uma nova escola.\nDrama escolar sensível, romântico e realista.",
+ imagem:"https://planetadorama.com.br/imagens/capa-padrao.jpg",
+ trailer:"https://www.youtube.com/embed/wnQ-A0g9M9U",
+ resumo:`Choi Joon Woo é um garoto reservado que precisa se adaptar a uma nova escola depois de vários problemas no passado.
+Lá ele conhece Yoo Soo Bin, uma aluna brilhante que vive sob forte pressão da mãe, e Ma Hwi Young, o estudante popular da turma.
+
+O dorama mostra amizade, insegurança, amadurecimento e a dor típica dessa fase da vida.
+É uma história escolar mais sensível e realista, muito indicada para quem gosta de juventude, romance e desenvolvimento emocional dos personagens.`
 }
+
 
 ];function criarSlug(nome, nomeEN) {
   const base = nomeEN || nome;
