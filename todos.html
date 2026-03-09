@@ -97,7 +97,7 @@
   <p>💜 Planeta Dorama 🌍</p>
 </footer>
 
-<script src="doramas.js"></script>
+<script src="doramas.js?v=20260309"></script>
 <script>
   // Títulos em PT + EN para exibição amigável
   const TITULOS_PT = {
@@ -122,12 +122,22 @@
 
 </script>
 <script>
+  function criarSlugLocal(nome, nomeEN){
+    const base = nomeEN || nome;
+    return String(base || "")
+      .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/(^-|-$)/g, "");
+  }
+
   function carregarTodos(){
     const container = document.getElementById("lista");
     if(!Array.isArray(doramas)) return;
 
     container.innerHTML = doramas.map(d => {
-      const url = "doramas/" + d.slug + ".html";
+      const slug = d.slug || criarSlugLocal(d.nome, d.nomeEN);
+      const url = "doramas/" + slug + ".html";
       return `
         <div class="card" onclick="window.location.href='${url}'">
           <img src="${d.imagem}" alt="${d.nome}" loading="lazy">
