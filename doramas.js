@@ -1699,7 +1699,7 @@ Profundo, reflexivo e muito humano.`
  elenco:["Lee Min-ho","Ku Hye-sun","Kim Hyun-joong","Kim Bum","Kim Joon"],
  descricao:"Uma jovem simples entra em uma escola de elite e se envolve com os garotos mais poderosos do colégio.\nClássico absoluto do romance escolar coreano.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/boys%20over%20flowers.webp",
- trailer:"https://www.youtube.com/embed/PW6oCJXONYk",
+ trailer:"https://www.youtube.com/embed/RNf7htKrZuc",
  resumo:`Geum Jan Di é uma garota humilde que acaba entrando em uma escola frequentada pelos filhos das famílias mais ricas da Coreia.
 Lá ela cruza o caminho do F4, grupo formado pelos quatro garotos mais populares e temidos do colégio.
 
