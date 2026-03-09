@@ -290,9 +290,10 @@
 
 <section id="semana">
   <h2>🌟 Dorama da Semana</h2>
+  <p id="semana-info" style="text-align:center; font-weight:bold; color:#7a1b55; margin: 0 auto 10px;"></p>
   <div class="cards" id="dorama-semana"></div>
   <p style="text-align:center; max-width:800px; margin: 14px auto 0; opacity:0.85;">
-    Esse dorama muda automaticamente (aleatório) quando a página abre.
+    Este dorama muda automaticamente uma vez por semana.
   </p>
 </section>
 
@@ -369,11 +370,57 @@
   }
 
   // ===== DORAMA DA SEMANA =====
+  function formatarSemana(data){
+    const d = new Date(data);
+    const dia = d.getDay();
+    const diffSeg = (dia === 0 ? -6 : 1 - dia);
+
+    const inicio = new Date(d);
+    inicio.setDate(d.getDate() + diffSeg);
+    inicio.setHours(0, 0, 0, 0);
+
+    const fim = new Date(inicio);
+    fim.setDate(inicio.getDate() + 6);
+
+    const opt = { day:"2-digit", month:"long" };
+    const inicioTxt = inicio.toLocaleDateString("pt-BR", opt);
+    const fimTxt = fim.toLocaleDateString("pt-BR", opt);
+
+    return "Semana de " + inicioTxt + " a " + fimTxt;
+  }
+
   function carregarDoramaDaSemana() {
     const area = document.getElementById("dorama-semana");
+    const info = document.getElementById("semana-info");
     if (!area || !Array.isArray(doramas) || doramas.length === 0) return;
 
-    const escolhido = doramas[Math.floor(Math.random() * doramas.length)];
+    const chave = "pd_dorama_semana";
+    const salvo = JSON.parse(localStorage.getItem(chave) || "{}");
+
+    const agora = Date.now();
+    const umaSemana = 7 * 24 * 60 * 60 * 1000;
+
+    let escolhido = null;
+    let dataBase = agora;
+
+    if (salvo.nome && salvo.data && (agora - salvo.data) < umaSemana) {
+      escolhido = doramas.find(d => d.nome === salvo.nome);
+      dataBase = salvo.data;
+    }
+
+    if (!escolhido) {
+      escolhido = doramas[Math.floor(Math.random() * doramas.length)];
+      dataBase = agora;
+      localStorage.setItem(chave, JSON.stringify({
+        nome: escolhido.nome,
+        data: dataBase
+      }));
+    }
+
+    if (info) {
+      info.textContent = formatarSemana(dataBase);
+    }
+
     const slug = escolhido.slug || criarSlug(escolhido.nome, escolhido.nomeEN);
     const url = "/doramas/" + slug + ".html";
 
