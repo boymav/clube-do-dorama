@@ -250,7 +250,7 @@ Uma história simples, mas cheia de coração.
 No Brasil, esse dorama também é conhecido como "Fada do Levantamento de Peso Kim Bok-Joo".`
 },
 {
- nome:"True Beauty",
+ nome:"Beleza Verdadeira (True Beauty)",
   nomePT:"Beleza Verdadeira",
   nomeEN:"True Beauty",
  tags:["alegre","romance","comedia"],
