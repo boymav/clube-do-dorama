@@ -1773,6 +1773,55 @@ Lá ele conhece Yoo Soo Bin, uma aluna brilhante que vive sob forte pressão da 
 O dorama mostra amizade, insegurança, amadurecimento e a dor típica dessa fase da vida.
 É uma história escolar mais sensível e realista, muito indicada para quem gosta de juventude, romance e desenvolvimento emocional dos personagens.`
 }
+ ,
+{
+  nome:"Hi Bye, Mama!",
+  nomePT:"Oi, Tchau, Mamãe!",
+  nomeEN:"Hi Bye, Mama!",
+  tags:["triste","romance","fantasia"],
+  nota:"8.5/10 – MyDramaList",
+  elenco:["Kim Tae-hee", "Lee Kyu-hyung", "Go Bo-gyeol", "Seo Woo-jin", "Kim Mi-kyung"],
+  descricao:"Uma mãe que morreu recebe a chance de voltar por um tempo.\nEla tenta se despedir da filha e do marido.\nUm dos doramas mais emocionantes dos últimos anos.",
+  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/hi-bye-mama.jpg",
+  trailer:"https://www.youtube.com/embed/1EWJtAELgYQ",
+  resumo:`Cha Yu Ri morreu de forma inesperada e deixou para trás o marido e a filha ainda pequena.
+Anos depois, ela recebe uma chance impossível: voltar à vida por 49 dias.
+
+Ao retornar, Yu Ri encontra a família tentando seguir em frente,
+mas percebe que o amor que sente por eles continua igual.
+
+O dorama mostra luto, maternidade, saudade e o peso de uma despedida que nunca aconteceu de verdade.
+
+É uma história extremamente sensível,
+cheia de cenas emocionantes e reflexões sobre família, amor e recomeço.
+
+No Brasil, esse dorama também é conhecido como "Oi, Tchau, Mamãe!".`
+}
+,
+{
+  nome:"Uncontrollably Fond",
+  nomePT:"Indomável Sonhador",
+  nomeEN:"Uncontrollably Fond",
+  tags:["triste","romance","intenso"],
+  nota:"8.1/10 – MyDramaList",
+  elenco:["Kim Woo-bin", "Bae Suzy", "Lim Ju-hwan", "Lim Ju-eun", "Jin Kyung"],
+  descricao:"Um astro famoso reencontra seu primeiro amor.\nSegredos do passado e muita dor cercam o casal.\nRomance melodramático feito para quem quer chorar.",
+  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/uncontrollably-fond.jpg",
+  trailer:"https://www.youtube.com/embed/lQvc9j0a1Rw",
+  resumo:`Shin Joon Young é um ator e cantor muito famoso, mas por trás da imagem de celebridade ele carrega dores profundas.
+No Eul é uma produtora de documentários que cruza novamente o caminho dele depois de muitos anos.
+
+O reencontro dos dois revive sentimentos antigos,
+mágoas do passado e segredos que nunca foram resolvidos.
+
+O dorama aposta em romance intenso,
+sofrimento, saudade e escolhas difíceis.
+
+É uma das histórias mais lembradas por quem procura doramas tristes,
+com clima melancólico e cenas feitas para mexer com o coração.
+
+No Brasil, esse dorama também é conhecido como "Indomável Sonhador".`
+}
 
 ];function criarSlug(nome, nomeEN) {
   const base = nomeEN || nome;
