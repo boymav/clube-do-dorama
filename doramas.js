@@ -1822,7 +1822,31 @@ com clima melancólico e cenas feitas para mexer com o coração.
 
 No Brasil, esse dorama também é conhecido como "Indomável Sonhador".`
 }
+,
+{
+  nome:"Youth of May",
+  nomePT:"Juventude de Maio",
+  nomeEN:"Youth of May",
+  tags:["romance","triste","histórico"],
+  nota:"8.8/10 – MyDramaList",
+  elenco:["Lee Do-hyun","Go Min-si","Lee Sang-yi","Geum Sae-rok"],
+  descricao:"Um romance nasce durante um momento turbulento da história da Coreia.",
+  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/youth-of-may.jpg",
+  trailer:"https://www.youtube.com/embed/RHq4q9nY6rA",
+  resumo:`Ambientado em 1980 durante o levante de Gwangju, Youth of May conta a história
+de Hwang Hee Tae, um estudante de medicina brilhante e cheio de sonhos,
+e Kim Myung Hee, uma enfermeira determinada que luta para sobreviver.
 
+Os dois acabam se conhecendo de forma inesperada e começam um romance
+em meio a um período extremamente turbulento da história da Coreia.
+
+O dorama mistura romance, política, juventude e tragédia,
+criando uma história profundamente emocionante e marcante.
+
+Youth of May é considerado por muitos fãs um dos doramas mais
+emocionantes dos últimos anos.`
+}
+ 
 ];function criarSlug(nome, nomeEN) {
   const base = nomeEN || nome;
   return String(base || "")
