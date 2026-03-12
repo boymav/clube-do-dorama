@@ -1783,7 +1783,7 @@ O dorama mostra amizade, insegurança, amadurecimento e a dor típica dessa fase
   elenco:["Kim Tae-hee", "Lee Kyu-hyung", "Go Bo-gyeol", "Seo Woo-jin", "Kim Mi-kyung"],
   descricao:"Uma mãe que morreu recebe a chance de voltar por um tempo.\nEla tenta se despedir da filha e do marido.\nUm dos doramas mais emocionantes dos últimos anos.",
   imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/hi%20bye%20mama.jpg",
-  trailer:"https://www.youtube.com/embed/AQB3n-IMT0Q",
+  trailer:"https://www.youtube.com/embed/5NLka4Zg_nE",
   resumo:`Cha Yu Ri morreu de forma inesperada e deixou para trás o marido e a filha ainda pequena.
 Anos depois, ela recebe uma chance impossível: voltar à vida por 49 dias.
 
