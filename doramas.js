@@ -1782,7 +1782,7 @@ O dorama mostra amizade, insegurança, amadurecimento e a dor típica dessa fase
   nota:"8.5/10 – MyDramaList",
   elenco:["Kim Tae-hee", "Lee Kyu-hyung", "Go Bo-gyeol", "Seo Woo-jin", "Kim Mi-kyung"],
   descricao:"Uma mãe que morreu recebe a chance de voltar por um tempo.\nEla tenta se despedir da filha e do marido.\nUm dos doramas mais emocionantes dos últimos anos.",
-  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/hi-bye-mama.jpg",
+  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/hi%20bye%20mama.jpg",
   trailer:"https://www.youtube.com/embed/1EWJtAELgYQ",
   resumo:`Cha Yu Ri morreu de forma inesperada e deixou para trás o marido e a filha ainda pequena.
 Anos depois, ela recebe uma chance impossível: voltar à vida por 49 dias.
@@ -1806,7 +1806,7 @@ No Brasil, esse dorama também é conhecido como "Oi, Tchau, Mamãe!".`
   nota:"8.1/10 – MyDramaList",
   elenco:["Kim Woo-bin", "Bae Suzy", "Lim Ju-hwan", "Lim Ju-eun", "Jin Kyung"],
   descricao:"Um astro famoso reencontra seu primeiro amor.\nSegredos do passado e muita dor cercam o casal.\nRomance melodramático feito para quem quer chorar.",
-  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/uncontrollably-fond.jpg",
+  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/Uncontrollably%20Fond.webp",
   trailer:"https://www.youtube.com/embed/lQvc9j0a1Rw",
   resumo:`Shin Joon Young é um ator e cantor muito famoso, mas por trás da imagem de celebridade ele carrega dores profundas.
 No Eul é uma produtora de documentários que cruza novamente o caminho dele depois de muitos anos.
