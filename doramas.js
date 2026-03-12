@@ -1909,7 +1909,7 @@ emocionantes dos últimos anos.`
  elenco:["Han So-hee", "Park Hyung-sik", "Yoon Byung-hee", "Kim Joo-heon"],
  descricao:"Dois amigos de longa data passam a morar juntos por alguns dias e começam a encarar sentimentos antigos.\nRomance curto e delicado.",
  resumo:"Eun Soo precisa escrever uma música sobre amor não correspondido.\nPara entender melhor esse sentimento, ela passa um tempo ao lado do melhor amigo, Sun Woo.\n\nConforme convivem mais de perto, sentimentos antigos começam a aparecer.\nCom apenas 4 episódios, o dorama é rápido, romântico e muito fácil de maratonar.\n\nÉ perfeito para quem procura algo curto, bonito e com clima aconchegante.",
- imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/soundtrack%201.jpg",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/soudtrack.webp",
  trailer:"https://www.youtube.com/embed/xNvqngvtPiQ"
 }
 ,
@@ -1935,7 +1935,7 @@ emocionantes dos últimos anos.`
  elenco:["Gong Yoo", "Bae Doona", "Lee Joon", "Kim Sun-young", "Lee Moo-saeng"],
  descricao:"Uma equipe espacial vai até uma base abandonada na Lua para recuperar uma amostra misteriosa.\nFicção científica curta e cheia de tensão.",
  resumo:"Em um futuro onde a Terra sofre com falta de água, uma equipe é enviada à Lua para uma missão secreta.\nAo chegarem à base abandonada, eles percebem que algo deu muito errado por lá.\n\nO dorama mistura sobrevivência, ficção científica e suspense em poucos episódios.\nÉ uma maratona rápida, visualmente forte e diferente dos doramas tradicionais.\n\nFunciona muito bem para quem quer um dorama curto, tenso e com clima de mistério.",
- imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/the%20silent%20sea.jpg",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/silent%20sea.webp",
  trailer:"https://www.youtube.com/embed/Af_Hj0MDBBQ"
 }
 
