@@ -1773,80 +1773,136 @@ Lá ele conhece Yoo Soo Bin, uma aluna brilhante que vive sob forte pressão da 
 O dorama mostra amizade, insegurança, amadurecimento e a dor típica dessa fase da vida.
 É uma história escolar mais sensível e realista, muito indicada para quem gosta de juventude, romance e desenvolvimento emocional dos personagens.`
 }
- ,
-{
-  nome:"Hi Bye, Mama!",
-  nomePT:"Oi, Tchau, Mamãe!",
-  nomeEN:"Hi Bye, Mama!",
-  tags:["triste","romance","fantasia"],
-  nota:"8.5/10 – MyDramaList",
-  elenco:["Kim Tae-hee", "Lee Kyu-hyung", "Go Bo-gyeol", "Seo Woo-jin", "Kim Mi-kyung"],
-  descricao:"Uma mãe que morreu recebe a chance de voltar por um tempo.\nEla tenta se despedir da filha e do marido.\nUm dos doramas mais emocionantes dos últimos anos.",
-  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/hi%20bye%20mama.jpg",
-  trailer:"https://www.youtube.com/embed/5NLka4Zg_nE",
-  resumo:`Cha Yu Ri morreu de forma inesperada e deixou para trás o marido e a filha ainda pequena.
-Anos depois, ela recebe uma chance impossível: voltar à vida por 49 dias.
 
-Ao retornar, Yu Ri encontra a família tentando seguir em frente,
-mas percebe que o amor que sente por eles continua igual.
 
-O dorama mostra luto, maternidade, saudade e o peso de uma despedida que nunca aconteceu de verdade.
-
-É uma história extremamente sensível,
-cheia de cenas emocionantes e reflexões sobre família, amor e recomeço.
-
-No Brasil, esse dorama também é conhecido como "Oi, Tchau, Mamãe!".`
-}
 ,
 {
-  nome:"Uncontrollably Fond",
-  nomePT:"Indomável Sonhador",
-  nomeEN:"Uncontrollably Fond",
-  tags:["triste","romance","intenso"],
-  nota:"8.1/10 – MyDramaList",
-  elenco:["Kim Woo-bin", "Bae Suzy", "Lim Ju-hwan", "Lim Ju-eun", "Jin Kyung"],
-  descricao:"Um astro famoso reencontra seu primeiro amor.\nSegredos do passado e muita dor cercam o casal.\nRomance melodramático feito para quem quer chorar.",
-  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/Uncontrollably%20Fond.webp",
-  trailer:"https://www.youtube.com/embed/uNAYTrZiTmc",
-  resumo:`Shin Joon Young é um ator e cantor muito famoso, mas por trás da imagem de celebridade ele carrega dores profundas.
-No Eul é uma produtora de documentários que cruza novamente o caminho dele depois de muitos anos.
+ nome:"Weak Hero Class 1",
+ nomePT:"Weak Hero Class 1",
+ nomeEN:"Weak Hero Class 1",
+ tags:["intenso","escolar","acao"],
+ nota:"8.8/10 – MyDramaList",
+ elenco:["Park Ji-hoon", "Choi Hyun-wook", "Hong Kyung", "Kim Su-gyeom", "Lee Yeon"],
+ descricao:"Um aluno aparentemente frágil enfrenta a violência escolar usando inteligência e estratégia.\nCurto, intenso e muito viciante.",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/weak%20hero%20class.jpg",
+ trailer:"https://www.youtube.com/embed/Tm26r_aQw4k",
+ resumo:`Yeon Si Eun é um dos melhores alunos da escola e parece fraco fisicamente.
+Mesmo assim, ele encontra formas inteligentes de enfrentar colegas violentos e sobreviver ao ambiente brutal ao seu redor.
 
-O reencontro dos dois revive sentimentos antigos,
-mágoas do passado e segredos que nunca foram resolvidos.
+Ao lado de novos amigos, ele entra em conflitos cada vez mais perigosos.
+O dorama fala sobre bullying, amizade e dor, com um ritmo rápido e pesado.
 
-O dorama aposta em romance intenso,
-sofrimento, saudade e escolhas difíceis.
-
-É uma das histórias mais lembradas por quem procura doramas tristes,
-com clima melancólico e cenas feitas para mexer com o coração.
-
-No Brasil, esse dorama também é conhecido como "Indomável Sonhador".`
-}
-,
+Com poucos episódios e muita tensão, é perfeito para quem procura um dorama curto, forte e impossível de largar.`
+},
 {
-  nome:"Youth of May",
-  nomePT:"Juventude de Maio",
-  nomeEN:"Youth of May",
-  tags:["romance","triste","histórico"],
-  nota:"8.8/10 – MyDramaList",
-  elenco:["Lee Do-hyun","Go Min-si","Lee Sang-yi","Geum Sae-rok"],
-  descricao:"Um romance nasce durante um momento turbulento da história da Coreia.",
-  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/youth%20of%20may.webp",
-  trailer:"https://www.youtube.com/embed/RHq4q9nY6rA",
-  resumo:`Ambientado em 1980 durante o levante de Gwangju, Youth of May conta a história
-de Hwang Hee Tae, um estudante de medicina brilhante e cheio de sonhos,
-e Kim Myung Hee, uma enfermeira determinada que luta para sobreviver.
+ nome:"Love to Hate You",
+ nomePT:"Love to Hate You",
+ nomeEN:"Love to Hate You",
+ tags:["romance","comedia","alegre"],
+ nota:"8.4/10 – MyDramaList",
+ elenco:["Kim Ok-vin", "Teo Yoo", "Kim Ji-hoon", "Go Won-hee", "Lee Joo-bin"],
+ descricao:"Uma advogada que odeia perder para homens se envolve com um astro famoso que não confia em mulheres.\nRomcom curta, leve e muito divertida.",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/love%20to%20hate%20you.jpg",
+ trailer:"https://www.youtube.com/embed/jZjoT4x7fQ4",
+ resumo:`Yeo Mi Ran é uma advogada competitiva que odeia ser subestimada.
+Nam Kang Ho é um ator famoso que evita se envolver emocionalmente.
 
-Os dois acabam se conhecendo de forma inesperada e começam um romance
-em meio a um período extremamente turbulento da história da Coreia.
+Os dois começam se estranhando, mas logo entram em uma dinâmica divertida e cheia de química.
+Com 10 episódios, o dorama mistura comédia romântica, enemies to lovers e maratona fácil.
 
-O dorama mistura romance, política, juventude e tragédia,
-criando uma história profundamente emocionante e marcante.
+É uma ótima escolha para quem quer algo curto, leve e muito gostoso de assistir.`
+},
+{
+ nome:"Mask Girl",
+ nomePT:"Mask Girl",
+ nomeEN:"Mask Girl",
+ tags:["intenso","suspense","drama"],
+ nota:"7.9/10 – MyDramaList",
+ elenco:["Lee Han-byeol", "Nana", "Go Hyun-jung", "Ahn Jae-hong", "Yeom Hye-ran"],
+ descricao:"Uma funcionária insegura leva uma vida dupla na internet usando máscara.\nCurto, sombrio e cheio de reviravoltas.",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/mask%20girl.jpg",
+ trailer:"https://www.youtube.com/embed/7aL3C3AyrQw",
+ resumo:`Kim Mo Mi sonha em ser famosa, mas sofre por não se encaixar nos padrões de beleza.
+À noite, ela assume outra identidade na internet usando uma máscara.
 
-Youth of May é considerado por muitos fãs um dos doramas mais
-emocionantes dos últimos anos.`
+Quando sua vida dupla sai do controle, tudo muda de forma violenta.
+O dorama tem poucos episódios, clima pesado e várias viradas de roteiro.
+
+É uma boa pedida para quem quer um dorama curto, diferente e muito comentado.`
+},
+{
+ nome:"Extracurricular",
+ nomePT:"Extracurricular",
+ nomeEN:"Extracurricular",
+ tags:["intenso","suspense","escolar"],
+ nota:"8.4/10 – MyDramaList",
+ elenco:["Kim Dong-hee", "Park Ju-hyun", "Jung Da-bin", "Nam Yoon-su", "Choi Min-soo"],
+ descricao:"Um estudante exemplar esconde um esquema perigoso para pagar os estudos.\nSuspense escolar curto e muito viciante.",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/extracurricular.jpg",
+ trailer:"https://www.youtube.com/embed/aV4x5DsES9w",
+ resumo:`Ji Soo parece um aluno comum, mas vive uma rotina secreta para juntar dinheiro e garantir o futuro.
+Quando colegas descobrem parte da verdade, a situação sai do controle.
+
+O dorama mistura escola, crime, tensão e decisões morais complicadas.
+Com poucos episódios e ritmo muito forte, é uma maratona rápida e intensa.
+
+É ideal para quem quer um dorama curto, sombrio e diferente do romance tradicional.`
+},
+{
+ nome:"Soundtrack #1",
+ nomePT:"Soundtrack #1",
+ nomeEN:"Soundtrack #1",
+ tags:["romance","alegre","musica"],
+ nota:"8.4/10 – MyDramaList",
+ elenco:["Han So-hee", "Park Hyung-sik", "Yoon Byung-hee", "Kim Joo-heon"],
+ descricao:"Dois amigos de longa data passam a morar juntos por alguns dias e começam a encarar sentimentos antigos.\nRomance curto e delicado.",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/soundtrack%201.jpg",
+ trailer:"https://www.youtube.com/embed/xNvqngvtPiQ",
+ resumo:`Eun Soo precisa escrever uma música sobre amor não correspondido.
+Para entender melhor esse sentimento, ela passa um tempo ao lado do melhor amigo, Sun Woo.
+
+Conforme convivem mais de perto, sentimentos antigos começam a aparecer.
+Com apenas 4 episódios, o dorama é rápido, romântico e muito fácil de maratonar.
+
+É perfeito para quem procura algo curto, bonito e com clima aconchegante.`
+},
+{
+ nome:"Splash Splash Love",
+ nomePT:"Splash Splash Love",
+ nomeEN:"Splash Splash Love",
+ tags:["romance","fantasia","alegre"],
+ nota:"8.4/10 – MyDramaList",
+ elenco:["Kim Seul-gi", "Yoon Doo-joon", "Jin Ki-joo", "Ahn Hyo-seop"],
+ descricao:"Uma estudante do ensino médio viaja no tempo e conhece um rei da era Joseon.\nCurtinho, fofo e muito querido pelos fãs.",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/splash%20splash%20love.jpg",
+ trailer:"https://www.youtube.com/embed/mtl_Di2XQ3k",
+ resumo:`Dan Bi está desesperada por causa da prova de matemática.
+De repente, ela acaba viajando no tempo e vai parar na era Joseon.
+
+Lá, conhece um rei jovem e inteligente e passa a ajudá-lo de forma inesperada.
+Com apenas 2 episódios, o dorama é extremamente curto, divertido e romântico.
+
+É uma ótima opção para quem quer um dorama curtíssimo e muito gostoso de assistir.`
+},
+{
+ nome:"The Silent Sea",
+ nomePT:"Mar Silencioso",
+ nomeEN:"The Silent Sea",
+ tags:["intenso","ficcao","suspense"],
+ nota:"8.0/10 – MyDramaList",
+ elenco:["Gong Yoo", "Bae Doona", "Lee Joon", "Kim Sun-young", "Lee Moo-saeng"],
+ descricao:"Uma equipe espacial vai até uma base abandonada na Lua para recuperar uma amostra misteriosa.\nFicção científica curta e cheia de tensão.",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/the%20silent%20sea.jpg",
+ trailer:"https://www.youtube.com/embed/Af_Hj0MDBBQ",
+ resumo:`Em um futuro onde a Terra sofre com falta de água, uma equipe é enviada à Lua para uma missão secreta.
+Ao chegarem à base abandonada, eles percebem que algo deu muito errado por lá.
+
+O dorama mistura sobrevivência, ficção científica e suspense em poucos episódios.
+É uma maratona rápida, visualmente forte e diferente dos doramas tradicionais.
+
+Funciona muito bem para quem quer um dorama curto, tenso e com clima de mistério.`
 }
- 
+
 ];function criarSlug(nome, nomeEN) {
   const base = nomeEN || nome;
   return String(base || "")
