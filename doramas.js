@@ -1847,6 +1847,98 @@ Youth of May é considerado por muitos fãs um dos doramas mais
 emocionantes dos últimos anos.`
 }
  
+,
+{
+ nome:"Weak Hero Class 1",
+ nomePT:"Weak Hero Class 1",
+ nomeEN:"Weak Hero Class 1",
+ tags:["intenso","escolar","acao"],
+ nota:"8.8/10 – MyDramaList",
+ elenco:["Park Ji-hoon", "Choi Hyun-wook", "Hong Kyung", "Kim Su-gyeom", "Lee Yeon"],
+ descricao:"Um aluno aparentemente frágil enfrenta a violência escolar usando inteligência e estratégia.\nCurto, intenso e muito viciante.",
+ resumo:"Yeon Si Eun é um dos melhores alunos da escola e parece fraco fisicamente.\nMesmo assim, ele encontra formas inteligentes de enfrentar colegas violentos e sobreviver ao ambiente brutal ao seu redor.\n\nAo lado de novos amigos, ele entra em conflitos cada vez mais perigosos.\nO dorama fala sobre bullying, amizade e dor, com um ritmo rápido e pesado.\n\nCom poucos episódios e muita tensão, é perfeito para quem procura um dorama curto, forte e impossível de largar.",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/weak%20hero%20class.jpg",
+ trailer:"https://www.youtube.com/embed/Tm26r_aQw4k"
+}
+,
+{
+ nome:"Love to Hate You",
+ nomePT:"Love to Hate You",
+ nomeEN:"Love to Hate You",
+ tags:["romance","comedia","alegre"],
+ nota:"8.4/10 – MyDramaList",
+ elenco:["Kim Ok-vin", "Teo Yoo", "Kim Ji-hoon", "Go Won-hee", "Lee Joo-bin"],
+ descricao:"Uma advogada competitiva se envolve com um ator famoso que não confia em mulheres.\nRomcom curta, leve e muito divertida.",
+ resumo:"Yeo Mi Ran é uma advogada competitiva que odeia ser subestimada.\nNam Kang Ho é um ator famoso que evita se envolver emocionalmente.\n\nOs dois começam se estranhando, mas logo entram em uma dinâmica divertida e cheia de química.\nCom 10 episódios, o dorama mistura comédia romântica, enemies to lovers e maratona fácil.\n\nÉ uma ótima escolha para quem quer algo curto, leve e muito gostoso de assistir.",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/love%20to%20hate%20you.jpg",
+ trailer:"https://www.youtube.com/embed/jZjoT4x7fQ4"
+}
+,
+{
+ nome:"Mask Girl",
+ nomePT:"Mask Girl",
+ nomeEN:"Mask Girl",
+ tags:["intenso","suspense","drama"],
+ nota:"7.9/10 – MyDramaList",
+ elenco:["Lee Han-byeol", "Nana", "Go Hyun-jung", "Ahn Jae-hong", "Yeom Hye-ran"],
+ descricao:"Uma funcionária insegura leva uma vida dupla na internet usando máscara.\nCurto, sombrio e cheio de reviravoltas.",
+ resumo:"Kim Mo Mi sonha em ser famosa, mas sofre por não se encaixar nos padrões de beleza.\nÀ noite, ela assume outra identidade na internet usando uma máscara.\n\nQuando sua vida dupla sai do controle, tudo muda de forma violenta.\nO dorama tem poucos episódios, clima pesado e várias viradas de roteiro.\n\nÉ uma boa pedida para quem quer um dorama curto, diferente e muito comentado.",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/mask%20girl.jpg",
+ trailer:"https://www.youtube.com/embed/7aL3C3AyrQw"
+}
+,
+{
+ nome:"Extracurricular",
+ nomePT:"Extracurricular",
+ nomeEN:"Extracurricular",
+ tags:["intenso","suspense","escolar"],
+ nota:"8.4/10 – MyDramaList",
+ elenco:["Kim Dong-hee", "Park Ju-hyun", "Jung Da-bin", "Nam Yoon-su", "Choi Min-soo"],
+ descricao:"Um estudante exemplar esconde um esquema perigoso para pagar os estudos.\nSuspense escolar curto e muito viciante.",
+ resumo:"Ji Soo parece um aluno comum, mas vive uma rotina secreta para juntar dinheiro e garantir o futuro.\nQuando colegas descobrem parte da verdade, a situação sai do controle.\n\nO dorama mistura escola, crime, tensão e decisões morais complicadas.\nCom poucos episódios e ritmo muito forte, é uma maratona rápida e intensa.\n\nÉ ideal para quem quer um dorama curto, sombrio e diferente do romance tradicional.",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/extracurricular.jpg",
+ trailer:"https://www.youtube.com/embed/aV4x5DsES9w"
+}
+,
+{
+ nome:"Soundtrack #1",
+ nomePT:"Soundtrack #1",
+ nomeEN:"Soundtrack #1",
+ tags:["romance","alegre","musica"],
+ nota:"8.4/10 – MyDramaList",
+ elenco:["Han So-hee", "Park Hyung-sik", "Yoon Byung-hee", "Kim Joo-heon"],
+ descricao:"Dois amigos de longa data passam a morar juntos por alguns dias e começam a encarar sentimentos antigos.\nRomance curto e delicado.",
+ resumo:"Eun Soo precisa escrever uma música sobre amor não correspondido.\nPara entender melhor esse sentimento, ela passa um tempo ao lado do melhor amigo, Sun Woo.\n\nConforme convivem mais de perto, sentimentos antigos começam a aparecer.\nCom apenas 4 episódios, o dorama é rápido, romântico e muito fácil de maratonar.\n\nÉ perfeito para quem procura algo curto, bonito e com clima aconchegante.",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/soundtrack%201.jpg",
+ trailer:"https://www.youtube.com/embed/xNvqngvtPiQ"
+}
+,
+{
+ nome:"Splash Splash Love",
+ nomePT:"Splash Splash Love",
+ nomeEN:"Splash Splash Love",
+ tags:["romance","fantasia","alegre"],
+ nota:"8.4/10 – MyDramaList",
+ elenco:["Kim Seul-gi", "Yoon Doo-joon", "Jin Ki-joo", "Ahn Hyo-seop"],
+ descricao:"Uma estudante do ensino médio viaja no tempo e conhece um rei da era Joseon.\nCurtinho, fofo e muito querido pelos fãs.",
+ resumo:"Dan Bi está desesperada por causa da prova de matemática.\nDe repente, ela acaba viajando no tempo e vai parar na era Joseon.\n\nLá, conhece um rei jovem e inteligente e passa a ajudá-lo de forma inesperada.\nCom apenas 2 episódios, o dorama é extremamente curto, divertido e romântico.\n\nÉ uma ótima opção para quem quer um dorama curtíssimo e muito gostoso de assistir.",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/splash%20splash%20love.jpg",
+ trailer:"https://www.youtube.com/embed/mtl_Di2XQ3k"
+}
+,
+{
+ nome:"The Silent Sea",
+ nomePT:"Mar Silencioso",
+ nomeEN:"The Silent Sea",
+ tags:["intenso","ficcao","suspense"],
+ nota:"8.0/10 – MyDramaList",
+ elenco:["Gong Yoo", "Bae Doona", "Lee Joon", "Kim Sun-young", "Lee Moo-saeng"],
+ descricao:"Uma equipe espacial vai até uma base abandonada na Lua para recuperar uma amostra misteriosa.\nFicção científica curta e cheia de tensão.",
+ resumo:"Em um futuro onde a Terra sofre com falta de água, uma equipe é enviada à Lua para uma missão secreta.\nAo chegarem à base abandonada, eles percebem que algo deu muito errado por lá.\n\nO dorama mistura sobrevivência, ficção científica e suspense em poucos episódios.\nÉ uma maratona rápida, visualmente forte e diferente dos doramas tradicionais.\n\nFunciona muito bem para quem quer um dorama curto, tenso e com clima de mistério.",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/the%20silent%20sea.jpg",
+ trailer:"https://www.youtube.com/embed/Af_Hj0MDBBQ"
+}
+
 ];function criarSlug(nome, nomeEN) {
   const base = nomeEN || nome;
   return String(base || "")
