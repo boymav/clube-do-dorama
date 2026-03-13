@@ -2013,47 +2013,6 @@ com casos extremamente tensos e complexos.
 
 É um suspense inteligente e muito envolvente.`
 }
- {
- nome:"Taxi Driver",
- tags:["suspense","acao","intenso"],
- nota:"8.8/10 – MyDramaList",
- elenco:["Lee Je-hoon","Esom","Kim Eui-sung","Pyo Ye-jin","Jang Hyuk-jin"],
- descricao:"Uma empresa secreta de táxi se vinga de criminosos que escaparam da justiça.",
- imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/taxi%20driver.jpg",
- trailer:"https://www.youtube.com/embed/YSC2HNh7Y2U",
- resumo:`Kim Do Gi trabalha para um serviço secreto de táxi.
-A equipe ajuda vítimas que não conseguiram justiça.
-Cada caso traz uma nova missão de vingança contra criminosos.
-Mistura ação intensa com investigação e suspense.`
-},
-
-{
- nome:"Strangers from Hell",
- tags:["suspense","terror","psicologico"],
- nota:"8.7/10 – MyDramaList",
- elenco:["Im Si-wan","Lee Dong-wook","Lee Jung-eun","Lee Hyun-wook","Park Jong-hwan"],
- descricao:"Um jovem se muda para um prédio estranho cheio de vizinhos assustadores.",
- imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/strangers%20from%20hell.jpg",
- trailer:"https://www.youtube.com/embed/E3h4z2JXG8A",
- resumo:`Um jovem se muda para Seul e passa a morar em um prédio barato.
-Logo ele percebe que seus vizinhos são extremamente estranhos.
-Conforme o tempo passa, a paranoia aumenta e segredos horríveis aparecem.
-É um suspense psicológico sombrio e perturbador.`
-},
-
-{
- nome:"Through the Darkness",
- tags:["suspense","policial","intenso"],
- nota:"8.9/10 – MyDramaList",
- elenco:["Kim Nam-gil","Jin Sun-kyu","Kim So-jin","Ryeoun","Lee Dae-yeon"],
- descricao:"A história do primeiro profiler criminal da Coreia.",
- imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/through%20the%20darkness.jpg",
- trailer:"https://www.youtube.com/embed/rXT7YB2Gx6k",
- resumo:`Baseado em histórias reais.
-Mostra o início do perfil criminal na Coreia.
-Um investigador tenta entender a mente de serial killers.
-Um thriller policial inteligente e muito tenso.`
-},
 ];function criarSlug(nome, nomeEN) {
   const base = nomeEN || nome;
   return String(base || "")
