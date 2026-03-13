@@ -2018,7 +2018,29 @@ com casos extremamente tensos e complexos.
   return String(base || "")
     .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
     .toLowerCase()
-    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/[^a-z0-9,
+
+{
+ nome:"Taxi Driver",
+ tags:["suspense","acao","intenso"],
+ nota:"8.9/10 – MyDramaList",
+ elenco:["Lee Je-hoon", "Esom", "Kim Eui-sung", "Pyo Ye-jin", "Jang Hyuk-jin"],
+ descricao:"Um serviço secreto de táxi se vinga de criminosos que escaparam da justiça.\nAção e suspense intensos.",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/taxi%20driver.jpg",
+ trailer:"https://www.youtube.com/embed/Z5D9h0sV3Hc",
+ resumo:`Kim Do Gi trabalha para uma empresa de táxi aparentemente comum.
+Mas por trás disso existe um serviço secreto de vingança.
+
+Eles ajudam vítimas que não conseguiram justiça pela lei.
+Cada caso envolve criminosos perigosos que precisam pagar por seus crimes.
+
+O dorama mistura ação, suspense e histórias emocionantes de vingança.
+Cada episódio traz um novo caso cheio de tensão.
+
+Taxi Driver se tornou um dos doramas de ação e suspense mais populares da Coreia.`
+}
+
+]+/g, "-")
     .replace(/(^-|-$)/g, "");
 }
 
