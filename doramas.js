@@ -2013,6 +2013,22 @@ com casos extremamente tensos e complexos.
 
 É um suspense inteligente e muito envolvente.`
 }
+{
+ nome:"Taxi Driver",
+ tags:["suspense","acao","intenso"],
+ nota:"8.8/10 – MyDramaList",
+ elenco:["Lee Je-hoon","Esom","Kim Eui-sung","Pyo Ye-jin","Jang Hyuk-jin"],
+ descricao:"Um motorista de táxi trabalha para uma organização secreta que se vinga de criminosos que escaparam da justiça.",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/taxi%20driver.jpg",
+ trailer:"https://www.youtube.com/embed/YSC2HNh7Y2U",
+ resumo:`Kim Do Gi é um ex-oficial das forças especiais que trabalha para um misterioso serviço de táxi.
+A empresa oferece vingança para pessoas que foram injustiçadas pelo sistema.
+
+Cada caso traz uma nova missão contra criminosos que escaparam da lei.
+Enquanto executam esses planos, a equipe enfrenta perigos e investigações da polícia.
+
+O dorama mistura ação, suspense e histórias de vingança muito intensas.`
+},
 ];function criarSlug(nome, nomeEN) {
   const base = nomeEN || nome;
   return String(base || "")
