@@ -1991,7 +1991,74 @@ emocionantes dos últimos anos.`
  trailer:"https://www.youtube.com/embed/3M4dJB8z8KQ",
  resumo:"Lee Hong Jo é uma funcionária pública de vida simples que acaba encontrando um antigo livro selado.\nJang Shin Yu é um advogado bonito e popular que sofre com uma maldição misteriosa passada por gerações.\n\nQuando Hong Jo entra em posse desse livro, os destinos dos dois passam a se cruzar de forma inevitável.\nEntre feitiços, passado, paixão e várias confusões, o romance cresce aos poucos.\n\nO dorama mistura fantasia, mistério e romance, sendo uma boa opção para quem gosta de histórias de destino e química entre o casal principal."
 }
+ {
+ nome:"Taxi Driver",
+ tags:["suspense","acao","intenso"],
+ nota:"8.8/10 – MyDramaList",
+ elenco:["Lee Je-hoon", "Esom", "Kim Eui-sung", "Pyo Ye-jin", "Cha Ji-yeon"],
+ descricao:"Um serviço secreto de táxi se vinga de criminosos que escaparam da justiça.\nAção intensa e histórias impactantes.",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/taxi%20driver.jpg",
+ trailer:"https://www.youtube.com/embed/9tJ3v0w3A0Y",
+ resumo:`Kim Do Gi é um ex-oficial das forças especiais cuja vida muda após o assassinato brutal de sua mãe.
 
+Ele passa a trabalhar para a empresa Rainbow Taxi,
+um serviço secreto que oferece vingança para vítimas que não conseguiram justiça.
+
+Cada episódio apresenta um caso diferente,
+inspirado em histórias reais de crimes na Coreia.
+
+Enquanto executam suas missões,
+a equipe precisa enfrentar criminosos perigosos e autoridades corruptas.
+
+Taxi Driver mistura ação, suspense e crítica social,
+com momentos de tensão e reviravoltas.
+
+É um dorama viciante e cheio de adrenalina.`
+},
+{
+ nome:"Strangers From Hell",
+ tags:["suspense","terror","intenso"],
+ nota:"8.7/10 – MyDramaList",
+ elenco:["Im Si-wan", "Lee Dong-wook", "Lee Jung-eun", "Lee Hyun-wook", "Park Jong-hwan"],
+ descricao:"Um jovem se muda para um prédio barato em Seul.\nLogo percebe que seus vizinhos escondem segredos assustadores.",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/strangers%20from%20hell.jpg",
+ trailer:"https://www.youtube.com/embed/uvp4mG9q0hM",
+ resumo:`Yoon Jong Woo é um jovem que se muda para Seul em busca de trabalho.
+
+Sem dinheiro, ele acaba vivendo em um pequeno e estranho prédio chamado Eden Studio.
+
+Logo ele percebe que seus vizinhos têm comportamentos extremamente bizarros.
+
+Entre personagens perturbadores e situações cada vez mais tensas,
+Jong Woo começa a perder sua sanidade.
+
+O dorama cria uma atmosfera claustrofóbica e assustadora,
+mostrando como o ambiente pode transformar pessoas.
+
+É um thriller psicológico intenso e perturbador.`
+},
+ {
+ nome:"Strangers From Hell",
+ tags:["suspense","terror","intenso"],
+ nota:"8.7/10 – MyDramaList",
+ elenco:["Im Si-wan", "Lee Dong-wook", "Lee Jung-eun", "Lee Hyun-wook", "Park Jong-hwan"],
+ descricao:"Um jovem se muda para um prédio barato em Seul.\nLogo percebe que seus vizinhos escondem segredos assustadores.",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/strangers%20from%20hell.jpg",
+ trailer:"https://www.youtube.com/embed/uvp4mG9q0hM",
+ resumo:`Yoon Jong Woo é um jovem que se muda para Seul em busca de trabalho.
+
+Sem dinheiro, ele acaba vivendo em um pequeno e estranho prédio chamado Eden Studio.
+
+Logo ele percebe que seus vizinhos têm comportamentos extremamente bizarros.
+
+Entre personagens perturbadores e situações cada vez mais tensas,
+Jong Woo começa a perder sua sanidade.
+
+O dorama cria uma atmosfera claustrofóbica e assustadora,
+mostrando como o ambiente pode transformar pessoas.
+
+É um thriller psicológico intenso e perturbador.`
+},
 ];function criarSlug(nome, nomeEN) {
   const base = nomeEN || nome;
   return String(base || "")
