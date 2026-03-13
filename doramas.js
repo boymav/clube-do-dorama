@@ -1939,6 +1939,59 @@ emocionantes dos últimos anos.`
  trailer:"https://www.youtube.com/embed/Af_Hj0MDBBQ"
 }
 
+,
+{
+ nome:"Lovely Runner",
+ nomePT:"Lovely Runner",
+ nomeEN:"Lovely Runner",
+ tags:["romance","fantasia","alegre"],
+ nota:"8.9/10 – MyDramaList",
+ elenco:["Byeon Woo-seok", "Kim Hye-yoon", "Song Geon-hee", "Lee Seung-hyub", "Jung Young-joo"],
+ descricao:"Uma fã volta no tempo para tentar salvar seu ídolo favorito.\nRomance, viagem no tempo e muitos momentos emocionantes.",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/lovely%20runner.jpg",
+ trailer:"https://www.youtube.com/embed/9nQwLByLx9M",
+ resumo:"Im Sol é uma jovem que encontra conforto nas músicas do astro Ryu Sun Jae.\nQuando uma tragédia muda tudo, ela acaba voltando no tempo para a época em que ele ainda era um estudante.\n\nDeterminada a evitar o destino doloroso que conhece, Im Sol tenta se aproximar dele e mudar o rumo da história.\nAo longo dessa jornada, amizade, romance e várias emoções começam a surgir.\n\nO dorama mistura viagem no tempo, romance juvenil e momentos muito fofos, com um casal que conquistou muita gente.\nÉ uma ótima escolha para quem gosta de histórias românticas viciantes e muito comentadas."
+}
+,
+{
+ nome:"What's Wrong with Secretary Kim",
+ nomePT:"O Que Houve com a Secretária Kim?",
+ nomeEN:"What's Wrong with Secretary Kim",
+ tags:["romance","comedia","alegre"],
+ nota:"8.5/10 – MyDramaList",
+ elenco:["Park Seo-joon", "Park Min-young", "Lee Tae-hwan", "Kang Ki-young", "Hwang Bo-ra"],
+ descricao:"Um chefe narcisista entra em crise quando sua secretária perfeita decide pedir demissão.\nComédia romântica clássica e muito popular.",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/whats%20wrong%20with%20secretary%20kim.jpg",
+ trailer:"https://www.youtube.com/embed/L4NrL1lZrt4",
+ resumo:"Lee Young Joon é um vice-presidente brilhante, bonito e extremamente convencido.\nAo seu lado está Kim Mi So, sua secretária perfeita, que decide pedir demissão depois de anos dedicada ao trabalho.\n\nSem entender como pode perder alguém tão importante, Young Joon começa a tentar impedir sua saída.\nEnquanto os dois convivem ainda mais de perto, sentimentos antigos e memórias do passado começam a surgir.\n\nO dorama é um dos romances coreanos mais famosos dos últimos anos, cheio de química, humor e cenas muito marcantes.\nÉ perfeito para quem procura um romance leve, divertido e muito popular."
+}
+,
+{
+ nome:"My Demon",
+ nomePT:"My Demon",
+ nomeEN:"My Demon",
+ tags:["romance","fantasia","comedia"],
+ nota:"8.4/10 – MyDramaList",
+ elenco:["Song Kang", "Kim Yoo-jung", "Lee Sang-yi", "Kim Hae-sook", "Jo Hye-joo"],
+ descricao:"Uma herdeira fria faz um contrato de casamento com um demônio que perde seus poderes.\nRomance sobrenatural muito popular.",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/my%20demon.jpg",
+ trailer:"https://www.youtube.com/embed/D-bAfFqvxZ8",
+ resumo:"Do Do Hee é uma herdeira inteligente e desconfiada que vive cercada por intrigas familiares.\nJung Gu Won é um demônio elegante e arrogante que sempre fez acordos com humanos.\n\nQuando os dois se envolvem em um acidente estranho, os poderes dele acabam ligados a ela.\nPara sobreviver e resolver os problemas ao redor deles, os dois entram em um casamento por contrato.\n\nO dorama mistura romance, fantasia, humor e mistério de forma leve e viciante.\nÉ uma boa escolha para quem gosta de casais com química forte e histórias sobrenaturais modernas."
+}
+,
+{
+ nome:"Destined with You",
+ nomePT:"Destined with You",
+ nomeEN:"Destined with You",
+ tags:["romance","fantasia","triste"],
+ nota:"8.2/10 – MyDramaList",
+ elenco:["Jo Bo-ah", "Rowoon", "Ha Jun", "Yura", "Lee Bong-ryun"],
+ descricao:"Uma funcionária pública encontra um livro antigo que pode quebrar uma maldição.\nRomance com fantasia e destino.",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/destined%20with%20you.jpg",
+ trailer:"https://www.youtube.com/embed/3M4dJB8z8KQ",
+ resumo:"Lee Hong Jo é uma funcionária pública de vida simples que acaba encontrando um antigo livro selado.\nJang Shin Yu é um advogado bonito e popular que sofre com uma maldição misteriosa passada por gerações.\n\nQuando Hong Jo entra em posse desse livro, os destinos dos dois passam a se cruzar de forma inevitável.\nEntre feitiços, passado, paixão e várias confusões, o romance cresce aos poucos.\n\nO dorama mistura fantasia, mistério e romance, sendo uma boa opção para quem gosta de histórias de destino e química entre o casal principal."
+}
+
 ];function criarSlug(nome, nomeEN) {
   const base = nomeEN || nome;
   return String(base || "")
