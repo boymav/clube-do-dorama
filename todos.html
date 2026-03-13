@@ -79,7 +79,28 @@
       text-align:center;
       padding:15px;
     }
-  </style>
+  
+  .topbar-filtros{
+    max-width:1100px; margin:20px auto 10px; display:flex; flex-wrap:wrap; gap:12px; justify-content:center; align-items:center;
+  }
+  .busca-box{
+    flex:1 1 320px; max-width:520px; background:white; border-radius:14px; padding:10px 14px; box-shadow:0 4px 14px rgba(0,0,0,0.08);
+  }
+  .busca-box input{
+    width:100%; border:none; outline:none; font-size:16px; background:transparent; color:#333;
+  }
+  .filtro-btn, .ordenar-select{
+    border:none; border-radius:12px; padding:11px 14px; font-weight:bold; font-size:15px;
+    background:white; color:#b4005a; box-shadow:0 4px 14px rgba(0,0,0,0.08);
+  }
+  .filtro-btn.ativo{
+    background:#ff7eb3; color:white;
+  }
+  .resultado-info{
+    text-align:center; color:#7a1b55; font-weight:bold; margin:8px 0 18px;
+  }
+
+</style>
 </head>
 <body>
 
@@ -97,7 +118,17 @@
   <p>💜 Planeta Dorama 🌍</p>
 </footer>
 
-<script src="doramas.js?v=20260309"></script>
+<script>
+  function carregarDoramasJS(){
+    return new Promise((resolve, reject) => {
+      const s = document.createElement("script");
+      s.src = "doramas.js?v=" + Date.now();
+      s.onload = resolve;
+      s.onerror = reject;
+      document.body.appendChild(s);
+    });
+  }
+</script>
 <script>
   // Títulos em PT + EN para exibição amigável
   const TITULOS_PT = {
@@ -131,26 +162,135 @@
       .replace(/(^-|-$)/g, "");
   }
 
-  function carregarTodos(){
-    const container = document.getElementById("lista");
-    if(!Array.isArray(doramas)) return;
-
-    container.innerHTML = doramas.map(d => {
-      const slug = d.slug || criarSlugLocal(d.nome, d.nomeEN);
-      const url = "doramas/" + slug + ".html";
-      return `
-        <div class="card" onclick="window.location.href='${url}'">
-          <img src="${d.imagem}" alt="${d.nome}" loading="lazy">
-          <div class="card-conteudo">
-            <h3>${nomeExibicao(d)}</h3>
-            <div class="nota">⭐ ${d.nota || ""}</div>
-          </div>
-        </div>
-      `;
-    }).join("");
+  function normalizar(txt){
+    return (txt || "")
+      .toString()
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .toLowerCase();
   }
 
-  window.onload = carregarTodos;
+  function pegarNotaNumero(d){
+    const n = (d && d.nota) ? d.nota.toString().match(/[\d.]+/) : null;
+    return n ? parseFloat(n[0]) : 0;
+  }
+
+  function criarSlugSeguro(dorama){
+    if(typeof criarSlug === "function"){
+      return criarSlug(dorama.nomeEN || dorama.nome || "");
+    }
+    return (dorama.nomeEN || dorama.nome || "")
+      .toLowerCase()
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/^-+|-+$/g, "");
+  }
+
+  function renderizarLista(listaDoramas){
+    const container = document.getElementById("lista");
+    const info = document.getElementById("resultadoInfo");
+    if(!container) return;
+
+    container.innerHTML = "";
+
+    if(!listaDoramas.length){
+      container.innerHTML = '<p style="text-align:center;color:#b4005a;grid-column:1/-1;">Nenhum dorama encontrado com esse filtro.</p>';
+      if(info) info.textContent = "0 doramas encontrados";
+      return;
+    }
+
+    listaDoramas.forEach(dorama => {
+      const card = document.createElement("a");
+      card.className = "card";
+      card.href = "/doramas/" + criarSlugSeguro(dorama) + ".html";
+
+      const tags = Array.isArray(dorama.tags) ? dorama.tags : [];
+      const chips = tags.slice(0,3).map(tag => `<span class="chip">${tag}</span>`).join("");
+
+      card.innerHTML = `
+        <img src="${dorama.imagem || ""}" alt="${dorama.nomePT || dorama.nome || ""}" loading="lazy">
+        <div class="c">
+          <h3>${dorama.nomePT || dorama.nome || ""}</h3>
+          <p>${dorama.descricao || "Sem descrição disponível."}</p>
+          <div class="mini">⭐ ${dorama.nota || "Sem nota"}</div>
+          <div class="chips">${chips}</div>
+        </div>
+      `;
+      container.appendChild(card);
+    });
+
+    if(info) info.textContent = `${listaDoramas.length} doramas encontrados`;
+  }
+
+  function aplicarFiltros(){
+    if(!Array.isArray(doramas)) return;
+
+    const busca = normalizar(document.getElementById("buscaDoramas")?.value || "");
+    const filtroAtivo = document.querySelector(".filtro-btn.ativo")?.dataset.filtro || "todos";
+    const ordem = document.getElementById("ordenarDoramas")?.value || "padrao";
+
+    let listaFiltrada = [...doramas];
+
+    if(busca){
+      listaFiltrada = listaFiltrada.filter(d => {
+        const texto = normalizar([
+          d.nome, d.nomePT, d.nomeEN,
+          Array.isArray(d.tags) ? d.tags.join(" ") : "",
+          d.descricao
+        ].join(" "));
+        return texto.includes(busca);
+      });
+    }
+
+    if(filtroAtivo !== "todos"){
+      listaFiltrada = listaFiltrada.filter(d => {
+        const tags = Array.isArray(d.tags) ? d.tags.map(normalizar) : [];
+        return tags.includes(normalizar(filtroAtivo));
+      });
+    }
+
+    if(ordem === "nota"){
+      listaFiltrada.sort((a,b) => pegarNotaNumero(b) - pegarNotaNumero(a));
+    } else if(ordem === "az"){
+      listaFiltrada.sort((a,b) => (a.nomePT || a.nome || "").localeCompare((b.nomePT || b.nome || ""), "pt-BR"));
+    }
+
+    renderizarLista(listaFiltrada);
+  }
+
+  function configurarControles(){
+    const busca = document.getElementById("buscaDoramas");
+    const ordenar = document.getElementById("ordenarDoramas");
+    const botoes = document.querySelectorAll(".filtro-btn");
+
+    if(busca) busca.addEventListener("input", aplicarFiltros);
+    if(ordenar) ordenar.addEventListener("change", aplicarFiltros);
+
+    botoes.forEach(btn => {
+      btn.addEventListener("click", () => {
+        botoes.forEach(b => b.classList.remove("ativo"));
+        btn.classList.add("ativo");
+        aplicarFiltros();
+      });
+    });
+  }
+
+  window.addEventListener("load", async () => {
+    try{
+      await carregarDoramasJS();
+      configurarControles();
+      aplicarFiltros();
+    }catch(e){
+      const container = document.getElementById("lista");
+      const info = document.getElementById("resultadoInfo");
+      if(container){
+        container.innerHTML = "<p style=\"text-align:center;color:#b4005a;grid-column:1/-1;\">Não foi possível carregar os doramas agora. Atualize a página novamente.</p>";
+      }
+      if(info) info.textContent = "Erro ao carregar doramas";
+      console.error(e);
+    }
+  });
 </script>
 
 </body>
