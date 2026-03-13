@@ -2013,34 +2013,28 @@ com casos extremamente tensos e complexos.
 
 É um suspense inteligente e muito envolvente.`
 }
+{
+ nome:"Taxi Driver",
+ tags:["suspense","acao","intenso"],
+ nota:"8.8/10 – MyDramaList",
+ elenco:["Lee Je-hoon","Esom","Kim Eui-sung","Pyo Ye-jin","Jang Hyuk-jin"],
+ descricao:"Um motorista de táxi trabalha para uma organização secreta que se vinga de criminosos que escaparam da justiça.",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/taxi%20driver.jpg",
+ trailer:"https://www.youtube.com/embed/YSC2HNh7Y2U",
+ resumo:`Kim Do Gi é um ex-oficial das forças especiais que trabalha para um misterioso serviço de táxi.
+A empresa oferece vingança para pessoas que foram injustiçadas pelo sistema.
+
+Cada caso traz uma nova missão contra criminosos que escaparam da lei.
+Enquanto executam esses planos, a equipe enfrenta perigos e investigações da polícia.
+
+O dorama mistura ação, suspense e histórias de vingança muito intensas.`
+},
 ];function criarSlug(nome, nomeEN) {
   const base = nomeEN || nome;
   return String(base || "")
     .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
     .toLowerCase()
-    .replace(/[^a-z0-9,
-
-{
- nome:"Taxi Driver",
- tags:["suspense","acao","intenso"],
- nota:"8.9/10 – MyDramaList",
- elenco:["Lee Je-hoon", "Esom", "Kim Eui-sung", "Pyo Ye-jin", "Jang Hyuk-jin"],
- descricao:"Um serviço secreto de táxi se vinga de criminosos que escaparam da justiça.\nAção e suspense intensos.",
- imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/taxi%20driver.jpg",
- trailer:"https://www.youtube.com/embed/Z5D9h0sV3Hc",
- resumo:`Kim Do Gi trabalha para uma empresa de táxi aparentemente comum.
-Mas por trás disso existe um serviço secreto de vingança.
-
-Eles ajudam vítimas que não conseguiram justiça pela lei.
-Cada caso envolve criminosos perigosos que precisam pagar por seus crimes.
-
-O dorama mistura ação, suspense e histórias emocionantes de vingança.
-Cada episódio traz um novo caso cheio de tensão.
-
-Taxi Driver se tornou um dos doramas de ação e suspense mais populares da Coreia.`
-}
-
-]+/g, "-")
+    .replace(/[^a-z0-9]+/g, "-")
     .replace(/(^-|-$)/g, "");
 }
 
