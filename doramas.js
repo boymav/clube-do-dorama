@@ -1783,7 +1783,7 @@ O dorama mostra amizade, insegurança, amadurecimento e a dor típica dessa fase
   elenco:["Kim Tae-hee", "Lee Kyu-hyung", "Go Bo-gyeol", "Seo Woo-jin", "Kim Mi-kyung"],
   descricao:"Uma mãe que morreu recebe a chance de voltar por um tempo.\nEla tenta se despedir da filha e do marido.\nUm dos doramas mais emocionantes dos últimos anos.",
   imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/hi%20bye%20mama.jpg",
-  trailer:"https://www.youtube.com/embed/5NLka4Zg_nE",
+  trailer:"https://www.youtube.com/embed/1EWJtAELgYQ",
   resumo:`Cha Yu Ri morreu de forma inesperada e deixou para trás o marido e a filha ainda pequena.
 Anos depois, ela recebe uma chance impossível: voltar à vida por 49 dias.
 
@@ -1807,7 +1807,7 @@ No Brasil, esse dorama também é conhecido como "Oi, Tchau, Mamãe!".`
   elenco:["Kim Woo-bin", "Bae Suzy", "Lim Ju-hwan", "Lim Ju-eun", "Jin Kyung"],
   descricao:"Um astro famoso reencontra seu primeiro amor.\nSegredos do passado e muita dor cercam o casal.\nRomance melodramático feito para quem quer chorar.",
   imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/Uncontrollably%20Fond.webp",
-  trailer:"https://www.youtube.com/embed/uNAYTrZiTmc",
+  trailer:"https://www.youtube.com/embed/lQvc9j0a1Rw",
   resumo:`Shin Joon Young é um ator e cantor muito famoso, mas por trás da imagem de celebridade ele carrega dores profundas.
 No Eul é uma produtora de documentários que cruza novamente o caminho dele depois de muitos anos.
 
@@ -1831,7 +1831,7 @@ No Brasil, esse dorama também é conhecido como "Indomável Sonhador".`
   nota:"8.8/10 – MyDramaList",
   elenco:["Lee Do-hyun","Go Min-si","Lee Sang-yi","Geum Sae-rok"],
   descricao:"Um romance nasce durante um momento turbulento da história da Coreia.",
-  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/youth%20of%20may.webp",
+  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/youth-of-may.jpg",
   trailer:"https://www.youtube.com/embed/RHq4q9nY6rA",
   resumo:`Ambientado em 1980 durante o levante de Gwangju, Youth of May conta a história
 de Hwang Hee Tae, um estudante de medicina brilhante e cheio de sonhos,
@@ -1847,228 +1847,4 @@ Youth of May é considerado por muitos fãs um dos doramas mais
 emocionantes dos últimos anos.`
 }
  
-,
-{
- nome:"Weak Hero Class 1",
- nomePT:"Weak Hero Class 1",
- nomeEN:"Weak Hero Class 1",
- tags:["intenso","escolar","acao"],
- nota:"8.8/10 – MyDramaList",
- elenco:["Park Ji-hoon", "Choi Hyun-wook", "Hong Kyung", "Kim Su-gyeom", "Lee Yeon"],
- descricao:"Um aluno aparentemente frágil enfrenta a violência escolar usando inteligência e estratégia.\nCurto, intenso e muito viciante.",
- resumo:"Yeon Si Eun é um dos melhores alunos da escola e parece fraco fisicamente.\nMesmo assim, ele encontra formas inteligentes de enfrentar colegas violentos e sobreviver ao ambiente brutal ao seu redor.\n\nAo lado de novos amigos, ele entra em conflitos cada vez mais perigosos.\nO dorama fala sobre bullying, amizade e dor, com um ritmo rápido e pesado.\n\nCom poucos episódios e muita tensão, é perfeito para quem procura um dorama curto, forte e impossível de largar.",
- imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/weak%20hero%20class.jpg",
- trailer:"https://www.youtube.com/embed/Tm26r_aQw4k"
-}
-,
-{
- nome:"Love to Hate You",
- nomePT:"Love to Hate You",
- nomeEN:"Love to Hate You",
- tags:["romance","comedia","alegre"],
- nota:"8.4/10 – MyDramaList",
- elenco:["Kim Ok-vin", "Teo Yoo", "Kim Ji-hoon", "Go Won-hee", "Lee Joo-bin"],
- descricao:"Uma advogada competitiva se envolve com um ator famoso que não confia em mulheres.\nRomcom curta, leve e muito divertida.",
- resumo:"Yeo Mi Ran é uma advogada competitiva que odeia ser subestimada.\nNam Kang Ho é um ator famoso que evita se envolver emocionalmente.\n\nOs dois começam se estranhando, mas logo entram em uma dinâmica divertida e cheia de química.\nCom 10 episódios, o dorama mistura comédia romântica, enemies to lovers e maratona fácil.\n\nÉ uma ótima escolha para quem quer algo curto, leve e muito gostoso de assistir.",
- imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/love%20to%20hate%20you.jpg",
- trailer:"https://www.youtube.com/embed/jZjoT4x7fQ4"
-}
-,
-{
- nome:"Mask Girl",
- nomePT:"Mask Girl",
- nomeEN:"Mask Girl",
- tags:["intenso","suspense","drama"],
- nota:"7.9/10 – MyDramaList",
- elenco:["Lee Han-byeol", "Nana", "Go Hyun-jung", "Ahn Jae-hong", "Yeom Hye-ran"],
- descricao:"Uma funcionária insegura leva uma vida dupla na internet usando máscara.\nCurto, sombrio e cheio de reviravoltas.",
- resumo:"Kim Mo Mi sonha em ser famosa, mas sofre por não se encaixar nos padrões de beleza.\nÀ noite, ela assume outra identidade na internet usando uma máscara.\n\nQuando sua vida dupla sai do controle, tudo muda de forma violenta.\nO dorama tem poucos episódios, clima pesado e várias viradas de roteiro.\n\nÉ uma boa pedida para quem quer um dorama curto, diferente e muito comentado.",
- imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/mask%20girl.jpg",
- trailer:"https://www.youtube.com/embed/7aL3C3AyrQw"
-}
-,
-{
- nome:"Extracurricular",
- nomePT:"Extracurricular",
- nomeEN:"Extracurricular",
- tags:["intenso","suspense","escolar"],
- nota:"8.4/10 – MyDramaList",
- elenco:["Kim Dong-hee", "Park Ju-hyun", "Jung Da-bin", "Nam Yoon-su", "Choi Min-soo"],
- descricao:"Um estudante exemplar esconde um esquema perigoso para pagar os estudos.\nSuspense escolar curto e muito viciante.",
- resumo:"Ji Soo parece um aluno comum, mas vive uma rotina secreta para juntar dinheiro e garantir o futuro.\nQuando colegas descobrem parte da verdade, a situação sai do controle.\n\nO dorama mistura escola, crime, tensão e decisões morais complicadas.\nCom poucos episódios e ritmo muito forte, é uma maratona rápida e intensa.\n\nÉ ideal para quem quer um dorama curto, sombrio e diferente do romance tradicional.",
- imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/extracurricular.jpg",
- trailer:"https://www.youtube.com/embed/aV4x5DsES9w"
-}
-,
-{
- nome:"Soundtrack #1",
- nomePT:"Soundtrack #1",
- nomeEN:"Soundtrack #1",
- tags:["romance","alegre","musica"],
- nota:"8.4/10 – MyDramaList",
- elenco:["Han So-hee", "Park Hyung-sik", "Yoon Byung-hee", "Kim Joo-heon"],
- descricao:"Dois amigos de longa data passam a morar juntos por alguns dias e começam a encarar sentimentos antigos.\nRomance curto e delicado.",
- resumo:"Eun Soo precisa escrever uma música sobre amor não correspondido.\nPara entender melhor esse sentimento, ela passa um tempo ao lado do melhor amigo, Sun Woo.\n\nConforme convivem mais de perto, sentimentos antigos começam a aparecer.\nCom apenas 4 episódios, o dorama é rápido, romântico e muito fácil de maratonar.\n\nÉ perfeito para quem procura algo curto, bonito e com clima aconchegante.",
- imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/soudtrack.webp",
- trailer:"https://www.youtube.com/embed/xNvqngvtPiQ"
-}
-,
-{
- nome:"Splash Splash Love",
- nomePT:"Splash Splash Love",
- nomeEN:"Splash Splash Love",
- tags:["romance","fantasia","alegre"],
- nota:"8.4/10 – MyDramaList",
- elenco:["Kim Seul-gi", "Yoon Doo-joon", "Jin Ki-joo", "Ahn Hyo-seop"],
- descricao:"Uma estudante do ensino médio viaja no tempo e conhece um rei da era Joseon.\nCurtinho, fofo e muito querido pelos fãs.",
- resumo:"Dan Bi está desesperada por causa da prova de matemática.\nDe repente, ela acaba viajando no tempo e vai parar na era Joseon.\n\nLá, conhece um rei jovem e inteligente e passa a ajudá-lo de forma inesperada.\nCom apenas 2 episódios, o dorama é extremamente curto, divertido e romântico.\n\nÉ uma ótima opção para quem quer um dorama curtíssimo e muito gostoso de assistir.",
- imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/splash%20splash%20love.jpg",
- trailer:"https://www.youtube.com/embed/mtl_Di2XQ3k"
-}
-,
-{
- nome:"The Silent Sea",
- nomePT:"Mar Silencioso",
- nomeEN:"The Silent Sea",
- tags:["intenso","ficcao","suspense"],
- nota:"8.0/10 – MyDramaList",
- elenco:["Gong Yoo", "Bae Doona", "Lee Joon", "Kim Sun-young", "Lee Moo-saeng"],
- descricao:"Uma equipe espacial vai até uma base abandonada na Lua para recuperar uma amostra misteriosa.\nFicção científica curta e cheia de tensão.",
- resumo:"Em um futuro onde a Terra sofre com falta de água, uma equipe é enviada à Lua para uma missão secreta.\nAo chegarem à base abandonada, eles percebem que algo deu muito errado por lá.\n\nO dorama mistura sobrevivência, ficção científica e suspense em poucos episódios.\nÉ uma maratona rápida, visualmente forte e diferente dos doramas tradicionais.\n\nFunciona muito bem para quem quer um dorama curto, tenso e com clima de mistério.",
- imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/silent%20sea.webp",
- trailer:"https://www.youtube.com/embed/Af_Hj0MDBBQ"
-}
-
-,
-{
- nome:"Lovely Runner",
- nomePT:"Lovely Runner",
- nomeEN:"Lovely Runner",
- tags:["romance","fantasia","alegre"],
- nota:"8.9/10 – MyDramaList",
- elenco:["Byeon Woo-seok", "Kim Hye-yoon", "Song Geon-hee", "Lee Seung-hyub", "Jung Young-joo"],
- descricao:"Uma fã volta no tempo para tentar salvar seu ídolo favorito.\nRomance, viagem no tempo e muitos momentos emocionantes.",
- imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/lovely%20runner.jpg",
- trailer:"https://www.youtube.com/embed/9nQwLByLx9M",
- resumo:"Im Sol é uma jovem que encontra conforto nas músicas do astro Ryu Sun Jae.\nQuando uma tragédia muda tudo, ela acaba voltando no tempo para a época em que ele ainda era um estudante.\n\nDeterminada a evitar o destino doloroso que conhece, Im Sol tenta se aproximar dele e mudar o rumo da história.\nAo longo dessa jornada, amizade, romance e várias emoções começam a surgir.\n\nO dorama mistura viagem no tempo, romance juvenil e momentos muito fofos, com um casal que conquistou muita gente.\nÉ uma ótima escolha para quem gosta de histórias românticas viciantes e muito comentadas."
-}
-,
-{
- nome:"What's Wrong with Secretary Kim",
- nomePT:"O Que Houve com a Secretária Kim?",
- nomeEN:"What's Wrong with Secretary Kim",
- tags:["romance","comedia","alegre"],
- nota:"8.5/10 – MyDramaList",
- elenco:["Park Seo-joon", "Park Min-young", "Lee Tae-hwan", "Kang Ki-young", "Hwang Bo-ra"],
- descricao:"Um chefe narcisista entra em crise quando sua secretária perfeita decide pedir demissão.\nComédia romântica clássica e muito popular.",
- imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/whats%20wrong%20with%20secretary%20kim.jpg",
- trailer:"https://www.youtube.com/embed/L4NrL1lZrt4",
- resumo:"Lee Young Joon é um vice-presidente brilhante, bonito e extremamente convencido.\nAo seu lado está Kim Mi So, sua secretária perfeita, que decide pedir demissão depois de anos dedicada ao trabalho.\n\nSem entender como pode perder alguém tão importante, Young Joon começa a tentar impedir sua saída.\nEnquanto os dois convivem ainda mais de perto, sentimentos antigos e memórias do passado começam a surgir.\n\nO dorama é um dos romances coreanos mais famosos dos últimos anos, cheio de química, humor e cenas muito marcantes.\nÉ perfeito para quem procura um romance leve, divertido e muito popular."
-}
-,
-{
- nome:"My Demon",
- nomePT:"My Demon",
- nomeEN:"My Demon",
- tags:["romance","fantasia","comedia"],
- nota:"8.4/10 – MyDramaList",
- elenco:["Song Kang", "Kim Yoo-jung", "Lee Sang-yi", "Kim Hae-sook", "Jo Hye-joo"],
- descricao:"Uma herdeira fria faz um contrato de casamento com um demônio que perde seus poderes.\nRomance sobrenatural muito popular.",
- imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/my%20demon.jpg",
- trailer:"https://www.youtube.com/embed/D-bAfFqvxZ8",
- resumo:"Do Do Hee é uma herdeira inteligente e desconfiada que vive cercada por intrigas familiares.\nJung Gu Won é um demônio elegante e arrogante que sempre fez acordos com humanos.\n\nQuando os dois se envolvem em um acidente estranho, os poderes dele acabam ligados a ela.\nPara sobreviver e resolver os problemas ao redor deles, os dois entram em um casamento por contrato.\n\nO dorama mistura romance, fantasia, humor e mistério de forma leve e viciante.\nÉ uma boa escolha para quem gosta de casais com química forte e histórias sobrenaturais modernas."
-}
-,
-{
- nome:"Destined with You",
- nomePT:"Destined with You",
- nomeEN:"Destined with You",
- tags:["romance","fantasia","triste"],
- nota:"8.2/10 – MyDramaList",
- elenco:["Jo Bo-ah", "Rowoon", "Ha Jun", "Yura", "Lee Bong-ryun"],
- descricao:"Uma funcionária pública encontra um livro antigo que pode quebrar uma maldição.\nRomance com fantasia e destino.",
- imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/destined%20with%20you.jpg",
- trailer:"https://www.youtube.com/embed/3M4dJB8z8KQ",
- resumo:"Lee Hong Jo é uma funcionária pública de vida simples que acaba encontrando um antigo livro selado.\nJang Shin Yu é um advogado bonito e popular que sofre com uma maldição misteriosa passada por gerações.\n\nQuando Hong Jo entra em posse desse livro, os destinos dos dois passam a se cruzar de forma inevitável.\nEntre feitiços, passado, paixão e várias confusões, o romance cresce aos poucos.\n\nO dorama mistura fantasia, mistério e romance, sendo uma boa opção para quem gosta de histórias de destino e química entre o casal principal."
-}
- {
- nome:"Taxi Driver",
- tags:["suspense","acao","intenso"],
- nota:"8.8/10 – MyDramaList",
- elenco:["Lee Je-hoon", "Esom", "Kim Eui-sung", "Pyo Ye-jin", "Cha Ji-yeon"],
- descricao:"Um serviço secreto de táxi se vinga de criminosos que escaparam da justiça.\nAção intensa e histórias impactantes.",
- imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/taxi%20driver.jpg",
- trailer:"https://www.youtube.com/embed/9tJ3v0w3A0Y",
- resumo:`Kim Do Gi é um ex-oficial das forças especiais cuja vida muda após o assassinato brutal de sua mãe.
-
-Ele passa a trabalhar para a empresa Rainbow Taxi,
-um serviço secreto que oferece vingança para vítimas que não conseguiram justiça.
-
-Cada episódio apresenta um caso diferente,
-inspirado em histórias reais de crimes na Coreia.
-
-Enquanto executam suas missões,
-a equipe precisa enfrentar criminosos perigosos e autoridades corruptas.
-
-Taxi Driver mistura ação, suspense e crítica social,
-com momentos de tensão e reviravoltas.
-
-É um dorama viciante e cheio de adrenalina.`
-},
-{
- nome:"Strangers From Hell",
- tags:["suspense","terror","intenso"],
- nota:"8.7/10 – MyDramaList",
- elenco:["Im Si-wan", "Lee Dong-wook", "Lee Jung-eun", "Lee Hyun-wook", "Park Jong-hwan"],
- descricao:"Um jovem se muda para um prédio barato em Seul.\nLogo percebe que seus vizinhos escondem segredos assustadores.",
- imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/strangers%20from%20hell.jpg",
- trailer:"https://www.youtube.com/embed/uvp4mG9q0hM",
- resumo:`Yoon Jong Woo é um jovem que se muda para Seul em busca de trabalho.
-
-Sem dinheiro, ele acaba vivendo em um pequeno e estranho prédio chamado Eden Studio.
-
-Logo ele percebe que seus vizinhos têm comportamentos extremamente bizarros.
-
-Entre personagens perturbadores e situações cada vez mais tensas,
-Jong Woo começa a perder sua sanidade.
-
-O dorama cria uma atmosfera claustrofóbica e assustadora,
-mostrando como o ambiente pode transformar pessoas.
-
-É um thriller psicológico intenso e perturbador.`
-},
- {
- nome:"Strangers From Hell",
- tags:["suspense","terror","intenso"],
- nota:"8.7/10 – MyDramaList",
- elenco:["Im Si-wan", "Lee Dong-wook", "Lee Jung-eun", "Lee Hyun-wook", "Park Jong-hwan"],
- descricao:"Um jovem se muda para um prédio barato em Seul.\nLogo percebe que seus vizinhos escondem segredos assustadores.",
- imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/strangers%20from%20hell.jpg",
- trailer:"https://www.youtube.com/embed/uvp4mG9q0hM",
- resumo:`Yoon Jong Woo é um jovem que se muda para Seul em busca de trabalho.
-
-Sem dinheiro, ele acaba vivendo em um pequeno e estranho prédio chamado Eden Studio.
-
-Logo ele percebe que seus vizinhos têm comportamentos extremamente bizarros.
-
-Entre personagens perturbadores e situações cada vez mais tensas,
-Jong Woo começa a perder sua sanidade.
-
-O dorama cria uma atmosfera claustrofóbica e assustadora,
-mostrando como o ambiente pode transformar pessoas.
-
-É um thriller psicológico intenso e perturbador.`
-},
-];function criarSlug(nome, nomeEN) {
-  const base = nomeEN || nome;
-  return String(base || "")
-    .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/(^-|-$)/g, "");
-}
-
-doramas.forEach(d => {
-  d.slug = criarSlug(d.nome, d.nomeEN);
-
-});
+];
