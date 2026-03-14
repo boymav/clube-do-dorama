@@ -2013,6 +2013,27 @@ com casos extremamente tensos e complexos.
 
 É um suspense inteligente e muito envolvente.`
 }
+,
+{
+ nome:"Happiness",
+ tags:["suspense","acao","intenso"],
+ nota:"8.8/10 – MyDramaList",
+ elenco:["Han Hyo-joo", "Park Hyung-sik", "Jo Woo-jin", "Park Joo-hee", "Lee Joo-seung"],
+ descricao:"Um vírus misterioso transforma pessoas em criaturas violentas.\nMoradores de um prédio ficam isolados tentando sobreviver.\nSuspense tenso com drama humano.",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/happiness.jpg",
+ trailer:"https://www.youtube.com/embed/jXQF9o7n0aY",
+ resumo:`Uma doença misteriosa começa a se espalhar rapidamente.
+Pessoas infectadas entram em estados violentos e imprevisíveis.
+
+Um prédio residencial é colocado em quarentena.
+Os moradores precisam conviver enquanto o medo cresce.
+
+A policial Yoon Sae Bom e o detetive Jung Yi Hyun tentam manter a ordem.
+Mas segredos e egoísmo começam a aparecer entre os próprios moradores.
+
+O dorama mistura sobrevivência, suspense psicológico e crítica social.
+Cada episódio aumenta a tensão e mostra até onde as pessoas vão para sobreviver.`
+}
 ];function criarSlug(nome, nomeEN) {
   const base = nomeEN || nome;
   return String(base || "")
