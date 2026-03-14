@@ -2020,7 +2020,7 @@ com casos extremamente tensos e complexos.
  nota:"8.8/10 – MyDramaList",
  elenco:["Han Hyo-joo", "Park Hyung-sik", "Jo Woo-jin", "Park Joo-hee", "Lee Joo-seung"],
  descricao:"Um vírus misterioso transforma pessoas em criaturas violentas.\nMoradores de um prédio ficam isolados tentando sobreviver.\nSuspense tenso com drama humano.",
- imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/happiness.jpg",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/hapiness.webp",
  trailer:"https://www.youtube.com/embed/jXQF9o7n0aY",
  resumo:`Uma doença misteriosa começa a se espalhar rapidamente.
 Pessoas infectadas entram em estados violentos e imprevisíveis.
