@@ -1858,7 +1858,7 @@ emocionantes dos últimos anos.`
  descricao:"Um aluno aparentemente frágil enfrenta a violência escolar usando inteligência e estratégia.\nCurto, intenso e muito viciante.",
  resumo:"Yeon Si Eun é um dos melhores alunos da escola e parece fraco fisicamente.\nMesmo assim, ele encontra formas inteligentes de enfrentar colegas violentos e sobreviver ao ambiente brutal ao seu redor.\n\nAo lado de novos amigos, ele entra em conflitos cada vez mais perigosos.\nO dorama fala sobre bullying, amizade e dor, com um ritmo rápido e pesado.\n\nCom poucos episódios e muita tensão, é perfeito para quem procura um dorama curto, forte e impossível de largar.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/weak%20hero%20class.jpg",
- trailer:"https://www.youtube.com/embed/Tm26r_aQw4k"
+ trailer:"https://www.youtube.com/embed/U82D6YpMOcU"
 }
 ,
 {
@@ -1871,7 +1871,7 @@ emocionantes dos últimos anos.`
  descricao:"Uma advogada competitiva se envolve com um ator famoso que não confia em mulheres.\nRomcom curta, leve e muito divertida.",
  resumo:"Yeo Mi Ran é uma advogada competitiva que odeia ser subestimada.\nNam Kang Ho é um ator famoso que evita se envolver emocionalmente.\n\nOs dois começam se estranhando, mas logo entram em uma dinâmica divertida e cheia de química.\nCom 10 episódios, o dorama mistura comédia romântica, enemies to lovers e maratona fácil.\n\nÉ uma ótima escolha para quem quer algo curto, leve e muito gostoso de assistir.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/love%20to%20hate%20you.jpg",
- trailer:"https://www.youtube.com/embed/jZjoT4x7fQ4"
+ trailer:"https://www.youtube.com/embed/HECtAOtE3d8"
 }
 ,
 {
@@ -1884,7 +1884,7 @@ emocionantes dos últimos anos.`
  descricao:"Uma funcionária insegura leva uma vida dupla na internet usando máscara.\nCurto, sombrio e cheio de reviravoltas.",
  resumo:"Kim Mo Mi sonha em ser famosa, mas sofre por não se encaixar nos padrões de beleza.\nÀ noite, ela assume outra identidade na internet usando uma máscara.\n\nQuando sua vida dupla sai do controle, tudo muda de forma violenta.\nO dorama tem poucos episódios, clima pesado e várias viradas de roteiro.\n\nÉ uma boa pedida para quem quer um dorama curto, diferente e muito comentado.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/mask%20girl.jpg",
- trailer:"https://www.youtube.com/embed/7aL3C3AyrQw"
+ trailer:"https://www.youtube.com/embed/Gebl7um3jUg"
 }
 ,
 {
@@ -1910,7 +1910,7 @@ emocionantes dos últimos anos.`
  descricao:"Dois amigos de longa data passam a morar juntos por alguns dias e começam a encarar sentimentos antigos.\nRomance curto e delicado.",
  resumo:"Eun Soo precisa escrever uma música sobre amor não correspondido.\nPara entender melhor esse sentimento, ela passa um tempo ao lado do melhor amigo, Sun Woo.\n\nConforme convivem mais de perto, sentimentos antigos começam a aparecer.\nCom apenas 4 episódios, o dorama é rápido, romântico e muito fácil de maratonar.\n\nÉ perfeito para quem procura algo curto, bonito e com clima aconchegante.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/soudtrack.webp",
- trailer:"https://www.youtube.com/embed/xNvqngvtPiQ"
+ trailer:"https://www.youtube.com/embed/jcQhT_HZx8s"
 }
 ,
 {
@@ -1923,7 +1923,7 @@ emocionantes dos últimos anos.`
  descricao:"Uma estudante do ensino médio viaja no tempo e conhece um rei da era Joseon.\nCurtinho, fofo e muito querido pelos fãs.",
  resumo:"Dan Bi está desesperada por causa da prova de matemática.\nDe repente, ela acaba viajando no tempo e vai parar na era Joseon.\n\nLá, conhece um rei jovem e inteligente e passa a ajudá-lo de forma inesperada.\nCom apenas 2 episódios, o dorama é extremamente curto, divertido e romântico.\n\nÉ uma ótima opção para quem quer um dorama curtíssimo e muito gostoso de assistir.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/splash%20splash%20love.jpg",
- trailer:"https://www.youtube.com/embed/mtl_Di2XQ3k"
+ trailer:"https://www.youtube.com/embed/E18g4M2eUFw"
 }
 ,
 {
@@ -1949,7 +1949,7 @@ emocionantes dos últimos anos.`
  elenco:["Byeon Woo-seok", "Kim Hye-yoon", "Song Geon-hee", "Lee Seung-hyub", "Jung Young-joo"],
  descricao:"Uma fã volta no tempo para tentar salvar seu ídolo favorito.\nRomance, viagem no tempo e muitos momentos emocionantes.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/lovely%20runner.webp",
- trailer:"https://www.youtube.com/embed/9nQwLByLx9M",
+ trailer:"https://www.youtube.com/embed/5kk0dYa8Ccc",
  resumo:"Im Sol é uma jovem que encontra conforto nas músicas do astro Ryu Sun Jae.\nQuando uma tragédia muda tudo, ela acaba voltando no tempo para a época em que ele ainda era um estudante.\n\nDeterminada a evitar o destino doloroso que conhece, Im Sol tenta se aproximar dele e mudar o rumo da história.\nAo longo dessa jornada, amizade, romance e várias emoções começam a surgir.\n\nO dorama mistura viagem no tempo, romance juvenil e momentos muito fofos, com um casal que conquistou muita gente.\nÉ uma ótima escolha para quem gosta de histórias românticas viciantes e muito comentadas."
 }
 ,
@@ -1962,7 +1962,7 @@ emocionantes dos últimos anos.`
  elenco:["Park Seo-joon", "Park Min-young", "Lee Tae-hwan", "Kang Ki-young", "Hwang Bo-ra"],
  descricao:"Um chefe narcisista entra em crise quando sua secretária perfeita decide pedir demissão.\nComédia romântica clássica e muito popular.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/What's%20Wrong%20with%20Secretary%20Kim.jfif",
- trailer:"https://www.youtube.com/embed/L4NrL1lZrt4",
+ trailer:"https://www.youtube.com/embed/EDGfWN36q5o",
  resumo:"Lee Young Joon é um vice-presidente brilhante, bonito e extremamente convencido.\nAo seu lado está Kim Mi So, sua secretária perfeita, que decide pedir demissão depois de anos dedicada ao trabalho.\n\nSem entender como pode perder alguém tão importante, Young Joon começa a tentar impedir sua saída.\nEnquanto os dois convivem ainda mais de perto, sentimentos antigos e memórias do passado começam a surgir.\n\nO dorama é um dos romances coreanos mais famosos dos últimos anos, cheio de química, humor e cenas muito marcantes.\nÉ perfeito para quem procura um romance leve, divertido e muito popular."
 }
 ,
@@ -1975,7 +1975,7 @@ emocionantes dos últimos anos.`
  elenco:["Song Kang", "Kim Yoo-jung", "Lee Sang-yi", "Kim Hae-sook", "Jo Hye-joo"],
  descricao:"Uma herdeira fria faz um contrato de casamento com um demônio que perde seus poderes.\nRomance sobrenatural muito popular.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/my%20demon.jpg",
- trailer:"https://www.youtube.com/embed/D-bAfFqvxZ8",
+ trailer:"https://www.youtube.com/embed/bAfFqvxZg",
  resumo:"Do Do Hee é uma herdeira inteligente e desconfiada que vive cercada por intrigas familiares.\nJung Gu Won é um demônio elegante e arrogante que sempre fez acordos com humanos.\n\nQuando os dois se envolvem em um acidente estranho, os poderes dele acabam ligados a ela.\nPara sobreviver e resolver os problemas ao redor deles, os dois entram em um casamento por contrato.\n\nO dorama mistura romance, fantasia, humor e mistério de forma leve e viciante.\nÉ uma boa escolha para quem gosta de casais com química forte e histórias sobrenaturais modernas."
 }
 ,
@@ -1988,7 +1988,7 @@ emocionantes dos últimos anos.`
  elenco:["Jo Bo-ah", "Rowoon", "Ha Jun", "Yura", "Lee Bong-ryun"],
  descricao:"Uma funcionária pública encontra um livro antigo que pode quebrar uma maldição.\nRomance com fantasia e destino.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/destined%20whit%20you.webp",
- trailer:"https://www.youtube.com/embed/3M4dJB8z8KQ",
+ trailer:"https://www.youtube.com/embed/BXTDH1Ropfo",
  resumo:"Lee Hong Jo é uma funcionária pública de vida simples que acaba encontrando um antigo livro selado.\nJang Shin Yu é um advogado bonito e popular que sofre com uma maldição misteriosa passada por gerações.\n\nQuando Hong Jo entra em posse desse livro, os destinos dos dois passam a se cruzar de forma inevitável.\nEntre feitiços, passado, paixão e várias confusões, o romance cresce aos poucos.\n\nO dorama mistura fantasia, mistério e romance, sendo uma boa opção para quem gosta de histórias de destino e química entre o casal principal."
 }
 
@@ -2000,7 +2000,7 @@ emocionantes dos últimos anos.`
  elenco:["Kim Nam-gil","Jin Sun-kyu","Kim So-jin","Ryeoun","Lee Dae-yeon"],
  descricao:"Baseado em fatos reais.\nConta a história do primeiro profiler criminal da Coreia.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/through%20the%20darkness.webp",
- trailer:"https://www.youtube.com/embed/e6Bpx9p9L9M",
+ trailer:"https://www.youtube.com/embed/vgwb-dTem3w",
  resumo:`Song Ha Young é um policial especializado em entender a mente de criminosos.
 Ele se torna um dos primeiros profilers da Coreia do Sul.
 
@@ -2021,7 +2021,7 @@ com casos extremamente tensos e complexos.
  elenco:["Han Hyo-joo", "Park Hyung-sik", "Jo Woo-jin", "Park Joo-hee", "Lee Joo-seung"],
  descricao:"Um vírus misterioso transforma pessoas em criaturas violentas.\nMoradores de um prédio ficam isolados tentando sobreviver.\nSuspense tenso com drama humano.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/hapiness.webp",
- trailer:"https://www.youtube.com/embed/jXQF9o7n0aY",
+ trailer:"https://www.youtube.com/embed/gqhUlldiLEo",
  resumo:`Uma doença misteriosa começa a se espalhar rapidamente.
 Pessoas infectadas entram em estados violentos e imprevisíveis.
 
