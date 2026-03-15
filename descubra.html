@@ -3,23 +3,23 @@
 <head>
 <meta charset="UTF-8" />
 
-  <!-- AdSense Auto Ads -->
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5053782942464082"
-       crossorigin="anonymous"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5053782942464082"
+     crossorigin="anonymous"></script>
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Descubra seu Dorama 🤖 | Planeta Dorama 🌍</title>
-<meta name="description" content="Planeta Dorama 🌍: listas, recomendações, dorama da semana, notícias e um guia completo para você encontrar o dorama perfeito.">
+<meta name="description" content="Descubra doramas de forma inteligente no Planeta Dorama. Pesquise por romance, tristeza, fantasia, suspense, ação, comédia e receba sugestões muito melhores para o seu momento.">
 
 <meta property="og:site_name" content="Planeta Dorama 🌍">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Planeta Dorama 🌍">
-<meta property="og:description" content="Listas, recomendações, dorama da semana e guia completo de doramas.">
-<meta property="og:url" content="https://planetadorama.com.br/">
+<meta property="og:title" content="Descubra seu Dorama 🤖 | Planeta Dorama 🌍">
+<meta property="og:description" content="Me diga o que você quer sentir e receba sugestões inteligentes de doramas no Planeta Dorama.">
+<meta property="og:url" content="https://planetadorama.com.br/descubra.html">
 <meta property="og:image" content="https://planetadorama.com.br/imagens/og-capa.jpg">
 
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Planeta Dorama 🌍">
-<meta name="twitter:description" content="Listas, recomendações e guia completo de doramas.">
+<meta name="twitter:title" content="Descubra seu Dorama 🤖 | Planeta Dorama 🌍">
+<meta name="twitter:description" content="Me diga o que você quer sentir e receba sugestões inteligentes de doramas no Planeta Dorama.">
 <meta name="twitter:image" content="https://planetadorama.com.br/imagens/og-capa.jpg">
 
 <style>
@@ -29,14 +29,12 @@ body{
   background:#fff0f6;
   color:#333;
 }
-
 header{
   background: linear-gradient(90deg, #ff7eb3, #b983ff);
   padding: 18px 16px;
   text-align:center;
   color:#fff;
 }
-
 header a{
   display:inline-block;
   margin-top:10px;
@@ -45,41 +43,36 @@ header a{
   font-weight:bold;
   opacity:0.95;
 }
-
 .container{
-  max-width: 980px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 24px 16px 50px;
 }
-
 .titulo{
   text-align:center;
   color:#b4005a;
   font-size: 30px;
   margin: 10px 0 6px;
 }
-
 .sub{
   text-align:center;
   font-size: 18px;
   opacity: 0.9;
   margin-bottom: 18px;
+  line-height:1.6;
 }
-
 .painel{
   background:#ffffff;
   border-radius: 18px;
   box-shadow: 0 6px 20px rgba(0,0,0,0.08);
   padding: 18px;
 }
-
 .linha-busca{
   display:flex;
   gap: 10px;
   flex-wrap: wrap;
   justify-content:center;
 }
-
 #entrada{
   width: min(720px, 100%);
   padding: 16px 16px;
@@ -88,12 +81,10 @@ header a{
   border: 1px solid #ddd;
   outline: none;
 }
-
 #entrada:focus{
   border-color:#b983ff;
   box-shadow: 0 0 0 3px rgba(185,131,255,0.25);
 }
-
 .btn{
   padding: 14px 18px;
   font-size: 16px;
@@ -104,18 +95,16 @@ header a{
   cursor:pointer;
   font-weight:bold;
 }
-
 .btn:hover{ background:#b983ff; }
 
-.atalhos{
+.atalhos, .filtros{
   margin-top: 14px;
   display:flex;
   gap: 10px;
   flex-wrap: wrap;
   justify-content:center;
 }
-
-.chip{
+.chip, .filtro{
   background:#f3e8ff;
   border: 1px solid rgba(185,131,255,0.35);
   color:#5a2b82;
@@ -125,80 +114,214 @@ header a{
   font-weight:bold;
   font-size: 14px;
 }
-
-.chip:hover{
-  background:#ead7ff;
+.chip:hover, .filtro:hover{ background:#ead7ff; }
+.filtro.ativo{
+  background:#ff7eb3;
+  color:#fff;
+  border-color:#ff7eb3;
 }
-
 .aviso{
   text-align:center;
   margin-top: 14px;
   font-size: 15px;
   opacity:0.85;
+  line-height:1.6;
 }
-
-.resultado-title{
+.exemplos{
+  margin-top: 12px;
+  text-align:center;
+  color:#666;
+  font-size:14px;
+  line-height:1.7;
+}
+.resultado-title, .extras-title, .parecidos-title{
   margin: 22px 0 10px;
   text-align:center;
   color:#b4005a;
-  font-size: 22px;
+  font-size: 24px;
 }
+.explicacao{
+  display:none;
+  max-width:900px;
+  margin: 0 auto 16px;
+  background:#fff;
+  border-radius:16px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.07);
+  padding:14px 16px;
+  color:#555;
+  line-height:1.7;
+  font-size:15px;
+}
+.resultado-principal{
+  display:none;
+  max-width:980px;
+  margin:0 auto 18px;
+  background:#fff;
+  border-radius:20px;
+  overflow:hidden;
+  box-shadow:0 10px 28px rgba(0,0,0,0.10);
+}
+.resultado-principal-grid{
+  display:grid;
+  grid-template-columns:320px 1fr;
+}
+.resultado-principal img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  min-height:420px;
+  display:block;
+}
+.resultado-principal .info{
+  padding:20px;
+}
+.resultado-principal h3{
+  margin:0 0 10px;
+  font-size:28px;
+  color:#b4005a;
+}
+.resultado-principal p{
+  margin:0 0 10px;
+  line-height:1.75;
+  color:#555;
+}
+.resultado-principal .nota{
+  margin-top:8px;
+  font-weight:bold;
+  color:#7a1b55;
+}
+.resultado-principal .motivo{
+  margin-top:12px;
+  display:inline-block;
+  background:#fff0f6;
+  color:#7a1b55;
+  padding:8px 12px;
+  border-radius:999px;
+  font-size:13px;
+  font-weight:bold;
+}
+.resultado-principal .acoes{
+  margin-top:16px;
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+}
+.btn-sec{
+  padding: 12px 16px;
+  font-size: 15px;
+  background:#b983ff;
+  color:#fff;
+  border:none;
+  border-radius: 12px;
+  cursor:pointer;
+  font-weight:bold;
+  text-decoration:none;
+  display:inline-block;
+}
+.btn-sec:hover{ background:#ff7eb3; }
 
-.cards{
+.cards, .parecidos-grid{
   display:flex;
   flex-wrap:wrap;
   gap: 18px;
   justify-content:center;
 }
-
 .card{
   background:#fff;
-  width: 290px;
+  width: 310px;
   border-radius: 18px;
   overflow:hidden;
   box-shadow: 0 6px 18px rgba(0,0,0,0.10);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
   cursor:pointer;
 }
-
 .card:hover{
   transform: translateY(-6px);
   box-shadow: 0 10px 26px rgba(0,0,0,0.14);
 }
-
 .card img{
   width:100%;
-  height: 360px;
+  height: 380px;
   object-fit: cover;
 }
-
 .card .info{
   padding: 14px 14px 16px;
 }
-
 .card h3{
   margin: 0 0 8px;
   font-size: 18px;
 }
-
 .card p{
   margin: 0;
   font-size: 14px;
   color:#555;
-  line-height: 1.45;
+  line-height: 1.55;
 }
-
 .card .nota{
   margin-top: 10px;
   font-weight:bold;
   color:#7a1b55;
 }
-
+.card .score{
+  margin-top: 10px;
+  font-size: 13px;
+  color:#7a1b55;
+  background:#fff0f6;
+  border-radius:999px;
+  display:inline-block;
+  padding:6px 10px;
+}
+.chips-card{
+  margin-top:10px;
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+}
+.chip-card{
+  background:#fff0f6;
+  color:#7a1b55;
+  border:1px solid rgba(0,0,0,0.06);
+  border-radius:999px;
+  font-size:12px;
+  padding:6px 10px;
+}
+.bloco{
+  display:none;
+  max-width:980px;
+  margin: 0 auto 18px;
+  background:#fff;
+  border-radius:20px;
+  box-shadow:0 10px 28px rgba(0,0,0,0.08);
+  padding:18px;
+  line-height:1.75;
+  color:#555;
+}
+.bloco h3{
+  margin:0 0 10px;
+  color:#b4005a;
+}
+.sem-resultados{
+  text-align:center;
+  width:100%;
+  background:#fff;
+  border-radius:16px;
+  padding:18px;
+  box-shadow:0 6px 18px rgba(0,0,0,0.08);
+  line-height:1.7;
+}
 footer{
   text-align:center;
   padding: 18px;
   color:#fff;
   background:#b983ff;
+}
+@media(max-width: 860px){
+  .resultado-principal-grid{
+    grid-template-columns:1fr;
+  }
+  .resultado-principal img{
+    min-height:320px;
+  }
 }
 </style>
 </head>
@@ -211,28 +334,55 @@ footer{
 </header>
 
 <div class="container">
-  <h2 class="titulo">Me diga como você está se sentindo</h2>
-  <p class="sub">Eu vou sugerir 3 doramas perfeitos no Planeta Dorama 🌍 ✨</p>
+  <h2 class="titulo">Me diga o que você quer assistir</h2>
+  <p class="sub">Agora a busca entende melhor <strong>humor, gênero, intensidade, tema, elenco e clima da história</strong> para sugerir doramas mais certeiros de verdade.</p>
 
   <div class="painel">
     <div class="linha-busca">
-      <input type="text" id="entrada" placeholder="Ex: estou triste… quero um romance leve… quero algo intenso…" />
+      <input type="text" id="entrada" placeholder="Ex: quero um romance leve para relaxar | quero chorar muito | quero suspense com vingança | quero um elenco forte" />
       <button class="btn" onclick="buscar()">Buscar</button>
+      <button class="btn" onclick="meSurpreenda()">Me surpreenda</button>
     </div>
 
     <div class="atalhos">
-      <button class="chip" onclick="atalho('triste')">😭 Triste</button>
-      <button class="chip" onclick="atalho('romance')">💖 Romance</button>
-      <button class="chip" onclick="atalho('alegre')">😊 Leve</button>
-      <button class="chip" onclick="atalho('intenso')">🔥 Intenso</button>
-      <button class="chip" onclick="atalho('comedia')">😂 Comédia</button>
-      <button class="chip" onclick="atalho('fantasia')">✨ Fantasia</button>
+      <button class="chip" onclick="atalho('quero romance fofo e leve')">💖 Romance fofo</button>
+      <button class="chip" onclick="atalho('quero chorar muito')">😭 Quero chorar</button>
+      <button class="chip" onclick="atalho('quero algo leve e engraçado')">😊 Leve e gostoso</button>
+      <button class="chip" onclick="atalho('quero suspense e tensão')">🕵️ Suspense</button>
+      <button class="chip" onclick="atalho('quero fantasia com romance')">✨ Fantasia</button>
+      <button class="chip" onclick="atalho('quero ação e vingança')">🔥 Ação / vingança</button>
     </div>
 
-    <p class="aviso">Dica: você pode escrever “quero chorar”, “quero rir”, “quero ação”, “quero romance fofo” etc.</p>
+    <div class="filtros">
+      <button class="filtro" data-filtro="romance" onclick="toggleFiltro('romance', this)">Romance</button>
+      <button class="filtro" data-filtro="triste" onclick="toggleFiltro('triste', this)">Triste</button>
+      <button class="filtro" data-filtro="alegre" onclick="toggleFiltro('alegre', this)">Leve</button>
+      <button class="filtro" data-filtro="comedia" onclick="toggleFiltro('comedia', this)">Comédia</button>
+      <button class="filtro" data-filtro="fantasia" onclick="toggleFiltro('fantasia', this)">Fantasia</button>
+      <button class="filtro" data-filtro="suspense" onclick="toggleFiltro('suspense', this)">Suspense</button>
+      <button class="filtro" data-filtro="historico" onclick="toggleFiltro('historico', this)">Histórico</button>
+      <button class="filtro" data-filtro="escolar" onclick="toggleFiltro('escolar', this)">Escolar</button>
+      <button class="filtro" data-filtro="acao" onclick="toggleFiltro('acao', this)">Ação</button>
+      <button class="filtro" data-filtro="vinganca" onclick="toggleFiltro('vinganca', this)">Vingança</button>
+    </div>
+
+    <p class="aviso">Você pode escrever naturalmente, como se estivesse conversando: “quero um dorama bonito e triste”, “quero casal com química”, “quero algo curto para hoje”, “quero suspense que prenda”, “quero um elenco muito bom”.</p>
+    <div class="exemplos">
+      Exemplos de busca: <strong>romance triste</strong> • <strong>algo leve para maratonar</strong> • <strong>fantasia com romance</strong> • <strong>dorama intenso e pesado</strong> • <strong>elenco forte</strong>
+    </div>
   </div>
 
-  <h3 class="resultado-title" id="tituloResultado" style="display:none;">🎯 Minhas sugestões</h3>
+  <h3 class="resultado-title" id="tituloResultado" style="display:none;">🎯 Melhor combinação para você</h3>
+  <div id="explicacaoBusca" class="explicacao"></div>
+  <div id="resultadoPrincipal" class="resultado-principal"></div>
+
+  <div id="blocoCritica" class="bloco"></div>
+  <div id="blocoElenco" class="bloco"></div>
+
+  <h3 class="parecidos-title" id="tituloParecidos" style="display:none;">💡 Doramas parecidos com essa escolha</h3>
+  <div id="resultadoParecidos" class="parecidos-grid"></div>
+
+  <h3 class="extras-title" id="tituloExtras" style="display:none;">✨ Outras boas opções</h3>
   <div id="resultado" class="cards"></div>
 </div>
 
@@ -242,7 +392,6 @@ footer{
 
 <script src="doramas.js"></script>
 <script>
-  // Títulos em PT + EN para exibição amigável
   const TITULOS_PT = {
     "Crash Landing on You": "Pousando no Amor (Crash Landing on You)",
     "Pousando no Amor": "Pousando no Amor (Crash Landing on You)",
@@ -263,91 +412,378 @@ footer{
     return TITULOS_PT[nome] || nome;
   }
 
-</script>
-<script>
-function atalho(tag){
-  const mapaTexto = {
-    triste: "quero algo triste",
-    romance: "quero romance",
-    alegre: "quero algo leve e feliz",
-    intenso: "quero algo intenso e forte",
-    comedia: "quero dar risada",
-    fantasia: "quero fantasia"
-  };
-  document.getElementById("entrada").value = mapaTexto[tag] || tag;
-  buscar();
-}
-
-function buscar() {
-  const texto = (document.getElementById("entrada").value || "").toLowerCase().trim();
-
-  const mapa = {
-    triste: ["triste","chorar","sofrer","emoção","drama","melancólico","melancolia"],
-    romance: ["amor","romance","casal","relacionamento","apaixonado","fofo"],
-    alegre: ["feliz","leve","engraçado","fofo","divertido","confortável","aconchegante"],
-    intenso: ["ação","vingança","suspense","forte","crime","tenso","pesado"],
-    comedia: ["comedia","engraçado","risada","rir","humor"],
-    fantasia: ["fantasia","magia","sobrenatural","místico"]
-  };
-
-  let categoriasDetectadas = [];
-
-  for (let categoria in mapa) {
-    if (mapa[categoria].some(p => texto.includes(p))) {
-      categoriasDetectadas.push(categoria);
-    }
-  }
-
-  let resultados;
-  if (categoriasDetectadas.length > 0) {
-    resultados = doramas.filter(d =>
-      categoriasDetectadas.some(cat => d.tags && d.tags.includes(cat))
-    );
-  } else {
-    resultados = doramas;
-  }
-
-  resultados = resultados.sort(() => 0.5 - Math.random()).slice(0, 3);
-
-  const div = document.getElementById("resultado");
-  const titulo = document.getElementById("tituloResultado");
-
-  div.innerHTML = "";
-  titulo.style.display = "block";
-
-  if(resultados.length === 0){
-    div.innerHTML = "<p style='text-align:center; width:100%;'>Não achei nada com isso 😢 Tenta outras palavras.</p>";
-    return;
-  }
-
-  resultados.forEach(d => {
-    div.innerHTML += `
-      <div class="card" onclick="window.location.href='doramas/' + (d.slug || criarSlug(d.nome)) + '.html'">
-        <img src="${d.imagem}" alt="${d.nome}">
-        <div class="info">
-          <h3>${nomeExibicao(d)}</h3>
-          <p>${(d.descricao || "").replaceAll("\n","<br>")}</p>
-          <div class="nota">⭐ ${d.nota || ""}</div>
-        </div>
-      </div>
-    `;
-  });
-}
-
-document.getElementById("entrada").addEventListener("keydown", (e) => {
-  if(e.key === "Enter") buscar();
-});
-</script>
-
-
-<script>
-  function criarSlug(nome){
-    return String(nome || "")
+  function criarSlug(nome, nomeEN){
+    const base = nomeEN || nome;
+    return String(base || "")
       .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
       .toLowerCase()
       .replace(/[^a-z0-9]+/g, "-")
       .replace(/(^-|-$)/g, "");
   }
+
+  function primeiraFrase(d){
+    const txt = String(d.descricao || d.resumo || "").trim();
+    if(!txt) return "";
+    return txt.split("\n")[0];
+  }
+
+  function resumoCurto(d){
+    const txt = String(d.resumo || d.descricao || "").trim();
+    if(!txt) return "";
+    const partes = txt.split(/\n+/).map(x => x.trim()).filter(Boolean);
+    return partes.slice(0,2).join(" ");
+  }
+
+  function atalho(texto){
+    document.getElementById("entrada").value = texto;
+    buscar();
+  }
+
+  const filtrosAtivos = new Set();
+
+  function toggleFiltro(nome, btn){
+    if(filtrosAtivos.has(nome)){
+      filtrosAtivos.delete(nome);
+      btn.classList.remove("ativo");
+    } else {
+      filtrosAtivos.add(nome);
+      btn.classList.add("ativo");
+    }
+  }
+
+  const DICIONARIO = {
+    romance: ["romance","amor","casal","fofo","beijo","apaixonado","quimica","química","relacionamento","namoro"],
+    triste: ["triste","chorar","sofrer","emocao","emoção","melancolico","melancólico","dor","lagrimas","lágrimas"],
+    alegre: ["alegre","leve","feliz","confortavel","confortável","gostoso","suave","aconchegante","relaxar"],
+    comedia: ["comedia","comédia","engracado","engraçado","rir","risada","humor","divertido"],
+    fantasia: ["fantasia","magia","sobrenatural","destino","imortal","viagem no tempo","misterioso","mistico","místico"],
+    intenso: ["intenso","forte","pesado","marcante","dramatico","dramático"],
+    suspense: ["suspense","mistério","misterio","crime","serial killer","investigacao","investigação","tenso","tensão"],
+    terror: ["terror","monstro","zumbi","sombrio","assustador"],
+    historico: ["historico","histórico","epoca","época","palacio","palácio","rei","rainha","joseon"],
+    escolar: ["escola","escolar","juventude","colegio","colégio","universidade","bullying","amigos","amizade"],
+    vinganca: ["vinganca","vingança","justica","justiça","revenge","revanche"],
+    acao: ["acao","ação","luta","adrenalina","correria","máfia","mafia"],
+    curto: ["curto","rapido","rápido","episodios curtos","episódios curtos","maratonar hoje","poucos episodios","poucos episódios"],
+    elenco: ["elenco","atores","ator","atriz","personagens","personagem","elenco forte"]
+  };
+
+  const NEGATIVOS = {
+    triste: ["nao quero chorar","não quero chorar","sem tristeza","nao quero triste","não quero triste"],
+    pesado: ["nao quero pesado","não quero pesado","leve","sem sofrimento"],
+    romance: ["sem romance","nao quero romance","não quero romance"],
+    suspense: ["sem suspense","nao quero suspense","não quero suspense"]
+  };
+
+  function textoBase(d){
+    return [
+      d.nome || "",
+      d.nomePT || "",
+      d.nomeEN || "",
+      d.descricao || "",
+      d.resumo || "",
+      Array.isArray(d.tags) ? d.tags.join(" ") : "",
+      d.criticaHumana || "",
+      d.elencoInfo || ""
+    ].join(" ").toLowerCase();
+  }
+
+  function detectarIntencoes(texto){
+    const hits = {};
+    Object.keys(DICIONARIO).forEach(cat => hits[cat] = 0);
+
+    const t = texto.toLowerCase();
+
+    for(const [cat, lista] of Object.entries(DICIONARIO)){
+      lista.forEach(termo => {
+        if(t.includes(termo)) hits[cat] += termo.split(" ").length > 1 ? 3 : 2;
+      });
+    }
+
+    filtrosAtivos.forEach(f => {
+      if(hits[f] !== undefined) hits[f] += 4;
+    });
+
+    if(t.includes("quero chorar")) hits.triste += 4;
+    if(t.includes("romance leve") || t.includes("romance fofo")) { hits.romance += 3; hits.alegre += 3; }
+    if(t.includes("suspense com vinganca") || t.includes("suspense com vingança")) { hits.suspense += 4; hits.vinganca += 3; }
+    if(t.includes("acao e vinganca") || t.includes("ação e vingança")) { hits.acao += 3; hits.vinganca += 3; }
+    if(t.includes("fantasia com romance")) { hits.fantasia += 4; hits.romance += 3; }
+    if(t.includes("algo leve")) hits.alegre += 3;
+    if(t.includes("quero rir")) hits.comedia += 4;
+
+    return hits;
+  }
+
+  function calcularScore(d, texto, intencoes){
+    const base = textoBase(d);
+    const tags = Array.isArray(d.tags) ? d.tags.map(x => String(x).toLowerCase()) : [];
+    let score = 0;
+    const motivos = [];
+
+    for(const [cat, peso] of Object.entries(intencoes)){
+      if(!peso) continue;
+      if(tags.includes(cat)){
+        score += peso * 5;
+        motivos.push(cat);
+      }
+      if(base.includes(cat)){
+        score += peso * 2;
+      }
+    }
+
+    texto.split(/\s+/).filter(Boolean).forEach(palavra => {
+      if(palavra.length < 3) return;
+      if(base.includes(palavra)) score += 1;
+    });
+
+    const notaTxt = String(d.nota || "");
+    const notaMatch = notaTxt.match(/(\d+(?:[\.,]\d+)?)/);
+    if(notaMatch){
+      const nota = parseFloat(notaMatch[1].replace(",", "."));
+      score += Math.max(0, nota - 7) * 1.4;
+    }
+
+    if(intencoes.curto){
+      const curtoTxt = (d.descricao || "") + " " + (d.resumo || "");
+      if(/curto|rápido|rapido|episódios curtos|episodios curtos/i.test(curtoTxt)) score += 8;
+    }
+
+    if(intencoes.elenco && d.elencoInfo) score += 7;
+    if(d.criticaHumana) score += 1.5;
+
+    const t = texto.toLowerCase();
+    if(NEGATIVOS.triste.some(x => t.includes(x)) && tags.includes("triste")) score -= 8;
+    if(NEGATIVOS.romance.some(x => t.includes(x)) && tags.includes("romance")) score -= 8;
+    if(NEGATIVOS.suspense.some(x => t.includes(x)) && tags.includes("suspense")) score -= 8;
+    if(NEGATIVOS.pesado.some(x => t.includes(x)) && (tags.includes("triste") || tags.includes("intenso"))) score -= 6;
+
+    if(Object.values(intencoes).every(v => v === 0)){
+      score += 5;
+    }
+
+    return { score, motivos: [...new Set(motivos)].slice(0,4) };
+  }
+
+  function explicarBusca(intencoes){
+    const nomes = {
+      romance:"romance",
+      triste:"emoção / tristeza",
+      alegre:"algo leve",
+      comedia:"comédia",
+      fantasia:"fantasia",
+      intenso:"algo intenso",
+      suspense:"suspense",
+      terror:"terror",
+      historico:"histórico",
+      escolar:"escolar / juventude",
+      vinganca:"vingança",
+      acao:"ação",
+      curto:"algo curto",
+      elenco:"elenco / atores"
+    };
+    const ativos = Object.entries(intencoes).filter(([_,v]) => v > 0).sort((a,b) => b[1]-a[1]);
+    if(!ativos.length){
+      return "Como você não especificou muito, selecionei opções fortes e populares do seu catálogo.";
+    }
+    return "Analisei sua busca e priorizei doramas com mais chance de combinar com: <strong>" +
+      ativos.slice(0,4).map(([k]) => nomes[k]).join(", ") + "</strong>.";
+  }
+
+  function motivoBonito(scoreData){
+    const nomes = {
+      romance:"romance",
+      triste:"emoção",
+      alegre:"leveza",
+      comedia:"comédia",
+      fantasia:"fantasia",
+      intenso:"intensidade",
+      suspense:"suspense",
+      terror:"terror",
+      historico:"histórico",
+      escolar:"escolar",
+      vinganca:"vingança",
+      acao:"ação",
+      curto:"algo curto",
+      elenco:"elenco"
+    };
+    if(!scoreData.motivos.length) return "Boa combinação com sua busca";
+    return "Combina com: " + scoreData.motivos.map(x => nomes[x] || x).join(", ");
+  }
+
+  function renderPrincipal(item){
+    const box = document.getElementById("resultadoPrincipal");
+    box.style.display = "block";
+    box.innerHTML = `
+      <div class="resultado-principal-grid">
+        <img src="${item.d.imagem}" alt="${nomeExibicao(item.d)}">
+        <div class="info">
+          <h3>${nomeExibicao(item.d)}</h3>
+          <p>${resumoCurto(item.d) || primeiraFrase(item.d)}</p>
+          <div class="nota">⭐ ${item.d.nota || ""}</div>
+          <div class="motivo">${motivoBonito(item.scoreData)}</div>
+          <div class="chips-card" style="margin-top:14px;">
+            ${(Array.isArray(item.d.tags) ? item.d.tags.slice(0,4) : []).map(t => `<span class="chip-card">${t}</span>`).join("")}
+          </div>
+          <div class="acoes">
+            <a class="btn-sec" href="doramas/${item.d.slug || criarSlug(item.d.nome, item.d.nomeEN)}.html">Abrir página do dorama</a>
+            <button class="btn-sec" onclick="meSurpreenda()">Me surpreenda de novo</button>
+          </div>
+        </div>
+      </div>
+    `;
+  }
+
+  function renderBlocosInfo(d){
+    const critica = document.getElementById("blocoCritica");
+    const elenco = document.getElementById("blocoElenco");
+
+    if(d.criticaHumana){
+      critica.style.display = "block";
+      critica.innerHTML = `<h3>💬 Por que esse dorama pode combinar com você</h3><p>${String(d.criticaHumana).replace(/\n/g, "</p><p>")}</p>`;
+    } else {
+      critica.style.display = "none";
+      critica.innerHTML = "";
+    }
+
+    if(d.elencoInfo){
+      elenco.style.display = "block";
+      elenco.innerHTML = `<h3>👥 Elenco</h3><p>${String(d.elencoInfo).replace(/\n/g, "</p><p>")}</p>`;
+    } else {
+      elenco.style.display = "none";
+      elenco.innerHTML = "";
+    }
+  }
+
+  function doramasParecidos(d){
+    const box = document.getElementById("resultadoParecidos");
+    const titulo = document.getElementById("tituloParecidos");
+    box.innerHTML = "";
+
+    const tagsBase = Array.isArray(d.tags) ? d.tags.map(x => String(x).toLowerCase()) : [];
+    let relacionados = doramas
+      .filter(x => x !== d)
+      .map(x => {
+        const tagsX = Array.isArray(x.tags) ? x.tags.map(t => String(t).toLowerCase()) : [];
+        const comuns = tagsX.filter(t => tagsBase.includes(t)).length;
+        const bonus = (x.criticaHumana ? 1 : 0) + (x.elencoInfo ? 1 : 0);
+        return { d:x, score: comuns * 5 + bonus };
+      })
+      .filter(x => x.score > 0)
+      .sort((a,b) => b.score - a.score)
+      .slice(0,4);
+
+    if(!relacionados.length){
+      titulo.style.display = "none";
+      return;
+    }
+
+    titulo.style.display = "block";
+
+    relacionados.forEach(({d}) => {
+      box.innerHTML += `
+        <div class="card" onclick="window.location.href='doramas/' + (d.slug || criarSlug(d.nome, d.nomeEN)) + '.html'">
+          <img src="${d.imagem}" alt="${nomeExibicao(d)}">
+          <div class="info">
+            <h3>${nomeExibicao(d)}</h3>
+            <p>${primeiraFrase(d)}</p>
+            <div class="nota">⭐ ${d.nota || ""}</div>
+            <div class="chips-card">
+              ${(Array.isArray(d.tags) ? d.tags.slice(0,3) : []).map(t => `<span class="chip-card">${t}</span>`).join("")}
+            </div>
+          </div>
+        </div>
+      `;
+    });
+  }
+
+  function renderExtras(resultados){
+    const div = document.getElementById("resultado");
+    const tituloExtras = document.getElementById("tituloExtras");
+    div.innerHTML = "";
+    tituloExtras.style.display = resultados.length ? "block" : "none";
+
+    if(!resultados.length){
+      div.innerHTML = "<div class='sem-resultados'>Não achei bons resultados com isso 😢<br>Tente escrever de outro jeito, como <strong>romance leve</strong>, <strong>quero chorar</strong>, <strong>suspense</strong> ou <strong>fantasia com romance</strong>.</div>";
+      return;
+    }
+
+    resultados.forEach(({d, scoreData}) => {
+      const tags = Array.isArray(d.tags) ? d.tags.slice(0,3) : [];
+      const chips = tags.map(t => `<span class="chip-card">${t}</span>`).join("");
+
+      div.innerHTML += `
+        <div class="card" onclick="window.location.href='doramas/' + (d.slug || criarSlug(d.nome, d.nomeEN)) + '.html'">
+          <img src="${d.imagem}" alt="${nomeExibicao(d)}">
+          <div class="info">
+            <h3>${nomeExibicao(d)}</h3>
+            <p>${primeiraFrase(d)}</p>
+            <div class="nota">⭐ ${d.nota || ""}</div>
+            <div class="score">${motivoBonito(scoreData)}</div>
+            <div class="chips-card">${chips}</div>
+          </div>
+        </div>
+      `;
+    });
+  }
+
+  function processarBusca(texto, surpresa=false){
+    const intencoes = surpresa ? {} : detectarIntencoes(texto);
+
+    let resultados = doramas.map(d => {
+      return { d, scoreData: calcularScore(d, texto, intencoes) };
+    });
+
+    if(surpresa){
+      resultados = resultados
+        .sort((a,b) => b.scoreData.score - a.scoreData.score)
+        .slice(0,20)
+        .sort(() => Math.random() - 0.5);
+    } else {
+      resultados = resultados
+        .sort((a,b) => b.scoreData.score - a.scoreData.score)
+        .filter((item, index) => index < 14 && item.scoreData.score > -4);
+    }
+
+    const titulo = document.getElementById("tituloResultado");
+    const explicacaoDiv = document.getElementById("explicacaoBusca");
+    titulo.style.display = "block";
+    explicacaoDiv.style.display = "block";
+    explicacaoDiv.innerHTML = surpresa
+      ? "Escolhi uma opção forte do seu catálogo para te surpreender, tentando variar estilo, qualidade e interesse."
+      : explicarBusca(intencoes);
+
+    if(!resultados.length){
+      document.getElementById("resultadoPrincipal").style.display = "none";
+      document.getElementById("blocoCritica").style.display = "none";
+      document.getElementById("blocoElenco").style.display = "none";
+      document.getElementById("tituloParecidos").style.display = "none";
+      document.getElementById("resultadoParecidos").innerHTML = "";
+      renderExtras([]);
+      return;
+    }
+
+    const principal = resultados[0];
+    const extras = resultados.slice(1,7);
+
+    renderPrincipal(principal);
+    renderBlocosInfo(principal.d);
+    doramasParecidos(principal.d);
+    renderExtras(extras);
+  }
+
+  function buscar(){
+    const texto = (document.getElementById("entrada").value || "").toLowerCase().trim();
+    processarBusca(texto, false);
+  }
+
+  function meSurpreenda(){
+    processarBusca("", true);
+  }
+
+  document.getElementById("entrada").addEventListener("keydown", (e) => {
+    if(e.key === "Enter") buscar();
+  });
 </script>
 
 </body>
