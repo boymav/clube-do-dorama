@@ -170,9 +170,65 @@
       color:var(--sub);
     }
     .desc-curta{
-      font-size:14px;
+      font-size:15px;
+      line-height:1.75;
+      color:#444;
+      margin-top:10px;
+      max-width:95%;
+    }
+    .top-extra{
+      margin-top:14px;
+      display:grid;
+      grid-template-columns:1fr;
+      gap:12px;
+    }
+    .top-quick{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:10px;
+    }
+    .top-box{
+      padding:12px 12px 10px;
+      border-radius:16px;
+      background:linear-gradient(135deg, rgba(255,126,179,0.10), rgba(185,131,255,0.10));
+      border:1px solid rgba(0,0,0,0.06);
+    }
+    .top-k{
+      display:block;
+      font-size:12px;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      color:#7a1b55;
+      margin-bottom:6px;
+      font-weight:bold;
+    }
+    .top-v{
+      display:block;
+      font-size:13px;
       line-height:1.6;
       color:#444;
+      font-weight:600;
+    }
+    .top-lista{
+      padding:12px 12px 8px;
+      border-radius:16px;
+      background:rgba(185,131,255,0.10);
+      border:1px solid rgba(0,0,0,0.06);
+    }
+    .top-lista strong{
+      display:block;
+      color:#7a1b55;
+      margin-bottom:8px;
+    }
+    .top-lista ul{
+      margin:0;
+      padding-left:18px;
+    }
+    .top-lista li{
+      margin-bottom:6px;
+      color:#444;
+      line-height:1.5;
+      font-size:14px;
     }
     .elenco{
       font-size:14px;
@@ -344,6 +400,9 @@
       .colunas{
         grid-template-columns:1fr;
       }
+      .top-quick{
+        grid-template-columns:1fr;
+      }
     }
   </style>
 </head>
@@ -369,7 +428,24 @@
         <div class="tags">
           <span class="tag">romance</span><span class="tag">triste</span><span class="tag">fantasia</span>
         </div>
-        <div class="desc-curta">Um hotel misterioso recebe apenas almas perdidas.</div>
+        <div class="desc-curta">Um hotel misterioso recebe apenas almas perdidas. Sua dona carrega uma grande culpa do passado.</div>
+        
+      <div class="top-extra">
+        <div class="top-quick">
+          <div class="top-box">
+            <span class="top-k">Clima</span>
+            <span class="top-v">romance emocional e marcante</span>
+          </div>
+          <div class="top-box">
+            <span class="top-k">Vale a pena?</span>
+            <span class="top-v">Hotel Del Luna costuma funcionar muito bem para quem gosta de romance com emoção e personagens que deixam marca.</span>
+          </div>
+        </div>
+        <div class="top-lista">
+          <strong>Indicado para quem gosta de:</strong>
+          <ul><li>romance forte</li><li>carga emocional alta</li><li>toque de fantasia</li></ul>
+        </div>
+      </div>
       </div>
       <div class="acoes">
         <button class="btn btn-primary" onclick="window.location.href='../index.html'">🏠 Início</button>
@@ -395,11 +471,12 @@
     <section class="colunas critica-grid">
       <div class="bloco">
         <h2>💬 Crítica do Planeta Dorama</h2>
-        <p><strong>Crítica do Planeta Dorama:</strong> O Hotel Del Luna não é um hotel comum. Ele recebe apenas almas que ainda têm assuntos pendentes antes de partir.</p><p>Hotel Del Luna mistura elementos de romance, triste, fantasia de forma acessível, o que ajuda a história a prender mesmo quem ainda está começando no mundo dos doramas. Tem boa avaliação entre os fãs e funciona muito bem para quem quer uma série envolvente para maratonar.</p>
+        <p><strong>Crítica do Planeta Dorama:</strong> Hotel Del Luna chama atenção porque trabalha romance, triste, fantasia de forma acessível e consegue manter o interesse sem parecer forçado. Ele recebe apenas almas que ainda têm assuntos pendentes antes de partir.</p><p>Na prática, é o tipo de dorama que funciona melhor quando o espectador entra no clima da proposta e se envolve com os personagens. Tem boa avaliação entre os fãs e funciona muito bem para quem quer uma série envolvente para maratonar.</p>
       </div>
       <div class="bloco">
         <h2>✨ Guia rápido</h2>
         <p><strong>Vale a pena assistir?</strong> Sim. Hotel Del Luna costuma funcionar muito bem para quem gosta de romance com bastante emoção e momentos marcantes. É o tipo de série que normalmente conquista quem gosta de casal forte e história mais sentimental.</p>
+        <p><strong>Resumo bem rápido:</strong> Hotel Del Luna costuma funcionar muito bem para quem gosta de romance com emoção e personagens que deixam marca.</p>
         <div class="lista-gostos"><strong>Indicado para quem gosta de:</strong><ul><li>casais com química e histórias emocionantes</li><li>doramas intensos e com bastante emoção</li><li>fantasia, destino e elementos sobrenaturais</li></ul></div>
       </div>
     </section>
@@ -431,21 +508,21 @@
       <h2>Recomendados para você</h2>
       <div class="rec-grid">
         
-        <a class="rec-card" href="/doramas/the-king-eternal-monarch.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/the%20king%20eternalllll.jpg" alt="The King: Eternal Monarch" loading="lazy">
-          <div class="rec-title">The King: Eternal Monarch</div>
-        </a>
-        <a class="rec-card" href="/doramas/weightlifting-fairy-kim-bok-joo.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/Weightlifting%20Fairy%20Kim%20Bok%20Joo.webp" alt="Weightlifting Fairy Kim Bok Joo" loading="lazy">
-          <div class="rec-title">Weightlifting Fairy Kim Bok Joo</div>
-        </a>
-        <a class="rec-card" href="/doramas/strong-woman-do-bong-soon.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/strong-woman-do-bong-soon.jpg" alt="Strong Woman Do Bong Soon" loading="lazy">
-          <div class="rec-title">Strong Woman Do Bong Soon</div>
+        <a class="rec-card" href="/doramas/my-demon.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/my%20demon.jpg" alt="My Demon" loading="lazy">
+          <div class="rec-title">My Demon</div>
         </a>
         <a class="rec-card" href="/doramas/romance-is-a-bonus-book.html">
           <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/romance%20is%20a%20bonus%20book.jpg" alt="Romance Is a Bonus Book" loading="lazy">
           <div class="rec-title">Romance Is a Bonus Book</div>
+        </a>
+        <a class="rec-card" href="/doramas/alchemy-of-souls.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/alchemy%20of%20souls.webp" alt="Alchemy of Souls" loading="lazy">
+          <div class="rec-title">Alchemy of Souls</div>
+        </a>
+        <a class="rec-card" href="/doramas/navillera.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/navillera.webp" alt="Navillera" loading="lazy">
+          <div class="rec-title">Navillera</div>
         </a>
       </div>
     </section>

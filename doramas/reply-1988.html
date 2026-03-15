@@ -170,9 +170,65 @@
       color:var(--sub);
     }
     .desc-curta{
-      font-size:14px;
+      font-size:15px;
+      line-height:1.75;
+      color:#444;
+      margin-top:10px;
+      max-width:95%;
+    }
+    .top-extra{
+      margin-top:14px;
+      display:grid;
+      grid-template-columns:1fr;
+      gap:12px;
+    }
+    .top-quick{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:10px;
+    }
+    .top-box{
+      padding:12px 12px 10px;
+      border-radius:16px;
+      background:linear-gradient(135deg, rgba(255,126,179,0.10), rgba(185,131,255,0.10));
+      border:1px solid rgba(0,0,0,0.06);
+    }
+    .top-k{
+      display:block;
+      font-size:12px;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      color:#7a1b55;
+      margin-bottom:6px;
+      font-weight:bold;
+    }
+    .top-v{
+      display:block;
+      font-size:13px;
       line-height:1.6;
       color:#444;
+      font-weight:600;
+    }
+    .top-lista{
+      padding:12px 12px 8px;
+      border-radius:16px;
+      background:rgba(185,131,255,0.10);
+      border:1px solid rgba(0,0,0,0.06);
+    }
+    .top-lista strong{
+      display:block;
+      color:#7a1b55;
+      margin-bottom:8px;
+    }
+    .top-lista ul{
+      margin:0;
+      padding-left:18px;
+    }
+    .top-lista li{
+      margin-bottom:6px;
+      color:#444;
+      line-height:1.5;
+      font-size:14px;
     }
     .elenco{
       font-size:14px;
@@ -344,6 +400,9 @@
       .colunas{
         grid-template-columns:1fr;
       }
+      .top-quick{
+        grid-template-columns:1fr;
+      }
     }
   </style>
 </head>
@@ -369,7 +428,24 @@
         <div class="tags">
           <span class="tag">alegre</span><span class="tag">romance</span>
         </div>
-        <div class="desc-curta">Famílias e amigos vivem no mesmo bairro nos anos 80.</div>
+        <div class="desc-curta">Famílias e amigos vivem no mesmo bairro nos anos 80. História cheia de nostalgia e afeto.</div>
+        
+      <div class="top-extra">
+        <div class="top-quick">
+          <div class="top-box">
+            <span class="top-k">Clima</span>
+            <span class="top-v">história leve e gostosa de assistir</span>
+          </div>
+          <div class="top-box">
+            <span class="top-k">Vale a pena?</span>
+            <span class="top-v">Reply 1988 é um dos títulos mais fortes do acervo e costuma agradar quem quer uma história realmente marcante.</span>
+          </div>
+        </div>
+        <div class="top-lista">
+          <strong>Indicado para quem gosta de:</strong>
+          <ul><li>romance forte</li><li>clima leve em vários momentos</li></ul>
+        </div>
+      </div>
       </div>
       <div class="acoes">
         <button class="btn btn-primary" onclick="window.location.href='../index.html'">🏠 Início</button>
@@ -395,11 +471,12 @@
     <section class="colunas critica-grid">
       <div class="bloco">
         <h2>💬 Crítica do Planeta Dorama</h2>
-        <p><strong>Crítica do Planeta Dorama:</strong> A história acompanha cinco amigos que cresceram juntos em um bairro simples de Seul nos anos 80. Cada família tem suas dificuldades, sonhos e momentos engraçados.</p><p>Reply 1988 mistura elementos de alegre, romance de forma acessível, o que ajuda a história a prender mesmo quem ainda está começando no mundo dos doramas. É um dos doramas mais fortes do acervo, principalmente para quem gosta de histórias marcantes e muito bem avaliadas.</p>
+        <p><strong>Crítica do Planeta Dorama:</strong> Reply 1988 chama atenção porque trabalha alegre, romance de forma acessível e consegue manter o interesse sem parecer forçado. Cada família tem suas dificuldades, sonhos e momentos engraçados.</p><p>Na prática, é o tipo de dorama que funciona melhor quando o espectador entra no clima da proposta e se envolve com os personagens. É um dos doramas mais fortes do acervo, principalmente para quem gosta de histórias marcantes e muito bem avaliadas.</p>
       </div>
       <div class="bloco">
         <h2>✨ Guia rápido</h2>
         <p><strong>Vale a pena assistir?</strong> Sim, bastante. Reply 1988 vale mais a pena para quem procura algo leve, gostoso de assistir e com clima de comédia romântica. É uma escolha segura para maratonar sem sentir a história pesada.</p>
+        <p><strong>Resumo bem rápido:</strong> Reply 1988 é um dos títulos mais fortes do acervo e costuma agradar quem quer uma história realmente marcante.</p>
         <div class="lista-gostos"><strong>Indicado para quem gosta de:</strong><ul><li>casais com química e histórias emocionantes</li><li>histórias leves e agradáveis de maratonar</li></ul></div>
       </div>
     </section>
@@ -431,21 +508,21 @@
       <h2>Recomendados para você</h2>
       <div class="rec-grid">
         
-        <a class="rec-card" href="/doramas/healer.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/healer.webp" alt="Healer" loading="lazy">
-          <div class="rec-title">Healer</div>
+        <a class="rec-card" href="/doramas/tale-of-the-nine-tailed.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/tale%20of%20the%20nine%20talled.jfif" alt="Tale of the Nine Tailed" loading="lazy">
+          <div class="rec-title">Tale of the Nine Tailed</div>
         </a>
-        <a class="rec-card" href="/doramas/uncontrollably-fond.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/Uncontrollably%20Fond.webp" alt="Uncontrollably Fond" loading="lazy">
-          <div class="rec-title">Uncontrollably Fond</div>
+        <a class="rec-card" href="/doramas/coffee-prince.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/coffeee.jpg" alt="Coffee Prince" loading="lazy">
+          <div class="rec-title">Coffee Prince</div>
         </a>
-        <a class="rec-card" href="/doramas/business-proposal.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/pretendente%20surpresa.jpg" alt="Pretendente Surpresa (Business Proposal)" loading="lazy">
-          <div class="rec-title">Pretendente Surpresa (Business Proposal)</div>
+        <a class="rec-card" href="/doramas/start-up.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/start%20up.jpg" alt="Start-Up" loading="lazy">
+          <div class="rec-title">Start-Up</div>
         </a>
-        <a class="rec-card" href="/doramas/her-private-life.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/her%20private%20life.jpg" alt="Her Private Life" loading="lazy">
-          <div class="rec-title">Her Private Life</div>
+        <a class="rec-card" href="/doramas/my-id-is-gangnam-beauty.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/my%20id%20is%20gangnam.webp" alt="My ID is Gangnam Beauty" loading="lazy">
+          <div class="rec-title">My ID is Gangnam Beauty</div>
         </a>
       </div>
     </section>
