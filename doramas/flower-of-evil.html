@@ -388,7 +388,48 @@
       color:#7a1b55;
       font-size:16px;
     }
-
+    .semelhantes-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:14px;
+      margin-top:14px;
+    }
+    .semelhante-card{
+      display:block;
+      text-decoration:none;
+      color:inherit;
+      border-radius:16px;
+      overflow:hidden;
+      background:#fff;
+      border:1px solid rgba(0,0,0,0.06);
+      box-shadow:0 8px 20px rgba(0,0,0,0.06);
+      transition:transform .2s ease, box-shadow .2s ease;
+    }
+    .semelhante-card:hover{
+      transform:translateY(-4px);
+      box-shadow:0 12px 24px rgba(0,0,0,0.10);
+    }
+    .semelhante-card img{
+      width:100%;
+      height:220px;
+      object-fit:cover;
+      display:block;
+      background:#f6f6f6;
+    }
+    .semelhante-c{
+      padding:12px;
+    }
+    .semelhante-c h3{
+      margin:0 0 8px;
+      color:#333;
+      font-size:16px;
+    }
+    .semelhante-c p{
+      margin:0;
+      font-size:13px;
+      line-height:1.6;
+      color:#555;
+    }
 
     @media(max-width:860px){
       .hero{
@@ -460,10 +501,12 @@
       <h2>Resumo</h2>
       <p>Baek Hee Sung parece ter uma vida perfeita.<br>Mas ele esconde um passado perigoso.<br><br>Sua esposa é detetive e investiga um caso ligado a ele.<br>A tensão cresce a cada episódio.<br><br>O dorama mistura romance com suspense psicológico.<br>Questiona confiança e identidade.<br><br>É intenso e cheio de reviravoltas.<br><br>No Brasil, esse dorama também é conhecido como "Flor do Mal".</p>
     </div>
+    
     <div class="bloco">
-      <h2>Onde assistir</h2>
-      <p>Este dorama costuma estar disponível em plataformas de streaming como a <b>Netflix</b>, mas o catálogo pode mudar com o tempo.</p>
-      <p><b>Dica:</b> pesquise pelo nome <b>"Flower of Evil"</b> diretamente na sua plataforma favorita.</p>
+      <h2>👥 Elenco de Flower of Evil</h2>
+      <p>O elenco de Flower of Evil reúne atores que ajudam bastante a dar peso emocional e personalidade para a história. Em doramas coreanos, o carisma dos personagens costuma fazer muita diferença, e isso também influencia bastante em como o público se apega à série.</p>
+      <p><strong>Lee Joon-gi</strong> aparece entre os nomes mais lembrados do elenco e ajuda bastante a carregar a história.<strong>Moon Chae-won</strong> também participa com presença importante e costuma chamar atenção em vários momentos do dorama.<strong>Seo Hyun-woo</strong> completa o núcleo principal com um papel que ajuda a construir melhor a trama.</p>
+      <p>Para muita gente, conhecer os atores de um dorama ajuda até na hora de decidir se vale a pena assistir. Quando o elenco funciona bem, a história costuma ficar muito mais marcante.</p>
     </div>
   </section>
 
@@ -505,24 +548,58 @@
     </section>
   
     <section class="bloco">
+      <h2>💡 Doramas parecidos com Flower of Evil</h2>
+      <p>Se você gostou de Flower of Evil, estes doramas também podem funcionar bem porque têm clima parecido, algumas tags em comum ou uma proposta que costuma agradar ao mesmo público.</p>
+      <div class="semelhantes-grid">
+        <a class="semelhante-card" href="/doramas/crash-landing-on-you.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/crash-landing.jpg" alt="Pousando no Amor (Crash Landing on You)" loading="lazy">
+          <div class="semelhante-c">
+            <h3>Pousando no Amor (Crash Landing on You)</h3>
+            <p>Uma empresária sul-coreana sofre um acidente e vai parar na Coreia do Norte.</p>
+          </div>
+        </a>
+        <a class="semelhante-card" href="/doramas/its-okay-to-not-be-okay.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/tudo%20bem%20nao%20ser%20normal.jpg" alt="Tudo Bem Não Ser Normal (Its Okay to Not Be Okay)" loading="lazy">
+          <div class="semelhante-c">
+            <h3>Tudo Bem Não Ser Normal (Its Okay to Not Be Okay)</h3>
+            <p>Um cuidador emocionalmente fechado conhece uma escritora excêntrica.</p>
+          </div>
+        </a>
+        <a class="semelhante-card" href="/doramas/moon-lovers-scarlet-heart-ryeo.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/moon%20lovers%201.webp" alt="Moon Lovers: Scarlet Heart Ryeo" loading="lazy">
+          <div class="semelhante-c">
+            <h3>Moon Lovers: Scarlet Heart Ryeo</h3>
+            <p>Uma mulher volta no tempo para a era Goryeo.</p>
+          </div>
+        </a>
+        <a class="semelhante-card" href="/doramas/mr-sunshine.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/mr%20sunshine.webp" alt="Mr. Sunshine" loading="lazy">
+          <div class="semelhante-c">
+            <h3>Mr. Sunshine</h3>
+            <p>Um coreano retorna como soldado americano.</p>
+          </div>
+        </a></div>
+    </section>
+  
+    <section class="bloco">
       <h2>Recomendados para você</h2>
       <div class="rec-grid">
         
-        <a class="rec-card" href="/doramas/the-good-bad-mother.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/the%20good%20bad%20mother.jpg" alt="The Good Bad Mother" loading="lazy">
-          <div class="rec-title">The Good Bad Mother</div>
+        <a class="rec-card" href="/doramas/romance-is-a-bonus-book.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/romance%20is%20a%20bonus%20book.jpg" alt="Romance Is a Bonus Book" loading="lazy">
+          <div class="rec-title">Romance Is a Bonus Book</div>
         </a>
-        <a class="rec-card" href="/doramas/school-2015-who-are-you.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/school%202015%20who%20are%20you.jpg" alt="School 2015: Who Are You" loading="lazy">
-          <div class="rec-title">School 2015: Who Are You</div>
+        <a class="rec-card" href="/doramas/crash-landing-on-you.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/crash-landing.jpg" alt="Pousando no Amor (Crash Landing on You)" loading="lazy">
+          <div class="rec-title">Pousando no Amor (Crash Landing on You)</div>
         </a>
-        <a class="rec-card" href="/doramas/what-s-wrong-with-secretary-kim.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/What's%20Wrong%20with%20Secretary%20Kim.jfif" alt="What's Wrong with Secretary Kim" loading="lazy">
-          <div class="rec-title">What's Wrong with Secretary Kim</div>
+        <a class="rec-card" href="/doramas/start-up.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/start%20up.jpg" alt="Start-Up" loading="lazy">
+          <div class="rec-title">Start-Up</div>
         </a>
-        <a class="rec-card" href="/doramas/hi-bye-mama.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/hi%20bye%20mama.jpg" alt="Hi Bye, Mama!" loading="lazy">
-          <div class="rec-title">Hi Bye, Mama!</div>
+        <a class="rec-card" href="/doramas/reply-1988.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/reply%201988.jpg" alt="Reply 1988" loading="lazy">
+          <div class="rec-title">Reply 1988</div>
         </a>
       </div>
     </section>

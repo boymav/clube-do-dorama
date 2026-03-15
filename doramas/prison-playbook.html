@@ -388,7 +388,48 @@
       color:#7a1b55;
       font-size:16px;
     }
-
+    .semelhantes-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:14px;
+      margin-top:14px;
+    }
+    .semelhante-card{
+      display:block;
+      text-decoration:none;
+      color:inherit;
+      border-radius:16px;
+      overflow:hidden;
+      background:#fff;
+      border:1px solid rgba(0,0,0,0.06);
+      box-shadow:0 8px 20px rgba(0,0,0,0.06);
+      transition:transform .2s ease, box-shadow .2s ease;
+    }
+    .semelhante-card:hover{
+      transform:translateY(-4px);
+      box-shadow:0 12px 24px rgba(0,0,0,0.10);
+    }
+    .semelhante-card img{
+      width:100%;
+      height:220px;
+      object-fit:cover;
+      display:block;
+      background:#f6f6f6;
+    }
+    .semelhante-c{
+      padding:12px;
+    }
+    .semelhante-c h3{
+      margin:0 0 8px;
+      color:#333;
+      font-size:16px;
+    }
+    .semelhante-c p{
+      margin:0;
+      font-size:13px;
+      line-height:1.6;
+      color:#555;
+    }
 
     @media(max-width:860px){
       .hero{
@@ -460,10 +501,12 @@
       <h2>Resumo</h2>
       <p>Kim Je Hyuk é um famoso jogador de beisebol.<br>De repente, ele vai parar na prisão.<br><br>Lá conhece detentos com histórias muito diferentes.<br>Entre momentos engraçados e emocionantes,<br>ele aprende sobre amizade e humanidade.<br><br>O dorama mostra o lado humano da prisão.<br>Equilibra drama com humor inteligente.<br><br>É envolvente e surpreendente.</p>
     </div>
+    
     <div class="bloco">
-      <h2>Onde assistir</h2>
-      <p>Este dorama costuma estar disponível em plataformas de streaming como a <b>Netflix</b>, mas o catálogo pode mudar com o tempo.</p>
-      <p><b>Dica:</b> pesquise pelo nome <b>"Prison Playbook"</b> diretamente na sua plataforma favorita.</p>
+      <h2>👥 Elenco de Prison Playbook</h2>
+      <p>O elenco de Prison Playbook reúne atores que ajudam bastante a dar peso emocional e personalidade para a história. Em doramas coreanos, o carisma dos personagens costuma fazer muita diferença, e isso também influencia bastante em como o público se apega à série.</p>
+      <p><strong>Park Hae-soo</strong> aparece entre os nomes mais lembrados do elenco e ajuda bastante a carregar a história.<strong>Jung Kyung-ho</strong> também participa com presença importante e costuma chamar atenção em vários momentos do dorama.<strong>Krystal Jung</strong> completa o núcleo principal com um papel que ajuda a construir melhor a trama.</p>
+      <p>Para muita gente, conhecer os atores de um dorama ajuda até na hora de decidir se vale a pena assistir. Quando o elenco funciona bem, a história costuma ficar muito mais marcante.</p>
     </div>
   </section>
 
@@ -505,24 +548,58 @@
     </section>
   
     <section class="bloco">
+      <h2>💡 Doramas parecidos com Prison Playbook</h2>
+      <p>Se você gostou de Prison Playbook, estes doramas também podem funcionar bem porque têm clima parecido, algumas tags em comum ou uma proposta que costuma agradar ao mesmo público.</p>
+      <div class="semelhantes-grid">
+        <a class="semelhante-card" href="/doramas/18-again.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/18againn.jpg" alt="18 Again" loading="lazy">
+          <div class="semelhante-c">
+            <h3>18 Again</h3>
+            <p>Um homem volta ao corpo de seus 18 anos.</p>
+          </div>
+        </a>
+        <a class="semelhante-card" href="/doramas/our-beloved-summer.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/our%20beloved%20summer.png" alt="Our Beloved Summer" loading="lazy">
+          <div class="semelhante-c">
+            <h3>Our Beloved Summer</h3>
+            <p>Ex-namorados se reencontram anos depois.</p>
+          </div>
+        </a>
+        <a class="semelhante-card" href="/doramas/navillera.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/navillera.webp" alt="Navillera" loading="lazy">
+          <div class="semelhante-c">
+            <h3>Navillera</h3>
+            <p>Um senhor sonha em aprender balé.</p>
+          </div>
+        </a>
+        <a class="semelhante-card" href="/doramas/move-to-heaven.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/move%20to%20heaven.webp" alt="Move to Heaven" loading="lazy">
+          <div class="semelhante-c">
+            <h3>Move to Heaven</h3>
+            <p>Jovens lidam com histórias de pessoas falecidas.</p>
+          </div>
+        </a></div>
+    </section>
+  
+    <section class="bloco">
       <h2>Recomendados para você</h2>
       <div class="rec-grid">
         
-        <a class="rec-card" href="/doramas/youth-of-may.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/youth%20of%20may.webp" alt="Youth of May" loading="lazy">
-          <div class="rec-title">Youth of May</div>
+        <a class="rec-card" href="/doramas/flower-of-evil.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/flower%20of%20evil.webp" alt="Flower of Evil" loading="lazy">
+          <div class="rec-title">Flower of Evil</div>
         </a>
-        <a class="rec-card" href="/doramas/dream-high.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/dream%20hight.jpg" alt="Dream High" loading="lazy">
-          <div class="rec-title">Dream High</div>
+        <a class="rec-card" href="/doramas/crash-landing-on-you.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/crash-landing.jpg" alt="Pousando no Amor (Crash Landing on You)" loading="lazy">
+          <div class="rec-title">Pousando no Amor (Crash Landing on You)</div>
         </a>
-        <a class="rec-card" href="/doramas/moment-at-eighteen.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/moment%20of%20eighteen.jfif" alt="Moment at Eighteen" loading="lazy">
-          <div class="rec-title">Moment at Eighteen</div>
+        <a class="rec-card" href="/doramas/hotel-del-luna.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/hotel%20del%20luna.jpg" alt="Hotel Del Luna" loading="lazy">
+          <div class="rec-title">Hotel Del Luna</div>
         </a>
-        <a class="rec-card" href="/doramas/king-the-land.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/sorriso%20real.webp" alt="Sorriso Real (King the Land)" loading="lazy">
-          <div class="rec-title">Sorriso Real (King the Land)</div>
+        <a class="rec-card" href="/doramas/secret-garden.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/secret%20garden.jpg" alt="Secret Garden" loading="lazy">
+          <div class="rec-title">Secret Garden</div>
         </a>
       </div>
     </section>

@@ -388,7 +388,48 @@
       color:#7a1b55;
       font-size:16px;
     }
-
+    .semelhantes-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:14px;
+      margin-top:14px;
+    }
+    .semelhante-card{
+      display:block;
+      text-decoration:none;
+      color:inherit;
+      border-radius:16px;
+      overflow:hidden;
+      background:#fff;
+      border:1px solid rgba(0,0,0,0.06);
+      box-shadow:0 8px 20px rgba(0,0,0,0.06);
+      transition:transform .2s ease, box-shadow .2s ease;
+    }
+    .semelhante-card:hover{
+      transform:translateY(-4px);
+      box-shadow:0 12px 24px rgba(0,0,0,0.10);
+    }
+    .semelhante-card img{
+      width:100%;
+      height:220px;
+      object-fit:cover;
+      display:block;
+      background:#f6f6f6;
+    }
+    .semelhante-c{
+      padding:12px;
+    }
+    .semelhante-c h3{
+      margin:0 0 8px;
+      color:#333;
+      font-size:16px;
+    }
+    .semelhante-c p{
+      margin:0;
+      font-size:13px;
+      line-height:1.6;
+      color:#555;
+    }
 
     @media(max-width:860px){
       .hero{
@@ -460,10 +501,12 @@
       <h2>Resumo</h2>
       <p>O Hotel Del Luna não é um hotel comum.<br>Ele recebe apenas almas que ainda têm assuntos pendentes antes de partir.<br><br>Jang Man Wol é a misteriosa dona do hotel,<br>presa a uma maldição antiga por causa de erros do passado.<br><br>Quando um jovem humano começa a trabalhar no hotel,<br>ele passa a descobrir segredos escondidos há séculos.<br><br>A cada episódio, novas histórias de fantasmas aparecem,<br>misturando emoção, tristeza e aprendizado.<br><br>O romance cresce lentamente,<br>mas é marcado por destino e sacrifício.<br><br>É uma fantasia visualmente linda,<br>com muita emoção e reflexões sobre arrependimento e perdão.</p>
     </div>
+    
     <div class="bloco">
-      <h2>Onde assistir</h2>
-      <p>Este dorama costuma estar disponível em plataformas de streaming como a <b>Netflix</b>, mas o catálogo pode mudar com o tempo.</p>
-      <p><b>Dica:</b> pesquise pelo nome <b>"Hotel Del Luna"</b> diretamente na sua plataforma favorita.</p>
+      <h2>👥 Elenco de Hotel Del Luna</h2>
+      <p>O elenco de Hotel Del Luna reúne atores que ajudam bastante a dar peso emocional e personalidade para a história. Em doramas coreanos, o carisma dos personagens costuma fazer muita diferença, e isso também influencia bastante em como o público se apega à série.</p>
+      <p><strong>IU</strong> aparece entre os nomes mais lembrados do elenco e ajuda bastante a carregar a história.<strong>Yeo Jin-goo</strong> também participa com presença importante e costuma chamar atenção em vários momentos do dorama.<strong>Shin Jung-geun</strong> completa o núcleo principal com um papel que ajuda a construir melhor a trama.</p>
+      <p>Para muita gente, conhecer os atores de um dorama ajuda até na hora de decidir se vale a pena assistir. Quando o elenco funciona bem, a história costuma ficar muito mais marcante.</p>
     </div>
   </section>
 
@@ -505,24 +548,58 @@
     </section>
   
     <section class="bloco">
+      <h2>💡 Doramas parecidos com Hotel Del Luna</h2>
+      <p>Se você gostou de Hotel Del Luna, estes doramas também podem funcionar bem porque têm clima parecido, algumas tags em comum ou uma proposta que costuma agradar ao mesmo público.</p>
+      <div class="semelhantes-grid">
+        <a class="semelhante-card" href="/doramas/goblin.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/Goblin.jpg" alt="Goblin" loading="lazy">
+          <div class="semelhante-c">
+            <h3>Goblin</h3>
+            <p>Um ser imortal busca alguém para quebrar sua maldição.</p>
+          </div>
+        </a>
+        <a class="semelhante-card" href="/doramas/doom-at-your-service.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/doom%20at%20your.jfif" alt="Doom at Your Service" loading="lazy">
+          <div class="semelhante-c">
+            <h3>Doom at Your Service</h3>
+            <p>Uma mulher faz um contrato com a própria destruição.</p>
+          </div>
+        </a>
+        <a class="semelhante-card" href="/doramas/hi-bye-mama.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/hi%20bye%20mama.jpg" alt="Hi Bye, Mama!" loading="lazy">
+          <div class="semelhante-c">
+            <h3>Hi Bye, Mama!</h3>
+            <p>Uma mãe que morreu recebe a chance de voltar por um tempo.</p>
+          </div>
+        </a>
+        <a class="semelhante-card" href="/doramas/destined-with-you.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/destined%20whit%20you.webp" alt="Destined with You" loading="lazy">
+          <div class="semelhante-c">
+            <h3>Destined with You</h3>
+            <p>Uma funcionária pública encontra um livro antigo que pode quebrar uma maldição.</p>
+          </div>
+        </a></div>
+    </section>
+  
+    <section class="bloco">
       <h2>Recomendados para você</h2>
       <div class="rec-grid">
         
-        <a class="rec-card" href="/doramas/my-demon.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/my%20demon.jpg" alt="My Demon" loading="lazy">
-          <div class="rec-title">My Demon</div>
+        <a class="rec-card" href="/doramas/the-heirs.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/The%20Heirs.jpg" alt="The Heirs" loading="lazy">
+          <div class="rec-title">The Heirs</div>
         </a>
-        <a class="rec-card" href="/doramas/romance-is-a-bonus-book.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/romance%20is%20a%20bonus%20book.jpg" alt="Romance Is a Bonus Book" loading="lazy">
-          <div class="rec-title">Romance Is a Bonus Book</div>
+        <a class="rec-card" href="/doramas/island.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/island.webp" alt="Island" loading="lazy">
+          <div class="rec-title">Island</div>
         </a>
-        <a class="rec-card" href="/doramas/alchemy-of-souls.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/alchemy%20of%20souls.webp" alt="Alchemy of Souls" loading="lazy">
-          <div class="rec-title">Alchemy of Souls</div>
+        <a class="rec-card" href="/doramas/snowdrop.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/snowdrop.webp" alt="Snowdrop" loading="lazy">
+          <div class="rec-title">Snowdrop</div>
         </a>
-        <a class="rec-card" href="/doramas/navillera.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/navillera.webp" alt="Navillera" loading="lazy">
-          <div class="rec-title">Navillera</div>
+        <a class="rec-card" href="/doramas/nevertheless.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/nevert.jfif" alt="Nevertheless" loading="lazy">
+          <div class="rec-title">Nevertheless</div>
         </a>
       </div>
     </section>
