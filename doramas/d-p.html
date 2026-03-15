@@ -388,7 +388,48 @@
       color:#7a1b55;
       font-size:16px;
     }
-
+    .semelhantes-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:14px;
+      margin-top:14px;
+    }
+    .semelhante-card{
+      display:block;
+      text-decoration:none;
+      color:inherit;
+      border-radius:16px;
+      overflow:hidden;
+      background:#fff;
+      border:1px solid rgba(0,0,0,0.06);
+      box-shadow:0 8px 20px rgba(0,0,0,0.06);
+      transition:transform .2s ease, box-shadow .2s ease;
+    }
+    .semelhante-card:hover{
+      transform:translateY(-4px);
+      box-shadow:0 12px 24px rgba(0,0,0,0.10);
+    }
+    .semelhante-card img{
+      width:100%;
+      height:220px;
+      object-fit:cover;
+      display:block;
+      background:#f6f6f6;
+    }
+    .semelhante-c{
+      padding:12px;
+    }
+    .semelhante-c h3{
+      margin:0 0 8px;
+      color:#333;
+      font-size:16px;
+    }
+    .semelhante-c p{
+      margin:0;
+      font-size:13px;
+      line-height:1.6;
+      color:#555;
+    }
 
     @media(max-width:860px){
       .hero{
@@ -460,10 +501,12 @@
       <h2>Resumo</h2>
       <p>Um soldado entra para a equipe<br>que captura desertores.<br><br>Ele descobre abusos dentro do exército.<br>Cada caso revela injustiças.<br><br>Realista e impactante.</p>
     </div>
+    
     <div class="bloco">
-      <h2>Onde assistir</h2>
-      <p>Este dorama costuma estar disponível em plataformas de streaming como a <b>Netflix</b>, mas o catálogo pode mudar com o tempo.</p>
-      <p><b>Dica:</b> pesquise pelo nome <b>"D.P."</b> diretamente na sua plataforma favorita.</p>
+      <h2>👥 Elenco de D.P.</h2>
+      <p>O elenco de D.P. reúne atores que ajudam bastante a dar peso emocional e personalidade para a história. Em doramas coreanos, o carisma dos personagens costuma fazer muita diferença, e isso também influencia bastante em como o público se apega à série.</p>
+      <p><strong>Jung Hae-in</strong> aparece entre os nomes mais lembrados do elenco e ajuda bastante a carregar a história.<strong>Koo Kyo-hwan</strong> também participa com presença importante e costuma chamar atenção em vários momentos do dorama.<strong>Kim Sung-kyun</strong> completa o núcleo principal com um papel que ajuda a construir melhor a trama.</p>
+      <p>Para muita gente, conhecer os atores de um dorama ajuda até na hora de decidir se vale a pena assistir. Quando o elenco funciona bem, a história costuma ficar muito mais marcante.</p>
     </div>
   </section>
 
@@ -505,24 +548,58 @@
     </section>
   
     <section class="bloco">
+      <h2>💡 Doramas parecidos com D.P.</h2>
+      <p>Se você gostou de D.P., estes doramas também podem funcionar bem porque têm clima parecido, algumas tags em comum ou uma proposta que costuma agradar ao mesmo público.</p>
+      <div class="semelhantes-grid">
+        <a class="semelhante-card" href="/doramas/crash-landing-on-you.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/crash-landing.jpg" alt="Pousando no Amor (Crash Landing on You)" loading="lazy">
+          <div class="semelhante-c">
+            <h3>Pousando no Amor (Crash Landing on You)</h3>
+            <p>Uma empresária sul-coreana sofre um acidente e vai parar na Coreia do Norte.</p>
+          </div>
+        </a>
+        <a class="semelhante-card" href="/doramas/its-okay-to-not-be-okay.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/tudo%20bem%20nao%20ser%20normal.jpg" alt="Tudo Bem Não Ser Normal (Its Okay to Not Be Okay)" loading="lazy">
+          <div class="semelhante-c">
+            <h3>Tudo Bem Não Ser Normal (Its Okay to Not Be Okay)</h3>
+            <p>Um cuidador emocionalmente fechado conhece uma escritora excêntrica.</p>
+          </div>
+        </a>
+        <a class="semelhante-card" href="/doramas/moon-lovers-scarlet-heart-ryeo.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/moon%20lovers%201.webp" alt="Moon Lovers: Scarlet Heart Ryeo" loading="lazy">
+          <div class="semelhante-c">
+            <h3>Moon Lovers: Scarlet Heart Ryeo</h3>
+            <p>Uma mulher volta no tempo para a era Goryeo.</p>
+          </div>
+        </a>
+        <a class="semelhante-card" href="/doramas/mr-sunshine.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/mr%20sunshine.webp" alt="Mr. Sunshine" loading="lazy">
+          <div class="semelhante-c">
+            <h3>Mr. Sunshine</h3>
+            <p>Um coreano retorna como soldado americano.</p>
+          </div>
+        </a></div>
+    </section>
+  
+    <section class="bloco">
       <h2>Recomendados para você</h2>
       <div class="rec-grid">
         
-        <a class="rec-card" href="/doramas/doctor-stranger.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/doctor%20stranger.webp" alt="Doctor Stranger" loading="lazy">
-          <div class="rec-title">Doctor Stranger</div>
+        <a class="rec-card" href="/doramas/mr-sunshine.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/mr%20sunshine.webp" alt="Mr. Sunshine" loading="lazy">
+          <div class="rec-title">Mr. Sunshine</div>
         </a>
-        <a class="rec-card" href="/doramas/moment-at-eighteen.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/moment%20of%20eighteen.jfif" alt="Moment at Eighteen" loading="lazy">
-          <div class="rec-title">Moment at Eighteen</div>
+        <a class="rec-card" href="/doramas/start-up.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/start%20up.jpg" alt="Start-Up" loading="lazy">
+          <div class="rec-title">Start-Up</div>
         </a>
-        <a class="rec-card" href="/doramas/vincenzo.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/vincenzo.jpg" alt="Vincenzo" loading="lazy">
-          <div class="rec-title">Vincenzo</div>
+        <a class="rec-card" href="/doramas/18-again.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/18againn.jpg" alt="18 Again" loading="lazy">
+          <div class="rec-title">18 Again</div>
         </a>
-        <a class="rec-card" href="/doramas/descendants-of-the-sun.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/Descendants%20of%20the%20Sun.jpg" alt="Descendants of the Sun" loading="lazy">
-          <div class="rec-title">Descendants of the Sun</div>
+        <a class="rec-card" href="/doramas/alchemy-of-souls.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/alchemy%20of%20souls.webp" alt="Alchemy of Souls" loading="lazy">
+          <div class="rec-title">Alchemy of Souls</div>
         </a>
       </div>
     </section>

@@ -388,7 +388,48 @@
       color:#7a1b55;
       font-size:16px;
     }
-
+    .semelhantes-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:14px;
+      margin-top:14px;
+    }
+    .semelhante-card{
+      display:block;
+      text-decoration:none;
+      color:inherit;
+      border-radius:16px;
+      overflow:hidden;
+      background:#fff;
+      border:1px solid rgba(0,0,0,0.06);
+      box-shadow:0 8px 20px rgba(0,0,0,0.06);
+      transition:transform .2s ease, box-shadow .2s ease;
+    }
+    .semelhante-card:hover{
+      transform:translateY(-4px);
+      box-shadow:0 12px 24px rgba(0,0,0,0.10);
+    }
+    .semelhante-card img{
+      width:100%;
+      height:220px;
+      object-fit:cover;
+      display:block;
+      background:#f6f6f6;
+    }
+    .semelhante-c{
+      padding:12px;
+    }
+    .semelhante-c h3{
+      margin:0 0 8px;
+      color:#333;
+      font-size:16px;
+    }
+    .semelhante-c p{
+      margin:0;
+      font-size:13px;
+      line-height:1.6;
+      color:#555;
+    }
 
     @media(max-width:860px){
       .hero{
@@ -460,10 +501,12 @@
       <h2>Resumo</h2>
       <p>Im Sol é uma jovem que encontra conforto nas músicas do astro Ryu Sun Jae.<br>Quando uma tragédia muda tudo, ela acaba voltando no tempo para a época em que ele ainda era um estudante.<br><br>Determinada a evitar o destino doloroso que conhece, Im Sol tenta se aproximar dele e mudar o rumo da história.<br>Ao longo dessa jornada, amizade, romance e várias emoções começam a surgir.<br><br>O dorama mistura viagem no tempo, romance juvenil e momentos muito fofos, com um casal que conquistou muita gente.<br>É uma ótima escolha para quem gosta de histórias românticas viciantes e muito comentadas.</p>
     </div>
+    
     <div class="bloco">
-      <h2>Onde assistir</h2>
-      <p>Este dorama costuma estar disponível em plataformas de streaming como a <b>Netflix</b>, mas o catálogo pode mudar com o tempo.</p>
-      <p><b>Dica:</b> pesquise pelo nome <b>"Lovely Runner"</b> diretamente na sua plataforma favorita.</p>
+      <h2>👥 Elenco de Lovely Runner</h2>
+      <p>O elenco de Lovely Runner reúne atores que ajudam bastante a dar peso emocional e personalidade para a história. Em doramas coreanos, o carisma dos personagens costuma fazer muita diferença, e isso também influencia bastante em como o público se apega à série.</p>
+      <p><strong>Byeon Woo-seok</strong> aparece entre os nomes mais lembrados do elenco e ajuda bastante a carregar a história.<strong>Kim Hye-yoon</strong> também participa com presença importante e costuma chamar atenção em vários momentos do dorama.<strong>Song Geon-hee</strong> completa o núcleo principal com um papel que ajuda a construir melhor a trama.</p>
+      <p>Para muita gente, conhecer os atores de um dorama ajuda até na hora de decidir se vale a pena assistir. Quando o elenco funciona bem, a história costuma ficar muito mais marcante.</p>
     </div>
   </section>
 
@@ -505,24 +548,58 @@
     </section>
   
     <section class="bloco">
+      <h2>💡 Doramas parecidos com Lovely Runner</h2>
+      <p>Se você gostou de Lovely Runner, estes doramas também podem funcionar bem porque têm clima parecido, algumas tags em comum ou uma proposta que costuma agradar ao mesmo público.</p>
+      <div class="semelhantes-grid">
+        <a class="semelhante-card" href="/doramas/secret-garden.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/secret%20garden.jpg" alt="Secret Garden" loading="lazy">
+          <div class="semelhante-c">
+            <h3>Secret Garden</h3>
+            <p>Um casal troca de corpos misteriosamente.</p>
+          </div>
+        </a>
+        <a class="semelhante-card" href="/doramas/splash-splash-love.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/splash%20splash%20love.jpg" alt="Splash Splash Love" loading="lazy">
+          <div class="semelhante-c">
+            <h3>Splash Splash Love</h3>
+            <p>Uma estudante do ensino médio viaja no tempo e conhece um rei da era Joseon.</p>
+          </div>
+        </a>
+        <a class="semelhante-card" href="/doramas/goblin.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/Goblin.jpg" alt="Goblin" loading="lazy">
+          <div class="semelhante-c">
+            <h3>Goblin</h3>
+            <p>Um ser imortal busca alguém para quebrar sua maldição.</p>
+          </div>
+        </a>
+        <a class="semelhante-card" href="/doramas/business-proposal.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/pretendente%20surpresa.jpg" alt="Pretendente Surpresa (Business Proposal)" loading="lazy">
+          <div class="semelhante-c">
+            <h3>Pretendente Surpresa (Business Proposal)</h3>
+            <p>Um encontro às cegas vira confusão quando ela conhece o próprio chefe.</p>
+          </div>
+        </a></div>
+    </section>
+  
+    <section class="bloco">
       <h2>Recomendados para você</h2>
       <div class="rec-grid">
         
-        <a class="rec-card" href="/doramas/her-private-life.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/her%20private%20life.jpg" alt="Her Private Life" loading="lazy">
-          <div class="rec-title">Her Private Life</div>
+        <a class="rec-card" href="/doramas/18-again.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/18againn.jpg" alt="18 Again" loading="lazy">
+          <div class="rec-title">18 Again</div>
         </a>
-        <a class="rec-card" href="/doramas/my-love-from-the-star.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/You_Who_Came_From_the_Stars_Cover.jpg" alt="My Love from the Star" loading="lazy">
-          <div class="rec-title">My Love from the Star</div>
+        <a class="rec-card" href="/doramas/vincenzo.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/vincenzo.jpg" alt="Vincenzo" loading="lazy">
+          <div class="rec-title">Vincenzo</div>
         </a>
-        <a class="rec-card" href="/doramas/welcome-to-samdal-ri.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/welcome%20to%20san.jpg" alt="Welcome to Samdal-ri" loading="lazy">
-          <div class="rec-title">Welcome to Samdal-ri</div>
+        <a class="rec-card" href="/doramas/start-up.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/start%20up.jpg" alt="Start-Up" loading="lazy">
+          <div class="rec-title">Start-Up</div>
         </a>
-        <a class="rec-card" href="/doramas/the-good-bad-mother.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/the%20good%20bad%20mother.jpg" alt="The Good Bad Mother" loading="lazy">
-          <div class="rec-title">The Good Bad Mother</div>
+        <a class="rec-card" href="/doramas/flower-of-evil.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/flower%20of%20evil.webp" alt="Flower of Evil" loading="lazy">
+          <div class="rec-title">Flower of Evil</div>
         </a>
       </div>
     </section>

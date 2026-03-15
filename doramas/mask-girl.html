@@ -388,7 +388,48 @@
       color:#7a1b55;
       font-size:16px;
     }
-
+    .semelhantes-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:14px;
+      margin-top:14px;
+    }
+    .semelhante-card{
+      display:block;
+      text-decoration:none;
+      color:inherit;
+      border-radius:16px;
+      overflow:hidden;
+      background:#fff;
+      border:1px solid rgba(0,0,0,0.06);
+      box-shadow:0 8px 20px rgba(0,0,0,0.06);
+      transition:transform .2s ease, box-shadow .2s ease;
+    }
+    .semelhante-card:hover{
+      transform:translateY(-4px);
+      box-shadow:0 12px 24px rgba(0,0,0,0.10);
+    }
+    .semelhante-card img{
+      width:100%;
+      height:220px;
+      object-fit:cover;
+      display:block;
+      background:#f6f6f6;
+    }
+    .semelhante-c{
+      padding:12px;
+    }
+    .semelhante-c h3{
+      margin:0 0 8px;
+      color:#333;
+      font-size:16px;
+    }
+    .semelhante-c p{
+      margin:0;
+      font-size:13px;
+      line-height:1.6;
+      color:#555;
+    }
 
     @media(max-width:860px){
       .hero{
@@ -460,10 +501,12 @@
       <h2>Resumo</h2>
       <p>Kim Mo Mi sonha em ser famosa, mas sofre por não se encaixar nos padrões de beleza.<br>À noite, ela assume outra identidade na internet usando uma máscara.<br><br>Quando sua vida dupla sai do controle, tudo muda de forma violenta.<br>O dorama tem poucos episódios, clima pesado e várias viradas de roteiro.<br><br>É uma boa pedida para quem quer um dorama curto, diferente e muito comentado.</p>
     </div>
+    
     <div class="bloco">
-      <h2>Onde assistir</h2>
-      <p>Este dorama costuma estar disponível em plataformas de streaming como a <b>Netflix</b>, mas o catálogo pode mudar com o tempo.</p>
-      <p><b>Dica:</b> pesquise pelo nome <b>"Mask Girl"</b> diretamente na sua plataforma favorita.</p>
+      <h2>👥 Elenco de Mask Girl</h2>
+      <p>O elenco de Mask Girl reúne atores que ajudam bastante a dar peso emocional e personalidade para a história. Em doramas coreanos, o carisma dos personagens costuma fazer muita diferença, e isso também influencia bastante em como o público se apega à série.</p>
+      <p><strong>Lee Han-byeol</strong> aparece entre os nomes mais lembrados do elenco e ajuda bastante a carregar a história.<strong>Nana</strong> também participa com presença importante e costuma chamar atenção em vários momentos do dorama.<strong>Go Hyun-jung</strong> completa o núcleo principal com um papel que ajuda a construir melhor a trama.</p>
+      <p>Para muita gente, conhecer os atores de um dorama ajuda até na hora de decidir se vale a pena assistir. Quando o elenco funciona bem, a história costuma ficar muito mais marcante.</p>
     </div>
   </section>
 
@@ -505,24 +548,58 @@
     </section>
   
     <section class="bloco">
+      <h2>💡 Doramas parecidos com Mask Girl</h2>
+      <p>Se você gostou de Mask Girl, estes doramas também podem funcionar bem porque têm clima parecido, algumas tags em comum ou uma proposta que costuma agradar ao mesmo público.</p>
+      <div class="semelhantes-grid">
+        <a class="semelhante-card" href="/doramas/the-glory.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/the%20glory.webp" alt="The Glory" loading="lazy">
+          <div class="semelhante-c">
+            <h3>The Glory</h3>
+            <p>Uma mulher marcada por bullying cruel na escola.</p>
+          </div>
+        </a>
+        <a class="semelhante-card" href="/doramas/beyond-evil.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/beyond%20evil.jpg" alt="Beyond Evil" loading="lazy">
+          <div class="semelhante-c">
+            <h3>Beyond Evil</h3>
+            <p>Dois detetives investigam assassinatos em série ligados ao passado.</p>
+          </div>
+        </a>
+        <a class="semelhante-card" href="/doramas/agency.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/agency.webp" alt="Agency" loading="lazy">
+          <div class="semelhante-c">
+            <h3>Agency</h3>
+            <p>Uma executiva luta para sobreviver em empresa dominada por homens.</p>
+          </div>
+        </a>
+        <a class="semelhante-card" href="/doramas/the-devil-judge.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/the%20devil%20judge.jpg" alt="The Devil Judge" loading="lazy">
+          <div class="semelhante-c">
+            <h3>The Devil Judge</h3>
+            <p>Um juiz transforma julgamentos em reality show nacional.</p>
+          </div>
+        </a></div>
+    </section>
+  
+    <section class="bloco">
       <h2>Recomendados para você</h2>
       <div class="rec-grid">
         
-        <a class="rec-card" href="/doramas/crash-landing-on-you.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/crash-landing.jpg" alt="Pousando no Amor (Crash Landing on You)" loading="lazy">
-          <div class="rec-title">Pousando no Amor (Crash Landing on You)</div>
+        <a class="rec-card" href="/doramas/mr-sunshine.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/mr%20sunshine.webp" alt="Mr. Sunshine" loading="lazy">
+          <div class="rec-title">Mr. Sunshine</div>
         </a>
-        <a class="rec-card" href="/doramas/sky-castle.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/sky%20castle.webp" alt="Sky Castle" loading="lazy">
-          <div class="rec-title">Sky Castle</div>
+        <a class="rec-card" href="/doramas/my-name.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/my%20name.jpg" alt="My Name" loading="lazy">
+          <div class="rec-title">My Name</div>
         </a>
-        <a class="rec-card" href="/doramas/its-okay-to-not-be-okay.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/tudo%20bem%20nao%20ser%20normal.jpg" alt="Tudo Bem Não Ser Normal (Its Okay to Not Be Okay)" loading="lazy">
-          <div class="rec-title">Tudo Bem Não Ser Normal (Its Okay to Not Be Okay)</div>
+        <a class="rec-card" href="/doramas/crash-course-in-romance.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/crash%20course.webp" alt="Crash Course in Romance" loading="lazy">
+          <div class="rec-title">Crash Course in Romance</div>
         </a>
-        <a class="rec-card" href="/doramas/d-p.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/d%20p.jpg" alt="D.P." loading="lazy">
-          <div class="rec-title">D.P.</div>
+        <a class="rec-card" href="/doramas/w-two-worlds.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/w%20two%20words.webp" alt="W: Two Worlds" loading="lazy">
+          <div class="rec-title">W: Two Worlds</div>
         </a>
       </div>
     </section>

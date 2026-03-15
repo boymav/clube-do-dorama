@@ -388,7 +388,48 @@
       color:#7a1b55;
       font-size:16px;
     }
-
+    .semelhantes-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:14px;
+      margin-top:14px;
+    }
+    .semelhante-card{
+      display:block;
+      text-decoration:none;
+      color:inherit;
+      border-radius:16px;
+      overflow:hidden;
+      background:#fff;
+      border:1px solid rgba(0,0,0,0.06);
+      box-shadow:0 8px 20px rgba(0,0,0,0.06);
+      transition:transform .2s ease, box-shadow .2s ease;
+    }
+    .semelhante-card:hover{
+      transform:translateY(-4px);
+      box-shadow:0 12px 24px rgba(0,0,0,0.10);
+    }
+    .semelhante-card img{
+      width:100%;
+      height:220px;
+      object-fit:cover;
+      display:block;
+      background:#f6f6f6;
+    }
+    .semelhante-c{
+      padding:12px;
+    }
+    .semelhante-c h3{
+      margin:0 0 8px;
+      color:#333;
+      font-size:16px;
+    }
+    .semelhante-c p{
+      margin:0;
+      font-size:13px;
+      line-height:1.6;
+      color:#555;
+    }
 
     @media(max-width:860px){
       .hero{
@@ -460,10 +501,12 @@
       <h2>Resumo</h2>
       <p>Uma mulher descobre estar ligada a forças sobrenaturais.<br>Um caçador de demônios a protege.<br>Mistura ação e fantasia sombria.<br>Visual marcante e atmosfera intensa.</p>
     </div>
+    
     <div class="bloco">
-      <h2>Onde assistir</h2>
-      <p>Este dorama costuma estar disponível em plataformas de streaming como a <b>Netflix</b>, mas o catálogo pode mudar com o tempo.</p>
-      <p><b>Dica:</b> pesquise pelo nome <b>"Island"</b> diretamente na sua plataforma favorita.</p>
+      <h2>👥 Elenco de Island</h2>
+      <p>O elenco de Island reúne atores que ajudam bastante a dar peso emocional e personalidade para a história. Em doramas coreanos, o carisma dos personagens costuma fazer muita diferença, e isso também influencia bastante em como o público se apega à série.</p>
+      <p><strong>Kim Nam-gil</strong> aparece entre os nomes mais lembrados do elenco e ajuda bastante a carregar a história.<strong>Lee Da-hee</strong> também participa com presença importante e costuma chamar atenção em vários momentos do dorama.<strong>Cha Eun-woo</strong> completa o núcleo principal com um papel que ajuda a construir melhor a trama.</p>
+      <p>Para muita gente, conhecer os atores de um dorama ajuda até na hora de decidir se vale a pena assistir. Quando o elenco funciona bem, a história costuma ficar muito mais marcante.</p>
     </div>
   </section>
 
@@ -505,24 +548,58 @@
     </section>
   
     <section class="bloco">
+      <h2>💡 Doramas parecidos com Island</h2>
+      <p>Se você gostou de Island, estes doramas também podem funcionar bem porque têm clima parecido, algumas tags em comum ou uma proposta que costuma agradar ao mesmo público.</p>
+      <div class="semelhantes-grid">
+        <a class="semelhante-card" href="/doramas/tale-of-the-nine-tailed.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/tale%20of%20the%20nine%20talled.jfif" alt="Tale of the Nine Tailed" loading="lazy">
+          <div class="semelhante-c">
+            <h3>Tale of the Nine Tailed</h3>
+            <p>Um antigo espírito raposa de nove caudas vive no mundo moderno.</p>
+          </div>
+        </a>
+        <a class="semelhante-card" href="/doramas/goblin.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/Goblin.jpg" alt="Goblin" loading="lazy">
+          <div class="semelhante-c">
+            <h3>Goblin</h3>
+            <p>Um ser imortal busca alguém para quebrar sua maldição.</p>
+          </div>
+        </a>
+        <a class="semelhante-card" href="/doramas/hotel-del-luna.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/hotel%20del%20luna.jpg" alt="Hotel Del Luna" loading="lazy">
+          <div class="semelhante-c">
+            <h3>Hotel Del Luna</h3>
+            <p>Um hotel misterioso recebe apenas almas perdidas.</p>
+          </div>
+        </a>
+        <a class="semelhante-card" href="/doramas/my-love-from-the-star.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/You_Who_Came_From_the_Stars_Cover.jpg" alt="My Love from the Star" loading="lazy">
+          <div class="semelhante-c">
+            <h3>My Love from the Star</h3>
+            <p>Um alienígena vive na Terra há séculos.</p>
+          </div>
+        </a></div>
+    </section>
+  
+    <section class="bloco">
       <h2>Recomendados para você</h2>
       <div class="rec-grid">
         
-        <a class="rec-card" href="/doramas/mr-queen.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/mr%20queen.webp" alt="Mr. Queen" loading="lazy">
-          <div class="rec-title">Mr. Queen</div>
+        <a class="rec-card" href="/doramas/gyeongseong-creature.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/gieogsong%20creature.webp" alt="Gyeongseong Creature" loading="lazy">
+          <div class="rec-title">Gyeongseong Creature</div>
         </a>
-        <a class="rec-card" href="/doramas/the-king-eternal-monarch.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/the%20king%20eternalllll.jpg" alt="The King: Eternal Monarch" loading="lazy">
-          <div class="rec-title">The King: Eternal Monarch</div>
+        <a class="rec-card" href="/doramas/happiness.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/hapiness.webp" alt="Happiness" loading="lazy">
+          <div class="rec-title">Happiness</div>
         </a>
-        <a class="rec-card" href="/doramas/destined-with-you.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/destined%20whit%20you.webp" alt="Destined with You" loading="lazy">
-          <div class="rec-title">Destined with You</div>
+        <a class="rec-card" href="/doramas/arthdal-chronicles.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/arthdal%20chronicles.jpg" alt="Arthdal Chronicles" loading="lazy">
+          <div class="rec-title">Arthdal Chronicles</div>
         </a>
-        <a class="rec-card" href="/doramas/goblin.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/Goblin.jpg" alt="Goblin" loading="lazy">
-          <div class="rec-title">Goblin</div>
+        <a class="rec-card" href="/doramas/lovely-runner.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/lovely%20runner.webp" alt="Lovely Runner" loading="lazy">
+          <div class="rec-title">Lovely Runner</div>
         </a>
       </div>
     </section>

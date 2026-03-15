@@ -388,7 +388,48 @@
       color:#7a1b55;
       font-size:16px;
     }
-
+    .semelhantes-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:14px;
+      margin-top:14px;
+    }
+    .semelhante-card{
+      display:block;
+      text-decoration:none;
+      color:inherit;
+      border-radius:16px;
+      overflow:hidden;
+      background:#fff;
+      border:1px solid rgba(0,0,0,0.06);
+      box-shadow:0 8px 20px rgba(0,0,0,0.06);
+      transition:transform .2s ease, box-shadow .2s ease;
+    }
+    .semelhante-card:hover{
+      transform:translateY(-4px);
+      box-shadow:0 12px 24px rgba(0,0,0,0.10);
+    }
+    .semelhante-card img{
+      width:100%;
+      height:220px;
+      object-fit:cover;
+      display:block;
+      background:#f6f6f6;
+    }
+    .semelhante-c{
+      padding:12px;
+    }
+    .semelhante-c h3{
+      margin:0 0 8px;
+      color:#333;
+      font-size:16px;
+    }
+    .semelhante-c p{
+      margin:0;
+      font-size:13px;
+      line-height:1.6;
+      color:#555;
+    }
 
     @media(max-width:860px){
       .hero{
@@ -460,10 +501,12 @@
       <h2>Resumo</h2>
       <p>Na Hee Do é uma esgrimista determinada.<br>Baek Yi Jin é um jovem que viu a família perder tudo.<br>Eles se conhecem na juventude e criam uma ligação muito forte.<br>O dorama mostra amizade, sonhos, amadurecimento e um amor marcante.<br>É emocionante e mexe muito com a nostalgia.<br><br>No Brasil, esse dorama também é conhecido como "Vinte e Cinco, Vinte e Um".</p>
     </div>
+    
     <div class="bloco">
-      <h2>Onde assistir</h2>
-      <p>Este dorama costuma estar disponível em plataformas de streaming como a <b>Netflix</b>, mas o catálogo pode mudar com o tempo.</p>
-      <p><b>Dica:</b> pesquise pelo nome <b>"Vinte e Cinco, Vinte e Um (Twenty-Five Twenty-One)"</b> diretamente na sua plataforma favorita.</p>
+      <h2>👥 Elenco de Vinte e Cinco, Vinte e Um (Twenty-Five Twenty-One)</h2>
+      <p>O elenco de Vinte e Cinco, Vinte e Um (Twenty-Five Twenty-One) reúne atores que ajudam bastante a dar peso emocional e personalidade para a história. Em doramas coreanos, o carisma dos personagens costuma fazer muita diferença, e isso também influencia bastante em como o público se apega à série.</p>
+      <p><strong>Kim Tae-ri</strong> aparece entre os nomes mais lembrados do elenco e ajuda bastante a carregar a história.<strong>Nam Joo-hyuk</strong> também participa com presença importante e costuma chamar atenção em vários momentos do dorama.<strong>Bona</strong> completa o núcleo principal com um papel que ajuda a construir melhor a trama.</p>
+      <p>Para muita gente, conhecer os atores de um dorama ajuda até na hora de decidir se vale a pena assistir. Quando o elenco funciona bem, a história costuma ficar muito mais marcante.</p>
     </div>
   </section>
 
@@ -505,24 +548,58 @@
     </section>
   
     <section class="bloco">
+      <h2>💡 Doramas parecidos com Vinte e Cinco, Vinte e Um (Twenty-Five Twenty-One)</h2>
+      <p>Se você gostou de Vinte e Cinco, Vinte e Um (Twenty-Five Twenty-One), estes doramas também podem funcionar bem porque têm clima parecido, algumas tags em comum ou uma proposta que costuma agradar ao mesmo público.</p>
+      <div class="semelhantes-grid">
+        <a class="semelhante-card" href="/doramas/crash-landing-on-you.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/crash-landing.jpg" alt="Pousando no Amor (Crash Landing on You)" loading="lazy">
+          <div class="semelhante-c">
+            <h3>Pousando no Amor (Crash Landing on You)</h3>
+            <p>Uma empresária sul-coreana sofre um acidente e vai parar na Coreia do Norte.</p>
+          </div>
+        </a>
+        <a class="semelhante-card" href="/doramas/goblin.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/Goblin.jpg" alt="Goblin" loading="lazy">
+          <div class="semelhante-c">
+            <h3>Goblin</h3>
+            <p>Um ser imortal busca alguém para quebrar sua maldição.</p>
+          </div>
+        </a>
+        <a class="semelhante-card" href="/doramas/its-okay-to-not-be-okay.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/tudo%20bem%20nao%20ser%20normal.jpg" alt="Tudo Bem Não Ser Normal (Its Okay to Not Be Okay)" loading="lazy">
+          <div class="semelhante-c">
+            <h3>Tudo Bem Não Ser Normal (Its Okay to Not Be Okay)</h3>
+            <p>Um cuidador emocionalmente fechado conhece uma escritora excêntrica.</p>
+          </div>
+        </a>
+        <a class="semelhante-card" href="/doramas/hotel-del-luna.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/hotel%20del%20luna.jpg" alt="Hotel Del Luna" loading="lazy">
+          <div class="semelhante-c">
+            <h3>Hotel Del Luna</h3>
+            <p>Um hotel misterioso recebe apenas almas perdidas.</p>
+          </div>
+        </a></div>
+    </section>
+  
+    <section class="bloco">
       <h2>Recomendados para você</h2>
       <div class="rec-grid">
         
-        <a class="rec-card" href="/doramas/navillera.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/navillera.webp" alt="Navillera" loading="lazy">
-          <div class="rec-title">Navillera</div>
+        <a class="rec-card" href="/doramas/the-good-bad-mother.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/the%20good%20bad%20mother.jpg" alt="The Good Bad Mother" loading="lazy">
+          <div class="rec-title">The Good Bad Mother</div>
         </a>
-        <a class="rec-card" href="/doramas/crash-landing-on-you.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/crash-landing.jpg" alt="Pousando no Amor (Crash Landing on You)" loading="lazy">
-          <div class="rec-title">Pousando no Amor (Crash Landing on You)</div>
+        <a class="rec-card" href="/doramas/flower-of-evil.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/flower%20of%20evil.webp" alt="Flower of Evil" loading="lazy">
+          <div class="rec-title">Flower of Evil</div>
         </a>
-        <a class="rec-card" href="/doramas/strong-woman-do-bong-soon.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/strong-woman-do-bong-soon.jpg" alt="Strong Woman Do Bong Soon" loading="lazy">
-          <div class="rec-title">Strong Woman Do Bong Soon</div>
+        <a class="rec-card" href="/doramas/my-love-from-the-star.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/You_Who_Came_From_the_Stars_Cover.jpg" alt="My Love from the Star" loading="lazy">
+          <div class="rec-title">My Love from the Star</div>
         </a>
-        <a class="rec-card" href="/doramas/reply-1988.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/reply%201988.jpg" alt="Reply 1988" loading="lazy">
-          <div class="rec-title">Reply 1988</div>
+        <a class="rec-card" href="/doramas/fight-for-my-way.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/flight%20for%20my%20way.webp" alt="Fight For My Way" loading="lazy">
+          <div class="rec-title">Fight For My Way</div>
         </a>
       </div>
     </section>

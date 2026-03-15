@@ -388,7 +388,48 @@
       color:#7a1b55;
       font-size:16px;
     }
-
+    .semelhantes-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:14px;
+      margin-top:14px;
+    }
+    .semelhante-card{
+      display:block;
+      text-decoration:none;
+      color:inherit;
+      border-radius:16px;
+      overflow:hidden;
+      background:#fff;
+      border:1px solid rgba(0,0,0,0.06);
+      box-shadow:0 8px 20px rgba(0,0,0,0.06);
+      transition:transform .2s ease, box-shadow .2s ease;
+    }
+    .semelhante-card:hover{
+      transform:translateY(-4px);
+      box-shadow:0 12px 24px rgba(0,0,0,0.10);
+    }
+    .semelhante-card img{
+      width:100%;
+      height:220px;
+      object-fit:cover;
+      display:block;
+      background:#f6f6f6;
+    }
+    .semelhante-c{
+      padding:12px;
+    }
+    .semelhante-c h3{
+      margin:0 0 8px;
+      color:#333;
+      font-size:16px;
+    }
+    .semelhante-c p{
+      margin:0;
+      font-size:13px;
+      line-height:1.6;
+      color:#555;
+    }
 
     @media(max-width:860px){
       .hero{
@@ -460,10 +501,12 @@
       <h2>Resumo</h2>
       <p>Um jovem com Asperger trabalha limpando<br>pertences de pessoas falecidas.<br><br>Com seu tio, ele descobre histórias escondidas.<br>Cada episódio traz uma lição.<br><br>Extremamente sensível e humano.</p>
     </div>
+    
     <div class="bloco">
-      <h2>Onde assistir</h2>
-      <p>Este dorama costuma estar disponível em plataformas de streaming como a <b>Netflix</b>, mas o catálogo pode mudar com o tempo.</p>
-      <p><b>Dica:</b> pesquise pelo nome <b>"Move to Heaven"</b> diretamente na sua plataforma favorita.</p>
+      <h2>👥 Elenco de Move to Heaven</h2>
+      <p>O elenco de Move to Heaven reúne atores que ajudam bastante a dar peso emocional e personalidade para a história. Em doramas coreanos, o carisma dos personagens costuma fazer muita diferença, e isso também influencia bastante em como o público se apega à série.</p>
+      <p><strong>Tang Joon-sang</strong> aparece entre os nomes mais lembrados do elenco e ajuda bastante a carregar a história.<strong>Lee Je-hoon</strong> também participa com presença importante e costuma chamar atenção em vários momentos do dorama.<strong>Hong Seung-hee</strong> completa o núcleo principal com um papel que ajuda a construir melhor a trama.</p>
+      <p>Para muita gente, conhecer os atores de um dorama ajuda até na hora de decidir se vale a pena assistir. Quando o elenco funciona bem, a história costuma ficar muito mais marcante.</p>
     </div>
   </section>
 
@@ -505,24 +548,58 @@
     </section>
   
     <section class="bloco">
+      <h2>💡 Doramas parecidos com Move to Heaven</h2>
+      <p>Se você gostou de Move to Heaven, estes doramas também podem funcionar bem porque têm clima parecido, algumas tags em comum ou uma proposta que costuma agradar ao mesmo público.</p>
+      <div class="semelhantes-grid">
+        <a class="semelhante-card" href="/doramas/18-again.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/18againn.jpg" alt="18 Again" loading="lazy">
+          <div class="semelhante-c">
+            <h3>18 Again</h3>
+            <p>Um homem volta ao corpo de seus 18 anos.</p>
+          </div>
+        </a>
+        <a class="semelhante-card" href="/doramas/our-beloved-summer.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/our%20beloved%20summer.png" alt="Our Beloved Summer" loading="lazy">
+          <div class="semelhante-c">
+            <h3>Our Beloved Summer</h3>
+            <p>Ex-namorados se reencontram anos depois.</p>
+          </div>
+        </a>
+        <a class="semelhante-card" href="/doramas/prison-playbook.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/prison%20playbook.jfif" alt="Prison Playbook" loading="lazy">
+          <div class="semelhante-c">
+            <h3>Prison Playbook</h3>
+            <p>Um jogador de beisebol vai parar na prisão.</p>
+          </div>
+        </a>
+        <a class="semelhante-card" href="/doramas/navillera.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/navillera.webp" alt="Navillera" loading="lazy">
+          <div class="semelhante-c">
+            <h3>Navillera</h3>
+            <p>Um senhor sonha em aprender balé.</p>
+          </div>
+        </a></div>
+    </section>
+  
+    <section class="bloco">
       <h2>Recomendados para você</h2>
       <div class="rec-grid">
         
-        <a class="rec-card" href="/doramas/hospital-playlist.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/hospital%20playlist.webp" alt="Hospital Playlist" loading="lazy">
-          <div class="rec-title">Hospital Playlist</div>
+        <a class="rec-card" href="/doramas/school-2017.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/school%202017.jpg" alt="School 2017" loading="lazy">
+          <div class="rec-title">School 2017</div>
         </a>
-        <a class="rec-card" href="/doramas/because-this-is-my-first-life.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/because%20this%20is.jfif" alt="Because This Is My First Life" loading="lazy">
-          <div class="rec-title">Because This Is My First Life</div>
+        <a class="rec-card" href="/doramas/love-to-hate-you.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/love%20to%20hate%20you.jpg" alt="Love to Hate You" loading="lazy">
+          <div class="rec-title">Love to Hate You</div>
         </a>
         <a class="rec-card" href="/doramas/navillera.html">
           <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/navillera.webp" alt="Navillera" loading="lazy">
           <div class="rec-title">Navillera</div>
         </a>
-        <a class="rec-card" href="/doramas/mr-sunshine.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/mr%20sunshine.webp" alt="Mr. Sunshine" loading="lazy">
-          <div class="rec-title">Mr. Sunshine</div>
+        <a class="rec-card" href="/doramas/the-good-bad-mother.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/the%20good%20bad%20mother.jpg" alt="The Good Bad Mother" loading="lazy">
+          <div class="rec-title">The Good Bad Mother</div>
         </a>
       </div>
     </section>

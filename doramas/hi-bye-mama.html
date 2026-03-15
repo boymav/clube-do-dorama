@@ -388,7 +388,48 @@
       color:#7a1b55;
       font-size:16px;
     }
-
+    .semelhantes-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:14px;
+      margin-top:14px;
+    }
+    .semelhante-card{
+      display:block;
+      text-decoration:none;
+      color:inherit;
+      border-radius:16px;
+      overflow:hidden;
+      background:#fff;
+      border:1px solid rgba(0,0,0,0.06);
+      box-shadow:0 8px 20px rgba(0,0,0,0.06);
+      transition:transform .2s ease, box-shadow .2s ease;
+    }
+    .semelhante-card:hover{
+      transform:translateY(-4px);
+      box-shadow:0 12px 24px rgba(0,0,0,0.10);
+    }
+    .semelhante-card img{
+      width:100%;
+      height:220px;
+      object-fit:cover;
+      display:block;
+      background:#f6f6f6;
+    }
+    .semelhante-c{
+      padding:12px;
+    }
+    .semelhante-c h3{
+      margin:0 0 8px;
+      color:#333;
+      font-size:16px;
+    }
+    .semelhante-c p{
+      margin:0;
+      font-size:13px;
+      line-height:1.6;
+      color:#555;
+    }
 
     @media(max-width:860px){
       .hero{
@@ -460,10 +501,12 @@
       <h2>Resumo</h2>
       <p>Cha Yu Ri morreu de forma inesperada e deixou para trás o marido e a filha ainda pequena.<br>Anos depois, ela recebe uma chance impossível: voltar à vida por 49 dias.<br><br>Ao retornar, Yu Ri encontra a família tentando seguir em frente,<br>mas percebe que o amor que sente por eles continua igual.<br><br>O dorama mostra luto, maternidade, saudade e o peso de uma despedida que nunca aconteceu de verdade.<br><br>É uma história extremamente sensível,<br>cheia de cenas emocionantes e reflexões sobre família, amor e recomeço.<br><br>No Brasil, esse dorama também é conhecido como "Oi, Tchau, Mamãe!".</p>
     </div>
+    
     <div class="bloco">
-      <h2>Onde assistir</h2>
-      <p>Este dorama costuma estar disponível em plataformas de streaming como a <b>Netflix</b>, mas o catálogo pode mudar com o tempo.</p>
-      <p><b>Dica:</b> pesquise pelo nome <b>"Hi Bye, Mama!"</b> diretamente na sua plataforma favorita.</p>
+      <h2>👥 Elenco de Hi Bye, Mama!</h2>
+      <p>O elenco de Hi Bye, Mama! reúne atores que ajudam bastante a dar peso emocional e personalidade para a história. Em doramas coreanos, o carisma dos personagens costuma fazer muita diferença, e isso também influencia bastante em como o público se apega à série.</p>
+      <p><strong>Kim Tae-hee</strong> aparece entre os nomes mais lembrados do elenco e ajuda bastante a carregar a história.<strong>Lee Kyu-hyung</strong> também participa com presença importante e costuma chamar atenção em vários momentos do dorama.<strong>Go Bo-gyeol</strong> completa o núcleo principal com um papel que ajuda a construir melhor a trama.</p>
+      <p>Para muita gente, conhecer os atores de um dorama ajuda até na hora de decidir se vale a pena assistir. Quando o elenco funciona bem, a história costuma ficar muito mais marcante.</p>
     </div>
   </section>
 
@@ -505,24 +548,58 @@
     </section>
   
     <section class="bloco">
+      <h2>💡 Doramas parecidos com Hi Bye, Mama!</h2>
+      <p>Se você gostou de Hi Bye, Mama!, estes doramas também podem funcionar bem porque têm clima parecido, algumas tags em comum ou uma proposta que costuma agradar ao mesmo público.</p>
+      <div class="semelhantes-grid">
+        <a class="semelhante-card" href="/doramas/goblin.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/Goblin.jpg" alt="Goblin" loading="lazy">
+          <div class="semelhante-c">
+            <h3>Goblin</h3>
+            <p>Um ser imortal busca alguém para quebrar sua maldição.</p>
+          </div>
+        </a>
+        <a class="semelhante-card" href="/doramas/hotel-del-luna.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/hotel%20del%20luna.jpg" alt="Hotel Del Luna" loading="lazy">
+          <div class="semelhante-c">
+            <h3>Hotel Del Luna</h3>
+            <p>Um hotel misterioso recebe apenas almas perdidas.</p>
+          </div>
+        </a>
+        <a class="semelhante-card" href="/doramas/doom-at-your-service.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/doom%20at%20your.jfif" alt="Doom at Your Service" loading="lazy">
+          <div class="semelhante-c">
+            <h3>Doom at Your Service</h3>
+            <p>Uma mulher faz um contrato com a própria destruição.</p>
+          </div>
+        </a>
+        <a class="semelhante-card" href="/doramas/destined-with-you.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/destined%20whit%20you.webp" alt="Destined with You" loading="lazy">
+          <div class="semelhante-c">
+            <h3>Destined with You</h3>
+            <p>Uma funcionária pública encontra um livro antigo que pode quebrar uma maldição.</p>
+          </div>
+        </a></div>
+    </section>
+  
+    <section class="bloco">
       <h2>Recomendados para você</h2>
       <div class="rec-grid">
         
-        <a class="rec-card" href="/doramas/marry-my-husband.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/marry%20my%20husband.webp" alt="Marry My Husband" loading="lazy">
-          <div class="rec-title">Marry My Husband</div>
+        <a class="rec-card" href="/doramas/mr-sunshine.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/mr%20sunshine.webp" alt="Mr. Sunshine" loading="lazy">
+          <div class="rec-title">Mr. Sunshine</div>
         </a>
-        <a class="rec-card" href="/doramas/fight-for-my-way.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/flight%20for%20my%20way.webp" alt="Fight For My Way" loading="lazy">
-          <div class="rec-title">Fight For My Way</div>
+        <a class="rec-card" href="/doramas/touch-your-heart.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/touch%20your%20heartt.jpg" alt="Touch Your Heart" loading="lazy">
+          <div class="rec-title">Touch Your Heart</div>
         </a>
-        <a class="rec-card" href="/doramas/while-you-were-sleeping.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/whire%20you%20we%20sleeping.webp" alt="While You Were Sleeping" loading="lazy">
-          <div class="rec-title">While You Were Sleeping</div>
+        <a class="rec-card" href="/doramas/nevertheless.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/nevert.jfif" alt="Nevertheless" loading="lazy">
+          <div class="rec-title">Nevertheless</div>
         </a>
-        <a class="rec-card" href="/doramas/extraordinary-attorney-woo.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/extraordinay%20attorney.jpg" alt="Advogada Extraordinária (Extraordinary Attorney Woo)" loading="lazy">
-          <div class="rec-title">Advogada Extraordinária (Extraordinary Attorney Woo)</div>
+        <a class="rec-card" href="/doramas/the-king-eternal-monarch.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/the%20king%20eternalllll.jpg" alt="The King: Eternal Monarch" loading="lazy">
+          <div class="rec-title">The King: Eternal Monarch</div>
         </a>
       </div>
     </section>
