@@ -170,9 +170,65 @@
       color:var(--sub);
     }
     .desc-curta{
-      font-size:14px;
+      font-size:15px;
+      line-height:1.75;
+      color:#444;
+      margin-top:10px;
+      max-width:95%;
+    }
+    .top-extra{
+      margin-top:14px;
+      display:grid;
+      grid-template-columns:1fr;
+      gap:12px;
+    }
+    .top-quick{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:10px;
+    }
+    .top-box{
+      padding:12px 12px 10px;
+      border-radius:16px;
+      background:linear-gradient(135deg, rgba(255,126,179,0.10), rgba(185,131,255,0.10));
+      border:1px solid rgba(0,0,0,0.06);
+    }
+    .top-k{
+      display:block;
+      font-size:12px;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      color:#7a1b55;
+      margin-bottom:6px;
+      font-weight:bold;
+    }
+    .top-v{
+      display:block;
+      font-size:13px;
       line-height:1.6;
       color:#444;
+      font-weight:600;
+    }
+    .top-lista{
+      padding:12px 12px 8px;
+      border-radius:16px;
+      background:rgba(185,131,255,0.10);
+      border:1px solid rgba(0,0,0,0.06);
+    }
+    .top-lista strong{
+      display:block;
+      color:#7a1b55;
+      margin-bottom:8px;
+    }
+    .top-lista ul{
+      margin:0;
+      padding-left:18px;
+    }
+    .top-lista li{
+      margin-bottom:6px;
+      color:#444;
+      line-height:1.5;
+      font-size:14px;
     }
     .elenco{
       font-size:14px;
@@ -344,6 +400,9 @@
       .colunas{
         grid-template-columns:1fr;
       }
+      .top-quick{
+        grid-template-columns:1fr;
+      }
     }
   </style>
 </head>
@@ -369,7 +428,24 @@
         <div class="tags">
           <span class="tag">romance</span><span class="tag">fantasia</span><span class="tag">triste</span>
         </div>
-        <div class="desc-curta">Uma funcionária pública encontra um livro antigo que pode quebrar uma maldição.</div>
+        <div class="desc-curta">Uma funcionária pública encontra um livro antigo que pode quebrar uma maldição. Romance com fantasia e destino.</div>
+        
+      <div class="top-extra">
+        <div class="top-quick">
+          <div class="top-box">
+            <span class="top-k">Clima</span>
+            <span class="top-v">romance emocional e marcante</span>
+          </div>
+          <div class="top-box">
+            <span class="top-k">Vale a pena?</span>
+            <span class="top-v">Destined with You costuma funcionar muito bem para quem gosta de romance com emoção e personagens que deixam marca.</span>
+          </div>
+        </div>
+        <div class="top-lista">
+          <strong>Indicado para quem gosta de:</strong>
+          <ul><li>romance forte</li><li>carga emocional alta</li><li>toque de fantasia</li></ul>
+        </div>
+      </div>
       </div>
       <div class="acoes">
         <button class="btn btn-primary" onclick="window.location.href='../index.html'">🏠 Início</button>
@@ -395,11 +471,12 @@
     <section class="colunas critica-grid">
       <div class="bloco">
         <h2>💬 Crítica do Planeta Dorama</h2>
-        <p><strong>Crítica do Planeta Dorama:</strong> Lee Hong Jo é uma funcionária pública de vida simples que acaba encontrando um antigo livro selado. Jang Shin Yu é um advogado bonito e popular que sofre com uma maldição misteriosa passada por gerações.</p><p>Destined with You mistura elementos de romance, fantasia, triste de forma acessível, o que ajuda a história a prender mesmo quem ainda está começando no mundo dos doramas. É uma boa escolha para quem procura uma história envolvente e personagens marcantes.</p>
+        <p><strong>Crítica do Planeta Dorama:</strong> Destined with You chama atenção porque trabalha romance, fantasia, triste de forma acessível e consegue manter o interesse sem parecer forçado. Jang Shin Yu é um advogado bonito e popular que sofre com uma maldição misteriosa passada por gerações.</p><p>Na prática, é o tipo de dorama que funciona melhor quando o espectador entra no clima da proposta e se envolve com os personagens. É uma boa escolha para quem procura uma história envolvente e personagens marcantes.</p>
       </div>
       <div class="bloco">
         <h2>✨ Guia rápido</h2>
         <p><strong>Vale a pena assistir?</strong> Sim. Destined with You costuma funcionar muito bem para quem gosta de romance com bastante emoção e momentos marcantes. É o tipo de série que normalmente conquista quem gosta de casal forte e história mais sentimental.</p>
+        <p><strong>Resumo bem rápido:</strong> Destined with You costuma funcionar muito bem para quem gosta de romance com emoção e personagens que deixam marca.</p>
         <div class="lista-gostos"><strong>Indicado para quem gosta de:</strong><ul><li>casais com química e histórias emocionantes</li><li>doramas intensos e com bastante emoção</li><li>fantasia, destino e elementos sobrenaturais</li></ul></div>
       </div>
     </section>
@@ -431,21 +508,21 @@
       <h2>Recomendados para você</h2>
       <div class="rec-grid">
         
-        <a class="rec-card" href="/doramas/moon-lovers-scarlet-heart-ryeo.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/moon%20lovers%201.webp" alt="Moon Lovers: Scarlet Heart Ryeo" loading="lazy">
-          <div class="rec-title">Moon Lovers: Scarlet Heart Ryeo</div>
+        <a class="rec-card" href="/doramas/sweet-home.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/sweet%20home.jpg" alt="Sweet Home" loading="lazy">
+          <div class="rec-title">Sweet Home</div>
         </a>
-        <a class="rec-card" href="/doramas/the-red-sleeve.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/the%20red%20sleeve.jpeg" alt="The Red Sleeve" loading="lazy">
-          <div class="rec-title">The Red Sleeve</div>
+        <a class="rec-card" href="/doramas/reply-1988.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/reply%201988.jpg" alt="Reply 1988" loading="lazy">
+          <div class="rec-title">Reply 1988</div>
         </a>
-        <a class="rec-card" href="/doramas/kingdom.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/kngdom.webp" alt="Kingdom" loading="lazy">
-          <div class="rec-title">Kingdom</div>
+        <a class="rec-card" href="/doramas/secret-garden.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/secret%20garden.jpg" alt="Secret Garden" loading="lazy">
+          <div class="rec-title">Secret Garden</div>
         </a>
-        <a class="rec-card" href="/doramas/splash-splash-love.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/splash%20splash%20love.jpg" alt="Splash Splash Love" loading="lazy">
-          <div class="rec-title">Splash Splash Love</div>
+        <a class="rec-card" href="/doramas/navillera.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/navillera.webp" alt="Navillera" loading="lazy">
+          <div class="rec-title">Navillera</div>
         </a>
       </div>
     </section>

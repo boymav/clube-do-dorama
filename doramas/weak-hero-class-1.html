@@ -170,9 +170,65 @@
       color:var(--sub);
     }
     .desc-curta{
-      font-size:14px;
+      font-size:15px;
+      line-height:1.75;
+      color:#444;
+      margin-top:10px;
+      max-width:95%;
+    }
+    .top-extra{
+      margin-top:14px;
+      display:grid;
+      grid-template-columns:1fr;
+      gap:12px;
+    }
+    .top-quick{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:10px;
+    }
+    .top-box{
+      padding:12px 12px 10px;
+      border-radius:16px;
+      background:linear-gradient(135deg, rgba(255,126,179,0.10), rgba(185,131,255,0.10));
+      border:1px solid rgba(0,0,0,0.06);
+    }
+    .top-k{
+      display:block;
+      font-size:12px;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      color:#7a1b55;
+      margin-bottom:6px;
+      font-weight:bold;
+    }
+    .top-v{
+      display:block;
+      font-size:13px;
       line-height:1.6;
       color:#444;
+      font-weight:600;
+    }
+    .top-lista{
+      padding:12px 12px 8px;
+      border-radius:16px;
+      background:rgba(185,131,255,0.10);
+      border:1px solid rgba(0,0,0,0.06);
+    }
+    .top-lista strong{
+      display:block;
+      color:#7a1b55;
+      margin-bottom:8px;
+    }
+    .top-lista ul{
+      margin:0;
+      padding-left:18px;
+    }
+    .top-lista li{
+      margin-bottom:6px;
+      color:#444;
+      line-height:1.5;
+      font-size:14px;
     }
     .elenco{
       font-size:14px;
@@ -344,6 +400,9 @@
       .colunas{
         grid-template-columns:1fr;
       }
+      .top-quick{
+        grid-template-columns:1fr;
+      }
     }
   </style>
 </head>
@@ -369,7 +428,24 @@
         <div class="tags">
           <span class="tag">intenso</span><span class="tag">escolar</span><span class="tag">acao</span>
         </div>
-        <div class="desc-curta">Um aluno aparentemente frágil enfrenta a violência escolar usando inteligência e estratégia.</div>
+        <div class="desc-curta">Um aluno aparentemente frágil enfrenta a violência escolar usando inteligência e estratégia. Curto, intenso e muito viciante.</div>
+        
+      <div class="top-extra">
+        <div class="top-quick">
+          <div class="top-box">
+            <span class="top-k">Clima</span>
+            <span class="top-v">história intensa e envolvente</span>
+          </div>
+          <div class="top-box">
+            <span class="top-k">Vale a pena?</span>
+            <span class="top-v">Weak Hero Class 1 é um história intensa e envolvente que costuma prender rápido.</span>
+          </div>
+        </div>
+        <div class="top-lista">
+          <strong>Indicado para quem gosta de:</strong>
+          <ul><li>história intensa</li><li>juventude e vida escolar</li></ul>
+        </div>
+      </div>
       </div>
       <div class="acoes">
         <button class="btn btn-primary" onclick="window.location.href='../index.html'">🏠 Início</button>
@@ -395,11 +471,12 @@
     <section class="colunas critica-grid">
       <div class="bloco">
         <h2>💬 Crítica do Planeta Dorama</h2>
-        <p><strong>Crítica do Planeta Dorama:</strong> Yeon Si Eun é um dos melhores alunos da escola e parece fraco fisicamente. Mesmo assim, ele encontra formas inteligentes de enfrentar colegas violentos e sobreviver ao ambiente brutal ao seu redor.</p><p>Weak Hero Class 1 mistura elementos de intenso, escolar, acao de forma acessível, o que ajuda a história a prender mesmo quem ainda está começando no mundo dos doramas. Tem boa avaliação entre os fãs e funciona muito bem para quem quer uma série envolvente para maratonar.</p>
+        <p><strong>Crítica do Planeta Dorama:</strong> Weak Hero Class 1 chama atenção porque trabalha intenso, escolar, acao de forma acessível e consegue manter o interesse sem parecer forçado. Mesmo assim, ele encontra formas inteligentes de enfrentar colegas violentos e sobreviver ao ambiente brutal ao seu redor.</p><p>Na prática, é o tipo de dorama que funciona melhor quando o espectador entra no clima da proposta e se envolve com os personagens. Tem boa avaliação entre os fãs e funciona muito bem para quem quer uma série envolvente para maratonar.</p>
       </div>
       <div class="bloco">
         <h2>✨ Guia rápido</h2>
         <p><strong>Vale a pena assistir?</strong> Sim. Weak Hero Class 1 vale mais a pena para quem gosta de juventude, amizade, escola e conflitos do período de crescimento. Costuma funcionar bem tanto para iniciantes quanto para fãs do gênero escolar.</p>
+        <p><strong>Resumo bem rápido:</strong> Weak Hero Class 1 é um história intensa e envolvente que costuma prender rápido.</p>
         <div class="lista-gostos"><strong>Indicado para quem gosta de:</strong><ul><li>tramas fortes e episódios que prendem rápido</li><li>juventude, amizade e vida escolar</li></ul></div>
       </div>
     </section>
@@ -431,21 +508,21 @@
       <h2>Recomendados para você</h2>
       <div class="rec-grid">
         
-        <a class="rec-card" href="/doramas/d-p.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/d%20p.jpg" alt="D.P." loading="lazy">
-          <div class="rec-title">D.P.</div>
-        </a>
-        <a class="rec-card" href="/doramas/extracurricular.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/extracurricular.jpg" alt="Extracurricular" loading="lazy">
-          <div class="rec-title">Extracurricular</div>
+        <a class="rec-card" href="/doramas/crash-landing-on-you.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/crash-landing.jpg" alt="Pousando no Amor (Crash Landing on You)" loading="lazy">
+          <div class="rec-title">Pousando no Amor (Crash Landing on You)</div>
         </a>
         <a class="rec-card" href="/doramas/beyond-evil.html">
           <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/beyond%20evil.jpg" alt="Beyond Evil" loading="lazy">
           <div class="rec-title">Beyond Evil</div>
         </a>
-        <a class="rec-card" href="/doramas/sky-castle.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/sky%20castle.webp" alt="Sky Castle" loading="lazy">
-          <div class="rec-title">Sky Castle</div>
+        <a class="rec-card" href="/doramas/school-2015-who-are-you.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/school%202015%20who%20are%20you.jpg" alt="School 2015: Who Are You" loading="lazy">
+          <div class="rec-title">School 2015: Who Are You</div>
+        </a>
+        <a class="rec-card" href="/doramas/the-glory.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/the%20glory.webp" alt="The Glory" loading="lazy">
+          <div class="rec-title">The Glory</div>
         </a>
       </div>
     </section>

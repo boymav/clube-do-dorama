@@ -170,9 +170,65 @@
       color:var(--sub);
     }
     .desc-curta{
-      font-size:14px;
+      font-size:15px;
+      line-height:1.75;
+      color:#444;
+      margin-top:10px;
+      max-width:95%;
+    }
+    .top-extra{
+      margin-top:14px;
+      display:grid;
+      grid-template-columns:1fr;
+      gap:12px;
+    }
+    .top-quick{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:10px;
+    }
+    .top-box{
+      padding:12px 12px 10px;
+      border-radius:16px;
+      background:linear-gradient(135deg, rgba(255,126,179,0.10), rgba(185,131,255,0.10));
+      border:1px solid rgba(0,0,0,0.06);
+    }
+    .top-k{
+      display:block;
+      font-size:12px;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      color:#7a1b55;
+      margin-bottom:6px;
+      font-weight:bold;
+    }
+    .top-v{
+      display:block;
+      font-size:13px;
       line-height:1.6;
       color:#444;
+      font-weight:600;
+    }
+    .top-lista{
+      padding:12px 12px 8px;
+      border-radius:16px;
+      background:rgba(185,131,255,0.10);
+      border:1px solid rgba(0,0,0,0.06);
+    }
+    .top-lista strong{
+      display:block;
+      color:#7a1b55;
+      margin-bottom:8px;
+    }
+    .top-lista ul{
+      margin:0;
+      padding-left:18px;
+    }
+    .top-lista li{
+      margin-bottom:6px;
+      color:#444;
+      line-height:1.5;
+      font-size:14px;
     }
     .elenco{
       font-size:14px;
@@ -344,6 +400,9 @@
       .colunas{
         grid-template-columns:1fr;
       }
+      .top-quick{
+        grid-template-columns:1fr;
+      }
     }
   </style>
 </head>
@@ -370,6 +429,23 @@
           <span class="tag">suspense</span><span class="tag">politico</span><span class="tag">intenso</span>
         </div>
         <div class="desc-curta">Um juiz transforma julgamentos em reality show nacional.</div>
+        
+      <div class="top-extra">
+        <div class="top-quick">
+          <div class="top-box">
+            <span class="top-k">Clima</span>
+            <span class="top-v">suspense e mistério</span>
+          </div>
+          <div class="top-box">
+            <span class="top-k">Vale a pena?</span>
+            <span class="top-v">The Devil Judge é indicado para quem gosta de tensão, mistério e episódios que realmente prendem.</span>
+          </div>
+        </div>
+        <div class="top-lista">
+          <strong>Indicado para quem gosta de:</strong>
+          <ul><li>história intensa</li><li>mistério e tensão</li></ul>
+        </div>
+      </div>
       </div>
       <div class="acoes">
         <button class="btn btn-primary" onclick="window.location.href='../index.html'">🏠 Início</button>
@@ -395,11 +471,12 @@
     <section class="colunas critica-grid">
       <div class="bloco">
         <h2>💬 Crítica do Planeta Dorama</h2>
-        <p><strong>Crítica do Planeta Dorama:</strong> Em um futuro distópico, julgamentos são transmitidos ao vivo.</p><p>The Devil Judge mistura elementos de suspense, politico, intenso de forma acessível, o que ajuda a história a prender mesmo quem ainda está começando no mundo dos doramas. Tem boa avaliação entre os fãs e funciona muito bem para quem quer uma série envolvente para maratonar.</p>
+        <p><strong>Crítica do Planeta Dorama:</strong> The Devil Judge chama atenção porque trabalha suspense, politico, intenso de forma acessível e consegue manter o interesse sem parecer forçado. julgamentos são transmitidos ao vivo.</p><p>Na prática, é o tipo de dorama que funciona melhor quando o espectador entra no clima da proposta e se envolve com os personagens. Tem boa avaliação entre os fãs e funciona muito bem para quem quer uma série envolvente para maratonar.</p>
       </div>
       <div class="bloco">
         <h2>✨ Guia rápido</h2>
         <p><strong>Vale a pena assistir?</strong> Sim. The Devil Judge é mais indicado para quem prefere tensão, mistério e episódios que prendem pela curiosidade. É uma boa escolha quando a ideia não é ver um dorama leve.</p>
+        <p><strong>Resumo bem rápido:</strong> The Devil Judge é indicado para quem gosta de tensão, mistério e episódios que realmente prendem.</p>
         <div class="lista-gostos"><strong>Indicado para quem gosta de:</strong><ul><li>tramas fortes e episódios que prendem rápido</li><li>mistério, investigação e tensão</li></ul></div>
       </div>
     </section>
@@ -431,21 +508,21 @@
       <h2>Recomendados para você</h2>
       <div class="rec-grid">
         
-        <a class="rec-card" href="/doramas/while-you-were-sleeping.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/whire%20you%20we%20sleeping.webp" alt="While You Were Sleeping" loading="lazy">
-          <div class="rec-title">While You Were Sleeping</div>
+        <a class="rec-card" href="/doramas/mr-sunshine.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/mr%20sunshine.webp" alt="Mr. Sunshine" loading="lazy">
+          <div class="rec-title">Mr. Sunshine</div>
         </a>
-        <a class="rec-card" href="/doramas/descendants-of-the-sun.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/Descendants%20of%20the%20Sun.jpg" alt="Descendants of the Sun" loading="lazy">
-          <div class="rec-title">Descendants of the Sun</div>
+        <a class="rec-card" href="/doramas/flower-of-evil.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/flower%20of%20evil.webp" alt="Flower of Evil" loading="lazy">
+          <div class="rec-title">Flower of Evil</div>
         </a>
-        <a class="rec-card" href="/doramas/bloodhounds.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/bloodhounds.webp" alt="Bloodhounds" loading="lazy">
-          <div class="rec-title">Bloodhounds</div>
+        <a class="rec-card" href="/doramas/signal.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/signal.jpg" alt="Signal" loading="lazy">
+          <div class="rec-title">Signal</div>
         </a>
-        <a class="rec-card" href="/doramas/school-2015-who-are-you.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/school%202015%20who%20are%20you.jpg" alt="School 2015: Who Are You" loading="lazy">
-          <div class="rec-title">School 2015: Who Are You</div>
+        <a class="rec-card" href="/doramas/the-worst-of-evil.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/the%20worst%20of%20evil.webp" alt="The Worst of Evil" loading="lazy">
+          <div class="rec-title">The Worst of Evil</div>
         </a>
       </div>
     </section>

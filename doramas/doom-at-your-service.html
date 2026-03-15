@@ -170,9 +170,65 @@
       color:var(--sub);
     }
     .desc-curta{
-      font-size:14px;
+      font-size:15px;
+      line-height:1.75;
+      color:#444;
+      margin-top:10px;
+      max-width:95%;
+    }
+    .top-extra{
+      margin-top:14px;
+      display:grid;
+      grid-template-columns:1fr;
+      gap:12px;
+    }
+    .top-quick{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:10px;
+    }
+    .top-box{
+      padding:12px 12px 10px;
+      border-radius:16px;
+      background:linear-gradient(135deg, rgba(255,126,179,0.10), rgba(185,131,255,0.10));
+      border:1px solid rgba(0,0,0,0.06);
+    }
+    .top-k{
+      display:block;
+      font-size:12px;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      color:#7a1b55;
+      margin-bottom:6px;
+      font-weight:bold;
+    }
+    .top-v{
+      display:block;
+      font-size:13px;
       line-height:1.6;
       color:#444;
+      font-weight:600;
+    }
+    .top-lista{
+      padding:12px 12px 8px;
+      border-radius:16px;
+      background:rgba(185,131,255,0.10);
+      border:1px solid rgba(0,0,0,0.06);
+    }
+    .top-lista strong{
+      display:block;
+      color:#7a1b55;
+      margin-bottom:8px;
+    }
+    .top-lista ul{
+      margin:0;
+      padding-left:18px;
+    }
+    .top-lista li{
+      margin-bottom:6px;
+      color:#444;
+      line-height:1.5;
+      font-size:14px;
     }
     .elenco{
       font-size:14px;
@@ -344,6 +400,9 @@
       .colunas{
         grid-template-columns:1fr;
       }
+      .top-quick{
+        grid-template-columns:1fr;
+      }
     }
   </style>
 </head>
@@ -369,7 +428,24 @@
         <div class="tags">
           <span class="tag">romance</span><span class="tag">fantasia</span><span class="tag">triste</span>
         </div>
-        <div class="desc-curta">Uma mulher faz um contrato com a própria destruição.</div>
+        <div class="desc-curta">Uma mulher faz um contrato com a própria destruição. Eles vivem um amor impossível.</div>
+        
+      <div class="top-extra">
+        <div class="top-quick">
+          <div class="top-box">
+            <span class="top-k">Clima</span>
+            <span class="top-v">romance emocional e marcante</span>
+          </div>
+          <div class="top-box">
+            <span class="top-k">Vale a pena?</span>
+            <span class="top-v">Doom at Your Service costuma funcionar muito bem para quem gosta de romance com emoção e personagens que deixam marca.</span>
+          </div>
+        </div>
+        <div class="top-lista">
+          <strong>Indicado para quem gosta de:</strong>
+          <ul><li>romance forte</li><li>carga emocional alta</li><li>toque de fantasia</li></ul>
+        </div>
+      </div>
       </div>
       <div class="acoes">
         <button class="btn btn-primary" onclick="window.location.href='../index.html'">🏠 Início</button>
@@ -395,11 +471,12 @@
     <section class="colunas critica-grid">
       <div class="bloco">
         <h2>💬 Crítica do Planeta Dorama</h2>
-        <p><strong>Crítica do Planeta Dorama:</strong> Tak Dong Kyung descobre que tem pouco tempo de vida. Em desespero, deseja que o mundo acabe.</p><p>Doom at Your Service mistura elementos de romance, fantasia, triste de forma acessível, o que ajuda a história a prender mesmo quem ainda está começando no mundo dos doramas. É uma boa escolha para quem procura uma história envolvente e personagens marcantes.</p>
+        <p><strong>Crítica do Planeta Dorama:</strong> Doom at Your Service chama atenção porque trabalha romance, fantasia, triste de forma acessível e consegue manter o interesse sem parecer forçado. Em desespero, deseja que o mundo acabe.</p><p>Na prática, é o tipo de dorama que funciona melhor quando o espectador entra no clima da proposta e se envolve com os personagens. É uma boa escolha para quem procura uma história envolvente e personagens marcantes.</p>
       </div>
       <div class="bloco">
         <h2>✨ Guia rápido</h2>
         <p><strong>Vale a pena assistir?</strong> Sim. Doom at Your Service costuma funcionar muito bem para quem gosta de romance com bastante emoção e momentos marcantes. É o tipo de série que normalmente conquista quem gosta de casal forte e história mais sentimental.</p>
+        <p><strong>Resumo bem rápido:</strong> Doom at Your Service costuma funcionar muito bem para quem gosta de romance com emoção e personagens que deixam marca.</p>
         <div class="lista-gostos"><strong>Indicado para quem gosta de:</strong><ul><li>casais com química e histórias emocionantes</li><li>doramas intensos e com bastante emoção</li><li>fantasia, destino e elementos sobrenaturais</li></ul></div>
       </div>
     </section>
@@ -431,21 +508,21 @@
       <h2>Recomendados para você</h2>
       <div class="rec-grid">
         
-        <a class="rec-card" href="/doramas/moon-lovers-scarlet-heart-ryeo.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/moon%20lovers%201.webp" alt="Moon Lovers: Scarlet Heart Ryeo" loading="lazy">
-          <div class="rec-title">Moon Lovers: Scarlet Heart Ryeo</div>
+        <a class="rec-card" href="/doramas/marry-my-husband.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/marry%20my%20husband.webp" alt="Marry My Husband" loading="lazy">
+          <div class="rec-title">Marry My Husband</div>
         </a>
-        <a class="rec-card" href="/doramas/mr-sunshine.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/mr%20sunshine.webp" alt="Mr. Sunshine" loading="lazy">
-          <div class="rec-title">Mr. Sunshine</div>
+        <a class="rec-card" href="/doramas/our-beloved-summer.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/our%20beloved%20summer.png" alt="Our Beloved Summer" loading="lazy">
+          <div class="rec-title">Our Beloved Summer</div>
         </a>
-        <a class="rec-card" href="/doramas/w-two-worlds.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/w%20two%20words.webp" alt="W: Two Worlds" loading="lazy">
-          <div class="rec-title">W: Two Worlds</div>
+        <a class="rec-card" href="/doramas/start-up.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/start%20up.jpg" alt="Start-Up" loading="lazy">
+          <div class="rec-title">Start-Up</div>
         </a>
-        <a class="rec-card" href="/doramas/the-good-bad-mother.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/the%20good%20bad%20mother.jpg" alt="The Good Bad Mother" loading="lazy">
-          <div class="rec-title">The Good Bad Mother</div>
+        <a class="rec-card" href="/doramas/because-of-meeting-you.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/because%20of%20meeting%20you.jpg" alt="Because of Meeting You" loading="lazy">
+          <div class="rec-title">Because of Meeting You</div>
         </a>
       </div>
     </section>

@@ -170,9 +170,65 @@
       color:var(--sub);
     }
     .desc-curta{
-      font-size:14px;
+      font-size:15px;
+      line-height:1.75;
+      color:#444;
+      margin-top:10px;
+      max-width:95%;
+    }
+    .top-extra{
+      margin-top:14px;
+      display:grid;
+      grid-template-columns:1fr;
+      gap:12px;
+    }
+    .top-quick{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:10px;
+    }
+    .top-box{
+      padding:12px 12px 10px;
+      border-radius:16px;
+      background:linear-gradient(135deg, rgba(255,126,179,0.10), rgba(185,131,255,0.10));
+      border:1px solid rgba(0,0,0,0.06);
+    }
+    .top-k{
+      display:block;
+      font-size:12px;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      color:#7a1b55;
+      margin-bottom:6px;
+      font-weight:bold;
+    }
+    .top-v{
+      display:block;
+      font-size:13px;
       line-height:1.6;
       color:#444;
+      font-weight:600;
+    }
+    .top-lista{
+      padding:12px 12px 8px;
+      border-radius:16px;
+      background:rgba(185,131,255,0.10);
+      border:1px solid rgba(0,0,0,0.06);
+    }
+    .top-lista strong{
+      display:block;
+      color:#7a1b55;
+      margin-bottom:8px;
+    }
+    .top-lista ul{
+      margin:0;
+      padding-left:18px;
+    }
+    .top-lista li{
+      margin-bottom:6px;
+      color:#444;
+      line-height:1.5;
+      font-size:14px;
     }
     .elenco{
       font-size:14px;
@@ -344,6 +400,9 @@
       .colunas{
         grid-template-columns:1fr;
       }
+      .top-quick{
+        grid-template-columns:1fr;
+      }
     }
   </style>
 </head>
@@ -369,7 +428,24 @@
         <div class="tags">
           <span class="tag">intenso</span><span class="tag">romance</span><span class="tag">triste</span>
         </div>
-        <div class="desc-curta">Um homem esconde um passado sombrio.</div>
+        <div class="desc-curta">Um homem esconde um passado sombrio. Sua esposa é detetive.</div>
+        
+      <div class="top-extra">
+        <div class="top-quick">
+          <div class="top-box">
+            <span class="top-k">Clima</span>
+            <span class="top-v">romance emocional e marcante</span>
+          </div>
+          <div class="top-box">
+            <span class="top-k">Vale a pena?</span>
+            <span class="top-v">Flower of Evil é um dos títulos mais fortes do acervo e costuma agradar quem quer uma história realmente marcante.</span>
+          </div>
+        </div>
+        <div class="top-lista">
+          <strong>Indicado para quem gosta de:</strong>
+          <ul><li>romance forte</li><li>carga emocional alta</li><li>história intensa</li></ul>
+        </div>
+      </div>
       </div>
       <div class="acoes">
         <button class="btn btn-primary" onclick="window.location.href='../index.html'">🏠 Início</button>
@@ -395,11 +471,12 @@
     <section class="colunas critica-grid">
       <div class="bloco">
         <h2>💬 Crítica do Planeta Dorama</h2>
-        <p><strong>Crítica do Planeta Dorama:</strong> Baek Hee Sung parece ter uma vida perfeita. Mas ele esconde um passado perigoso.</p><p>Flower of Evil mistura elementos de intenso, romance, triste de forma acessível, o que ajuda a história a prender mesmo quem ainda está começando no mundo dos doramas. É um dos doramas mais fortes do acervo, principalmente para quem gosta de histórias marcantes e muito bem avaliadas.</p>
+        <p><strong>Crítica do Planeta Dorama:</strong> Flower of Evil chama atenção porque trabalha intenso, romance, triste de forma acessível e consegue manter o interesse sem parecer forçado. Mas ele esconde um passado perigoso.</p><p>Na prática, é o tipo de dorama que funciona melhor quando o espectador entra no clima da proposta e se envolve com os personagens. É um dos doramas mais fortes do acervo, principalmente para quem gosta de histórias marcantes e muito bem avaliadas.</p>
       </div>
       <div class="bloco">
         <h2>✨ Guia rápido</h2>
         <p><strong>Vale a pena assistir?</strong> Sim, bastante. Flower of Evil costuma funcionar muito bem para quem gosta de romance com bastante emoção e momentos marcantes. É o tipo de série que normalmente conquista quem gosta de casal forte e história mais sentimental.</p>
+        <p><strong>Resumo bem rápido:</strong> Flower of Evil é um dos títulos mais fortes do acervo e costuma agradar quem quer uma história realmente marcante.</p>
         <div class="lista-gostos"><strong>Indicado para quem gosta de:</strong><ul><li>casais com química e histórias emocionantes</li><li>doramas intensos e com bastante emoção</li><li>tramas fortes e episódios que prendem rápido</li></ul></div>
       </div>
     </section>
@@ -431,21 +508,21 @@
       <h2>Recomendados para você</h2>
       <div class="rec-grid">
         
-        <a class="rec-card" href="/doramas/marry-my-husband.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/marry%20my%20husband.webp" alt="Marry My Husband" loading="lazy">
-          <div class="rec-title">Marry My Husband</div>
+        <a class="rec-card" href="/doramas/the-good-bad-mother.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/the%20good%20bad%20mother.jpg" alt="The Good Bad Mother" loading="lazy">
+          <div class="rec-title">The Good Bad Mother</div>
         </a>
-        <a class="rec-card" href="/doramas/crash-landing-on-you.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/crash-landing.jpg" alt="Pousando no Amor (Crash Landing on You)" loading="lazy">
-          <div class="rec-title">Pousando no Amor (Crash Landing on You)</div>
+        <a class="rec-card" href="/doramas/school-2015-who-are-you.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/school%202015%20who%20are%20you.jpg" alt="School 2015: Who Are You" loading="lazy">
+          <div class="rec-title">School 2015: Who Are You</div>
         </a>
-        <a class="rec-card" href="/doramas/coffee-prince.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/coffeee.jpg" alt="Coffee Prince" loading="lazy">
-          <div class="rec-title">Coffee Prince</div>
+        <a class="rec-card" href="/doramas/what-s-wrong-with-secretary-kim.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/What's%20Wrong%20with%20Secretary%20Kim.jfif" alt="What's Wrong with Secretary Kim" loading="lazy">
+          <div class="rec-title">What's Wrong with Secretary Kim</div>
         </a>
-        <a class="rec-card" href="/doramas/my-name.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/my%20name.jpg" alt="My Name" loading="lazy">
-          <div class="rec-title">My Name</div>
+        <a class="rec-card" href="/doramas/hi-bye-mama.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/hi%20bye%20mama.jpg" alt="Hi Bye, Mama!" loading="lazy">
+          <div class="rec-title">Hi Bye, Mama!</div>
         </a>
       </div>
     </section>
