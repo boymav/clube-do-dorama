@@ -362,6 +362,53 @@
     .critica-grid{
       align-items:start;
     }
+    .critica-pessoal{
+      position:relative;
+      padding-top:6px;
+    }
+    .critica-selo{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:7px 12px;
+      border-radius:999px;
+      background:linear-gradient(90deg, rgba(255,126,179,0.16), rgba(185,131,255,0.16));
+      color:#7a1b55;
+      font-size:12px;
+      font-weight:bold;
+      letter-spacing:.04em;
+      text-transform:uppercase;
+      margin-bottom:10px;
+      border:1px solid rgba(0,0,0,0.06);
+    }
+    .critica-box{
+      position:relative;
+      padding:14px 16px 14px 18px;
+      border-radius:18px;
+      background:linear-gradient(135deg, rgba(255,126,179,0.07), rgba(185,131,255,0.08));
+      border-left:5px solid #ff7eb3;
+      box-shadow: inset 0 0 0 1px rgba(0,0,0,0.04);
+    }
+    .critica-box::before{
+      content:"“";
+      position:absolute;
+      top:-8px;
+      left:10px;
+      font-size:52px;
+      line-height:1;
+      color:rgba(255,126,179,0.25);
+      font-weight:bold;
+    }
+    .critica-box p{
+      position:relative;
+      z-index:1;
+    }
+    .critica-aviso{
+      margin-top:10px;
+      font-size:12px;
+      color:#7a1b55;
+      opacity:.9;
+    }
     .lista-gostos strong{
       display:block;
       margin:14px 0 8px;
@@ -512,9 +559,13 @@
 
   
     <section class="colunas critica-grid">
-      <div class="bloco">
+      <div class="bloco critica-pessoal">
         <h2>💬 Crítica do Planeta Dorama</h2>
-        <p><strong>Crítica do Planeta Dorama:</strong> My Mister chama atenção porque trabalha triste, intenso de forma acessível e consegue manter o interesse sem parecer forçado. sobrecarregado por problemas da vida adulta.</p><p>Na prática, é o tipo de dorama que funciona melhor quando o espectador entra no clima da proposta e se envolve com os personagens. É um dos doramas mais fortes do acervo, principalmente para quem gosta de histórias marcantes e muito bem avaliadas.</p>
+        <div class="critica-selo">Opinião mais humana do dorama</div>
+        <div class="critica-box">
+          <p><strong>Crítica do Planeta Dorama:</strong> My Mister é um dorama que normalmente funciona melhor quando o espectador se envolve com os personagens e entra no clima da história.</p><p></p><p>O que mais chama atenção aqui é a maneira como a proposta de 'Park Dong Hoon é um homem comum,' vai ganhando peso com o avanço dos episódios, deixando a experiência mais envolvente.</p><p></p><p>Por outro lado, dependendo do gosto de quem assiste, alguns momentos podem parecer mais lentos, mais dramáticos ou menos surpreendentes do que o esperado.</p><p></p><p>No geral, é uma boa opção para quem procura um dorama marcante, com personagens fortes e uma história que tenta equilibrar emoção e entretenimento.</p>
+        </div>
+        <div class="critica-aviso">✨ Aqui a ideia é comentar o dorama de um jeito mais pessoal, e não só repetir a sinopse.</div>
       </div>
       <div class="bloco">
         <h2>✨ Guia rápido</h2>
@@ -585,21 +636,21 @@
       <h2>Recomendados para você</h2>
       <div class="rec-grid">
         
-        <a class="rec-card" href="/doramas/crash-landing-on-you.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/crash-landing.jpg" alt="Pousando no Amor (Crash Landing on You)" loading="lazy">
-          <div class="rec-title">Pousando no Amor (Crash Landing on You)</div>
+        <a class="rec-card" href="/doramas/d-p.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/d%20p.jpg" alt="D.P." loading="lazy">
+          <div class="rec-title">D.P.</div>
         </a>
-        <a class="rec-card" href="/doramas/sweet-home.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/sweet%20home.jpg" alt="Sweet Home" loading="lazy">
-          <div class="rec-title">Sweet Home</div>
-        </a>
-        <a class="rec-card" href="/doramas/goblin.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/Goblin.jpg" alt="Goblin" loading="lazy">
-          <div class="rec-title">Goblin</div>
+        <a class="rec-card" href="/doramas/uncontrollably-fond.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/uncontrollably-fond.jpg" alt="Uncontrollably Fond" loading="lazy">
+          <div class="rec-title">Uncontrollably Fond</div>
         </a>
         <a class="rec-card" href="/doramas/agency.html">
           <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/agency.webp" alt="Agency" loading="lazy">
           <div class="rec-title">Agency</div>
+        </a>
+        <a class="rec-card" href="/doramas/reborn-rich.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/reborn%20ric.jfif" alt="Reborn Rich" loading="lazy">
+          <div class="rec-title">Reborn Rich</div>
         </a>
       </div>
     </section>

@@ -362,6 +362,53 @@
     .critica-grid{
       align-items:start;
     }
+    .critica-pessoal{
+      position:relative;
+      padding-top:6px;
+    }
+    .critica-selo{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:7px 12px;
+      border-radius:999px;
+      background:linear-gradient(90deg, rgba(255,126,179,0.16), rgba(185,131,255,0.16));
+      color:#7a1b55;
+      font-size:12px;
+      font-weight:bold;
+      letter-spacing:.04em;
+      text-transform:uppercase;
+      margin-bottom:10px;
+      border:1px solid rgba(0,0,0,0.06);
+    }
+    .critica-box{
+      position:relative;
+      padding:14px 16px 14px 18px;
+      border-radius:18px;
+      background:linear-gradient(135deg, rgba(255,126,179,0.07), rgba(185,131,255,0.08));
+      border-left:5px solid #ff7eb3;
+      box-shadow: inset 0 0 0 1px rgba(0,0,0,0.04);
+    }
+    .critica-box::before{
+      content:"“";
+      position:absolute;
+      top:-8px;
+      left:10px;
+      font-size:52px;
+      line-height:1;
+      color:rgba(255,126,179,0.25);
+      font-weight:bold;
+    }
+    .critica-box p{
+      position:relative;
+      z-index:1;
+    }
+    .critica-aviso{
+      margin-top:10px;
+      font-size:12px;
+      color:#7a1b55;
+      opacity:.9;
+    }
     .lista-gostos strong{
       display:block;
       margin:14px 0 8px;
@@ -512,9 +559,13 @@
 
   
     <section class="colunas critica-grid">
-      <div class="bloco">
+      <div class="bloco critica-pessoal">
         <h2>💬 Crítica do Planeta Dorama</h2>
-        <p><strong>Crítica do Planeta Dorama:</strong> Beyond Evil chama atenção porque trabalha suspense, policial, intenso de forma acessível e consegue manter o interesse sem parecer forçado. Quando uma série de assassinatos com o mesmo padrão de um caso antigo volta a acontecer, tudo muda.</p><p>Na prática, é o tipo de dorama que funciona melhor quando o espectador entra no clima da proposta e se envolve com os personagens. É um dos doramas mais fortes do acervo, principalmente para quem gosta de histórias marcantes e muito bem avaliadas.</p>
+        <div class="critica-selo">Opinião mais humana do dorama</div>
+        <div class="critica-box">
+          <p><strong>Crítica do Planeta Dorama:</strong> Beyond Evil chama atenção principalmente pelo clima de tensão e pela curiosidade de descobrir o que vai acontecer em seguida.</p><p></p><p>Um ponto forte é a atmosfera, porque a história consegue criar sensação de perigo, mistério ou desconforto de um jeito que prende bastante em vários episódios.</p><p></p><p>Por outro lado, dependendo do gosto de quem assiste, algumas decisões dos personagens ou certas partes da trama podem parecer exageradas ou mais confusas do que o ideal.</p><p></p><p>No geral, funciona melhor para quem gosta de doramas intensos, com suspense, perigo e uma sensação constante de que algo importante está para acontecer.</p>
+        </div>
+        <div class="critica-aviso">✨ Aqui a ideia é comentar o dorama de um jeito mais pessoal, e não só repetir a sinopse.</div>
       </div>
       <div class="bloco">
         <h2>✨ Guia rápido</h2>
@@ -551,13 +602,6 @@
       <h2>💡 Doramas parecidos com Beyond Evil</h2>
       <p>Se você gostou de Beyond Evil, estes doramas também podem funcionar bem porque têm clima parecido, algumas tags em comum ou uma proposta que costuma agradar ao mesmo público.</p>
       <div class="semelhantes-grid">
-        <a class="semelhante-card" href="/doramas/through-the-darkness.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/through%20the%20darkness.webp" alt="Through the Darkness" loading="lazy">
-          <div class="semelhante-c">
-            <h3>Through the Darkness</h3>
-            <p>Baseado em fatos reais.</p>
-          </div>
-        </a>
         <a class="semelhante-card" href="/doramas/the-devil-judge.html">
           <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/the%20devil%20judge.jpg" alt="The Devil Judge" loading="lazy">
           <div class="semelhante-c">
@@ -565,18 +609,25 @@
             <p>Um juiz transforma julgamentos em reality show nacional.</p>
           </div>
         </a>
-        <a class="semelhante-card" href="/doramas/mask-girl.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/mask%20girl.jpg" alt="Mask Girl" loading="lazy">
+        <a class="semelhante-card" href="/doramas/crash-landing-on-you.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/crash-landing.jpg" alt="Pousando no Amor (Crash Landing on You)" loading="lazy">
           <div class="semelhante-c">
-            <h3>Mask Girl</h3>
-            <p>Uma funcionária insegura leva uma vida dupla na internet usando máscara.</p>
+            <h3>Pousando no Amor (Crash Landing on You)</h3>
+            <p>Uma empresária sul-coreana sofre um acidente e vai parar na Coreia do Norte.</p>
           </div>
         </a>
-        <a class="semelhante-card" href="/doramas/extracurricular.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/extracurricular.jpg" alt="Extracurricular" loading="lazy">
+        <a class="semelhante-card" href="/doramas/its-okay-to-not-be-okay.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/tudo%20bem%20nao%20ser%20normal.jpg" alt="Tudo Bem Não Ser Normal (Its Okay to Not Be Okay)" loading="lazy">
           <div class="semelhante-c">
-            <h3>Extracurricular</h3>
-            <p>Um estudante exemplar esconde um esquema perigoso para pagar os estudos.</p>
+            <h3>Tudo Bem Não Ser Normal (Its Okay to Not Be Okay)</h3>
+            <p>Um cuidador emocionalmente fechado conhece uma escritora excêntrica.</p>
+          </div>
+        </a>
+        <a class="semelhante-card" href="/doramas/itaewon-class.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/itaewon%20class.webp" alt="Itaewon Class" loading="lazy">
+          <div class="semelhante-c">
+            <h3>Itaewon Class</h3>
+            <p>Um jovem luta para vencer injustiças do passado.</p>
           </div>
         </a></div>
     </section>
@@ -585,21 +636,21 @@
       <h2>Recomendados para você</h2>
       <div class="rec-grid">
         
-        <a class="rec-card" href="/doramas/sky-castle.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/sky%20castle.webp" alt="Sky Castle" loading="lazy">
-          <div class="rec-title">Sky Castle</div>
+        <a class="rec-card" href="/doramas/gyeongseong-creature.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/gieogsong%20creature.webp" alt="Gyeongseong Creature" loading="lazy">
+          <div class="rec-title">Gyeongseong Creature</div>
         </a>
-        <a class="rec-card" href="/doramas/vincenzo.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/vincenzo.jpg" alt="Vincenzo" loading="lazy">
-          <div class="rec-title">Vincenzo</div>
+        <a class="rec-card" href="/doramas/itaewon-class.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/itaewon%20class.webp" alt="Itaewon Class" loading="lazy">
+          <div class="rec-title">Itaewon Class</div>
         </a>
-        <a class="rec-card" href="/doramas/sweet-home.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/sweet%20home.jpg" alt="Sweet Home" loading="lazy">
-          <div class="rec-title">Sweet Home</div>
+        <a class="rec-card" href="/doramas/bad-and-crazy.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/bad%20and%20crazy.webp" alt="Bad and Crazy" loading="lazy">
+          <div class="rec-title">Bad and Crazy</div>
         </a>
-        <a class="rec-card" href="/doramas/extracurricular.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/extracurricular.jpg" alt="Extracurricular" loading="lazy">
-          <div class="rec-title">Extracurricular</div>
+        <a class="rec-card" href="/doramas/its-okay-to-not-be-okay.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/tudo%20bem%20nao%20ser%20normal.jpg" alt="Tudo Bem Não Ser Normal (Its Okay to Not Be Okay)" loading="lazy">
+          <div class="rec-title">Tudo Bem Não Ser Normal (Its Okay to Not Be Okay)</div>
         </a>
       </div>
     </section>

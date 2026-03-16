@@ -362,6 +362,53 @@
     .critica-grid{
       align-items:start;
     }
+    .critica-pessoal{
+      position:relative;
+      padding-top:6px;
+    }
+    .critica-selo{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:7px 12px;
+      border-radius:999px;
+      background:linear-gradient(90deg, rgba(255,126,179,0.16), rgba(185,131,255,0.16));
+      color:#7a1b55;
+      font-size:12px;
+      font-weight:bold;
+      letter-spacing:.04em;
+      text-transform:uppercase;
+      margin-bottom:10px;
+      border:1px solid rgba(0,0,0,0.06);
+    }
+    .critica-box{
+      position:relative;
+      padding:14px 16px 14px 18px;
+      border-radius:18px;
+      background:linear-gradient(135deg, rgba(255,126,179,0.07), rgba(185,131,255,0.08));
+      border-left:5px solid #ff7eb3;
+      box-shadow: inset 0 0 0 1px rgba(0,0,0,0.04);
+    }
+    .critica-box::before{
+      content:"“";
+      position:absolute;
+      top:-8px;
+      left:10px;
+      font-size:52px;
+      line-height:1;
+      color:rgba(255,126,179,0.25);
+      font-weight:bold;
+    }
+    .critica-box p{
+      position:relative;
+      z-index:1;
+    }
+    .critica-aviso{
+      margin-top:10px;
+      font-size:12px;
+      color:#7a1b55;
+      opacity:.9;
+    }
     .lista-gostos strong{
       display:block;
       margin:14px 0 8px;
@@ -512,9 +559,13 @@
 
   
     <section class="colunas critica-grid">
-      <div class="bloco">
+      <div class="bloco critica-pessoal">
         <h2>💬 Crítica do Planeta Dorama</h2>
-        <p><strong>Crítica do Planeta Dorama:</strong> Move to Heaven chama atenção porque trabalha triste, alegre de forma acessível e consegue manter o interesse sem parecer forçado. pertences de pessoas falecidas.</p><p>Na prática, é o tipo de dorama que funciona melhor quando o espectador entra no clima da proposta e se envolve com os personagens. É um dos doramas mais fortes do acervo, principalmente para quem gosta de histórias marcantes e muito bem avaliadas.</p>
+        <div class="critica-selo">Opinião mais humana do dorama</div>
+        <div class="critica-box">
+          <p><strong>Crítica do Planeta Dorama:</strong> Move to Heaven é um dorama que normalmente funciona melhor quando o espectador se envolve com os personagens e entra no clima da história.</p><p></p><p>O que mais chama atenção aqui é a maneira como a proposta de 'Um jovem com Asperger trabalha limpando' vai ganhando peso com o avanço dos episódios, deixando a experiência mais envolvente.</p><p></p><p>Por outro lado, dependendo do gosto de quem assiste, alguns momentos podem parecer mais lentos, mais dramáticos ou menos surpreendentes do que o esperado.</p><p></p><p>No geral, é uma boa opção para quem procura um dorama marcante, com personagens fortes e uma história que tenta equilibrar emoção e entretenimento.</p>
+        </div>
+        <div class="critica-aviso">✨ Aqui a ideia é comentar o dorama de um jeito mais pessoal, e não só repetir a sinopse.</div>
       </div>
       <div class="bloco">
         <h2>✨ Guia rápido</h2>
@@ -585,17 +636,17 @@
       <h2>Recomendados para você</h2>
       <div class="rec-grid">
         
-        <a class="rec-card" href="/doramas/goblin.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/Goblin.jpg" alt="Goblin" loading="lazy">
-          <div class="rec-title">Goblin</div>
-        </a>
-        <a class="rec-card" href="/doramas/because-this-is-my-first-life.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/because%20this%20is.jfif" alt="Because This Is My First Life" loading="lazy">
-          <div class="rec-title">Because This Is My First Life</div>
-        </a>
         <a class="rec-card" href="/doramas/my-id-is-gangnam-beauty.html">
           <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/my%20id%20is%20gangnam.webp" alt="My ID is Gangnam Beauty" loading="lazy">
           <div class="rec-title">My ID is Gangnam Beauty</div>
+        </a>
+        <a class="rec-card" href="/doramas/extraordinary-attorney-woo.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/extraordinay%20attorney.jpg" alt="Advogada Extraordinária (Extraordinary Attorney Woo)" loading="lazy">
+          <div class="rec-title">Advogada Extraordinária (Extraordinary Attorney Woo)</div>
+        </a>
+        <a class="rec-card" href="/doramas/sky-castle.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/sky%20castle.webp" alt="Sky Castle" loading="lazy">
+          <div class="rec-title">Sky Castle</div>
         </a>
         <a class="rec-card" href="/doramas/doom-at-your-service.html">
           <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/doom%20at%20your.jfif" alt="Doom at Your Service" loading="lazy">

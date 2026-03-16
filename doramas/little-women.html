@@ -362,6 +362,53 @@
     .critica-grid{
       align-items:start;
     }
+    .critica-pessoal{
+      position:relative;
+      padding-top:6px;
+    }
+    .critica-selo{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:7px 12px;
+      border-radius:999px;
+      background:linear-gradient(90deg, rgba(255,126,179,0.16), rgba(185,131,255,0.16));
+      color:#7a1b55;
+      font-size:12px;
+      font-weight:bold;
+      letter-spacing:.04em;
+      text-transform:uppercase;
+      margin-bottom:10px;
+      border:1px solid rgba(0,0,0,0.06);
+    }
+    .critica-box{
+      position:relative;
+      padding:14px 16px 14px 18px;
+      border-radius:18px;
+      background:linear-gradient(135deg, rgba(255,126,179,0.07), rgba(185,131,255,0.08));
+      border-left:5px solid #ff7eb3;
+      box-shadow: inset 0 0 0 1px rgba(0,0,0,0.04);
+    }
+    .critica-box::before{
+      content:"“";
+      position:absolute;
+      top:-8px;
+      left:10px;
+      font-size:52px;
+      line-height:1;
+      color:rgba(255,126,179,0.25);
+      font-weight:bold;
+    }
+    .critica-box p{
+      position:relative;
+      z-index:1;
+    }
+    .critica-aviso{
+      margin-top:10px;
+      font-size:12px;
+      color:#7a1b55;
+      opacity:.9;
+    }
     .lista-gostos strong{
       display:block;
       margin:14px 0 8px;
@@ -512,9 +559,13 @@
 
   
     <section class="colunas critica-grid">
-      <div class="bloco">
+      <div class="bloco critica-pessoal">
         <h2>💬 Crítica do Planeta Dorama</h2>
-        <p><strong>Crítica do Planeta Dorama:</strong> Little Women chama atenção porque trabalha intenso, triste de forma acessível e consegue manter o interesse sem parecer forçado. em um caso milionário misterioso.</p><p>Na prática, é o tipo de dorama que funciona melhor quando o espectador entra no clima da proposta e se envolve com os personagens. Tem boa avaliação entre os fãs e funciona muito bem para quem quer uma série envolvente para maratonar.</p>
+        <div class="critica-selo">Opinião mais humana do dorama</div>
+        <div class="critica-box">
+          <p><strong>Crítica do Planeta Dorama:</strong> Little Women é um dorama que normalmente funciona melhor quando o espectador se envolve com os personagens e entra no clima da história.</p><p></p><p>O que mais chama atenção aqui é a maneira como a proposta de 'Três irmãs pobres se envolvem' vai ganhando peso com o avanço dos episódios, deixando a experiência mais envolvente.</p><p></p><p>Por outro lado, dependendo do gosto de quem assiste, alguns momentos podem parecer mais lentos, mais dramáticos ou menos surpreendentes do que o esperado.</p><p></p><p>No geral, é uma boa opção para quem procura um dorama marcante, com personagens fortes e uma história que tenta equilibrar emoção e entretenimento.</p>
+        </div>
+        <div class="critica-aviso">✨ Aqui a ideia é comentar o dorama de um jeito mais pessoal, e não só repetir a sinopse.</div>
       </div>
       <div class="bloco">
         <h2>✨ Guia rápido</h2>
@@ -585,21 +636,21 @@
       <h2>Recomendados para você</h2>
       <div class="rec-grid">
         
-        <a class="rec-card" href="/doramas/mr-sunshine.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/mr%20sunshine.webp" alt="Mr. Sunshine" loading="lazy">
-          <div class="rec-title">Mr. Sunshine</div>
+        <a class="rec-card" href="/doramas/kingdom.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/kngdom.webp" alt="Kingdom" loading="lazy">
+          <div class="rec-title">Kingdom</div>
         </a>
-        <a class="rec-card" href="/doramas/hotel-del-luna.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/hotel%20del%20luna.jpg" alt="Hotel Del Luna" loading="lazy">
-          <div class="rec-title">Hotel Del Luna</div>
+        <a class="rec-card" href="/doramas/moon-lovers-scarlet-heart-ryeo.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/moon%20lovers%201.webp" alt="Moon Lovers: Scarlet Heart Ryeo" loading="lazy">
+          <div class="rec-title">Moon Lovers: Scarlet Heart Ryeo</div>
         </a>
-        <a class="rec-card" href="/doramas/navillera.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/navillera.webp" alt="Navillera" loading="lazy">
-          <div class="rec-title">Navillera</div>
+        <a class="rec-card" href="/doramas/nevertheless.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/nevert.jfif" alt="Nevertheless" loading="lazy">
+          <div class="rec-title">Nevertheless</div>
         </a>
-        <a class="rec-card" href="/doramas/my-mister.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/my%20mister.jfif" alt="My Mister" loading="lazy">
-          <div class="rec-title">My Mister</div>
+        <a class="rec-card" href="/doramas/alchemy-of-souls.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/alchemy%20of%20souls.webp" alt="Alchemy of Souls" loading="lazy">
+          <div class="rec-title">Alchemy of Souls</div>
         </a>
       </div>
     </section>

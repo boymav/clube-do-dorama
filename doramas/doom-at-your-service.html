@@ -362,6 +362,53 @@
     .critica-grid{
       align-items:start;
     }
+    .critica-pessoal{
+      position:relative;
+      padding-top:6px;
+    }
+    .critica-selo{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:7px 12px;
+      border-radius:999px;
+      background:linear-gradient(90deg, rgba(255,126,179,0.16), rgba(185,131,255,0.16));
+      color:#7a1b55;
+      font-size:12px;
+      font-weight:bold;
+      letter-spacing:.04em;
+      text-transform:uppercase;
+      margin-bottom:10px;
+      border:1px solid rgba(0,0,0,0.06);
+    }
+    .critica-box{
+      position:relative;
+      padding:14px 16px 14px 18px;
+      border-radius:18px;
+      background:linear-gradient(135deg, rgba(255,126,179,0.07), rgba(185,131,255,0.08));
+      border-left:5px solid #ff7eb3;
+      box-shadow: inset 0 0 0 1px rgba(0,0,0,0.04);
+    }
+    .critica-box::before{
+      content:"“";
+      position:absolute;
+      top:-8px;
+      left:10px;
+      font-size:52px;
+      line-height:1;
+      color:rgba(255,126,179,0.25);
+      font-weight:bold;
+    }
+    .critica-box p{
+      position:relative;
+      z-index:1;
+    }
+    .critica-aviso{
+      margin-top:10px;
+      font-size:12px;
+      color:#7a1b55;
+      opacity:.9;
+    }
     .lista-gostos strong{
       display:block;
       margin:14px 0 8px;
@@ -512,9 +559,13 @@
 
   
     <section class="colunas critica-grid">
-      <div class="bloco">
+      <div class="bloco critica-pessoal">
         <h2>💬 Crítica do Planeta Dorama</h2>
-        <p><strong>Crítica do Planeta Dorama:</strong> Doom at Your Service chama atenção porque trabalha romance, fantasia, triste de forma acessível e consegue manter o interesse sem parecer forçado. Em desespero, deseja que o mundo acabe.</p><p>Na prática, é o tipo de dorama que funciona melhor quando o espectador entra no clima da proposta e se envolve com os personagens. É uma boa escolha para quem procura uma história envolvente e personagens marcantes.</p>
+        <div class="critica-selo">Opinião mais humana do dorama</div>
+        <div class="critica-box">
+          <p><strong>Crítica do Planeta Dorama:</strong> Doom at Your Service é o tipo de dorama que costuma conquistar mais pela emoção do que pela pressa em contar a história.</p><p></p><p>O que mais funciona aqui é a forma como os sentimentos dos personagens vão ficando mais fortes com o passar dos episódios, criando cenas que costumam marcar bastante quem gosta de romance com dor e intensidade.</p><p></p><p>Por outro lado, em alguns momentos o ritmo pode parecer mais lento ou dramático do que o esperado, principalmente para quem prefere histórias mais diretas.</p><p></p><p>No geral, é uma boa escolha para quem gosta de casais com química, sofrimento bem trabalhado e um clima emocional mais forte.</p>
+        </div>
+        <div class="critica-aviso">✨ Aqui a ideia é comentar o dorama de um jeito mais pessoal, e não só repetir a sinopse.</div>
       </div>
       <div class="bloco">
         <h2>✨ Guia rápido</h2>
@@ -566,17 +617,17 @@
           </div>
         </a>
         <a class="semelhante-card" href="/doramas/hi-bye-mama.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/hi%20bye%20mama.jpg" alt="Hi Bye, Mama!" loading="lazy">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/hi-bye-mama.jpg" alt="Hi Bye, Mama!" loading="lazy">
           <div class="semelhante-c">
             <h3>Hi Bye, Mama!</h3>
             <p>Uma mãe que morreu recebe a chance de voltar por um tempo.</p>
           </div>
         </a>
-        <a class="semelhante-card" href="/doramas/destined-with-you.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/destined%20whit%20you.webp" alt="Destined with You" loading="lazy">
+        <a class="semelhante-card" href="/doramas/crash-landing-on-you.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/crash-landing.jpg" alt="Pousando no Amor (Crash Landing on You)" loading="lazy">
           <div class="semelhante-c">
-            <h3>Destined with You</h3>
-            <p>Uma funcionária pública encontra um livro antigo que pode quebrar uma maldição.</p>
+            <h3>Pousando no Amor (Crash Landing on You)</h3>
+            <p>Uma empresária sul-coreana sofre um acidente e vai parar na Coreia do Norte.</p>
           </div>
         </a></div>
     </section>
@@ -585,21 +636,21 @@
       <h2>Recomendados para você</h2>
       <div class="rec-grid">
         
-        <a class="rec-card" href="/doramas/18-again.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/18againn.jpg" alt="18 Again" loading="lazy">
-          <div class="rec-title">18 Again</div>
+        <a class="rec-card" href="/doramas/reply-1988.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/reply%201988.jpg" alt="Reply 1988" loading="lazy">
+          <div class="rec-title">Reply 1988</div>
         </a>
-        <a class="rec-card" href="/doramas/hotel-del-luna.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/hotel%20del%20luna.jpg" alt="Hotel Del Luna" loading="lazy">
-          <div class="rec-title">Hotel Del Luna</div>
+        <a class="rec-card" href="/doramas/doctor-stranger.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/doctor%20stranger.webp" alt="Doctor Stranger" loading="lazy">
+          <div class="rec-title">Doctor Stranger</div>
         </a>
-        <a class="rec-card" href="/doramas/signal.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/signal.jpg" alt="Signal" loading="lazy">
-          <div class="rec-title">Signal</div>
+        <a class="rec-card" href="/doramas/strong-woman-do-bong-soon.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/strong-woman-do-bong-soon.jpg" alt="Strong Woman Do Bong Soon" loading="lazy">
+          <div class="rec-title">Strong Woman Do Bong Soon</div>
         </a>
-        <a class="rec-card" href="/doramas/arthdal-chronicles.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/arthdal%20chronicles.jpg" alt="Arthdal Chronicles" loading="lazy">
-          <div class="rec-title">Arthdal Chronicles</div>
+        <a class="rec-card" href="/doramas/alchemy-of-souls.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/alchemy%20of%20souls.webp" alt="Alchemy of Souls" loading="lazy">
+          <div class="rec-title">Alchemy of Souls</div>
         </a>
       </div>
     </section>

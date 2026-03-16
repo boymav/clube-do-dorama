@@ -362,6 +362,53 @@
     .critica-grid{
       align-items:start;
     }
+    .critica-pessoal{
+      position:relative;
+      padding-top:6px;
+    }
+    .critica-selo{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:7px 12px;
+      border-radius:999px;
+      background:linear-gradient(90deg, rgba(255,126,179,0.16), rgba(185,131,255,0.16));
+      color:#7a1b55;
+      font-size:12px;
+      font-weight:bold;
+      letter-spacing:.04em;
+      text-transform:uppercase;
+      margin-bottom:10px;
+      border:1px solid rgba(0,0,0,0.06);
+    }
+    .critica-box{
+      position:relative;
+      padding:14px 16px 14px 18px;
+      border-radius:18px;
+      background:linear-gradient(135deg, rgba(255,126,179,0.07), rgba(185,131,255,0.08));
+      border-left:5px solid #ff7eb3;
+      box-shadow: inset 0 0 0 1px rgba(0,0,0,0.04);
+    }
+    .critica-box::before{
+      content:"“";
+      position:absolute;
+      top:-8px;
+      left:10px;
+      font-size:52px;
+      line-height:1;
+      color:rgba(255,126,179,0.25);
+      font-weight:bold;
+    }
+    .critica-box p{
+      position:relative;
+      z-index:1;
+    }
+    .critica-aviso{
+      margin-top:10px;
+      font-size:12px;
+      color:#7a1b55;
+      opacity:.9;
+    }
     .lista-gostos strong{
       display:block;
       margin:14px 0 8px;
@@ -512,9 +559,13 @@
 
   
     <section class="colunas critica-grid">
-      <div class="bloco">
+      <div class="bloco critica-pessoal">
         <h2>💬 Crítica do Planeta Dorama</h2>
-        <p><strong>Crítica do Planeta Dorama:</strong> 18 Again chama atenção porque trabalha romance, triste, alegre de forma acessível e consegue manter o interesse sem parecer forçado. Seu casamento está em crise e ele perdeu o emprego.</p><p>Na prática, é o tipo de dorama que funciona melhor quando o espectador entra no clima da proposta e se envolve com os personagens. Tem boa avaliação entre os fãs e funciona muito bem para quem quer uma série envolvente para maratonar.</p>
+        <div class="critica-selo">Opinião mais humana do dorama</div>
+        <div class="critica-box">
+          <p><strong>Crítica do Planeta Dorama:</strong> 18 Again é o tipo de dorama que costuma conquistar mais pela emoção do que pela pressa em contar a história.</p><p></p><p>O que mais funciona aqui é a forma como os sentimentos dos personagens vão ficando mais fortes com o passar dos episódios, criando cenas que costumam marcar bastante quem gosta de romance com dor e intensidade.</p><p></p><p>Por outro lado, em alguns momentos o ritmo pode parecer mais lento ou dramático do que o esperado, principalmente para quem prefere histórias mais diretas.</p><p></p><p>No geral, é uma boa escolha para quem gosta de casais com química, sofrimento bem trabalhado e um clima emocional mais forte.</p>
+        </div>
+        <div class="critica-aviso">✨ Aqui a ideia é comentar o dorama de um jeito mais pessoal, e não só repetir a sinopse.</div>
       </div>
       <div class="bloco">
         <h2>✨ Guia rápido</h2>
@@ -585,21 +636,21 @@
       <h2>Recomendados para você</h2>
       <div class="rec-grid">
         
-        <a class="rec-card" href="/doramas/youth-of-may.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/youth%20of%20may.webp" alt="Youth of May" loading="lazy">
-          <div class="rec-title">Youth of May</div>
+        <a class="rec-card" href="/doramas/snowdrop.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/snowdrop.webp" alt="Snowdrop" loading="lazy">
+          <div class="rec-title">Snowdrop</div>
         </a>
-        <a class="rec-card" href="/doramas/splash-splash-love.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/splash%20splash%20love.jpg" alt="Splash Splash Love" loading="lazy">
-          <div class="rec-title">Splash Splash Love</div>
+        <a class="rec-card" href="/doramas/its-okay-to-not-be-okay.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/tudo%20bem%20nao%20ser%20normal.jpg" alt="Tudo Bem Não Ser Normal (Its Okay to Not Be Okay)" loading="lazy">
+          <div class="rec-title">Tudo Bem Não Ser Normal (Its Okay to Not Be Okay)</div>
         </a>
-        <a class="rec-card" href="/doramas/doctor-stranger.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/doctor%20stranger.webp" alt="Doctor Stranger" loading="lazy">
-          <div class="rec-title">Doctor Stranger</div>
+        <a class="rec-card" href="/doramas/start-up.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/start%20up.jpg" alt="Start-Up" loading="lazy">
+          <div class="rec-title">Start-Up</div>
         </a>
-        <a class="rec-card" href="/doramas/strongest-deliveryman.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/strongest%20deliv.jpg" alt="Strongest Deliveryman" loading="lazy">
-          <div class="rec-title">Strongest Deliveryman</div>
+        <a class="rec-card" href="/doramas/crash-landing-on-you.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/crash-landing.jpg" alt="Pousando no Amor (Crash Landing on You)" loading="lazy">
+          <div class="rec-title">Pousando no Amor (Crash Landing on You)</div>
         </a>
       </div>
     </section>

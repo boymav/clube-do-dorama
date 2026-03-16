@@ -362,6 +362,53 @@
     .critica-grid{
       align-items:start;
     }
+    .critica-pessoal{
+      position:relative;
+      padding-top:6px;
+    }
+    .critica-selo{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:7px 12px;
+      border-radius:999px;
+      background:linear-gradient(90deg, rgba(255,126,179,0.16), rgba(185,131,255,0.16));
+      color:#7a1b55;
+      font-size:12px;
+      font-weight:bold;
+      letter-spacing:.04em;
+      text-transform:uppercase;
+      margin-bottom:10px;
+      border:1px solid rgba(0,0,0,0.06);
+    }
+    .critica-box{
+      position:relative;
+      padding:14px 16px 14px 18px;
+      border-radius:18px;
+      background:linear-gradient(135deg, rgba(255,126,179,0.07), rgba(185,131,255,0.08));
+      border-left:5px solid #ff7eb3;
+      box-shadow: inset 0 0 0 1px rgba(0,0,0,0.04);
+    }
+    .critica-box::before{
+      content:"“";
+      position:absolute;
+      top:-8px;
+      left:10px;
+      font-size:52px;
+      line-height:1;
+      color:rgba(255,126,179,0.25);
+      font-weight:bold;
+    }
+    .critica-box p{
+      position:relative;
+      z-index:1;
+    }
+    .critica-aviso{
+      margin-top:10px;
+      font-size:12px;
+      color:#7a1b55;
+      opacity:.9;
+    }
     .lista-gostos strong{
       display:block;
       margin:14px 0 8px;
@@ -512,9 +559,13 @@
 
   
     <section class="colunas critica-grid">
-      <div class="bloco">
+      <div class="bloco critica-pessoal">
         <h2>💬 Crítica do Planeta Dorama</h2>
-        <p><strong>Crítica do Planeta Dorama:</strong> Sweet Home funciona bem porque mistura sobrevivência, terror e drama humano. A série usa os monstros como ameaça visual, mas o que realmente sustenta a história são os moradores do prédio e a forma como cada um reage ao medo, ao egoísmo e à vontade de continuar vivo.</p><p>É um dorama mais sombrio, com clima pesado e cenas de tensão constantes. Para quem gosta de histórias intensas, monstros e personagens tentando resistir em situações extremas, é uma escolha muito forte.</p>
+        <div class="critica-selo">Opinião mais humana do dorama</div>
+        <div class="critica-box">
+          <p><strong>Crítica do Planeta Dorama:</strong> Sweet Home é um dorama que normalmente funciona melhor quando o espectador se envolve com os personagens e entra no clima da história.</p><p></p><p>O que mais chama atenção aqui é a maneira como a proposta de 'Pessoas começam a se transformar em monstros.' vai ganhando peso com o avanço dos episódios, deixando a experiência mais envolvente.</p><p></p><p>Por outro lado, dependendo do gosto de quem assiste, alguns momentos podem parecer mais lentos, mais dramáticos ou menos surpreendentes do que o esperado.</p><p></p><p>No geral, é uma boa opção para quem procura um dorama marcante, com personagens fortes e uma história que tenta equilibrar emoção e entretenimento.</p>
+        </div>
+        <div class="critica-aviso">✨ Aqui a ideia é comentar o dorama de um jeito mais pessoal, e não só repetir a sinopse.</div>
       </div>
       <div class="bloco">
         <h2>✨ Guia rápido</h2>
@@ -585,21 +636,21 @@
       <h2>Recomendados para você</h2>
       <div class="rec-grid">
         
-        <a class="rec-card" href="/doramas/twenty-five-twenty-one.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/vinte%20e%20cinto.jpg" alt="Vinte e Cinco, Vinte e Um (Twenty-Five Twenty-One)" loading="lazy">
-          <div class="rec-title">Vinte e Cinco, Vinte e Um (Twenty-Five Twenty-One)</div>
+        <a class="rec-card" href="/doramas/vincenzo.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/vincenzo.jpg" alt="Vincenzo" loading="lazy">
+          <div class="rec-title">Vincenzo</div>
         </a>
-        <a class="rec-card" href="/doramas/moon-lovers-scarlet-heart-ryeo.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/moon%20lovers%201.webp" alt="Moon Lovers: Scarlet Heart Ryeo" loading="lazy">
-          <div class="rec-title">Moon Lovers: Scarlet Heart Ryeo</div>
+        <a class="rec-card" href="/doramas/the-glory.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/the%20glory.webp" alt="The Glory" loading="lazy">
+          <div class="rec-title">The Glory</div>
         </a>
-        <a class="rec-card" href="/doramas/boys-over-flowers.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/boys%20over%20flowers.webp" alt="Boys Over Flowers" loading="lazy">
-          <div class="rec-title">Boys Over Flowers</div>
+        <a class="rec-card" href="/doramas/descendants-of-the-sun.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/Descendants%20of%20the%20Sun.jpg" alt="Descendants of the Sun" loading="lazy">
+          <div class="rec-title">Descendants of the Sun</div>
         </a>
-        <a class="rec-card" href="/doramas/hi-bye-mama.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/hi%20bye%20mama.jpg" alt="Hi Bye, Mama!" loading="lazy">
-          <div class="rec-title">Hi Bye, Mama!</div>
+        <a class="rec-card" href="/doramas/while-you-were-sleeping.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/whire%20you%20we%20sleeping.webp" alt="While You Were Sleeping" loading="lazy">
+          <div class="rec-title">While You Were Sleeping</div>
         </a>
       </div>
     </section>

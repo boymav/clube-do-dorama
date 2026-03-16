@@ -362,6 +362,53 @@
     .critica-grid{
       align-items:start;
     }
+    .critica-pessoal{
+      position:relative;
+      padding-top:6px;
+    }
+    .critica-selo{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:7px 12px;
+      border-radius:999px;
+      background:linear-gradient(90deg, rgba(255,126,179,0.16), rgba(185,131,255,0.16));
+      color:#7a1b55;
+      font-size:12px;
+      font-weight:bold;
+      letter-spacing:.04em;
+      text-transform:uppercase;
+      margin-bottom:10px;
+      border:1px solid rgba(0,0,0,0.06);
+    }
+    .critica-box{
+      position:relative;
+      padding:14px 16px 14px 18px;
+      border-radius:18px;
+      background:linear-gradient(135deg, rgba(255,126,179,0.07), rgba(185,131,255,0.08));
+      border-left:5px solid #ff7eb3;
+      box-shadow: inset 0 0 0 1px rgba(0,0,0,0.04);
+    }
+    .critica-box::before{
+      content:"“";
+      position:absolute;
+      top:-8px;
+      left:10px;
+      font-size:52px;
+      line-height:1;
+      color:rgba(255,126,179,0.25);
+      font-weight:bold;
+    }
+    .critica-box p{
+      position:relative;
+      z-index:1;
+    }
+    .critica-aviso{
+      margin-top:10px;
+      font-size:12px;
+      color:#7a1b55;
+      opacity:.9;
+    }
     .lista-gostos strong{
       display:block;
       margin:14px 0 8px;
@@ -512,9 +559,13 @@
 
   
     <section class="colunas critica-grid">
-      <div class="bloco">
+      <div class="bloco critica-pessoal">
         <h2>💬 Crítica do Planeta Dorama</h2>
-        <p><strong>Crítica do Planeta Dorama:</strong> The Devil Judge chama atenção porque trabalha suspense, politico, intenso de forma acessível e consegue manter o interesse sem parecer forçado. julgamentos são transmitidos ao vivo.</p><p>Na prática, é o tipo de dorama que funciona melhor quando o espectador entra no clima da proposta e se envolve com os personagens. Tem boa avaliação entre os fãs e funciona muito bem para quem quer uma série envolvente para maratonar.</p>
+        <div class="critica-selo">Opinião mais humana do dorama</div>
+        <div class="critica-box">
+          <p><strong>Crítica do Planeta Dorama:</strong> The Devil Judge chama atenção principalmente pelo clima de tensão e pela curiosidade de descobrir o que vai acontecer em seguida.</p><p></p><p>Um ponto forte é a atmosfera, porque a história consegue criar sensação de perigo, mistério ou desconforto de um jeito que prende bastante em vários episódios.</p><p></p><p>Por outro lado, dependendo do gosto de quem assiste, algumas decisões dos personagens ou certas partes da trama podem parecer exageradas ou mais confusas do que o ideal.</p><p></p><p>No geral, funciona melhor para quem gosta de doramas intensos, com suspense, perigo e uma sensação constante de que algo importante está para acontecer.</p>
+        </div>
+        <div class="critica-aviso">✨ Aqui a ideia é comentar o dorama de um jeito mais pessoal, e não só repetir a sinopse.</div>
       </div>
       <div class="bloco">
         <h2>✨ Guia rápido</h2>
@@ -558,25 +609,25 @@
             <p>Dois detetives investigam assassinatos em série ligados ao passado.</p>
           </div>
         </a>
-        <a class="semelhante-card" href="/doramas/mask-girl.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/mask%20girl.jpg" alt="Mask Girl" loading="lazy">
+        <a class="semelhante-card" href="/doramas/crash-landing-on-you.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/crash-landing.jpg" alt="Pousando no Amor (Crash Landing on You)" loading="lazy">
           <div class="semelhante-c">
-            <h3>Mask Girl</h3>
-            <p>Uma funcionária insegura leva uma vida dupla na internet usando máscara.</p>
+            <h3>Pousando no Amor (Crash Landing on You)</h3>
+            <p>Uma empresária sul-coreana sofre um acidente e vai parar na Coreia do Norte.</p>
           </div>
         </a>
-        <a class="semelhante-card" href="/doramas/extracurricular.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/extracurricular.jpg" alt="Extracurricular" loading="lazy">
+        <a class="semelhante-card" href="/doramas/its-okay-to-not-be-okay.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/tudo%20bem%20nao%20ser%20normal.jpg" alt="Tudo Bem Não Ser Normal (Its Okay to Not Be Okay)" loading="lazy">
           <div class="semelhante-c">
-            <h3>Extracurricular</h3>
-            <p>Um estudante exemplar esconde um esquema perigoso para pagar os estudos.</p>
+            <h3>Tudo Bem Não Ser Normal (Its Okay to Not Be Okay)</h3>
+            <p>Um cuidador emocionalmente fechado conhece uma escritora excêntrica.</p>
           </div>
         </a>
-        <a class="semelhante-card" href="/doramas/the-silent-sea.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/silent%20sea.webp" alt="The Silent Sea" loading="lazy">
+        <a class="semelhante-card" href="/doramas/itaewon-class.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/itaewon%20class.webp" alt="Itaewon Class" loading="lazy">
           <div class="semelhante-c">
-            <h3>The Silent Sea</h3>
-            <p>Uma equipe espacial vai até uma base abandonada na Lua para recuperar uma amostra misteriosa.</p>
+            <h3>Itaewon Class</h3>
+            <p>Um jovem luta para vencer injustiças do passado.</p>
           </div>
         </a></div>
     </section>
@@ -585,21 +636,21 @@
       <h2>Recomendados para você</h2>
       <div class="rec-grid">
         
-        <a class="rec-card" href="/doramas/itaewon-class.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/itaewon%20class.webp" alt="Itaewon Class" loading="lazy">
-          <div class="rec-title">Itaewon Class</div>
+        <a class="rec-card" href="/doramas/flower-of-evil.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/flower%20of%20evil.webp" alt="Flower of Evil" loading="lazy">
+          <div class="rec-title">Flower of Evil</div>
         </a>
         <a class="rec-card" href="/doramas/arthdal-chronicles.html">
           <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/arthdal%20chronicles.jpg" alt="Arthdal Chronicles" loading="lazy">
           <div class="rec-title">Arthdal Chronicles</div>
         </a>
-        <a class="rec-card" href="/doramas/bloodhounds.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/bloodhounds.webp" alt="Bloodhounds" loading="lazy">
-          <div class="rec-title">Bloodhounds</div>
+        <a class="rec-card" href="/doramas/beyond-evil.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/beyond%20evil.jpg" alt="Beyond Evil" loading="lazy">
+          <div class="rec-title">Beyond Evil</div>
         </a>
-        <a class="rec-card" href="/doramas/start-up.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/start%20up.jpg" alt="Start-Up" loading="lazy">
-          <div class="rec-title">Start-Up</div>
+        <a class="rec-card" href="/doramas/my-mister.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/my%20mister.jfif" alt="My Mister" loading="lazy">
+          <div class="rec-title">My Mister</div>
         </a>
       </div>
     </section>

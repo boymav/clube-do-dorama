@@ -362,6 +362,53 @@
     .critica-grid{
       align-items:start;
     }
+    .critica-pessoal{
+      position:relative;
+      padding-top:6px;
+    }
+    .critica-selo{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:7px 12px;
+      border-radius:999px;
+      background:linear-gradient(90deg, rgba(255,126,179,0.16), rgba(185,131,255,0.16));
+      color:#7a1b55;
+      font-size:12px;
+      font-weight:bold;
+      letter-spacing:.04em;
+      text-transform:uppercase;
+      margin-bottom:10px;
+      border:1px solid rgba(0,0,0,0.06);
+    }
+    .critica-box{
+      position:relative;
+      padding:14px 16px 14px 18px;
+      border-radius:18px;
+      background:linear-gradient(135deg, rgba(255,126,179,0.07), rgba(185,131,255,0.08));
+      border-left:5px solid #ff7eb3;
+      box-shadow: inset 0 0 0 1px rgba(0,0,0,0.04);
+    }
+    .critica-box::before{
+      content:"“";
+      position:absolute;
+      top:-8px;
+      left:10px;
+      font-size:52px;
+      line-height:1;
+      color:rgba(255,126,179,0.25);
+      font-weight:bold;
+    }
+    .critica-box p{
+      position:relative;
+      z-index:1;
+    }
+    .critica-aviso{
+      margin-top:10px;
+      font-size:12px;
+      color:#7a1b55;
+      opacity:.9;
+    }
     .lista-gostos strong{
       display:block;
       margin:14px 0 8px;
@@ -512,9 +559,13 @@
 
   
     <section class="colunas critica-grid">
-      <div class="bloco">
+      <div class="bloco critica-pessoal">
         <h2>💬 Crítica do Planeta Dorama</h2>
-        <p><strong>Crítica do Planeta Dorama:</strong> Touch Your Heart chama atenção porque trabalha romance, alegre, comedia de forma acessível e consegue manter o interesse sem parecer forçado. Para isso, ela começa a trabalhar como secretária em um escritório de advocacia.</p><p>Na prática, é o tipo de dorama que funciona melhor quando o espectador entra no clima da proposta e se envolve com os personagens. É uma boa escolha para quem procura uma história envolvente e personagens marcantes.</p>
+        <div class="critica-selo">Opinião mais humana do dorama</div>
+        <div class="critica-box">
+          <p><strong>Crítica do Planeta Dorama:</strong> Touch Your Heart funciona muito bem como dorama leve, daqueles que a pessoa começa sem esforço e quando percebe já quer continuar assistindo.</p><p></p><p>O que mais gostei nesse estilo de história é o carisma dos personagens e o jeito como o romance se desenvolve com momentos divertidos, deixando tudo mais gostoso de acompanhar.</p><p></p><p>Ao mesmo tempo, quem já assistiu muitos doramas românticos pode achar algumas situações previsíveis ou mais clichês do que gostaria.</p><p></p><p>Mesmo assim, é uma série que costuma agradar bastante quem procura romance fofo, clima leve e episódios fáceis de maratonar.</p>
+        </div>
+        <div class="critica-aviso">✨ Aqui a ideia é comentar o dorama de um jeito mais pessoal, e não só repetir a sinopse.</div>
       </div>
       <div class="bloco">
         <h2>✨ Guia rápido</h2>
@@ -585,21 +636,21 @@
       <h2>Recomendados para você</h2>
       <div class="rec-grid">
         
-        <a class="rec-card" href="/doramas/strongest-deliveryman.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/strongest%20deliv.jpg" alt="Strongest Deliveryman" loading="lazy">
-          <div class="rec-title">Strongest Deliveryman</div>
+        <a class="rec-card" href="/doramas/see-you-in-my-19th-life.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/see%20you%20im%20my.webp" alt="See You in My 19th Life" loading="lazy">
+          <div class="rec-title">See You in My 19th Life</div>
         </a>
-        <a class="rec-card" href="/doramas/crash-course-in-romance.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/crash%20course.webp" alt="Crash Course in Romance" loading="lazy">
-          <div class="rec-title">Crash Course in Romance</div>
+        <a class="rec-card" href="/doramas/descendants-of-the-sun.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/Descendants%20of%20the%20Sun.jpg" alt="Descendants of the Sun" loading="lazy">
+          <div class="rec-title">Descendants of the Sun</div>
         </a>
-        <a class="rec-card" href="/doramas/tale-of-the-nine-tailed.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/tale%20of%20the%20nine%20talled.jfif" alt="Tale of the Nine Tailed" loading="lazy">
-          <div class="rec-title">Tale of the Nine Tailed</div>
+        <a class="rec-card" href="/doramas/alchemy-of-souls.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/alchemy%20of%20souls.webp" alt="Alchemy of Souls" loading="lazy">
+          <div class="rec-title">Alchemy of Souls</div>
         </a>
-        <a class="rec-card" href="/doramas/the-red-sleeve.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/the%20red%20sleeve.jpeg" alt="The Red Sleeve" loading="lazy">
-          <div class="rec-title">The Red Sleeve</div>
+        <a class="rec-card" href="/doramas/itaewon-class.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/itaewon%20class.webp" alt="Itaewon Class" loading="lazy">
+          <div class="rec-title">Itaewon Class</div>
         </a>
       </div>
     </section>

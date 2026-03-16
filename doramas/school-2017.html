@@ -362,6 +362,53 @@
     .critica-grid{
       align-items:start;
     }
+    .critica-pessoal{
+      position:relative;
+      padding-top:6px;
+    }
+    .critica-selo{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:7px 12px;
+      border-radius:999px;
+      background:linear-gradient(90deg, rgba(255,126,179,0.16), rgba(185,131,255,0.16));
+      color:#7a1b55;
+      font-size:12px;
+      font-weight:bold;
+      letter-spacing:.04em;
+      text-transform:uppercase;
+      margin-bottom:10px;
+      border:1px solid rgba(0,0,0,0.06);
+    }
+    .critica-box{
+      position:relative;
+      padding:14px 16px 14px 18px;
+      border-radius:18px;
+      background:linear-gradient(135deg, rgba(255,126,179,0.07), rgba(185,131,255,0.08));
+      border-left:5px solid #ff7eb3;
+      box-shadow: inset 0 0 0 1px rgba(0,0,0,0.04);
+    }
+    .critica-box::before{
+      content:"“";
+      position:absolute;
+      top:-8px;
+      left:10px;
+      font-size:52px;
+      line-height:1;
+      color:rgba(255,126,179,0.25);
+      font-weight:bold;
+    }
+    .critica-box p{
+      position:relative;
+      z-index:1;
+    }
+    .critica-aviso{
+      margin-top:10px;
+      font-size:12px;
+      color:#7a1b55;
+      opacity:.9;
+    }
     .lista-gostos strong{
       display:block;
       margin:14px 0 8px;
@@ -512,9 +559,13 @@
 
   
     <section class="colunas critica-grid">
-      <div class="bloco">
+      <div class="bloco critica-pessoal">
         <h2>💬 Crítica do Planeta Dorama</h2>
-        <p><strong>Crítica do Planeta Dorama:</strong> School 2017 chama atenção porque trabalha escolar, romance, alegre de forma acessível e consegue manter o interesse sem parecer forçado. Tudo muda quando um misterioso aluno conhecido como X começa a provocar confusões dentro do colégio.</p><p>Na prática, é o tipo de dorama que funciona melhor quando o espectador entra no clima da proposta e se envolve com os personagens. É uma boa escolha para quem procura uma história envolvente e personagens marcantes.</p>
+        <div class="critica-selo">Opinião mais humana do dorama</div>
+        <div class="critica-box">
+          <p><strong>Crítica do Planeta Dorama:</strong> School 2017 funciona muito bem como dorama leve, daqueles que a pessoa começa sem esforço e quando percebe já quer continuar assistindo.</p><p></p><p>O que mais gostei nesse estilo de história é o carisma dos personagens e o jeito como o romance se desenvolve com momentos divertidos, deixando tudo mais gostoso de acompanhar.</p><p></p><p>Ao mesmo tempo, quem já assistiu muitos doramas românticos pode achar algumas situações previsíveis ou mais clichês do que gostaria.</p><p></p><p>Mesmo assim, é uma série que costuma agradar bastante quem procura romance fofo, clima leve e episódios fáceis de maratonar.</p>
+        </div>
+        <div class="critica-aviso">✨ Aqui a ideia é comentar o dorama de um jeito mais pessoal, e não só repetir a sinopse.</div>
       </div>
       <div class="bloco">
         <h2>✨ Guia rápido</h2>
@@ -585,17 +636,17 @@
       <h2>Recomendados para você</h2>
       <div class="rec-grid">
         
-        <a class="rec-card" href="/doramas/doctor-stranger.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/doctor%20stranger.webp" alt="Doctor Stranger" loading="lazy">
-          <div class="rec-title">Doctor Stranger</div>
+        <a class="rec-card" href="/doramas/dream-high.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/dream%20hight.jpg" alt="Dream High" loading="lazy">
+          <div class="rec-title">Dream High</div>
         </a>
-        <a class="rec-card" href="/doramas/moon-lovers-scarlet-heart-ryeo.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/moon%20lovers%201.webp" alt="Moon Lovers: Scarlet Heart Ryeo" loading="lazy">
-          <div class="rec-title">Moon Lovers: Scarlet Heart Ryeo</div>
+        <a class="rec-card" href="/doramas/true-beauty.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/True%20Beauty.jpg" alt="Beleza Verdadeira (True Beauty)" loading="lazy">
+          <div class="rec-title">Beleza Verdadeira (True Beauty)</div>
         </a>
-        <a class="rec-card" href="/doramas/18-again.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/18againn.jpg" alt="18 Again" loading="lazy">
-          <div class="rec-title">18 Again</div>
+        <a class="rec-card" href="/doramas/its-okay-to-not-be-okay.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/tudo%20bem%20nao%20ser%20normal.jpg" alt="Tudo Bem Não Ser Normal (Its Okay to Not Be Okay)" loading="lazy">
+          <div class="rec-title">Tudo Bem Não Ser Normal (Its Okay to Not Be Okay)</div>
         </a>
         <a class="rec-card" href="/doramas/our-beloved-summer.html">
           <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/our%20beloved%20summer.png" alt="Our Beloved Summer" loading="lazy">

@@ -362,6 +362,53 @@
     .critica-grid{
       align-items:start;
     }
+    .critica-pessoal{
+      position:relative;
+      padding-top:6px;
+    }
+    .critica-selo{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:7px 12px;
+      border-radius:999px;
+      background:linear-gradient(90deg, rgba(255,126,179,0.16), rgba(185,131,255,0.16));
+      color:#7a1b55;
+      font-size:12px;
+      font-weight:bold;
+      letter-spacing:.04em;
+      text-transform:uppercase;
+      margin-bottom:10px;
+      border:1px solid rgba(0,0,0,0.06);
+    }
+    .critica-box{
+      position:relative;
+      padding:14px 16px 14px 18px;
+      border-radius:18px;
+      background:linear-gradient(135deg, rgba(255,126,179,0.07), rgba(185,131,255,0.08));
+      border-left:5px solid #ff7eb3;
+      box-shadow: inset 0 0 0 1px rgba(0,0,0,0.04);
+    }
+    .critica-box::before{
+      content:"“";
+      position:absolute;
+      top:-8px;
+      left:10px;
+      font-size:52px;
+      line-height:1;
+      color:rgba(255,126,179,0.25);
+      font-weight:bold;
+    }
+    .critica-box p{
+      position:relative;
+      z-index:1;
+    }
+    .critica-aviso{
+      margin-top:10px;
+      font-size:12px;
+      color:#7a1b55;
+      opacity:.9;
+    }
     .lista-gostos strong{
       display:block;
       margin:14px 0 8px;
@@ -512,9 +559,13 @@
 
   
     <section class="colunas critica-grid">
-      <div class="bloco">
+      <div class="bloco critica-pessoal">
         <h2>💬 Crítica do Planeta Dorama</h2>
-        <p><strong>Crítica do Planeta Dorama:</strong> Arthdal Chronicles chama atenção porque trabalha fantasia, intenso de forma acessível e consegue manter o interesse sem parecer forçado. tribos lutam por poder e sobrevivência.</p><p>Na prática, é o tipo de dorama que funciona melhor quando o espectador entra no clima da proposta e se envolve com os personagens. É uma boa escolha para quem procura uma história envolvente e personagens marcantes.</p>
+        <div class="critica-selo">Opinião mais humana do dorama</div>
+        <div class="critica-box">
+          <p><strong>Crítica do Planeta Dorama:</strong> Arthdal Chronicles é um dorama que costuma se destacar mais pela atmosfera e pela proposta da história do que apenas pelos acontecimentos do enredo.</p><p></p><p>O que mais chama atenção é a mistura entre fantasia, emoção e personagens marcantes, porque isso deixa a série com um clima diferente de histórias mais realistas.</p><p></p><p>Por outro lado, algumas regras desse universo ou certos momentos mais simbólicos podem não agradar tanto quem prefere tramas totalmente objetivas.</p><p></p><p>Mesmo assim, é uma boa escolha para quem gosta de romance com fantasia, destino, elementos sobrenaturais e uma sensação mais mágica.</p>
+        </div>
+        <div class="critica-aviso">✨ Aqui a ideia é comentar o dorama de um jeito mais pessoal, e não só repetir a sinopse.</div>
       </div>
       <div class="bloco">
         <h2>✨ Guia rápido</h2>
@@ -585,21 +636,21 @@
       <h2>Recomendados para você</h2>
       <div class="rec-grid">
         
-        <a class="rec-card" href="/doramas/destined-with-you.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/destined%20whit%20you.webp" alt="Destined with You" loading="lazy">
-          <div class="rec-title">Destined with You</div>
+        <a class="rec-card" href="/doramas/mr-sunshine.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/mr%20sunshine.webp" alt="Mr. Sunshine" loading="lazy">
+          <div class="rec-title">Mr. Sunshine</div>
         </a>
-        <a class="rec-card" href="/doramas/the-glory.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/the%20glory.webp" alt="The Glory" loading="lazy">
-          <div class="rec-title">The Glory</div>
+        <a class="rec-card" href="/doramas/start-up.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/start%20up.jpg" alt="Start-Up" loading="lazy">
+          <div class="rec-title">Start-Up</div>
         </a>
-        <a class="rec-card" href="/doramas/healer.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/healer.webp" alt="Healer" loading="lazy">
-          <div class="rec-title">Healer</div>
+        <a class="rec-card" href="/doramas/island.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/island.webp" alt="Island" loading="lazy">
+          <div class="rec-title">Island</div>
         </a>
-        <a class="rec-card" href="/doramas/itaewon-class.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/itaewon%20class.webp" alt="Itaewon Class" loading="lazy">
-          <div class="rec-title">Itaewon Class</div>
+        <a class="rec-card" href="/doramas/sky-castle.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/sky%20castle.webp" alt="Sky Castle" loading="lazy">
+          <div class="rec-title">Sky Castle</div>
         </a>
       </div>
     </section>

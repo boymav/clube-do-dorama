@@ -362,6 +362,53 @@
     .critica-grid{
       align-items:start;
     }
+    .critica-pessoal{
+      position:relative;
+      padding-top:6px;
+    }
+    .critica-selo{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:7px 12px;
+      border-radius:999px;
+      background:linear-gradient(90deg, rgba(255,126,179,0.16), rgba(185,131,255,0.16));
+      color:#7a1b55;
+      font-size:12px;
+      font-weight:bold;
+      letter-spacing:.04em;
+      text-transform:uppercase;
+      margin-bottom:10px;
+      border:1px solid rgba(0,0,0,0.06);
+    }
+    .critica-box{
+      position:relative;
+      padding:14px 16px 14px 18px;
+      border-radius:18px;
+      background:linear-gradient(135deg, rgba(255,126,179,0.07), rgba(185,131,255,0.08));
+      border-left:5px solid #ff7eb3;
+      box-shadow: inset 0 0 0 1px rgba(0,0,0,0.04);
+    }
+    .critica-box::before{
+      content:"“";
+      position:absolute;
+      top:-8px;
+      left:10px;
+      font-size:52px;
+      line-height:1;
+      color:rgba(255,126,179,0.25);
+      font-weight:bold;
+    }
+    .critica-box p{
+      position:relative;
+      z-index:1;
+    }
+    .critica-aviso{
+      margin-top:10px;
+      font-size:12px;
+      color:#7a1b55;
+      opacity:.9;
+    }
     .lista-gostos strong{
       display:block;
       margin:14px 0 8px;
@@ -512,9 +559,13 @@
 
   
     <section class="colunas critica-grid">
-      <div class="bloco">
+      <div class="bloco critica-pessoal">
         <h2>💬 Crítica do Planeta Dorama</h2>
-        <p><strong>Crítica do Planeta Dorama:</strong> Hospital Playlist chama atenção porque trabalha alegre, romance de forma acessível e consegue manter o interesse sem parecer forçado. Eles trabalham no mesmo hospital.</p><p>Na prática, é o tipo de dorama que funciona melhor quando o espectador entra no clima da proposta e se envolve com os personagens. É um dos doramas mais fortes do acervo, principalmente para quem gosta de histórias marcantes e muito bem avaliadas.</p>
+        <div class="critica-selo">Opinião mais humana do dorama</div>
+        <div class="critica-box">
+          <p><strong>Crítica do Planeta Dorama:</strong> Hospital Playlist funciona muito bem como dorama leve, daqueles que a pessoa começa sem esforço e quando percebe já quer continuar assistindo.</p><p></p><p>O que mais gostei nesse estilo de história é o carisma dos personagens e o jeito como o romance se desenvolve com momentos divertidos, deixando tudo mais gostoso de acompanhar.</p><p></p><p>Ao mesmo tempo, quem já assistiu muitos doramas românticos pode achar algumas situações previsíveis ou mais clichês do que gostaria.</p><p></p><p>Mesmo assim, é uma série que costuma agradar bastante quem procura romance fofo, clima leve e episódios fáceis de maratonar.</p>
+        </div>
+        <div class="critica-aviso">✨ Aqui a ideia é comentar o dorama de um jeito mais pessoal, e não só repetir a sinopse.</div>
       </div>
       <div class="bloco">
         <h2>✨ Guia rápido</h2>
@@ -585,21 +636,21 @@
       <h2>Recomendados para você</h2>
       <div class="rec-grid">
         
-        <a class="rec-card" href="/doramas/hometown-cha-cha-cha.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/hometown%20cha.jpg" alt="Hometown Cha-Cha-Cha" loading="lazy">
-          <div class="rec-title">Hometown Cha-Cha-Cha</div>
+        <a class="rec-card" href="/doramas/navillera.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/navillera.webp" alt="Navillera" loading="lazy">
+          <div class="rec-title">Navillera</div>
         </a>
-        <a class="rec-card" href="/doramas/snowdrop.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/snowdrop.webp" alt="Snowdrop" loading="lazy">
-          <div class="rec-title">Snowdrop</div>
+        <a class="rec-card" href="/doramas/reply-1988.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/reply%201988.jpg" alt="Reply 1988" loading="lazy">
+          <div class="rec-title">Reply 1988</div>
         </a>
-        <a class="rec-card" href="/doramas/descendants-of-the-sun.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/Descendants%20of%20the%20Sun.jpg" alt="Descendants of the Sun" loading="lazy">
-          <div class="rec-title">Descendants of the Sun</div>
+        <a class="rec-card" href="/doramas/the-red-sleeve.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/the%20red%20sleeve.jpeg" alt="The Red Sleeve" loading="lazy">
+          <div class="rec-title">The Red Sleeve</div>
         </a>
-        <a class="rec-card" href="/doramas/crash-landing-on-you.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/crash-landing.jpg" alt="Pousando no Amor (Crash Landing on You)" loading="lazy">
-          <div class="rec-title">Pousando no Amor (Crash Landing on You)</div>
+        <a class="rec-card" href="/doramas/doctor-cha.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/doctor%20cha.jpg" alt="Doctor Cha" loading="lazy">
+          <div class="rec-title">Doctor Cha</div>
         </a>
       </div>
     </section>

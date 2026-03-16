@@ -362,6 +362,53 @@
     .critica-grid{
       align-items:start;
     }
+    .critica-pessoal{
+      position:relative;
+      padding-top:6px;
+    }
+    .critica-selo{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:7px 12px;
+      border-radius:999px;
+      background:linear-gradient(90deg, rgba(255,126,179,0.16), rgba(185,131,255,0.16));
+      color:#7a1b55;
+      font-size:12px;
+      font-weight:bold;
+      letter-spacing:.04em;
+      text-transform:uppercase;
+      margin-bottom:10px;
+      border:1px solid rgba(0,0,0,0.06);
+    }
+    .critica-box{
+      position:relative;
+      padding:14px 16px 14px 18px;
+      border-radius:18px;
+      background:linear-gradient(135deg, rgba(255,126,179,0.07), rgba(185,131,255,0.08));
+      border-left:5px solid #ff7eb3;
+      box-shadow: inset 0 0 0 1px rgba(0,0,0,0.04);
+    }
+    .critica-box::before{
+      content:"“";
+      position:absolute;
+      top:-8px;
+      left:10px;
+      font-size:52px;
+      line-height:1;
+      color:rgba(255,126,179,0.25);
+      font-weight:bold;
+    }
+    .critica-box p{
+      position:relative;
+      z-index:1;
+    }
+    .critica-aviso{
+      margin-top:10px;
+      font-size:12px;
+      color:#7a1b55;
+      opacity:.9;
+    }
     .lista-gostos strong{
       display:block;
       margin:14px 0 8px;
@@ -512,9 +559,13 @@
 
   
     <section class="colunas critica-grid">
-      <div class="bloco">
+      <div class="bloco critica-pessoal">
         <h2>💬 Crítica do Planeta Dorama</h2>
-        <p><strong>Crítica do Planeta Dorama:</strong> W: Two Worlds chama atenção porque trabalha romance, fantasia, intenso de forma acessível e consegue manter o interesse sem parecer forçado. Um dia, ela é misteriosamente puxada para dentro da história.</p><p>Na prática, é o tipo de dorama que funciona melhor quando o espectador entra no clima da proposta e se envolve com os personagens. Tem boa avaliação entre os fãs e funciona muito bem para quem quer uma série envolvente para maratonar.</p>
+        <div class="critica-selo">Opinião mais humana do dorama</div>
+        <div class="critica-box">
+          <p><strong>Crítica do Planeta Dorama:</strong> W: Two Worlds é um dorama que costuma se destacar mais pela atmosfera e pela proposta da história do que apenas pelos acontecimentos do enredo.</p><p></p><p>O que mais chama atenção é a mistura entre fantasia, emoção e personagens marcantes, porque isso deixa a série com um clima diferente de histórias mais realistas.</p><p></p><p>Por outro lado, algumas regras desse universo ou certos momentos mais simbólicos podem não agradar tanto quem prefere tramas totalmente objetivas.</p><p></p><p>Mesmo assim, é uma boa escolha para quem gosta de romance com fantasia, destino, elementos sobrenaturais e uma sensação mais mágica.</p>
+        </div>
+        <div class="critica-aviso">✨ Aqui a ideia é comentar o dorama de um jeito mais pessoal, e não só repetir a sinopse.</div>
       </div>
       <div class="bloco">
         <h2>✨ Guia rápido</h2>
@@ -585,21 +636,21 @@
       <h2>Recomendados para você</h2>
       <div class="rec-grid">
         
+        <a class="rec-card" href="/doramas/see-you-in-my-19th-life.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/see%20you%20im%20my.webp" alt="See You in My 19th Life" loading="lazy">
+          <div class="rec-title">See You in My 19th Life</div>
+        </a>
+        <a class="rec-card" href="/doramas/while-you-were-sleeping.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/whire%20you%20we%20sleeping.webp" alt="While You Were Sleeping" loading="lazy">
+          <div class="rec-title">While You Were Sleeping</div>
+        </a>
+        <a class="rec-card" href="/doramas/our-beloved-summer.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/our%20beloved%20summer.png" alt="Our Beloved Summer" loading="lazy">
+          <div class="rec-title">Our Beloved Summer</div>
+        </a>
         <a class="rec-card" href="/doramas/its-okay-to-not-be-okay.html">
           <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/tudo%20bem%20nao%20ser%20normal.jpg" alt="Tudo Bem Não Ser Normal (Its Okay to Not Be Okay)" loading="lazy">
           <div class="rec-title">Tudo Bem Não Ser Normal (Its Okay to Not Be Okay)</div>
-        </a>
-        <a class="rec-card" href="/doramas/reborn-rich.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/reborn%20ric.jfif" alt="Reborn Rich" loading="lazy">
-          <div class="rec-title">Reborn Rich</div>
-        </a>
-        <a class="rec-card" href="/doramas/uncontrollably-fond.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/Uncontrollably%20Fond.webp" alt="Uncontrollably Fond" loading="lazy">
-          <div class="rec-title">Uncontrollably Fond</div>
-        </a>
-        <a class="rec-card" href="/doramas/doctor-cha.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/doctor%20cha.jpg" alt="Doctor Cha" loading="lazy">
-          <div class="rec-title">Doctor Cha</div>
         </a>
       </div>
     </section>

@@ -362,6 +362,53 @@
     .critica-grid{
       align-items:start;
     }
+    .critica-pessoal{
+      position:relative;
+      padding-top:6px;
+    }
+    .critica-selo{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:7px 12px;
+      border-radius:999px;
+      background:linear-gradient(90deg, rgba(255,126,179,0.16), rgba(185,131,255,0.16));
+      color:#7a1b55;
+      font-size:12px;
+      font-weight:bold;
+      letter-spacing:.04em;
+      text-transform:uppercase;
+      margin-bottom:10px;
+      border:1px solid rgba(0,0,0,0.06);
+    }
+    .critica-box{
+      position:relative;
+      padding:14px 16px 14px 18px;
+      border-radius:18px;
+      background:linear-gradient(135deg, rgba(255,126,179,0.07), rgba(185,131,255,0.08));
+      border-left:5px solid #ff7eb3;
+      box-shadow: inset 0 0 0 1px rgba(0,0,0,0.04);
+    }
+    .critica-box::before{
+      content:"“";
+      position:absolute;
+      top:-8px;
+      left:10px;
+      font-size:52px;
+      line-height:1;
+      color:rgba(255,126,179,0.25);
+      font-weight:bold;
+    }
+    .critica-box p{
+      position:relative;
+      z-index:1;
+    }
+    .critica-aviso{
+      margin-top:10px;
+      font-size:12px;
+      color:#7a1b55;
+      opacity:.9;
+    }
     .lista-gostos strong{
       display:block;
       margin:14px 0 8px;
@@ -512,9 +559,13 @@
 
   
     <section class="colunas critica-grid">
-      <div class="bloco">
+      <div class="bloco critica-pessoal">
         <h2>💬 Crítica do Planeta Dorama</h2>
-        <p><strong>Crítica do Planeta Dorama:</strong> The Good Bad Mother chama atenção porque trabalha triste, romance de forma acessível e consegue manter o interesse sem parecer forçado. Anos depois, um acidente muda tudo.</p><p>Na prática, é o tipo de dorama que funciona melhor quando o espectador entra no clima da proposta e se envolve com os personagens. Tem boa avaliação entre os fãs e funciona muito bem para quem quer uma série envolvente para maratonar.</p>
+        <div class="critica-selo">Opinião mais humana do dorama</div>
+        <div class="critica-box">
+          <p><strong>Crítica do Planeta Dorama:</strong> The Good Bad Mother é o tipo de dorama que costuma conquistar mais pela emoção do que pela pressa em contar a história.</p><p></p><p>O que mais funciona aqui é a forma como os sentimentos dos personagens vão ficando mais fortes com o passar dos episódios, criando cenas que costumam marcar bastante quem gosta de romance com dor e intensidade.</p><p></p><p>Por outro lado, em alguns momentos o ritmo pode parecer mais lento ou dramático do que o esperado, principalmente para quem prefere histórias mais diretas.</p><p></p><p>No geral, é uma boa escolha para quem gosta de casais com química, sofrimento bem trabalhado e um clima emocional mais forte.</p>
+        </div>
+        <div class="critica-aviso">✨ Aqui a ideia é comentar o dorama de um jeito mais pessoal, e não só repetir a sinopse.</div>
       </div>
       <div class="bloco">
         <h2>✨ Guia rápido</h2>
@@ -585,21 +636,21 @@
       <h2>Recomendados para você</h2>
       <div class="rec-grid">
         
-        <a class="rec-card" href="/doramas/my-liberation-notes.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/my%20liberation%20notes.webp" alt="My Liberation Notes" loading="lazy">
-          <div class="rec-title">My Liberation Notes</div>
+        <a class="rec-card" href="/doramas/hotel-del-luna.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/hotel%20del%20luna.jpg" alt="Hotel Del Luna" loading="lazy">
+          <div class="rec-title">Hotel Del Luna</div>
         </a>
-        <a class="rec-card" href="/doramas/big-mouth.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/big%20mouth.webp" alt="Big Mouth" loading="lazy">
-          <div class="rec-title">Big Mouth</div>
+        <a class="rec-card" href="/doramas/tale-of-the-nine-tailed.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/tale%20of%20the%20nine%20talled.jfif" alt="Tale of the Nine Tailed" loading="lazy">
+          <div class="rec-title">Tale of the Nine Tailed</div>
         </a>
-        <a class="rec-card" href="/doramas/welcome-to-samdal-ri.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/welcome%20to%20san.jpg" alt="Welcome to Samdal-ri" loading="lazy">
-          <div class="rec-title">Welcome to Samdal-ri</div>
+        <a class="rec-card" href="/doramas/strongest-deliveryman.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/strongest%20deliv.jpg" alt="Strongest Deliveryman" loading="lazy">
+          <div class="rec-title">Strongest Deliveryman</div>
         </a>
-        <a class="rec-card" href="/doramas/sweet-home.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/sweet%20home.jpg" alt="Sweet Home" loading="lazy">
-          <div class="rec-title">Sweet Home</div>
+        <a class="rec-card" href="/doramas/hi-bye-mama.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/hi-bye-mama.jpg" alt="Hi Bye, Mama!" loading="lazy">
+          <div class="rec-title">Hi Bye, Mama!</div>
         </a>
       </div>
     </section>

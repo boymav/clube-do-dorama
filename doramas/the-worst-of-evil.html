@@ -362,6 +362,53 @@
     .critica-grid{
       align-items:start;
     }
+    .critica-pessoal{
+      position:relative;
+      padding-top:6px;
+    }
+    .critica-selo{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:7px 12px;
+      border-radius:999px;
+      background:linear-gradient(90deg, rgba(255,126,179,0.16), rgba(185,131,255,0.16));
+      color:#7a1b55;
+      font-size:12px;
+      font-weight:bold;
+      letter-spacing:.04em;
+      text-transform:uppercase;
+      margin-bottom:10px;
+      border:1px solid rgba(0,0,0,0.06);
+    }
+    .critica-box{
+      position:relative;
+      padding:14px 16px 14px 18px;
+      border-radius:18px;
+      background:linear-gradient(135deg, rgba(255,126,179,0.07), rgba(185,131,255,0.08));
+      border-left:5px solid #ff7eb3;
+      box-shadow: inset 0 0 0 1px rgba(0,0,0,0.04);
+    }
+    .critica-box::before{
+      content:"“";
+      position:absolute;
+      top:-8px;
+      left:10px;
+      font-size:52px;
+      line-height:1;
+      color:rgba(255,126,179,0.25);
+      font-weight:bold;
+    }
+    .critica-box p{
+      position:relative;
+      z-index:1;
+    }
+    .critica-aviso{
+      margin-top:10px;
+      font-size:12px;
+      color:#7a1b55;
+      opacity:.9;
+    }
     .lista-gostos strong{
       display:block;
       margin:14px 0 8px;
@@ -512,9 +559,13 @@
 
   
     <section class="colunas critica-grid">
-      <div class="bloco">
+      <div class="bloco critica-pessoal">
         <h2>💬 Crítica do Planeta Dorama</h2>
-        <p><strong>Crítica do Planeta Dorama:</strong> The Worst of Evil chama atenção porque trabalha acao, crime, intenso de forma acessível e consegue manter o interesse sem parecer forçado. Ele se infiltra em organização criminosa poderosa.</p><p>Na prática, é o tipo de dorama que funciona melhor quando o espectador entra no clima da proposta e se envolve com os personagens. Tem boa avaliação entre os fãs e funciona muito bem para quem quer uma série envolvente para maratonar.</p>
+        <div class="critica-selo">Opinião mais humana do dorama</div>
+        <div class="critica-box">
+          <p><strong>Crítica do Planeta Dorama:</strong> The Worst of Evil é um dorama que normalmente funciona melhor quando o espectador se envolve com os personagens e entra no clima da história.</p><p></p><p>O que mais chama atenção aqui é a maneira como a proposta de 'Um policial aceita missão secreta perigosa.' vai ganhando peso com o avanço dos episódios, deixando a experiência mais envolvente.</p><p></p><p>Por outro lado, dependendo do gosto de quem assiste, alguns momentos podem parecer mais lentos, mais dramáticos ou menos surpreendentes do que o esperado.</p><p></p><p>No geral, é uma boa opção para quem procura um dorama marcante, com personagens fortes e uma história que tenta equilibrar emoção e entretenimento.</p>
+        </div>
+        <div class="critica-aviso">✨ Aqui a ideia é comentar o dorama de um jeito mais pessoal, e não só repetir a sinopse.</div>
       </div>
       <div class="bloco">
         <h2>✨ Guia rápido</h2>
@@ -558,25 +609,25 @@
             <p>Dois boxeadores enfrentam agiotas violentos.</p>
           </div>
         </a>
-        <a class="semelhante-card" href="/doramas/weak-hero-class-1.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/weak%20hero%20class.jpg" alt="Weak Hero Class 1" loading="lazy">
-          <div class="semelhante-c">
-            <h3>Weak Hero Class 1</h3>
-            <p>Um aluno aparentemente frágil enfrenta a violência escolar usando inteligência e estratégia.</p>
-          </div>
-        </a>
-        <a class="semelhante-card" href="/doramas/happiness.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/hapiness.webp" alt="Happiness" loading="lazy">
-          <div class="semelhante-c">
-            <h3>Happiness</h3>
-            <p>Um vírus misterioso transforma pessoas em criaturas violentas.</p>
-          </div>
-        </a>
         <a class="semelhante-card" href="/doramas/crash-landing-on-you.html">
           <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/crash-landing.jpg" alt="Pousando no Amor (Crash Landing on You)" loading="lazy">
           <div class="semelhante-c">
             <h3>Pousando no Amor (Crash Landing on You)</h3>
             <p>Uma empresária sul-coreana sofre um acidente e vai parar na Coreia do Norte.</p>
+          </div>
+        </a>
+        <a class="semelhante-card" href="/doramas/its-okay-to-not-be-okay.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/tudo%20bem%20nao%20ser%20normal.jpg" alt="Tudo Bem Não Ser Normal (Its Okay to Not Be Okay)" loading="lazy">
+          <div class="semelhante-c">
+            <h3>Tudo Bem Não Ser Normal (Its Okay to Not Be Okay)</h3>
+            <p>Um cuidador emocionalmente fechado conhece uma escritora excêntrica.</p>
+          </div>
+        </a>
+        <a class="semelhante-card" href="/doramas/itaewon-class.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/itaewon%20class.webp" alt="Itaewon Class" loading="lazy">
+          <div class="semelhante-c">
+            <h3>Itaewon Class</h3>
+            <p>Um jovem luta para vencer injustiças do passado.</p>
           </div>
         </a></div>
     </section>
@@ -585,21 +636,21 @@
       <h2>Recomendados para você</h2>
       <div class="rec-grid">
         
-        <a class="rec-card" href="/doramas/crash-landing-on-you.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/crash-landing.jpg" alt="Pousando no Amor (Crash Landing on You)" loading="lazy">
-          <div class="rec-title">Pousando no Amor (Crash Landing on You)</div>
+        <a class="rec-card" href="/doramas/sweet-home.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/sweet%20home.jpg" alt="Sweet Home" loading="lazy">
+          <div class="rec-title">Sweet Home</div>
         </a>
-        <a class="rec-card" href="/doramas/start-up.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/start%20up.jpg" alt="Start-Up" loading="lazy">
-          <div class="rec-title">Start-Up</div>
+        <a class="rec-card" href="/doramas/reborn-rich.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/reborn%20ric.jfif" alt="Reborn Rich" loading="lazy">
+          <div class="rec-title">Reborn Rich</div>
         </a>
-        <a class="rec-card" href="/doramas/snowdrop.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/snowdrop.webp" alt="Snowdrop" loading="lazy">
-          <div class="rec-title">Snowdrop</div>
+        <a class="rec-card" href="/doramas/my-name.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/my%20name.jpg" alt="My Name" loading="lazy">
+          <div class="rec-title">My Name</div>
         </a>
-        <a class="rec-card" href="/doramas/bad-and-crazy.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/bad%20and%20crazy.webp" alt="Bad and Crazy" loading="lazy">
-          <div class="rec-title">Bad and Crazy</div>
+        <a class="rec-card" href="/doramas/tale-of-the-nine-tailed.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/tale%20of%20the%20nine%20talled.jfif" alt="Tale of the Nine Tailed" loading="lazy">
+          <div class="rec-title">Tale of the Nine Tailed</div>
         </a>
       </div>
     </section>
