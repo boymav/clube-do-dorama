@@ -79,6 +79,150 @@
       text-align:center;
       padding:15px;
     }
+
+    .topo-info{
+      text-align:center;
+      max-width:820px;
+      margin:0 auto 10px;
+      line-height:1.7;
+      color:#555;
+    }
+    .resumo-lista{
+      text-align:center;
+      margin-top:10px;
+      font-size:15px;
+      color:#666;
+    }
+    .paginacao{
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:center;
+      gap:10px;
+      margin:26px 0 10px;
+    }
+    .paginacao a, .paginacao button, .page-num{
+      padding:10px 14px;
+      border:none;
+      border-radius:12px;
+      background:#fff;
+      color:#7a1b55;
+      font-weight:bold;
+      text-decoration:none;
+      box-shadow:0 4px 12px rgba(0,0,0,0.08);
+      cursor:pointer;
+    }
+    .page-num.ativo{
+      background:#ff7eb3;
+      color:#fff;
+    }
+    .links-finais{
+      max-width:960px;
+      margin:28px auto 0;
+      background:#fff;
+      border-radius:18px;
+      padding:18px;
+      box-shadow:0 6px 18px rgba(0,0,0,0.08);
+    }
+    .links-finais h2{
+      margin:0 0 10px;
+      text-align:left;
+      color:#b4005a;
+      font-size:22px;
+    }
+    .links-finais p{
+      margin:0 0 12px;
+      line-height:1.7;
+      color:#555;
+    }
+    .links-grid{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+    }
+    .links-grid a{
+      display:inline-block;
+      padding:10px 14px;
+      border-radius:999px;
+      background:#fff0f6;
+      color:#7a1b55;
+      text-decoration:none;
+      font-weight:bold;
+      border:1px solid rgba(0,0,0,0.06);
+    }
+    .links-grid a:hover{
+      background:#f3e8ff;
+    }
+
+
+    .barra-utilidades{
+      display:flex;
+      flex-wrap:wrap;
+      gap:12px;
+      justify-content:center;
+      align-items:center;
+      margin:18px 0 10px;
+    }
+    .busca-local{
+      width:min(420px, 100%);
+      padding:12px 14px;
+      border-radius:12px;
+      border:1px solid #ddd;
+      font-size:15px;
+      outline:none;
+    }
+    .busca-local:focus{
+      border-color:#b983ff;
+      box-shadow:0 0 0 3px rgba(185,131,255,0.20);
+    }
+    .filtro-genero{
+      padding:12px 14px;
+      border-radius:12px;
+      border:1px solid #ddd;
+      font-size:15px;
+      background:#fff;
+      color:#555;
+    }
+    .letras{
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:center;
+      gap:8px;
+      margin:14px 0 18px;
+    }
+    .letras a{
+      display:inline-block;
+      padding:8px 10px;
+      min-width:36px;
+      text-align:center;
+      border-radius:10px;
+      background:#fff;
+      color:#7a1b55;
+      text-decoration:none;
+      font-weight:bold;
+      box-shadow:0 4px 12px rgba(0,0,0,0.08);
+    }
+    .letras a:hover{
+      background:#fff0f6;
+    }
+    .topo-btn{
+      position:fixed;
+      right:18px;
+      bottom:18px;
+      z-index:20;
+      display:none;
+      padding:12px 14px;
+      border:none;
+      border-radius:999px;
+      background:#ff7eb3;
+      color:#fff;
+      font-weight:bold;
+      box-shadow:0 8px 18px rgba(0,0,0,0.18);
+      cursor:pointer;
+    }
+    .topo-btn:hover{
+      background:#b983ff;
+    }
+
   </style>
 </head>
 <body>
@@ -90,7 +234,43 @@
 
 <main>
   <h1>Todos os Doramas</h1>
+  <p class="topo-info">Aqui você encontra todos os doramas cadastrados no Planeta Dorama. Para deixar a página mais rápida e organizada, a lista agora mostra <strong>60 doramas por vez</strong>.</p>
+  <p class="resumo-lista" id="resumoLista"></p>
+
+  <div class="barra-utilidades">
+    <input type="text" id="buscaLocal" class="busca-local" placeholder="Buscar dorama pelo nome...">
+    <select id="filtroGenero" class="filtro-genero">
+      <option value="">Todos os gêneros</option>
+      <option value="romance">Romance</option>
+      <option value="triste">Triste</option>
+      <option value="alegre">Leve / Alegre</option>
+      <option value="comedia">Comédia</option>
+      <option value="fantasia">Fantasia</option>
+      <option value="suspense">Suspense</option>
+      <option value="terror">Terror</option>
+      <option value="historico">Histórico</option>
+      <option value="escolar">Escolar</option>
+      <option value="acao">Ação</option>
+      <option value="vinganca">Vingança</option>
+    </select>
+  </div>
+
+  <div class="letras" id="letrasFiltro"></div>
+
   <div class="grid" id="lista"></div>
+  <div class="paginacao" id="paginacao"></div>
+
+  <section class="links-finais">
+    <h2>Explore também</h2>
+    <p>Se você quer descobrir novos doramas além da lista completa, estas páginas podem te ajudar a encontrar algo mais rápido:</p>
+    <div class="links-grid">
+      <a href="listas/30-melhores-doramas-coreanos.html">🏆 Melhores Doramas Coreanos</a>
+      <a href="listas/melhores-doramas-romance.html">💖 Doramas de Romance</a>
+      <a href="listas/doramas-de-suspense.html">🕵️ Doramas de Suspense</a>
+      <a href="listas/doramas-escolares.html">🏫 Doramas Escolares</a>
+      <a href="descubra.html">🤖 Descubra um Dorama</a>
+    </div>
+  </section>
 </main>
 
 <footer>
@@ -131,11 +311,62 @@
       .replace(/(^-|-$)/g, "");
   }
 
+  function paginaAtual(){
+    const params = new URLSearchParams(window.location.search);
+    const p = parseInt(params.get("page") || "1", 10);
+    return isNaN(p) || p < 1 ? 1 : p;
+  }
+
+  function renderPaginacao(totalPaginas, atual){
+    const box = document.getElementById("paginacao");
+    if(!box) return;
+    box.innerHTML = "";
+
+    if(totalPaginas <= 1) return;
+
+    if(atual > 1){
+      box.innerHTML += `<a href="todos.html?page=${atual - 1}">← Página anterior</a>`;
+    }
+
+    const inicio = Math.max(1, atual - 2);
+    const fim = Math.min(totalPaginas, atual + 2);
+
+    for(let i = inicio; i <= fim; i++){
+      box.innerHTML += `<a class="page-num ${i === atual ? "ativo" : ""}" href="todos.html?page=${i}">${i}</a>`;
+    }
+
+    if(atual < totalPaginas){
+      box.innerHTML += `<a href="todos.html?page=${atual + 1}">Próxima página →</a>`;
+    }
+  }
+
   function carregarTodos(){
     const container = document.getElementById("lista");
+    const resumo = document.getElementById("resumoLista");
     if(!Array.isArray(doramas)) return;
 
-    container.innerHTML = doramas.map(d => {
+    const porPagina = 60;
+    const atual = paginaAtual();
+    
+    // ordenar alfabeticamente pelo nome antes de paginar
+    const doramasOrdenados = [...doramas].sort((a,b)=>{
+      const n1 = (a.nome || "").toLowerCase();
+      const n2 = (b.nome || "").toLowerCase();
+      return n1.localeCompare(n2,'pt-BR');
+    });
+
+    const total = doramasOrdenados.length;
+
+    const totalPaginas = Math.max(1, Math.ceil(total / porPagina));
+    const pagina = Math.min(atual, totalPaginas);
+
+    const inicio = (pagina - 1) * porPagina;
+    const fim = Math.min(inicio + porPagina, total);
+    const visiveis = doramasOrdenados.slice(inicio, fim);
+
+    resumo.textContent = `Mostrando ${inicio + 1} até ${fim} de ${total} doramas cadastrados.`;
+
+    container.innerHTML = visiveis.map(d => {
       const slug = d.slug || criarSlugLocal(d.nome, d.nomeEN);
       const url = "doramas/" + slug + ".html";
       return `
@@ -148,10 +379,13 @@
         </div>
       `;
     }).join("");
+
+    renderPaginacao(totalPaginas, pagina);
   }
 
   window.onload = carregarTodos;
 </script>
 
+<button id="btnTopo" class="topo-btn" onclick="window.scrollTo({top:0, behavior:'smooth'})">⬆ Topo</button>
 </body>
 </html>
