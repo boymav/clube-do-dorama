@@ -362,6 +362,53 @@
     .critica-grid{
       align-items:start;
     }
+    .critica-pessoal{
+      position:relative;
+      padding-top:6px;
+    }
+    .critica-selo{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:7px 12px;
+      border-radius:999px;
+      background:linear-gradient(90deg, rgba(255,126,179,0.16), rgba(185,131,255,0.16));
+      color:#7a1b55;
+      font-size:12px;
+      font-weight:bold;
+      letter-spacing:.04em;
+      text-transform:uppercase;
+      margin-bottom:10px;
+      border:1px solid rgba(0,0,0,0.06);
+    }
+    .critica-box{
+      position:relative;
+      padding:14px 16px 14px 18px;
+      border-radius:18px;
+      background:linear-gradient(135deg, rgba(255,126,179,0.07), rgba(185,131,255,0.08));
+      border-left:5px solid #ff7eb3;
+      box-shadow: inset 0 0 0 1px rgba(0,0,0,0.04);
+    }
+    .critica-box::before{
+      content:"“";
+      position:absolute;
+      top:-8px;
+      left:10px;
+      font-size:52px;
+      line-height:1;
+      color:rgba(255,126,179,0.25);
+      font-weight:bold;
+    }
+    .critica-box p{
+      position:relative;
+      z-index:1;
+    }
+    .critica-aviso{
+      margin-top:10px;
+      font-size:12px;
+      color:#7a1b55;
+      opacity:.9;
+    }
     .lista-gostos strong{
       display:block;
       margin:14px 0 8px;
@@ -502,19 +549,21 @@
       <p>Kim Mo Mi sonha em ser famosa, mas sofre por não se encaixar nos padrões de beleza.<br>À noite, ela assume outra identidade na internet usando uma máscara.<br><br>Quando sua vida dupla sai do controle, tudo muda de forma violenta.<br>O dorama tem poucos episódios, clima pesado e várias viradas de roteiro.<br><br>É uma boa pedida para quem quer um dorama curto, diferente e muito comentado.</p>
     </div>
     
-    <div class="bloco">
-      <h2>👥 Elenco de Mask Girl</h2>
-      <p>O elenco de Mask Girl reúne atores que ajudam bastante a dar peso emocional e personalidade para a história. Em doramas coreanos, o carisma dos personagens costuma fazer muita diferença, e isso também influencia bastante em como o público se apega à série.</p>
-      <p><strong>Lee Han-byeol</strong> aparece entre os nomes mais lembrados do elenco e ajuda bastante a carregar a história.<strong>Nana</strong> também participa com presença importante e costuma chamar atenção em vários momentos do dorama.<strong>Go Hyun-jung</strong> completa o núcleo principal com um papel que ajuda a construir melhor a trama.</p>
-      <p>Para muita gente, conhecer os atores de um dorama ajuda até na hora de decidir se vale a pena assistir. Quando o elenco funciona bem, a história costuma ficar muito mais marcante.</p>
-    </div>
+      <div class="bloco">
+        <h2>👥 Elenco de Mask Girl</h2>
+        <p>O elenco de Mask Girl reúne nomes como Lee Han-byeol, Nana, Go Hyun-jung, que ajudam bastante a dar mais peso e carisma para a história.</p><p></p><p>Além dos protagonistas, Ahn Jae-hong também aparece entre os nomes importantes do dorama e reforça bem o núcleo principal.</p><p></p><p>Yeom Hye-ran completa o time de atores mais lembrados e ajuda a construir melhor a atmosfera da série.</p><p></p><p>Em histórias mais tensas, um elenco convincente ajuda muito a manter o clima de mistério e a fazer cada conflito parecer mais forte.</p>
+      </div>
   </section>
 
   
     <section class="colunas critica-grid">
-      <div class="bloco">
+      <div class="bloco critica-pessoal">
         <h2>💬 Crítica do Planeta Dorama</h2>
-        <p><strong>Crítica do Planeta Dorama:</strong> Mask Girl chama atenção porque trabalha intenso, suspense, drama de forma acessível e consegue manter o interesse sem parecer forçado. À noite, ela assume outra identidade na internet usando uma máscara.</p><p>Na prática, é o tipo de dorama que funciona melhor quando o espectador entra no clima da proposta e se envolve com os personagens. É uma boa escolha para quem procura uma história envolvente e personagens marcantes.</p>
+        <div class="critica-selo">Opinião mais humana do dorama</div>
+        <div class="critica-box">
+          <p><strong>Crítica do Planeta Dorama:</strong> Mask Girl é um dorama que prende mais pelo clima de tensão, mistério e curiosidade sobre o que vai acontecer em seguida.</p><p></p><p>A proposta da história já chama atenção logo no começo: Kim Mo Mi sonha em ser famosa, mas sofre por não se encaixar nos padrões de beleza. À noite, ela assume outra identidade na internet usando uma máscara.</p><p></p><p>O que ajuda bastante é a sensação de peso emocional em vários momentos, o que deixa a experiência mais forte para quem gosta de tramas marcantes.</p><p></p><p>Entre os fãs, é um título que costuma ser lembrado como uma opção forte dentro do seu estilo.</p>
+        </div>
+        <div class="critica-aviso">✨ Aqui a ideia é comentar o dorama de um jeito mais pessoal, e não só repetir a sinopse.</div>
       </div>
       <div class="bloco">
         <h2>✨ Guia rápido</h2>
@@ -585,21 +634,21 @@
       <h2>Recomendados para você</h2>
       <div class="rec-grid">
         
+        <a class="rec-card" href="/doramas/crash-course-in-romance.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/crash%20course.webp" alt="Crash Course in Romance" loading="lazy">
+          <div class="rec-title">Crash Course in Romance</div>
+        </a>
         <a class="rec-card" href="/doramas/crash-landing-on-you.html">
           <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/crash-landing.jpg" alt="Pousando no Amor (Crash Landing on You)" loading="lazy">
           <div class="rec-title">Pousando no Amor (Crash Landing on You)</div>
         </a>
-        <a class="rec-card" href="/doramas/my-mister.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/my%20mister.jfif" alt="My Mister" loading="lazy">
-          <div class="rec-title">My Mister</div>
+        <a class="rec-card" href="/doramas/my-liberation-notes.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/my%20liberation%20notes.webp" alt="My Liberation Notes" loading="lazy">
+          <div class="rec-title">My Liberation Notes</div>
         </a>
-        <a class="rec-card" href="/doramas/the-devil-judge.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/the%20devil%20judge.jpg" alt="The Devil Judge" loading="lazy">
-          <div class="rec-title">The Devil Judge</div>
-        </a>
-        <a class="rec-card" href="/doramas/arthdal-chronicles.html">
-          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/arthdal%20chronicles.jpg" alt="Arthdal Chronicles" loading="lazy">
-          <div class="rec-title">Arthdal Chronicles</div>
+        <a class="rec-card" href="/doramas/doctor-stranger.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/doctor%20stranger.webp" alt="Doctor Stranger" loading="lazy">
+          <div class="rec-title">Doctor Stranger</div>
         </a>
       </div>
     </section>
