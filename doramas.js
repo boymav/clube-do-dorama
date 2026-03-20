@@ -3614,8 +3614,9 @@ Além dos protagonistas, Jo Sung-ha também aparece entre os nomes importantes d
 Kim Kap-soo completa o time de atores mais lembrados e ajuda a construir melhor a atmosfera de poder e conspiração.
 
 Em um dorama de ação com intriga política, o elenco precisa sustentar tanto o confronto físico quanto a tensão entre os personagens, e isso pesa muito no resultado final.`
-},
-];function criarSlug(nome, nomeEN) {
+}
+];
+function criarSlug(nome, nomeEN) {
   const base = nomeEN || nome;
   return String(base || "")
     .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
