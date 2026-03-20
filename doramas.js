@@ -3579,7 +3579,7 @@ Além dos protagonistas, Park Joo-hee também aparece entre os nomes importantes
 Lee Joo-seung completa o time de atores mais lembrados e ajuda a construir melhor a atmosfera da série.
 
 Em histórias mais tensas, um elenco convincente ajuda muito a manter o clima de mistério e a fazer cada conflito parecer mais forte.`
-}
+},
 {
  nome:"The K2",
  nomePT:"The K2",
