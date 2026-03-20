@@ -3580,6 +3580,41 @@ Lee Joo-seung completa o time de atores mais lembrados e ajuda a construir melho
 
 Em histórias mais tensas, um elenco convincente ajuda muito a manter o clima de mistério e a fazer cada conflito parecer mais forte.`
 }
+{
+ nome:"The K2",
+ nomePT:"The K2",
+ nomeEN:"The K2",
+ tags:["acao","crime","romance","intenso"],
+ nota:"8.0/10 – MyDramaList",
+ elenco:["Ji Chang-wook", "Yoona", "Song Yoon-ah", "Jo Sung-ha", "Kim Kap-soo"],
+ descricao:"Um ex-soldado se torna guarda-costas em meio a disputas políticas e conspirações.\nAção intensa, perseguição e clima de perigo constante.",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/the-k2.jpg",
+ trailer:"https://www.youtube.com/embed/sfN7f8mA5Qg",
+ resumo:`Kim Je Ha é um ex-soldado habilidoso que acaba entrando no mundo perigoso da política.
+Ele vira guarda-costas de uma família poderosa e passa a se envolver em conspirações, corrupção e jogos de poder.
+
+Ao mesmo tempo, cruza o caminho de Go Anna, uma jovem isolada e vulnerável.
+Entre perseguições, traições e interesses escondidos, a história cresce com bastante tensão.
+
+O dorama aposta forte em cenas de ação, lutas e confronto físico.
+É uma boa escolha para quem gosta de guarda-costas, política, romance e ação coreana com ritmo intenso.`,
+ criticaHumana:`The K2 funciona melhor para quem gosta de ação mais clássica, com guarda-costas, perseguição, conspiração e bastante confronto físico.
+
+O que mais chama atenção é justamente a presença do protagonista nas cenas de luta. É um dorama que entrega bem esse lado mais explosivo e visual.
+
+Também gosto do clima de perigo constante, porque isso faz a história andar e mantém o interesse em alta.
+
+Ao mesmo tempo, o romance divide mais opiniões e nem sempre é a parte mais forte da trama. Em geral, o que segura a série mesmo é a ação e o jogo político.
+
+No geral, é uma boa escolha para quem quer um dorama com mais combate, tensão e clima de thriller político.`,
+ elencoInfo:`O elenco de The K2 reúne nomes como Ji Chang-wook, Yoona, Song Yoon-ah, que ajudam bastante a dar mais peso e presença para a história.
+
+Além dos protagonistas, Jo Sung-ha também aparece entre os nomes importantes do dorama e reforça bem o lado político da trama.
+
+Kim Kap-soo completa o time de atores mais lembrados e ajuda a construir melhor a atmosfera de poder e conspiração.
+
+Em um dorama de ação com intriga política, o elenco precisa sustentar tanto o confronto físico quanto a tensão entre os personagens, e isso pesa muito no resultado final.`
+},
 ];function criarSlug(nome, nomeEN) {
   const base = nomeEN || nome;
   return String(base || "")
