@@ -1841,36 +1841,6 @@ Kim Eui-sung completa o time de atores mais lembrados e ajuda a construir melhor
 Em um dorama com foco romântico, a química entre os atores faz muita diferença, e isso costuma influenciar bastante em como o público se apega ao casal.`
 },
 {
- nome:"Youth of May",
- tags:["romance","triste"],
- nota:"8.8/10 – MyDramaList",
- elenco:["Lee Do-hyun", "Go Min-si", "Lee Sang-yi", "Geum Sae-rok", "Oh Man-seok"],
- descricao:"Amor em meio a um momento histórico.\nEscolhas difíceis e dor.\nMuito emocionante.",
- imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/youth%20of%20may.webp",
- trailer:"https://www.youtube.com/embed/FU3i94Jl_z0",
- resumo:`Durante o levante de Gwangju,
-um estudante de medicina conhece uma enfermeira.
-
-O amor deles cresce rapidamente.
-Mas a realidade política ameaça tudo.
-
-É intenso e doloroso.
-Uma história de amor em tempos difíceis.`
-,
- criticaHumana:`Juventude de Maio costuma funcionar muito bem para quem gosta de romance com bastante emoção, personagens marcantes e uma história que deixa sentimento depois do fim.
-
-A proposta da história já chama atenção logo no começo: Ambientado em 1980 durante o levante de Gwangju, Youth of May conta a história de Hwang Hee Tae, um estudante de medicina brilhante e cheio de sonhos, e Kim Myung Hee, uma enfermeira determinada que luta para sobreviver. Os dois acabam se conhecendo de forma inesperada e começam um romance em meio a um período extremamente turbulento da história da Coreia.
-
-É o tipo de dorama que costuma tocar mais quando o espectador entra no clima emocional da história e se apega aos personagens.
-
-Entre os fãs, é um título que costuma ser lembrado como uma opção forte dentro do seu estilo.`,
- elencoInfo:`O elenco de Juventude de Maio reúne nomes como Lee Do-hyun, Go Min-si, Lee Sang-yi, que ajudam bastante a dar mais peso e carisma para a história.
-
-Além dos protagonistas, Geum Sae-rok também aparece entre os nomes importantes do dorama e reforça bem o núcleo principal.
-
-Em um dorama com foco romântico, a química entre os atores faz muita diferença, e isso costuma influenciar bastante em como o público se apega ao casal.`
-},
-{
  nome:"Rookie Historian Goo Hae Ryung",
  tags:["romance","alegre"],
  nota:"8.3/10 – MyDramaList",
