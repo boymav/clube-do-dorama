@@ -4021,6 +4021,42 @@ Lee Yul-eum também tem destaque em momentos importantes da trama.
 Park Hae-joon completa o grupo principal e ajuda a dar mais peso ao jogo psicológico entre os participantes.
 
 Em uma série baseada em convivência extrema, o elenco precisa transmitir pressão, incômodo e conflito o tempo todo, e isso pesa muito no resultado final.`
+},
+ {
+ nome:"Vagabond",
+ nomeEN:"Vagabond",
+ nomePT:"Vagabond",
+ tags:["acao","suspense","intenso","netflix"],
+ nota:"8.6/10 – MyDramaList",
+ elenco:["Lee Seung-gi", "Bae Suzy", "Shin Sung-rok", "Baek Yoon-sik", "Moon Sung-keun"],
+ descricao:"Um homem busca vingança após a morte do sobrinho.\nEle descobre uma grande conspiração.\nAção, perseguições e tensão do começo ao fim.",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/vagabond.jpg",
+ trailer:"https://www.youtube.com/embed/ZOLiA9C9nQE",
+ resumo:`Cha Dal-geon é um dublê que perde o sobrinho em um misterioso acidente de avião.
+
+Desconfiado da versão oficial, ele começa a investigar e acaba descobrindo uma grande conspiração envolvendo corrupção, política e interesses poderosos.
+
+Ao longo da história, ele se junta a uma agente do governo e mergulha em uma trama cheia de perseguições, traições e reviravoltas.
+
+Cada episódio traz novas revelações, aumentando ainda mais a tensão.
+
+Vagabond é um dorama cheio de ação, com cenas intensas e uma história que prende do começo ao fim.`,
+ criticaHumana:`Vagabond é um dorama que impressiona principalmente pelas cenas de ação. As perseguições e lutas são muito bem feitas e dão um ar de série internacional.
+
+A história também é envolvente, cheia de mistérios e reviravoltas que fazem você querer continuar assistindo.
+
+O protagonista tem um desenvolvimento forte, passando de alguém comum para alguém totalmente envolvido em uma trama perigosa.
+
+Em alguns momentos a história pode parecer exagerada, mas isso faz parte da proposta.
+
+No geral, é um dorama muito viciante e perfeito para quem gosta de ação intensa.`,
+ elencoInfo:`O elenco de Vagabond conta com Lee Seung-gi no papel principal, trazendo intensidade e carisma para o personagem.
+
+Bae Suzy também se destaca como agente do governo, equilibrando bem ação e emoção.
+
+Shin Sung-rok aparece como uma figura importante dentro da trama, ajudando a desenvolver o lado político da história.
+
+Baek Yoon-sik e Moon Sung-keun completam o elenco com atuações sólidas, deixando a história ainda mais envolvente.`
 }
 ];
 function criarSlug(nome, nomeEN) {
