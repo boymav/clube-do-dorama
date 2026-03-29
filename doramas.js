@@ -3917,7 +3917,7 @@ O conjunto do elenco ajuda a deixar a experiência ainda mais envolvente.`
  nota:"8.6/10 – MyDramaList",
  elenco:["Kento Yamazaki", "Tao Tsuchiya", "Nijiro Murakami", "Aya Asahina", "Dori Sakurada"],
  descricao:"Jovens são levados para uma versão vazia de Tóquio.\nEles precisam vencer jogos mortais para sobreviver.\nTenso, inteligente e viciante.",
- imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/alice-in-borderland.jpg",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/alice%20in%20borderland.webp",
  trailer:"https://www.youtube.com/embed/4sUN2dJ8JE0",
  resumo:`Arisu é um jovem sem rumo que, de repente, vai parar em uma Tóquio vazia e misteriosa.
 Lá, ele descobre que precisa participar de jogos mortais para continuar vivo.
@@ -3955,7 +3955,7 @@ Em uma história de sobrevivência, um elenco convincente faz muita diferença, 
  nota:"7.9/10 – MyDramaList",
  elenco:["Yoo Ah-in", "Kim Hyun-joo", "Park Jeong-min", "Won Jin-ah", "Yang Ik-june"],
  descricao:"Criaturas sobrenaturais começam a condenar pessoas ao inferno.\nO caos toma conta da sociedade.\nSombrio, tenso e cheio de crítica social.",
- imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/hellbound.jpg",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/hellbound.webp",
  trailer:"https://www.youtube.com/embed/UFm1q8Dz4nY",
  resumo:`Em um mundo aparentemente normal, seres sobrenaturais começam a aparecer para anunciar o dia da condenação de algumas pessoas.
 Quando a data chega, criaturas violentas surgem e executam a punição em público.
@@ -3993,7 +3993,7 @@ Quando a história depende tanto de impacto emocional e crítica social, atuaç�
  nota:"7.4/10 – MyDramaList",
  elenco:["Ryu Jun-yeol", "Chun Woo-hee", "Park Jeong-min", "Lee Yul-eum", "Park Hae-joon"],
  descricao:"Oito pessoas entram em um jogo estranho onde o tempo vale dinheiro.\nQuanto mais ficam, mais lucram.\nTensão psicológica e crítica social.",
- imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/the-8-show.jpg",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/the%208%20show.jpg",
  trailer:"https://www.youtube.com/embed/7-iYxGLpQzo",
  resumo:`Oito pessoas com problemas financeiros aceitam participar de um reality misterioso.
 Presas em um prédio, elas descobrem que o tempo rende dinheiro, mas cada andar tem regras e vantagens diferentes.
