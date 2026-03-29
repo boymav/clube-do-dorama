@@ -4030,7 +4030,7 @@ Em uma série baseada em convivência extrema, o elenco precisa transmitir press
  nota:"8.6/10 – MyDramaList",
  elenco:["Lee Seung-gi", "Bae Suzy", "Shin Sung-rok", "Baek Yoon-sik", "Moon Sung-keun"],
  descricao:"Um homem busca vingança após a morte do sobrinho.\nEle descobre uma grande conspiração.\nAção, perseguições e tensão do começo ao fim.",
- imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/vagabond.jpg",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/vagabond.webp",
  trailer:"https://www.youtube.com/embed/ZOLiA9C9nQE",
  resumo:`Cha Dal-geon é um dublê que perde o sobrinho em um misterioso acidente de avião.
 
