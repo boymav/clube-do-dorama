@@ -3804,7 +3804,7 @@ Em histórias mais tensas, um elenco convincente ajuda muito a manter o clima de
  nota:"8.0/10 – MyDramaList",
  elenco:["Ji Chang-wook", "Yoona", "Song Yoon-ah", "Jo Sung-ha", "Kim Kap-soo"],
  descricao:"Um ex-soldado se torna guarda-costas em meio a disputas políticas e conspirações.\nAção intensa, perseguição e clima de perigo constante.",
- imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/the-k2.jpg",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/k2.webp",
  trailer:"https://www.youtube.com/embed/sfN7f8mA5Qg",
  resumo:`Kim Je Ha é um ex-soldado habilidoso que acaba entrando no mundo perigoso da política.
 Ele vira guarda-costas de uma família poderosa e passa a se envolver em conspirações, corrupção e jogos de poder.
