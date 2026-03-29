@@ -3830,8 +3830,7 @@ Além dos protagonistas, Jo Sung-ha também aparece entre os nomes importantes d
 Kim Kap-soo completa o time de atores mais lembrados e ajuda a construir melhor a atmosfera de poder e conspiração.
 
 Em um dorama de ação com intriga política, o elenco precisa sustentar tanto o confronto físico quanto a tensão entre os personagens, e isso pesa muito no resultado final.`
-}
-,{
+},{
  nome:"Round 6 (Squid Game)",
  nomeEN:"Squid Game",
  nomePT:"Round 6",
@@ -3870,8 +3869,8 @@ Além dos protagonistas, Jung Ho-yeon também ganhou destaque mundial com sua at
 Heo Sung-tae completa o elenco principal com um personagem marcante e intenso.
 
 A atuação forte dos personagens é um dos pontos que mais contribuem para o sucesso do dorama.`
-}
-,{
+},
+{
  nome:"Estamos Mortos (All of Us Are Dead)",
  nomeEN:"All of Us Are Dead",
  nomePT:"Estamos Mortos",
@@ -3909,17 +3908,15 @@ Lomon também se destaca bastante ao longo do dorama.
 Yoo In-soo completa o grupo com um personagem marcante e imprevisível.
 
 O conjunto do elenco ajuda a deixar a experiência ainda mais envolvente.`
-}
-,{
+},
+{
  nome:"Alice in Borderland",
  nomeEN:"Alice in Borderland",
  nomePT:"Alice in Borderland",
  tags:["intenso","suspense","netflix"],
  nota:"8.6/10 – MyDramaList",
  elenco:["Kento Yamazaki", "Tao Tsuchiya", "Nijiro Murakami", "Aya Asahina", "Dori Sakurada"],
- descricao:"Jovens são levados para uma versão vazia de Tóquio.
-Eles precisam vencer jogos mortais para sobreviver.
-Tenso, inteligente e viciante.",
+ descricao:"Jovens são levados para uma versão vazia de Tóquio.\nEles precisam vencer jogos mortais para sobreviver.\nTenso, inteligente e viciante.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/alice-in-borderland.jpg",
  trailer:"https://www.youtube.com/embed/4sUN2dJ8JE0",
  resumo:`Arisu é um jovem sem rumo que, de repente, vai parar em uma Tóquio vazia e misteriosa.
@@ -3940,6 +3937,7 @@ O que mais chama atenção é a criatividade dos jogos. Eles não dependem só d
 Os personagens também ajudam bastante. Conforme a história avança, você vai entendendo melhor os medos e os limites de cada um.
 
 Em alguns momentos a trama exagera um pouco, mas dentro da proposta funciona bem.
+
 No geral, é intenso, inteligente e muito fácil de maratonar.`,
  elencoInfo:`O elenco de Alice in Borderland reúne nomes como Kento Yamazaki, Tao Tsuchiya e Nijiro Murakami, que ajudam a dar mais força emocional para a história.
 
@@ -3948,17 +3946,15 @@ Além dos protagonistas, Aya Asahina também se destaca em vários momentos impo
 Dori Sakurada completa o grupo principal e ajuda a deixar a trama ainda mais tensa e imprevisível.
 
 Em uma história de sobrevivência, um elenco convincente faz muita diferença, porque o público precisa sentir o peso de cada escolha.`
-}
-,{
+},
+{
  nome:"Hellbound",
  nomeEN:"Hellbound",
  nomePT:"Hellbound",
  tags:["intenso","suspense","netflix"],
  nota:"7.9/10 – MyDramaList",
  elenco:["Yoo Ah-in", "Kim Hyun-joo", "Park Jeong-min", "Won Jin-ah", "Yang Ik-june"],
- descricao:"Criaturas sobrenaturais começam a condenar pessoas ao inferno.
-O caos toma conta da sociedade.
-Sombrio, tenso e cheio de crítica social.",
+ descricao:"Criaturas sobrenaturais começam a condenar pessoas ao inferno.\nO caos toma conta da sociedade.\nSombrio, tenso e cheio de crítica social.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/hellbound.jpg",
  trailer:"https://www.youtube.com/embed/UFm1q8Dz4nY",
  resumo:`Em um mundo aparentemente normal, seres sobrenaturais começam a aparecer para anunciar o dia da condenação de algumas pessoas.
@@ -3988,17 +3984,15 @@ Won Jin-ah também aparece em momentos importantes e reforça bem o lado humano 
 Yang Ik-june completa o núcleo principal e ajuda a sustentar o clima tenso ao longo dos episódios.
 
 Quando a história depende tanto de impacto emocional e crítica social, atuações fortes fazem toda a diferença.`
-}
-,{
+},
+{
  nome:"The 8 Show",
  nomeEN:"The 8 Show",
  nomePT:"The 8 Show",
  tags:["intenso","suspense","netflix"],
  nota:"7.4/10 – MyDramaList",
  elenco:["Ryu Jun-yeol", "Chun Woo-hee", "Park Jeong-min", "Lee Yul-eum", "Park Hae-joon"],
- descricao:"Oito pessoas entram em um jogo estranho onde o tempo vale dinheiro.
-Quanto mais ficam, mais lucram.
-Tensão psicológica e crítica social.",
+ descricao:"Oito pessoas entram em um jogo estranho onde o tempo vale dinheiro.\nQuanto mais ficam, mais lucram.\nTensão psicológica e crítica social.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/the-8-show.jpg",
  trailer:"https://www.youtube.com/embed/7-iYxGLpQzo",
  resumo:`Oito pessoas com problemas financeiros aceitam participar de um reality misterioso.
@@ -4028,7 +4022,6 @@ Park Hae-joon completa o grupo principal e ajuda a dar mais peso ao jogo psicol�
 
 Em uma série baseada em convivência extrema, o elenco precisa transmitir pressão, incômodo e conflito o tempo todo, e isso pesa muito no resultado final.`
 }
-
 ];
 function criarSlug(nome, nomeEN) {
   const base = nomeEN || nome;
