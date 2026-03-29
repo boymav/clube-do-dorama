@@ -3910,6 +3910,124 @@ Yoo In-soo completa o grupo com um personagem marcante e imprevisível.
 
 O conjunto do elenco ajuda a deixar a experiência ainda mais envolvente.`
 }
+,{
+ nome:"Alice in Borderland",
+ nomeEN:"Alice in Borderland",
+ nomePT:"Alice in Borderland",
+ tags:["intenso","suspense","netflix"],
+ nota:"8.6/10 – MyDramaList",
+ elenco:["Kento Yamazaki", "Tao Tsuchiya", "Nijiro Murakami", "Aya Asahina", "Dori Sakurada"],
+ descricao:"Jovens são levados para uma versão vazia de Tóquio.
+Eles precisam vencer jogos mortais para sobreviver.
+Tenso, inteligente e viciante.",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/alice-in-borderland.jpg",
+ trailer:"https://www.youtube.com/embed/4sUN2dJ8JE0",
+ resumo:`Arisu é um jovem sem rumo que, de repente, vai parar em uma Tóquio vazia e misteriosa.
+Lá, ele descobre que precisa participar de jogos mortais para continuar vivo.
+
+Cada jogo exige inteligência, coragem e sangue-frio.
+Ao lado de Usagi e outros sobreviventes, ele tenta entender quem está por trás de tudo.
+
+Conforme a história avança, os desafios ficam ainda mais perigosos e psicológicos.
+As alianças mudam, traições acontecem e cada decisão pode ser fatal.
+
+O dorama mistura suspense, ação e sobrevivência de forma muito envolvente.
+É uma ótima escolha para quem gostou de Round 6 e quer algo igualmente tenso e viciante.`,
+ criticaHumana:`Alice in Borderland é um dorama que prende muito pela sensação constante de perigo. Cada episódio dá vontade de continuar porque sempre parece que algo pior pode acontecer.
+
+O que mais chama atenção é a criatividade dos jogos. Eles não dependem só de força, mas também de estratégia, raciocínio e controle emocional.
+
+Os personagens também ajudam bastante. Conforme a história avança, você vai entendendo melhor os medos e os limites de cada um.
+
+Em alguns momentos a trama exagera um pouco, mas dentro da proposta funciona bem.
+No geral, é intenso, inteligente e muito fácil de maratonar.`,
+ elencoInfo:`O elenco de Alice in Borderland reúne nomes como Kento Yamazaki, Tao Tsuchiya e Nijiro Murakami, que ajudam a dar mais força emocional para a história.
+
+Além dos protagonistas, Aya Asahina também se destaca em vários momentos importantes.
+
+Dori Sakurada completa o grupo principal e ajuda a deixar a trama ainda mais tensa e imprevisível.
+
+Em uma história de sobrevivência, um elenco convincente faz muita diferença, porque o público precisa sentir o peso de cada escolha.`
+}
+,{
+ nome:"Hellbound",
+ nomeEN:"Hellbound",
+ nomePT:"Hellbound",
+ tags:["intenso","suspense","netflix"],
+ nota:"7.9/10 – MyDramaList",
+ elenco:["Yoo Ah-in", "Kim Hyun-joo", "Park Jeong-min", "Won Jin-ah", "Yang Ik-june"],
+ descricao:"Criaturas sobrenaturais começam a condenar pessoas ao inferno.
+O caos toma conta da sociedade.
+Sombrio, tenso e cheio de crítica social.",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/hellbound.jpg",
+ trailer:"https://www.youtube.com/embed/UFm1q8Dz4nY",
+ resumo:`Em um mundo aparentemente normal, seres sobrenaturais começam a aparecer para anunciar o dia da condenação de algumas pessoas.
+Quando a data chega, criaturas violentas surgem e executam a punição em público.
+
+O fenômeno espalha medo, fanatismo e desespero.
+Enquanto parte da população trata tudo como justiça divina, outros tentam descobrir a verdade por trás dos acontecimentos.
+
+O dorama mostra como a sociedade muda diante do medo coletivo.
+Também critica manipulação, religião extremista e histeria social.
+
+É uma história pesada, inquietante e cheia de tensão.
+Perfeita para quem gosta de suspense com crítica social forte.`,
+ criticaHumana:`Hellbound tem uma proposta muito diferente e isso já chama atenção logo no começo. Não é só sobre criaturas sobrenaturais, mas sobre como as pessoas reagem ao medo.
+
+O que mais gostei foi o clima sombrio e desconfortável. A série consegue passar uma sensação constante de caos e tensão.
+
+Também é interessante como a história critica fanatismo e manipulação social.
+Em vários momentos, o mais assustador nem são os monstros, mas o comportamento humano.
+
+Não é um dorama feito para relaxar. É mais pesado e perturbador.
+Mesmo assim, para quem gostou do lado social de Round 6, funciona muito bem.`,
+ elencoInfo:`O elenco de Hellbound reúne nomes como Yoo Ah-in, Kim Hyun-joo e Park Jeong-min, que ajudam a dar mais peso para a história.
+
+Won Jin-ah também aparece em momentos importantes e reforça bem o lado humano da trama.
+
+Yang Ik-june completa o núcleo principal e ajuda a sustentar o clima tenso ao longo dos episódios.
+
+Quando a história depende tanto de impacto emocional e crítica social, atuações fortes fazem toda a diferença.`
+}
+,{
+ nome:"The 8 Show",
+ nomeEN:"The 8 Show",
+ nomePT:"The 8 Show",
+ tags:["intenso","suspense","netflix"],
+ nota:"7.4/10 – MyDramaList",
+ elenco:["Ryu Jun-yeol", "Chun Woo-hee", "Park Jeong-min", "Lee Yul-eum", "Park Hae-joon"],
+ descricao:"Oito pessoas entram em um jogo estranho onde o tempo vale dinheiro.
+Quanto mais ficam, mais lucram.
+Tensão psicológica e crítica social.",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/the-8-show.jpg",
+ trailer:"https://www.youtube.com/embed/7-iYxGLpQzo",
+ resumo:`Oito pessoas com problemas financeiros aceitam participar de um reality misterioso.
+Presas em um prédio, elas descobrem que o tempo rende dinheiro, mas cada andar tem regras e vantagens diferentes.
+
+No começo, tudo parece apenas estranho.
+Com o passar do tempo, a convivência piora e o jogo revela um lado cruel.
+
+A disputa por dinheiro e poder muda completamente o comportamento dos participantes.
+Humilhação, manipulação e violência psicológica passam a dominar a história.
+
+The 8 Show é um dorama que lembra Round 6 pelo lado social e pela crítica ao desespero humano.
+É tenso, desconfortável e cheio de momentos que fazem pensar.`,
+ criticaHumana:`The 8 Show é aquele tipo de série que incomoda de propósito. A proposta é simples, mas vai ficando cada vez mais pesada conforme os episódios avançam.
+
+O que mais chama atenção é a crítica social. A história mostra como dinheiro, poder e desigualdade mudam totalmente a forma como as pessoas se tratam.
+
+Também gostei da tensão psicológica. Não depende tanto de ação física, mas sim da pressão entre os personagens.
+
+Não é uma série fácil ou leve. Em alguns momentos, o clima fica bem desconfortável.
+Mesmo assim, para quem quer algo no estilo de Round 6, é uma escolha bem forte.`,
+ elencoInfo:`O elenco de The 8 Show reúne nomes como Ryu Jun-yeol, Chun Woo-hee e Park Jeong-min, que ajudam bastante a sustentar a tensão da história.
+
+Lee Yul-eum também tem destaque em momentos importantes da trama.
+
+Park Hae-joon completa o grupo principal e ajuda a dar mais peso ao jogo psicológico entre os participantes.
+
+Em uma série baseada em convivência extrema, o elenco precisa transmitir pressão, incômodo e conflito o tempo todo, e isso pesa muito no resultado final.`
+}
 
 ];
 function criarSlug(nome, nomeEN) {
