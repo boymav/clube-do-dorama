@@ -3838,7 +3838,7 @@ Em um dorama de ação com intriga política, o elenco precisa sustentar tanto o
  nota:"8.0/10 – MyDramaList",
  elenco:["Lee Jung-jae", "Park Hae-soo", "Wi Ha-joon", "Jung Ho-yeon", "Heo Sung-tae"],
  descricao:"Pessoas endividadas participam de jogos mortais por dinheiro.\nCada rodada elimina quem perde.\nTensão, crítica social e sobrevivência.",
- imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/squid-game.jpg",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/round%206.jpg",
  trailer:"https://www.youtube.com/embed/oqxAJKy0ii4",
  resumo:`Centenas de pessoas com dificuldades financeiras recebem um convite misterioso para participar de uma competição.
 
@@ -3878,7 +3878,7 @@ A atuação forte dos personagens é um dos pontos que mais contribuem para o su
  nota:"8.4/10 – MyDramaList",
  elenco:["Park Ji-hu", "Yoon Chan-young", "Cho Yi-hyun", "Lomon", "Yoo In-soo"],
  descricao:"Um surto zumbi toma conta de uma escola.\nEstudantes lutam para sobreviver.\nTenso, rápido e cheio de ação.",
- imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/all-of-us-are-dead.jpg",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/all%20of%20us%20are%20dead.jfif",
  trailer:"https://www.youtube.com/embed/IN5TD4VRcSM",
  resumo:`Uma escola comum se transforma em um verdadeiro pesadelo quando um vírus começa a se espalhar rapidamente.
 
