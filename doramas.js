@@ -3805,7 +3805,7 @@ Em histórias mais tensas, um elenco convincente ajuda muito a manter o clima de
  elenco:["Ji Chang-wook", "Yoona", "Song Yoon-ah", "Jo Sung-ha", "Kim Kap-soo"],
  descricao:"Um ex-soldado se torna guarda-costas em meio a disputas políticas e conspirações.\nAção intensa, perseguição e clima de perigo constante.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/k2.webp",
- trailer:"https://www.youtube.com/embed/sfN7f8mA5Qg",
+ trailer:"https://www.youtube.com/embed/U6GELNX7Y94",
  resumo:`Kim Je Ha é um ex-soldado habilidoso que acaba entrando no mundo perigoso da política.
 Ele vira guarda-costas de uma família poderosa e passa a se envolver em conspirações, corrupção e jogos de poder.
 
@@ -3956,7 +3956,7 @@ Em uma história de sobrevivência, um elenco convincente faz muita diferença, 
  elenco:["Yoo Ah-in", "Kim Hyun-joo", "Park Jeong-min", "Won Jin-ah", "Yang Ik-june"],
  descricao:"Criaturas sobrenaturais começam a condenar pessoas ao inferno.\nO caos toma conta da sociedade.\nSombrio, tenso e cheio de crítica social.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/hellbound.webp",
- trailer:"https://www.youtube.com/embed/UFm1q8Dz4nY",
+ trailer:"https://www.youtube.com/embed/UWfgm20-LTM",
  resumo:`Em um mundo aparentemente normal, seres sobrenaturais começam a aparecer para anunciar o dia da condenação de algumas pessoas.
 Quando a data chega, criaturas violentas surgem e executam a punição em público.
 
@@ -4031,7 +4031,7 @@ Em uma série baseada em convivência extrema, o elenco precisa transmitir press
  elenco:["Lee Seung-gi", "Bae Suzy", "Shin Sung-rok", "Baek Yoon-sik", "Moon Sung-keun"],
  descricao:"Um homem busca vingança após a morte do sobrinho.\nEle descobre uma grande conspiração.\nAção, perseguições e tensão do começo ao fim.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/vagabond.webp",
- trailer:"https://www.youtube.com/embed/ZOLiA9C9nQE",
+ trailer:"https://www.youtube.com/embed/tyhnEHCUtv4",
  resumo:`Cha Dal-geon é um dublê que perde o sobrinho em um misterioso acidente de avião.
 
 Desconfiado da versão oficial, ele começa a investigar e acaba descobrindo uma grande conspiração envolvendo corrupção, política e interesses poderosos.
