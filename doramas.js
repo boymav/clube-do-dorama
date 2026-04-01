@@ -4066,8 +4066,8 @@ Baek Yoon-sik e Moon Sung-keun completam o elenco com atuações sólidas, deixa
  nota:"8.4/10 – MyDramaList",
  elenco:["Shin Hye-sun", "Kim Myung-soo", "Lee Dong-gun", "Kim Bo-mi", "Do Ji-won"],
  descricao:"Um anjo recebe a missão de ajudar uma bailarina a encontrar o amor.\nEla perdeu a fé nas pessoas após um acidente.\nRomance emocionante com fantasia.",
- imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/angels-last-mission.jpg",
- trailer:"https://www.youtube.com/embed/9Vx1d7zv4fA",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/angel%20last%20mission%20love.jpg",
+ trailer:"https://www.youtube.com/embed/2-DAxRaPPOE",
 
  resumo:`Dan é um anjo alegre que vive causando pequenos problemas no céu.
 Como punição, ele recebe uma missão: ajudar uma bailarina a encontrar o amor verdadeiro.
@@ -4108,8 +4108,8 @@ A química entre o casal é um dos pontos mais fortes do dorama e faz muita dife
  nota:"7.0/10 – MyDramaList",
  elenco:["Nam Joo-hyuk", "Shin Se-kyung", "Krystal Jung", "Im Joo-hwan", "Gong Myung"],
  descricao:"Um deus da água desce à Terra em busca de pedras sagradas.\nEle depende de uma humana para cumprir sua missão.\nFantasia com romance e conflitos.",
- imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/bride-of-the-water-god.jpg",
- trailer:"https://www.youtube.com/embed/3Z9Kz7GQp1Q",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/bride%20of%20the.jfif",
+ trailer:"https://www.youtube.com/embed/0NhVAvGcm3M",
 
  resumo:`Habaek é um deus da água que desce ao mundo humano em busca de pedras sagradas.
 Para isso, ele precisa da ajuda de uma psiquiatra destinada a servi-lo.
