@@ -4057,6 +4057,91 @@ Bae Suzy também se destaca como agente do governo, equilibrando bem ação e em
 Shin Sung-rok aparece como uma figura importante dentro da trama, ajudando a desenvolver o lado político da história.
 
 Baek Yoon-sik e Moon Sung-keun completam o elenco com atuações sólidas, deixando a história ainda mais envolvente.`
+},
+{
+ nome:"Angel’s Last Mission: Love",
+ nomeEN:"Angel’s Last Mission: Love",
+ nomePT:"A Última Missão do Anjo: Amor",
+ tags:["romance","fantasia","triste"],
+ nota:"8.4/10 – MyDramaList",
+ elenco:["Shin Hye-sun", "Kim Myung-soo", "Lee Dong-gun", "Kim Bo-mi", "Do Ji-won"],
+ descricao:"Um anjo recebe a missão de ajudar uma bailarina a encontrar o amor.\nEla perdeu a fé nas pessoas após um acidente.\nRomance emocionante com fantasia.",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/angels-last-mission.jpg",
+ trailer:"https://www.youtube.com/embed/9Vx1d7zv4fA",
+
+ resumo:`Dan é um anjo alegre que vive causando pequenos problemas no céu.
+Como punição, ele recebe uma missão: ajudar uma bailarina a encontrar o amor verdadeiro.
+
+Lee Yeon Seo é fria e distante, resultado de traumas do passado após perder a visão.
+Ela não acredita em amor e vive isolada.
+
+Quando os dois se encontram, suas vidas começam a mudar.
+O anjo, que não deveria se envolver emocionalmente, acaba se apaixonando.
+
+Entre segredos, destino e sacrifícios, o romance cresce de forma intensa.
+
+É uma história sobre amor, dor e redenção.`,
+
+ criticaHumana:`Esse dorama tem uma proposta bem emocional e consegue envolver bastante, principalmente pelo romance.
+
+O que mais se destaca é a química entre os protagonistas. A relação deles é intensa e faz você se apegar rápido à história.
+
+As cenas de dança e a trilha sonora também ajudam muito a criar uma atmosfera bonita e marcante.
+
+Por outro lado, a história perde um pouco de força na segunda metade. Algumas partes ficam arrastadas e com decisões meio previsíveis.
+
+Mesmo assim, é um dorama que funciona bem no lado emocional. Tem momentos que realmente tocam e deixam aquela sensação de romance forte e sofrido.`,
+
+ elencoInfo:`O elenco de Angel’s Last Mission: Love reúne nomes como Shin Hye-sun, Kim Myung-soo e Lee Dong-gun.
+
+A protagonista chama bastante atenção pela atuação emocional, principalmente nas cenas mais intensas.
+
+Já o protagonista consegue equilibrar bem momentos leves e dramáticos.
+
+A química entre o casal é um dos pontos mais fortes do dorama e faz muita diferença na experiência.`
+},
+ {
+ nome:"Bride of the Water God",
+ nomeEN:"Bride of the Water God",
+ nomePT:"A Noiva do Deus da Água",
+ tags:["romance","fantasia","triste"],
+ nota:"7.0/10 – MyDramaList",
+ elenco:["Nam Joo-hyuk", "Shin Se-kyung", "Krystal Jung", "Im Joo-hwan", "Gong Myung"],
+ descricao:"Um deus da água desce à Terra em busca de pedras sagradas.\nEle depende de uma humana para cumprir sua missão.\nFantasia com romance e conflitos.",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/bride-of-the-water-god.jpg",
+ trailer:"https://www.youtube.com/embed/3Z9Kz7GQp1Q",
+
+ resumo:`Habaek é um deus da água que desce ao mundo humano em busca de pedras sagradas.
+Para isso, ele precisa da ajuda de uma psiquiatra destinada a servi-lo.
+
+So Ah não acredita em deuses e vê tudo como absurdo.
+Mas acaba se envolvendo em uma realidade que não consegue explicar.
+
+Enquanto outros deuses também aparecem, conflitos começam a surgir.
+
+O romance entre humano e divindade se desenvolve em meio a dúvidas, poder e destino.
+
+É uma história de fantasia com foco em emoções e relações.`,
+
+ criticaHumana:`Esse dorama tem uma ideia interessante, principalmente por misturar deuses com o mundo moderno.
+
+No começo, a proposta chama atenção e cria curiosidade, mas a história não se desenvolve tão bem quanto poderia.
+
+Faltam explicações em vários momentos, o que deixa algumas partes confusas.
+
+As atuações são ok, mas não chegam a impressionar, e o protagonista não convence tanto em alguns momentos.
+
+Por outro lado, o visual e a trilha sonora são pontos positivos e ajudam a manter o interesse.
+
+No geral, é um dorama que tinha potencial maior, mas acaba sendo mais mediano, mesmo sendo agradável em algumas partes.`,
+
+ elencoInfo:`O elenco de Bride of the Water God reúne nomes como Nam Joo-hyuk e Shin Se-kyung.
+
+Os personagens têm propostas interessantes, mas nem todos são bem desenvolvidos.
+
+Alguns secundários acabam chamando mais atenção que os protagonistas.
+
+Ainda assim, o elenco cumpre seu papel dentro da proposta da história.`
 }
 ];
 function criarSlug(nome, nomeEN) {
