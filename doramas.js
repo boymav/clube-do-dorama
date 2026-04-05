@@ -4152,7 +4152,7 @@ Ainda assim, o elenco cumpre seu papel dentro da proposta da história.`
  elenco:["Kim Hye-soo", "Kim Mu-yeol", "Lee Sung-min", "Lee Jung-eun"],
  descricao:"Uma juíza fria e rigorosa começa a trabalhar em um tribunal juvenil.\nEla enfrenta casos pesados envolvendo menores criminosos.\nDrama intenso sobre justiça e consequências.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/juvenile%20justice.jpg",
- trailer:"https://www.youtube.com/embed/3pZ9m4X3x0I",
+ trailer:"https://www.youtube.com/embed/fp7BbXDd_7A",
 
  resumo:`Shim Eun-seok é uma juíza conhecida por odiar criminosos juvenis.
 Ela é designada para trabalhar em um tribunal especializado em menores.
