@@ -4143,21 +4143,44 @@ Alguns secundários acabam chamando mais atenção que os protagonistas.
 
 Ainda assim, o elenco cumpre seu papel dentro da proposta da história.`
 },
- {
-  titulo: "Juvenile Justice",
-  tituloOriginal: "소년심판",
-  ano: 2022,
-  pais: "Coreia do Sul",
-  generos: ["Crime","Drama","Tribunal"],
-  episodios: 10,
-  ondeAssistir: "Netflix",
-  imagem: "https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/juvenile%20justice.jpg",
-  link: "/doramas/juvenile-justice.html",
+{
+ nome:"Juvenile Justice",
+ nomeEN:"Juvenile Justice",
+ nomePT:"Justiça Juvenil",
+ tags:["crime","drama","tribunal","pesado"],
+ nota:"8.1/10 – MyDramaList",
+ elenco:["Kim Hye-soo", "Kim Mu-yeol", "Lee Sung-min", "Lee Jung-eun"],
+ descricao:"Uma juíza fria e rigorosa começa a trabalhar em um tribunal juvenil.\nEla enfrenta casos pesados envolvendo menores criminosos.\nDrama intenso sobre justiça e consequências.",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/juvenile%20justice.jpg",
+ trailer:"https://www.youtube.com/embed/3pZ9m4X3x0I",
 
-  sinopse: "Uma juíza conhecida por odiar criminosos juvenis é enviada para trabalhar em um tribunal especializado em casos envolvendo menores. Lá ela precisa julgar crimes difíceis enquanto enfrenta dilemas morais sobre punição, justiça e reabilitação.",
+ resumo:`Shim Eun-seok é uma juíza conhecida por odiar criminosos juvenis.
+Ela é designada para trabalhar em um tribunal especializado em menores.
 
-  criticaHumana: "Juvenile Justice é um daqueles doramas que impressiona pela intensidade. Não é uma história leve, porque cada episódio mostra casos envolvendo crimes cometidos por menores, muitos deles bem chocantes. O que mais me chamou atenção foi como a série tenta mostrar todos os lados da situação: o sofrimento das vítimas, a frieza do sistema e também as circunstâncias que levaram esses jovens a cometer crimes. A protagonista é uma juíza extremamente rígida e fria, o que pode até causar estranheza no começo, mas com o tempo a personagem ganha mais profundidade e você começa a entender melhor suas atitudes. As atuações são muito fortes e os episódios conseguem prender bastante, mesmo sendo histórias pesadas. No final, Juvenile Justice acaba sendo um dorama impactante que faz refletir bastante sobre justiça, responsabilidade e até sobre o que realmente significa punir ou tentar recuperar alguém."
-}
+Lá, ela precisa lidar com casos extremamente pesados, muitos deles chocantes.
+
+Ao longo dos episódios, diferentes histórias mostram crimes e suas consequências.
+
+Enquanto julga os casos, ela também enfrenta seus próprios dilemas sobre justiça e punição.`,
+
+ criticaHumana:`Juvenile Justice é um dorama forte e pesado, daqueles que realmente fazem pensar.
+
+Cada episódio traz casos envolvendo menores, muitos deles difíceis de assistir.
+
+O que mais gostei foi que a história não mostra só um lado, ela tenta equilibrar vítima, criminoso e o sistema.
+
+A juíza principal é bem fria no começo, mas isso faz sentido conforme a história avança.
+
+As atuações são muito boas e conseguem prender bastante.
+
+Não é um dorama leve, mas é muito impactante e diferente da maioria.`,
+
+ elencoInfo:`O elenco é liderado por Kim Hye-soo, que entrega uma atuação muito forte.
+
+Os outros personagens também ajudam a dar peso para os casos mostrados.
+
+No geral, o elenco consegue passar bem a seriedade e o clima pesado da história.`
+},
 ];
 function criarSlug(nome, nomeEN) {
   const base = nomeEN || nome;
