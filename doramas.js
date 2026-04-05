@@ -4142,6 +4142,21 @@ Os personagens têm propostas interessantes, mas nem todos são bem desenvolvido
 Alguns secundários acabam chamando mais atenção que os protagonistas.
 
 Ainda assim, o elenco cumpre seu papel dentro da proposta da história.`
+},
+ {
+  titulo: "Juvenile Justice",
+  tituloOriginal: "소년심판",
+  ano: 2022,
+  pais: "Coreia do Sul",
+  generos: ["Crime","Drama","Tribunal"],
+  episodios: 10,
+  ondeAssistir: "Netflix",
+  imagem: "https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/juvenile%20justice.jpg",
+  link: "/doramas/juvenile-justice.html",
+
+  sinopse: "Uma juíza conhecida por odiar criminosos juvenis é enviada para trabalhar em um tribunal especializado em casos envolvendo menores. Lá ela precisa julgar crimes difíceis enquanto enfrenta dilemas morais sobre punição, justiça e reabilitação.",
+
+  criticaHumana: "Juvenile Justice é um daqueles doramas que impressiona pela intensidade. Não é uma história leve, porque cada episódio mostra casos envolvendo crimes cometidos por menores, muitos deles bem chocantes. O que mais me chamou atenção foi como a série tenta mostrar todos os lados da situação: o sofrimento das vítimas, a frieza do sistema e também as circunstâncias que levaram esses jovens a cometer crimes. A protagonista é uma juíza extremamente rígida e fria, o que pode até causar estranheza no começo, mas com o tempo a personagem ganha mais profundidade e você começa a entender melhor suas atitudes. As atuações são muito fortes e os episódios conseguem prender bastante, mesmo sendo histórias pesadas. No final, Juvenile Justice acaba sendo um dorama impactante que faz refletir bastante sobre justiça, responsabilidade e até sobre o que realmente significa punir ou tentar recuperar alguém."
 }
 ];
 function criarSlug(nome, nomeEN) {
