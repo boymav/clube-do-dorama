@@ -4181,6 +4181,74 @@ Os outros personagens também ajudam a dar peso para os casos mostrados.
 
 No geral, o elenco consegue passar bem a seriedade e o clima pesado da história.`
 },
+ {
+ nome:"Taxi Driver",
+ nomeEN:"Taxi Driver",
+ nomePT:"Taxi Driver",
+ tags:["vingança","ação","justiça"],
+ nota:"8.8/10 – MyDramaList",
+ elenco:["Lee Je-hoon", "Esom", "Kim Eui-sung", "Pyo Ye-jin"],
+ imagem:"taxi-driver.jpg",
+ cor:"#f1c40f",
+ slug:"taxi-driver",
+ descricao:"Um serviço de táxi de luxo que oferece vingança para vítimas que não conseguiram justiça pela lei.\nKim Do-gi é o motorista principal que executa as missões.\nUma trama intensa sobre punição e moralidade.",
+ resumo:`Kim Do-gi é um ex-oficial das forças especiais que vive uma vida de sofrimento após o assassinato de sua mãe.
+Ele acaba sendo recrutado por Jang Sung-chul para trabalhar na Rainbow Taxi, uma empresa que parece comum, mas esconde um segredo.
+
+A Rainbow Taxi oferece um serviço de "chamada de vingança". Se a justiça falhou com você, eles assumem o caso.
+Do-gi usa suas habilidades de luta e disfarce para caçar criminosos e fazê-los pagar pelo que fizeram.
+
+Ao longo dos episódios, vemos casos baseados em crimes reais, o que torna a história ainda mais impactante.
+Enquanto ajudam os outros, a equipe também precisa lidar com uma promotora que começa a desconfiar das suas atividades.
+
+É um dorama eletrizante que questiona se a vingança privada pode ser justificada quando o sistema falha.`,
+
+ criticaHumana:`Taxi Driver é, sem dúvida, um dos melhores doramas de vingança já feitos.
+ 
+O que mais chama a atenção é a satisfação de ver vilões realmente cruéis recebendo o que merecem.
+As cenas de ação são muito bem coreografadas e o Lee Je-hoon está perfeito no papel do motorista justiceiro.
+
+Diferente de outros doramas, ele foca muito no sofrimento das vítimas, o que faz você torcer desesperadamente pela equipe do táxi.
+
+Se você gostou de My Name ou Weak Hero, Taxi Driver é parada obrigatória. É empolgante, revoltante e heróico ao mesmo tempo.`,
+
+ elencoInfo:`Lee Je-hoon carrega a série com um carisma incrível e ótimas cenas de luta.
+A equipe de apoio, especialmente a hacker interpretada por Pyo Ye-jin, traz o equilíbrio necessário para a trama.`
+},
+{
+ nome:"Eve",
+ nomeEN:"Eve",
+ nomePT:"Eve",
+ tags:["vingança","melodrama","intenso"],
+ nota:"7.8/10 – MyDramaList",
+ elenco:["Seo Yea-ji", "Park Byung-eun", "Yoo Sun", "Lee Sang-yeob"],
+ imagem:"eve.jpg",
+ cor:"#7d1212",
+ slug:"eve",
+ descricao:"Lee La-el passou 13 anos planejando a vingança perfeita contra as pessoas que destruíram sua família.\nEla se infiltra na elite coreana para causar um divórcio bilionário.\nUma história de sedução, poder e ódio.",
+ resumo:`Lee La-el era uma garota feliz até que seu pai foi morto por pessoas poderosas que queriam sua empresa.
+Após anos desaparecida, ela retorna com uma nova identidade e um plano meticuloso para destruir os responsáveis.
+
+O alvo principal é Kang Yoon-kyum, o CEO de um império empresarial.
+La-el usa a sedução e a manipulação psicológica para se tornar a amante dele e destruir o seu casamento por dentro.
+
+A trama gira em torno de um processo de divórcio de 2 trilhões de won que choca toda a Coreia.
+No meio do caminho, ela conta com a ajuda de um advogado que se tornou político para proteger o seu segredo.
+
+É um dorama visualmente artístico, com muitas metáforas e um clima de tensão constante.`,
+
+ criticaHumana:`Eve é um dorama visualmente deslumbrante e emocionalmente pesado.
+ 
+A Seo Yea-ji entrega uma atuação magistral como uma mulher fria e ferida que não mede esforços para concluir seu plano.
+O clima é bem diferente de The Glory; aqui a vingança é mais lenta, baseada em sedução e destruição emocional.
+
+Muitas vezes você se sente desconfortável com as escolhas da protagonista, mas entende a dor que a move.
+
+É um prato cheio para quem gosta de melodramas intensos sobre a elite coreana e planos de vingança que levam anos para serem executados.`,
+
+ elencoInfo:`Seo Yea-ji é o grande destaque, trazendo uma elegância sombria para o papel de La-el.
+Yoo Sun, como a esposa traída e instável, também entrega uma performance memorável e assustadora.`
+},
 ];
 function criarSlug(nome, nomeEN) {
   const base = nomeEN || nome;
