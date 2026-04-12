@@ -238,8 +238,8 @@
   </div>
 </header>
 
-<div class="wrap">
-  <section class="hero">
+<main class="wrap">
+  <div class="hero">
     <div class="poster"><img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/eve.webp" alt="Eve"></div>
     <div class="hero-info">
       <h1>Eve</h1>
@@ -255,7 +255,7 @@
         <button class="btn btn-primary" id="btnShare">📤 Compartilhar</button>
       </div>
     </div>
-  </section>
+  </div>
 
   <div class="colunas">
     <div class="bloco">
@@ -272,7 +272,7 @@
       </div>
     </div>
 
-    <div>
+    <div class="aside">
       <div class="bloco">
         <h2>💬 Crítica Humana</h2>
         <div class="critica-box">
@@ -282,7 +282,7 @@
       </div>
     </div>
   </div>
-</div>
+</main>
 
 <footer><p>Planeta Dorama 🌍 — todos os direitos reservados</p></footer>
 
@@ -323,7 +323,6 @@
 
   const btnFav = document.getElementById("btnFav");
   if(btnFav) btnFav.addEventListener("click", toggleFav);
-  updateFavBtn();
 
   const btnShare = document.getElementById("btnShare");
   if(btnShare){
