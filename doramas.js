@@ -4181,22 +4181,6 @@ Os outros personagens também ajudam a dar peso para os casos mostrados.
 
 No geral, o elenco consegue passar bem a seriedade e o clima pesado da história.`
 },
-{
- nome: "Taxi Driver",
- nomeEN: "Taxi Driver",
- tags: ["ação", "vingança", "justiça"],
- nota: "8.8/10 – MyDramaList",
- elenco: ["Lee Je-hoon", "Esom", "Kim Eui-sung", "Pyo Ye-jin"],
- descricao: "Um serviço de táxi de luxo que oferece vingança para vítimas que a lei não conseguiu proteger.",
- resumo: `Kim Do-gi é um ex-oficial das forças especiais cuja vida mudou drasticamente quando sua mãe foi assassinada por um serial killer. Ele agora trabalha para a Rainbow Taxi Company.
-
-A empresa não é um serviço de táxi comum; eles operam um serviço de 'chamada de vingança'. Se a justiça falhar, Do-gi e sua equipe entram em ação para punir os criminosos de forma implacável.
-
-A série aborda casos baseados em crimes reais da Coreia, o que torna a trama ainda mais impactante e satisfatória ao ver os vilões recebendo o que merecem.`,
- criticaHumana: `Taxi Driver é puro suco de entretenimento e justiça. A atuação de Lee Je-hoon é icônica, alternando entre o motorista calmo e o justiceiro implacável.
- 
-Diferente de outros doramas de vingança, este foca na ação e em planos táticos. É extremamente satisfatório ver a equipe da Rainbow Taxi trabalhando junta. Se você busca algo com ritmo acelerado e muita luta, este é o dorama certo.`
-},
  {
   nome: "Eve",
   nomeEN: "Eve",
