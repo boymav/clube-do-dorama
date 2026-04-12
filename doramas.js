@@ -4191,7 +4191,7 @@ No geral, o elenco consegue passar bem a seriedade e o clima pesado da história
   imagem: "https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/eve.webp",
   cor: "#7d1212",
   slug: "eve",
-  trailer: "5U9Nisq-1_0",
+  trailer: "https://www.youtube.com/embed/NuDbeCTYJBI",
   descricao: "Lee La-el passou 13 anos planejando a vingança perfeita contra as pessoas que destruíram sua família.\nUma história de sedução, poder e ódio.",
   resumo: `Lee La-el era uma garota feliz até que seu pai foi morto por pessoas poderosas que queriam sua empresa.
 Após anos desaparecida, ela retorna com uma nova identidade e um plano meticuloso para destruir os responsáveis.
@@ -4222,7 +4222,7 @@ Muitas vezes você se sente desconfortável com as escolhas da protagonista, mas
   imagem: "https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/taxi%20driver.webp",
   cor: "#f1c40f",
   slug: "taxi-driver",
-  trailer: "6m6uGZzUjS4",
+  trailer: "https://www.youtube.com/embed/Hnnhq_fTV5c",
   descricao: "Um serviço de táxi de luxo que oferece vingança para vítimas que não conseguiram justiça pela lei.\nKim Do-gi é o motorista justiceiro que executa as missões.",
   resumo: `Kim Do-gi é um ex-oficial das forças especiais que vive uma vida de sofrimento após o assassinato de sua mãe.
 Ele acaba sendo recrutado por Jang Sung-chul para trabalhar na Rainbow Taxi, uma empresa que parece comum, mas esconde um segredo.
