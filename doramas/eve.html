@@ -10,9 +10,11 @@
 
   <meta name="googlebot" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
 
+  <!-- Auto Ads -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5053782942464082"
   crossorigin="anonymous"></script>
 
+  <!-- Schema Google -->
   <script type="application/ld+json">
   {
    "@context":"https://schema.org",
@@ -24,16 +26,28 @@
     "@type":"AggregateRating",
     "ratingValue":"7.8/10 – MyDramaList",
     "bestRating":"10",
-    "ratingCount":"850"
+    "ratingCount":"1"
    }
   }
   </script>
+
+
+  <meta property="og:title" content="Eve | Planeta Dorama">
+  <meta property="og:description" content="Lee La-el passou 13 anos planejando a vingança perfeita contra as pessoas que destruíram sua família.">
+  <meta property="og:url" content="https://planetadorama.com.br/doramas/eve.html">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/eve.webp">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Eve | Planeta Dorama">
+  <meta name="twitter:description" content="Lee La-el passou 13 anos planejando a vingança perfeita contra as pessoas que destruíram sua família.">
+  <meta name="twitter:image" content="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/eve.webp">
 
   <style>
     :root{
       --bg:#fff5fb;
       --card:#ffffff;
-      --accent:#7d1212;
+      --accent:#ff7eb3;
       --accent2:#b983ff;
       --text:#333333;
       --sub:#666666;
@@ -45,8 +59,6 @@
       font-family:Arial,system-ui,sans-serif;
       background:linear-gradient(135deg,#ffe6f2,#fff0f7);
       color:var(--text);
-      line-height:1.6;
-      padding-bottom:40px;
     }
     header{
       padding:16px 18px 10px;
@@ -55,9 +67,6 @@
     .topbar{
       max-width:1100px;
       margin:0 auto;
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
       padding:4px 4px 0;
     }
     .back{
@@ -70,7 +79,9 @@
       font-size:14px;
     }
     .back span{font-size:18px}
+    .back:hover{opacity:.9}
     .logo{
+      margin-top:6px;
       font-size:18px;
       font-weight:bold;
       color:var(--text);
@@ -90,13 +101,16 @@
       gap:0;
       border-radius:26px;
       overflow:hidden;
-      background: var(--card);
+      background:
+        radial-gradient(circle at top left,rgba(255,126,179,0.16),transparent 55%),
+        radial-gradient(circle at bottom right,rgba(185,131,255,0.16),transparent 55%),
+        #ffffff;
       box-shadow:0 22px 48px rgba(0,0,0,0.16);
       min-height:340px;
     }
     .poster{
       position:relative;
-      background:#eee;
+      overflow:hidden;
     }
     .poster img{
       width:100%;
@@ -104,17 +118,26 @@
       object-fit:cover;
       display:block;
     }
+    .poster::after{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:linear-gradient(to right,rgba(0,0,0,0.12),rgba(255,255,255,0.05));
+    }
 
     .hero-info{
-      padding:24px 28px;
+      padding:18px 20px 18px 18px;
+      position:relative;
+      z-index:1;
       display:flex;
       flex-direction:column;
-      justify-content:center;
+      justify-content:space-between;
     }
     .hero-info h1{
       margin:0 0 8px;
-      font-size:32px;
-      background:linear-gradient(90deg, #333, var(--accent));
+      font-size:28px;
+      letter-spacing:0.02em;
+      background:linear-gradient(90deg,#ff7eb3,#b983ff);
       -webkit-background-clip:text;
       color:transparent;
     }
@@ -126,106 +149,348 @@
       font-size:15px;
       padding:5px 12px;
       border-radius:999px;
-      background:linear-gradient(135deg,var(--accent),#000);
-      color:#fff;
-      margin:4px 0 14px;
+      background:linear-gradient(135deg,#ffb347,#ff7eb3);
+      color:#201021;
+      margin:4px 0 10px;
+      box-shadow:0 6px 16px rgba(0,0,0,0.18);
     }
-    .tags{margin-bottom:12px}
+    .tags{
+      margin:4px 0 10px;
+    }
     .tag{
       display:inline-block;
-      padding:4px 10px;
+      padding:4px 9px;
       border-radius:999px;
-      background:rgba(125,18,18,0.1);
+      background:rgba(185,131,255,0.12);
       border:1px solid rgba(0,0,0,0.08);
       font-size:11px;
-      margin:0 6px 6px 0;
+      margin:0 6px 4px 0;
       text-transform:uppercase;
-      color:var(--text);
-      font-weight:bold;
+      letter-spacing:0.08em;
+      color:var(--sub);
     }
     .desc-curta{
       font-size:15px;
-      color:var(--sub);
-      margin-bottom:14px;
-      max-width:550px;
+      line-height:1.75;
+      color:#444;
+      margin-top:10px;
+      max-width:95%;
     }
-    .elenco-top{
+    .top-extra{
+      margin-top:14px;
+      display:grid;
+      grid-template-columns:1fr;
+      gap:12px;
+    }
+    .top-quick{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:10px;
+    }
+    .top-box{
+      padding:12px 12px 10px;
+      border-radius:16px;
+      background:linear-gradient(135deg, rgba(255,126,179,0.10), rgba(185,131,255,0.10));
+      border:1px solid rgba(0,0,0,0.06);
+    }
+    .top-k{
+      display:block;
+      font-size:12px;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      color:#7a1b55;
+      margin-bottom:6px;
+      font-weight:bold;
+    }
+    .top-v{
+      display:block;
+      font-size:13px;
+      line-height:1.6;
+      color:#444;
+      font-weight:600;
+    }
+    .top-lista{
+      padding:12px 12px 8px;
+      border-radius:16px;
+      background:rgba(185,131,255,0.10);
+      border:1px solid rgba(0,0,0,0.06);
+    }
+    .top-lista strong{
+      display:block;
+      color:#7a1b55;
+      margin-bottom:8px;
+    }
+    .top-lista ul{
+      margin:0;
+      padding-left:18px;
+    }
+    .top-lista li{
+      margin-bottom:6px;
+      color:#444;
+      line-height:1.5;
       font-size:14px;
-      margin-bottom:18px;
-      color:var(--text);
     }
+    .elenco{
+      font-size:14px;
+      margin-top:4px;
+      color:#555;
+    }
+    .elenco strong{
+      color:#b983ff;
+    }
+
     .acoes{
+      margin-top:12px;
       display:flex;
       flex-wrap:wrap;
-      gap:10px;
+      gap:8px;
     }
     .btn{
       border:none;
       border-radius:999px;
-      padding:10px 22px;
-      font-size:14px;
+      padding:7px 14px;
+      font-size:13px;
       font-weight:bold;
-      cursor:pointer;
-      transition:transform .2s;
       display:inline-flex;
       align-items:center;
       gap:6px;
+      cursor:pointer;
+      background:rgba(185,131,255,0.12);
+      color:#fff;
+      border:1px solid rgba(255,255,255,0.25);
     }
-    .btn:active{transform:scale(0.95)}
+    .btn:hover{background:rgba(0,0,0,0.6);}
     .btn-primary{
-      background:linear-gradient(90deg,#ff7eb3,#b983ff);
-      color:white;
+      background:linear-gradient(90deg,var(--accent),var(--accent2));
+      color:#28021c;
+      border:none;
     }
-    .fav-ativo{
-      background:#b4005a !important;
-      color:white !important;
+    .btn-primary:hover{filter:brightness(1.05);}
+    #btnFav.fav-ativo{
+      background:rgba(255,255,255,0.15);
+      border-color:var(--accent);
+      color:var(--accent);
     }
 
     .colunas{
       display:grid;
       grid-template-columns:minmax(0,2.2fr) minmax(0,1.2fr);
-      gap:20px;
+      gap:18px;
       margin-top:22px;
     }
 
     .bloco{
       background:#ffffff;
-      border-radius:22px;
-      padding:24px;
-      box-shadow:0 10px 28px rgba(0,0,0,0.05);
-    }
-    .bloco h2{ margin:0 0 14px; font-size:20px; color:#b4005a; display:flex; align-items:center; gap:8px;}
-    .bloco p{ font-size:15px; line-height:1.8; color:#444; margin:0 0 14px;}
-
-    .critica-box{
-      padding:20px;
       border-radius:18px;
-      background:rgba(125,18,18,0.05);
-      border-left:5px solid var(--accent);
+      padding:16px 16px 18px;
+      box-shadow:0 10px 28px rgba(0,0,0,0.7);
+      border:1px solid rgba(255,255,255,0.03);
+    }
+    .bloco h2{
+      margin:0 0 10px;
+      font-size:18px;
+      color:var(--accent);
+    }
+    .bloco p{
+      margin:0 0 8px;
+      font-size:14px;
+      line-height:1.8;
+      color:#444;
     }
 
     .video-wrap{
-      position:relative;
-      padding-bottom:56.25%;
-      height:0;
+      margin-top:8px;
+      border-radius:16px;
       overflow:hidden;
-      border-radius:18px;
-      margin-top:10px;
+      border:1px solid rgba(255,255,255,0.1);
+      aspect-ratio:16/9;
     }
     .video-wrap iframe{
-      position:absolute;
-      top:0;
-      left:0;
       width:100%;
       height:100%;
       border:0;
     }
 
-    footer{ text-align:center; padding:30px; color:var(--sub); font-size:13px; }
+    .rec-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fill,minmax(140px,1fr));
+      gap:10px;
+      margin-top:4px;
+    }
+    .rec-card{
+      display:block;
+      text-decoration:none;
+      color:#fff;
+      border-radius:14px;
+      overflow:hidden;
+      background:#14071f;
+      border:1px solid rgba(255,255,255,0.05);
+      box-shadow:0 8px 22px rgba(0,0,0,0.75);
+      transition:transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+    }
+    .rec-card img{
+      width:100%;
+      height:180px;
+      object-fit:cover;
+      display:block;
+    }
+    .rec-title{
+      padding:8px 9px 10px;
+      font-size:13px;
+      white-space:nowrap;
+      overflow:hidden;
+      text-overflow:ellipsis;
+    }
+    .rec-card:hover{
+      transform:translateY(-3px);
+      box-shadow:0 12px 30px rgba(0,0,0,0.9);
+      border-color:var(--accent);
+    }
+
+    footer{
+      text-align:center;
+      color:#a99bd8;
+      font-size:13px;
+      padding:16px 10px 20px;
+      border-top:1px solid rgba(255,255,255,0.05);
+      background:#07020f;
+    }
+    footer a{color:var(--accent);text-decoration:none;}
+    footer a:hover{text-decoration:underline;}
+
+
+    .critica-grid{
+      align-items:start;
+    }
+    .critica-pessoal{
+      position:relative;
+      padding-top:6px;
+    }
+    .critica-selo{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:7px 12px;
+      border-radius:999px;
+      background:linear-gradient(90deg, rgba(255,126,179,0.16), rgba(185,131,255,0.16));
+      color:#7a1b55;
+      font-size:12px;
+      font-weight:bold;
+      letter-spacing:.04em;
+      text-transform:uppercase;
+      margin-bottom:10px;
+      border:1px solid rgba(0,0,0,0.06);
+    }
+    .critica-box{
+      position:relative;
+      padding:14px 16px 14px 18px;
+      border-radius:18px;
+      background:linear-gradient(135deg, rgba(255,126,179,0.07), rgba(185,131,255,0.08));
+      border-left:5px solid #ff7eb3;
+      box-shadow: inset 0 0 0 1px rgba(0,0,0,0.04);
+    }
+    .critica-box::before{
+      content:"“";
+      position:absolute;
+      top:-8px;
+      left:10px;
+      font-size:52px;
+      line-height:1;
+      color:rgba(255,126,179,0.25);
+      font-weight:bold;
+    }
+    .critica-box p{
+      position:relative;
+      z-index:1;
+    }
+    .critica-aviso{
+      margin-top:10px;
+      font-size:12px;
+      color:#7a1b55;
+      opacity:.9;
+    }
+    .lista-gostos strong{
+      display:block;
+      margin:14px 0 8px;
+      color:var(--accent);
+      font-size:15px;
+    }
+    .lista-gostos ul{
+      margin:0;
+      padding-left:18px;
+    }
+    .lista-gostos li{
+      margin-bottom:8px;
+      color:#444;
+      line-height:1.6;
+      font-size:14px;
+    }
+    .faq-item + .faq-item{
+      margin-top:16px;
+      padding-top:12px;
+      border-top:1px solid rgba(0,0,0,0.08);
+    }
+    .faq-item h3{
+      margin:0 0 6px;
+      color:#7a1b55;
+      font-size:16px;
+    }
+    .semelhantes-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:14px;
+      margin-top:14px;
+    }
+    .semelhante-card{
+      display:block;
+      text-decoration:none;
+      color:inherit;
+      border-radius:16px;
+      overflow:hidden;
+      background:#fff;
+      border:1px solid rgba(0,0,0,0.06);
+      box-shadow:0 8px 20px rgba(0,0,0,0.06);
+      transition:transform .2s ease, box-shadow .2s ease;
+    }
+    .semelhante-card:hover{
+      transform:translateY(-4px);
+      box-shadow:0 12px 24px rgba(0,0,0,0.10);
+    }
+    .semelhante-card img{
+      width:100%;
+      height:220px;
+      object-fit:cover;
+      display:block;
+      background:#f6f6f6;
+    }
+    .semelhante-c{
+      padding:12px;
+    }
+    .semelhante-c h3{
+      margin:0 0 8px;
+      color:#333;
+      font-size:16px;
+    }
+    .semelhante-c p{
+      margin:0;
+      font-size:13px;
+      line-height:1.6;
+      color:#555;
+    }
+
     @media(max-width:860px){
-      .hero{ grid-template-columns:1fr; }
-      .colunas{ grid-template-columns:1fr; }
-      .hero-info{ padding:20px; }
+      .hero{
+        grid-template-columns:1fr;
+      }
+      .hero-info{
+        padding:14px 14px 16px;
+      }
+      .colunas{
+        grid-template-columns:1fr;
+      }
+      .top-quick{
+        grid-template-columns:1fr;
+      }
     }
   </style>
 </head>
@@ -233,68 +498,172 @@
 
 <header>
   <div class="topbar">
-    <a class="back" href="../index.html"><span>←</span> Voltar</a>
-    <div class="logo">Planeta Dorama 🌍 <span>o seu guia</span></div>
+    <a class="back" href="../index.html"><span>←</span> Voltar para Planeta Dorama</a>
+    <div class="logo">Planeta Dorama 🌍 <span>ficha do dorama</span></div>
   </div>
 </header>
 
-<main class="wrap">
-  <div class="hero">
-    <div class="poster"><img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/eve.webp" alt="Eve"></div>
+<div class="wrap">
+  <section class="hero">
+    <div class="poster">
+      <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/eve.webp" alt="Pôster do dorama Eve">
+    </div>
     <div class="hero-info">
-      <h1>Eve</h1>
-      <div class="nota">⭐ 7.8/10 – MyDramaList</div>
-      <div class="tags">
-        <span class="tag">vingança</span><span class="tag">melodrama</span><span class="tag">intenso</span>
+      <div>
+        <h1>Eve</h1>
+        <div class="nota">⭐ 7.8/10 – MyDramaList</div>
+        <div class="elenco"><strong>👥 Elenco:</strong> Seo Yea-ji • Park Byung-eun • Yoo Sun • Lee Sang-yeob</div>
+        <div class="tags">
+          <span class="tag">vingança</span><span class="tag">melodrama</span><span class="tag">intenso</span>
+        </div>
+        <div class="desc-curta">Lee La-el passou 13 anos planejando a vingança perfeita contra as pessoas que destruíram sua família. Ela se infiltra na elite coreana para causar um divórcio bilionário.</div>
+        
+      <div class="top-extra">
+        <div class="top-quick">
+          <div class="top-box">
+            <span class="top-k">Clima</span>
+            <span class="top-v">história intensa e envolvente</span>
+          </div>
+          <div class="top-box">
+            <span class="top-k">Vale a pena?</span>
+            <span class="top-v">Eve é um história intensa e envolvente que costuma prender rápido.</span>
+          </div>
+        </div>
+        <div class="top-lista">
+          <strong>Indicado para quem gosta de:</strong>
+          <ul><li>história intensa</li></ul>
+        </div>
       </div>
-      <p class="desc-curta">Lee La-el passou 13 anos planejando a vingança perfeita contra as pessoas que destruíram sua família. Uma história de sedução, poder e ódio.</p>
-      <div class="elenco-top"><strong>👥 Elenco:</strong> Seo Yea-ji, Park Byung-eun, Yoo Sun, Lee Sang-yeob</div>
+      </div>
       <div class="acoes">
-        <button class="btn btn-primary" onclick="window.location.href='../index.html'">Início</button>
+        <button class="btn btn-primary" onclick="window.location.href='../index.html'">🏠 Início</button>
         <button class="btn btn-primary" id="btnFav">🤍 Favoritar</button>
         <button class="btn btn-primary" id="btnShare">📤 Compartilhar</button>
       </div>
     </div>
-  </div>
+  </section>
 
-  <div class="colunas">
+  <section class="colunas">
     <div class="bloco">
-      <h2>📝 Resumo</h2>
-      <p>Lee La-el era uma garota feliz até que seu pai foi morto por pessoas poderosas que queriam sua empresa. Após anos desaparecida, ela retorna com uma nova identidade e um plano meticuloso para destruir os responsáveis.</p>
-      <p>O alvo principal é Kang Yoon-kyum, o CEO de um império empresarial. La-el usa a sedução e a manipulação psicológica para se tornar a amante dele e destruir o seu casamento por dentro.</p>
-      <p>A trama gira em torno de um processo de divórcio de 2 trilhões de won que choca toda a Coreia. É um dorama visualmente artístico, com muitas metáforas e um clima de tensão constante.</p>
-      
-      <div style="margin-top:24px">
-        <h2>🎬 Trailer Oficial</h2>
-        <div class="video-wrap">
-          <iframe src="https://www.youtube.com/embed/5U9Nisq-1_0" title="Eve Trailer" allowfullscreen></iframe>
-        </div>
-      </div>
+      <h2>Resumo</h2>
+      <p>Lee La-el era uma garota feliz até que seu pai foi morto por pessoas poderosas que queriam sua empresa.<br>Após anos desaparecida, ela retorna com uma nova identidade e um plano meticuloso para destruir os responsáveis.<br><br>O alvo principal é Kang Yoon-kyum, o CEO de um império empresarial.<br>La-el usa a sedução e a manipulação psicológica para se tornar a amante dele e destruir o seu casamento por dentro.<br><br>A trama gira em torno de um processo de divórcio de 2 trilhões de won que choca toda a Coreia.<br>No meio do caminho, ela conta com a ajuda de um advogado que se tornou político para proteger o seu segredo.<br><br>É um dorama visualmente artístico, com muitas metáforas e um clima de tensão constante.</p>
     </div>
-
-    <div class="aside">
+    
       <div class="bloco">
-        <h2>💬 Crítica Humana</h2>
-        <div class="critica-box">
-          <p>Eve é um dorama visualmente deslumbrante e emocionalmente pesado. A Seo Yea-ji entrega uma atuação magistral como uma mulher fria e ferida que não mede esforços para concluir seu plano.</p>
-          <p>O clima é baseado em sedução e destruição emocional. É um prato cheio para quem gosta de melodramas intensos sobre a elite coreana.</p>
-        </div>
+        <h2>👥 Elenco de Eve</h2>
+        <p>Seo Yea-ji é o grande destaque, trazendo uma elegância sombria para o papel de La-el.</p><p>Yoo Sun, como a esposa traída e instável, também entrega uma performance memorável e assustadora.</p>
       </div>
-    </div>
-  </div>
-</main>
+  </section>
 
-<footer><p>Planeta Dorama 🌍 — todos os direitos reservados</p></footer>
+  
+    <section class="colunas critica-grid">
+      <div class="bloco critica-pessoal">
+        <h2>💬 Crítica do Planeta Dorama</h2>
+        <div class="critica-selo">Crítica do dorama</div>
+        <div class="critica-box">
+          <p><strong>Crítica do Planeta Dorama:</strong> Eve é um dorama visualmente deslumbrante e emocionalmente pesado.</p><p> </p><p>A Seo Yea-ji entrega uma atuação magistral como uma mulher fria e ferida que não mede esforços para concluir seu plano.</p><p>O clima é bem diferente de The Glory; aqui a vingança é mais lenta, baseada em sedução e destruição emocional.</p><p></p><p>Muitas vezes você se sente desconfortável com as escolhas da protagonista, mas entende a dor que a move.</p><p></p><p>É um prato cheio para quem gosta de melodramas intensos sobre a elite coreana e planos de vingança que levam anos para serem executados.</p>
+        </div>
+        <div class="critica-aviso">✨ Aqui você encontra uma análise mais direta do dorama, com foco no que realmente chama atenção na história.</div>
+      </div>
+      <div class="bloco">
+        <h2>✨ Guia rápido</h2>
+        <p><strong>Vale a pena assistir?</strong> Sim, principalmente se o gênero combinar com o que você gosta. É uma boa escolha para quem quer conhecer melhor esse tipo de dorama. </p>
+        <p><strong>Resumo bem rápido:</strong> Eve é um história intensa e envolvente que costuma prender rápido.</p>
+        <div class="lista-gostos"><strong>Indicado para quem gosta de:</strong><ul><li>tramas fortes e episódios que prendem rápido</li><li>histórias de vingança e justiça</li></ul></div>
+      </div>
+    </section>
+    
+    <section class="bloco">
+      <h2>❓ Perguntas sobre Eve</h2>
+      <div class="faq-item">
+        <h3>Eve vale a pena?</h3>
+        <p>Eve tem boa avaliação (7.8/10 – MyDramaList) e costuma agradar quem gosta de vingança, melodrama, intenso.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Onde assistir Eve?</h3>
+        <p>O catálogo pode mudar com o tempo, então o ideal é pesquisar por Eve diretamente na Netflix, Viki ou em outras plataformas disponíveis no Brasil.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Para quem Eve é indicado?</h3>
+        <p>Esse dorama costuma funcionar melhor para quem gosta de vingança, melodrama, intenso e procura uma história coreana com personagens marcantes.</p>
+      </div>
+    </section>
+  
+  
+    <section class="bloco">
+      <h2>💡 Doramas parecidos com Eve</h2>
+      <p>Se você gostou de Eve, estes doramas também podem funcionar bem porque têm clima parecido, algumas tags em comum ou uma proposta que costuma agradar ao mesmo público.</p>
+      <div class="semelhantes-grid">
+        <a class="semelhante-card" href="/doramas/the-glory.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/the%20glory.webp" alt="The Glory" loading="lazy">
+          <div class="semelhante-c">
+            <h3>The Glory</h3>
+            <p>Uma mulher marcada por bullying cruel na escola.</p>
+          </div>
+        </a>
+        <a class="semelhante-card" href="/doramas/crash-landing-on-you.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/crash-landing.jpg" alt="Pousando no Amor (Crash Landing on You)" loading="lazy">
+          <div class="semelhante-c">
+            <h3>Pousando no Amor (Crash Landing on You)</h3>
+            <p>Uma empresária sul-coreana sofre um acidente e vai parar na Coreia do Norte.</p>
+          </div>
+        </a>
+        <a class="semelhante-card" href="/doramas/its-okay-to-not-be-okay.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/tudo%20bem%20nao%20ser%20normal.jpg" alt="Tudo Bem Não Ser Normal (Its Okay to Not Be Okay)" loading="lazy">
+          <div class="semelhante-c">
+            <h3>Tudo Bem Não Ser Normal (Its Okay to Not Be Okay)</h3>
+            <p>Um cuidador emocionalmente fechado conhece uma escritora excêntrica.</p>
+          </div>
+        </a>
+        <a class="semelhante-card" href="/doramas/itaewon-class.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/itaewon%20class.webp" alt="Itaewon Class" loading="lazy">
+          <div class="semelhante-c">
+            <h3>Itaewon Class</h3>
+            <p>Um jovem luta para vencer injustiças do passado.</p>
+          </div>
+        </a></div>
+    </section>
+  
+    <section class="bloco">
+      <h2>Recomendados para você</h2>
+      <div class="rec-grid">
+        
+        <a class="rec-card" href="/doramas/moon-lovers-scarlet-heart-ryeo.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/moon%20lovers%201.webp" alt="Moon Lovers: Scarlet Heart Ryeo" loading="lazy">
+          <div class="rec-title">Moon Lovers: Scarlet Heart Ryeo</div>
+        </a>
+        <a class="rec-card" href="/doramas/uncontrollably-fond.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/Uncontrollably%20Fond.webp" alt="Uncontrollably Fond" loading="lazy">
+          <div class="rec-title">Uncontrollably Fond</div>
+        </a>
+        <a class="rec-card" href="/doramas/little-women.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/little%20woman.jpg" alt="Little Women" loading="lazy">
+          <div class="rec-title">Little Women</div>
+        </a>
+        <a class="rec-card" href="/doramas/kingdom.html">
+          <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/kngdom.webp" alt="Kingdom" loading="lazy">
+          <div class="rec-title">Kingdom</div>
+        </a>
+      </div>
+    </section>
+</div>
+
+<footer>
+  <p>💜 Planeta Dorama 🌍 — todos os direitos reservados</p>
+  <p><a href="../politica.html">Política de Privacidade</a> • <a href="../termos.html">Termos de Uso</a></p>
+</footer>
 
 <script>
+  const FAV_KEY = "pd_favoritos_v1";
   const nome = "Eve";
-  const pageUrl = window.location.href;
+  const pageUrl = "https://planetadorama.com.br/doramas/eve.html";
 
   function getFav(){
-    return JSON.parse(localStorage.getItem("meus_favoritos") || "[]");
+    try { return JSON.parse(localStorage.getItem(FAV_KEY) || "[]"); }
+    catch(e){ return []; }
   }
   function setFav(list){
-    localStorage.setItem("meus_favoritos", JSON.stringify(list));
+    localStorage.setItem(FAV_KEY, JSON.stringify(list));
   }
   function isFav(){
     return getFav().includes(nome);
@@ -338,11 +707,17 @@
           alert("Link copiado! ✅");
         }catch(e){
           const wa = "https://wa.me/?text=" + encodeURIComponent(text);
-          window.open(wa);
+          window.open(wa, "_blank");
         }
+      } else {
+        const wa = "https://wa.me/?text=" + encodeURIComponent(text);
+        window.open(wa, "_blank");
       }
     });
   }
+
+  updateFavBtn();
 </script>
+
 </body>
 </html>
