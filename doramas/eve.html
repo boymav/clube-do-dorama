@@ -238,7 +238,7 @@
   </div>
 </header>
 
-<main class="wrap">
+<div class="wrap">
   <section class="hero">
     <div class="poster"><img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/eve.webp" alt="Eve"></div>
     <div class="hero-info">
@@ -258,7 +258,7 @@
   </section>
 
   <div class="colunas">
-    <section class="bloco">
+    <div class="bloco">
       <h2>📝 Resumo</h2>
       <p>Lee La-el era uma garota feliz até que seu pai foi morto por pessoas poderosas que queriam sua empresa. Após anos desaparecida, ela retorna com uma nova identidade e um plano meticuloso para destruir os responsáveis.</p>
       <p>O alvo principal é Kang Yoon-kyum, o CEO de um império empresarial. La-el usa a sedução e a manipulação psicológica para se tornar a amante dele e destruir o seu casamento por dentro.</p>
@@ -270,9 +270,9 @@
           <iframe src="https://www.youtube.com/embed/5U9Nisq-1_0" title="Eve Trailer" allowfullscreen></iframe>
         </div>
       </div>
-    </section>
+    </div>
 
-    <aside>
+    <div>
       <div class="bloco">
         <h2>💬 Crítica Humana</h2>
         <div class="critica-box">
@@ -280,9 +280,9 @@
           <p>O clima é baseado em sedução e destruição emocional. É um prato cheio para quem gosta de melodramas intensos sobre a elite coreana.</p>
         </div>
       </div>
-    </aside>
+    </div>
   </div>
-</main>
+</div>
 
 <footer><p>Planeta Dorama 🌍 — todos os direitos reservados</p></footer>
 
@@ -323,6 +323,7 @@
 
   const btnFav = document.getElementById("btnFav");
   if(btnFav) btnFav.addEventListener("click", toggleFav);
+  updateFavBtn();
 
   const btnShare = document.getElementById("btnShare");
   if(btnShare){
