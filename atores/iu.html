@@ -12,10 +12,8 @@
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "IU (Lee Ji-eun)",
-    "url": "https://planetadorama.com.br/atores/iu.html",
-    "image": "https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/atores/iu.webp",
     "jobTitle": "Atriz e Cantora",
-    "description": "A trajetória completa de IU, desde sua estreia em Dream High até sucessos como Hotel Del Luna e My Mister."
+    "image": "https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/atores/iu.webp"
   }
   </script>
 
@@ -29,36 +27,31 @@
     .logo { font-size: 20px; font-weight: bold; color: var(--accent); }
     .wrap { max-width: 1100px; margin: 0 auto; padding: 0 15px; }
 
-    /* Hero */
     .hero { display: grid; grid-template-columns: 350px 1fr; background: var(--card); border-radius: 35px; overflow: hidden; box-shadow: 0 25px 50px rgba(0,0,0,0.1); margin-bottom: 35px; }
     .poster img { width: 100%; height: 100%; object-fit: cover; display: block; }
     .hero-info { padding: 40px; display: flex; flex-direction: column; justify-content: center; }
-    .hero-info h1 { margin: 0 0 10px; font-size: 42px; line-height: 1.1; color: var(--text); }
+    .hero-info h1 { margin: 0 0 10px; font-size: 42px; line-height: 1.1; }
     .nota-badge { background: var(--accent); color: #fff; padding: 5px 15px; border-radius: 20px; font-weight: bold; width: fit-content; margin-bottom: 15px; }
 
-    /* Blocos */
     .bloco { background: var(--card); border-radius: 30px; padding: 40px; margin-bottom: 30px; box-shadow: 0 15px 35px rgba(0,0,0,0.05); }
     .bloco h2 { margin: 0 0 25px; font-size: 26px; color: var(--accent); display: flex; align-items: center; gap: 10px; }
     .bloco h2::after { content: ""; flex: 1; height: 2px; background: #f3e8ff; }
 
-    /* Tabela Filmografia */
     .filmografia { width: 100%; border-collapse: collapse; }
     .filmografia th { text-align: left; padding: 15px; border-bottom: 2px solid #f3e8ff; color: var(--accent); }
     .filmografia td { padding: 15px; border-bottom: 1px solid #eee; }
-    .filmografia a { color: var(--accent); text-decoration: none; font-weight: bold; border-bottom: 1px solid var(--accent); }
+    .filmografia a { color: var(--accent); text-decoration: none; font-weight: bold; }
 
-    /* Curiosidades */
     .curiosidade-item { background: #fbf8ff; border-left: 5px solid var(--accent); padding: 20px; border-radius: 0 15px 15px 0; margin-bottom: 15px; }
     .curiosidade-item strong { color: var(--accent); display: block; margin-bottom: 5px; font-size: 17px; }
 
-    /* Vídeo */
     .video-wrap { position: relative; padding-bottom: 56.25%; height: 0; border-radius: 25px; overflow: hidden; margin: 25px 0; box-shadow: 0 15px 30px rgba(0,0,0,0.15); }
     .video-wrap iframe { position: absolute; top:0; left:0; width:100%; height:100%; border:0; }
 
     @media (max-width: 850px) {
       .hero { grid-template-columns: 1fr; }
       .filmografia thead { display: none; }
-      .filmografia td { display: block; text-align: right; padding-left: 50%; position: relative; border-bottom: 1px solid #eee; }
+      .filmografia td { display: block; text-align: right; padding-left: 50%; position: relative; }
       .filmografia td::before { content: attr(data-label); position: absolute; left: 15px; font-weight: bold; color: var(--accent); }
     }
   </style>
@@ -67,7 +60,7 @@
 
 <header>
   <div class="topbar">
-    <a class="back" href="../index.html">← Ir para a Home</a>
+    <a class="back" href="../index.html">← Voltar</a>
     <div class="logo">Planeta Dorama 🌍</div>
   </div>
 </header>
@@ -75,49 +68,50 @@
 <main class="wrap">
   <section class="hero">
     <div class="poster">
-      <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/atores/iu.webp" alt="IU Lee Ji-eun Atriz Coreana">
+      <img src="https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/atores/iu.webp" alt="IU Lee Ji-eun">
     </div>
     <div class="hero-info">
-      <div class="nota-badge">⭐ Perfil de Elite</div>
+      <div class="nota-badge">⭐ Artista de Elite</div>
       <h1>IU (Lee Ji-eun)</h1>
-      <p style="font-size: 18px; color: var(--sub);">A solista recordista e protagonista dos doramas mais icônicos da Coreia do Sul.</p>
-      <p><strong>Instagram Oficial:</strong> <a href="https://instagram.com/dlwlrma" target="_blank" style="color:var(--accent); text-decoration:none; font-weight:bold;">@dlwlrma</a></p>
+      <p style="font-size: 18px; color: var(--sub);">A solista número #1 da Coreia e uma das atrizes mais aclamadas da sua geração.</p>
     </div>
   </section>
 
   <section class="bloco">
-    <h2>✨ Curiosidades Exclusivas</h2>
+    <h2>✨ Curiosidades que todo fã deve saber</h2>
     <div class="curiosidade-item">
-      <strong>🧠 Memória Acima da Média</strong>
-      IU é respeitada por todos os diretores pois decora o roteiro inteiro da cena, permitindo que ela entenda perfeitamente o tempo de fala de cada colega de elenco.
+      <strong>🧠 Memória de Atriz</strong>
+      IU é famosa por decorar não apenas as suas falas, mas as falas de todos os atores da cena para entender o ritmo completo do diálogo.
     </div>
     <div class="curiosidade-item">
-      <strong>💖 Filantropia Real</strong>
-      Diferente de muitas celebridades, ela faz doações constantes e silenciosas, totalizando milhões de dólares para universidades e hospitais.
+      <strong>💖 Anjo das Doações</strong>
+      Anualmente, ela doa milhões para crianças carentes e idosos, muitas vezes usando nomes de seus fãs (UAENA) para as doações.
     </div>
     <div class="curiosidade-item">
-      <strong>🎻 Superação Absoluta</strong>
-      No início, ela morou em uma casa infestada de baratas com sua avó enquanto sua família tentava pagar dívidas. Hoje, ela é uma das mulheres mais ricas do país.
+      <strong>💎 Resiliência de Ouro</strong>
+      Antes do sucesso, ela foi rejeitada em mais de 20 audições (incluindo na JYP) e viveu em um quarto pequeno com a avó devido a dívidas da família. Na infância, sua casa era infestada de baratas, o que a motivou a trabalhar incansavelmente para dar uma vida melhor aos seus familiares.
     </div>
   </section>
 
   <section class="bloco">
-    <h2>📖 Biografia: De Lee Ji-eun ao Fenômeno IU</h2>
-    <p>Lee Ji-eun, mundialmente conhecida como <strong>IU</strong>, nasceu em 16 de maio de 1993. Sua história é o roteiro perfeito de um dorama de superação. Após uma infância de pobreza, ela enfrentou mais de 20 rejeições em audições de talentos. Sua determinação a levou à estreia musical em 2008, mas foi em 2010, com a música "Good Day", que ela parou a Coreia e recebeu o apelido de <em>"Irmãzinha da Nação"</em>.</p>
+    <h2>📖 Biografia e Carreira: A Trajetória da Rainha</h2>
+    <p>Lee Ji-eun, conhecida pelo nome artístico <strong>IU</strong> (que significa "I and You" - Eu e Você), é o exemplo máximo de superação na indústria do entretenimento coreano. Nascida em 16 de maio de 1993, sua infância foi marcada por dificuldades financeiras extremas, o que a obrigou a morar com sua avó e irmão em condições precárias enquanto seus pais tentavam quitar dívidas acumuladas.</p>
     
-    <p>Na televisão, sua carreira de atriz decolou com o sucesso de <strong>Dream High</strong>, onde interpretou a doce Kim Pil-sook. No entanto, IU queria mais. Ela desafiou as expectativas ao aceitar papéis complexos em doramas como <strong>Moon Lovers: Scarlet Heart Ryeo</strong>, onde sua atuação como Hae Soo emocionou fãs no mundo inteiro.</p>
+    <p>Sua paixão pela música começou cedo, mas o caminho foi árduo. Após ser rejeitada por dezenas de agências e até sofrer golpes de falsas empresas de talento, ela finalmente estreou aos 15 anos. No entanto, foi com a canção "Good Day" em 2010 que ela se tornou um fenômeno nacional, recebendo o título carinhoso de <em>"Irmãzinha da Nação"</em> devido à sua voz potente e imagem doce.</p>
     
-    <p>O ponto de virada definitivo na atuação veio com <strong>My Mister</strong>, um drama denso e realista onde ela provou ser uma atriz de elite. Logo depois, ela hipnotizou o público como Jang Man-wol em <strong>Hotel Del Luna</strong>, dorama que se tornou um marco visual e de audiência. Hoje, no <strong>Planeta Dorama</strong>, acompanhamos de perto cada novo passo dessa artista que define o que é ser uma lenda do Hallyu.</p>
+    <p>Na atuação, IU quebrou o preconceito contra "idols-atores". Sua estreia em <strong>Dream High</strong> mostrou um lado carismático, mas foi em obras como <strong>Moon Lovers: Scarlet Heart Ryeo</strong> e o denso drama <strong>My Mister</strong> que ela provou ser uma atriz de método, capaz de entregar atuações viscerais, silenciosas e profundamente emocionantes. Em <strong>Hotel Del Luna</strong>, ela consolidou seu poder visual e interpretativo como a icônica Jang Man-wol, tornando-se uma das atrizes mais bem pagas da Coreia e uma referência de moda e estilo.</p>
+    
+    <p>Hoje, IU é uma lenda viva, respeitada por veteranos e amada pelas novas gerações. Ela é uma das poucas artistas que consegue manter o primeiro lugar em todas as paradas musicais (All-Kill) simultaneamente ao lançamento de doramas de sucesso. No <strong>Planeta Dorama</strong>, celebramos cada um de seus passos, desde os musicais vibrantes até seus papéis mais dramáticos, complexos e premiados internacionalmente.</p>
   </section>
 
   <section class="bloco">
-    <h2>🎬 Filmografia: Doramas e Trabalhos</h2>
+    <h2>🎬 Lista Completa de Doramas</h2>
     <table class="filmografia">
       <thead>
         <tr>
           <th>Ano</th>
-          <th>Título do Dorama</th>
-          <th>Onde conferir</th>
+          <th>Título</th>
+          <th>Onde ler no site</th>
         </tr>
       </thead>
       <tbody>
@@ -129,43 +123,42 @@
         <tr>
           <td data-label="Ano">2019</td>
           <td>Hotel Del Luna</td>
-          <td><a href="../doramas/hotel-del-luna.html">Ficha Completa</a></td>
+          <td><a href="../doramas/hotel-del-luna.html">Ver Ficha</a></td>
         </tr>
         <tr>
           <td data-label="Ano">2018</td>
           <td>My Mister</td>
-          <td><a href="../doramas/my-mister.html">Ficha Completa</a></td>
+          <td><a href="../doramas/my-mister.html">Ver Ficha</a></td>
         </tr>
         <tr>
           <td data-label="Ano">2016</td>
           <td>Moon Lovers: Scarlet Heart Ryeo</td>
-          <td><a href="/doramas/moon-lovers-scarlet-heart-ryeo.html">Análise e Crítica</a></td>
+          <td><a href="/doramas/moon-lovers-scarlet-heart-ryeo.html">Ler Crítica</a></td>
         </tr>
         <tr>
           <td data-label="Ano">2015</td>
           <td>The Producers</td>
-          <td>Catálogo Offline</td>
+          <td>Ficha em Breve</td>
         </tr>
         <tr>
           <td data-label="Ano">2011</td>
           <td>Dream High</td>
-          <td><a href="../doramas/dream-high.html">Ver Detalhes</a></td>
+          <td><a href="../doramas/dream-high.html">Ver Ficha</a></td>
         </tr>
       </tbody>
     </table>
   </section>
 
   <section class="bloco">
-    <h2>🎵 Clipe Musical em Destaque</h2>
-    <p>Assista ao clipe oficial de <strong>"LILAC"</strong> e entenda por que IU domina as paradas musicais há mais de uma década:</p>
+    <h2>🎵 Sucesso Musical: LILAC</h2>
     <div class="video-wrap">
-      <iframe src="https://www.youtube.com/embed/v7bnOxL4j10" allowfullscreen title="IU Lilac MV"></iframe>
+      <iframe src="https://www.youtube.com/embed/v7bnOxL4j10" allowfullscreen></iframe>
     </div>
   </section>
 </main>
 
 <footer style="text-align:center; padding:30px; color:#aaa; font-size:14px;">
-  Planeta Dorama 🌍 — Conteúdo autêntico para fãs de verdade.
+  Planeta Dorama 🌍 — A sua enciclopédia coreana.
 </footer>
 
 </body>
