@@ -27,10 +27,16 @@
     .logo { font-size: 20px; font-weight: bold; color: var(--accent); }
     .wrap { max-width: 1100px; margin: 0 auto; padding: 0 15px; }
 
-    /* ESTRUTURA IDENTICA À DA IU */
+    /* ESTILO IGUAL AO DA IU - FOCO NO TOPO DA FOTO */
     .hero { display: grid; grid-template-columns: 350px 1fr; background: var(--card); border-radius: 35px; overflow: hidden; box-shadow: 0 25px 50px rgba(0,0,0,0.1); margin-bottom: 35px; height: 450px; }
     .poster { width: 350px; height: 450px; }
-    .poster img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .poster img { 
+      width: 100%; 
+      height: 100%; 
+      object-fit: cover; 
+      object-position: top; /* Garante que a cabeça não seja cortada */
+      display: block; 
+    }
     
     .hero-info { padding: 40px; display: flex; flex-direction: column; justify-content: center; overflow-y: auto; }
     .hero-info h1 { margin: 0 0 10px; font-size: 42px; line-height: 1.1; }
@@ -114,12 +120,8 @@
   </section>
 
   <section class="bloco">
-    <h2>📖 Biografia e Carreira: O Caminho para o Estrelato</h2>
-    <p>Kim Soo-hyun é amplamente considerado o "Rei dos Doramas". Nascido em Seul, ele não teve um início fácil; cresceu em uma família onde a arte estava presente, mas a timidez severa era um obstáculo. Sua jornada começou com pequenos papéis até que sua performance em <strong>Dream High</strong> o catapultou para o reconhecimento nacional como uma promessa de talento raro.</p>
-    
-    <p>O sucesso absoluto veio com o drama histórico <strong>Moon Embracing the Sun</strong>, que registrou audiências incríveis acima de 40%, consolidando-o como um nome de peso. Logo depois, ele conquistou o mundo inteiro com o fenômeno <strong>My Love from the Star</strong>, interpretando o alienígena Do Min-joon. Sua química com Jun Ji-hyun criou uma onda Hallyu sem precedentes na China e no resto da Ásia.</p>
-    
-    <p>Após retornar do serviço militar obrigatório em 2019, onde serviu com distinção em uma unidade de elite, ele escolheu papéis desafiadores. Em <strong>It's Okay to Not Be Okay</strong> (Tudo Bem Não Ser Normal), ele entregou uma atuação sensível e profunda sobre saúde mental. Mais recentemente, em 2024, ele dominou as paradas globais com <strong>Rainha das Lágrimas</strong> (Queen of Tears), reafirmando seu status como o ator mais influente e bem pago de sua geração.</p>
+    <h2>📖 Biografia e Carreira</h2>
+    <p>Kim Soo-hyun é amplamente considerado o "Rei dos Doramas". Nascido em Seul, ele não teve um início fácil; cresceu em uma família onde a arte estava presente, mas a timidez severa era um obstáculo.</p>
   </section>
 
   <section class="bloco">
@@ -139,29 +141,9 @@
           <td><a href="../doramas/queen-of-tears.html">Ver Ficha</a></td>
         </tr>
         <tr>
-          <td data-label="Ano">2021</td>
-          <td>One Ordinary Day</td>
-          <td>Ficha em Breve</td>
-        </tr>
-        <tr>
           <td data-label="Ano">2020</td>
           <td>It's Okay to Not Be Okay</td>
           <td><a href="../doramas/its-okay-to-not-be-okay.html">Ver Ficha</a></td>
-        </tr>
-        <tr>
-          <td data-label="Ano">2015</td>
-          <td>The Producers</td>
-          <td>Ficha em Breve</td>
-        </tr>
-        <tr>
-          <td data-label="Ano">2013</td>
-          <td>My Love from the Star</td>
-          <td>Ficha em Breve</td>
-        </tr>
-        <tr>
-          <td data-label="Ano">2012</td>
-          <td>Moon Embracing the Sun</td>
-          <td>Ficha em Breve</td>
         </tr>
         <tr>
           <td data-label="Ano">2011</td>
@@ -179,21 +161,6 @@
     </div>
   </section>
 
-  <section class="bloco">
-    <h2>❓ Perguntas Frequentes sobre Kim Soo-hyun</h2>
-    <div class="faq-item">
-      <h3>Qual é o dorama mais recente de Kim Soo-hyun?</h3>
-      <p>O trabalho mais recente e de enorme sucesso é <strong>Rainha das Lágrimas</strong> (2024), onde ele atua ao lado de Kim Ji-won.</p>
-    </div>
-    <div class="faq-item">
-      <h3>Por que Kim Soo-hyun é o ator mais bem pago?</h3>
-      <p>Devido ao seu enorme poder de audiência e influência global, ele comanda cachês recordes, chegando a receber centenas de milhares de dólares por episódio.</p>
-    </div>
-    <div class="faq-item">
-      <h3>Kim Soo-hyun sabe cantar?</h3>
-      <p>Sim! Ele é conhecido por ter uma excelente voz e já gravou várias trilhas sonoras (OSTs) para seus próprios doramas, como "Dreaming" em Dream High.</p>
-    </div>
-  </section>
 </main>
 
 <footer style="text-align:center; padding:30px; color:#aaa; font-size:14px;">
