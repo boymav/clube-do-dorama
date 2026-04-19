@@ -20,7 +20,7 @@ const atores = [
   {
     nome: "Park Sung-hoon",
     link: "atores/park-sung-hoon.html",
-    foto: "https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/atores/park%20sung%20hoon.jpg",
+    foto: "https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/atores/park-sung-woon.jpg",
     resumo: "O vilão mais comentado do momento em Rainha das Lágrimas e astro de A Lição."
   }
 ];
