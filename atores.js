@@ -14,7 +14,7 @@ const atores = [
   {
     nome: "Kim Ji-won",
     link: "atores/kim-ji-won.html",
-    foto: "https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/atores/kim%20ji%20won.jpg",
+    foto: "https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/atores/Kim%20Ji%20Won.jpg",
     resumo: "Estrela versátil de Rainha das Lágrimas, Descendentes do Sol e Meu Diário para a Liberdade."
   }
 ];
