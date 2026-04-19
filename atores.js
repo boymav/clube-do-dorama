@@ -16,6 +16,12 @@ const atores = [
     link: "atores/kim-ji-won.html",
     foto: "https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/atores/Kim%20Ji%20Won.jpg",
     resumo: "A estrela de Rainha das Lágrimas e Descendentes do Sol."
+  },
+  {
+    nome: "Park Sung-hoon",
+    link: "atores/park-sung-hoon.html",
+    foto: "https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/atores/park%20sung%20hoon.jpg",
+    resumo: "O vilão mais comentado do momento em Rainha das Lágrimas e astro de A Lição."
   }
 ];
 
