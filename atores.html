@@ -6,105 +6,251 @@
   <title>Atores e Atrizes de Dorama | Planeta Dorama</title>
   <meta name="description" content="Conheça as maiores estrelas dos doramas coreanos. Biografias, curiosidades e filmografias completas dos seus atores favoritos no Planeta Dorama.">
   
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+  
   <style>
     :root {
-      --bg: #f8f4ff;
-      --accent: #b983ff;
-      --accent-dark: #9656ff;
-      --card: #ffffff;
-      --text: #2d2d2d;
-      --sub: #666;
+      --bg-color: #fbf9ff;
+      --primary: #9b51e0;
+      --primary-light: #c48bf5;
+      --primary-dark: #6c2bc3;
+      --text-main: #1a1a24;
+      --text-muted: #6b6b80;
+      --card-bg: rgba(255, 255, 255, 0.85);
     }
 
     * { box-sizing: border-box; transition: all 0.3s ease; }
     
     body { 
       margin: 0; 
-      font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; 
-      background-color: var(--bg); 
-      color: var(--text);
+      font-family: 'Plus Jakarta Sans', sans-serif; 
+      background-color: var(--bg-color); 
+      color: var(--text-main);
       line-height: 1.6;
+      position: relative;
+      overflow-x: hidden;
     }
 
+    /* Brilho radial no fundo da página */
+    body::before {
+      content: '';
+      position: fixed;
+      top: -20%; left: -10%;
+      width: 120%; height: 120%;
+      background: radial-gradient(circle at 50% 0%, rgba(196, 139, 245, 0.15) 0%, rgba(251, 249, 255, 0) 60%);
+      z-index: -1;
+      pointer-events: none;
+    }
+
+    /* HEADER PREMIUM */
     header {
-      background: linear-gradient(135deg, #b983ff 0%, #d4b3ff 100%);
-      padding: 60px 20px;
+      background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-light) 100%);
+      padding: 70px 20px 80px;
       text-align: center;
       color: white;
-      border-radius: 0 0 50px 50px;
-      box-shadow: 0 10px 30px rgba(185, 131, 255, 0.3);
+      border-radius: 0 0 60px 60px;
+      box-shadow: 0 20px 40px rgba(108, 43, 195, 0.2);
+      position: relative;
     }
 
-    header h1 { margin: 0; font-size: 3rem; font-weight: 800; }
-    header p { font-size: 1.2rem; opacity: 0.9; margin-top: 10px; }
+    header::after {
+      content: '✨';
+      position: absolute;
+      top: 30px; right: 20%;
+      font-size: 2rem; opacity: 0.3;
+    }
+
+    header h1 { 
+      margin: 0; 
+      font-size: 3.5rem; 
+      font-weight: 800; 
+      letter-spacing: -1px;
+      text-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    
+    header p { 
+      font-size: 1.2rem; 
+      opacity: 0.9; 
+      margin-top: 15px; 
+      font-weight: 400; 
+    }
     
     .back-btn {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 10px 25px;
-      background: rgba(255, 255, 255, 0.2);
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 25px;
+      padding: 10px 24px;
+      background: rgba(255, 255, 255, 0.15);
       color: white;
       text-decoration: none;
       border-radius: 50px;
-      backdrop-filter: blur(5px);
-      font-weight: bold;
+      backdrop-filter: blur(10px);
+      font-weight: 600;
       border: 1px solid rgba(255, 255, 255, 0.3);
     }
+    .back-btn:hover { 
+      background: white; 
+      color: var(--primary-dark); 
+      transform: translateY(-2px);
+    }
 
-    .container { max-width: 1200px; margin: -40px auto 60px; padding: 0 20px; }
+    /* GRID DE ATORES */
+    .container { max-width: 1200px; margin: -50px auto 60px; padding: 0 20px; position: relative; z-index: 10; }
     
     .grid-atores {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-      gap: 30px;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 35px;
     }
 
+    /* CARDS ESTILO GLASSMORPHISM */
     .card-ator {
-      background: var(--card);
+      background: var(--card-bg);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.6);
       border-radius: 30px;
       overflow: hidden;
       text-decoration: none;
       color: inherit;
-      box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+      box-shadow: 0 15px 35px rgba(108, 43, 195, 0.06);
       display: flex;
       flex-direction: column;
+      transform: translateY(0);
+      /* Animação com curva elástica */
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
     }
 
     .card-ator:hover {
-      transform: translateY(-15px);
-      box-shadow: 0 25px 50px rgba(185, 131, 255, 0.2);
+      transform: translateY(-12px);
+      box-shadow: 0 30px 60px rgba(108, 43, 195, 0.15);
+      border-color: rgba(196, 139, 245, 0.8);
     }
 
-    .foto-wrap { width: 100%; height: 380px; overflow: hidden; position: relative; }
-    .foto-wrap img { width: 100%; height: 100%; object-fit: cover; object-position: top; }
-
-    .info-ator { padding: 25px; text-align: center; flex-grow: 1; }
-    .info-ator h3 { margin: 0; font-size: 1.5rem; color: var(--text); }
-    .info-ator p { margin: 10px 0 0; font-size: 0.95rem; color: var(--sub); font-style: italic; }
+    .foto-wrap { 
+      width: 100%; 
+      height: 400px; 
+      overflow: hidden; 
+      position: relative; 
+    }
     
+    .foto-wrap img { 
+      width: 100%; 
+      height: 100%; 
+      object-fit: cover; 
+      object-position: top; 
+      transition: transform 0.6s ease;
+    }
+
+    /* O zoom incrível na foto ao passar o mouse */
+    .card-ator:hover .foto-wrap img {
+      transform: scale(1.08);
+    }
+
+    .info-ator { 
+      padding: 30px 25px; 
+      text-align: center; 
+      flex-grow: 1; 
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .info-ator h3 { 
+      margin: 0; 
+      font-size: 1.6rem; 
+      color: var(--text-main); 
+      font-weight: 800;
+      letter-spacing: -0.5px;
+    }
+
+    .info-ator p { 
+      margin: 12px 0 25px; 
+      font-size: 0.95rem; 
+      color: var(--text-muted); 
+      line-height: 1.5;
+    }
+    
+    /* NOVO BOTÃO DENTRO DO CARD */
     .btn-perfil {
-      margin-top: 15px;
-      color: var(--accent);
-      font-weight: bold;
+      background: linear-gradient(135deg, var(--primary-light) 0%, var(--primary) 100%);
+      color: white;
+      font-weight: 600;
       text-transform: uppercase;
       letter-spacing: 1px;
       font-size: 0.8rem;
+      padding: 12px 20px;
+      border-radius: 50px;
+      display: inline-block;
+      margin: 0 auto;
+      box-shadow: 0 8px 20px rgba(155, 81, 224, 0.2);
     }
 
-    /* SEÇÃO DE SEO E FAQ */
-    .seo-section { max-width: 900px; margin: 60px auto; padding: 40px; background: white; border-radius: 35px; box-shadow: 0 10px 30px rgba(0,0,0,0.03); }
-    .seo-section h2 { color: var(--accent); margin-top: 0; }
+    .card-ator:hover .btn-perfil {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+      box-shadow: 0 10px 25px rgba(108, 43, 195, 0.4);
+    }
+
+    /* SEÇÃO DE SEO E FAQ - MODERNIZADA */
+    .seo-section { 
+      max-width: 900px; 
+      margin: 80px auto; 
+      padding: 50px; 
+      background: var(--card-bg); 
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.6);
+      border-radius: 40px; 
+      box-shadow: 0 20px 40px rgba(0,0,0,0.03); 
+    }
+
+    .seo-section h2 { 
+      color: var(--primary-dark); 
+      margin-top: 0; 
+      font-size: 2rem;
+      font-weight: 800;
+      letter-spacing: -1px;
+    }
     
-    .faq-container { margin-top: 30px; }
-    .faq-item { margin-bottom: 25px; border-bottom: 1px solid #f0f0f0; padding-bottom: 15px; }
-    .faq-item h3 { font-size: 1.2rem; color: var(--accent-dark); margin-bottom: 10px; }
-    .faq-item p { font-size: 1rem; color: var(--sub); margin: 0; }
+    .faq-container { margin-top: 40px; }
+    .faq-item { 
+      margin-bottom: 25px; 
+      background: white;
+      padding: 25px;
+      border-radius: 20px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.02);
+      border-left: 4px solid var(--primary-light);
+    }
+    
+    .faq-item h3 { 
+      font-size: 1.2rem; 
+      color: var(--text-main); 
+      margin: 0 0 10px 0; 
+      font-weight: 800;
+    }
+    
+    .faq-item p { 
+      font-size: 1rem; 
+      color: var(--text-muted); 
+      margin: 0; 
+    }
 
-    footer { text-align: center; padding: 40px; color: var(--sub); font-size: 0.9rem; }
+    footer { 
+      text-align: center; 
+      padding: 40px; 
+      color: var(--text-muted); 
+      font-size: 0.95rem; 
+      font-weight: 600;
+    }
 
-    @media (max-width: 600px) {
-      header h1 { font-size: 2rem; }
-      .grid-atores { grid-template-columns: 1fr; }
+    @media (max-width: 768px) {
+      header { padding: 50px 20px 60px; border-radius: 0 0 40px 40px; }
+      header h1 { font-size: 2.2rem; }
+      .container { margin-top: -30px; }
+      .grid-atores { grid-template-columns: 1fr; gap: 25px; }
+      .seo-section { padding: 30px; margin: 50px 15px; border-radius: 30px; }
     }
   </style>
 </head>
@@ -117,22 +263,21 @@
 </header>
 
 <div class="container">
-  <div class="grid-atores" id="grid-atores">
-    </div>
+  <div class="grid-atores" id="grid-atores"></div>
 
   <section class="seo-section">
     <h2>Tudo sobre Atores e Atrizes de Dorama</h2>
-    <p>Bem-vindo ao centro de estrelas do <strong>Planeta Dorama</strong>. Aqui, você encontra o perfil completo dos artistas que dão vida aos personagens mais amados das séries coreanas.</p>
+    <p style="color: var(--text-muted); font-size: 1.1rem;">Bem-vindo ao centro de estrelas do <strong>Planeta Dorama</strong>. Aqui, você encontra o perfil completo dos artistas que dão vida aos personagens mais amados das séries coreanas.</p>
 
     <div class="faq-container">
       <div class="faq-item">
-        <h3>Quem é o ator de dorama mais famoso do mundo?</h3>
-        <p>Atualmente, nomes como <strong>Kim Soo-hyun</strong>, Lee Min-ho e Song Kang lideram as buscas mundiais. Kim Soo-hyun destaca-se pelo sucesso de <em>Rainha das Lágrimas</em>.</p>
+        <h3>⭐ Quem é o ator de dorama mais famoso do mundo?</h3>
+        <p>Atualmente, nomes como <strong>Kim Soo-hyun</strong>, Lee Min-ho e Song Kang lideram as buscas mundiais. Kim Soo-hyun destaca-se pelo enorme sucesso global de <em>Rainha das Lágrimas</em>.</p>
       </div>
 
       <div class="faq-item">
-        <h3>Onde encontrar curiosidades sobre atores de dorama?</h3>
-        <p>No Planeta Dorama, atualizamos constantemente as fichas com curiosidades exclusivas, Instagram oficial e as melhores recomendações de doramas.</p>
+        <h3>🎬 Onde encontrar curiosidades sobre atores de dorama?</h3>
+        <p>No Planeta Dorama, atualizamos constantemente as fichas com curiosidades exclusivas, perfis do Instagram oficial e as melhores recomendações de doramas de cada artista.</p>
       </div>
     </div>
   </section>
