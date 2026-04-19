@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Atores e Atrizes de Dorama | Planeta Dorama</title>
-  <meta name="description" content="Conheça as maiores estrelas dos doramas coreanos. Biografias, curiosidades e filmografias completas dos seus atores favoritos.">
+  <meta name="description" content="Conheça as maiores estrelas dos doramas coreanos. Biografias, curiosidades e filmografias completas dos seus atores favoritos no Planeta Dorama.">
   
   <style>
     :root {
@@ -26,7 +26,6 @@
       line-height: 1.6;
     }
 
-    /* Cabeçalho Premium */
     header {
       background: linear-gradient(135deg, #b983ff 0%, #d4b3ff 100%);
       padding: 60px 20px;
@@ -36,8 +35,8 @@
       box-shadow: 0 10px 30px rgba(185, 131, 255, 0.3);
     }
 
-    header h1 { margin: 0; font-size: 3rem; font-weight: 800; text-shadow: 2px 2px 4px rgba(0,0,0,0.1); }
-    header p { font-size: 1.2rem; opacity: 0.9; margin-top: 10px; font-weight: 300; }
+    header h1 { margin: 0; font-size: 3rem; font-weight: 800; }
+    header p { font-size: 1.2rem; opacity: 0.9; margin-top: 10px; }
     
     .back-btn {
       display: inline-block;
@@ -51,9 +50,7 @@
       font-weight: bold;
       border: 1px solid rgba(255, 255, 255, 0.3);
     }
-    .back-btn:hover { background: white; color: var(--accent); }
 
-    /* Grid de Atores */
     .container { max-width: 1200px; margin: -40px auto 60px; padding: 0 20px; }
     
     .grid-atores {
@@ -62,7 +59,6 @@
       gap: 30px;
     }
 
-    /* Card Estilizado */
     .card-ator {
       background: var(--card);
       border-radius: 30px;
@@ -72,7 +68,6 @@
       box-shadow: 0 15px 35px rgba(0,0,0,0.05);
       display: flex;
       flex-direction: column;
-      position: relative;
     }
 
     .card-ator:hover {
@@ -80,65 +75,21 @@
       box-shadow: 0 25px 50px rgba(185, 131, 255, 0.2);
     }
 
-    .foto-wrap {
-      width: 100%;
-      height: 380px;
-      overflow: hidden;
-      position: relative;
-    }
+    .foto-wrap { width: 100%; height: 380px; overflow: hidden; position: relative; }
+    .foto-wrap img { width: 100%; height: 100%; object-fit: cover; object-position: top; }
 
-    .foto-wrap img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: top;
-    }
+    .info-ator { padding: 25px; text-align: center; flex-grow: 1; }
+    .info-ator h3 { margin: 0; font-size: 1.5rem; color: var(--text); }
+    .info-ator p { margin: 10px 0 0; font-size: 0.95rem; color: var(--sub); font-style: italic; }
 
-    /* Badge de destaque */
-    .badge {
-      position: absolute;
-      top: 15px;
-      right: 15px;
-      background: rgba(255, 255, 255, 0.9);
-      padding: 5px 12px;
-      border-radius: 15px;
-      font-size: 12px;
-      font-weight: bold;
-      color: var(--accent);
-      z-index: 2;
-    }
-
-    .info-ator {
-      padding: 25px;
-      text-align: center;
-      flex-grow: 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-
-    .info-ator h3 {
-      margin: 0;
-      font-size: 1.5rem;
-      color: var(--text);
-      font-weight: 700;
-    }
-
-    .info-ator p {
-      margin: 10px 0 0;
-      font-size: 0.95rem;
-      color: var(--sub);
-      font-style: italic;
-    }
-
-    .btn-perfil {
-      margin-top: 15px;
-      color: var(--accent);
-      font-weight: bold;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      font-size: 0.8rem;
-    }
+    /* SEÇÃO DE SEO E FAQ */
+    .seo-section { max-width: 900px; margin: 60px auto; padding: 40px; background: white; border-radius: 35px; box-shadow: 0 10px 30px rgba(0,0,0,0.03); }
+    .seo-section h2 { color: var(--accent); margin-top: 0; }
+    
+    .faq-container { margin-top: 30px; }
+    .faq-item { margin-bottom: 25px; border-bottom: 1px solid #f0f0f0; padding-bottom: 15px; }
+    .faq-item h3 { font-size: 1.2rem; color: var(--accent-dark); margin-bottom: 10px; }
+    .faq-item p { font-size: 1rem; color: var(--sub); margin: 0; }
 
     footer { text-align: center; padding: 40px; color: var(--sub); font-size: 0.9rem; }
 
@@ -159,6 +110,28 @@
 <div class="container">
   <div class="grid-atores" id="grid-atores">
     </div>
+
+  <section class="seo-section">
+    <h2>Tudo sobre Atores e Atrizes de Dorama</h2>
+    <p>Bem-vindo ao centro de estrelas do <strong>Planeta Dorama</strong>. Aqui, você encontra o perfil completo dos artistas que dão vida aos personagens mais amados das séries coreanas. De veteranos aclamados a novos talentos que estão dominando as paradas globais.</p>
+
+    <div class="faq-container">
+      <div class="faq-item">
+        <h3>Quem é o ator de dorama mais famoso do mundo?</h3>
+        <p>Atualmente, nomes como <strong>Kim Soo-hyun</strong>, Lee Min-ho e Song Kang lideram as buscas mundiais. Kim Soo-hyun, em particular, destaca-se pelo sucesso massivo de <em>Rainha das Lágrimas</em> em 2024.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Como os atores coreanos se tornam tão populares?</h3>
+        <p>A popularidade vem da combinação de talento interpretativo, produções de altíssima qualidade (K-Dramas) e uma forte conexão com os fãs através das redes sociais e trilhas sonoras (OSTs).</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Onde encontrar curiosidades sobre atores de dorama?</h3>
+        <p>No Planeta Dorama, atualizamos constantemente as fichas dos atores com curiosidades exclusivas, idade, Instagram oficial e as melhores recomendações de doramas para cada um deles.</p>
+      </div>
+    </div>
+  </section>
 </div>
 
 <footer>
