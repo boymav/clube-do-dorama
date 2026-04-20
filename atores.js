@@ -26,7 +26,7 @@ const atores = [
   {
     nome: "Song Joong-ki",
     link: "atores/song-joong-ki.html",
-    foto: "https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/atores/song%20joong%20ki.jpg",
+    foto: "https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/atores/Song-Joong-Ki.jpeg",
     resumo: "Astro global de Vincenzo e Descendentes do Sol, com participação épica em Rainha das Lágrimas."
   }
 ];
