@@ -32,7 +32,7 @@ const atores = [
   {
   nome: "Byeon Woo-seok",
   link: "atores/byeon-woo-seok.html",
-  imagem: "https://planetadorama.com.br/imagens/atores/byeon-woo-seok.webp",
+  imagem: "https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/atores/Byeon%20Woo%20seok.jpg",
   biografia: "Byeon Woo-seok é um ator e modelo sul-coreano que conquistou o estrelato global com seus papéis em doramas de romance e fantasia. Ganhou grande destaque em 'Record of Youth' e se tornou um dos nomes mais buscados da atualidade após o sucesso massivo de 'Lovely Runner' e 'Perfect Crown' em 2026.",
   nascimento: "31 de outubro de 1991",
   trabalhos: ["Lovely Runner", "Perfect Crown", "Record of Youth", "Strong Girl Nam-soon", "Moonshine", "20th Century Girl"]
