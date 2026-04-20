@@ -32,7 +32,7 @@ const atores = [
   {
     nome: "Byeon Woo-seok",
     link: "atores/byeon-woo-seok.html",
-    foto: "https://github.com/boymav/clube-do-dorama/blob/main/atores/Byeon%20Woo%20seok.jpg",
+    foto: "https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/atores/Byeon%20Woo%20seok.jpg",
     resumo: "O fenômeno de Lovely Runner e protagonista de Perfect Crown."
   },
 ];
