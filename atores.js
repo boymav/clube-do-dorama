@@ -22,6 +22,12 @@ const atores = [
     link: "atores/park-sung-hoon.html",
     foto: "https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/atores/park-sung-woon.jpg",
     resumo: "O vilão mais comentado do momento em Rainha das Lágrimas e astro de A Lição."
+  },
+  {
+    nome: "Song Joong-ki",
+    link: "atores/song-joong-ki.html",
+    foto: "https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/atores/song%20joong%20ki.jpg",
+    resumo: "Astro global de Vincenzo e Descendentes do Sol, com participação épica em Rainha das Lágrimas."
   }
 ];
 
