@@ -56,7 +56,7 @@ const atores = [
   {
     nome: "Han So-hee",
     link: "atores/han-so-hee.html",
-    foto: "https://planetadorama.com.br/imagens/atores/han-so-hee.jpg",
+    foto: "https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/atores/han%20so%20hee.jpg",
     resumo: "A estrela de My Name e A Criatura de Gyeongseong."
   }
 ];
