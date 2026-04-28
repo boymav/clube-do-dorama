@@ -4243,43 +4243,42 @@ Diferente de outros doramas, ele foca muito no sofrimento das vítimas, o que fa
 
 Se você gostou de My Name ou Weak Hero, Taxi Driver é parada obrigatória. É empolgante, revoltante e heróico ao mesmo tempo.`
 },
- {
- nome:"O Amor Pode Ser Compartilhado?",
+{
+ nome:"O Amor Pode Ser Traduzido?",
  nomeEN:"Can You Translate This Love?",
- nomePT:"O Amor Pode Ser Compartilhado?",
+ nomePT:"O Amor Pode Ser Traduzido?",
  tags:["romance","comedia","leve"],
  nota:"Em lançamento – MyDramaList",
  elenco:["Kim Seon-ho", "Go Youn-jung"],
- descricao:"Uma famosa atriz e um intérprete vivem encontros inesperados enquanto trabalham juntos.\nEntre confusões, diferenças e aproximação, nasce um romance leve e divertido.\nDoramas para quem gosta de química e comédia romântica.",
+ descricao:"Uma atriz famosa e um intérprete acabam se aproximando enquanto convivem no trabalho.\nEntre diferenças, mal-entendidos e sentimentos inesperados, nasce um romance leve.\nIdeal para quem gosta de casal com química e comédia romântica.",
  imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/can-you-translate-this-love.jpg",
  trailer:"https://www.youtube.com/embed/",
 
- resumo:`Cha Mu Hee é uma atriz famosa que vive cercada por compromissos e pressão constante.
-Para conseguir lidar melhor com sua rotina internacional, ela passa a trabalhar com um intérprete experiente.
+ resumo:`Cha Mu Hee é uma atriz conhecida mundialmente e vive cercada de pressão, agendas lotadas e exigências constantes.
 
-Ju Ho Jin é conhecido pela inteligência e jeito calmo, mas acaba entrando em situações inesperadas ao lidar com a personalidade forte da atriz.
+Para ajudar em compromissos internacionais, ela passa a contar com Ju Ho Jin, um intérprete inteligente e experiente.
 
-Mesmo começando com conflitos e diferenças, os dois passam a se entender cada vez mais.
+Mesmo com personalidades bem diferentes, os dois começam uma convivência cheia de atritos, confusões e momentos divertidos.
 
-Entre viagens, momentos engraçados e sentimentos surgindo aos poucos, nasce uma conexão especial.
+Com o tempo, a relação profissional vai mudando e sentimentos inesperados começam a surgir.
 
-É um dorama romântico leve, com clima moderno e foco na química do casal.`,
+É um dorama romântico leve, moderno e focado na conexão entre os protagonistas.`,
 
- criticaHumana:`Esse dorama me chamou atenção principalmente pela proposta simples, mas muito agradável de acompanhar. A história mistura romance com comédia de um jeito leve, daqueles que você assiste relaxando e se envolvendo aos poucos com os personagens.
+ criticaHumana:`O que mais me chamou atenção nesse dorama foi a proposta diferente de usar um intérprete como protagonista masculino. Isso foge do clichê comum de CEO rico ou herdeiro e deixa a história mais interessante logo de cara. A ideia de duas pessoas tentando se entender, enquanto trabalham justamente com tradução e comunicação, combina muito com romance.
 
-O maior destaque pra mim é a química entre os protagonistas. Os dois combinam bastante em cena e conseguem deixar até os momentos mais simples interessantes. Aquela dinâmica de diferenças entre personalidades funciona bem e rende cenas divertidas.
+Também achei interessante o contraste entre os personagens. Ela parece viver no caos da fama e da pressão, enquanto ele passa uma imagem mais controlada e racional. Esse tipo de diferença costuma render boas cenas de comédia e também momentos em que um completa o outro.
 
-Também gostei do clima visual e da proposta moderna. É o tipo de dorama que parece confortável de assistir, sem exagerar no drama pesado e focando mais no carisma dos personagens e no crescimento da relação.
+Outro ponto forte é o elenco principal. Kim Seon-ho tem muito carisma e costuma funcionar bem em papéis românticos, enquanto Go Youn-jung transmite presença forte em tela. A expectativa maior fica justamente na química dos dois, que parece ser o centro da história.
 
-No geral, achei uma ótima opção para quem gosta de romance leve, casal carismático e histórias gostosas de acompanhar. Não tenta inventar demais, mas entrega exatamente o que promete.`,
+No geral, vejo esse dorama como uma aposta forte para quem gosta de romance moderno, casal com boa dinâmica e história leve sem exagerar no drama. Se desenvolver bem os diálogos e a evolução do casal, pode virar um dos romances mais agradáveis do ano.`,
 
- elencoInfo:`O elenco principal traz Kim Seon-ho e Go Youn-jung, dois nomes muito queridos pelo público.
+ elencoInfo:`O elenco principal reúne Kim Seon-ho e Go Youn-jung, dois atores muito populares.
 
-A expectativa fica alta principalmente pela presença dos protagonistas, que têm carisma forte e costumam prender atenção facilmente.
+Kim Seon-ho costuma se destacar pelo carisma natural e boa presença em romances.
 
-A combinação dos dois passa sensação de casal promissor e deve ser um dos pontos fortes da história.
+Go Youn-jung chama atenção pela elegância e força em cena.
 
-É um elenco que chama atenção e aumenta bastante o interesse pelo dorama.`
+A combinação dos dois gera bastante expectativa e pode ser um dos maiores pontos fortes do dorama.`
 }
 ];
 function criarSlug(nome, nomeEN) {
