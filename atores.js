@@ -35,6 +35,12 @@ const atores = [
     foto: "https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/atores/Byeon%20Woo%20seok.jpg",
     resumo: "O fenômeno de Lovely Runner e protagonista de Perfect Crown."
   },
+  {
+    nome: "Kim Seon-ho",
+    link: "atores/kim-seon-ho.html",
+    foto: "https://planetadorama.com.br/imagens/atores/kim-seon-ho.jpg",
+    resumo: "O astro de Hometown Cha-Cha-Cha e O Amor Pode Ser Traduzido."
+  }
 ];
 
 function carregarAtores() {
