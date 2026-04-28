@@ -40,6 +40,12 @@ const atores = [
     link: "atores/kim-seon-ho.html",
     foto: "https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/atores/Kim%20Seon%20ho.webp",
     resumo: "O astro de Hometown Cha-Cha-Cha e O Amor Pode Ser Traduzido."
+  },
+  {
+    nome: "Go Youn-jung",
+    link: "atores/go-youn-jung.html",
+    foto: "https://planetadorama.com.br/imagens/atores/go-youn-jung.jpg",
+    resumo: "A estrela em ascensão de Moving e Alquimia das Almas."
   }
 ];
 
