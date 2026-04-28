@@ -46,6 +46,12 @@ const atores = [
     link: "atores/go-youn-jung.html",
     foto: "https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/atores/go%20youn%20jung.jpg",
     resumo: "A estrela em ascensão de Moving e Alquimia das Almas."
+  },
+  {
+    nome: "Cha Eun-woo",
+    link: "atores/cha-eun-woo.html",
+    foto: "https://planetadorama.com.br/imagens/atores/cha-eun-woo.jpg",
+    resumo: "O 'Gênio Visual' da Coreia e estrela de Beleza Verdadeira."
   }
 ];
 
