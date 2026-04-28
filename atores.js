@@ -52,6 +52,12 @@ const atores = [
     link: "atores/cha-eun-woo.html",
     foto: "https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/atores/cha-eun-woo.jpg",
     resumo: "O 'Gênio Visual' da Coreia e estrela de Beleza Verdadeira."
+  },
+  {
+    nome: "Han So-hee",
+    link: "atores/han-so-hee.html",
+    foto: "https://planetadorama.com.br/imagens/atores/han-so-hee.jpg",
+    resumo: "A estrela de My Name e A Criatura de Gyeongseong."
   }
 ];
 
