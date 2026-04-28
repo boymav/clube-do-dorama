@@ -44,7 +44,7 @@ const atores = [
   {
     nome: "Go Youn-jung",
     link: "atores/go-youn-jung.html",
-    foto: "https://planetadorama.com.br/imagens/atores/go-youn-jung.jpg",
+    foto: "https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/atores/go%20youn%20jung.jpg",
     resumo: "A estrela em ascensão de Moving e Alquimia das Almas."
   }
 ];
