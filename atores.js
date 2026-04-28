@@ -50,7 +50,7 @@ const atores = [
   {
     nome: "Cha Eun-woo",
     link: "atores/cha-eun-woo.html",
-    foto: "https://planetadorama.com.br/imagens/atores/cha-eun-woo.jpg",
+    foto: "https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/atores/cha-eun-woo.jpg",
     resumo: "O 'Gênio Visual' da Coreia e estrela de Beleza Verdadeira."
   }
 ];
