@@ -4251,8 +4251,8 @@ Se você gostou de My Name ou Weak Hero, Taxi Driver é parada obrigatória. É 
  nota:"Em lançamento – MyDramaList",
  elenco:["Kim Seon-ho", "Go Youn-jung"],
  descricao:"Uma atriz famosa e um intérprete acabam se aproximando enquanto convivem no trabalho.\nEntre diferenças, mal-entendidos e sentimentos inesperados, nasce um romance leve.\nIdeal para quem gosta de casal com química e comédia romântica.",
- imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/can-you-translate-this-love.jpg",
- trailer:"https://www.youtube.com/embed/",
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/imagens/doramas/o%20amor%20pode%20ser%20traduzido.jpg",
+ trailer:"https://www.youtube.com/embed/DD4_O3ojgPM",
 
  resumo:`Cha Mu Hee é uma atriz conhecida mundialmente e vive cercada de pressão, agendas lotadas e exigências constantes.
 
