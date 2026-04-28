@@ -38,7 +38,7 @@ const atores = [
   {
     nome: "Kim Seon-ho",
     link: "atores/kim-seon-ho.html",
-    foto: "https://planetadorama.com.br/imagens/atores/kim-seon-ho.jpg",
+    foto: "https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/atores/Kim%20Seon%20ho.webp",
     resumo: "O astro de Hometown Cha-Cha-Cha e O Amor Pode Ser Traduzido."
   }
 ];
