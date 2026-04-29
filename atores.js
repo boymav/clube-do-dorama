@@ -58,6 +58,12 @@ const atores = [
     link: "atores/han-so-hee.html",
     foto: "https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/atores/han%20so%20hee.jpg",
     resumo: "A estrela de My Name e A Criatura de Gyeongseong."
+  },
+  {
+    nome: "Lee Do-hyun",
+    link: "atores/lee-do-hyun.html",
+    foto: "https://planetadorama.com.br/imagens/atores/lee-do-hyun.jpg",
+    resumo: "O astro de The Glory e protagonista do sucesso Exhuma."
   }
 ];
 
