@@ -112,6 +112,12 @@ const atores = [
     link: "atores/ji-chang-wook.html",
     foto: "https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/atores/ji%20chang%20wook.jpg",
     resumo: "O mestre da ação e do romance, estrela de Healer, The K2 e De Volta às Boas-Vindas a Samdal-ri."
+  },
+  {
+    nome: "Cha Eun-woo",
+    link: "atores/cha-eun-woo.html",
+    foto: "https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/atores/cha-eun-woo.jpg",
+    resumo: "A estrela global de Beleza Verdadeira e o maior ícone visual da Coreia, equilibrando o K-pop com atuações de peso."
   }
 ];
 
