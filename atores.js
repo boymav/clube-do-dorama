@@ -106,6 +106,12 @@ const atores = [
     link: "atores/park-seo-joon.html",
     foto: "https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/atores/park%20seoo%20jon.jpg",
     resumo: "O astro de Itaewon Class e O Que Houve com a Secretária Kim, agora brilhando na Marvel."
+  },
+  {
+    nome: "Ji Chang-wook",
+    link: "atores/ji-chang-wook.html",
+    foto: "https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/atores/ji%20chang%20wook.jpg",
+    resumo: "O mestre da ação e do romance, estrela de Healer, The K2 e De Volta às Boas-Vindas a Samdal-ri."
   }
 ];
 
