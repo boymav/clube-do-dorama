@@ -64,6 +64,12 @@ const atores = [
     link: "atores/lee-do-hyun.html",
     foto: "https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/atores/lee-do-hyun.jpg",
     resumo: "O astro de The Glory e protagonista do sucesso Exhuma."
+  },
+  {
+    nome: "Park Eun-bin",
+    link: "atores/park-eun-bin.html",
+    foto: "https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/atores/park-eun-bin.jfif",
+    resumo: "A premiada estrela de Uma Advogada Extraordinária e Diva à Deriva."
   }
 ];
 
