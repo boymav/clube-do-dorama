@@ -76,6 +76,12 @@ const atores = [
     link: "atores/song-kang.html",
     foto: "https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/atores/song-kang.webp",
     resumo: "O 'Filho da Netflix' e protagonista de Meu Demônio e Sweet Home."
+  },
+  {
+    nome: "Lee Joon-gi",
+    link: "atores/lee-joon-gi.html",
+    foto: "https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/atores/lee-joon-gi.webp",
+    resumo: "O 'Rei dos Sageuks' e mestre da ação em Moon Lovers e Flower of Evil."
   }
 ];
 
