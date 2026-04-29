@@ -101,11 +101,12 @@ const atores = [
     foto: "https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/atores/suzy-bae.jfif",
     resumo: "Conhecida como o 'Primeiro Amor da Nação', é a estrela de Apostando Alto e Anna."
   },
-  {
+ {
     nome: "Park Seo-joon",
-    url: "atores/park-seo-joon.html",
-    imagem: "https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/atores/park%20seoo%20jon.jpg"
-}
+    link: "atores/park-seo-joon.html",
+    foto: "https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/atores/park%20seoo%20jon.jpg",
+    resumo: "O astro de Itaewon Class e O Que Houve com a Secretária Kim, agora brilhando na Marvel."
+  }
 ];
 
 function carregarAtores() {
