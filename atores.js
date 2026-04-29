@@ -82,6 +82,12 @@ const atores = [
     link: "atores/lee-joon-gi.html",
     foto: "https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/atores/lee-joon-gi.webp",
     resumo: "O 'Rei dos Sageuks' e mestre da ação em Moon Lovers e Flower of Evil."
+  },
+  {
+    nome: "Lee Min-ho",
+    link: "atores/lee-min-ho.html",
+    foto: "https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/atores/lee%20min%20ho.jpg",
+    resumo: "O 'Rei do Hallyu' e protagonista de Boys Over Flowers e Pachinko."
   }
 ];
 
