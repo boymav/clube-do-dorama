@@ -94,6 +94,12 @@ const atores = [
     link: "atores/park-shin-hye.html",
     foto: "https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/atores/park-shin-hye.jfif",
     resumo: "A eterna Rainha dos Doramas e estrela de The Heirs e Doctors."
+  },
+  {
+    nome: "Bae Suzy",
+    link: "atores/bae-suzy.html",
+    foto: "https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/atores/suzy-bae.jfif",
+    resumo: "Conhecida como o 'Primeiro Amor da Nação', é a estrela de Apostando Alto e Anna."
   }
 ];
 
