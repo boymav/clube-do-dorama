@@ -62,7 +62,7 @@ const atores = [
   {
     nome: "Lee Do-hyun",
     link: "atores/lee-do-hyun.html",
-    foto: "https://planetadorama.com.br/imagens/atores/lee-do-hyun.jpg",
+    foto: "https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/atores/lee-do-hyun.jpg",
     resumo: "O astro de The Glory e protagonista do sucesso Exhuma."
   }
 ];
