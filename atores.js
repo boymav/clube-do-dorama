@@ -88,6 +88,12 @@ const atores = [
     link: "atores/lee-min-ho.html",
     foto: "https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/atores/lee%20min%20ho.jpg",
     resumo: "O 'Rei do Hallyu' e protagonista de Boys Over Flowers e Pachinko."
+  },
+  {
+    nome: "Park Shin-hye",
+    link: "atores/park-shin-hye.html",
+    foto: "https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/atores/park-shin-hye.jfif",
+    resumo: "A eterna Rainha dos Doramas e estrela de The Heirs e Doctors."
   }
 ];
 
