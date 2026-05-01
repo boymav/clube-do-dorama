@@ -124,6 +124,12 @@ const atores = [
     link: "atores/lee-jong-suk.html",
     foto: "https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/atores/lee%20jong%20suk.jpg",
     resumo: "O gênio dos roteiros, estrela de While You Were Sleeping, Big Mouth e W: Two Worlds."
+  },
+  {
+    nome: "Kim Go-eun",
+    link: "atores/kim-go-eun.html",
+    foto: "https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/atores/kin%20go%20eun.webp",
+    resumo: "A icônica estrela de Goblin e As Três Irmãs, aclamada por sua versatilidade e atuações premiadas."
   }
 ];
 
