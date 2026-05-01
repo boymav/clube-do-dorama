@@ -118,6 +118,12 @@ const atores = [
     link: "atores/gong-yoo.html",
     foto: "https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/atores/gong%20yoo.webp",
     resumo: "A lenda viva do Hallyu, estrela de Goblin e Invasão Zumbi, com participação icônica em Round 6."
+  },
+  {
+    nome: "Lee Jong-suk",
+    link: "atores/lee-jong-suk.html",
+    foto: "https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/atores/lee%20jong%20suk.jpg",
+    resumo: "O gênio dos roteiros, estrela de While You Were Sleeping, Big Mouth e W: Two Worlds."
   }
 ];
 
