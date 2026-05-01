@@ -112,6 +112,12 @@ const atores = [
     link: "atores/ji-chang-wook.html",
     foto: "https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/atores/ji%20chang%20wook.jpg",
     resumo: "O mestre da ação e do romance, estrela de Healer, The K2 e De Volta às Boas-Vindas a Samdal-ri."
+  },
+  {
+    nome: "Gong Yoo",
+    link: "atores/gong-yoo.html",
+    foto: "https://raw.githubusercontent.com/boymav/clube-do-dorama/refs/heads/main/atores/gong%20yoo.webp",
+    resumo: "A lenda viva do Hallyu, estrela de Goblin e Invasão Zumbi, com participação icônica em Round 6."
   }
 ];
 
