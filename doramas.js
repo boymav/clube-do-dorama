@@ -4279,6 +4279,52 @@ Kim Seon-ho costuma se destacar pelo carisma natural e boa presença em romances
 Go Youn-jung chama atenção pela elegância e força em cena.
 
 A combinação dos dois gera bastante expectativa e pode ser um dos maiores pontos fortes do dorama.`
+},
+ {
+ nome:"Minha Ladra Favorita (My Secret Romance)",
+ nomeEN:"My Secret Romance",
+ nomePT:"Minha Ladra Favorita",
+ tags:["romance","leve","comedia"],
+ nota:"7.8/10 – MyDramaList",
+ elenco:["Sung Hoon", "Song Ji-eun", "Kim Jae-young", "Jung Da-sol"],
+ descricao:"Dois desconhecidos vivem uma noite inesperada e se reencontram anos depois no trabalho.\nEntre vergonha, tensão e romance, sentimentos antigos voltam com força.",
+ resumo:`Cha Jin Wook é herdeiro de uma grande empresa e leva uma vida despreocupada, cheia de festas e relacionamentos sem compromisso.
+
+Lee Yoo Mi é uma jovem reservada que tenta viver longe da fama polêmica da própria mãe e busca seguir uma vida tranquila.
+
+Os dois se conhecem por acaso em uma viagem e acabam vivendo uma noite inesperada que muda tudo.
+
+Depois disso, Yoo Mi desaparece sem dar explicações, deixando Jin Wook confuso e marcado pela experiência.
+
+Três anos depois, eles se reencontram quando Yoo Mi começa a trabalhar como nutricionista na empresa dele.
+
+Mesmo fingindo indiferença, a tensão entre os dois continua viva.
+
+Entre ciúmes, mal-entendidos e momentos fofos, o romance começa a crescer novamente.
+
+É um dorama leve, divertido e focado na química do casal principal.
+
+No Brasil, esse dorama também é conhecido como "Minha Ladra Favorita".`,
+ imagem:"https://raw.githubusercontent.com/boymav/clube-do-dorama/main/imagens/doramas/my-secret-romance.jpg",
+ trailer:"https://www.youtube.com/embed/x0xD0QZ4J1Q",
+ criticaHumana:`Minha Ladra Favorita é aquele tipo de dorama simples que funciona quando a pessoa só quer relaxar e assistir algo leve.
+
+O maior destaque para mim foi a química entre os protagonistas. Sung Hoon e Song Ji-eun conseguem sustentar boa parte da série só no carisma e nas cenas juntos.
+
+A história usa vários clichês clássicos de romance coreano, então não espere algo inovador ou cheio de reviravoltas. Mesmo assim, em vários momentos ela diverte bastante.
+
+Também achei que alguns personagens secundários poderiam ser melhor aproveitados, porque o foco fica quase todo no casal principal.
+
+No geral, é um dorama gostoso de assistir, ideal para quem quer romance leve, cenas fofas e algo sem tanta complicação.`,
+ elencoInfo:`O elenco de Minha Ladra Favorita reúne nomes como Sung Hoon, Song Ji-eun e Kim Jae-young, que ajudam bastante a dar carisma para a história.
+
+Sung Hoon se destaca bastante no papel principal e chama atenção pela presença em tela e boa química romântica.
+
+Song Ji-eun também funciona bem como protagonista e passa um jeito leve que combina com o clima do dorama.
+
+Jung Da-sol aparece entre os nomes importantes do núcleo secundário e ajuda a movimentar a trama.
+
+Em romances leves, o entrosamento do elenco costuma fazer muita diferença, e isso acontece bastante aqui.`
 }
 ];
 function criarSlug(nome, nomeEN) {
